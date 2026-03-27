@@ -208,8 +208,9 @@ export class HealthCache {
     health: ResourceHealth,
   ): Promise<void> {
     const data = this.loadCatalog(catalogId);
+    this.evictStale(data);
     data.resources[url] = health;
-    await this.persist(catalogId, data);
+    await this.persistRaw(catalogId, data);
   }
 
   private async saveNewResults(
@@ -217,17 +218,14 @@ export class HealthCache {
     results: { url: string; health: ResourceHealth }[],
   ): Promise<void> {
     const data = this.loadCatalog(catalogId);
+    this.evictStale(data);
     for (const { url, health } of results) {
       data.resources[url] = health;
     }
-    await this.persist(catalogId, data);
+    await this.persistRaw(catalogId, data);
   }
 
-  private async persist(
-    catalogId: string,
-    data: HealthCacheData,
-  ): Promise<void> {
-    // Evict stale entries before writing to disk
+  private evictStale(data: HealthCacheData): void {
     const now = Date.now();
     for (const [url, entry] of Object.entries(data.resources)) {
       const age = now - new Date(entry.checkedAt).getTime();
@@ -235,7 +233,12 @@ export class HealthCache {
         delete data.resources[url];
       }
     }
+  }
 
+  private async persistRaw(
+    catalogId: string,
+    data: HealthCacheData,
+  ): Promise<void> {
     const filePath = join(this.dir, `${catalogId}.json`);
     await writeFile(filePath, JSON.stringify(data, null, 2));
   }
