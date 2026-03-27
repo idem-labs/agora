@@ -1,0 +1,72 @@
+name: Score
+
+on:
+  schedule:
+    - cron: "0 6 * * 1" # Every Monday at 06:00 UTC
+  workflow_dispatch: {}
+
+concurrency:
+  group: score
+
+permissions:
+  contents: write
+
+jobs:
+  score:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Build pipeline dependencies
+        run: pnpm exec turbo run build --filter=@agora/platform...
+
+      - name: Run scoring pipeline
+        run: pnpm --filter @agora/platform run score
+        env:
+          AGORA_PIPELINE_OUTPUT_DIR: ../web/data
+          AGORA_PIPELINE_HEAD_TIMEOUT_MS: "5000"
+          AGORA_PIPELINE_ACCESSIBILITY_SAMPLE_SIZE: "50"
+
+      - name: Validate pipeline output
+        run: |
+          echo "Validating pipeline JSON output..."
+          for f in packages/web/data/meta.json packages/web/data/catalogs.json; do
+            if [ -f "$f" ]; then
+              jq empty "$f" || { echo "Invalid JSON: $f"; exit 1; }
+              echo "  ✓ $f"
+            else
+              echo "Missing expected file: $f"; exit 1
+            fi
+          done
+          for f in packages/web/data/catalogs/*/scores.json; do
+            if [ -f "$f" ]; then
+              jq empty "$f" || { echo "Invalid JSON: $f"; exit 1; }
+              echo "  ✓ $f"
+            fi
+          done
+          echo "All JSON files valid."
+
+      - name: Pipeline summary
+        if: always()
+        run: |
+          if [ -f packages/web/data/meta.json ]; then
+            jq . packages/web/data/meta.json
+          fi
+
+      - name: Commit updated scores
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add packages/web/data/
+          git diff --cached --quiet || git commit -m "data: update quality scores $(date -u +%Y-%m-%d)"
+          git push

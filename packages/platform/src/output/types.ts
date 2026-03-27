@@ -1,0 +1,54 @@
+import type { QualityDimension, QualityScore } from "@agora/sdk";
+
+/** Aggregated scores and stats for a single catalog. */
+export interface CatalogSummary {
+  id: string;
+  name: string;
+  url: string;
+  protocol: "ckan" | "socrata" | "dcat";
+  country: string;
+  language: string;
+  datasetCount: number;
+  resourceCount: number;
+  scores: {
+    overall: number;
+  } & Record<QualityDimension, number>;
+  stats: {
+    accessiblePct: number;
+    medianFreshnessDays: number | null;
+    topFormats: Array<{ format: string; count: number }>;
+  };
+  scoredAt: string;
+}
+
+/** Per-catalog file: all dataset-level scores. */
+export interface CatalogScores {
+  catalogId: string;
+  scoredAt: string;
+  datasetCount: number;
+  datasets: QualityScore[];
+}
+
+/** Global run metadata. */
+export interface PipelineMeta {
+  version: string;
+  startedAt: string;
+  completedAt: string;
+  durationMs: number;
+  catalogsProcessed: number;
+  catalogsFailed: number;
+  totalDatasets: number;
+  totalResources: number;
+  config: {
+    concurrency: number;
+    headTimeoutMs: number;
+    freshnessHalfLifeDays: number;
+    accessibilitySampleSize: number;
+  };
+}
+
+/** Top-level catalogs.json output. */
+export interface CatalogsOutput {
+  generatedAt: string;
+  catalogs: CatalogSummary[];
+}
