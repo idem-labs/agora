@@ -49,7 +49,9 @@ export async function runPipeline(
     adapterEntries = overrides.adapters;
   } else {
     const entries = resolveActiveCatalogs(config.presets, config.catalogIds);
-    const registry = new CatalogRegistry(entries, logger);
+    const registry = new CatalogRegistry(entries, logger, {
+      ckanPageSize: config.ckanPageSize,
+    });
     adapterEntries = registry.listAdapters().map((adapter) => ({
       adapter,
       entry: entries.find((e) => e.id === adapter.catalog.id)!,
@@ -83,6 +85,7 @@ export async function runPipeline(
         pureScorers,
         accessibilityScorer,
         sampleSize: config.accessibilitySampleSize,
+        maxDatasets: config.maxDatasetsPerCatalog,
         logger,
       }),
     ),
@@ -151,6 +154,7 @@ interface ProcessCatalogArgs {
   pureScorers: Array<{ score(ds: DatasetRecord): Promise<DimensionScore> }>;
   accessibilityScorer: AccessibilityScorer;
   sampleSize: number;
+  maxDatasets: number;
   logger: Logger;
 }
 
@@ -158,15 +162,19 @@ async function processCatalog(args: ProcessCatalogArgs): Promise<{
   summary: CatalogSummary;
   scores: CatalogScores;
 }> {
-  const { adapter, entry, pureScorers, accessibilityScorer, sampleSize, logger } = args;
+  const { adapter, entry, pureScorers, accessibilityScorer, sampleSize, maxDatasets, logger } = args;
   const catalogId = adapter.catalog.id;
 
   logger.info("Fetching datasets", { catalogId });
 
-  // Collect all datasets
+  // Collect datasets (capped at maxDatasets)
   const datasets: DatasetRecord[] = [];
   for await (const dataset of adapter.listDatasets()) {
     datasets.push(dataset);
+    if (maxDatasets > 0 && datasets.length >= maxDatasets) {
+      logger.info("Dataset limit reached, stopping ingestion", { catalogId, limit: maxDatasets });
+      break;
+    }
   }
 
   logger.info("Datasets fetched", { catalogId, count: datasets.length });

@@ -17,6 +17,10 @@ export interface PipelineConfig {
   freshnessHalfLifeDays: number;
   /** Max datasets per catalog for accessibility HEAD checks (0 = all) */
   accessibilitySampleSize: number;
+  /** Max datasets to ingest per catalog (0 = unlimited) */
+  maxDatasetsPerCatalog: number;
+  /** CKAN page size for bulk listing (default: 1000) */
+  ckanPageSize: number;
 }
 
 export function loadPipelineConfig(): PipelineConfig {
@@ -31,6 +35,8 @@ export function loadPipelineConfig(): PipelineConfig {
     catalogIds: env.AGORA_CATALOGS ? env.AGORA_CATALOGS.split(",").map((s) => s.trim()) : [],
     freshnessHalfLifeDays: parseIntEnv(env.AGORA_PIPELINE_FRESHNESS_HALF_LIFE_DAYS, 180),
     accessibilitySampleSize: parseIntEnv(env.AGORA_PIPELINE_ACCESSIBILITY_SAMPLE_SIZE, 50),
+    maxDatasetsPerCatalog: parseIntEnv(env.AGORA_PIPELINE_MAX_DATASETS, 10_000),
+    ckanPageSize: parseIntEnv(env.AGORA_PIPELINE_CKAN_PAGE_SIZE, 1000),
   };
 }
 

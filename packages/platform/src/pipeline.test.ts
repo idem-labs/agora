@@ -108,6 +108,8 @@ function makeConfig(overrides: Partial<PipelineConfig> = {}): PipelineConfig {
     catalogIds: [],
     freshnessHalfLifeDays: 180,
     accessibilitySampleSize: 0, // 0 = check all
+    maxDatasetsPerCatalog: 0, // 0 = unlimited
+    ckanPageSize: 25,
     ...overrides,
   };
 }

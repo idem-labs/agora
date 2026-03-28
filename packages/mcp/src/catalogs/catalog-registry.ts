@@ -5,6 +5,11 @@ import { CkanAdapter } from "./ckan/ckan-adapter.js";
 import type { CatalogEntry } from "./directory/types.js";
 import { SocrataAdapter } from "./socrata/socrata-adapter.js";
 
+export interface CatalogRegistryOptions {
+  /** CKAN page size for bulk listing (default: 25) */
+  ckanPageSize?: number;
+}
+
 /**
  * Registry of configured catalog adapters.
  * Creates the right adapter per catalog entry based on protocol.
@@ -12,9 +17,9 @@ import { SocrataAdapter } from "./socrata/socrata-adapter.js";
 export class CatalogRegistry {
   private readonly adapters = new Map<string, CatalogAdapter>();
 
-  constructor(entries: CatalogEntry[], logger: Logger) {
+  constructor(entries: CatalogEntry[], logger: Logger, options?: CatalogRegistryOptions) {
     for (const entry of entries) {
-      const adapter = createAdapter(entry, logger);
+      const adapter = createAdapter(entry, logger, options);
       if (adapter) {
         this.adapters.set(entry.id, adapter);
       } else {
@@ -45,6 +50,7 @@ export class CatalogRegistry {
 function createAdapter(
   entry: CatalogEntry,
   logger: Logger,
+  options?: CatalogRegistryOptions,
 ): CatalogAdapter | null {
   switch (entry.protocol) {
     case "ckan":
@@ -55,6 +61,7 @@ function createAdapter(
           baseUrl: entry.url,
           apiPath: entry.apiPath,
           country: entry.country,
+          pageSize: options?.ckanPageSize,
         },
         logger,
       );

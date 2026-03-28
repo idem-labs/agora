@@ -8,6 +8,7 @@ export type { CatalogAdapter } from "./catalogs/adapter.js";
 
 // Catalog registry (factory for adapters)
 export { CatalogRegistry } from "./catalogs/catalog-registry.js";
+export type { CatalogRegistryOptions } from "./catalogs/catalog-registry.js";
 
 // Catalog directory (built-in portal registry + presets)
 export {
