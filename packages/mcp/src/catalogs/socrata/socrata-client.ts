@@ -41,9 +41,12 @@ export class SocrataClient {
   async searchDatasets(
     offset: number,
     limit?: number,
+    extra?: { orderBy?: string; where?: string },
   ): Promise<SocrataDiscoveryResponse> {
     const l = limit ?? this.pageSize;
-    const url = `${this.baseUrl}?only=datasets&limit=${l}&offset=${offset}`;
+    let url = `${this.baseUrl}?only=datasets&limit=${l}&offset=${offset}`;
+    if (extra?.orderBy) url += `&order=${encodeURIComponent(extra.orderBy)}`;
+    if (extra?.where) url += `&q_internal=${encodeURIComponent(extra.where)}`;
     return this.get<SocrataDiscoveryResponse>(url);
   }
 
@@ -89,6 +92,52 @@ export class SocrataClient {
       total: total ?? 0,
       pages: pageNum,
     });
+  }
+
+  /**
+   * Iterate over datasets updated since `cursor` (ISO timestamp),
+   * ordered by updatedAt ascending. Used by the pipeline for
+   * incremental scoring. Falls back to full listing with client-side
+   * filtering since Socrata Discovery API has limited query support.
+   */
+  async *listDatasetsSince(
+    cursor: string,
+    limit?: number,
+  ): AsyncGenerator<SocrataResult[]> {
+    const cursorDate = new Date(cursor).getTime();
+    const l = limit ?? this.pageSize;
+    let offset = 0;
+    let total: number | null = null;
+    let pageNum = 0;
+
+    while (total === null || offset < total) {
+      if (pageNum > 0) {
+        await new Promise((resolve) => setTimeout(resolve, 200));
+      }
+
+      this.logger.debug("Socrata paginating (since)", { cursor, offset, pageSize: l, total, page: pageNum });
+
+      const response = await this.getWithRetry(() =>
+        this.searchDatasets(offset, l),
+      );
+      total = response.resultSetSize;
+
+      if (response.results.length === 0) break;
+
+      // Client-side filter: only yield results updated after cursor
+      const filtered = response.results.filter((r) => {
+        const updatedAt = r.resource?.data_updated_at ?? r.resource?.updatedAt;
+        if (!updatedAt) return true; // include if no date
+        return new Date(updatedAt).getTime() >= cursorDate;
+      });
+
+      if (filtered.length > 0) yield filtered;
+
+      offset += response.results.length;
+      pageNum++;
+    }
+
+    this.logger.info("Socrata pagination (since) complete", { cursor, total: total ?? 0, pages: pageNum });
   }
 
   /** Retry a request with exponential backoff on transient errors. */

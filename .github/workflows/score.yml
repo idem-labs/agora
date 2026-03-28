@@ -2,7 +2,7 @@ name: Score
 
 on:
   schedule:
-    - cron: "0 6 * * 1" # Every Monday at 06:00 UTC
+    - cron: "0 6 * * *" # Daily at 06:00 UTC
   workflow_dispatch: {}
 
 concurrency:
@@ -14,7 +14,7 @@ permissions:
 jobs:
   score:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 70
     steps:
       - uses: actions/checkout@v4
 
@@ -34,8 +34,15 @@ jobs:
         run: pnpm --filter @agora/platform run score
         env:
           AGORA_PIPELINE_OUTPUT_DIR: ../web/data
-          AGORA_PIPELINE_HEAD_TIMEOUT_MS: "5000"
+          AGORA_PIPELINE_BUDGET_MIN: "50"
+          AGORA_PIPELINE_PRIORITY: "argentina,latam,all"
+          AGORA_PIPELINE_DETAIL_PRESETS: "argentina,latam"
+          AGORA_PIPELINE_RESCORE_DAYS: "7"
+          AGORA_PIPELINE_CHUNK_SIZE: "1000"
+          AGORA_PIPELINE_CATALOG_TIMEOUT_MIN: "15"
+          AGORA_PIPELINE_CKAN_PAGE_SIZE: "1000"
           AGORA_PIPELINE_ACCESSIBILITY_SAMPLE_SIZE: "50"
+          AGORA_PIPELINE_HEAD_TIMEOUT_MS: "5000"
 
       - name: Validate pipeline output
         run: |

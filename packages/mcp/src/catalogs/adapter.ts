@@ -11,6 +11,9 @@ export interface CatalogAdapter {
   /** Iterate over all datasets with automatic pagination */
   listDatasets(): AsyncIterable<DatasetRecord>;
 
+  /** Iterate over datasets modified since a timestamp (for incremental scoring). Optional. */
+  listDatasetsSince?(cursor: string): AsyncIterable<DatasetRecord>;
+
   /** Fetch a single dataset by its external (catalog-native) ID */
   getDataset(externalId: string): Promise<DatasetRecord | null>;
 }

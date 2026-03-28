@@ -46,6 +46,18 @@ export class CkanAdapter implements CatalogAdapter {
     this.logger.info("CkanAdapter: listed all datasets", { count });
   }
 
+  async *listDatasetsSince(cursor: string): AsyncIterable<DatasetRecord> {
+    let count = 0;
+    for await (const page of this.client.listPackagesSince(cursor)) {
+      for (const pkg of page) {
+        if (pkg.state && pkg.state !== "active") continue;
+        yield mapCkanPackage(pkg, this.options.catalogId);
+        count++;
+      }
+    }
+    this.logger.info("CkanAdapter: listed datasets since cursor", { cursor, count });
+  }
+
   async getDataset(externalId: string): Promise<DatasetRecord | null> {
     try {
       const pkg = await this.client.getPackage(externalId);

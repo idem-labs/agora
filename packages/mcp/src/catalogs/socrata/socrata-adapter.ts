@@ -47,6 +47,18 @@ export class SocrataAdapter implements CatalogAdapter {
     this.logger.info("SocrataAdapter: listed all datasets", { count });
   }
 
+  async *listDatasetsSince(cursor: string): AsyncIterable<DatasetRecord> {
+    let count = 0;
+    for await (const page of this.client.listDatasetsSince(cursor)) {
+      for (const result of page) {
+        if (result.resource.type && result.resource.type !== "dataset") continue;
+        yield mapSocrataResult(result, this.options.catalogId);
+        count++;
+      }
+    }
+    this.logger.info("SocrataAdapter: listed datasets since cursor", { cursor, count });
+  }
+
   async getDataset(externalId: string): Promise<DatasetRecord | null> {
     try {
       const result = await this.client.getDataset(externalId);

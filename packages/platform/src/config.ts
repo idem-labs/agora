@@ -17,10 +17,20 @@ export interface PipelineConfig {
   freshnessHalfLifeDays: number;
   /** Max datasets per catalog for accessibility HEAD checks (0 = all) */
   accessibilitySampleSize: number;
-  /** Max datasets to ingest per catalog (0 = unlimited) */
-  maxDatasetsPerCatalog: number;
-  /** CKAN page size for bulk listing (default: 1000) */
+  /** CKAN page size for bulk listing */
   ckanPageSize: number;
+  /** Time budget in minutes for the entire pipeline run */
+  budgetMin: number;
+  /** Preset processing order (first = highest priority) */
+  priorityPresets: string[];
+  /** Presets that get detail-tier scoring (per-dataset scores stored) */
+  detailPresets: string[];
+  /** Days before a completed sweep expires and needs re-scoring */
+  rescoreDays: number;
+  /** Datasets per catalog per run for aggregate tier (round-robin chunk) */
+  chunkSize: number;
+  /** Max time in minutes for a single catalog before moving on */
+  catalogTimeoutMin: number;
 }
 
 export function loadPipelineConfig(): PipelineConfig {
@@ -35,8 +45,13 @@ export function loadPipelineConfig(): PipelineConfig {
     catalogIds: env.AGORA_CATALOGS ? env.AGORA_CATALOGS.split(",").map((s) => s.trim()) : [],
     freshnessHalfLifeDays: parseIntEnv(env.AGORA_PIPELINE_FRESHNESS_HALF_LIFE_DAYS, 180),
     accessibilitySampleSize: parseIntEnv(env.AGORA_PIPELINE_ACCESSIBILITY_SAMPLE_SIZE, 50),
-    maxDatasetsPerCatalog: parseIntEnv(env.AGORA_PIPELINE_MAX_DATASETS, 10_000),
     ckanPageSize: parseIntEnv(env.AGORA_PIPELINE_CKAN_PAGE_SIZE, 1000),
+    budgetMin: parseIntEnv(env.AGORA_PIPELINE_BUDGET_MIN, 50),
+    priorityPresets: parseListEnv(env.AGORA_PIPELINE_PRIORITY, ["argentina", "latam", "all"]),
+    detailPresets: parseListEnv(env.AGORA_PIPELINE_DETAIL_PRESETS, ["argentina", "latam"]),
+    rescoreDays: parseIntEnv(env.AGORA_PIPELINE_RESCORE_DAYS, 7),
+    chunkSize: parseIntEnv(env.AGORA_PIPELINE_CHUNK_SIZE, 1000),
+    catalogTimeoutMin: parseIntEnv(env.AGORA_PIPELINE_CATALOG_TIMEOUT_MIN, 15),
   };
 }
 
@@ -44,4 +59,9 @@ function parseIntEnv(value: string | undefined, fallback: number): number {
   if (!value) return fallback;
   const parsed = parseInt(value, 10);
   return Number.isNaN(parsed) ? fallback : parsed;
+}
+
+function parseListEnv(value: string | undefined, fallback: string[]): string[] {
+  if (!value) return fallback;
+  return value.split(",").map((s) => s.trim()).filter(Boolean);
 }

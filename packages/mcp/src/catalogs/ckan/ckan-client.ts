@@ -42,9 +42,12 @@ export class CkanClient {
   async searchPackages(
     offset: number,
     rows?: number,
+    extra?: { fq?: string; sort?: string },
   ): Promise<CkanSearchResult> {
     const r = rows ?? this.pageSize;
-    const url = `${this.apiBase}/package_search?rows=${r}&start=${offset}`;
+    let url = `${this.apiBase}/package_search?rows=${r}&start=${offset}`;
+    if (extra?.fq) url += `&fq=${encodeURIComponent(extra.fq)}`;
+    if (extra?.sort) url += `&sort=${encodeURIComponent(extra.sort)}`;
     return this.get<CkanSearchResult>(url);
   }
 
@@ -91,6 +94,44 @@ export class CkanClient {
     }
 
     this.logger.info("CKAN pagination complete", { total: total ?? 0, pages: pageNum });
+  }
+
+  /**
+   * Iterate over packages modified since `cursor` (ISO timestamp),
+   * sorted by metadata_modified ascending. Used by the pipeline for
+   * incremental scoring with timestamp-based cursors.
+   */
+  async *listPackagesSince(
+    cursor: string,
+    rows?: number,
+  ): AsyncGenerator<CkanPackage[]> {
+    const fq = `metadata_modified:[${cursor} TO *]`;
+    const sort = "metadata_modified asc";
+    const r = rows ?? this.pageSize;
+    let offset = 0;
+    let total: number | null = null;
+    let pageNum = 0;
+
+    while (total === null || offset < total) {
+      if (pageNum > 0) {
+        await new Promise((resolve) => setTimeout(resolve, 200));
+      }
+
+      this.logger.debug("CKAN paginating (since)", { cursor, offset, pageSize: r, total, page: pageNum });
+
+      const result = await this.getWithRetry(() =>
+        this.searchPackages(offset, r, { fq, sort }),
+      );
+      total = result.count;
+
+      if (result.results.length === 0) break;
+      yield result.results;
+
+      offset += result.results.length;
+      pageNum++;
+    }
+
+    this.logger.info("CKAN pagination (since) complete", { cursor, total: total ?? 0, pages: pageNum });
   }
 
   /** Retry a request with exponential backoff on transient errors. */

@@ -22,6 +22,12 @@ export interface CatalogSummary {
     topFormats: Array<{ format: string; count: number }>;
   };
   scoredAt: string;
+  /** Scoring coverage 0-1 (1 = all datasets scored). Tier 3 catalogs may be partial. */
+  coverage?: number;
+  /** Number of datasets actually scored (may be < datasetCount for tier 3). */
+  datasetsScored?: number;
+  /** Processing tier: "detail" stores per-dataset scores, "aggregate" stores only averages. */
+  tier?: "detail" | "aggregate";
 }
 
 /** Per-catalog file: all dataset-level scores. */
@@ -30,6 +36,8 @@ export interface CatalogScores {
   scoredAt: string;
   datasetCount: number;
   datasets: QualityScore[];
+  /** Scoring coverage 0-1. */
+  coverage?: number;
 }
 
 /** Global run metadata. */
@@ -47,6 +55,17 @@ export interface PipelineMeta {
     headTimeoutMs: number;
     freshnessHalfLifeDays: number;
     accessibilitySampleSize: number;
+  };
+  /** Budget tracking (incremental pipeline). */
+  budgetMin?: number;
+  budgetUsedMin?: number;
+  catalogsSkipped?: number;
+  catalogsUnreachable?: number;
+  catalogsFresh?: number;
+  /** Coverage breakdown by tier. */
+  globalCoverage?: {
+    tier12: { catalogs: number; complete: number; pct: number };
+    tier3: { catalogs: number; avgCoverage: number };
   };
 }
 
