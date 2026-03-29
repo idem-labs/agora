@@ -119,12 +119,30 @@ export async function runPipeline(
   let catalogsFailed = 0;
   let totalDatasetsScored = 0;
 
+  // Track per-catalog results for final summary
+  const catalogResults: Array<{
+    id: string;
+    name: string;
+    tier: string;
+    status: "scored" | "skipped" | "failed" | "fresh" | "unreachable" | "budget";
+    datasetsScored: number;
+    coverage?: number;
+    durationMs?: number;
+    error?: string;
+  }> = [];
+
   for (const { entry, tier } of classified) {
     if (budget.isExhausted()) {
       logger.info("Budget exhausted, stopping", { remainingMin: budget.remainingMin() });
+      // Mark remaining catalogs as budget-stopped
+      const remaining = classified.filter((c) => !catalogResults.some((r) => r.id === c.entry.id));
+      for (const { entry: e, tier: t } of remaining) {
+        catalogResults.push({ id: e.id, name: e.name, tier: t, status: "budget", datasetsScored: 0 });
+      }
       break;
     }
 
+    const catalogStart = Date.now();
     const adapter = adapterMap.get(entry.id)!;
     const state = await readCatalogState(config.outputDir, entry.id);
 
@@ -134,7 +152,7 @@ export async function runPipeline(
       logger.info("Skipping catalog", { catalogId: entry.id, reason: skipDecision.reason });
       catalogsSkipped++;
       catalogsUnreachable++;
-      // Keep existing summary if available
+      catalogResults.push({ id: entry.id, name: entry.name, tier, status: "unreachable", datasetsScored: 0 });
       if (state) {
         const existingSummary = buildFallbackSummary(entry, state);
         if (existingSummary) summaries.push(existingSummary);
@@ -160,12 +178,16 @@ export async function runPipeline(
         allScores.push(result.scores);
         totalDatasetsScored += result.datasetsScored;
 
-        // Write incremental output
         await writeCatalogScores(config.outputDir, entry.id, result.scores);
         await writeCatalogDatasets(config.outputDir, entry.id, result.datasets);
         await writeCatalogState(config.outputDir, entry.id, result.state);
 
         catalogsProcessed++;
+        catalogResults.push({
+          id: entry.id, name: entry.name, tier, status: "scored",
+          datasetsScored: result.datasetsScored, coverage: 1.0,
+          durationMs: Date.now() - catalogStart,
+        });
         logger.info("Detail catalog completed", {
           catalogId: entry.id,
           datasetsScored: result.datasetsScored,
@@ -189,11 +211,19 @@ export async function runPipeline(
         if (result.skipped) {
           catalogsFresh++;
           catalogsSkipped++;
+          catalogResults.push({
+            id: entry.id, name: entry.name, tier, status: "fresh",
+            datasetsScored: 0, coverage: result.state.coverage,
+          });
         } else {
-          // Write incremental output
           await writeCatalogScores(config.outputDir, entry.id, result.scores);
           await writeCatalogState(config.outputDir, entry.id, result.state);
           catalogsProcessed++;
+          catalogResults.push({
+            id: entry.id, name: entry.name, tier, status: "scored",
+            datasetsScored: result.datasetsScored, coverage: result.state.coverage,
+            durationMs: Date.now() - catalogStart,
+          });
         }
 
         logger.info("Aggregate catalog completed", {
@@ -206,13 +236,17 @@ export async function runPipeline(
       }
     } catch (error) {
       catalogsFailed++;
+      catalogResults.push({
+        id: entry.id, name: entry.name, tier, status: "failed",
+        datasetsScored: 0, error: String(error),
+        durationMs: Date.now() - catalogStart,
+      });
       logger.error("Catalog processing failed", {
         catalogId: entry.id,
         tier,
         error: String(error),
       });
 
-      // Record failure
       const updatedState = recordFailure(
         state ?? { tier, status: "ok", consecutiveFailures: 0, lastRunAt: null } as CatalogState,
         String(error),
@@ -275,6 +309,53 @@ export async function runPipeline(
     durationMs: meta.durationMs,
     budgetUsedMin: meta.budgetUsedMin,
   });
+
+  // ── Human-readable summary ──
+  const lines = [
+    "",
+    "=== Pipeline Run Summary ===",
+    `Duration: ${meta.budgetUsedMin} min / ${config.budgetMin} min budget`,
+    `Catalogs: ${catalogsProcessed} processed, ${catalogsSkipped} skipped, ${catalogsFailed} failed`,
+    `Datasets scored: ${totalDatasetsScored.toLocaleString()}`,
+    "",
+  ];
+
+  const scored = catalogResults.filter((r) => r.status === "scored");
+  if (scored.length > 0) {
+    lines.push("Scored:");
+    for (const r of scored) {
+      const cov = r.coverage != null && r.coverage < 1 ? ` (${Math.round(r.coverage * 100)}%)` : "";
+      const dur = r.durationMs ? ` [${Math.round(r.durationMs / 1000)}s]` : "";
+      lines.push(`  + ${r.name} — ${r.datasetsScored} datasets${cov}${dur}`);
+    }
+  }
+
+  const fresh = catalogResults.filter((r) => r.status === "fresh");
+  if (fresh.length > 0) {
+    lines.push("Fresh (skipped):");
+    for (const r of fresh) lines.push(`  ~ ${r.name}`);
+  }
+
+  const failed = catalogResults.filter((r) => r.status === "failed");
+  if (failed.length > 0) {
+    lines.push("Failed:");
+    for (const r of failed) lines.push(`  x ${r.name} — ${r.error}`);
+  }
+
+  const unreachable = catalogResults.filter((r) => r.status === "unreachable");
+  if (unreachable.length > 0) {
+    lines.push("Unreachable:");
+    for (const r of unreachable) lines.push(`  - ${r.name}`);
+  }
+
+  const budgetStopped = catalogResults.filter((r) => r.status === "budget");
+  if (budgetStopped.length > 0) {
+    lines.push("Not reached (budget):");
+    for (const r of budgetStopped) lines.push(`  . ${r.name} [${r.tier}]`);
+  }
+
+  lines.push("============================", "");
+  for (const line of lines) logger.info(line);
 }
 
 // ---------------------------------------------------------------------------
