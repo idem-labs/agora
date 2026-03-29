@@ -120,7 +120,7 @@ export class AnalysisEngine {
         url,
         contentLength: probe.contentLength,
       });
-      csvExpr = csvAutoExprUrl(url);
+      csvExpr = csvAutoExpr(url);
     } else {
       const cached = await this.fileCache.get(url);
       const detected = await this.detectEncoding(cached.path);
@@ -205,7 +205,7 @@ export class AnalysisEngine {
           contentLength: probe.contentLength,
         });
         await conn.run(
-          `CREATE TABLE datos AS SELECT * FROM ${csvAutoExprUrl(url)}`,
+          `CREATE TABLE datos AS SELECT * FROM ${csvAutoExpr(url)}`,
         );
       } else {
         // Standard path: download to cache, load from disk
@@ -389,15 +389,9 @@ export class AnalysisEngine {
 // Utility functions
 // ---------------------------------------------------------------------------
 
-/** Build a read_csv_auto expression for a local file path. */
-function csvAutoExpr(filePath: string): string {
-  const escaped = filePath.replace(/\\/g, "/").replace(/'/g, "''");
-  return `read_csv_auto('${escaped}')`;
-}
-
-/** Build a read_csv_auto expression for a remote URL (via DuckDB httpfs). */
-function csvAutoExprUrl(url: string): string {
-  const escaped = url.replace(/'/g, "''");
+/** Build a read_csv_auto expression for a local file path or remote URL. */
+function csvAutoExpr(pathOrUrl: string): string {
+  const escaped = pathOrUrl.replace(/\\/g, "/").replace(/'/g, "''");
   return `read_csv_auto('${escaped}')`;
 }
 

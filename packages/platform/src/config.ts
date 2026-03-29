@@ -15,7 +15,7 @@ export interface PipelineConfig {
   catalogIds: string[];
   /** Freshness half-life in days (score = 0.5 at this age) */
   freshnessHalfLifeDays: number;
-  /** Max datasets per catalog for accessibility HEAD checks (0 = all) */
+  /** Max datasets per catalog for accessibility HEAD checks (0 = all). Not yet enforced. */
   accessibilitySampleSize: number;
   /** CKAN page size for bulk listing */
   ckanPageSize: number;
@@ -29,7 +29,7 @@ export interface PipelineConfig {
   rescoreDays: number;
   /** Datasets per catalog per run for aggregate tier (round-robin chunk) */
   chunkSize: number;
-  /** Max time in minutes for a single catalog before moving on */
+  /** Max time in minutes for a single catalog before moving on. Not yet enforced. */
   catalogTimeoutMin: number;
 }
 

@@ -72,7 +72,7 @@ function Header() {
             Ranking
           </a>
           <a
-            href="https://github.com/idemfede/agora-dev"
+            href="https://github.com/idemfede/agora"
             target="_blank"
             rel="noopener noreferrer"
             className="text-slate-600 transition-colors hover:text-brand-700"

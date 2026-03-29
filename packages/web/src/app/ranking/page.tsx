@@ -2,13 +2,12 @@ import { getCatalogs } from "@/lib/data";
 import { RankingTable } from "./ranking-table";
 
 export const metadata = {
-  title: "Catalog Ranking — Agora",
+  title: "Catalog Ranking",
   description: "Government open data portals ranked by quality score.",
 };
 
 export default async function RankingPage() {
   const catalogs = await getCatalogs();
-  const sorted = [...catalogs].sort((a, b) => b.scores.overall - a.scores.overall);
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-10">
@@ -17,7 +16,7 @@ export default async function RankingPage() {
         {catalogs.length} government open data portals ranked by automated quality analysis.
       </p>
 
-      <RankingTable catalogs={sorted} />
+      <RankingTable catalogs={catalogs} />
     </div>
   );
 }

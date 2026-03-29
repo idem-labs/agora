@@ -46,17 +46,3 @@ export function recordFailure(state: CatalogState, reason: string): CatalogState
     lastFailureReason: reason,
   };
 }
-
-/**
- * Record a success for a catalog. Resets failure counter.
- */
-export function recordSuccess(state: CatalogState): CatalogState {
-  return {
-    ...state,
-    consecutiveFailures: 0,
-    status: "ok",
-    lastRunAt: new Date().toISOString(),
-    lastFailure: undefined,
-    lastFailureReason: undefined,
-  };
-}

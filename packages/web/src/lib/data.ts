@@ -22,9 +22,13 @@ export async function getCatalogById(id: string): Promise<CatalogSummary | undef
 }
 
 export async function getCatalogScores(catalogId: string): Promise<CatalogScores> {
-  return readJson<CatalogScores>(
-    join(DATA_DIR, "catalogs", catalogId, "scores.json"),
-  );
+  try {
+    return await readJson<CatalogScores>(
+      join(DATA_DIR, "catalogs", catalogId, "scores.json"),
+    );
+  } catch {
+    return { catalogId, scoredAt: "", datasetCount: 0, datasets: [] };
+  }
 }
 
 export async function getMeta(): Promise<PipelineMeta> {

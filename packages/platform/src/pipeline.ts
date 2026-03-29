@@ -20,6 +20,8 @@ import {
   type CatalogEntry,
   type Logger,
 } from "agora-mcp/lib";
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 import type { PipelineConfig } from "./config.js";
 import type { CatalogState } from "./state/types.js";
 import { readCatalogState, writeCatalogState, readDatasetsFile } from "./state/state-store.js";
@@ -98,6 +100,16 @@ export async function runPipeline(
     logger.info("Orphaned catalogs cleaned", { removed });
   }
 
+  // ── Read existing summaries for fallback (unreachable catalogs keep last known scores) ──
+  let existingSummaries = new Map<string, CatalogSummary>();
+  try {
+    const raw = await readFile(join(config.outputDir, "catalogs.json"), "utf-8");
+    const data = JSON.parse(raw) as CatalogsOutput;
+    existingSummaries = new Map(data.catalogs.map((c) => [c.id, c]));
+  } catch {
+    // First run or missing file — no fallback available
+  }
+
   // ── Create scorers ──
   const pureScorers = [
     new CompletenessScorer(),
@@ -153,9 +165,12 @@ export async function runPipeline(
       catalogsSkipped++;
       catalogsUnreachable++;
       catalogResults.push({ id: entry.id, name: entry.name, tier, status: "unreachable", datasetsScored: 0 });
-      if (state) {
-        const existingSummary = buildFallbackSummary(entry, state);
-        if (existingSummary) summaries.push(existingSummary);
+      const existing = existingSummaries.get(entry.id);
+      if (existing) {
+        summaries.push(existing);
+      } else if (state) {
+        const fallback = buildFallbackSummary(entry, state);
+        if (fallback) summaries.push(fallback);
       }
       continue;
     }
@@ -290,7 +305,7 @@ export async function runPipeline(
     globalCoverage: {
       tier12: {
         catalogs: detailCatalogs.length,
-        complete: detailCatalogs.length - catalogsFailed,
+        complete: detailCatalogs.length - catalogResults.filter((r) => r.tier === "detail" && r.status === "failed").length,
         pct: 1.0,
       },
       tier3: {

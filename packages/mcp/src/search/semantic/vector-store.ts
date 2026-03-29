@@ -26,6 +26,7 @@ export interface VectorStore {
  */
 export class VectraVectorStore implements VectorStore {
   private readonly index: LocalIndex;
+  private _count = 0;
 
   constructor(
     private readonly indexPath: string,
@@ -40,10 +41,13 @@ export class VectraVectorStore implements VectorStore {
         version: 1,
         metadata_config: { indexed: ["catalogId"] },
       });
+      this._count = 0;
       this.logger.info("VectorStore: created new index", {
         path: this.indexPath,
       });
     } else {
+      const items = await this.index.listItems();
+      this._count = items.length;
       this.logger.info("VectorStore: loaded existing index", {
         path: this.indexPath,
       });
@@ -65,6 +69,8 @@ export class VectraVectorStore implements VectorStore {
         });
       }
       await this.index.endUpdate();
+      const updated = await this.index.listItems();
+      this._count = updated.length;
       this.logger.info("VectorStore: upserted items", {
         count: items.length,
       });
@@ -92,7 +98,6 @@ export class VectraVectorStore implements VectorStore {
   }
 
   async itemCount(): Promise<number> {
-    const items = await this.index.listItems();
-    return items.length;
+    return this._count;
   }
 }

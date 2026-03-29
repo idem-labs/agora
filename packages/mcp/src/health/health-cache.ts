@@ -138,9 +138,18 @@ export class HealthCache {
 
   /**
    * Get all cached health data for a catalog (for search annotation).
+   * Filters out stale entries beyond TTL.
    */
   getAllCached(catalogId: string): Record<string, ResourceHealth> {
-    return this.loadCatalog(catalogId).resources;
+    const data = this.loadCatalog(catalogId);
+    const now = Date.now();
+    const result: Record<string, ResourceHealth> = {};
+    for (const [url, entry] of Object.entries(data.resources)) {
+      if (now - new Date(entry.checkedAt).getTime() <= this.ttlMs) {
+        result[url] = entry;
+      }
+    }
+    return result;
   }
 
   // -------------------------------------------------------------------------

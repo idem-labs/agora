@@ -31,11 +31,11 @@ export const QualityScore = z.object({
 });
 export type QualityScore = z.infer<typeof QualityScore>;
 
-/** Weights per dimension — must sum to 1.0 */
+/** Weights per dimension — active weights sum to 1.0 (usability deferred to Phase 5). */
 export const QUALITY_WEIGHTS: Record<QualityDimension, number> = {
-  accessibility: 0.25,
-  structure: 0.25,
-  freshness: 0.2,
-  usability: 0.2,
-  completeness: 0.1,
+  accessibility: 0.3125,
+  structure: 0.3125,
+  freshness: 0.25,
+  completeness: 0.125,
+  usability: 0,
 };

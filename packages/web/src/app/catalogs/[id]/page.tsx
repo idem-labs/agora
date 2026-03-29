@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
   const catalog = await getCatalogById(id);
   return {
-    title: catalog ? `${catalog.name} — Agora` : "Catalog — Agora",
+    title: catalog ? catalog.name : "Catalog",
     description: catalog
       ? `Quality analysis of ${catalog.name}: ${catalog.datasetCount} datasets scored.`
       : undefined,

@@ -4,14 +4,11 @@ import {
   CatalogType,
   Resource,
   DatasetRecord,
-  SearchEvent,
-  QueryEvent,
-  UsageEvent,
-  EventBatch,
   QualityDimension,
   QualityScore,
   QUALITY_WEIGHTS,
 } from "./index.js";
+import { SearchEvent, QueryEvent, UsageEvent, EventBatch } from "./events.js";
 
 describe("catalog schemas", () => {
   it("validates a CatalogType", () => {

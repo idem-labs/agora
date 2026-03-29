@@ -61,16 +61,6 @@ export async function readDatasetsFile(
   }
 }
 
-export async function writeDatasetsFile(
-  outputDir: string,
-  catalogId: string,
-  data: DatasetsFile,
-): Promise<void> {
-  const dir = join(outputDir, "catalogs", catalogId);
-  await mkdir(dir, { recursive: true });
-  await writeFile(datasetsPath(outputDir, catalogId), JSON.stringify(data, null, 2), "utf-8");
-}
-
 // ---------------------------------------------------------------------------
 // Directory operations (for cleanup)
 // ---------------------------------------------------------------------------

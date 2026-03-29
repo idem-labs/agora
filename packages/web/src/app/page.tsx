@@ -28,7 +28,7 @@ export default async function Home() {
               View ranking
             </a>
             <a
-              href="https://github.com/idemfede/agora-dev"
+              href="https://github.com/idemfede/agora"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-lg border border-brand-400 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-brand-800"

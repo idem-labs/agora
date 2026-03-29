@@ -81,10 +81,10 @@ export async function processAggregateCatalog(
     aggregates = { ...state.aggregates };
     processedCount = state.processedCount;
   } else if (state?.complete && state.lastCompleteSweep) {
-    // Re-sweep: only datasets modified since last complete sweep
+    // Re-sweep: re-score from last complete sweep with fresh aggregates
     cursor = state.lastCompleteSweep;
-    aggregates = { ...state.aggregates };
-    processedCount = state.processedCount;
+    aggregates = {};
+    processedCount = 0;
   } else {
     // First run: start from epoch
     cursor = "1970-01-01T00:00:00Z";
@@ -103,7 +103,7 @@ export async function processAggregateCatalog(
     : adapter.listDatasets();
 
   for await (const ds of iterator) {
-    if (chunkCount >= config.chunkSize) break;
+    if (config.chunkSize > 0 && chunkCount >= config.chunkSize) break;
 
     // Score with pure scorers
     const dims = await Promise.all(pureScorers.map((s) => s.score(ds)));
@@ -122,8 +122,6 @@ export async function processAggregateCatalog(
       aggregates[dim.dimension] = agg;
     }
 
-    computeOverall(dims);
-
     // Track cursor position
     if (ds.modifiedAt && ds.modifiedAt > lastModifiedAt) {
       lastModifiedAt = ds.modifiedAt;
@@ -135,7 +133,7 @@ export async function processAggregateCatalog(
   processedCount += chunkCount;
 
   // Detect completion: chunk was smaller than requested
-  const complete = chunkCount < config.chunkSize;
+  const complete = config.chunkSize === 0 || chunkCount < config.chunkSize;
 
   // Get total known from API (first page gives count)
   // We approximate with processedCount if complete, else keep previous
