@@ -77,7 +77,12 @@ export function RankingTable({ catalogs }: { catalogs: CatalogSummary[] }) {
                 </a>
               </td>
               <td className="px-3 py-3 text-right tabular-nums text-slate-600">
-                {cat.datasetCount.toLocaleString()}
+                <span>{cat.datasetCount.toLocaleString()}</span>
+                {cat.coverage != null && cat.coverage < 1 && (
+                  <span className="ml-1.5 inline-flex items-center rounded-full bg-amber-50 px-1.5 py-0.5 text-[10px] font-medium text-amber-700">
+                    {Math.round(cat.coverage * 100)}%
+                  </span>
+                )}
               </td>
               <td className="px-3 py-3">
                 <div className="flex items-center gap-2">

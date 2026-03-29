@@ -81,6 +81,25 @@ export default async function CatalogPage({ params }: Props) {
         </div>
       </div>
 
+      {/* Coverage indicator */}
+      {catalog.coverage != null && catalog.coverage < 1 && (
+        <div className="mt-6 flex items-center gap-3 rounded-lg border border-amber-200 bg-amber-50 px-4 py-3">
+          <div className="flex-1">
+            <div className="flex items-center justify-between text-sm">
+              <span className="font-medium text-amber-800">
+                Scoring in progress: {catalog.datasetsScored?.toLocaleString() ?? 0} of {catalog.datasetCount.toLocaleString()} datasets ({Math.round(catalog.coverage * 100)}%)
+              </span>
+            </div>
+            <div className="mt-1.5 h-1.5 w-full overflow-hidden rounded-full bg-amber-200">
+              <div
+                className="h-full rounded-full bg-amber-500 transition-all"
+                style={{ width: `${Math.round(catalog.coverage * 100)}%` }}
+              />
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Stats row */}
       <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
         <StatCard
@@ -138,10 +157,23 @@ export default async function CatalogPage({ params }: Props) {
       <h2 className="mt-10 text-lg font-semibold text-slate-900">
         Datasets
         <span className="ml-2 text-sm font-normal text-slate-400">
-          {scores.datasetCount}
+          {scores.datasets.length > 0
+            ? scores.datasets.length.toLocaleString()
+            : scores.datasetCount.toLocaleString()}
         </span>
       </h2>
-      <DatasetList datasets={scores.datasets} />
+      {scores.datasets.length > 0 ? (
+        <DatasetList datasets={scores.datasets} />
+      ) : (
+        <div className="mt-4 rounded-lg border border-slate-200 bg-slate-50 px-6 py-8 text-center">
+          <p className="text-sm text-slate-500">
+            Individual dataset scores are not available for this catalog.
+          </p>
+          <p className="mt-1 text-xs text-slate-400">
+            Large catalogs are scored in aggregate. Catalog-level scores are shown above.
+          </p>
+        </div>
+      )}
     </div>
   );
 }
