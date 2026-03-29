@@ -4,9 +4,38 @@ import type { Logger } from "./logger.js";
 import type { CatalogRegistry } from "./catalogs/catalog-registry.js";
 import type { IngestionService } from "./ingestion-service.js";
 import type { HybridSearchEngine } from "./search/search-engine.js";
-import type { AnalysisEngine } from "./analysis/analysis-engine.js";
+import type { AnalysisEngine, ColumnInfo } from "./analysis/analysis-engine.js";
 import { SqlSanitizationError } from "./analysis/sql-sanitizer.js";
 import type { HealthCache } from "./health/health-cache.js";
+
+/** Generate 2-3 sample SQL queries based on column types for inspeccionar_recurso. */
+function generateSampleQueries(columns: ColumnInfo[]): string[] {
+  const queries: string[] = [];
+  queries.push(`SELECT COUNT(*) AS total FROM datos`);
+
+  // Find numeric columns for aggregation
+  const numericCols = columns.filter((c) =>
+    /int|float|double|decimal|numeric|bigint|real/i.test(c.type),
+  );
+  if (numericCols.length > 0) {
+    const col = numericCols[0].name;
+    queries.push(`SELECT AVG("${col}") AS promedio, MIN("${col}") AS min, MAX("${col}") AS max FROM datos`);
+  }
+
+  // Find text columns for grouping
+  const textCols = columns.filter((c) => /varchar|text|string/i.test(c.type));
+  if (textCols.length > 0) {
+    const col = textCols[0].name;
+    queries.push(`SELECT "${col}", COUNT(*) AS cantidad FROM datos GROUP BY "${col}" ORDER BY cantidad DESC LIMIT 10`);
+  }
+
+  return queries;
+}
+
+/** Format column schema as compact string for error context. */
+function formatSchema(columns: ColumnInfo[]): string {
+  return columns.map((c) => `${c.name} (${c.type})`).join(", ");
+}
 
 export function registerTools(
   server: McpServer,
@@ -182,6 +211,17 @@ export function registerTools(
           for (const row of result.preview) {
             const cells = headers.map((h) => String(row[h] ?? ""));
             lines.push("| " + cells.join(" | ") + " |");
+          }
+        }
+
+        // Sample queries based on detected columns
+        const samples = generateSampleQueries(result.columns);
+        if (samples.length > 0) {
+          lines.push("");
+          lines.push("### Consultas sugeridas");
+          lines.push("");
+          for (const q of samples) {
+            lines.push(`- \`${q}\``);
           }
         }
 
@@ -379,8 +419,20 @@ export function registerTools(
           err instanceof SqlSanitizationError
             ? err.message
             : `Error al ejecutar consulta: ${err instanceof Error ? err.message : String(err)}`;
+
+        // Include table schema in error to avoid re-inspecting
+        let schemaHint = "";
+        if (args.url) {
+          try {
+            const info = await analysisEngine.inspect(args.url);
+            schemaHint = `\n\nSchema de la tabla 'datos': ${formatSchema(info.columns)}`;
+          } catch {
+            // Best effort — don't fail the error response
+          }
+        }
+
         return {
-          content: [{ type: "text" as const, text: msg }],
+          content: [{ type: "text" as const, text: msg + schemaHint }],
           isError: true,
         };
       }

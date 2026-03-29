@@ -270,6 +270,43 @@ export async function runPipeline(
     }
   }
 
+  // ── Add placeholder entries for unprocessed catalogs ──
+  const processedIds = new Set(summaries.map((s) => s.id));
+  for (const { entry, tier } of classified) {
+    if (!processedIds.has(entry.id)) {
+      // Check if there's an existing summary from a previous run
+      const existing = existingSummaries.get(entry.id);
+      if (existing) {
+        summaries.push(existing);
+      } else {
+        summaries.push({
+          id: entry.id,
+          name: entry.name,
+          url: entry.url,
+          protocol: entry.protocol,
+          country: entry.country,
+          language: entry.language,
+          datasetCount: 0,
+          resourceCount: 0,
+          scores: {
+            overall: 0,
+            accessibility: 0,
+            structure: 0,
+            freshness: 0,
+            completeness: 0,
+            usability: 0,
+          },
+          stats: { accessiblePct: 0, medianFreshnessDays: null, topFormats: [] },
+          scoredAt: new Date().toISOString(),
+          coverage: 0,
+          datasetsScored: 0,
+          tier,
+          status: "pending",
+        });
+      }
+    }
+  }
+
   // ── Write global output ──
   const completedAt = new Date();
 

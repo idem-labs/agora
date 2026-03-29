@@ -28,6 +28,8 @@ export interface CatalogSummary {
   datasetsScored?: number;
   /** Processing tier: "detail" stores per-dataset scores, "aggregate" stores only averages. */
   tier?: "detail" | "aggregate";
+  /** Processing status: "scored" = has real scores, "pending" = not yet processed. */
+  status?: "scored" | "pending";
 }
 
 /** Per-catalog file: all dataset-level scores. */

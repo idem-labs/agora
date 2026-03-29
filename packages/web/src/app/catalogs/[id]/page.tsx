@@ -11,7 +11,7 @@ interface Props {
 
 export async function generateStaticParams() {
   const catalogs = await getCatalogs();
-  return catalogs.map((c) => ({ id: c.id }));
+  return catalogs.filter((c) => c.status !== "pending").map((c) => ({ id: c.id }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

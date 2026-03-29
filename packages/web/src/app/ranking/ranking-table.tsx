@@ -21,7 +21,12 @@ export function RankingTable({ catalogs }: { catalogs: CatalogSummary[] }) {
     }
   }
 
+  const isPending = (c: CatalogSummary) => c.status === "pending";
+
   const sorted = [...catalogs].sort((a, b) => {
+    // Pending catalogs always sort to the bottom
+    if (isPending(a) !== isPending(b)) return isPending(a) ? 1 : -1;
+
     let va: number | string;
     let vb: number | string;
     switch (sortKey) {
@@ -60,52 +65,70 @@ export function RankingTable({ catalogs }: { catalogs: CatalogSummary[] }) {
           </tr>
         </thead>
         <tbody className="divide-y divide-slate-100">
-          {sorted.map((cat, i) => (
-            <tr key={cat.id} className="transition hover:bg-slate-50">
-              <td className="px-3 py-3 font-medium text-slate-400">{i + 1}</td>
+          {sorted.map((cat, i) => {
+            const pending = isPending(cat);
+            return (
+            <tr key={cat.id} className={`transition hover:bg-slate-50 ${pending ? "opacity-60" : ""}`}>
+              <td className="px-3 py-3 font-medium text-slate-400">{pending ? "—" : i + 1}</td>
               <td className="px-3 py-3">
-                <a href={`/catalogs/${cat.id}`} className="group flex items-center gap-2">
+                <a href={pending ? undefined : `/catalogs/${cat.id}`} className={`group flex items-center gap-2 ${pending ? "pointer-events-none" : ""}`}>
                   <span className="text-base">{COUNTRY_FLAGS[cat.country] || "🌐"}</span>
                   <div>
-                    <span className="font-medium text-slate-900 group-hover:text-brand-700">
+                    <span className={`font-medium ${pending ? "text-slate-500" : "text-slate-900 group-hover:text-brand-700"}`}>
                       {cat.name}
                     </span>
                     <span className="ml-2 text-xs text-slate-400">
                       {cat.protocol.toUpperCase()}
                     </span>
+                    {pending && (
+                      <span className="ml-2 inline-flex items-center rounded-full bg-slate-100 px-1.5 py-0.5 text-[10px] font-medium text-slate-500">
+                        pendiente
+                      </span>
+                    )}
                   </div>
                 </a>
               </td>
               <td className="px-3 py-3 text-right tabular-nums text-slate-600">
-                <span>{cat.datasetCount.toLocaleString()}</span>
-                {cat.coverage != null && cat.coverage < 1 && (
-                  <span className="ml-1.5 inline-flex items-center rounded-full bg-amber-50 px-1.5 py-0.5 text-[10px] font-medium text-amber-700">
-                    {Math.round(cat.coverage * 100)}%
-                  </span>
+                {pending ? (
+                  <span className="text-slate-400">—</span>
+                ) : (
+                  <>
+                    <span>{cat.datasetCount.toLocaleString()}</span>
+                    {cat.coverage != null && cat.coverage < 1 && (
+                      <span className="ml-1.5 inline-flex items-center rounded-full bg-amber-50 px-1.5 py-0.5 text-[10px] font-medium text-amber-700">
+                        {Math.round(cat.coverage * 100)}%
+                      </span>
+                    )}
+                  </>
                 )}
               </td>
               <td className="px-3 py-3">
-                <div className="flex items-center gap-2">
-                  <div className="w-20">
-                    <ScoreBar score={cat.scores.overall} />
+                {pending ? (
+                  <span className="text-xs text-slate-400">Sin evaluar</span>
+                ) : (
+                  <div className="flex items-center gap-2">
+                    <div className="w-20">
+                      <ScoreBar score={cat.scores.overall} />
+                    </div>
+                    <ScoreBadge score={cat.scores.overall} size="sm" />
                   </div>
-                  <ScoreBadge score={cat.scores.overall} size="sm" />
-                </div>
+                )}
               </td>
               <td className="hidden px-3 py-3 lg:table-cell">
-                <MiniScore score={cat.scores.accessibility} />
+                {pending ? null : <MiniScore score={cat.scores.accessibility} />}
               </td>
               <td className="hidden px-3 py-3 lg:table-cell">
-                <MiniScore score={cat.scores.structure} />
+                {pending ? null : <MiniScore score={cat.scores.structure} />}
               </td>
               <td className="hidden px-3 py-3 lg:table-cell">
-                <MiniScore score={cat.scores.freshness} />
+                {pending ? null : <MiniScore score={cat.scores.freshness} />}
               </td>
               <td className="hidden px-3 py-3 lg:table-cell">
-                <MiniScore score={cat.scores.completeness} />
+                {pending ? null : <MiniScore score={cat.scores.completeness} />}
               </td>
             </tr>
-          ))}
+            );
+          })}
         </tbody>
       </table>
     </div>

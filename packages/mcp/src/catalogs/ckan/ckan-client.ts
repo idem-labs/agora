@@ -1,4 +1,5 @@
 import type { Logger } from "../../logger.js";
+import { CircuitBreaker, CircuitBreakerError, jitteredBackoff } from "../../circuit-breaker.js";
 import type {
   CkanPackage,
   CkanResponse,
@@ -18,12 +19,15 @@ export interface CkanClientOptions {
   maxRetries?: number;
 }
 
+export { CircuitBreakerError };
+
 export class CkanClient {
   private readonly baseUrl: string;
   private readonly apiBase: string;
   private readonly timeoutMs: number;
   private readonly pageSize: number;
   private readonly maxRetries: number;
+  private readonly breaker: CircuitBreaker;
 
   constructor(
     private readonly options: CkanClientOptions,
@@ -36,6 +40,7 @@ export class CkanClient {
     this.timeoutMs = options.timeoutMs ?? 30_000;
     this.pageSize = options.pageSize ?? 25;
     this.maxRetries = options.maxRetries ?? 3;
+    this.breaker = new CircuitBreaker(`ckan:${this.baseUrl}`);
   }
 
   /** Fetch a single page of package_search results */
@@ -134,16 +139,18 @@ export class CkanClient {
     this.logger.info("CKAN pagination (since) complete", { cursor, total: total ?? 0, pages: pageNum });
   }
 
-  /** Retry a request with exponential backoff on transient errors. */
+  /** Retry a request with jittered exponential backoff on transient errors. */
   private async getWithRetry<T>(fn: () => Promise<T>): Promise<T> {
     let lastError: unknown;
     for (let attempt = 0; attempt <= this.maxRetries; attempt++) {
       try {
         return await fn();
       } catch (error) {
+        // Don't retry if circuit breaker is open
+        if (error instanceof CircuitBreakerError) throw error;
         lastError = error;
         if (attempt < this.maxRetries) {
-          const delayMs = 1000 * 2 ** attempt; // 1s, 2s, 4s
+          const delayMs = jitteredBackoff(attempt);
           this.logger.warn("CKAN request failed, retrying", {
             attempt: attempt + 1,
             maxRetries: this.maxRetries,
@@ -160,35 +167,37 @@ export class CkanClient {
   private async get<T>(url: string): Promise<T> {
     this.logger.debug("CKAN GET", { url });
 
-    const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), this.timeoutMs);
+    return this.breaker.execute(async () => {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), this.timeoutMs);
 
-    try {
-      const response = await fetch(url, {
-        signal: controller.signal,
-        headers: { "User-Agent": "agora-mcp/0.1" },
-      });
+      try {
+        const response = await fetch(url, {
+          signal: controller.signal,
+          headers: { "User-Agent": "agora-mcp/0.1" },
+        });
 
-      if (!response.ok) {
-        throw new Error(`CKAN HTTP ${response.status}: ${response.statusText}`);
+        if (!response.ok) {
+          throw new Error(`CKAN HTTP ${response.status}: ${response.statusText}`);
+        }
+
+        const body = (await response.json()) as CkanResponse<T>;
+
+        if (!body.success) {
+          throw new Error(
+            `CKAN API error: ${body.error?.message ?? "unknown error"}`,
+          );
+        }
+
+        return body.result;
+      } catch (error) {
+        if (error instanceof DOMException && error.name === "AbortError") {
+          throw new Error(`CKAN request timed out after ${this.timeoutMs}ms`, { cause: error });
+        }
+        throw error;
+      } finally {
+        clearTimeout(timer);
       }
-
-      const body = (await response.json()) as CkanResponse<T>;
-
-      if (!body.success) {
-        throw new Error(
-          `CKAN API error: ${body.error?.message ?? "unknown error"}`,
-        );
-      }
-
-      return body.result;
-    } catch (error) {
-      if (error instanceof DOMException && error.name === "AbortError") {
-        throw new Error(`CKAN request timed out after ${this.timeoutMs}ms`, { cause: error });
-      }
-      throw error;
-    } finally {
-      clearTimeout(timer);
-    }
+    });
   }
 }

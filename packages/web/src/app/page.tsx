@@ -5,7 +5,7 @@ import { StatCard } from "@/components/stat-card";
 
 export default async function Home() {
   const [stats, catalogs] = await Promise.all([getGlobalStats(), getCatalogs()]);
-  const topCatalogs = [...catalogs].sort((a, b) => b.scores.overall - a.scores.overall).slice(0, 5);
+  const topCatalogs = catalogs.filter((c) => c.status !== "pending").sort((a, b) => b.scores.overall - a.scores.overall).slice(0, 5);
 
   return (
     <div>

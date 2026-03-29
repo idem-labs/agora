@@ -37,16 +37,17 @@ export async function getMeta(): Promise<PipelineMeta> {
 
 export async function getGlobalStats() {
   const catalogs = await getCatalogs();
+  const scored = catalogs.filter((c) => c.status !== "pending");
 
-  const totalDatasets = catalogs.reduce((s, c) => s + c.datasetCount, 0);
-  const totalResources = catalogs.reduce((s, c) => s + c.resourceCount, 0);
+  const totalDatasets = scored.reduce((s, c) => s + c.datasetCount, 0);
+  const totalResources = scored.reduce((s, c) => s + c.resourceCount, 0);
   const avgOverall =
-    catalogs.length > 0
-      ? catalogs.reduce((s, c) => s + c.scores.overall, 0) / catalogs.length
+    scored.length > 0
+      ? scored.reduce((s, c) => s + c.scores.overall, 0) / scored.length
       : 0;
   const avgAccessibility =
-    catalogs.length > 0
-      ? catalogs.reduce((s, c) => s + c.scores.accessibility, 0) / catalogs.length
+    scored.length > 0
+      ? scored.reduce((s, c) => s + c.scores.accessibility, 0) / scored.length
       : 0;
 
   return {

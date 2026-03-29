@@ -1,4 +1,5 @@
 import type { Logger } from "../../logger.js";
+import { CircuitBreaker, CircuitBreakerError, jitteredBackoff } from "../../circuit-breaker.js";
 import type {
   SocrataDiscoveryResponse,
   SocrataResult,
@@ -25,6 +26,7 @@ export class SocrataClient {
   private readonly timeoutMs: number;
   private readonly pageSize: number;
   private readonly maxRetries: number;
+  private readonly breaker: CircuitBreaker;
 
   constructor(
     private readonly options: SocrataClientOptions,
@@ -35,6 +37,7 @@ export class SocrataClient {
     this.timeoutMs = options.timeoutMs ?? 30_000;
     this.pageSize = options.pageSize ?? 100;
     this.maxRetries = options.maxRetries ?? 3;
+    this.breaker = new CircuitBreaker(`socrata:${this.domain}`);
   }
 
   /** Fetch a single page of datasets from the Discovery API */
@@ -140,16 +143,17 @@ export class SocrataClient {
     this.logger.info("Socrata pagination (since) complete", { cursor, total: total ?? 0, pages: pageNum });
   }
 
-  /** Retry a request with exponential backoff on transient errors. */
+  /** Retry a request with jittered exponential backoff on transient errors. */
   private async getWithRetry<T>(fn: () => Promise<T>): Promise<T> {
     let lastError: unknown;
     for (let attempt = 0; attempt <= this.maxRetries; attempt++) {
       try {
         return await fn();
       } catch (error) {
+        if (error instanceof CircuitBreakerError) throw error;
         lastError = error;
         if (attempt < this.maxRetries) {
-          const delayMs = 1000 * 2 ** attempt;
+          const delayMs = jitteredBackoff(attempt);
           this.logger.warn("Socrata request failed, retrying", {
             attempt: attempt + 1,
             maxRetries: this.maxRetries,
@@ -166,32 +170,34 @@ export class SocrataClient {
   private async get<T>(url: string): Promise<T> {
     this.logger.debug("Socrata GET", { url });
 
-    const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), this.timeoutMs);
+    return this.breaker.execute(async () => {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), this.timeoutMs);
 
-    try {
-      const response = await fetch(url, {
-        signal: controller.signal,
-        headers: { "User-Agent": "agora-mcp/0.1" },
-      });
+      try {
+        const response = await fetch(url, {
+          signal: controller.signal,
+          headers: { "User-Agent": "agora-mcp/0.1" },
+        });
 
-      if (!response.ok) {
-        throw new Error(
-          `Socrata HTTP ${response.status}: ${response.statusText}`,
-        );
+        if (!response.ok) {
+          throw new Error(
+            `Socrata HTTP ${response.status}: ${response.statusText}`,
+          );
+        }
+
+        return (await response.json()) as T;
+      } catch (error) {
+        if (error instanceof DOMException && error.name === "AbortError") {
+          throw new Error(
+            `Socrata request timed out after ${this.timeoutMs}ms`,
+            { cause: error },
+          );
+        }
+        throw error;
+      } finally {
+        clearTimeout(timer);
       }
-
-      return (await response.json()) as T;
-    } catch (error) {
-      if (error instanceof DOMException && error.name === "AbortError") {
-        throw new Error(
-          `Socrata request timed out after ${this.timeoutMs}ms`,
-          { cause: error },
-        );
-      }
-      throw error;
-    } finally {
-      clearTimeout(timer);
-    }
+    });
   }
 }

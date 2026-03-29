@@ -98,7 +98,7 @@ describe("resolveActiveCatalogs", () => {
 
   it("resolves a single preset", () => {
     const result = resolveActiveCatalogs(["argentina"], []);
-    expect(result).toHaveLength(9);
+    expect(result).toHaveLength(25);
     const ids = result.map((r) => r.id);
     expect(ids).toContain("datos-gob-ar");
     expect(ids).toContain("catalogo-datos-gba-ar");
@@ -107,7 +107,7 @@ describe("resolveActiveCatalogs", () => {
 
   it("resolves a multi-catalog preset", () => {
     const result = resolveActiveCatalogs(["latam"], []);
-    expect(result.length).toBe(15);
+    expect(result.length).toBe(31);
     const ids = result.map((r) => r.id);
     expect(ids).toContain("datos-gob-ar");
     expect(ids).toContain("datos-gob-cl");
