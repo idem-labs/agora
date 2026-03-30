@@ -2,7 +2,7 @@
  * HealthCache — on-demand resource health status with local persistence.
  *
  * Stores HEAD-request results per resource URL in a JSON file per catalog.
- * Only populated when the LLM explicitly calls verificar_recursos.
+ * Only populated when the LLM explicitly calls verify_resources.
  */
 
 import { existsSync, mkdirSync, readFileSync } from "node:fs";

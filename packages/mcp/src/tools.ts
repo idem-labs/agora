@@ -7,8 +7,10 @@ import type { HybridSearchEngine } from "./search/search-engine.js";
 import type { AnalysisEngine, ColumnInfo } from "./analysis/analysis-engine.js";
 import { SqlSanitizationError } from "./analysis/sql-sanitizer.js";
 import type { HealthCache } from "./health/health-cache.js";
+import type { TimeSeriesRegistry } from "./series/registry.js";
+import { AR_SERIES_CATALOG } from "./series/argentina/series-catalog.js";
 
-/** Generate 2-3 sample SQL queries based on column types for inspeccionar_recurso. */
+/** Generate 2-3 sample SQL queries based on column types for inspect_resource. */
 function generateSampleQueries(columns: ColumnInfo[]): string[] {
   const queries: string[] = [];
   queries.push(`SELECT COUNT(*) AS total FROM datos`);
@@ -45,9 +47,10 @@ export function registerTools(
   searchEngine: HybridSearchEngine,
   analysisEngine: AnalysisEngine,
   healthCache: HealthCache,
+  seriesRegistry: TimeSeriesRegistry,
 ): void {
   server.registerTool(
-    "buscar_datasets",
+    "search_datasets",
     {
       description:
         "Busca datasets en catálogos de datos abiertos gubernamentales. " +
@@ -81,7 +84,7 @@ export function registerTools(
       annotations: { readOnlyHint: true, openWorldHint: true },
     },
     async (args) => {
-      logger.debug("buscar_datasets called", { args });
+      logger.debug("search_datasets called", { args });
 
       const { results, searchMode } = await searchEngine.search(args.query, {
         catalogo: args.catalogo,
@@ -168,7 +171,7 @@ export function registerTools(
   );
 
   server.registerTool(
-    "inspeccionar_recurso",
+    "inspect_resource",
     {
       description:
         "Descarga un recurso (CSV, XLS, etc.) y muestra su estructura: " +
@@ -179,7 +182,7 @@ export function registerTools(
       annotations: { readOnlyHint: true, openWorldHint: true },
     },
     async (args) => {
-      logger.debug("inspeccionar_recurso called", { args });
+      logger.debug("inspect_resource called", { args });
       try {
         const result = await analysisEngine.inspect(args.url);
 
@@ -227,7 +230,7 @@ export function registerTools(
 
         return { content: [{ type: "text" as const, text: lines.join("\n") }] };
       } catch (err) {
-        logger.error("inspeccionar_recurso failed", {
+        logger.error("inspect_resource failed", {
           url: args.url,
           error: String(err),
         });
@@ -245,12 +248,12 @@ export function registerTools(
   );
 
   server.registerTool(
-    "crear_sesion_sql",
+    "create_sql_session",
     {
       description:
         "Crea una sesión SQL con múltiples CSVs cargados como tablas nombradas. " +
         "Permite hacer JOINs entre datasets y análisis iterativo. " +
-        "Ejemplo: crear_sesion_sql({recursos: [{nombre: 'accidentes', url: '...'}, {nombre: 'poblacion', url: '...'}]})",
+        "Example: create_sql_session({recursos: [{nombre: 'accidentes', url: '...'}, {nombre: 'poblacion', url: '...'}]})",
       inputSchema: {
         recursos: z
           .array(
@@ -267,7 +270,7 @@ export function registerTools(
       },
     },
     async (args) => {
-      logger.debug("crear_sesion_sql called", { args });
+      logger.debug("create_sql_session called", { args });
       try {
         const result = await analysisEngine.createSession(args.recursos);
         const lines = [
@@ -275,13 +278,13 @@ export function registerTools(
           "",
           `**Tablas disponibles:** ${result.tablas.join(", ")}`,
           "",
-          "Usá `consultar_sql` con el sessionId para ejecutar queries.",
+          "Use `query_sql` with the sessionId to run queries.",
           "Podés hacer JOINs entre las tablas y crear tablas temporales con CREATE TEMP TABLE.",
           "La sesión se cierra automáticamente después de 10 minutos de inactividad.",
         ];
         return { content: [{ type: "text" as const, text: lines.join("\n") }] };
       } catch (err) {
-        logger.error("crear_sesion_sql failed", { error: String(err) });
+        logger.error("create_sql_session failed", { error: String(err) });
         return {
           content: [
             {
@@ -296,7 +299,7 @@ export function registerTools(
   );
 
   server.registerTool(
-    "consultar_sql",
+    "query_sql",
     {
       description:
         "Ejecuta una consulta SQL sobre datos. Dos modos:\n" +
@@ -335,7 +338,7 @@ export function registerTools(
       annotations: { readOnlyHint: true, openWorldHint: true },
     },
     async (args) => {
-      logger.debug("consultar_sql called", { args });
+      logger.debug("query_sql called", { args });
 
       // Validate: exactly one of url or sessionId
       if (args.url && args.sessionId) {
@@ -409,12 +412,12 @@ export function registerTools(
 
         return { content: [{ type: "text" as const, text: lines.join("\n") }] };
       } catch (err) {
-        logger.error("consultar_sql failed", {
+        logger.error("query_sql failed", {
           url: args.url,
           sessionId: args.sessionId,
           error: String(err),
         });
-        logger.debug("consultar_sql failed query", { sql: args.sql });
+        logger.debug("query_sql failed query", { sql: args.sql });
         const msg =
           err instanceof SqlSanitizationError
             ? err.message
@@ -440,7 +443,7 @@ export function registerTools(
   );
 
   server.registerTool(
-    "cerrar_sesion",
+    "close_session",
     {
       description:
         "Cierra una sesión SQL y libera la memoria. " +
@@ -450,14 +453,14 @@ export function registerTools(
       },
     },
     async (args) => {
-      logger.debug("cerrar_sesion called", { args });
+      logger.debug("close_session called", { args });
       try {
         analysisEngine.closeSession(args.sessionId);
         return {
           content: [{ type: "text" as const, text: "Sesión cerrada." }],
         };
       } catch (err) {
-        logger.error("cerrar_sesion failed", { error: String(err) });
+        logger.error("close_session failed", { error: String(err) });
         return {
           content: [
             {
@@ -472,7 +475,7 @@ export function registerTools(
   );
 
   server.registerTool(
-    "verificar_recursos",
+    "verify_resources",
     {
       description:
         "Verifica la accesibilidad de los recursos de un dataset (HEAD request). " +
@@ -483,7 +486,7 @@ export function registerTools(
       annotations: { readOnlyHint: true, openWorldHint: true },
     },
     async (args) => {
-      logger.debug("verificar_recursos called", { args });
+      logger.debug("verify_resources called", { args });
 
       const record = ingestion.getDataset(args.id);
       if (!record) {
@@ -557,7 +560,7 @@ export function registerTools(
   );
 
   server.registerTool(
-    "listar_catalogos",
+    "list_catalogs",
     {
       description:
         "Lista los catálogos de datos abiertos disponibles con su estado " +
@@ -565,7 +568,7 @@ export function registerTools(
       annotations: { readOnlyHint: true },
     },
     async () => {
-      logger.debug("listar_catalogos called");
+      logger.debug("list_catalogs called");
       const catalogs = registry.list();
       const lines = catalogs.map((c) => {
         const count = ingestion.getDatasetsByCatalog(c.id).length;
@@ -584,7 +587,7 @@ export function registerTools(
   );
 
   server.registerTool(
-    "info_dataset",
+    "dataset_info",
     {
       description:
         "Muestra información detallada de un dataset: título, descripción, " +
@@ -595,7 +598,7 @@ export function registerTools(
       annotations: { readOnlyHint: true },
     },
     async (args) => {
-      logger.debug("info_dataset called", { args });
+      logger.debug("dataset_info called", { args });
 
       const record = ingestion.getDataset(args.id);
       if (!record) {
@@ -650,6 +653,244 @@ export function registerTools(
       }
 
       return { content: [{ type: "text" as const, text: lines.join("\n") }] };
+    },
+  );
+
+  // ─── Time Series Tools ───────────────────────────────────────────────
+
+  const sourceIds = seriesRegistry.sourceIds();
+  const sourceEnum = sourceIds.length > 0 ? sourceIds : ["argentina"];
+
+  server.registerTool(
+    "search_series",
+    {
+      description:
+        "Search time series of economic indicators (CPI, GDP activity, exchange rate, etc.). " +
+        "Returns available series with IDs for use with query_series. " +
+        "Without a query, shows the catalog of key series.",
+      inputSchema: {
+        source: z
+          .enum(sourceEnum as [string, ...string[]])
+          .describe(`Data source (${sourceEnum.join(", ")})`),
+        query: z
+          .string()
+          .optional()
+          .describe("Search term (e.g. 'inflation', 'unemployment', 'exchange rate'). Without query shows key series catalog."),
+        limit: z
+          .number()
+          .int()
+          .min(1)
+          .max(50)
+          .default(10)
+          .describe("Maximum number of results"),
+      },
+      annotations: { readOnlyHint: true, openWorldHint: true },
+    },
+    async (args) => {
+      logger.debug("search_series called", { args });
+
+      const adapter = seriesRegistry.get(args.source);
+      if (!adapter) {
+        return {
+          content: [
+            {
+              type: "text" as const,
+              text: `Source not available: ${args.source}. Available: ${sourceEnum.join(", ")}`,
+            },
+          ],
+          isError: true,
+        };
+      }
+
+      // No query: show curated catalog
+      if (!args.query) {
+        const catalog = AR_SERIES_CATALOG;
+        const categories = new Map<string, typeof catalog>();
+        for (const s of catalog) {
+          const list = categories.get(s.category) ?? [];
+          list.push(s);
+          categories.set(s.category, list);
+        }
+
+        const lines: string[] = [
+          `## Key series — ${adapter.source.name}`,
+          "",
+          "Use the ID with `query_series` to fetch data.",
+          "",
+        ];
+
+        for (const [category, series] of categories) {
+          lines.push(`### ${category.charAt(0).toUpperCase() + category.slice(1)}`);
+          for (const s of series) {
+            lines.push(
+              `- **${s.shortName}** — \`${s.id}\``,
+              `  ${s.title} | ${s.frequency} | ${s.units} | ${s.source}`,
+            );
+          }
+          lines.push("");
+        }
+
+        lines.push(
+          `*${catalog.length} curated series. Use query to search among ${adapter.source.id === "argentina" ? "thousands of" : ""} available series.*`,
+        );
+
+        return { content: [{ type: "text" as const, text: lines.join("\n") }] };
+      }
+
+      // Search via API
+      try {
+        const result = await adapter.searchSeries(args.query, args.limit);
+
+        if (result.results.length === 0) {
+          return {
+            content: [
+              {
+                type: "text" as const,
+                text: `No series found for: "${args.query}"`,
+              },
+            ],
+          };
+        }
+
+        const lines: string[] = [
+          `Results (${result.results.length} of ${result.total})`,
+          "",
+        ];
+
+        for (const s of result.results) {
+          lines.push(
+            `- **${s.title}** — \`${s.id}\``,
+            `  ${s.frequency} | ${s.units} | Source: ${s.source}${s.theme ? ` | Theme: ${s.theme}` : ""}`,
+          );
+          if (s.startDate || s.endDate) {
+            lines.push(`  Period: ${s.startDate ?? "?"} → ${s.endDate ?? "?"}`);
+          }
+        }
+
+        return { content: [{ type: "text" as const, text: lines.join("\n") }] };
+      } catch (err) {
+        logger.error("search_series failed", { error: String(err) });
+        return {
+          content: [
+            {
+              type: "text" as const,
+              text: `Error searching series: ${err instanceof Error ? err.message : String(err)}`,
+            },
+          ],
+          isError: true,
+        };
+      }
+    },
+  );
+
+  server.registerTool(
+    "query_series",
+    {
+      description:
+        "Query time series data by series ID. " +
+        "Returns historical date-value pairs. " +
+        "Supports date range filtering and temporal aggregation (collapse). " +
+        "Get IDs from search_series.",
+      inputSchema: {
+        source: z
+          .enum(sourceEnum as [string, ...string[]])
+          .describe(`Data source (${sourceEnum.join(", ")})`),
+        series_id: z
+          .string()
+          .describe("Series ID (e.g. '103.1_I2N_2016_M_19' for CPI)"),
+        start_date: z
+          .string()
+          .optional()
+          .describe("Start date (YYYY-MM-DD)"),
+        end_date: z
+          .string()
+          .optional()
+          .describe("End date (YYYY-MM-DD)"),
+        collapse: z
+          .enum(["day", "month", "quarter", "year"])
+          .optional()
+          .describe("Temporal aggregation (groups values into the specified period)"),
+        aggregation: z
+          .enum(["avg", "sum", "min", "max", "end_of_period"])
+          .optional()
+          .describe("Aggregation function for collapse (default: avg)"),
+        limit: z
+          .number()
+          .int()
+          .min(1)
+          .max(5000)
+          .default(100)
+          .describe("Maximum data points to return"),
+      },
+      annotations: { readOnlyHint: true, openWorldHint: true },
+    },
+    async (args) => {
+      logger.debug("query_series called", { args });
+
+      const adapter = seriesRegistry.get(args.source);
+      if (!adapter) {
+        return {
+          content: [
+            {
+              type: "text" as const,
+              text: `Source not available: ${args.source}. Available: ${sourceEnum.join(", ")}`,
+            },
+          ],
+          isError: true,
+        };
+      }
+
+      try {
+        const result = await adapter.querySeries(args.series_id, {
+          startDate: args.start_date,
+          endDate: args.end_date,
+          collapse: args.collapse,
+          aggregation: args.aggregation,
+          limit: args.limit,
+        });
+
+        const lines: string[] = [
+          `## ${result.series.title}`,
+          "",
+          `**ID:** ${result.series.id}`,
+          `**Frequency:** ${result.series.frequency}`,
+          `**Units:** ${result.series.units}`,
+          `**Source:** ${result.series.source}`,
+        ];
+
+        if (result.series.startDate || result.series.endDate) {
+          lines.push(
+            `**Period:** ${result.series.startDate ?? "?"} → ${result.series.endDate ?? "?"}`,
+          );
+        }
+
+        lines.push("", `**Data:** ${result.data.length} of ${result.count} available`, "");
+
+        // Render as table
+        if (result.data.length > 0) {
+          lines.push("| Date | Value |");
+          lines.push("|------|-------|");
+          for (const point of result.data) {
+            const value = point.value !== null ? String(point.value) : "—";
+            lines.push(`| ${point.date} | ${value} |`);
+          }
+        } else {
+          lines.push("No data available for the requested range.");
+        }
+
+        return { content: [{ type: "text" as const, text: lines.join("\n") }] };
+      } catch (err) {
+        logger.error("query_series failed", { error: String(err) });
+        return {
+          content: [
+            {
+              type: "text" as const,
+              text: `Error querying series: ${err instanceof Error ? err.message : String(err)}`,
+            },
+          ],
+          isError: true,
+        };
+      }
     },
   );
 }

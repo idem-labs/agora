@@ -163,7 +163,9 @@ describe("Integration: Health check flow", () => {
       { healthDir: join(dataDir, "health") },
       logger,
     );
-    registerTools(server, logger, registry, ingestion, searchEngine, analysisEngine, healthCache);
+    const { TimeSeriesRegistry } = await import("../series/registry.js");
+    const seriesRegistry = new TimeSeriesRegistry(logger);
+    registerTools(server, logger, registry, ingestion, searchEngine, analysisEngine, healthCache, seriesRegistry);
 
     const [clientTransport, serverTransport] = InMemoryTransport.createLinkedPair();
     await server.connect(serverTransport);
@@ -184,7 +186,7 @@ describe("Integration: Health check flow", () => {
 
   it("verificar_recursos reports accessible and inaccessible resources", async () => {
     const result = await client.callTool({
-      name: "verificar_recursos",
+      name: "verify_resources",
       arguments: { id: "datos-gob-ar:siniestros-viales-2023" },
     });
 
@@ -198,7 +200,7 @@ describe("Integration: Health check flow", () => {
 
   it("verificar_recursos returns error for unknown dataset", async () => {
     const result = await client.callTool({
-      name: "verificar_recursos",
+      name: "verify_resources",
       arguments: { id: "datos-gob-ar:nonexistent" },
     });
 
@@ -209,7 +211,7 @@ describe("Integration: Health check flow", () => {
 
   it("verificar_recursos shows all-OK for fully accessible dataset", async () => {
     const result = await client.callTool({
-      name: "verificar_recursos",
+      name: "verify_resources",
       arguments: { id: "datos-gob-ar:transporte-publico" },
     });
 
@@ -222,13 +224,13 @@ describe("Integration: Health check flow", () => {
   it("buscar_datasets shows health annotations after verification", async () => {
     // First verify a dataset (populates cache)
     await client.callTool({
-      name: "verificar_recursos",
+      name: "verify_resources",
       arguments: { id: "datos-gob-ar:siniestros-viales-2023" },
     });
 
     // Now search — results should show accessibility annotations
     const result = await client.callTool({
-      name: "buscar_datasets",
+      name: "search_datasets",
       arguments: { query: "siniestros viales", limite: 5 },
     });
 
@@ -241,12 +243,12 @@ describe("Integration: Health check flow", () => {
   it("buscar_datasets shows 'Accesible' for fully OK dataset", async () => {
     // Verify the all-OK dataset
     await client.callTool({
-      name: "verificar_recursos",
+      name: "verify_resources",
       arguments: { id: "datos-gob-ar:transporte-publico" },
     });
 
     const result = await client.callTool({
-      name: "buscar_datasets",
+      name: "search_datasets",
       arguments: { query: "transporte", limite: 5 },
     });
 

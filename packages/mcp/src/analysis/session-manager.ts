@@ -118,7 +118,7 @@ export class SessionManager {
     if (this.sessions.size >= this.maxSessions) {
       throw new Error(
         `Límite de sesiones alcanzado (${this.maxSessions}). ` +
-          "Cerrá una sesión existente con cerrar_sesion.",
+          "Close an existing session with close_session.",
       );
     }
 

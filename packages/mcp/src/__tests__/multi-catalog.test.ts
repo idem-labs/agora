@@ -230,7 +230,9 @@ describe("Integration: Multi-catalog runtime", () => {
       { healthDir: join(dataDir, "health") },
       logger,
     );
-    registerTools(server, logger, registry, ingestion, searchEngine, analysisEngine, healthCache);
+    const { TimeSeriesRegistry } = await import("../series/registry.js");
+    const seriesRegistry = new TimeSeriesRegistry(logger);
+    registerTools(server, logger, registry, ingestion, searchEngine, analysisEngine, healthCache, seriesRegistry);
 
     const [clientTransport, serverTransport] = InMemoryTransport.createLinkedPair();
     await server.connect(serverTransport);
@@ -252,7 +254,7 @@ describe("Integration: Multi-catalog runtime", () => {
   // --- Ingestion ---
 
   it("listar_catalogos shows both catalogs with dataset counts", async () => {
-    const result = await client.callTool({ name: "listar_catalogos", arguments: {} });
+    const result = await client.callTool({ name: "list_catalogs", arguments: {} });
     const text = (result.content as TextContent[])[0].text;
 
     expect(text).toContain("Catálogos disponibles (2)");
@@ -265,7 +267,7 @@ describe("Integration: Multi-catalog runtime", () => {
 
   it("cross-catalog search returns results from both catalogs", async () => {
     const result = await client.callTool({
-      name: "buscar_datasets",
+      name: "search_datasets",
       arguments: { query: "presupuesto", limite: 10 },
     });
     const text = (result.content as TextContent[])[0].text;
@@ -277,7 +279,7 @@ describe("Integration: Multi-catalog runtime", () => {
 
   it("cross-catalog results show catalog origin", async () => {
     const result = await client.callTool({
-      name: "buscar_datasets",
+      name: "search_datasets",
       arguments: { query: "presupuesto", limite: 10 },
     });
     const text = (result.content as TextContent[])[0].text;
@@ -290,7 +292,7 @@ describe("Integration: Multi-catalog runtime", () => {
 
   it("catalog filter restricts results to one catalog", async () => {
     const result = await client.callTool({
-      name: "buscar_datasets",
+      name: "search_datasets",
       arguments: { query: "presupuesto", catalogo: "datos-gob-cl", limite: 10 },
     });
     const text = (result.content as TextContent[])[0].text;
@@ -303,7 +305,7 @@ describe("Integration: Multi-catalog runtime", () => {
 
   it("search for catalog-specific content only returns that catalog", async () => {
     const result = await client.callTool({
-      name: "buscar_datasets",
+      name: "search_datasets",
       arguments: { query: "educación chile", limite: 10 },
     });
     const text = (result.content as TextContent[])[0].text;
@@ -315,7 +317,7 @@ describe("Integration: Multi-catalog runtime", () => {
 
   it("info_dataset works for AR catalog", async () => {
     const result = await client.callTool({
-      name: "info_dataset",
+      name: "dataset_info",
       arguments: { id: "datos-gob-ar:presupuesto-2024" },
     });
     const text = (result.content as TextContent[])[0].text;
@@ -326,7 +328,7 @@ describe("Integration: Multi-catalog runtime", () => {
 
   it("info_dataset works for CL catalog", async () => {
     const result = await client.callTool({
-      name: "info_dataset",
+      name: "dataset_info",
       arguments: { id: "datos-gob-cl:presupuesto-chile-2024" },
     });
     const text = (result.content as TextContent[])[0].text;
@@ -339,7 +341,7 @@ describe("Integration: Multi-catalog runtime", () => {
 
   it("verificar_recursos works for AR dataset", async () => {
     const result = await client.callTool({
-      name: "verificar_recursos",
+      name: "verify_resources",
       arguments: { id: "datos-gob-ar:presupuesto-2024" },
     });
     const text = (result.content as TextContent[])[0].text;
@@ -350,7 +352,7 @@ describe("Integration: Multi-catalog runtime", () => {
 
   it("verificar_recursos works for CL dataset with mixed accessibility", async () => {
     const result = await client.callTool({
-      name: "verificar_recursos",
+      name: "verify_resources",
       arguments: { id: "datos-gob-cl:educacion-2024" },
     });
     const text = (result.content as TextContent[])[0].text;
@@ -362,17 +364,17 @@ describe("Integration: Multi-catalog runtime", () => {
   it("cross-catalog search shows health annotations from both catalogs", async () => {
     // Verify datasets from both catalogs to populate health cache
     await client.callTool({
-      name: "verificar_recursos",
+      name: "verify_resources",
       arguments: { id: "datos-gob-ar:presupuesto-2024" },
     });
     await client.callTool({
-      name: "verificar_recursos",
+      name: "verify_resources",
       arguments: { id: "datos-gob-cl:presupuesto-chile-2024" },
     });
 
     // Cross-catalog search should annotate results from both
     const result = await client.callTool({
-      name: "buscar_datasets",
+      name: "search_datasets",
       arguments: { query: "presupuesto", limite: 10 },
     });
     const text = (result.content as TextContent[])[0].text;
@@ -386,7 +388,7 @@ describe("Integration: Multi-catalog runtime", () => {
 
   it("search with no results returns empty message", async () => {
     const result = await client.callTool({
-      name: "buscar_datasets",
+      name: "search_datasets",
       arguments: { query: "xyznonexistent12345", limite: 5 },
     });
     const text = (result.content as TextContent[])[0].text;
@@ -396,7 +398,7 @@ describe("Integration: Multi-catalog runtime", () => {
 
   it("info_dataset returns error for nonexistent dataset", async () => {
     const result = await client.callTool({
-      name: "info_dataset",
+      name: "dataset_info",
       arguments: { id: "datos-gob-cl:nonexistent" },
     });
 

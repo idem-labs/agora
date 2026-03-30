@@ -15,6 +15,7 @@ import { HybridSearchEngine } from "./search/search-engine.js";
 import { registerTools } from "./tools.js";
 import { AnalysisEngine } from "./analysis/analysis-engine.js";
 import { HealthCache } from "./health/health-cache.js";
+import { TimeSeriesRegistry } from "./series/registry.js";
 
 const config = loadConfig();
 const logger = createLogger(config.logLevel);
@@ -73,8 +74,10 @@ const server = new McpServer(
   {
     capabilities: { tools: { listChanged: true } },
     instructions:
-      "Servidor MCP para consultar catálogos de datos abiertos gubernamentales. " +
-      "Permite buscar datasets, inspeccionar recursos y ejecutar consultas SQL.",
+      "Servidor MCP para consultar catálogos de datos abiertos gubernamentales " +
+      "y series temporales de indicadores económicos. " +
+      "Permite buscar datasets, inspeccionar recursos, ejecutar consultas SQL " +
+      "y consultar series de tiempo (IPC, EMAE, tipo de cambio, etc.).",
   },
 );
 
@@ -91,7 +94,8 @@ const healthCache = new HealthCache(
   { healthDir: join(config.dataDir, "health") },
   logger,
 );
-registerTools(server, logger, registry, ingestion, searchEngine, analysisEngine, healthCache);
+const seriesRegistry = new TimeSeriesRegistry(logger);
+registerTools(server, logger, registry, ingestion, searchEngine, analysisEngine, healthCache, seriesRegistry);
 
 logger.info("Ágora MCP Server starting", {
   version: VERSION,

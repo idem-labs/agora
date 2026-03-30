@@ -6,7 +6,7 @@
  *
  * Two modes:
  * - Simple mode: user writes SQL using `datos` as the table name (single CSV).
- * - Session mode: user writes SQL using named tables loaded via crear_sesion_sql.
+ * - Session mode: user writes SQL using named tables loaded via create_sql_session.
  *   Allows CREATE TEMP TABLE ... AS SELECT within sessions.
  */
 

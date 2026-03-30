@@ -16,14 +16,16 @@ import { HealthCache } from "../health/health-cache.js";
 import { registerTools } from "../tools.js";
 
 const TOOL_NAMES = [
-  "buscar_datasets",
-  "inspeccionar_recurso",
-  "consultar_sql",
-  "listar_catalogos",
-  "info_dataset",
-  "crear_sesion_sql",
-  "cerrar_sesion",
-  "verificar_recursos",
+  "search_datasets",
+  "inspect_resource",
+  "query_sql",
+  "list_catalogs",
+  "dataset_info",
+  "create_sql_session",
+  "close_session",
+  "verify_resources",
+  "search_series",
+  "query_series",
 ];
 
 const FAKE_DATASETS = [
@@ -144,7 +146,9 @@ describe("Integration: MCP Server startup", () => {
       { healthDir: join(dataDir, "health") },
       logger,
     );
-    registerTools(server, logger, registry, ingestion, searchEngine, analysisEngine, healthCache);
+    const { TimeSeriesRegistry } = await import("../series/registry.js");
+    const seriesRegistry = new TimeSeriesRegistry(logger);
+    registerTools(server, logger, registry, ingestion, searchEngine, analysisEngine, healthCache, seriesRegistry);
 
     // Connect via in-memory transport
     const [clientTransport, serverTransport] =
@@ -166,7 +170,7 @@ describe("Integration: MCP Server startup", () => {
     }
   }, 15_000);
 
-  it("registers all 8 tools", async () => {
+  it("registers all 10 tools", async () => {
     const { tools } = await client.listTools();
     const names = tools.map((t) => t.name).sort();
     expect(names).toEqual(TOOL_NAMES.sort());
@@ -182,7 +186,7 @@ describe("Integration: MCP Server startup", () => {
   });
 
   it("listar_catalogos returns a result", async () => {
-    const result = await client.callTool({ name: "listar_catalogos", arguments: {} });
+    const result = await client.callTool({ name: "list_catalogs", arguments: {} });
     expect(result.content).toBeDefined();
     expect(Array.isArray(result.content)).toBe(true);
     const text = (result.content as Array<{ type: string; text: string }>)[0].text;
@@ -191,7 +195,7 @@ describe("Integration: MCP Server startup", () => {
 
   it("buscar_datasets finds seeded data", async () => {
     const result = await client.callTool({
-      name: "buscar_datasets",
+      name: "search_datasets",
       arguments: { query: "presupuesto", limite: 5 },
     });
     const text = (result.content as Array<{ type: string; text: string }>)[0].text;
@@ -200,7 +204,7 @@ describe("Integration: MCP Server startup", () => {
 
   it("info_dataset returns dataset details", async () => {
     const result = await client.callTool({
-      name: "info_dataset",
+      name: "dataset_info",
       arguments: { id: "datos-gob-ar:test-dataset-1" },
     });
     const text = (result.content as Array<{ type: string; text: string }>)[0].text;
