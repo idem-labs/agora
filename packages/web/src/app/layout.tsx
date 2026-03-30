@@ -3,25 +3,25 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Agora — Open Data Intelligence",
+    default: "Agora — An MCP server for government open data",
     template: "%s | Agora",
   },
   description:
-    "Quality scores for open government data portals worldwide. Automated analysis of accessibility, structure, freshness, and completeness.",
+    "MCP server connecting LLMs to 42 government data portals across 13 countries. Search datasets, run SQL on remote CSVs, and filter by quality score.",
   icons: { icon: "/favicon.svg" },
   openGraph: {
-    title: "Agora — Open Data Intelligence",
+    title: "Agora — Government open data for your AI",
     description:
-      "Automated quality analysis of government open data portals. Accessibility, structure, freshness, and completeness scores for catalogs worldwide.",
+      "MCP server connecting LLMs to 42 government data portals across 13 countries. Search datasets, run SQL on remote CSVs, and filter by quality score.",
     type: "website",
     locale: "en_US",
     siteName: "Agora",
   },
   twitter: {
     card: "summary",
-    title: "Agora — Open Data Intelligence",
+    title: "Agora — Government open data for your AI",
     description:
-      "Automated quality scores for government open data portals worldwide.",
+      "MCP server connecting LLMs to 42 government data portals. Search, SQL queries, and quality scores in one tool call.",
   },
   metadataBase: new URL("https://agora-open-data.vercel.app"),
 };
