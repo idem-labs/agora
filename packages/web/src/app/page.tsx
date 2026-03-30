@@ -28,9 +28,10 @@ export default async function Home() {
             {" "}for your AI
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-brand-200">
-            An MCP server that connects any LLM to 42 government data portals
-            across 13 countries. Search datasets, run SQL on remote CSVs,
-            and filter by quality score&thinsp;&mdash;&thinsp;all through one tool call.
+            Open-source MCP server that connects LLMs to government data portals
+            worldwide. Multi-catalog, fully configurable, and quality-scored
+            with incremental updates&thinsp;&mdash;&thinsp;so your AI works with
+            data it can trust.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <a
