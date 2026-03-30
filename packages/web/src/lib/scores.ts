@@ -104,3 +104,19 @@ export const COUNTRY_FLAGS: Record<string, string> = {
   IT: "🇮🇹",
   CH: "🇨🇭",
 };
+
+export const COUNTRY_NAMES: Record<string, string> = {
+  AR: "Argentina",
+  CL: "Chile",
+  UY: "Uruguay",
+  MX: "Mexico",
+  CO: "Colombia",
+  DO: "Dominican Republic",
+  CR: "Costa Rica",
+  US: "United States",
+  GB: "United Kingdom",
+  CA: "Canada",
+  IE: "Ireland",
+  IT: "Italy",
+  CH: "Switzerland",
+};

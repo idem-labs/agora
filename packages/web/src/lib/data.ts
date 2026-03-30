@@ -38,6 +38,7 @@ export async function getMeta(): Promise<PipelineMeta> {
 export async function getGlobalStats() {
   const catalogs = await getCatalogs();
   const scored = catalogs.filter((c) => c.status !== "pending");
+  const countries = new Set(catalogs.map((c) => c.country));
 
   const totalDatasets = scored.reduce((s, c) => s + c.datasetCount, 0);
   const totalResources = scored.reduce((s, c) => s + c.resourceCount, 0);
@@ -52,6 +53,7 @@ export async function getGlobalStats() {
 
   return {
     catalogCount: catalogs.length,
+    countryCount: countries.size,
     totalDatasets,
     totalResources,
     avgOverall,

@@ -87,9 +87,28 @@ function Header() {
 
 function Footer() {
   return (
-    <footer className="border-t border-slate-200 bg-white py-6">
-      <div className="mx-auto max-w-6xl px-4 text-center text-sm text-slate-500">
-        Agora — Open Data Intelligence. Automated quality analysis of government open data portals.
+    <footer className="border-t border-slate-200 bg-white py-8">
+      <div className="mx-auto max-w-6xl px-4">
+        <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
+          <div className="text-sm text-slate-500">
+            Agora &mdash; Open Data Intelligence
+          </div>
+          <div className="flex items-center gap-6 text-sm text-slate-500">
+            <a href="/ranking" className="transition hover:text-slate-900">Ranking</a>
+            <a
+              href="https://github.com/idemfede/agora"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition hover:text-slate-900"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+        <p className="mt-4 text-center text-xs text-slate-400">
+          Quality scoring pipeline for government open data portals.
+          Multi-catalog MCP server for AI access to open data.
+        </p>
       </div>
     </footer>
   );
