@@ -72,7 +72,7 @@ function Header() {
             Ranking
           </a>
           <a
-            href="https://github.com/idemfede/agora"
+            href="https://github.com/idem-labs/agora"
             target="_blank"
             rel="noopener noreferrer"
             className="text-slate-600 transition-colors hover:text-brand-700"
@@ -96,7 +96,7 @@ function Footer() {
           <div className="flex items-center gap-6 text-sm text-slate-500">
             <a href="/ranking" className="transition hover:text-slate-900">Ranking</a>
             <a
-              href="https://github.com/idemfede/agora"
+              href="https://github.com/idem-labs/agora"
               target="_blank"
               rel="noopener noreferrer"
               className="transition hover:text-slate-900"

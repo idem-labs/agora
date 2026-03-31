@@ -35,7 +35,7 @@ export default async function Home() {
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <a
-              href="https://github.com/idemfede/agora"
+              href="https://github.com/idem-labs/agora"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-lg bg-white px-6 py-2.5 text-sm font-semibold text-brand-900 shadow-sm transition hover:bg-brand-50"
@@ -224,7 +224,7 @@ export default async function Home() {
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
             <a
-              href="https://github.com/idemfede/agora"
+              href="https://github.com/idem-labs/agora"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-lg bg-white px-5 py-2.5 text-sm font-semibold text-brand-900 transition hover:bg-brand-50"
