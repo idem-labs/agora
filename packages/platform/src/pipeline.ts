@@ -172,6 +172,7 @@ export async function runPipeline(
         const fallback = buildFallbackSummary(entry, state);
         if (fallback) summaries.push(fallback);
       }
+      await writeCatalogsIndex(config.outputDir, buildCatalogsIndex(summaries, classified, existingSummaries));
       continue;
     }
 
@@ -187,6 +188,7 @@ export async function runPipeline(
           accessibilityScorer,
           config,
           logger,
+          budget,
         });
 
         summaries.push(result.summary);
@@ -200,7 +202,7 @@ export async function runPipeline(
         catalogsProcessed++;
         catalogResults.push({
           id: entry.id, name: entry.name, tier, status: "scored",
-          datasetsScored: result.datasetsScored, coverage: 1.0,
+          datasetsScored: result.datasetsScored, coverage: result.summary.coverage,
           durationMs: Date.now() - catalogStart,
         });
         logger.info("Detail catalog completed", {
@@ -268,6 +270,9 @@ export async function runPipeline(
       );
       await writeCatalogState(config.outputDir, entry.id, updatedState);
     }
+
+    // Persist incremental progress — survives crashes/timeouts
+    await writeCatalogsIndex(config.outputDir, buildCatalogsIndex(summaries, classified, existingSummaries));
   }
 
   // ── Add placeholder entries for unprocessed catalogs ──
@@ -448,4 +453,46 @@ function buildFallbackSummary(
     datasetsScored: 0,
     tier: _state.tier,
   };
+}
+
+/**
+ * Build a full catalogs index from processed summaries + fallbacks for remaining.
+ * Used for incremental persistence — the index is always complete (all catalogs present).
+ */
+function buildCatalogsIndex(
+  processedSummaries: CatalogSummary[],
+  allClassified: Array<{ entry: CatalogEntry; tier: "detail" | "aggregate" }>,
+  fallbackSummaries: Map<string, CatalogSummary>,
+): CatalogsOutput {
+  const processedIds = new Set(processedSummaries.map((s) => s.id));
+  const catalogs = [...processedSummaries];
+  for (const { entry, tier } of allClassified) {
+    if (processedIds.has(entry.id)) continue;
+    const existing = fallbackSummaries.get(entry.id);
+    if (existing) {
+      catalogs.push(existing);
+    } else {
+      catalogs.push({
+        id: entry.id,
+        name: entry.name,
+        url: entry.url,
+        protocol: entry.protocol,
+        country: entry.country,
+        language: entry.language,
+        datasetCount: 0,
+        resourceCount: 0,
+        scores: {
+          overall: 0, accessibility: 0, structure: 0,
+          freshness: 0, completeness: 0, usability: 0,
+        },
+        stats: { accessiblePct: 0, medianFreshnessDays: null, topFormats: [] },
+        scoredAt: new Date().toISOString(),
+        coverage: 0,
+        datasetsScored: 0,
+        tier,
+        status: "pending",
+      });
+    }
+  }
+  return { generatedAt: new Date().toISOString(), catalogs };
 }

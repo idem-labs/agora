@@ -82,7 +82,7 @@ export default async function CatalogPage({ params }: Props) {
       </div>
 
       {/* Coverage indicator */}
-      {catalog.coverage != null && catalog.coverage < 1 && (
+      {catalog.coverage != null && catalog.coverage > 0 && catalog.coverage < 1 && (
         <div className="mt-6 flex items-center gap-3 rounded-lg border border-amber-200 bg-amber-50 px-4 py-3">
           <div className="flex-1">
             <div className="flex items-center justify-between text-sm">

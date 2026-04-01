@@ -12,6 +12,7 @@ import type {
 import type { CatalogAdapter, CatalogEntry, Logger } from "agora-mcp/lib";
 import type { PipelineConfig } from "../config.js";
 import type { DetailCatalogState, DatasetEntry, DatasetsFile } from "../state/types.js";
+import type { BudgetTimer } from "../budget.js";
 import { AccessibilityScorer } from "../scoring/accessibility-scorer.js";
 import { computeOverall } from "../scoring/scorer.js";
 
@@ -32,6 +33,7 @@ export interface DetailProcessorArgs {
   accessibilityScorer: AccessibilityScorer;
   config: PipelineConfig;
   logger: Logger;
+  budget?: BudgetTimer;
 }
 
 export interface DetailProcessorResult {
@@ -116,11 +118,33 @@ export async function processDetailCatalog(
     deleted: existingMap.size - kept.length - (toScore.length - (apiDatasets.size - existingMap.size)),
   });
 
-  // 4. Score the delta datasets
+  // 4. Score the delta datasets (with time guards)
+  const catalogDeadlineMs = config.catalogTimeoutMin > 0
+    ? Date.now() + config.catalogTimeoutMin * 60_000
+    : Infinity;
+
   const newEntries: DatasetEntry[] = [];
   const scoredAt = new Date().toISOString();
 
   for (const ds of toScore) {
+    if (Date.now() > catalogDeadlineMs) {
+      logger.warn("Detail: catalog timeout reached", {
+        catalogId,
+        timeoutMin: config.catalogTimeoutMin,
+        scored: newEntries.length,
+        remaining: toScore.length - newEntries.length,
+      });
+      break;
+    }
+    if (args.budget?.isExhausted()) {
+      logger.warn("Detail: budget exhausted mid-catalog", {
+        catalogId,
+        scored: newEntries.length,
+        remaining: toScore.length - newEntries.length,
+      });
+      break;
+    }
+
     const dims = await Promise.all(pureScorers.map((s) => s.score(ds)));
     const accDim = await accessibilityScorer.score(ds);
     dims.push(accDim);
@@ -149,13 +173,14 @@ export async function processDetailCatalog(
   const allQualityScores = allEntries.map((e) => e.score);
 
   // 6. Compute catalog aggregates
-  const summary = buildSummary(entry, allEntries, allQualityScores, apiDatasets.size);
+  const coverage = apiDatasets.size > 0 ? allEntries.length / apiDatasets.size : 1.0;
+  const summary = buildSummary(entry, allEntries, allQualityScores, apiDatasets.size, coverage);
   const catalogScores: CatalogScores = {
     catalogId,
     scoredAt,
     datasetCount: apiDatasets.size,
     datasets: allQualityScores,
-    coverage: 1.0,
+    coverage,
   };
 
   const datasetsFile: DatasetsFile = {
@@ -189,6 +214,7 @@ function buildSummary(
   entries: DatasetEntry[],
   scores: QualityScore[],
   totalDatasets: number,
+  coverage: number,
 ): CatalogSummary {
   const dimSums: Record<string, { sum: number; count: number }> = {};
   let totalResources = 0;
@@ -277,7 +303,7 @@ function buildSummary(
       topFormats,
     },
     scoredAt: new Date().toISOString(),
-    coverage: 1.0,
+    coverage: Math.round(coverage * 1000) / 1000,
     datasetsScored: scores.length,
     tier: "detail",
   };

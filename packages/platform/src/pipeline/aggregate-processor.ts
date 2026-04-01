@@ -135,12 +135,9 @@ export async function processAggregateCatalog(
   // Detect completion: chunk was smaller than requested
   const complete = config.chunkSize === 0 || chunkCount < config.chunkSize;
 
-  // Get total known from API (first page gives count)
-  // We approximate with processedCount if complete, else keep previous
+  // totalKnown is only authoritative after a complete sweep
   if (complete && processedCount > totalKnown) {
     totalKnown = processedCount;
-  } else if (totalKnown === 0) {
-    totalKnown = processedCount; // best guess until complete
   }
 
   const coverage = totalKnown > 0 ? Math.min(1, processedCount / totalKnown) : 0;
@@ -209,7 +206,7 @@ function buildSummaryFromState(
     protocol: entry.protocol,
     country: entry.country,
     language: entry.language,
-    datasetCount: state.totalKnown,
+    datasetCount: Math.max(state.totalKnown, state.processedCount),
     resourceCount: 0,
     scores: {
       overall,
@@ -238,7 +235,7 @@ function buildEmptyScores(
   return {
     catalogId,
     scoredAt: state.lastRunAt ?? new Date().toISOString(),
-    datasetCount: state.totalKnown,
+    datasetCount: Math.max(state.totalKnown, state.processedCount),
     datasets: [],
     coverage: state.coverage,
   };
