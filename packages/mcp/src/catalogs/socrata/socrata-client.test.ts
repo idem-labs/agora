@@ -59,7 +59,7 @@ describe("SocrataClient", () => {
 
     const calledUrl = fetchMock.mock.calls[0][0];
     expect(calledUrl).toBe(
-      "https://data.cityofnewyork.us/api/catalog/v1?only=datasets&limit=50&offset=200",
+      "https://data.cityofnewyork.us/api/catalog/v1?only=datasets&domains=data.cityofnewyork.us&limit=50&offset=200",
     );
   });
 

@@ -47,7 +47,7 @@ export class SocrataClient {
     extra?: { orderBy?: string; where?: string },
   ): Promise<SocrataDiscoveryResponse> {
     const l = limit ?? this.pageSize;
-    let url = `${this.baseUrl}?only=datasets&limit=${l}&offset=${offset}`;
+    let url = `${this.baseUrl}?only=datasets&domains=${this.domain}&limit=${l}&offset=${offset}`;
     if (extra?.orderBy) url += `&order=${encodeURIComponent(extra.orderBy)}`;
     if (extra?.where) url += `&q_internal=${encodeURIComponent(extra.where)}`;
     return this.get<SocrataDiscoveryResponse>(url);
