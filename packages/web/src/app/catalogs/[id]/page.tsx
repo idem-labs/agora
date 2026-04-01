@@ -105,6 +105,7 @@ export default async function CatalogPage({ params }: Props) {
         <StatCard
           label="Datasets"
           value={catalog.datasetCount}
+          sub={catalog.coverage === 0 && catalog.datasetCount > 0 ? "partial sweep" : undefined}
         />
         <StatCard
           label="Resources"
