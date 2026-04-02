@@ -156,15 +156,23 @@ export function RankingTable({ catalogs }: { catalogs: CatalogSummary[] }) {
                               pending
                             </span>
                           )}
+                          {!pending && cat.tier === "aggregate" && (
+                            <span
+                              title="Scored in aggregate — individual dataset scores not available"
+                              className="ml-1.5 inline-flex h-4 w-4 cursor-help items-center justify-center rounded-full bg-slate-100 text-[10px] font-medium text-slate-400"
+                            >
+                              i
+                            </span>
+                          )}
                         </div>
                       </a>
                     </td>
                     <td className="px-3 py-3 text-right tabular-nums text-slate-600">
-                      {pending ? (
+                      {pending || (cat.coverage === 0 && cat.datasetCount > 0) ? (
                         <span className="text-slate-400">—</span>
                       ) : (
                         <>
-                          <span>{cat.coverage === 0 && cat.datasetCount > 0 ? "~" : ""}{cat.datasetCount.toLocaleString()}</span>
+                          <span>{cat.datasetCount.toLocaleString()}</span>
                           {cat.coverage != null && cat.coverage > 0 && cat.coverage < 1 && (
                             <span className="ml-1.5 inline-flex items-center rounded-full bg-amber-50 px-1.5 py-0.5 text-[10px] font-medium text-amber-700">
                               {Math.round(cat.coverage * 100)}%

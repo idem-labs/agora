@@ -104,8 +104,8 @@ export default async function CatalogPage({ params }: Props) {
       <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
         <StatCard
           label="Datasets"
-          value={catalog.datasetCount}
-          sub={catalog.coverage === 0 && catalog.datasetCount > 0 ? "partial sweep" : undefined}
+          value={catalog.coverage === 0 && catalog.datasetCount > 0 ? "—" : catalog.datasetCount}
+          sub={catalog.coverage === 0 && catalog.datasetCount > 0 ? "sweep in progress" : undefined}
         />
         <StatCard
           label="Resources"
