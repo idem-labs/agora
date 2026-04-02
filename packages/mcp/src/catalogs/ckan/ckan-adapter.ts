@@ -58,6 +58,11 @@ export class CkanAdapter implements CatalogAdapter {
     this.logger.info("CkanAdapter: listed datasets since cursor", { cursor, count });
   }
 
+  async getDatasetCount(): Promise<number> {
+    const result = await this.client.searchPackages(0, 1);
+    return result.count;
+  }
+
   async getDataset(externalId: string): Promise<DatasetRecord | null> {
     try {
       const pkg = await this.client.getPackage(externalId);

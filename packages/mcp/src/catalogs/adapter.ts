@@ -16,4 +16,7 @@ export interface CatalogAdapter {
 
   /** Fetch a single dataset by its external (catalog-native) ID */
   getDataset(externalId: string): Promise<DatasetRecord | null>;
+
+  /** Return the total number of datasets in the catalog (cheap metadata-only call). Optional. */
+  getDatasetCount?(): Promise<number>;
 }

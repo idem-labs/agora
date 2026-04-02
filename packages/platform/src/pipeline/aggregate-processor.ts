@@ -92,12 +92,22 @@ export async function processAggregateCatalog(
     processedCount = 0;
   }
 
-  logger.info("Aggregate: processing chunk", { catalogId, cursor, processedCount });
+  // Fetch total dataset count (cheap metadata-only call)
+  let totalKnown = state?.totalKnown ?? 0;
+  if (totalKnown === 0 && adapter.getDatasetCount) {
+    try {
+      totalKnown = await adapter.getDatasetCount();
+      logger.info("Aggregate: fetched dataset count", { catalogId, totalKnown });
+    } catch {
+      // Non-fatal — coverage will be 0 until sweep completes
+    }
+  }
+
+  logger.info("Aggregate: processing chunk", { catalogId, cursor, processedCount, totalKnown });
 
   // Fetch chunk using timestamp cursor
   let chunkCount = 0;
   let lastModifiedAt = cursor;
-  let totalKnown = state?.totalKnown ?? 0;
   const iterator = adapter.listDatasetsSince
     ? adapter.listDatasetsSince(cursor)
     : adapter.listDatasets();

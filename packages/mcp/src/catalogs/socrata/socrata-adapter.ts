@@ -59,6 +59,11 @@ export class SocrataAdapter implements CatalogAdapter {
     this.logger.info("SocrataAdapter: listed datasets since cursor", { cursor, count });
   }
 
+  async getDatasetCount(): Promise<number> {
+    const response = await this.client.searchDatasets(0, 1);
+    return response.resultSetSize;
+  }
+
   async getDataset(externalId: string): Promise<DatasetRecord | null> {
     try {
       const result = await this.client.getDataset(externalId);
