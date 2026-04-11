@@ -1,6 +1,6 @@
 {
   "catalogId": "sep-tucuman-ar",
-  "updatedAt": "2026-04-10T07:19:15.659Z",
+  "updatedAt": "2026-04-11T06:52:55.539Z",
   "datasets": [
     {
       "datasetId": "sep-tucuman-ar:notificaciones-recibidas-en-el-mes-de-marzo-2026",
@@ -73,6 +73,87 @@
           }
         ],
         "lastChecked": "2026-04-08T07:07:57.253Z"
+      }
+    },
+    {
+      "datasetId": "sep-tucuman-ar:cedulas-recibidas-segun-fuero",
+      "externalId": "cedulas-recibidas-segun-fuero",
+      "modifiedAt": "2026-04-01T10:42:45.960537",
+      "lastScoredAt": "2026-04-10T07:19:15.659Z",
+      "score": {
+        "datasetId": "sep-tucuman-ar:cedulas-recibidas-segun-fuero",
+        "title": "Cédulas recibidas según fuero",
+        "organization": "Fiscalía de Estado",
+        "overall": 0.926,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 0.85,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [
+                "tags"
+              ],
+              "descriptionLength": 58,
+              "tagCount": 0,
+              "resourceCount": 37
+            },
+            "calculatedAt": "2026-04-10T07:19:15.659Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.966,
+            "evidence": {
+              "modifiedAt": "2026-04-01T10:42:45.960537",
+              "daysSinceModified": 9,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-04-10T07:19:15.659Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "XLSX",
+                "PDF",
+                "CSV",
+                "XML",
+                "CVS"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 37,
+              "formatDistribution": {
+                "XLSX": 5,
+                "PDF": 12,
+                "CSV": 17,
+                "XML": 2,
+                "CVS": 1
+              }
+            },
+            "calculatedAt": "2026-04-10T07:19:15.659Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.9,
+            "evidence": {
+              "resourceCount": 37,
+              "checked": 37,
+              "accessible": 37
+            },
+            "calculatedAt": "2026-04-10T07:19:17.590Z"
+          }
+        ],
+        "lastChecked": "2026-04-10T07:19:15.659Z"
       }
     },
     {
@@ -16725,87 +16806,6 @@
           }
         ],
         "lastChecked": "2026-04-06T07:36:59.511Z"
-      }
-    },
-    {
-      "datasetId": "sep-tucuman-ar:cedulas-recibidas-segun-fuero",
-      "externalId": "cedulas-recibidas-segun-fuero",
-      "modifiedAt": "2026-04-01T10:42:45.960537",
-      "lastScoredAt": "2026-04-10T07:19:15.659Z",
-      "score": {
-        "datasetId": "sep-tucuman-ar:cedulas-recibidas-segun-fuero",
-        "title": "Cédulas recibidas según fuero",
-        "organization": "Fiscalía de Estado",
-        "overall": 0.926,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 0.85,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [
-                "tags"
-              ],
-              "descriptionLength": 58,
-              "tagCount": 0,
-              "resourceCount": 37
-            },
-            "calculatedAt": "2026-04-10T07:19:15.659Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.966,
-            "evidence": {
-              "modifiedAt": "2026-04-01T10:42:45.960537",
-              "daysSinceModified": 9,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-04-10T07:19:15.659Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "XLSX",
-                "PDF",
-                "CSV",
-                "XML",
-                "CVS"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 37,
-              "formatDistribution": {
-                "XLSX": 5,
-                "PDF": 12,
-                "CSV": 17,
-                "XML": 2,
-                "CVS": 1
-              }
-            },
-            "calculatedAt": "2026-04-10T07:19:15.659Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0.9,
-            "evidence": {
-              "resourceCount": 37,
-              "checked": 37,
-              "accessible": 37
-            },
-            "calculatedAt": "2026-04-10T07:19:17.590Z"
-          }
-        ],
-        "lastChecked": "2026-04-10T07:19:15.659Z"
       }
     }
   ]
