@@ -1,8 +1,78 @@
 {
   "catalogId": "datos-energia-ar",
-  "scoredAt": "2026-04-11T06:52:14.174Z",
+  "scoredAt": "2026-04-12T07:31:52.337Z",
   "datasetCount": 178,
   "datasets": [
+    {
+      "datasetId": "datos-energia-ar:centrales-energia-renovables",
+      "title": "Proyectos y obras de centrales de energía renovables",
+      "organization": "Subsecretaría de Eficiencia e Información Energética",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 92,
+            "tagCount": 5,
+            "resourceCount": 6
+          },
+          "calculatedAt": "2026-04-11T06:52:16.001Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.999,
+          "evidence": {
+            "modifiedAt": "2026-04-11T02:00:30.399032",
+            "daysSinceModified": 0,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-11T06:52:16.001Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "SHP",
+              "PDF"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 6,
+            "formatDistribution": {
+              "CSV": 1,
+              "SHP": 1,
+              "PDF": 4
+            }
+          },
+          "calculatedAt": "2026-04-11T06:52:16.001Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 6,
+            "checked": 6,
+            "accessible": 6
+          },
+          "calculatedAt": "2026-04-11T06:52:16.695Z"
+        }
+      ],
+      "lastChecked": "2026-04-11T06:52:14.174Z"
+    },
     {
       "datasetId": "datos-energia-ar:deteccion-satelital-de-venteos",
       "title": "Detección Satelital de Venteos",
@@ -748,10 +818,10 @@
       "lastChecked": "2026-04-06T07:27:38.548Z"
     },
     {
-      "datasetId": "datos-energia-ar:operadores_glp",
-      "title": "Operadores de GLP",
+      "datasetId": "datos-energia-ar:refinacion-hidrocarburos-petroquimicas",
+      "title": "Refinación de hidrocarburos -  Petroquímicas",
       "organization": "Subsecretaría de Eficiencia e Información Energética",
-      "overall": 0.983,
+      "overall": 0.978,
       "dimensions": [
         {
           "dimension": "completeness",
@@ -768,54 +838,52 @@
               "createdAt"
             ],
             "fieldsMissing": [],
-            "descriptionLength": 146,
-            "tagCount": 5,
-            "resourceCount": 26
+            "descriptionLength": 166,
+            "tagCount": 4,
+            "resourceCount": 2
           },
-          "calculatedAt": "2026-04-06T07:27:52.611Z"
+          "calculatedAt": "2026-04-11T06:52:19.435Z"
         },
         {
           "dimension": "freshness",
-          "score": 0.993,
+          "score": 0.973,
           "evidence": {
-            "modifiedAt": "2026-04-04T09:00:07.835225",
-            "daysSinceModified": 2,
+            "modifiedAt": "2026-04-04T05:00:02.686781",
+            "daysSinceModified": 7,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-04-06T07:27:52.611Z"
+          "calculatedAt": "2026-04-11T06:52:19.435Z"
         },
         {
           "dimension": "structure",
           "score": 0.95,
           "evidence": {
             "formats": [
-              "SHP",
               "CSV",
-              "PDF"
+              "SHP"
             ],
             "bestFormat": "CSV",
             "bestFormatScore": 0.95,
-            "resourceCount": 26,
+            "resourceCount": 2,
             "formatDistribution": {
-              "SHP": 12,
-              "CSV": 12,
-              "PDF": 2
+              "CSV": 1,
+              "SHP": 1
             }
           },
-          "calculatedAt": "2026-04-06T07:27:52.611Z"
+          "calculatedAt": "2026-04-11T06:52:19.435Z"
         },
         {
           "dimension": "accessibility",
           "score": 1,
           "evidence": {
-            "resourceCount": 26,
-            "checked": 26,
-            "accessible": 26
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
           },
-          "calculatedAt": "2026-04-06T07:27:53.791Z"
+          "calculatedAt": "2026-04-11T06:52:19.829Z"
         }
       ],
-      "lastChecked": "2026-04-06T07:27:38.548Z"
+      "lastChecked": "2026-04-11T06:52:14.174Z"
     },
     {
       "datasetId": "datos-energia-ar:permer-ii",
@@ -2042,74 +2110,6 @@
             "accessible": 4
           },
           "calculatedAt": "2026-04-09T07:17:08.582Z"
-        }
-      ],
-      "lastChecked": "2026-04-09T07:16:42.908Z"
-    },
-    {
-      "datasetId": "datos-energia-ar:precios-eess---resolucion-1104-04",
-      "title": "Precios y volúmenes EESS - Resolución 1104/04",
-      "organization": "Dirección Nacional de Economía de Hidrocarburos",
-      "overall": 0.975,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 259,
-            "tagCount": 4,
-            "resourceCount": 29
-          },
-          "calculatedAt": "2026-04-09T07:17:08.582Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.962,
-          "evidence": {
-            "modifiedAt": "2026-03-30T05:00:23.215486",
-            "daysSinceModified": 10,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-09T07:17:08.582Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "SHP"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 29,
-            "formatDistribution": {
-              "CSV": 28,
-              "SHP": 1
-            }
-          },
-          "calculatedAt": "2026-04-09T07:17:08.582Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 29,
-            "checked": 29,
-            "accessible": 29
-          },
-          "calculatedAt": "2026-04-09T07:17:10.039Z"
         }
       ],
       "lastChecked": "2026-04-09T07:16:42.908Z"
@@ -11557,6 +11557,74 @@
       "lastChecked": "2026-04-06T07:27:38.548Z"
     },
     {
+      "datasetId": "datos-energia-ar:produccion-de-petroleo-y-gas-por-pozo",
+      "title": "Producción de petróleo y gas por pozo (Capítulo IV)",
+      "organization": "Dirección Nacional de Exploración y Producción",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 129,
+            "tagCount": 8,
+            "resourceCount": 53
+          },
+          "calculatedAt": "2026-04-12T07:31:52.337Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 1,
+          "evidence": {
+            "modifiedAt": "2026-04-12T07:01:26.146647",
+            "daysSinceModified": 0,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-12T07:31:52.337Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "SHP"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 53,
+            "formatDistribution": {
+              "CSV": 52,
+              "SHP": 1
+            }
+          },
+          "calculatedAt": "2026-04-12T07:31:52.337Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 53,
+            "checked": 53,
+            "accessible": 53
+          },
+          "calculatedAt": "2026-04-12T07:31:55.033Z"
+        }
+      ],
+      "lastChecked": "2026-04-12T07:31:52.337Z"
+    },
+    {
       "datasetId": "datos-energia-ar:precios-de-gas-natural",
       "title": "Precios de Gas Natural",
       "organization": "Subsecretaría de Eficiencia e Información Energética",
@@ -11581,17 +11649,17 @@
             "tagCount": 3,
             "resourceCount": 4
           },
-          "calculatedAt": "2026-04-11T06:52:14.174Z"
+          "calculatedAt": "2026-04-12T07:31:55.033Z"
         },
         {
           "dimension": "freshness",
           "score": 1,
           "evidence": {
-            "modifiedAt": "2026-04-11T06:00:50.627448",
+            "modifiedAt": "2026-04-12T07:00:02.564956",
             "daysSinceModified": 0,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-04-11T06:52:14.174Z"
+          "calculatedAt": "2026-04-12T07:31:55.033Z"
         },
         {
           "dimension": "structure",
@@ -11611,7 +11679,7 @@
               "XLS": 1
             }
           },
-          "calculatedAt": "2026-04-11T06:52:14.174Z"
+          "calculatedAt": "2026-04-12T07:31:55.033Z"
         },
         {
           "dimension": "accessibility",
@@ -11621,78 +11689,10 @@
             "checked": 4,
             "accessible": 3
           },
-          "calculatedAt": "2026-04-11T06:52:15.084Z"
+          "calculatedAt": "2026-04-12T07:31:55.775Z"
         }
       ],
-      "lastChecked": "2026-04-11T06:52:14.174Z"
-    },
-    {
-      "datasetId": "datos-energia-ar:precios-en-surtidor",
-      "title": "Precios en Surtidor - Resolución 314/2016",
-      "organization": "Subsecretaría de Eficiencia e Información Energética",
-      "overall": 0.88,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 383,
-            "tagCount": 4,
-            "resourceCount": 3
-          },
-          "calculatedAt": "2026-04-11T06:52:15.084Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 1,
-          "evidence": {
-            "modifiedAt": "2026-04-11T04:00:30.704775",
-            "daysSinceModified": 0,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-11T06:52:15.084Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "HTML"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 3,
-            "formatDistribution": {
-              "CSV": 2,
-              "HTML": 1
-            }
-          },
-          "calculatedAt": "2026-04-11T06:52:15.084Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.667,
-          "evidence": {
-            "resourceCount": 3,
-            "checked": 3,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-04-11T06:52:15.481Z"
-        }
-      ],
-      "lastChecked": "2026-04-11T06:52:14.174Z"
+      "lastChecked": "2026-04-12T07:31:52.337Z"
     },
     {
       "datasetId": "datos-energia-ar:datos-de-fractura-de-pozos-adjunto-iv",
@@ -11719,17 +11719,17 @@
             "tagCount": 7,
             "resourceCount": 2
           },
-          "calculatedAt": "2026-04-11T06:52:15.481Z"
+          "calculatedAt": "2026-04-12T07:31:55.775Z"
         },
         {
           "dimension": "freshness",
-          "score": 1,
+          "score": 0.999,
           "evidence": {
-            "modifiedAt": "2026-04-11T04:00:05.782919",
+            "modifiedAt": "2026-04-12T04:00:17.358285",
             "daysSinceModified": 0,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-04-11T06:52:15.482Z"
+          "calculatedAt": "2026-04-12T07:31:55.775Z"
         },
         {
           "dimension": "structure",
@@ -11747,7 +11747,7 @@
               "PDF": 1
             }
           },
-          "calculatedAt": "2026-04-11T06:52:15.482Z"
+          "calculatedAt": "2026-04-12T07:31:55.775Z"
         },
         {
           "dimension": "accessibility",
@@ -11757,15 +11757,83 @@
             "checked": 2,
             "accessible": 2
           },
-          "calculatedAt": "2026-04-11T06:52:16.001Z"
+          "calculatedAt": "2026-04-12T07:31:56.333Z"
         }
       ],
-      "lastChecked": "2026-04-11T06:52:14.174Z"
+      "lastChecked": "2026-04-12T07:31:52.337Z"
     },
     {
-      "datasetId": "datos-energia-ar:centrales-energia-renovables",
-      "title": "Proyectos y obras de centrales de energía renovables",
+      "datasetId": "datos-energia-ar:precios-en-surtidor",
+      "title": "Precios en Surtidor - Resolución 314/2016",
       "organization": "Subsecretaría de Eficiencia e Información Energética",
+      "overall": 0.88,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 383,
+            "tagCount": 4,
+            "resourceCount": 3
+          },
+          "calculatedAt": "2026-04-12T07:31:56.334Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.998,
+          "evidence": {
+            "modifiedAt": "2026-04-11T19:00:25.864848",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-12T07:31:56.334Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "HTML"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 3,
+            "formatDistribution": {
+              "CSV": 2,
+              "HTML": 1
+            }
+          },
+          "calculatedAt": "2026-04-12T07:31:56.334Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.667,
+          "evidence": {
+            "resourceCount": 3,
+            "checked": 3,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-04-12T07:31:56.725Z"
+        }
+      ],
+      "lastChecked": "2026-04-12T07:31:52.337Z"
+    },
+    {
+      "datasetId": "datos-energia-ar:precios-eess---resolucion-1104-04",
+      "title": "Precios y volúmenes EESS - Resolución 1104/04",
+      "organization": "Dirección Nacional de Economía de Hidrocarburos",
       "overall": 0.984,
       "dimensions": [
         {
@@ -11783,21 +11851,21 @@
               "createdAt"
             ],
             "fieldsMissing": [],
-            "descriptionLength": 92,
-            "tagCount": 5,
-            "resourceCount": 6
+            "descriptionLength": 259,
+            "tagCount": 4,
+            "resourceCount": 29
           },
-          "calculatedAt": "2026-04-11T06:52:16.001Z"
+          "calculatedAt": "2026-04-12T07:31:56.725Z"
         },
         {
           "dimension": "freshness",
-          "score": 0.999,
+          "score": 0.997,
           "evidence": {
-            "modifiedAt": "2026-04-11T02:00:30.399032",
-            "daysSinceModified": 0,
+            "modifiedAt": "2026-04-11T13:01:25.091412",
+            "daysSinceModified": 1,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-04-11T06:52:16.001Z"
+          "calculatedAt": "2026-04-12T07:31:56.725Z"
         },
         {
           "dimension": "structure",
@@ -11805,37 +11873,35 @@
           "evidence": {
             "formats": [
               "CSV",
-              "SHP",
-              "PDF"
+              "SHP"
             ],
             "bestFormat": "CSV",
             "bestFormatScore": 0.95,
-            "resourceCount": 6,
+            "resourceCount": 29,
             "formatDistribution": {
-              "CSV": 1,
-              "SHP": 1,
-              "PDF": 4
+              "CSV": 28,
+              "SHP": 1
             }
           },
-          "calculatedAt": "2026-04-11T06:52:16.001Z"
+          "calculatedAt": "2026-04-12T07:31:56.725Z"
         },
         {
           "dimension": "accessibility",
           "score": 1,
           "evidence": {
-            "resourceCount": 6,
-            "checked": 6,
-            "accessible": 6
+            "resourceCount": 29,
+            "checked": 29,
+            "accessible": 29
           },
-          "calculatedAt": "2026-04-11T06:52:16.695Z"
+          "calculatedAt": "2026-04-12T07:31:58.263Z"
         }
       ],
-      "lastChecked": "2026-04-11T06:52:14.174Z"
+      "lastChecked": "2026-04-12T07:31:52.337Z"
     },
     {
-      "datasetId": "datos-energia-ar:produccion-de-petroleo-y-gas-por-pozo",
-      "title": "Producción de petróleo y gas por pozo (Capítulo IV)",
-      "organization": "Dirección Nacional de Exploración y Producción",
+      "datasetId": "datos-energia-ar:operadores_glp",
+      "title": "Operadores de GLP",
+      "organization": "Subsecretaría de Eficiencia e Información Energética",
       "overall": 0.983,
       "dimensions": [
         {
@@ -11853,120 +11919,54 @@
               "createdAt"
             ],
             "fieldsMissing": [],
-            "descriptionLength": 129,
-            "tagCount": 8,
-            "resourceCount": 53
+            "descriptionLength": 146,
+            "tagCount": 5,
+            "resourceCount": 26
           },
-          "calculatedAt": "2026-04-11T06:52:16.695Z"
+          "calculatedAt": "2026-04-12T07:31:58.263Z"
         },
         {
           "dimension": "freshness",
           "score": 0.996,
           "evidence": {
-            "modifiedAt": "2026-04-10T08:00:39.355299",
+            "modifiedAt": "2026-04-11T09:00:07.223198",
             "daysSinceModified": 1,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-04-11T06:52:16.695Z"
+          "calculatedAt": "2026-04-12T07:31:58.263Z"
         },
         {
           "dimension": "structure",
           "score": 0.95,
           "evidence": {
             "formats": [
+              "SHP",
               "CSV",
-              "SHP"
+              "PDF"
             ],
             "bestFormat": "CSV",
             "bestFormatScore": 0.95,
-            "resourceCount": 53,
+            "resourceCount": 26,
             "formatDistribution": {
-              "CSV": 52,
-              "SHP": 1
+              "SHP": 12,
+              "CSV": 12,
+              "PDF": 2
             }
           },
-          "calculatedAt": "2026-04-11T06:52:16.695Z"
+          "calculatedAt": "2026-04-12T07:31:58.263Z"
         },
         {
           "dimension": "accessibility",
           "score": 1,
           "evidence": {
-            "resourceCount": 53,
-            "checked": 53,
-            "accessible": 53
+            "resourceCount": 26,
+            "checked": 26,
+            "accessible": 26
           },
-          "calculatedAt": "2026-04-11T06:52:19.435Z"
+          "calculatedAt": "2026-04-12T07:31:59.654Z"
         }
       ],
-      "lastChecked": "2026-04-11T06:52:14.174Z"
-    },
-    {
-      "datasetId": "datos-energia-ar:refinacion-hidrocarburos-petroquimicas",
-      "title": "Refinación de hidrocarburos -  Petroquímicas",
-      "organization": "Subsecretaría de Eficiencia e Información Energética",
-      "overall": 0.978,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 166,
-            "tagCount": 4,
-            "resourceCount": 2
-          },
-          "calculatedAt": "2026-04-11T06:52:19.435Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.973,
-          "evidence": {
-            "modifiedAt": "2026-04-04T05:00:02.686781",
-            "daysSinceModified": 7,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-11T06:52:19.435Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "SHP"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 2,
-            "formatDistribution": {
-              "CSV": 1,
-              "SHP": 1
-            }
-          },
-          "calculatedAt": "2026-04-11T06:52:19.435Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-04-11T06:52:19.829Z"
-        }
-      ],
-      "lastChecked": "2026-04-11T06:52:14.174Z"
+      "lastChecked": "2026-04-12T07:31:52.337Z"
     }
   ],
   "coverage": 1
