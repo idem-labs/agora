@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description:
       "MCP server connecting LLMs to 42 government data portals. Search, SQL queries, and quality scores in one tool call.",
   },
-  metadataBase: new URL("https://agora.fede-castillo.workers.dev"),
+  metadataBase: new URL("https://agora.idem-labs.workers.dev"),
 };
 
 export default function RootLayout({
