@@ -1,7 +1,85 @@
 {
   "catalogId": "datosgestionabierta-cba-ar",
-  "updatedAt": "2026-04-17T07:21:31.214Z",
+  "updatedAt": "2026-04-18T07:00:14.637Z",
   "datasets": [
+    {
+      "datasetId": "datosgestionabierta-cba-ar:oncativo",
+      "externalId": "oncativo",
+      "modifiedAt": "2026-04-16T16:33:58.620166",
+      "lastScoredAt": "2026-04-17T07:21:31.214Z",
+      "score": {
+        "datasetId": "datosgestionabierta-cba-ar:oncativo",
+        "title": "Municipalidad de Oncativo - Transparencia activa",
+        "organization": "Gobiernos Locales",
+        "overall": 0.957,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 776,
+              "tagCount": 2,
+              "resourceCount": 15
+            },
+            "calculatedAt": "2026-04-17T07:21:31.214Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.998,
+            "evidence": {
+              "modifiedAt": "2026-04-16T16:33:58.620166",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-04-17T07:21:31.214Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "XLSX",
+                "CSV",
+                "PDF",
+                "ENLACE"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 15,
+              "formatDistribution": {
+                "XLSX": 4,
+                "CSV": 4,
+                "PDF": 5,
+                "ENLACE": 2
+              }
+            },
+            "calculatedAt": "2026-04-17T07:21:31.214Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.913,
+            "evidence": {
+              "resourceCount": 15,
+              "checked": 15,
+              "accessible": 15
+            },
+            "calculatedAt": "2026-04-17T07:21:32.829Z"
+          }
+        ],
+        "lastChecked": "2026-04-17T07:21:31.214Z"
+      }
+    },
     {
       "datasetId": "datosgestionabierta-cba-ar:empleados-poder-ejecutivo",
       "externalId": "empleados-poder-ejecutivo",
@@ -10696,84 +10774,6 @@
           }
         ],
         "lastChecked": "2026-04-13T08:05:48.995Z"
-      }
-    },
-    {
-      "datasetId": "datosgestionabierta-cba-ar:oncativo",
-      "externalId": "oncativo",
-      "modifiedAt": "2026-04-16T16:33:58.620166",
-      "lastScoredAt": "2026-04-17T07:21:31.214Z",
-      "score": {
-        "datasetId": "datosgestionabierta-cba-ar:oncativo",
-        "title": "Municipalidad de Oncativo - Transparencia activa",
-        "organization": "Gobiernos Locales",
-        "overall": 0.957,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 776,
-              "tagCount": 2,
-              "resourceCount": 15
-            },
-            "calculatedAt": "2026-04-17T07:21:31.214Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.998,
-            "evidence": {
-              "modifiedAt": "2026-04-16T16:33:58.620166",
-              "daysSinceModified": 1,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-04-17T07:21:31.214Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "XLSX",
-                "CSV",
-                "PDF",
-                "ENLACE"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 15,
-              "formatDistribution": {
-                "XLSX": 4,
-                "CSV": 4,
-                "PDF": 5,
-                "ENLACE": 2
-              }
-            },
-            "calculatedAt": "2026-04-17T07:21:31.214Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0.913,
-            "evidence": {
-              "resourceCount": 15,
-              "checked": 15,
-              "accessible": 15
-            },
-            "calculatedAt": "2026-04-17T07:21:32.829Z"
-          }
-        ],
-        "lastChecked": "2026-04-17T07:21:31.214Z"
       }
     }
   ]
