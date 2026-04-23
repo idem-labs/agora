@@ -1,7 +1,83 @@
 {
   "catalogId": "datos-bahiablanca-ar",
-  "updatedAt": "2026-04-22T07:21:51.805Z",
+  "updatedAt": "2026-04-23T07:26:29.959Z",
   "datasets": [
+    {
+      "datasetId": "datos-bahiablanca-ar:publicidad",
+      "externalId": "publicidad",
+      "modifiedAt": "2026-04-21T16:26:19.058320",
+      "lastScoredAt": "2026-04-22T07:21:51.805Z",
+      "score": {
+        "datasetId": "datos-bahiablanca-ar:publicidad",
+        "title": "Publicidad",
+        "organization": "Secretaría de Economía",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 59,
+              "tagCount": 3,
+              "resourceCount": 38
+            },
+            "calculatedAt": "2026-04-22T07:21:51.805Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.998,
+            "evidence": {
+              "modifiedAt": "2026-04-21T16:26:19.058320",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-04-22T07:21:51.805Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "JSON",
+                "CSV",
+                "XLS"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 38,
+              "formatDistribution": {
+                "JSON": 1,
+                "CSV": 19,
+                "XLS": 18
+              }
+            },
+            "calculatedAt": "2026-04-22T07:21:51.805Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 38,
+              "checked": 38,
+              "accessible": 38
+            },
+            "calculatedAt": "2026-04-22T07:21:55.632Z"
+          }
+        ],
+        "lastChecked": "2026-04-22T07:21:51.805Z"
+      }
+    },
     {
       "datasetId": "datos-bahiablanca-ar:compras",
       "externalId": "compras",
@@ -16036,82 +16112,6 @@
           }
         ],
         "lastChecked": "2026-04-19T07:24:35.640Z"
-      }
-    },
-    {
-      "datasetId": "datos-bahiablanca-ar:publicidad",
-      "externalId": "publicidad",
-      "modifiedAt": "2026-04-21T16:26:19.058320",
-      "lastScoredAt": "2026-04-22T07:21:51.805Z",
-      "score": {
-        "datasetId": "datos-bahiablanca-ar:publicidad",
-        "title": "Publicidad",
-        "organization": "Secretaría de Economía",
-        "overall": 0.984,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 59,
-              "tagCount": 3,
-              "resourceCount": 38
-            },
-            "calculatedAt": "2026-04-22T07:21:51.805Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.998,
-            "evidence": {
-              "modifiedAt": "2026-04-21T16:26:19.058320",
-              "daysSinceModified": 1,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-04-22T07:21:51.805Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "JSON",
-                "CSV",
-                "XLS"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 38,
-              "formatDistribution": {
-                "JSON": 1,
-                "CSV": 19,
-                "XLS": 18
-              }
-            },
-            "calculatedAt": "2026-04-22T07:21:51.805Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 38,
-              "checked": 38,
-              "accessible": 38
-            },
-            "calculatedAt": "2026-04-22T07:21:55.632Z"
-          }
-        ],
-        "lastChecked": "2026-04-22T07:21:51.805Z"
       }
     }
   ]
