@@ -1,8 +1,74 @@
 {
   "catalogId": "datos-corrientes-ar",
-  "scoredAt": "2026-04-23T07:31:21.044Z",
+  "scoredAt": "2026-04-24T07:53:51.979Z",
   "datasetCount": 70,
   "datasets": [
+    {
+      "datasetId": "datos-corrientes-ar:observatorio-vial",
+      "title": "Observatorio Vial",
+      "organization": "Subsecretaria de Transito y Seguridad Vial",
+      "overall": 0.952,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 116,
+            "tagCount": 4,
+            "resourceCount": 16
+          },
+          "calculatedAt": "2026-04-23T07:31:21.044Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.997,
+          "evidence": {
+            "modifiedAt": "2026-04-22T13:35:29.941685",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-23T07:31:21.044Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 16,
+            "formatDistribution": {
+              "CSV": 16
+            }
+          },
+          "calculatedAt": "2026-04-23T07:31:21.044Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.9,
+          "evidence": {
+            "resourceCount": 16,
+            "checked": 16,
+            "accessible": 16
+          },
+          "calculatedAt": "2026-04-23T07:31:21.657Z"
+        }
+      ],
+      "lastChecked": "2026-04-23T07:31:21.044Z"
+    },
     {
       "datasetId": "datos-corrientes-ar:barrios",
       "title": "Barrios",
@@ -4569,72 +4635,6 @@
         }
       ],
       "lastChecked": "2026-04-20T08:16:33.959Z"
-    },
-    {
-      "datasetId": "datos-corrientes-ar:observatorio-vial",
-      "title": "Observatorio Vial",
-      "organization": "Subsecretaria de Transito y Seguridad Vial",
-      "overall": 0.952,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 116,
-            "tagCount": 4,
-            "resourceCount": 16
-          },
-          "calculatedAt": "2026-04-23T07:31:21.044Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.997,
-          "evidence": {
-            "modifiedAt": "2026-04-22T13:35:29.941685",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-23T07:31:21.044Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 16,
-            "formatDistribution": {
-              "CSV": 16
-            }
-          },
-          "calculatedAt": "2026-04-23T07:31:21.044Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.9,
-          "evidence": {
-            "resourceCount": 16,
-            "checked": 16,
-            "accessible": 16
-          },
-          "calculatedAt": "2026-04-23T07:31:21.657Z"
-        }
-      ],
-      "lastChecked": "2026-04-23T07:31:21.044Z"
     }
   ],
   "coverage": 1
