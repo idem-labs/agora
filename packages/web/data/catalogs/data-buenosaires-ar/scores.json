@@ -1,8 +1,209 @@
 {
   "catalogId": "data-buenosaires-ar",
-  "scoredAt": "2026-04-28T08:11:30.766Z",
+  "scoredAt": "2026-04-29T08:01:42.061Z",
   "datasetCount": 451,
   "datasets": [
+    {
+      "datasetId": "data-buenosaires-ar:casos-covid-19",
+      "title": "Casos COVID-19",
+      "organization": "Ministerio de Salud",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 110,
+            "tagCount": 6,
+            "resourceCount": 7
+          },
+          "calculatedAt": "2026-04-28T08:11:30.766Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.997,
+          "evidence": {
+            "modifiedAt": "2026-04-27T12:55:17.425933",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-28T08:11:30.766Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 7,
+            "formatDistribution": {
+              "CSV": 7
+            }
+          },
+          "calculatedAt": "2026-04-28T08:11:30.766Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 7,
+            "checked": 7,
+            "accessible": 7
+          },
+          "calculatedAt": "2026-04-28T08:11:34.681Z"
+        }
+      ],
+      "lastChecked": "2026-04-28T08:11:30.766Z"
+    },
+    {
+      "datasetId": "data-buenosaires-ar:turnos-para-vacunacion-covid-19",
+      "title": "Turnos para vacunación COVID-19",
+      "organization": "Ministerio de Salud",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 355,
+            "tagCount": 7,
+            "resourceCount": 6
+          },
+          "calculatedAt": "2026-04-28T08:11:34.681Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.997,
+          "evidence": {
+            "modifiedAt": "2026-04-27T12:50:39.117354",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-28T08:11:34.681Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 6,
+            "formatDistribution": {
+              "CSV": 6
+            }
+          },
+          "calculatedAt": "2026-04-28T08:11:34.681Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 6,
+            "checked": 6,
+            "accessible": 6
+          },
+          "calculatedAt": "2026-04-28T08:11:36.354Z"
+        }
+      ],
+      "lastChecked": "2026-04-28T08:11:30.766Z"
+    },
+    {
+      "datasetId": "data-buenosaires-ar:calidad-aire",
+      "title": "Calidad de Aire",
+      "organization": "Agencia de Protección Ambiental",
+      "overall": 0.952,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 0.75,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [
+              "description"
+            ],
+            "descriptionLength": 0,
+            "tagCount": 4,
+            "resourceCount": 16
+          },
+          "calculatedAt": "2026-04-28T08:11:36.354Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.997,
+          "evidence": {
+            "modifiedAt": "2026-04-27T12:50:14.570939",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-28T08:11:36.354Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "XLSX",
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 16,
+            "formatDistribution": {
+              "XLSX": 8,
+              "CSV": 8
+            }
+          },
+          "calculatedAt": "2026-04-28T08:11:36.354Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 16,
+            "checked": 16,
+            "accessible": 16
+          },
+          "calculatedAt": "2026-04-28T08:11:37.739Z"
+        }
+      ],
+      "lastChecked": "2026-04-28T08:11:30.766Z"
+    },
     {
       "datasetId": "data-buenosaires-ar:casos-penales-contravencionales",
       "title": "Casos penales contravencionales violencia de genero.",
@@ -1545,6 +1746,505 @@
       "lastChecked": "2026-04-23T07:27:00.082Z"
     },
     {
+      "datasetId": "data-buenosaires-ar:productoras-eventos-masivos",
+      "title": "Productoras de Eventos Masivos",
+      "organization": "Agencia Gubernamental de Control (AGC)",
+      "overall": 0.977,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 111,
+            "tagCount": 5,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-04-28T08:11:37.739Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.97,
+          "evidence": {
+            "modifiedAt": "2026-04-20T13:18:43.130705",
+            "daysSinceModified": 8,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-28T08:11:37.739Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "XLSX",
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "XLSX": 1,
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-04-28T08:11:37.739Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-04-28T08:11:38.627Z"
+        }
+      ],
+      "lastChecked": "2026-04-28T08:11:30.766Z"
+    },
+    {
+      "datasetId": "data-buenosaires-ar:mapa-ruido",
+      "title": "Mapa de Ruido",
+      "organization": "Agencia de Protección Ambiental",
+      "overall": 0.977,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 107,
+            "tagCount": 5,
+            "resourceCount": 14
+          },
+          "calculatedAt": "2026-04-28T08:11:38.627Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.97,
+          "evidence": {
+            "modifiedAt": "2026-04-20T13:18:11.357238",
+            "daysSinceModified": 8,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-28T08:11:38.627Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "ZIP",
+              "XLSX",
+              "JSON"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 14,
+            "formatDistribution": {
+              "CSV": 4,
+              "ZIP": 4,
+              "XLSX": 4,
+              "JSON": 2
+            }
+          },
+          "calculatedAt": "2026-04-28T08:11:38.627Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 14,
+            "checked": 14,
+            "accessible": 14
+          },
+          "calculatedAt": "2026-04-28T08:11:40.397Z"
+        }
+      ],
+      "lastChecked": "2026-04-28T08:11:30.766Z"
+    },
+    {
+      "datasetId": "data-buenosaires-ar:areas-hospitalarias",
+      "title": "Áreas Hospitalarias",
+      "organization": "Ministerio de Salud",
+      "overall": 0.977,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 139,
+            "tagCount": 3,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-04-28T08:11:40.397Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.97,
+          "evidence": {
+            "modifiedAt": "2026-04-20T13:17:35.370695",
+            "daysSinceModified": 8,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-28T08:11:40.397Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "ZIP",
+              "JSON",
+              "XLSX"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "CSV": 1,
+              "ZIP": 1,
+              "JSON": 1,
+              "XLSX": 1
+            }
+          },
+          "calculatedAt": "2026-04-28T08:11:40.397Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-04-28T08:11:41.306Z"
+        }
+      ],
+      "lastChecked": "2026-04-28T08:11:30.766Z"
+    },
+    {
+      "datasetId": "data-buenosaires-ar:centros-salud-privados",
+      "title": "Centros de Salud Privados",
+      "organization": "Ministerio de Salud",
+      "overall": 0.977,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 142,
+            "tagCount": 3,
+            "resourceCount": 3
+          },
+          "calculatedAt": "2026-04-28T08:11:41.306Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.97,
+          "evidence": {
+            "modifiedAt": "2026-04-20T13:15:36.247767",
+            "daysSinceModified": 8,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-28T08:11:41.306Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "XLSX",
+              "CSV",
+              "ZIP"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 3,
+            "formatDistribution": {
+              "XLSX": 1,
+              "CSV": 1,
+              "ZIP": 1
+            }
+          },
+          "calculatedAt": "2026-04-28T08:11:41.306Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 3,
+            "checked": 3,
+            "accessible": 3
+          },
+          "calculatedAt": "2026-04-28T08:11:42.000Z"
+        }
+      ],
+      "lastChecked": "2026-04-28T08:11:30.766Z"
+    },
+    {
+      "datasetId": "data-buenosaires-ar:estadios",
+      "title": "Estadios",
+      "organization": "Vicejefatura de Gobierno",
+      "overall": 0.958,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 0.85,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [
+              "tags"
+            ],
+            "descriptionLength": 96,
+            "tagCount": 0,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-04-28T08:11:42.000Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.97,
+          "evidence": {
+            "modifiedAt": "2026-04-20T13:14:41.292840",
+            "daysSinceModified": 8,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-28T08:11:42.000Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "ZIP",
+              "XLSX",
+              "JSON"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "CSV": 1,
+              "ZIP": 1,
+              "XLSX": 1,
+              "JSON": 1
+            }
+          },
+          "calculatedAt": "2026-04-28T08:11:42.000Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-04-28T08:11:42.718Z"
+        }
+      ],
+      "lastChecked": "2026-04-28T08:11:30.766Z"
+    },
+    {
+      "datasetId": "data-buenosaires-ar:polideportivos",
+      "title": "Polideportivos",
+      "organization": "Vicejefatura de Gobierno",
+      "overall": 0.977,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 94,
+            "tagCount": 6,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-04-28T08:11:42.718Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.97,
+          "evidence": {
+            "modifiedAt": "2026-04-20T13:14:13.872356",
+            "daysSinceModified": 8,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-28T08:11:42.718Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "ZIP",
+              "XLSX",
+              "GEOJSON",
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "ZIP": 1,
+              "XLSX": 1,
+              "GEOJSON": 1,
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-04-28T08:11:42.718Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-04-28T08:11:43.440Z"
+        }
+      ],
+      "lastChecked": "2026-04-28T08:11:30.766Z"
+    },
+    {
+      "datasetId": "data-buenosaires-ar:clubes",
+      "title": "Clubes",
+      "organization": "Vicejefatura de Gobierno",
+      "overall": 0.977,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 70,
+            "tagCount": 5,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-04-28T08:11:43.440Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.97,
+          "evidence": {
+            "modifiedAt": "2026-04-20T13:13:50.019588",
+            "daysSinceModified": 8,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-28T08:11:43.440Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "JSON",
+              "XLSX",
+              "ZIP"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "CSV": 1,
+              "JSON": 1,
+              "XLSX": 1,
+              "ZIP": 1
+            }
+          },
+          "calculatedAt": "2026-04-28T08:11:43.440Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-04-28T08:11:44.165Z"
+        }
+      ],
+      "lastChecked": "2026-04-28T08:11:30.766Z"
+    },
+    {
       "datasetId": "data-buenosaires-ar:puntos-verdes",
       "title": "Puntos Verdes",
       "organization": "Agencia de Protección Ambiental",
@@ -2456,294 +3156,6 @@
       "lastChecked": "2026-04-25T07:07:21.769Z"
     },
     {
-      "datasetId": "data-buenosaires-ar:uniones-civiles-convivenciales",
-      "title": "Uniones civiles convivenciales.",
-      "organization": "Dirección General Registro del Estado Civil y Capacidad de las Personas",
-      "overall": 0.977,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 112,
-            "tagCount": 2,
-            "resourceCount": 17
-          },
-          "calculatedAt": "2026-04-22T07:22:20.267Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.971,
-          "evidence": {
-            "modifiedAt": "2026-04-14T15:25:26.722957",
-            "daysSinceModified": 8,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-22T07:22:20.267Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "XLSX"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 17,
-            "formatDistribution": {
-              "CSV": 9,
-              "XLSX": 8
-            }
-          },
-          "calculatedAt": "2026-04-22T07:22:20.267Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 17,
-            "checked": 17,
-            "accessible": 17
-          },
-          "calculatedAt": "2026-04-22T07:22:22.812Z"
-        }
-      ],
-      "lastChecked": "2026-04-22T07:22:20.267Z"
-    },
-    {
-      "datasetId": "data-buenosaires-ar:distritos-escolares",
-      "title": "Distritos Escolares.",
-      "organization": "Ministerio de Educación",
-      "overall": 0.958,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 0.85,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [
-              "tags"
-            ],
-            "descriptionLength": 71,
-            "tagCount": 0,
-            "resourceCount": 6
-          },
-          "calculatedAt": "2026-04-22T07:22:22.812Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.971,
-          "evidence": {
-            "modifiedAt": "2026-04-14T13:21:22.269962",
-            "daysSinceModified": 8,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-22T07:22:22.812Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "XLSX",
-              "ZIP",
-              "JSON",
-              "PDF"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 6,
-            "formatDistribution": {
-              "CSV": 1,
-              "XLSX": 1,
-              "ZIP": 1,
-              "JSON": 1,
-              "PDF": 2
-            }
-          },
-          "calculatedAt": "2026-04-22T07:22:22.812Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 6,
-            "checked": 6,
-            "accessible": 6
-          },
-          "calculatedAt": "2026-04-22T07:22:24.819Z"
-        }
-      ],
-      "lastChecked": "2026-04-22T07:22:20.267Z"
-    },
-    {
-      "datasetId": "data-buenosaires-ar:embajadas",
-      "title": "Embajadas",
-      "organization": "Jefatura de Gabinete de Ministros",
-      "overall": 0.958,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 0.85,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [
-              "tags"
-            ],
-            "descriptionLength": 84,
-            "tagCount": 0,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:24.819Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.971,
-          "evidence": {
-            "modifiedAt": "2026-04-14T13:20:17.537709",
-            "daysSinceModified": 8,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-22T07:22:24.819Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "ZIP",
-              "XLSX",
-              "JSON"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "CSV": 1,
-              "ZIP": 1,
-              "XLSX": 1,
-              "JSON": 1
-            }
-          },
-          "calculatedAt": "2026-04-22T07:22:24.819Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:25.536Z"
-        }
-      ],
-      "lastChecked": "2026-04-22T07:22:20.267Z"
-    },
-    {
-      "datasetId": "data-buenosaires-ar:farmacias",
-      "title": "Farmacias",
-      "organization": "Ministerio de Salud",
-      "overall": 0.977,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 70,
-            "tagCount": 3,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:25.536Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.971,
-          "evidence": {
-            "modifiedAt": "2026-04-14T13:19:35.902690",
-            "daysSinceModified": 8,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-22T07:22:25.536Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "ZIP",
-              "XLSX",
-              "JSON"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "CSV": 1,
-              "ZIP": 1,
-              "XLSX": 1,
-              "JSON": 1
-            }
-          },
-          "calculatedAt": "2026-04-22T07:22:25.536Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:26.275Z"
-        }
-      ],
-      "lastChecked": "2026-04-22T07:22:20.267Z"
-    },
-    {
       "datasetId": "data-buenosaires-ar:servicio-informacion-normativa",
       "title": "Servicio de información normativa.",
       "organization": "Secretaría Legal y Técnica",
@@ -2950,149 +3362,6 @@
       "lastChecked": "2026-04-25T07:07:21.769Z"
     },
     {
-      "datasetId": "data-buenosaires-ar:actividades-culturales",
-      "title": "Actividades Culturales.",
-      "organization": "Ministerio de Cultura",
-      "overall": 0.973,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 86,
-            "tagCount": 2,
-            "resourceCount": 21
-          },
-          "calculatedAt": "2026-04-22T07:22:26.275Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.953,
-          "evidence": {
-            "modifiedAt": "2026-04-09T21:10:57.266724",
-            "daysSinceModified": 12,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-22T07:22:26.275Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "ZIP",
-              "XLSX",
-              "GEOJSON",
-              "CSV",
-              "GPKG"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 21,
-            "formatDistribution": {
-              "ZIP": 4,
-              "XLSX": 6,
-              "GEOJSON": 4,
-              "CSV": 6,
-              "GPKG": 1
-            }
-          },
-          "calculatedAt": "2026-04-22T07:22:26.275Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 21,
-            "checked": 21,
-            "accessible": 21
-          },
-          "calculatedAt": "2026-04-22T07:22:27.724Z"
-        }
-      ],
-      "lastChecked": "2026-04-22T07:22:20.267Z"
-    },
-    {
-      "datasetId": "data-buenosaires-ar:denuncias-defensa-consumidor",
-      "title": "Denuncias Defensa del Consumidor",
-      "organization": "Secretaria de Atención Ciudadana y Gestión Comunal",
-      "overall": 0.954,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 0.85,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [
-              "tags"
-            ],
-            "descriptionLength": 116,
-            "tagCount": 0,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:27.724Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.953,
-          "evidence": {
-            "modifiedAt": "2026-04-09T19:32:00.750152",
-            "daysSinceModified": 12,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-22T07:22:27.724Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "XLSX"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "CSV": 2,
-              "XLSX": 2
-            }
-          },
-          "calculatedAt": "2026-04-22T07:22:27.724Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:28.482Z"
-        }
-      ],
-      "lastChecked": "2026-04-22T07:22:20.267Z"
-    },
-    {
       "datasetId": "data-buenosaires-ar:seguridad-vial-autopistas-ausa",
       "title": "Seguridad Vial Autopistas AUSA",
       "organization": "Autopistas Urbanas (AUSA)",
@@ -3229,214 +3498,6 @@
         }
       ],
       "lastChecked": "2026-04-25T07:07:21.769Z"
-    },
-    {
-      "datasetId": "data-buenosaires-ar:universidades",
-      "title": "Universidades",
-      "organization": "Ministerio de Educación",
-      "overall": 0.972,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 312,
-            "tagCount": 7,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:28.482Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.952,
-          "evidence": {
-            "modifiedAt": "2026-04-09T13:34:11.877587",
-            "daysSinceModified": 13,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-22T07:22:28.482Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "ZIP",
-              "XLSX",
-              "JSON"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "CSV": 1,
-              "ZIP": 1,
-              "XLSX": 1,
-              "JSON": 1
-            }
-          },
-          "calculatedAt": "2026-04-22T07:22:28.482Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:29.195Z"
-        }
-      ],
-      "lastChecked": "2026-04-22T07:22:20.267Z"
-    },
-    {
-      "datasetId": "data-buenosaires-ar:nombres",
-      "title": "Nombres.",
-      "organization": "Dirección General Registro del Estado Civil y Capacidad de las Personas",
-      "overall": 0.972,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 227,
-            "tagCount": 3,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:29.195Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.949,
-          "evidence": {
-            "modifiedAt": "2026-04-08T17:43:00.711372",
-            "daysSinceModified": 14,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-22T07:22:29.195Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "XLSX",
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "XLSX": 2,
-              "CSV": 2
-            }
-          },
-          "calculatedAt": "2026-04-22T07:22:29.195Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:29.958Z"
-        }
-      ],
-      "lastChecked": "2026-04-22T07:22:20.267Z"
-    },
-    {
-      "datasetId": "data-buenosaires-ar:divorcios",
-      "title": "Divorcios",
-      "organization": "Secretaria de Gobierno y Vinculo Ciudadano",
-      "overall": 0.972,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 59,
-            "tagCount": 2,
-            "resourceCount": 16
-          },
-          "calculatedAt": "2026-04-22T07:22:29.958Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.949,
-          "evidence": {
-            "modifiedAt": "2026-04-08T17:39:53.857109",
-            "daysSinceModified": 14,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-22T07:22:29.958Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "XLSX",
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 16,
-            "formatDistribution": {
-              "XLSX": 8,
-              "CSV": 8
-            }
-          },
-          "calculatedAt": "2026-04-22T07:22:29.959Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 16,
-            "checked": 16,
-            "accessible": 16
-          },
-          "calculatedAt": "2026-04-22T07:22:30.730Z"
-        }
-      ],
-      "lastChecked": "2026-04-22T07:22:20.267Z"
     },
     {
       "datasetId": "data-buenosaires-ar:defunciones",
@@ -3649,1524 +3710,6 @@
         }
       ],
       "lastChecked": "2026-04-25T07:07:21.769Z"
-    },
-    {
-      "datasetId": "data-buenosaires-ar:geriatricos",
-      "title": "Geriatricos",
-      "organization": "Ministerio de Justicia y Seguridad",
-      "overall": 0.972,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 53,
-            "tagCount": 6,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:30.730Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.949,
-          "evidence": {
-            "modifiedAt": "2026-04-08T15:14:27.681382",
-            "daysSinceModified": 14,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-22T07:22:30.730Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "ZIP",
-              "JSON",
-              "XLSX"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "CSV": 1,
-              "ZIP": 1,
-              "JSON": 1,
-              "XLSX": 1
-            }
-          },
-          "calculatedAt": "2026-04-22T07:22:30.730Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:31.458Z"
-        }
-      ],
-      "lastChecked": "2026-04-22T07:22:20.267Z"
-    },
-    {
-      "datasetId": "data-buenosaires-ar:estaciones-saludables",
-      "title": "Estaciones Saludables",
-      "organization": "Vicejefatura de Gobierno",
-      "overall": 0.972,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 298,
-            "tagCount": 3,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:31.458Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.949,
-          "evidence": {
-            "modifiedAt": "2026-04-08T15:12:27.921606",
-            "daysSinceModified": 14,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-22T07:22:31.458Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "ZIP",
-              "JSON",
-              "XLSX"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "CSV": 1,
-              "ZIP": 1,
-              "JSON": 1,
-              "XLSX": 1
-            }
-          },
-          "calculatedAt": "2026-04-22T07:22:31.458Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:32.178Z"
-        }
-      ],
-      "lastChecked": "2026-04-22T07:22:20.267Z"
-    },
-    {
-      "datasetId": "data-buenosaires-ar:perimetro",
-      "title": "Perímetro",
-      "organization": "Secretaria de Innovación y Transformación Digital",
-      "overall": 0.972,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 296,
-            "tagCount": 1,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:32.178Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.949,
-          "evidence": {
-            "modifiedAt": "2026-04-08T15:09:53.677032",
-            "daysSinceModified": 14,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-22T07:22:32.178Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "ZIP",
-              "XLSX",
-              "JSON",
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "ZIP": 1,
-              "XLSX": 1,
-              "JSON": 1,
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-04-22T07:22:32.178Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:32.907Z"
-        }
-      ],
-      "lastChecked": "2026-04-22T07:22:20.267Z"
-    },
-    {
-      "datasetId": "data-buenosaires-ar:sedes-comunales",
-      "title": "Sedes Comunales.",
-      "organization": "Secretaria de Innovación y Transformación Digital",
-      "overall": 0.972,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 250,
-            "tagCount": 7,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:32.907Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.949,
-          "evidence": {
-            "modifiedAt": "2026-04-08T15:09:00.582533",
-            "daysSinceModified": 14,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-22T07:22:32.907Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "ZIP",
-              "XLSX",
-              "JSON",
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "ZIP": 1,
-              "XLSX": 1,
-              "JSON": 1,
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-04-22T07:22:32.907Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:33.618Z"
-        }
-      ],
-      "lastChecked": "2026-04-22T07:22:20.267Z"
-    },
-    {
-      "datasetId": "data-buenosaires-ar:hogares-permanentes",
-      "title": "Hogares Permanentes",
-      "organization": "Ministerio de Desarrollo Humano y Hábitat",
-      "overall": 0.953,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 0.85,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [
-              "tags"
-            ],
-            "descriptionLength": 74,
-            "tagCount": 0,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:33.619Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.949,
-          "evidence": {
-            "modifiedAt": "2026-04-08T15:04:25.807862",
-            "daysSinceModified": 14,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-22T07:22:33.619Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "JSON",
-              "XLSX",
-              "ZIP"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "CSV": 1,
-              "JSON": 1,
-              "XLSX": 1,
-              "ZIP": 1
-            }
-          },
-          "calculatedAt": "2026-04-22T07:22:33.619Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:34.343Z"
-        }
-      ],
-      "lastChecked": "2026-04-22T07:22:20.267Z"
-    },
-    {
-      "datasetId": "data-buenosaires-ar:centros-primera-infancia",
-      "title": "Centros de Primera Infancia.",
-      "organization": "Ministerio de Desarrollo Humano y Hábitat",
-      "overall": 0.953,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 0.85,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [
-              "tags"
-            ],
-            "descriptionLength": 69,
-            "tagCount": 0,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:34.343Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.949,
-          "evidence": {
-            "modifiedAt": "2026-04-08T14:59:52.692925",
-            "daysSinceModified": 14,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-22T07:22:34.343Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "ZIP",
-              "XLSX",
-              "JSON"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "CSV": 1,
-              "ZIP": 1,
-              "XLSX": 1,
-              "JSON": 1
-            }
-          },
-          "calculatedAt": "2026-04-22T07:22:34.343Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:35.062Z"
-        }
-      ],
-      "lastChecked": "2026-04-22T07:22:20.267Z"
-    },
-    {
-      "datasetId": "data-buenosaires-ar:centros-dia",
-      "title": "Centros de Día",
-      "organization": "Ministerio de Desarrollo Humano y Hábitat",
-      "overall": 0.953,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 0.85,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [
-              "tags"
-            ],
-            "descriptionLength": 56,
-            "tagCount": 0,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:35.062Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.949,
-          "evidence": {
-            "modifiedAt": "2026-04-08T14:59:15.640932",
-            "daysSinceModified": 14,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-22T07:22:35.062Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "ZIP",
-              "JSON",
-              "XLSX"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "CSV": 1,
-              "ZIP": 1,
-              "JSON": 1,
-              "XLSX": 1
-            }
-          },
-          "calculatedAt": "2026-04-22T07:22:35.062Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:35.784Z"
-        }
-      ],
-      "lastChecked": "2026-04-22T07:22:20.267Z"
-    },
-    {
-      "datasetId": "data-buenosaires-ar:centros-desarrollo-infantil",
-      "title": "Centros de Desarrollo Infantil.",
-      "organization": "Ministerio de Desarrollo Humano y Hábitat",
-      "overall": 0.953,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 0.85,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [
-              "tags"
-            ],
-            "descriptionLength": 141,
-            "tagCount": 0,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:35.785Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.949,
-          "evidence": {
-            "modifiedAt": "2026-04-08T14:58:40.836121",
-            "daysSinceModified": 14,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-22T07:22:35.785Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "ZIP",
-              "XLSX",
-              "JSON"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "CSV": 1,
-              "ZIP": 1,
-              "XLSX": 1,
-              "JSON": 1
-            }
-          },
-          "calculatedAt": "2026-04-22T07:22:35.785Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:36.498Z"
-        }
-      ],
-      "lastChecked": "2026-04-22T07:22:20.267Z"
-    },
-    {
-      "datasetId": "data-buenosaires-ar:centros-de-accion-familiar",
-      "title": "Centros de Acción Familiar",
-      "organization": "Ministerio de Desarrollo Humano y Hábitat",
-      "overall": 0.953,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 0.85,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [
-              "tags"
-            ],
-            "descriptionLength": 442,
-            "tagCount": 0,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:36.498Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.949,
-          "evidence": {
-            "modifiedAt": "2026-04-08T14:58:07.298929",
-            "daysSinceModified": 14,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-22T07:22:36.498Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "JSON",
-              "XLSX",
-              "ZIP"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "CSV": 1,
-              "JSON": 1,
-              "XLSX": 1,
-              "ZIP": 1
-            }
-          },
-          "calculatedAt": "2026-04-22T07:22:36.498Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:37.215Z"
-        }
-      ],
-      "lastChecked": "2026-04-22T07:22:20.267Z"
-    },
-    {
-      "datasetId": "data-buenosaires-ar:centros-salud-accion-comunitaria-cesac",
-      "title": "Centros de Salud y Acción Comunitaria (CESAC)",
-      "organization": "Ministerio de Salud",
-      "overall": 0.972,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 164,
-            "tagCount": 8,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:37.215Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.949,
-          "evidence": {
-            "modifiedAt": "2026-04-08T14:56:43.557345",
-            "daysSinceModified": 14,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-22T07:22:37.215Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "ZIP",
-              "JSON",
-              "XLSX"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "CSV": 1,
-              "ZIP": 1,
-              "JSON": 1,
-              "XLSX": 1
-            }
-          },
-          "calculatedAt": "2026-04-22T07:22:37.215Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:37.930Z"
-        }
-      ],
-      "lastChecked": "2026-04-22T07:22:20.267Z"
-    },
-    {
-      "datasetId": "data-buenosaires-ar:centros-medicos-barriales",
-      "title": "Centros Médicos Barriales",
-      "organization": "Ministerio de Salud",
-      "overall": 0.972,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 67,
-            "tagCount": 4,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:37.930Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.949,
-          "evidence": {
-            "modifiedAt": "2026-04-08T14:56:16.082661",
-            "daysSinceModified": 14,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-22T07:22:37.930Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "ZIP",
-              "JSON",
-              "XLSX"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "CSV": 1,
-              "ZIP": 1,
-              "JSON": 1,
-              "XLSX": 1
-            }
-          },
-          "calculatedAt": "2026-04-22T07:22:37.930Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:38.645Z"
-        }
-      ],
-      "lastChecked": "2026-04-22T07:22:20.267Z"
-    },
-    {
-      "datasetId": "data-buenosaires-ar:dependencias-sedes-ministerio-publico-fiscal",
-      "title": "Dependencias y Sedes del Ministerio Público Fiscal",
-      "organization": "Ministerio de Justicia y Seguridad",
-      "overall": 0.972,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 120,
-            "tagCount": 4,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:38.645Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.949,
-          "evidence": {
-            "modifiedAt": "2026-04-08T14:50:17.640578",
-            "daysSinceModified": 14,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-22T07:22:38.645Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "ZIP",
-              "XLSX",
-              "JSON"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "CSV": 1,
-              "ZIP": 1,
-              "XLSX": 1,
-              "JSON": 1
-            }
-          },
-          "calculatedAt": "2026-04-22T07:22:38.645Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:39.371Z"
-        }
-      ],
-      "lastChecked": "2026-04-22T07:22:20.267Z"
-    },
-    {
-      "datasetId": "data-buenosaires-ar:cuarteles-destacamentos-bomberos",
-      "title": "Cuarteles y Destacamentos de Bomberos",
-      "organization": "Ministerio de Justicia y Seguridad",
-      "overall": 0.972,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 112,
-            "tagCount": 3,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:39.371Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.949,
-          "evidence": {
-            "modifiedAt": "2026-04-08T14:49:32.708597",
-            "daysSinceModified": 14,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-22T07:22:39.371Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "ZIP",
-              "XLSX",
-              "JSON"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "CSV": 1,
-              "ZIP": 1,
-              "XLSX": 1,
-              "JSON": 1
-            }
-          },
-          "calculatedAt": "2026-04-22T07:22:39.371Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:40.097Z"
-        }
-      ],
-      "lastChecked": "2026-04-22T07:22:20.267Z"
-    },
-    {
-      "datasetId": "data-buenosaires-ar:divisiones-comisarias-vecinales",
-      "title": "Divisiones comisarías vecinales",
-      "organization": "Ministerio de Justicia y Seguridad",
-      "overall": 0.972,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 64,
-            "tagCount": 6,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:40.097Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.949,
-          "evidence": {
-            "modifiedAt": "2026-04-08T14:48:55.778478",
-            "daysSinceModified": 14,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-22T07:22:40.097Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "ZIP",
-              "XLSX",
-              "JSON"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "CSV": 1,
-              "ZIP": 1,
-              "XLSX": 1,
-              "JSON": 1
-            }
-          },
-          "calculatedAt": "2026-04-22T07:22:40.097Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:40.843Z"
-        }
-      ],
-      "lastChecked": "2026-04-22T07:22:20.267Z"
-    },
-    {
-      "datasetId": "data-buenosaires-ar:manzanas",
-      "title": "Manzanas.",
-      "organization": "Subsecretaría de Planeamiento",
-      "overall": 0.953,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 0.85,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [
-              "tags"
-            ],
-            "descriptionLength": 60,
-            "tagCount": 0,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:40.843Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.949,
-          "evidence": {
-            "modifiedAt": "2026-04-08T14:47:24.308616",
-            "daysSinceModified": 14,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-22T07:22:40.843Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "ZIP",
-              "JSON",
-              "XLSX"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "CSV": 1,
-              "ZIP": 1,
-              "JSON": 1,
-              "XLSX": 1
-            }
-          },
-          "calculatedAt": "2026-04-22T07:22:40.843Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:41.595Z"
-        }
-      ],
-      "lastChecked": "2026-04-22T07:22:20.267Z"
-    },
-    {
-      "datasetId": "data-buenosaires-ar:pistas-skate",
-      "title": "Pistas de Skate",
-      "organization": "Vicejefatura de Gobierno",
-      "overall": 0.953,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 0.85,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [
-              "tags"
-            ],
-            "descriptionLength": 38,
-            "tagCount": 0,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:41.595Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.949,
-          "evidence": {
-            "modifiedAt": "2026-04-08T14:46:27.397426",
-            "daysSinceModified": 14,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-22T07:22:41.595Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "ZIP",
-              "XLSX",
-              "JSON"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "CSV": 1,
-              "ZIP": 1,
-              "XLSX": 1,
-              "JSON": 1
-            }
-          },
-          "calculatedAt": "2026-04-22T07:22:41.595Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:42.315Z"
-        }
-      ],
-      "lastChecked": "2026-04-22T07:22:20.267Z"
-    },
-    {
-      "datasetId": "data-buenosaires-ar:programas-deportivos",
-      "title": "Programas Deportivos",
-      "organization": "Vicejefatura de Gobierno",
-      "overall": 0.972,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 111,
-            "tagCount": 5,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:42.315Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.949,
-          "evidence": {
-            "modifiedAt": "2026-04-08T14:45:55.385627",
-            "daysSinceModified": 14,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-22T07:22:42.315Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "XLSX",
-              "ZIP",
-              "GEOJSON"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "CSV": 1,
-              "XLSX": 1,
-              "ZIP": 1,
-              "GEOJSON": 1
-            }
-          },
-          "calculatedAt": "2026-04-22T07:22:42.315Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:43.056Z"
-        }
-      ],
-      "lastChecked": "2026-04-22T07:22:20.267Z"
-    },
-    {
-      "datasetId": "data-buenosaires-ar:consulados",
-      "title": "Consulados",
-      "organization": "Jefatura de Gabinete de Ministros",
-      "overall": 0.953,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 0.85,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [
-              "tags"
-            ],
-            "descriptionLength": 333,
-            "tagCount": 0,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:43.057Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.949,
-          "evidence": {
-            "modifiedAt": "2026-04-08T14:44:08.131705",
-            "daysSinceModified": 14,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-22T07:22:43.057Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "ZIP",
-              "XLSX",
-              "JSON"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "CSV": 1,
-              "ZIP": 1,
-              "XLSX": 1,
-              "JSON": 1
-            }
-          },
-          "calculatedAt": "2026-04-22T07:22:43.057Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:43.789Z"
-        }
-      ],
-      "lastChecked": "2026-04-22T07:22:20.267Z"
-    },
-    {
-      "datasetId": "data-buenosaires-ar:comunas",
-      "title": "Comunas",
-      "organization": "Secretaria de Innovación y Transformación Digital",
-      "overall": 0.972,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 371,
-            "tagCount": 5,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:43.789Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.949,
-          "evidence": {
-            "modifiedAt": "2026-04-08T14:43:34.039871",
-            "daysSinceModified": 14,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-22T07:22:43.789Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "ZIP",
-              "XLSX",
-              "JSON",
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "ZIP": 1,
-              "XLSX": 1,
-              "JSON": 1,
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-04-22T07:22:43.789Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-04-22T07:22:44.522Z"
-        }
-      ],
-      "lastChecked": "2026-04-22T07:22:20.267Z"
-    },
-    {
-      "datasetId": "data-buenosaires-ar:barrios",
-      "title": "Barrios",
-      "organization": "Secretaria de Innovación y Transformación Digital",
-      "overall": 0.972,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 202,
-            "tagCount": 6,
-            "resourceCount": 8
-          },
-          "calculatedAt": "2026-04-22T07:22:44.522Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.949,
-          "evidence": {
-            "modifiedAt": "2026-04-08T14:42:37.239260",
-            "daysSinceModified": 14,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-22T07:22:44.522Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "ZIP",
-              "XLSX",
-              "GEOJSON",
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 8,
-            "formatDistribution": {
-              "ZIP": 1,
-              "XLSX": 3,
-              "GEOJSON": 1,
-              "CSV": 3
-            }
-          },
-          "calculatedAt": "2026-04-22T07:22:44.522Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 8,
-            "checked": 8,
-            "accessible": 8
-          },
-          "calculatedAt": "2026-04-22T07:22:45.247Z"
-        }
-      ],
-      "lastChecked": "2026-04-22T07:22:20.267Z"
-    },
-    {
-      "datasetId": "data-buenosaires-ar:indicadores-colectivos",
-      "title": "Indicadores de colectivos",
-      "organization": "Secretaría de Transporte y Obras Públicas",
-      "overall": 0.971,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 272,
-            "tagCount": 6,
-            "resourceCount": 14
-          },
-          "calculatedAt": "2026-04-22T07:22:45.247Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.945,
-          "evidence": {
-            "modifiedAt": "2026-04-07T13:23:46.085013",
-            "daysSinceModified": 15,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-22T07:22:45.247Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "XLSX",
-              "CSV",
-              "PDF"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 14,
-            "formatDistribution": {
-              "XLSX": 6,
-              "CSV": 6,
-              "PDF": 2
-            }
-          },
-          "calculatedAt": "2026-04-22T07:22:45.247Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 14,
-            "checked": 14,
-            "accessible": 14
-          },
-          "calculatedAt": "2026-04-22T07:22:45.983Z"
-        }
-      ],
-      "lastChecked": "2026-04-22T07:22:20.267Z"
     },
     {
       "datasetId": "data-buenosaires-ar:centros-integracion-laboral",
@@ -30823,10 +29366,10 @@
       "lastChecked": "2026-04-27T08:08:46.390Z"
     },
     {
-      "datasetId": "data-buenosaires-ar:casos-covid-19",
-      "title": "Casos COVID-19",
-      "organization": "Ministerio de Salud",
-      "overall": 0.984,
+      "datasetId": "data-buenosaires-ar:uniones-civiles-convivenciales",
+      "title": "Uniones civiles convivenciales.",
+      "organization": "Dirección General Registro del Estado Civil y Capacidad de las Personas",
+      "overall": 0.971,
       "dimensions": [
         {
           "dimension": "completeness",
@@ -30843,290 +29386,21 @@
               "createdAt"
             ],
             "fieldsMissing": [],
-            "descriptionLength": 110,
-            "tagCount": 6,
-            "resourceCount": 7
+            "descriptionLength": 112,
+            "tagCount": 2,
+            "resourceCount": 17
           },
-          "calculatedAt": "2026-04-28T08:11:30.766Z"
+          "calculatedAt": "2026-04-29T08:01:42.061Z"
         },
         {
           "dimension": "freshness",
-          "score": 0.997,
+          "score": 0.945,
           "evidence": {
-            "modifiedAt": "2026-04-27T12:55:17.425933",
-            "daysSinceModified": 1,
+            "modifiedAt": "2026-04-14T15:25:26.722957",
+            "daysSinceModified": 15,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-04-28T08:11:30.766Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 7,
-            "formatDistribution": {
-              "CSV": 7
-            }
-          },
-          "calculatedAt": "2026-04-28T08:11:30.766Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 7,
-            "checked": 7,
-            "accessible": 7
-          },
-          "calculatedAt": "2026-04-28T08:11:34.681Z"
-        }
-      ],
-      "lastChecked": "2026-04-28T08:11:30.766Z"
-    },
-    {
-      "datasetId": "data-buenosaires-ar:turnos-para-vacunacion-covid-19",
-      "title": "Turnos para vacunación COVID-19",
-      "organization": "Ministerio de Salud",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 355,
-            "tagCount": 7,
-            "resourceCount": 6
-          },
-          "calculatedAt": "2026-04-28T08:11:34.681Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.997,
-          "evidence": {
-            "modifiedAt": "2026-04-27T12:50:39.117354",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-28T08:11:34.681Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 6,
-            "formatDistribution": {
-              "CSV": 6
-            }
-          },
-          "calculatedAt": "2026-04-28T08:11:34.681Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 6,
-            "checked": 6,
-            "accessible": 6
-          },
-          "calculatedAt": "2026-04-28T08:11:36.354Z"
-        }
-      ],
-      "lastChecked": "2026-04-28T08:11:30.766Z"
-    },
-    {
-      "datasetId": "data-buenosaires-ar:calidad-aire",
-      "title": "Calidad de Aire",
-      "organization": "Agencia de Protección Ambiental",
-      "overall": 0.952,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 0.75,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [
-              "description"
-            ],
-            "descriptionLength": 0,
-            "tagCount": 4,
-            "resourceCount": 16
-          },
-          "calculatedAt": "2026-04-28T08:11:36.354Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.997,
-          "evidence": {
-            "modifiedAt": "2026-04-27T12:50:14.570939",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-28T08:11:36.354Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "XLSX",
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 16,
-            "formatDistribution": {
-              "XLSX": 8,
-              "CSV": 8
-            }
-          },
-          "calculatedAt": "2026-04-28T08:11:36.354Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 16,
-            "checked": 16,
-            "accessible": 16
-          },
-          "calculatedAt": "2026-04-28T08:11:37.739Z"
-        }
-      ],
-      "lastChecked": "2026-04-28T08:11:30.766Z"
-    },
-    {
-      "datasetId": "data-buenosaires-ar:productoras-eventos-masivos",
-      "title": "Productoras de Eventos Masivos",
-      "organization": "Agencia Gubernamental de Control (AGC)",
-      "overall": 0.977,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 111,
-            "tagCount": 5,
-            "resourceCount": 2
-          },
-          "calculatedAt": "2026-04-28T08:11:37.739Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.97,
-          "evidence": {
-            "modifiedAt": "2026-04-20T13:18:43.130705",
-            "daysSinceModified": 8,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-28T08:11:37.739Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "XLSX",
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 2,
-            "formatDistribution": {
-              "XLSX": 1,
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-04-28T08:11:37.739Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-04-28T08:11:38.627Z"
-        }
-      ],
-      "lastChecked": "2026-04-28T08:11:30.766Z"
-    },
-    {
-      "datasetId": "data-buenosaires-ar:mapa-ruido",
-      "title": "Mapa de Ruido",
-      "organization": "Agencia de Protección Ambiental",
-      "overall": 0.977,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 107,
-            "tagCount": 5,
-            "resourceCount": 14
-          },
-          "calculatedAt": "2026-04-28T08:11:38.627Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.97,
-          "evidence": {
-            "modifiedAt": "2026-04-20T13:18:11.357238",
-            "daysSinceModified": 8,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-28T08:11:38.627Z"
+          "calculatedAt": "2026-04-29T08:01:42.061Z"
         },
         {
           "dimension": "structure",
@@ -31134,182 +29408,36 @@
           "evidence": {
             "formats": [
               "CSV",
-              "ZIP",
-              "XLSX",
-              "JSON"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 14,
-            "formatDistribution": {
-              "CSV": 4,
-              "ZIP": 4,
-              "XLSX": 4,
-              "JSON": 2
-            }
-          },
-          "calculatedAt": "2026-04-28T08:11:38.627Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 14,
-            "checked": 14,
-            "accessible": 14
-          },
-          "calculatedAt": "2026-04-28T08:11:40.397Z"
-        }
-      ],
-      "lastChecked": "2026-04-28T08:11:30.766Z"
-    },
-    {
-      "datasetId": "data-buenosaires-ar:areas-hospitalarias",
-      "title": "Áreas Hospitalarias",
-      "organization": "Ministerio de Salud",
-      "overall": 0.977,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 139,
-            "tagCount": 3,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-04-28T08:11:40.397Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.97,
-          "evidence": {
-            "modifiedAt": "2026-04-20T13:17:35.370695",
-            "daysSinceModified": 8,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-28T08:11:40.397Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "ZIP",
-              "JSON",
               "XLSX"
             ],
             "bestFormat": "CSV",
             "bestFormatScore": 0.95,
-            "resourceCount": 4,
+            "resourceCount": 17,
             "formatDistribution": {
-              "CSV": 1,
-              "ZIP": 1,
-              "JSON": 1,
-              "XLSX": 1
+              "CSV": 9,
+              "XLSX": 8
             }
           },
-          "calculatedAt": "2026-04-28T08:11:40.397Z"
+          "calculatedAt": "2026-04-29T08:01:42.061Z"
         },
         {
           "dimension": "accessibility",
           "score": 1,
           "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
+            "resourceCount": 17,
+            "checked": 17,
+            "accessible": 17
           },
-          "calculatedAt": "2026-04-28T08:11:41.306Z"
+          "calculatedAt": "2026-04-29T08:01:45.357Z"
         }
       ],
-      "lastChecked": "2026-04-28T08:11:30.766Z"
+      "lastChecked": "2026-04-29T08:01:42.061Z"
     },
     {
-      "datasetId": "data-buenosaires-ar:centros-salud-privados",
-      "title": "Centros de Salud Privados",
-      "organization": "Ministerio de Salud",
-      "overall": 0.977,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 142,
-            "tagCount": 3,
-            "resourceCount": 3
-          },
-          "calculatedAt": "2026-04-28T08:11:41.306Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.97,
-          "evidence": {
-            "modifiedAt": "2026-04-20T13:15:36.247767",
-            "daysSinceModified": 8,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-28T08:11:41.306Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "XLSX",
-              "CSV",
-              "ZIP"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 3,
-            "formatDistribution": {
-              "XLSX": 1,
-              "CSV": 1,
-              "ZIP": 1
-            }
-          },
-          "calculatedAt": "2026-04-28T08:11:41.306Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 3,
-            "checked": 3,
-            "accessible": 3
-          },
-          "calculatedAt": "2026-04-28T08:11:42.000Z"
-        }
-      ],
-      "lastChecked": "2026-04-28T08:11:30.766Z"
-    },
-    {
-      "datasetId": "data-buenosaires-ar:estadios",
-      "title": "Estadios",
-      "organization": "Vicejefatura de Gobierno",
-      "overall": 0.958,
+      "datasetId": "data-buenosaires-ar:distritos-escolares",
+      "title": "Distritos Escolares.",
+      "organization": "Ministerio de Educación",
+      "overall": 0.952,
       "dimensions": [
         {
           "dimension": "completeness",
@@ -31327,21 +29455,96 @@
             "fieldsMissing": [
               "tags"
             ],
-            "descriptionLength": 96,
+            "descriptionLength": 71,
             "tagCount": 0,
-            "resourceCount": 4
+            "resourceCount": 6
           },
-          "calculatedAt": "2026-04-28T08:11:42.000Z"
+          "calculatedAt": "2026-04-29T08:01:45.357Z"
         },
         {
           "dimension": "freshness",
-          "score": 0.97,
+          "score": 0.945,
           "evidence": {
-            "modifiedAt": "2026-04-20T13:14:41.292840",
-            "daysSinceModified": 8,
+            "modifiedAt": "2026-04-14T13:21:22.269962",
+            "daysSinceModified": 15,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-04-28T08:11:42.000Z"
+          "calculatedAt": "2026-04-29T08:01:45.357Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "XLSX",
+              "ZIP",
+              "JSON",
+              "PDF"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 6,
+            "formatDistribution": {
+              "CSV": 1,
+              "XLSX": 1,
+              "ZIP": 1,
+              "JSON": 1,
+              "PDF": 2
+            }
+          },
+          "calculatedAt": "2026-04-29T08:01:45.357Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 6,
+            "checked": 6,
+            "accessible": 6
+          },
+          "calculatedAt": "2026-04-29T08:01:46.746Z"
+        }
+      ],
+      "lastChecked": "2026-04-29T08:01:42.061Z"
+    },
+    {
+      "datasetId": "data-buenosaires-ar:embajadas",
+      "title": "Embajadas",
+      "organization": "Jefatura de Gabinete de Ministros",
+      "overall": 0.952,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 0.85,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [
+              "tags"
+            ],
+            "descriptionLength": 84,
+            "tagCount": 0,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-04-29T08:01:46.746Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.945,
+          "evidence": {
+            "modifiedAt": "2026-04-14T13:20:17.537709",
+            "daysSinceModified": 15,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-29T08:01:46.746Z"
         },
         {
           "dimension": "structure",
@@ -31363,7 +29566,7 @@
               "JSON": 1
             }
           },
-          "calculatedAt": "2026-04-28T08:11:42.000Z"
+          "calculatedAt": "2026-04-29T08:01:46.746Z"
         },
         {
           "dimension": "accessibility",
@@ -31373,88 +29576,16 @@
             "checked": 4,
             "accessible": 4
           },
-          "calculatedAt": "2026-04-28T08:11:42.718Z"
+          "calculatedAt": "2026-04-29T08:01:48.130Z"
         }
       ],
-      "lastChecked": "2026-04-28T08:11:30.766Z"
+      "lastChecked": "2026-04-29T08:01:42.061Z"
     },
     {
-      "datasetId": "data-buenosaires-ar:polideportivos",
-      "title": "Polideportivos",
-      "organization": "Vicejefatura de Gobierno",
-      "overall": 0.977,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 94,
-            "tagCount": 6,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-04-28T08:11:42.718Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.97,
-          "evidence": {
-            "modifiedAt": "2026-04-20T13:14:13.872356",
-            "daysSinceModified": 8,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-28T08:11:42.718Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "ZIP",
-              "XLSX",
-              "GEOJSON",
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "ZIP": 1,
-              "XLSX": 1,
-              "GEOJSON": 1,
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-04-28T08:11:42.718Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-04-28T08:11:43.440Z"
-        }
-      ],
-      "lastChecked": "2026-04-28T08:11:30.766Z"
-    },
-    {
-      "datasetId": "data-buenosaires-ar:clubes",
-      "title": "Clubes",
-      "organization": "Vicejefatura de Gobierno",
-      "overall": 0.977,
+      "datasetId": "data-buenosaires-ar:farmacias",
+      "title": "Farmacias",
+      "organization": "Ministerio de Salud",
+      "overall": 0.971,
       "dimensions": [
         {
           "dimension": "completeness",
@@ -31472,20 +29603,732 @@
             ],
             "fieldsMissing": [],
             "descriptionLength": 70,
-            "tagCount": 5,
+            "tagCount": 3,
             "resourceCount": 4
           },
-          "calculatedAt": "2026-04-28T08:11:43.440Z"
+          "calculatedAt": "2026-04-29T08:01:48.130Z"
         },
         {
           "dimension": "freshness",
-          "score": 0.97,
+          "score": 0.945,
           "evidence": {
-            "modifiedAt": "2026-04-20T13:13:50.019588",
-            "daysSinceModified": 8,
+            "modifiedAt": "2026-04-14T13:19:35.902690",
+            "daysSinceModified": 15,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-04-28T08:11:43.440Z"
+          "calculatedAt": "2026-04-29T08:01:48.130Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "ZIP",
+              "XLSX",
+              "JSON"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "CSV": 1,
+              "ZIP": 1,
+              "XLSX": 1,
+              "JSON": 1
+            }
+          },
+          "calculatedAt": "2026-04-29T08:01:48.130Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-04-29T08:01:49.520Z"
+        }
+      ],
+      "lastChecked": "2026-04-29T08:01:42.061Z"
+    },
+    {
+      "datasetId": "data-buenosaires-ar:actividades-culturales",
+      "title": "Actividades Culturales.",
+      "organization": "Ministerio de Cultura",
+      "overall": 0.966,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 86,
+            "tagCount": 2,
+            "resourceCount": 21
+          },
+          "calculatedAt": "2026-04-29T08:01:49.520Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.928,
+          "evidence": {
+            "modifiedAt": "2026-04-09T21:10:57.266724",
+            "daysSinceModified": 19,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-29T08:01:49.520Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "ZIP",
+              "XLSX",
+              "GEOJSON",
+              "CSV",
+              "GPKG"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 21,
+            "formatDistribution": {
+              "ZIP": 4,
+              "XLSX": 6,
+              "GEOJSON": 4,
+              "CSV": 6,
+              "GPKG": 1
+            }
+          },
+          "calculatedAt": "2026-04-29T08:01:49.520Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 21,
+            "checked": 21,
+            "accessible": 21
+          },
+          "calculatedAt": "2026-04-29T08:01:51.742Z"
+        }
+      ],
+      "lastChecked": "2026-04-29T08:01:42.061Z"
+    },
+    {
+      "datasetId": "data-buenosaires-ar:denuncias-defensa-consumidor",
+      "title": "Denuncias Defensa del Consumidor",
+      "organization": "Secretaria de Atención Ciudadana y Gestión Comunal",
+      "overall": 0.948,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 0.85,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [
+              "tags"
+            ],
+            "descriptionLength": 116,
+            "tagCount": 0,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-04-29T08:01:51.742Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.928,
+          "evidence": {
+            "modifiedAt": "2026-04-09T19:32:00.750152",
+            "daysSinceModified": 20,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-29T08:01:51.742Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "XLSX"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "CSV": 2,
+              "XLSX": 2
+            }
+          },
+          "calculatedAt": "2026-04-29T08:01:51.742Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-04-29T08:01:52.734Z"
+        }
+      ],
+      "lastChecked": "2026-04-29T08:01:42.061Z"
+    },
+    {
+      "datasetId": "data-buenosaires-ar:universidades",
+      "title": "Universidades",
+      "organization": "Ministerio de Educación",
+      "overall": 0.966,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 312,
+            "tagCount": 7,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-04-29T08:01:52.734Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.927,
+          "evidence": {
+            "modifiedAt": "2026-04-09T13:34:11.877587",
+            "daysSinceModified": 20,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-29T08:01:52.734Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "ZIP",
+              "XLSX",
+              "JSON"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "CSV": 1,
+              "ZIP": 1,
+              "XLSX": 1,
+              "JSON": 1
+            }
+          },
+          "calculatedAt": "2026-04-29T08:01:52.734Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-04-29T08:01:53.322Z"
+        }
+      ],
+      "lastChecked": "2026-04-29T08:01:42.061Z"
+    },
+    {
+      "datasetId": "data-buenosaires-ar:nombres",
+      "title": "Nombres.",
+      "organization": "Dirección General Registro del Estado Civil y Capacidad de las Personas",
+      "overall": 0.965,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 227,
+            "tagCount": 3,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-04-29T08:01:53.322Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.924,
+          "evidence": {
+            "modifiedAt": "2026-04-08T17:43:00.711372",
+            "daysSinceModified": 21,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-29T08:01:53.322Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "XLSX",
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "XLSX": 2,
+              "CSV": 2
+            }
+          },
+          "calculatedAt": "2026-04-29T08:01:53.322Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-04-29T08:01:53.961Z"
+        }
+      ],
+      "lastChecked": "2026-04-29T08:01:42.061Z"
+    },
+    {
+      "datasetId": "data-buenosaires-ar:divorcios",
+      "title": "Divorcios",
+      "organization": "Secretaria de Gobierno y Vinculo Ciudadano",
+      "overall": 0.965,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 59,
+            "tagCount": 2,
+            "resourceCount": 16
+          },
+          "calculatedAt": "2026-04-29T08:01:53.961Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.924,
+          "evidence": {
+            "modifiedAt": "2026-04-08T17:39:53.857109",
+            "daysSinceModified": 21,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-29T08:01:53.961Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "XLSX",
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 16,
+            "formatDistribution": {
+              "XLSX": 8,
+              "CSV": 8
+            }
+          },
+          "calculatedAt": "2026-04-29T08:01:53.961Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 16,
+            "checked": 16,
+            "accessible": 16
+          },
+          "calculatedAt": "2026-04-29T08:01:55.586Z"
+        }
+      ],
+      "lastChecked": "2026-04-29T08:01:42.061Z"
+    },
+    {
+      "datasetId": "data-buenosaires-ar:geriatricos",
+      "title": "Geriatricos",
+      "organization": "Ministerio de Justicia y Seguridad",
+      "overall": 0.965,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 53,
+            "tagCount": 6,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-04-29T08:01:55.586Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.923,
+          "evidence": {
+            "modifiedAt": "2026-04-08T15:14:27.681382",
+            "daysSinceModified": 21,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-29T08:01:55.586Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "ZIP",
+              "JSON",
+              "XLSX"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "CSV": 1,
+              "ZIP": 1,
+              "JSON": 1,
+              "XLSX": 1
+            }
+          },
+          "calculatedAt": "2026-04-29T08:01:55.586Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-04-29T08:01:56.437Z"
+        }
+      ],
+      "lastChecked": "2026-04-29T08:01:42.061Z"
+    },
+    {
+      "datasetId": "data-buenosaires-ar:estaciones-saludables",
+      "title": "Estaciones Saludables",
+      "organization": "Vicejefatura de Gobierno",
+      "overall": 0.965,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 298,
+            "tagCount": 3,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-04-29T08:01:56.437Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.923,
+          "evidence": {
+            "modifiedAt": "2026-04-08T15:12:27.921606",
+            "daysSinceModified": 21,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-29T08:01:56.437Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "ZIP",
+              "JSON",
+              "XLSX"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "CSV": 1,
+              "ZIP": 1,
+              "JSON": 1,
+              "XLSX": 1
+            }
+          },
+          "calculatedAt": "2026-04-29T08:01:56.437Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-04-29T08:01:57.025Z"
+        }
+      ],
+      "lastChecked": "2026-04-29T08:01:42.061Z"
+    },
+    {
+      "datasetId": "data-buenosaires-ar:perimetro",
+      "title": "Perímetro",
+      "organization": "Secretaria de Innovación y Transformación Digital",
+      "overall": 0.965,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 296,
+            "tagCount": 1,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-04-29T08:01:57.025Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.923,
+          "evidence": {
+            "modifiedAt": "2026-04-08T15:09:53.677032",
+            "daysSinceModified": 21,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-29T08:01:57.025Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "ZIP",
+              "XLSX",
+              "JSON",
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "ZIP": 1,
+              "XLSX": 1,
+              "JSON": 1,
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-04-29T08:01:57.025Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-04-29T08:01:57.618Z"
+        }
+      ],
+      "lastChecked": "2026-04-29T08:01:42.061Z"
+    },
+    {
+      "datasetId": "data-buenosaires-ar:sedes-comunales",
+      "title": "Sedes Comunales.",
+      "organization": "Secretaria de Innovación y Transformación Digital",
+      "overall": 0.965,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 250,
+            "tagCount": 7,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-04-29T08:01:57.618Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.923,
+          "evidence": {
+            "modifiedAt": "2026-04-08T15:09:00.582533",
+            "daysSinceModified": 21,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-29T08:01:57.618Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "ZIP",
+              "XLSX",
+              "JSON",
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "ZIP": 1,
+              "XLSX": 1,
+              "JSON": 1,
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-04-29T08:01:57.618Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-04-29T08:01:58.223Z"
+        }
+      ],
+      "lastChecked": "2026-04-29T08:01:42.061Z"
+    },
+    {
+      "datasetId": "data-buenosaires-ar:hogares-permanentes",
+      "title": "Hogares Permanentes",
+      "organization": "Ministerio de Desarrollo Humano y Hábitat",
+      "overall": 0.946,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 0.85,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [
+              "tags"
+            ],
+            "descriptionLength": 74,
+            "tagCount": 0,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-04-29T08:01:58.223Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.923,
+          "evidence": {
+            "modifiedAt": "2026-04-08T15:04:25.807862",
+            "daysSinceModified": 21,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-29T08:01:58.223Z"
         },
         {
           "dimension": "structure",
@@ -31507,7 +30350,7 @@
               "ZIP": 1
             }
           },
-          "calculatedAt": "2026-04-28T08:11:43.440Z"
+          "calculatedAt": "2026-04-29T08:01:58.223Z"
         },
         {
           "dimension": "accessibility",
@@ -31517,10 +30360,1167 @@
             "checked": 4,
             "accessible": 4
           },
-          "calculatedAt": "2026-04-28T08:11:44.165Z"
+          "calculatedAt": "2026-04-29T08:01:59.336Z"
         }
       ],
-      "lastChecked": "2026-04-28T08:11:30.766Z"
+      "lastChecked": "2026-04-29T08:01:42.061Z"
+    },
+    {
+      "datasetId": "data-buenosaires-ar:centros-primera-infancia",
+      "title": "Centros de Primera Infancia.",
+      "organization": "Ministerio de Desarrollo Humano y Hábitat",
+      "overall": 0.946,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 0.85,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [
+              "tags"
+            ],
+            "descriptionLength": 69,
+            "tagCount": 0,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-04-29T08:01:59.336Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.923,
+          "evidence": {
+            "modifiedAt": "2026-04-08T14:59:52.692925",
+            "daysSinceModified": 21,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-29T08:01:59.336Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "ZIP",
+              "XLSX",
+              "JSON"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "CSV": 1,
+              "ZIP": 1,
+              "XLSX": 1,
+              "JSON": 1
+            }
+          },
+          "calculatedAt": "2026-04-29T08:01:59.336Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-04-29T08:01:59.921Z"
+        }
+      ],
+      "lastChecked": "2026-04-29T08:01:42.061Z"
+    },
+    {
+      "datasetId": "data-buenosaires-ar:centros-dia",
+      "title": "Centros de Día",
+      "organization": "Ministerio de Desarrollo Humano y Hábitat",
+      "overall": 0.946,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 0.85,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [
+              "tags"
+            ],
+            "descriptionLength": 56,
+            "tagCount": 0,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-04-29T08:01:59.921Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.923,
+          "evidence": {
+            "modifiedAt": "2026-04-08T14:59:15.640932",
+            "daysSinceModified": 21,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-29T08:01:59.921Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "ZIP",
+              "JSON",
+              "XLSX"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "CSV": 1,
+              "ZIP": 1,
+              "JSON": 1,
+              "XLSX": 1
+            }
+          },
+          "calculatedAt": "2026-04-29T08:01:59.921Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-04-29T08:02:00.511Z"
+        }
+      ],
+      "lastChecked": "2026-04-29T08:01:42.061Z"
+    },
+    {
+      "datasetId": "data-buenosaires-ar:centros-desarrollo-infantil",
+      "title": "Centros de Desarrollo Infantil.",
+      "organization": "Ministerio de Desarrollo Humano y Hábitat",
+      "overall": 0.946,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 0.85,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [
+              "tags"
+            ],
+            "descriptionLength": 141,
+            "tagCount": 0,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-04-29T08:02:00.511Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.923,
+          "evidence": {
+            "modifiedAt": "2026-04-08T14:58:40.836121",
+            "daysSinceModified": 21,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-29T08:02:00.511Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "ZIP",
+              "XLSX",
+              "JSON"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "CSV": 1,
+              "ZIP": 1,
+              "XLSX": 1,
+              "JSON": 1
+            }
+          },
+          "calculatedAt": "2026-04-29T08:02:00.511Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-04-29T08:02:01.093Z"
+        }
+      ],
+      "lastChecked": "2026-04-29T08:01:42.061Z"
+    },
+    {
+      "datasetId": "data-buenosaires-ar:centros-de-accion-familiar",
+      "title": "Centros de Acción Familiar",
+      "organization": "Ministerio de Desarrollo Humano y Hábitat",
+      "overall": 0.946,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 0.85,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [
+              "tags"
+            ],
+            "descriptionLength": 442,
+            "tagCount": 0,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-04-29T08:02:01.093Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.923,
+          "evidence": {
+            "modifiedAt": "2026-04-08T14:58:07.298929",
+            "daysSinceModified": 21,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-29T08:02:01.093Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "JSON",
+              "XLSX",
+              "ZIP"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "CSV": 1,
+              "JSON": 1,
+              "XLSX": 1,
+              "ZIP": 1
+            }
+          },
+          "calculatedAt": "2026-04-29T08:02:01.093Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-04-29T08:02:01.685Z"
+        }
+      ],
+      "lastChecked": "2026-04-29T08:01:42.061Z"
+    },
+    {
+      "datasetId": "data-buenosaires-ar:centros-salud-accion-comunitaria-cesac",
+      "title": "Centros de Salud y Acción Comunitaria (CESAC)",
+      "organization": "Ministerio de Salud",
+      "overall": 0.965,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 164,
+            "tagCount": 8,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-04-29T08:02:01.685Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.923,
+          "evidence": {
+            "modifiedAt": "2026-04-08T14:56:43.557345",
+            "daysSinceModified": 21,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-29T08:02:01.685Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "ZIP",
+              "JSON",
+              "XLSX"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "CSV": 1,
+              "ZIP": 1,
+              "JSON": 1,
+              "XLSX": 1
+            }
+          },
+          "calculatedAt": "2026-04-29T08:02:01.685Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-04-29T08:02:02.273Z"
+        }
+      ],
+      "lastChecked": "2026-04-29T08:01:42.061Z"
+    },
+    {
+      "datasetId": "data-buenosaires-ar:centros-medicos-barriales",
+      "title": "Centros Médicos Barriales",
+      "organization": "Ministerio de Salud",
+      "overall": 0.965,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 67,
+            "tagCount": 4,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-04-29T08:02:02.273Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.923,
+          "evidence": {
+            "modifiedAt": "2026-04-08T14:56:16.082661",
+            "daysSinceModified": 21,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-29T08:02:02.273Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "ZIP",
+              "JSON",
+              "XLSX"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "CSV": 1,
+              "ZIP": 1,
+              "JSON": 1,
+              "XLSX": 1
+            }
+          },
+          "calculatedAt": "2026-04-29T08:02:02.273Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-04-29T08:02:03.126Z"
+        }
+      ],
+      "lastChecked": "2026-04-29T08:01:42.061Z"
+    },
+    {
+      "datasetId": "data-buenosaires-ar:dependencias-sedes-ministerio-publico-fiscal",
+      "title": "Dependencias y Sedes del Ministerio Público Fiscal",
+      "organization": "Ministerio de Justicia y Seguridad",
+      "overall": 0.965,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 120,
+            "tagCount": 4,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-04-29T08:02:03.126Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.923,
+          "evidence": {
+            "modifiedAt": "2026-04-08T14:50:17.640578",
+            "daysSinceModified": 21,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-29T08:02:03.126Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "ZIP",
+              "XLSX",
+              "JSON"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "CSV": 1,
+              "ZIP": 1,
+              "XLSX": 1,
+              "JSON": 1
+            }
+          },
+          "calculatedAt": "2026-04-29T08:02:03.126Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-04-29T08:02:03.716Z"
+        }
+      ],
+      "lastChecked": "2026-04-29T08:01:42.061Z"
+    },
+    {
+      "datasetId": "data-buenosaires-ar:cuarteles-destacamentos-bomberos",
+      "title": "Cuarteles y Destacamentos de Bomberos",
+      "organization": "Ministerio de Justicia y Seguridad",
+      "overall": 0.965,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 112,
+            "tagCount": 3,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-04-29T08:02:03.716Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.923,
+          "evidence": {
+            "modifiedAt": "2026-04-08T14:49:32.708597",
+            "daysSinceModified": 21,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-29T08:02:03.716Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "ZIP",
+              "XLSX",
+              "JSON"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "CSV": 1,
+              "ZIP": 1,
+              "XLSX": 1,
+              "JSON": 1
+            }
+          },
+          "calculatedAt": "2026-04-29T08:02:03.716Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-04-29T08:02:04.298Z"
+        }
+      ],
+      "lastChecked": "2026-04-29T08:01:42.061Z"
+    },
+    {
+      "datasetId": "data-buenosaires-ar:divisiones-comisarias-vecinales",
+      "title": "Divisiones comisarías vecinales",
+      "organization": "Ministerio de Justicia y Seguridad",
+      "overall": 0.965,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 64,
+            "tagCount": 6,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-04-29T08:02:04.298Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.923,
+          "evidence": {
+            "modifiedAt": "2026-04-08T14:48:55.778478",
+            "daysSinceModified": 21,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-29T08:02:04.298Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "ZIP",
+              "XLSX",
+              "JSON"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "CSV": 1,
+              "ZIP": 1,
+              "XLSX": 1,
+              "JSON": 1
+            }
+          },
+          "calculatedAt": "2026-04-29T08:02:04.298Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-04-29T08:02:04.945Z"
+        }
+      ],
+      "lastChecked": "2026-04-29T08:01:42.061Z"
+    },
+    {
+      "datasetId": "data-buenosaires-ar:manzanas",
+      "title": "Manzanas.",
+      "organization": "Subsecretaría de Planeamiento",
+      "overall": 0.946,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 0.85,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [
+              "tags"
+            ],
+            "descriptionLength": 60,
+            "tagCount": 0,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-04-29T08:02:04.945Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.923,
+          "evidence": {
+            "modifiedAt": "2026-04-08T14:47:24.308616",
+            "daysSinceModified": 21,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-29T08:02:04.945Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "ZIP",
+              "JSON",
+              "XLSX"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "CSV": 1,
+              "ZIP": 1,
+              "JSON": 1,
+              "XLSX": 1
+            }
+          },
+          "calculatedAt": "2026-04-29T08:02:04.945Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-04-29T08:02:05.600Z"
+        }
+      ],
+      "lastChecked": "2026-04-29T08:01:42.061Z"
+    },
+    {
+      "datasetId": "data-buenosaires-ar:pistas-skate",
+      "title": "Pistas de Skate",
+      "organization": "Vicejefatura de Gobierno",
+      "overall": 0.946,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 0.85,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [
+              "tags"
+            ],
+            "descriptionLength": 38,
+            "tagCount": 0,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-04-29T08:02:05.600Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.923,
+          "evidence": {
+            "modifiedAt": "2026-04-08T14:46:27.397426",
+            "daysSinceModified": 21,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-29T08:02:05.600Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "ZIP",
+              "XLSX",
+              "JSON"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "CSV": 1,
+              "ZIP": 1,
+              "XLSX": 1,
+              "JSON": 1
+            }
+          },
+          "calculatedAt": "2026-04-29T08:02:05.600Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-04-29T08:02:06.188Z"
+        }
+      ],
+      "lastChecked": "2026-04-29T08:01:42.061Z"
+    },
+    {
+      "datasetId": "data-buenosaires-ar:programas-deportivos",
+      "title": "Programas Deportivos",
+      "organization": "Vicejefatura de Gobierno",
+      "overall": 0.965,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 111,
+            "tagCount": 5,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-04-29T08:02:06.188Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.923,
+          "evidence": {
+            "modifiedAt": "2026-04-08T14:45:55.385627",
+            "daysSinceModified": 21,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-29T08:02:06.188Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "XLSX",
+              "ZIP",
+              "GEOJSON"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "CSV": 1,
+              "XLSX": 1,
+              "ZIP": 1,
+              "GEOJSON": 1
+            }
+          },
+          "calculatedAt": "2026-04-29T08:02:06.188Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-04-29T08:02:06.774Z"
+        }
+      ],
+      "lastChecked": "2026-04-29T08:01:42.061Z"
+    },
+    {
+      "datasetId": "data-buenosaires-ar:consulados",
+      "title": "Consulados",
+      "organization": "Jefatura de Gabinete de Ministros",
+      "overall": 0.946,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 0.85,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [
+              "tags"
+            ],
+            "descriptionLength": 333,
+            "tagCount": 0,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-04-29T08:02:06.774Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.923,
+          "evidence": {
+            "modifiedAt": "2026-04-08T14:44:08.131705",
+            "daysSinceModified": 21,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-29T08:02:06.774Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "ZIP",
+              "XLSX",
+              "JSON"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "CSV": 1,
+              "ZIP": 1,
+              "XLSX": 1,
+              "JSON": 1
+            }
+          },
+          "calculatedAt": "2026-04-29T08:02:06.774Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-04-29T08:02:07.357Z"
+        }
+      ],
+      "lastChecked": "2026-04-29T08:01:42.061Z"
+    },
+    {
+      "datasetId": "data-buenosaires-ar:comunas",
+      "title": "Comunas",
+      "organization": "Secretaria de Innovación y Transformación Digital",
+      "overall": 0.965,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 371,
+            "tagCount": 5,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-04-29T08:02:07.357Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.923,
+          "evidence": {
+            "modifiedAt": "2026-04-08T14:43:34.039871",
+            "daysSinceModified": 21,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-29T08:02:07.357Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "ZIP",
+              "XLSX",
+              "JSON",
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "ZIP": 1,
+              "XLSX": 1,
+              "JSON": 1,
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-04-29T08:02:07.357Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-04-29T08:02:07.981Z"
+        }
+      ],
+      "lastChecked": "2026-04-29T08:01:42.061Z"
+    },
+    {
+      "datasetId": "data-buenosaires-ar:barrios",
+      "title": "Barrios",
+      "organization": "Secretaria de Innovación y Transformación Digital",
+      "overall": 0.965,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 202,
+            "tagCount": 6,
+            "resourceCount": 8
+          },
+          "calculatedAt": "2026-04-29T08:02:07.981Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.923,
+          "evidence": {
+            "modifiedAt": "2026-04-08T14:42:37.239260",
+            "daysSinceModified": 21,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-29T08:02:07.981Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "ZIP",
+              "XLSX",
+              "GEOJSON",
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 8,
+            "formatDistribution": {
+              "ZIP": 1,
+              "XLSX": 3,
+              "GEOJSON": 1,
+              "CSV": 3
+            }
+          },
+          "calculatedAt": "2026-04-29T08:02:07.981Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 8,
+            "checked": 8,
+            "accessible": 8
+          },
+          "calculatedAt": "2026-04-29T08:02:08.609Z"
+        }
+      ],
+      "lastChecked": "2026-04-29T08:01:42.061Z"
+    },
+    {
+      "datasetId": "data-buenosaires-ar:indicadores-colectivos",
+      "title": "Indicadores de colectivos",
+      "organization": "Secretaría de Transporte y Obras Públicas",
+      "overall": 0.964,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 272,
+            "tagCount": 6,
+            "resourceCount": 14
+          },
+          "calculatedAt": "2026-04-29T08:02:08.610Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.92,
+          "evidence": {
+            "modifiedAt": "2026-04-07T13:23:46.085013",
+            "daysSinceModified": 22,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-29T08:02:08.610Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "XLSX",
+              "CSV",
+              "PDF"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 14,
+            "formatDistribution": {
+              "XLSX": 6,
+              "CSV": 6,
+              "PDF": 2
+            }
+          },
+          "calculatedAt": "2026-04-29T08:02:08.610Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 14,
+            "checked": 14,
+            "accessible": 14
+          },
+          "calculatedAt": "2026-04-29T08:02:09.213Z"
+        }
+      ],
+      "lastChecked": "2026-04-29T08:01:42.061Z"
     }
   ],
   "coverage": 1
