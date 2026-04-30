@@ -1,7 +1,79 @@
 {
   "catalogId": "datos-avellaneda-ar",
-  "updatedAt": "2026-04-29T08:03:37.309Z",
+  "updatedAt": "2026-04-30T08:10:41.592Z",
   "datasets": [
+    {
+      "datasetId": "datos-avellaneda-ar:contrataciones-2026",
+      "externalId": "contrataciones-2026",
+      "modifiedAt": "2026-04-28T12:23:34.714161",
+      "lastScoredAt": "2026-04-29T08:03:37.309Z",
+      "score": {
+        "datasetId": "datos-avellaneda-ar:contrataciones-2026",
+        "title": "Contrataciones 2026",
+        "organization": "Municipalidad de Avellaneda",
+        "overall": 0.702,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 156,
+              "tagCount": 3,
+              "resourceCount": 11
+            },
+            "calculatedAt": "2026-04-29T08:03:37.309Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.997,
+            "evidence": {
+              "modifiedAt": "2026-04-28T12:23:34.714161",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-04-29T08:03:37.309Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.15,
+            "evidence": {
+              "formats": [
+                "PDF"
+              ],
+              "bestFormat": "PDF",
+              "bestFormatScore": 0.15,
+              "resourceCount": 11,
+              "formatDistribution": {
+                "PDF": 11
+              }
+            },
+            "calculatedAt": "2026-04-29T08:03:37.309Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.9,
+            "evidence": {
+              "resourceCount": 11,
+              "checked": 11,
+              "accessible": 11
+            },
+            "calculatedAt": "2026-04-29T08:03:37.336Z"
+          }
+        ],
+        "lastChecked": "2026-04-29T08:03:37.309Z"
+      }
+    },
     {
       "datasetId": "datos-avellaneda-ar:balances-2026",
       "externalId": "balances-2026",
@@ -216,78 +288,6 @@
           }
         ],
         "lastChecked": "2026-04-24T07:53:53.279Z"
-      }
-    },
-    {
-      "datasetId": "datos-avellaneda-ar:tablero-dinamico-cov",
-      "externalId": "tablero-dinamico-cov",
-      "modifiedAt": "2026-03-31T15:02:12.836730",
-      "lastScoredAt": "2026-04-23T07:31:23.091Z",
-      "score": {
-        "datasetId": "datos-avellaneda-ar:tablero-dinamico-cov",
-        "title": "Tablero interactivo del COV",
-        "organization": "Municipalidad de Avellaneda",
-        "overall": 0.385,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 102,
-              "tagCount": 3,
-              "resourceCount": 1
-            },
-            "calculatedAt": "2026-04-23T07:31:23.091Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.916,
-            "evidence": {
-              "modifiedAt": "2026-03-31T15:02:12.836730",
-              "daysSinceModified": 23,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-04-23T07:31:23.091Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.1,
-            "evidence": {
-              "formats": [
-                "UNKNOWN"
-              ],
-              "bestFormat": "UNKNOWN",
-              "bestFormatScore": 0.1,
-              "resourceCount": 1,
-              "formatDistribution": {
-                "UNKNOWN": 1
-              }
-            },
-            "calculatedAt": "2026-04-23T07:31:23.091Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0,
-            "evidence": {
-              "resourceCount": 1,
-              "checked": 1,
-              "accessible": 0
-            },
-            "calculatedAt": "2026-04-23T07:31:23.091Z"
-          }
-        ],
-        "lastChecked": "2026-04-23T07:31:23.091Z"
       }
     },
     {
@@ -2739,15 +2739,15 @@
       }
     },
     {
-      "datasetId": "datos-avellaneda-ar:contrataciones-2026",
-      "externalId": "contrataciones-2026",
-      "modifiedAt": "2026-04-28T12:23:34.714161",
-      "lastScoredAt": "2026-04-29T08:03:37.309Z",
+      "datasetId": "datos-avellaneda-ar:tablero-dinamico-cov",
+      "externalId": "tablero-dinamico-cov",
+      "modifiedAt": "2026-03-31T15:02:12.836730",
+      "lastScoredAt": "2026-04-30T08:10:41.592Z",
       "score": {
-        "datasetId": "datos-avellaneda-ar:contrataciones-2026",
-        "title": "Contrataciones 2026",
+        "datasetId": "datos-avellaneda-ar:tablero-dinamico-cov",
+        "title": "Tablero interactivo del COV",
         "organization": "Municipalidad de Avellaneda",
-        "overall": 0.702,
+        "overall": 0.379,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -2764,50 +2764,50 @@
                 "createdAt"
               ],
               "fieldsMissing": [],
-              "descriptionLength": 156,
+              "descriptionLength": 102,
               "tagCount": 3,
-              "resourceCount": 11
+              "resourceCount": 1
             },
-            "calculatedAt": "2026-04-29T08:03:37.309Z"
+            "calculatedAt": "2026-04-30T08:10:41.592Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.997,
+            "score": 0.892,
             "evidence": {
-              "modifiedAt": "2026-04-28T12:23:34.714161",
-              "daysSinceModified": 1,
+              "modifiedAt": "2026-03-31T15:02:12.836730",
+              "daysSinceModified": 30,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-29T08:03:37.309Z"
+            "calculatedAt": "2026-04-30T08:10:41.592Z"
           },
           {
             "dimension": "structure",
-            "score": 0.15,
+            "score": 0.1,
             "evidence": {
               "formats": [
-                "PDF"
+                "UNKNOWN"
               ],
-              "bestFormat": "PDF",
-              "bestFormatScore": 0.15,
-              "resourceCount": 11,
+              "bestFormat": "UNKNOWN",
+              "bestFormatScore": 0.1,
+              "resourceCount": 1,
               "formatDistribution": {
-                "PDF": 11
+                "UNKNOWN": 1
               }
             },
-            "calculatedAt": "2026-04-29T08:03:37.309Z"
+            "calculatedAt": "2026-04-30T08:10:41.592Z"
           },
           {
             "dimension": "accessibility",
-            "score": 0.9,
+            "score": 0,
             "evidence": {
-              "resourceCount": 11,
-              "checked": 11,
-              "accessible": 11
+              "resourceCount": 1,
+              "checked": 1,
+              "accessible": 0
             },
-            "calculatedAt": "2026-04-29T08:03:37.336Z"
+            "calculatedAt": "2026-04-30T08:10:41.592Z"
           }
         ],
-        "lastChecked": "2026-04-29T08:03:37.309Z"
+        "lastChecked": "2026-04-30T08:10:41.592Z"
       }
     }
   ]
