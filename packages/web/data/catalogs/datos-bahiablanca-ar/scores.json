@@ -1,8 +1,78 @@
 {
   "catalogId": "datos-bahiablanca-ar",
-  "scoredAt": "2026-04-30T08:05:40.204Z",
+  "scoredAt": "2026-05-01T08:02:35.225Z",
   "datasetCount": 221,
   "datasets": [
+    {
+      "datasetId": "datos-bahiablanca-ar:solicitudes-recibidas-en-bahia-responde",
+      "title": "Solicitudes recibidas en Bahía Responde",
+      "organization": "Unidad Intendencia",
+      "overall": 0.96,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 187,
+            "tagCount": 5,
+            "resourceCount": 13
+          },
+          "calculatedAt": "2026-04-30T08:05:40.204Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.997,
+          "evidence": {
+            "modifiedAt": "2026-04-29T12:30:56.252882",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-30T08:05:40.204Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "JSON",
+              "CSV",
+              "XLS"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 13,
+            "formatDistribution": {
+              "JSON": 1,
+              "CSV": 7,
+              "XLS": 5
+            }
+          },
+          "calculatedAt": "2026-04-30T08:05:40.204Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.923,
+          "evidence": {
+            "resourceCount": 13,
+            "checked": 13,
+            "accessible": 12
+          },
+          "calculatedAt": "2026-04-30T08:05:44.221Z"
+        }
+      ],
+      "lastChecked": "2026-04-30T08:05:40.204Z"
+    },
     {
       "datasetId": "datos-bahiablanca-ar:publicidad",
       "title": "Publicidad",
@@ -14720,76 +14790,6 @@
         }
       ],
       "lastChecked": "2026-04-26T07:30:52.415Z"
-    },
-    {
-      "datasetId": "datos-bahiablanca-ar:solicitudes-recibidas-en-bahia-responde",
-      "title": "Solicitudes recibidas en Bahía Responde",
-      "organization": "Unidad Intendencia",
-      "overall": 0.96,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 187,
-            "tagCount": 5,
-            "resourceCount": 13
-          },
-          "calculatedAt": "2026-04-30T08:05:40.204Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.997,
-          "evidence": {
-            "modifiedAt": "2026-04-29T12:30:56.252882",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-30T08:05:40.204Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "JSON",
-              "CSV",
-              "XLS"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 13,
-            "formatDistribution": {
-              "JSON": 1,
-              "CSV": 7,
-              "XLS": 5
-            }
-          },
-          "calculatedAt": "2026-04-30T08:05:40.204Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.923,
-          "evidence": {
-            "resourceCount": 13,
-            "checked": 13,
-            "accessible": 12
-          },
-          "calculatedAt": "2026-04-30T08:05:44.221Z"
-        }
-      ],
-      "lastChecked": "2026-04-30T08:05:40.204Z"
     }
   ],
   "coverage": 1

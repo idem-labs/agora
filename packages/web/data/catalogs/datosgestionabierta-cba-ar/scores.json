@@ -1,6 +1,6 @@
 {
   "catalogId": "datosgestionabierta-cba-ar",
-  "scoredAt": "2026-04-30T08:08:25.141Z",
+  "scoredAt": "2026-05-01T08:03:49.252Z",
   "datasetCount": 146,
   "datasets": [
     {
@@ -1144,6 +1144,74 @@
         }
       ],
       "lastChecked": "2026-04-29T08:02:34.586Z"
+    },
+    {
+      "datasetId": "datosgestionabierta-cba-ar:intendentes-y-jefes-comunales",
+      "title": "Intendentes y jefes comunales",
+      "organization": "Ministerio de Gobierno",
+      "overall": 0.933,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 384,
+            "tagCount": 3,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-04-30T08:08:25.141Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.92,
+          "evidence": {
+            "modifiedAt": "2026-04-08T14:53:12.118316",
+            "daysSinceModified": 22,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-04-30T08:08:25.141Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "XLSX",
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "XLSX": 1,
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-04-30T08:08:25.141Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.9,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-04-30T08:08:25.539Z"
+        }
+      ],
+      "lastChecked": "2026-04-30T08:08:25.141Z"
     },
     {
       "datasetId": "datosgestionabierta-cba-ar:resultados-electorales",
@@ -9906,74 +9974,6 @@
         }
       ],
       "lastChecked": "2026-04-27T08:18:53.399Z"
-    },
-    {
-      "datasetId": "datosgestionabierta-cba-ar:intendentes-y-jefes-comunales",
-      "title": "Intendentes y jefes comunales",
-      "organization": "Ministerio de Gobierno",
-      "overall": 0.933,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 384,
-            "tagCount": 3,
-            "resourceCount": 2
-          },
-          "calculatedAt": "2026-04-30T08:08:25.141Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.92,
-          "evidence": {
-            "modifiedAt": "2026-04-08T14:53:12.118316",
-            "daysSinceModified": 22,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-30T08:08:25.141Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "XLSX",
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 2,
-            "formatDistribution": {
-              "XLSX": 1,
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-04-30T08:08:25.141Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.9,
-          "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-04-30T08:08:25.539Z"
-        }
-      ],
-      "lastChecked": "2026-04-30T08:08:25.141Z"
     }
   ],
   "coverage": 1

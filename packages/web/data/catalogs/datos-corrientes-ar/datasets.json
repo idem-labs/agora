@@ -1,7 +1,79 @@
 {
   "catalogId": "datos-corrientes-ar",
-  "updatedAt": "2026-04-30T08:10:39.273Z",
+  "updatedAt": "2026-05-01T08:06:37.118Z",
   "datasets": [
+    {
+      "datasetId": "datos-corrientes-ar:observatorio-vial",
+      "externalId": "observatorio-vial",
+      "modifiedAt": "2026-04-22T13:35:29.941685",
+      "lastScoredAt": "2026-04-30T08:10:39.273Z",
+      "score": {
+        "datasetId": "datos-corrientes-ar:observatorio-vial",
+        "title": "Observatorio Vial",
+        "organization": "Subsecretaria de Transito y Seguridad Vial",
+        "overall": 0.946,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 116,
+              "tagCount": 4,
+              "resourceCount": 16
+            },
+            "calculatedAt": "2026-04-30T08:10:39.273Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.971,
+            "evidence": {
+              "modifiedAt": "2026-04-22T13:35:29.941685",
+              "daysSinceModified": 8,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-04-30T08:10:39.273Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 16,
+              "formatDistribution": {
+                "CSV": 16
+              }
+            },
+            "calculatedAt": "2026-04-30T08:10:39.273Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.9,
+            "evidence": {
+              "resourceCount": 16,
+              "checked": 16,
+              "accessible": 16
+            },
+            "calculatedAt": "2026-04-30T08:10:40.314Z"
+          }
+        ],
+        "lastChecked": "2026-04-30T08:10:39.273Z"
+      }
+    },
     {
       "datasetId": "datos-corrientes-ar:barrios",
       "externalId": "barrios",
@@ -4981,78 +5053,6 @@
           }
         ],
         "lastChecked": "2026-04-27T08:23:00.715Z"
-      }
-    },
-    {
-      "datasetId": "datos-corrientes-ar:observatorio-vial",
-      "externalId": "observatorio-vial",
-      "modifiedAt": "2026-04-22T13:35:29.941685",
-      "lastScoredAt": "2026-04-30T08:10:39.273Z",
-      "score": {
-        "datasetId": "datos-corrientes-ar:observatorio-vial",
-        "title": "Observatorio Vial",
-        "organization": "Subsecretaria de Transito y Seguridad Vial",
-        "overall": 0.946,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 116,
-              "tagCount": 4,
-              "resourceCount": 16
-            },
-            "calculatedAt": "2026-04-30T08:10:39.273Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.971,
-            "evidence": {
-              "modifiedAt": "2026-04-22T13:35:29.941685",
-              "daysSinceModified": 8,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-04-30T08:10:39.273Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 16,
-              "formatDistribution": {
-                "CSV": 16
-              }
-            },
-            "calculatedAt": "2026-04-30T08:10:39.273Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0.9,
-            "evidence": {
-              "resourceCount": 16,
-              "checked": 16,
-              "accessible": 16
-            },
-            "calculatedAt": "2026-04-30T08:10:40.314Z"
-          }
-        ],
-        "lastChecked": "2026-04-30T08:10:39.273Z"
       }
     }
   ]
