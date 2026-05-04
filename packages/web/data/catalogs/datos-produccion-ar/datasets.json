@@ -1,17 +1,169 @@
 {
   "catalogId": "datos-produccion-ar",
-  "updatedAt": "2026-05-02T07:25:36.719Z",
+  "updatedAt": "2026-05-04T08:29:54.001Z",
   "datasets": [
+    {
+      "datasetId": "datos-produccion-ar:precios-claros-sepa-mayoristas",
+      "externalId": "precios-claros-sepa-mayoristas",
+      "modifiedAt": "2026-05-03T17:38:36.800221",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
+      "score": {
+        "datasetId": "datos-produccion-ar:precios-claros-sepa-mayoristas",
+        "title": "Precios Claros - SEPA Mayorista",
+        "organization": "Secretaría de Comercio Interior",
+        "overall": 0.89,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 382,
+              "tagCount": 7,
+              "resourceCount": 9
+            },
+            "calculatedAt": "2026-05-04T08:29:54.001Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.998,
+            "evidence": {
+              "modifiedAt": "2026-05-03T17:38:36.800221",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-05-04T08:29:54.001Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.65,
+            "evidence": {
+              "formats": [
+                "ZIP",
+                "XLSX",
+                "PDF"
+              ],
+              "bestFormat": "XLSX",
+              "bestFormatScore": 0.65,
+              "resourceCount": 9,
+              "formatDistribution": {
+                "ZIP": 7,
+                "XLSX": 1,
+                "PDF": 1
+              }
+            },
+            "calculatedAt": "2026-05-04T08:29:54.001Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 9,
+              "checked": 9,
+              "accessible": 9
+            },
+            "calculatedAt": "2026-05-04T08:29:55.185Z"
+          }
+        ],
+        "lastChecked": "2026-05-04T08:29:54.001Z"
+      }
+    },
+    {
+      "datasetId": "datos-produccion-ar:sepa-precios",
+      "externalId": "sepa-precios",
+      "modifiedAt": "2026-05-03T16:19:05.427669",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
+      "score": {
+        "datasetId": "datos-produccion-ar:sepa-precios",
+        "title": "Precios Claros - Base SEPA",
+        "organization": "Secretaría de Comercio Interior",
+        "overall": 0.89,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 485,
+              "tagCount": 6,
+              "resourceCount": 9
+            },
+            "calculatedAt": "2026-05-04T08:29:55.185Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.997,
+            "evidence": {
+              "modifiedAt": "2026-05-03T16:19:05.427669",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-05-04T08:29:55.185Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.65,
+            "evidence": {
+              "formats": [
+                "ZIP",
+                "XLSX",
+                "PDF"
+              ],
+              "bestFormat": "XLSX",
+              "bestFormatScore": 0.65,
+              "resourceCount": 9,
+              "formatDistribution": {
+                "ZIP": 7,
+                "XLSX": 1,
+                "PDF": 1
+              }
+            },
+            "calculatedAt": "2026-05-04T08:29:55.185Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 9,
+              "checked": 9,
+              "accessible": 9
+            },
+            "calculatedAt": "2026-05-04T08:29:56.323Z"
+          }
+        ],
+        "lastChecked": "2026-05-04T08:29:54.001Z"
+      }
+    },
     {
       "datasetId": "datos-produccion-ar:sociedades-de-garantia-reciproca-sgr",
       "externalId": "sociedades-de-garantia-reciproca-sgr",
       "modifiedAt": "2026-01-02T15:30:28.786685",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:sociedades-de-garantia-reciproca-sgr",
         "title": "Sociedades de Garantía Recíproca (SGR)",
         "organization": "Dirección del Régimen de Sociedades de Garantía Recíproca",
-        "overall": 0.801,
+        "overall": 0.797,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -32,17 +184,17 @@
               "tagCount": 4,
               "resourceCount": 10
             },
-            "calculatedAt": "2026-04-27T08:15:43.646Z"
+            "calculatedAt": "2026-05-04T08:29:56.323Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.643,
+            "score": 0.626,
             "evidence": {
               "modifiedAt": "2026-01-02T15:30:28.786685",
-              "daysSinceModified": 115,
+              "daysSinceModified": 122,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:43.646Z"
+            "calculatedAt": "2026-05-04T08:29:56.323Z"
           },
           {
             "dimension": "structure",
@@ -58,7 +210,7 @@
                 "XLS": 10
               }
             },
-            "calculatedAt": "2026-04-27T08:15:43.646Z"
+            "calculatedAt": "2026-05-04T08:29:56.323Z"
           },
           {
             "dimension": "accessibility",
@@ -68,22 +220,22 @@
               "checked": 10,
               "accessible": 10
             },
-            "calculatedAt": "2026-04-27T08:15:44.037Z"
+            "calculatedAt": "2026-05-04T08:29:56.798Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:banco-de-evaluaciones-de-la-secretaria-de-industria-y-desarrollo-productivo",
       "externalId": "banco-de-evaluaciones-de-la-secretaria-de-industria-y-desarrollo-productivo",
       "modifiedAt": "2025-02-07T19:53:06.804225",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:banco-de-evaluaciones-de-la-secretaria-de-industria-y-desarrollo-productivo",
         "title": "Banco de evaluaciones de la política nacional de desarrollo productivo",
         "organization": "Dirección Nacional de Seguimiento y Evaluación de la Gestión",
-        "overall": 0.686,
+        "overall": 0.685,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -104,17 +256,17 @@
               "tagCount": 13,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:15:44.037Z"
+            "calculatedAt": "2026-05-04T08:29:56.798Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.181,
+            "score": 0.176,
             "evidence": {
               "modifiedAt": "2025-02-07T19:53:06.804225",
-              "daysSinceModified": 444,
+              "daysSinceModified": 451,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:44.037Z"
+            "calculatedAt": "2026-05-04T08:29:56.798Z"
           },
           {
             "dimension": "structure",
@@ -130,7 +282,7 @@
                 "XLS": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:15:44.037Z"
+            "calculatedAt": "2026-05-04T08:29:56.798Z"
           },
           {
             "dimension": "accessibility",
@@ -140,17 +292,17 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:15:44.737Z"
+            "calculatedAt": "2026-05-04T08:29:57.621Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:registro-de-cape-emitidos-resolucion",
       "externalId": "registro-de-cape-emitidos-resolucion",
       "modifiedAt": "2025-01-17T19:33:49.799927",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:registro-de-cape-emitidos-resolucion",
         "title": "Registro de CAPE Emitidos - Resolución 166/2019",
@@ -176,17 +328,17 @@
               "tagCount": 3,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:15:44.737Z"
+            "calculatedAt": "2026-05-04T08:29:57.621Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.167,
+            "score": 0.163,
             "evidence": {
               "modifiedAt": "2025-01-17T19:33:49.799927",
-              "daysSinceModified": 465,
+              "daysSinceModified": 472,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:44.737Z"
+            "calculatedAt": "2026-05-04T08:29:57.621Z"
           },
           {
             "dimension": "structure",
@@ -202,7 +354,7 @@
                 "CVS": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:15:44.737Z"
+            "calculatedAt": "2026-05-04T08:29:57.621Z"
           },
           {
             "dimension": "accessibility",
@@ -212,22 +364,22 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:15:44.811Z"
+            "calculatedAt": "2026-05-04T08:29:57.762Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:registro_de_chas_emitidos",
       "externalId": "registro_de_chas_emitidos",
       "modifiedAt": "2025-01-09T18:34:02.669326",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:registro_de_chas_emitidos",
         "title": "Registro de CHAS Emitidos - Resolución 166/2019",
         "organization": "Dirección de Política Automotriz y Regímenes Especiales",
-        "overall": 0.509,
+        "overall": 0.508,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -248,17 +400,17 @@
               "tagCount": 2,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:15:44.811Z"
+            "calculatedAt": "2026-05-04T08:29:57.762Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.162,
+            "score": 0.158,
             "evidence": {
               "modifiedAt": "2025-01-09T18:34:02.669326",
-              "daysSinceModified": 473,
+              "daysSinceModified": 480,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:44.811Z"
+            "calculatedAt": "2026-05-04T08:29:57.762Z"
           },
           {
             "dimension": "structure",
@@ -274,7 +426,7 @@
                 "UNKNOWN": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:15:44.811Z"
+            "calculatedAt": "2026-05-04T08:29:57.762Z"
           },
           {
             "dimension": "accessibility",
@@ -284,22 +436,22 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:15:44.862Z"
+            "calculatedAt": "2026-05-04T08:29:57.899Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:registro-mipyme",
       "externalId": "registro-mipyme",
       "modifiedAt": "2024-12-23T19:05:35.753537",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:registro-mipyme",
         "title": "Registro MiPyME",
         "organization": "Dirección Nacional de Fortalecimiento de la Competitividad PyME",
-        "overall": 0.772,
+        "overall": 0.771,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -320,17 +472,17 @@
               "tagCount": 5,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:15:44.862Z"
+            "calculatedAt": "2026-05-04T08:29:57.899Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.152,
+            "score": 0.148,
             "evidence": {
               "modifiedAt": "2024-12-23T19:05:35.753537",
-              "daysSinceModified": 490,
+              "daysSinceModified": 497,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:44.862Z"
+            "calculatedAt": "2026-05-04T08:29:57.899Z"
           },
           {
             "dimension": "structure",
@@ -346,7 +498,7 @@
                 "CSV": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:15:44.862Z"
+            "calculatedAt": "2026-05-04T08:29:57.899Z"
           },
           {
             "dimension": "accessibility",
@@ -356,17 +508,17 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:15:44.930Z"
+            "calculatedAt": "2026-05-04T08:29:58.023Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:produccion-en-el-congreso-preguntas-al-jefe-de-gabinete-de-ministros",
       "externalId": "produccion-en-el-congreso-preguntas-al-jefe-de-gabinete-de-ministros",
       "modifiedAt": "2024-03-08T14:10:38.429861",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:produccion-en-el-congreso-preguntas-al-jefe-de-gabinete-de-ministros",
         "title": "Producción en el Congreso | Preguntas al Jefe de Gabinete de Ministros",
@@ -392,17 +544,17 @@
               "tagCount": 9,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:15:44.930Z"
+            "calculatedAt": "2026-05-04T08:29:58.023Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.05,
+            "score": 0.048,
             "evidence": {
               "modifiedAt": "2024-03-08T14:10:38.429861",
-              "daysSinceModified": 780,
+              "daysSinceModified": 787,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:44.930Z"
+            "calculatedAt": "2026-05-04T08:29:58.023Z"
           },
           {
             "dimension": "structure",
@@ -418,7 +570,7 @@
                 ".XLSX": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:15:44.930Z"
+            "calculatedAt": "2026-05-04T08:29:58.023Z"
           },
           {
             "dimension": "accessibility",
@@ -428,17 +580,17 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:15:45.406Z"
+            "calculatedAt": "2026-05-04T08:29:58.553Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:diseno-politica-productiva-20202023",
       "externalId": "diseno-politica-productiva-20202023",
       "modifiedAt": "2024-03-08T13:57:52.234768",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:diseno-politica-productiva-20202023",
         "title": "Diseño de la política industrial y de desarrollo productivo 2020-2023",
@@ -464,17 +616,17 @@
               "tagCount": 5,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:15:45.406Z"
+            "calculatedAt": "2026-05-04T08:29:58.553Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.05,
+            "score": 0.048,
             "evidence": {
               "modifiedAt": "2024-03-08T13:57:52.234768",
-              "daysSinceModified": 780,
+              "daysSinceModified": 787,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:45.406Z"
+            "calculatedAt": "2026-05-04T08:29:58.553Z"
           },
           {
             "dimension": "structure",
@@ -490,7 +642,7 @@
                 ".XLSX": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:15:45.406Z"
+            "calculatedAt": "2026-05-04T08:29:58.553Z"
           },
           {
             "dimension": "accessibility",
@@ -500,17 +652,17 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:15:45.948Z"
+            "calculatedAt": "2026-05-04T08:29:59.152Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:consumo-electrico-por-sectores-manufactureros",
       "externalId": "consumo-electrico-por-sectores-manufactureros",
       "modifiedAt": "2024-02-20T18:13:40.904675",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:consumo-electrico-por-sectores-manufactureros",
         "title": "Consumo eléctrico por sectores manufactureros",
@@ -536,17 +688,17 @@
               "tagCount": 3,
               "resourceCount": 2
             },
-            "calculatedAt": "2026-04-27T08:15:45.948Z"
+            "calculatedAt": "2026-05-04T08:29:59.152Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.047,
+            "score": 0.045,
             "evidence": {
               "modifiedAt": "2024-02-20T18:13:40.904675",
-              "daysSinceModified": 797,
+              "daysSinceModified": 804,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:45.948Z"
+            "calculatedAt": "2026-05-04T08:29:59.152Z"
           },
           {
             "dimension": "structure",
@@ -562,7 +714,7 @@
                 "CSV": 2
               }
             },
-            "calculatedAt": "2026-04-27T08:15:45.948Z"
+            "calculatedAt": "2026-05-04T08:29:59.152Z"
           },
           {
             "dimension": "accessibility",
@@ -572,17 +724,17 @@
               "checked": 2,
               "accessible": 2
             },
-            "calculatedAt": "2026-04-27T08:15:46.582Z"
+            "calculatedAt": "2026-05-04T08:29:59.705Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:programa-soluciona-ii",
       "externalId": "programa-soluciona-ii",
       "modifiedAt": "2024-01-29T19:50:49.758322",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:programa-soluciona-ii",
         "title": "Programa SOLUCIONA II",
@@ -608,17 +760,17 @@
               "tagCount": 4,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:15:46.582Z"
+            "calculatedAt": "2026-05-04T08:29:59.705Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.043,
+            "score": 0.042,
             "evidence": {
               "modifiedAt": "2024-01-29T19:50:49.758322",
-              "daysSinceModified": 819,
+              "daysSinceModified": 826,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:46.582Z"
+            "calculatedAt": "2026-05-04T08:29:59.705Z"
           },
           {
             "dimension": "structure",
@@ -634,7 +786,7 @@
                 "XLS": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:15:46.582Z"
+            "calculatedAt": "2026-05-04T08:29:59.705Z"
           },
           {
             "dimension": "accessibility",
@@ -644,17 +796,17 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:15:47.100Z"
+            "calculatedAt": "2026-05-04T08:30:00.249Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:programa-soluciona-verde",
       "externalId": "programa-soluciona-verde",
       "modifiedAt": "2024-01-29T19:19:33.127014",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:programa-soluciona-verde",
         "title": "Programa SOLUCIONA VERDE",
@@ -680,17 +832,17 @@
               "tagCount": 5,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:15:47.100Z"
+            "calculatedAt": "2026-05-04T08:30:00.249Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.043,
+            "score": 0.042,
             "evidence": {
               "modifiedAt": "2024-01-29T19:19:33.127014",
-              "daysSinceModified": 819,
+              "daysSinceModified": 826,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:47.100Z"
+            "calculatedAt": "2026-05-04T08:30:00.249Z"
           },
           {
             "dimension": "structure",
@@ -706,7 +858,7 @@
                 "XLS": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:15:47.100Z"
+            "calculatedAt": "2026-05-04T08:30:00.249Z"
           },
           {
             "dimension": "accessibility",
@@ -716,17 +868,17 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:15:47.713Z"
+            "calculatedAt": "2026-05-04T08:30:00.937Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:programa-potenciar-satelital",
       "externalId": "programa-potenciar-satelital",
       "modifiedAt": "2024-01-29T19:16:28.072703",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:programa-potenciar-satelital",
         "title": "Programa POTENCIAR Satelital",
@@ -752,17 +904,17 @@
               "tagCount": 5,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:15:47.714Z"
+            "calculatedAt": "2026-05-04T08:30:00.937Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.043,
+            "score": 0.042,
             "evidence": {
               "modifiedAt": "2024-01-29T19:16:28.072703",
-              "daysSinceModified": 819,
+              "daysSinceModified": 826,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:47.714Z"
+            "calculatedAt": "2026-05-04T08:30:00.937Z"
           },
           {
             "dimension": "structure",
@@ -778,7 +930,7 @@
                 "XLS": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:15:47.714Z"
+            "calculatedAt": "2026-05-04T08:30:00.937Z"
           },
           {
             "dimension": "accessibility",
@@ -788,17 +940,17 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:15:48.267Z"
+            "calculatedAt": "2026-05-04T08:30:01.624Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:programa-potenciar-industria-del-videojuego",
       "externalId": "programa-potenciar-industria-del-videojuego",
       "modifiedAt": "2024-01-29T15:49:28.436902",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:programa-potenciar-industria-del-videojuego",
         "title": "Programa POTENCIAR INDUSTRIA DEL VIDEOJUEGO",
@@ -824,17 +976,17 @@
               "tagCount": 6,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:15:48.267Z"
+            "calculatedAt": "2026-05-04T08:30:01.624Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.043,
+            "score": 0.042,
             "evidence": {
               "modifiedAt": "2024-01-29T15:49:28.436902",
-              "daysSinceModified": 819,
+              "daysSinceModified": 826,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:48.267Z"
+            "calculatedAt": "2026-05-04T08:30:01.624Z"
           },
           {
             "dimension": "structure",
@@ -850,7 +1002,7 @@
                 "XLS": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:15:48.267Z"
+            "calculatedAt": "2026-05-04T08:30:01.624Z"
           },
           {
             "dimension": "accessibility",
@@ -860,17 +1012,17 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:15:48.777Z"
+            "calculatedAt": "2026-05-04T08:30:02.164Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:programa-fortalecer",
       "externalId": "programa-fortalecer",
       "modifiedAt": "2024-01-29T14:35:01.969816",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:programa-fortalecer",
         "title": "Programa FORTALECER",
@@ -896,17 +1048,17 @@
               "tagCount": 4,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:15:48.777Z"
+            "calculatedAt": "2026-05-04T08:30:02.164Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.043,
+            "score": 0.042,
             "evidence": {
               "modifiedAt": "2024-01-29T14:35:01.969816",
-              "daysSinceModified": 819,
+              "daysSinceModified": 826,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:48.777Z"
+            "calculatedAt": "2026-05-04T08:30:02.164Z"
           },
           {
             "dimension": "structure",
@@ -922,7 +1074,7 @@
                 "XLS": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:15:48.777Z"
+            "calculatedAt": "2026-05-04T08:30:02.164Z"
           },
           {
             "dimension": "accessibility",
@@ -932,17 +1084,17 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:15:49.286Z"
+            "calculatedAt": "2026-05-04T08:30:02.881Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:regimen-de-promocion-de-biotecnologia-moderna",
       "externalId": "regimen-de-promocion-de-biotecnologia-moderna",
       "modifiedAt": "2024-01-29T14:32:21.674036",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:regimen-de-promocion-de-biotecnologia-moderna",
         "title": "Régimen de Promoción de Biotecnología Moderna",
@@ -968,17 +1120,17 @@
               "tagCount": 4,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:15:49.286Z"
+            "calculatedAt": "2026-05-04T08:30:02.881Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.043,
+            "score": 0.042,
             "evidence": {
               "modifiedAt": "2024-01-29T14:32:21.674036",
-              "daysSinceModified": 819,
+              "daysSinceModified": 826,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:49.286Z"
+            "calculatedAt": "2026-05-04T08:30:02.881Z"
           },
           {
             "dimension": "structure",
@@ -994,7 +1146,7 @@
                 "XLS": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:15:49.286Z"
+            "calculatedAt": "2026-05-04T08:30:02.881Z"
           },
           {
             "dimension": "accessibility",
@@ -1004,17 +1156,17 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:15:49.785Z"
+            "calculatedAt": "2026-05-04T08:30:03.455Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:programa-produccion-colaborativa-de-economia-del-conocimiento",
       "externalId": "programa-produccion-colaborativa-de-economia-del-conocimiento",
       "modifiedAt": "2024-01-16T19:57:32.854467",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:programa-produccion-colaborativa-de-economia-del-conocimiento",
         "title": "Programa Producción Colaborativa de Economía del Conocimiento",
@@ -1040,17 +1192,17 @@
               "tagCount": 5,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:15:49.785Z"
+            "calculatedAt": "2026-05-04T08:30:03.455Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.041,
+            "score": 0.04,
             "evidence": {
               "modifiedAt": "2024-01-16T19:57:32.854467",
-              "daysSinceModified": 832,
+              "daysSinceModified": 839,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:49.785Z"
+            "calculatedAt": "2026-05-04T08:30:03.455Z"
           },
           {
             "dimension": "structure",
@@ -1066,7 +1218,7 @@
                 "XLS": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:15:49.785Z"
+            "calculatedAt": "2026-05-04T08:30:03.455Z"
           },
           {
             "dimension": "accessibility",
@@ -1076,22 +1228,22 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:15:50.283Z"
+            "calculatedAt": "2026-05-04T08:30:04.004Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:catalogo-de-programas",
       "externalId": "catalogo-de-programas",
       "modifiedAt": "2023-12-14T15:55:06.997727",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:catalogo-de-programas",
         "title": "Catálogo de programas",
         "organization": "Dirección Nacional de Seguimiento y Evaluación de la Gestión",
-        "overall": 0.65,
+        "overall": 0.649,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -1112,17 +1264,17 @@
               "tagCount": 3,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:15:50.283Z"
+            "calculatedAt": "2026-05-04T08:30:04.004Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.036,
+            "score": 0.035,
             "evidence": {
               "modifiedAt": "2023-12-14T15:55:06.997727",
-              "daysSinceModified": 865,
+              "daysSinceModified": 872,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:50.283Z"
+            "calculatedAt": "2026-05-04T08:30:04.004Z"
           },
           {
             "dimension": "structure",
@@ -1138,7 +1290,7 @@
                 "XLS": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:15:50.283Z"
+            "calculatedAt": "2026-05-04T08:30:04.004Z"
           },
           {
             "dimension": "accessibility",
@@ -1148,17 +1300,17 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:15:50.972Z"
+            "calculatedAt": "2026-05-04T08:30:04.538Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:distribucion-geografica-de-los-establecimientos-productivos",
       "externalId": "distribucion-geografica-de-los-establecimientos-productivos",
       "modifiedAt": "2023-12-06T19:52:35.340137",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:distribucion-geografica-de-los-establecimientos-productivos",
         "title": "Distribución geográfica de los establecimientos productivos",
@@ -1184,17 +1336,17 @@
               "tagCount": 6,
               "resourceCount": 6
             },
-            "calculatedAt": "2026-04-27T08:15:50.972Z"
+            "calculatedAt": "2026-05-04T08:30:04.538Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.035,
+            "score": 0.034,
             "evidence": {
               "modifiedAt": "2023-12-06T19:52:35.340137",
-              "daysSinceModified": 873,
+              "daysSinceModified": 880,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:50.972Z"
+            "calculatedAt": "2026-05-04T08:30:04.538Z"
           },
           {
             "dimension": "structure",
@@ -1212,7 +1364,7 @@
                 "CSV": 5
               }
             },
-            "calculatedAt": "2026-04-27T08:15:50.972Z"
+            "calculatedAt": "2026-05-04T08:30:04.538Z"
           },
           {
             "dimension": "accessibility",
@@ -1222,17 +1374,17 @@
               "checked": 6,
               "accessible": 6
             },
-            "calculatedAt": "2026-04-27T08:15:51.080Z"
+            "calculatedAt": "2026-05-04T08:30:04.668Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:formacion-bruta-de-capital-fijo-por-sector-y-rama-de-produccion",
       "externalId": "formacion-bruta-de-capital-fijo-por-sector-y-rama-de-produccion",
       "modifiedAt": "2023-12-05T15:24:05.704780",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:formacion-bruta-de-capital-fijo-por-sector-y-rama-de-produccion",
         "title": "Formación bruta de capital fijo por sector y rama de producción",
@@ -1258,17 +1410,17 @@
               "tagCount": 3,
               "resourceCount": 6
             },
-            "calculatedAt": "2026-04-27T08:15:51.080Z"
+            "calculatedAt": "2026-05-04T08:30:04.668Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.035,
+            "score": 0.034,
             "evidence": {
               "modifiedAt": "2023-12-05T15:24:05.704780",
-              "daysSinceModified": 874,
+              "daysSinceModified": 881,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:51.080Z"
+            "calculatedAt": "2026-05-04T08:30:04.668Z"
           },
           {
             "dimension": "structure",
@@ -1286,7 +1438,7 @@
                 "CSV": 5
               }
             },
-            "calculatedAt": "2026-04-27T08:15:51.080Z"
+            "calculatedAt": "2026-05-04T08:30:04.668Z"
           },
           {
             "dimension": "accessibility",
@@ -1296,17 +1448,17 @@
               "checked": 6,
               "accessible": 5
             },
-            "calculatedAt": "2026-04-27T08:15:51.136Z"
+            "calculatedAt": "2026-05-04T08:30:04.832Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:complejidad-economica-provincial",
       "externalId": "complejidad-economica-provincial",
       "modifiedAt": "2023-12-05T14:21:51.560485",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:complejidad-economica-provincial",
         "title": "Complejidad Económica Provincial",
@@ -1332,17 +1484,17 @@
               "tagCount": 3,
               "resourceCount": 3
             },
-            "calculatedAt": "2026-04-27T08:15:51.136Z"
+            "calculatedAt": "2026-05-04T08:30:04.832Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.035,
+            "score": 0.034,
             "evidence": {
               "modifiedAt": "2023-12-05T14:21:51.560485",
-              "daysSinceModified": 874,
+              "daysSinceModified": 881,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:51.136Z"
+            "calculatedAt": "2026-05-04T08:30:04.832Z"
           },
           {
             "dimension": "structure",
@@ -1360,7 +1512,7 @@
                 "CSV": 2
               }
             },
-            "calculatedAt": "2026-04-27T08:15:51.136Z"
+            "calculatedAt": "2026-05-04T08:30:04.832Z"
           },
           {
             "dimension": "accessibility",
@@ -1370,22 +1522,22 @@
               "checked": 3,
               "accessible": 3
             },
-            "calculatedAt": "2026-04-27T08:15:51.196Z"
+            "calculatedAt": "2026-05-04T08:30:04.992Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:fletes-y-seguros-del-comercio-exterior-argentino",
       "externalId": "fletes-y-seguros-del-comercio-exterior-argentino",
       "modifiedAt": "2023-11-24T20:26:44.793139",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:fletes-y-seguros-del-comercio-exterior-argentino",
         "title": "Fletes y seguros del comercio exterior argentino",
         "organization": "Dirección Nacional de Estudios para la Producción (CEP XXI)",
-        "overall": 0.684,
+        "overall": 0.683,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -1406,17 +1558,17 @@
               "tagCount": 3,
               "resourceCount": 9
             },
-            "calculatedAt": "2026-04-27T08:15:51.196Z"
+            "calculatedAt": "2026-05-04T08:30:04.992Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.033,
+            "score": 0.032,
             "evidence": {
               "modifiedAt": "2023-11-24T20:26:44.793139",
-              "daysSinceModified": 884,
+              "daysSinceModified": 892,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:51.196Z"
+            "calculatedAt": "2026-05-04T08:30:04.992Z"
           },
           {
             "dimension": "structure",
@@ -1434,7 +1586,7 @@
                 "CSV": 8
               }
             },
-            "calculatedAt": "2026-04-27T08:15:51.196Z"
+            "calculatedAt": "2026-05-04T08:30:04.992Z"
           },
           {
             "dimension": "accessibility",
@@ -1444,17 +1596,17 @@
               "checked": 9,
               "accessible": 7
             },
-            "calculatedAt": "2026-04-27T08:15:51.838Z"
+            "calculatedAt": "2026-05-04T08:30:05.704Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:salarios-promedio-y-mediano-de-la-poblacion-joven-por-sector-de-actividad-y-provincia",
       "externalId": "salarios-promedio-y-mediano-de-la-poblacion-joven-por-sector-de-actividad-y-provincia",
       "modifiedAt": "2023-10-27T14:40:04.212231",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:salarios-promedio-y-mediano-de-la-poblacion-joven-por-sector-de-actividad-y-provincia",
         "title": "Salario promedio de la población joven por sector de actividad y provincia",
@@ -1480,17 +1632,17 @@
               "tagCount": 5,
               "resourceCount": 16
             },
-            "calculatedAt": "2026-04-27T08:15:51.838Z"
+            "calculatedAt": "2026-05-04T08:30:05.704Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.03,
+            "score": 0.029,
             "evidence": {
               "modifiedAt": "2023-10-27T14:40:04.212231",
-              "daysSinceModified": 913,
+              "daysSinceModified": 920,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:51.838Z"
+            "calculatedAt": "2026-05-04T08:30:05.704Z"
           },
           {
             "dimension": "structure",
@@ -1508,7 +1660,7 @@
                 "PDF": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:15:51.838Z"
+            "calculatedAt": "2026-05-04T08:30:05.704Z"
           },
           {
             "dimension": "accessibility",
@@ -1518,17 +1670,17 @@
               "checked": 16,
               "accessible": 16
             },
-            "calculatedAt": "2026-04-27T08:15:52.396Z"
+            "calculatedAt": "2026-05-04T08:30:06.310Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:salario-mediano-de-la-poblacion-joven-por-sector-de-actividad-y-provincia",
       "externalId": "salario-mediano-de-la-poblacion-joven-por-sector-de-actividad-y-provincia",
       "modifiedAt": "2023-10-27T14:39:16.837922",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:salario-mediano-de-la-poblacion-joven-por-sector-de-actividad-y-provincia",
         "title": "Salario mediano de la población joven por sector de actividad y provincia",
@@ -1554,17 +1706,17 @@
               "tagCount": 5,
               "resourceCount": 16
             },
-            "calculatedAt": "2026-04-27T08:15:52.396Z"
+            "calculatedAt": "2026-05-04T08:30:06.310Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.03,
+            "score": 0.029,
             "evidence": {
               "modifiedAt": "2023-10-27T14:39:16.837922",
-              "daysSinceModified": 913,
+              "daysSinceModified": 920,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:52.396Z"
+            "calculatedAt": "2026-05-04T08:30:06.310Z"
           },
           {
             "dimension": "structure",
@@ -1582,7 +1734,7 @@
                 "PDF": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:15:52.396Z"
+            "calculatedAt": "2026-05-04T08:30:06.310Z"
           },
           {
             "dimension": "accessibility",
@@ -1592,17 +1744,17 @@
               "checked": 16,
               "accessible": 16
             },
-            "calculatedAt": "2026-04-27T08:15:52.974Z"
+            "calculatedAt": "2026-05-04T08:30:07.111Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:porcentaje-de-puestos-ocupados-por-mujeres-sobre-la-poblacion-joven-por-sector-y-provincia",
       "externalId": "porcentaje-de-puestos-ocupados-por-mujeres-sobre-la-poblacion-joven-por-sector-y-provincia",
       "modifiedAt": "2023-10-27T14:38:06.508371",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:porcentaje-de-puestos-ocupados-por-mujeres-sobre-la-poblacion-joven-por-sector-y-provincia",
         "title": "Porcentaje de puestos ocupados por mujeres sobre la población joven, por sector y provincia.",
@@ -1628,17 +1780,17 @@
               "tagCount": 5,
               "resourceCount": 15
             },
-            "calculatedAt": "2026-04-27T08:15:52.974Z"
+            "calculatedAt": "2026-05-04T08:30:07.111Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.03,
+            "score": 0.029,
             "evidence": {
               "modifiedAt": "2023-10-27T14:38:06.508371",
-              "daysSinceModified": 913,
+              "daysSinceModified": 920,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:52.974Z"
+            "calculatedAt": "2026-05-04T08:30:07.111Z"
           },
           {
             "dimension": "structure",
@@ -1656,7 +1808,7 @@
                 "PDF": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:15:52.974Z"
+            "calculatedAt": "2026-05-04T08:30:07.111Z"
           },
           {
             "dimension": "accessibility",
@@ -1666,17 +1818,17 @@
               "checked": 15,
               "accessible": 15
             },
-            "calculatedAt": "2026-04-27T08:15:53.492Z"
+            "calculatedAt": "2026-05-04T08:30:07.706Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:puestos-de-trabajo-asalariados-registrados-de-la-poblacion-joven-por-sector-de-actividad-y-provincia",
       "externalId": "puestos-de-trabajo-asalariados-registrados-de-la-poblacion-joven-por-sector-de-actividad-y-provincia",
       "modifiedAt": "2023-10-27T14:35:59.064753",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:puestos-de-trabajo-asalariados-registrados-de-la-poblacion-joven-por-sector-de-actividad-y-provincia",
         "title": "Puestos de trabajo asalariados registrados de la población joven por sector de actividad y provincia",
@@ -1702,17 +1854,17 @@
               "tagCount": 5,
               "resourceCount": 16
             },
-            "calculatedAt": "2026-04-27T08:15:53.492Z"
+            "calculatedAt": "2026-05-04T08:30:07.706Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.03,
+            "score": 0.029,
             "evidence": {
               "modifiedAt": "2023-10-27T14:35:59.064753",
-              "daysSinceModified": 913,
+              "daysSinceModified": 920,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:53.492Z"
+            "calculatedAt": "2026-05-04T08:30:07.706Z"
           },
           {
             "dimension": "structure",
@@ -1730,7 +1882,7 @@
                 "PDF": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:15:53.492Z"
+            "calculatedAt": "2026-05-04T08:30:07.706Z"
           },
           {
             "dimension": "accessibility",
@@ -1740,17 +1892,17 @@
               "checked": 16,
               "accessible": 16
             },
-            "calculatedAt": "2026-04-27T08:15:54.154Z"
+            "calculatedAt": "2026-05-04T08:30:08.450Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:diagnostico-federal-de-politicas-productivas-con-enfoque-de-genero-en-argentina",
       "externalId": "diagnostico-federal-de-politicas-productivas-con-enfoque-de-genero-en-argentina",
       "modifiedAt": "2023-09-07T18:59:40.347334",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:diagnostico-federal-de-politicas-productivas-con-enfoque-de-genero-en-argentina",
         "title": "Diagnóstico federal de políticas productivas con enfoque de género en Argentina",
@@ -1777,17 +1929,17 @@
               "tagCount": 0,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:15:54.154Z"
+            "calculatedAt": "2026-05-04T08:30:08.450Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.025,
+            "score": 0.024,
             "evidence": {
               "modifiedAt": "2023-09-07T18:59:40.347334",
-              "daysSinceModified": 963,
+              "daysSinceModified": 970,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:54.154Z"
+            "calculatedAt": "2026-05-04T08:30:08.450Z"
           },
           {
             "dimension": "structure",
@@ -1803,7 +1955,7 @@
                 ".XLSX": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:15:54.154Z"
+            "calculatedAt": "2026-05-04T08:30:08.450Z"
           },
           {
             "dimension": "accessibility",
@@ -1813,17 +1965,17 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:15:54.652Z"
+            "calculatedAt": "2026-05-04T08:30:08.982Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:relevamiento-espacios-de-genero-en-las-carteras-de-produccion-provinciales",
       "externalId": "relevamiento-espacios-de-genero-en-las-carteras-de-produccion-provinciales",
       "modifiedAt": "2023-09-07T18:59:25.251692",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:relevamiento-espacios-de-genero-en-las-carteras-de-produccion-provinciales",
         "title": "Espacios de género en las carteras de producción provinciales",
@@ -1849,17 +2001,17 @@
               "tagCount": 7,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:15:54.652Z"
+            "calculatedAt": "2026-05-04T08:30:08.982Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.025,
+            "score": 0.024,
             "evidence": {
               "modifiedAt": "2023-09-07T18:59:25.251692",
-              "daysSinceModified": 963,
+              "daysSinceModified": 970,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:54.652Z"
+            "calculatedAt": "2026-05-04T08:30:08.982Z"
           },
           {
             "dimension": "structure",
@@ -1875,7 +2027,7 @@
                 ".XLSX": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:15:54.652Z"
+            "calculatedAt": "2026-05-04T08:30:08.982Z"
           },
           {
             "dimension": "accessibility",
@@ -1885,17 +2037,17 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:15:55.143Z"
+            "calculatedAt": "2026-05-04T08:30:09.585Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:registro-nacional-de-parques-industriales-renpi",
       "externalId": "registro-nacional-de-parques-industriales-renpi",
       "modifiedAt": "2023-08-29T14:15:04.693704",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:registro-nacional-de-parques-industriales-renpi",
         "title": "Registro Nacional de Parques Industriales (RENPI)",
@@ -1921,17 +2073,17 @@
               "tagCount": 4,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:15:55.143Z"
+            "calculatedAt": "2026-05-04T08:30:09.585Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.024,
+            "score": 0.023,
             "evidence": {
               "modifiedAt": "2023-08-29T14:15:04.693704",
-              "daysSinceModified": 972,
+              "daysSinceModified": 979,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:55.143Z"
+            "calculatedAt": "2026-05-04T08:30:09.585Z"
           },
           {
             "dimension": "structure",
@@ -1947,7 +2099,7 @@
                 "ODS": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:15:55.143Z"
+            "calculatedAt": "2026-05-04T08:30:09.585Z"
           },
           {
             "dimension": "accessibility",
@@ -1957,17 +2109,17 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:15:55.190Z"
+            "calculatedAt": "2026-05-04T08:30:09.709Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:puestos-de-trabajo-registrados-por-provincia-y-sector-de-actividad",
       "externalId": "puestos-de-trabajo-registrados-por-provincia-y-sector-de-actividad",
       "modifiedAt": "2023-08-22T13:32:59.073883",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:puestos-de-trabajo-registrados-por-provincia-y-sector-de-actividad",
         "title": "Puestos de trabajo asalariados registrados, por provincia y sector de actividad",
@@ -1993,17 +2145,17 @@
               "tagCount": 5,
               "resourceCount": 11
             },
-            "calculatedAt": "2026-04-27T08:15:55.190Z"
+            "calculatedAt": "2026-05-04T08:30:09.709Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.023,
+            "score": 0.022,
             "evidence": {
               "modifiedAt": "2023-08-22T13:32:59.073883",
-              "daysSinceModified": 979,
+              "daysSinceModified": 986,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:55.190Z"
+            "calculatedAt": "2026-05-04T08:30:09.709Z"
           },
           {
             "dimension": "structure",
@@ -2021,7 +2173,7 @@
                 "PDF": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:15:55.190Z"
+            "calculatedAt": "2026-05-04T08:30:09.709Z"
           },
           {
             "dimension": "accessibility",
@@ -2031,17 +2183,17 @@
               "checked": 11,
               "accessible": 11
             },
-            "calculatedAt": "2026-04-27T08:15:55.257Z"
+            "calculatedAt": "2026-05-04T08:30:09.852Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:salarios-promedio-y-mediano-por-sector-de-actividad",
       "externalId": "salarios-promedio-y-mediano-por-sector-de-actividad",
       "modifiedAt": "2023-08-16T15:12:20.853697",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:salarios-promedio-y-mediano-por-sector-de-actividad",
         "title": "Salarios promedio y mediano, por sector de actividad",
@@ -2067,17 +2219,17 @@
               "tagCount": 4,
               "resourceCount": 22
             },
-            "calculatedAt": "2026-04-27T08:15:55.257Z"
+            "calculatedAt": "2026-05-04T08:30:09.852Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.023,
+            "score": 0.022,
             "evidence": {
               "modifiedAt": "2023-08-16T15:12:20.853697",
-              "daysSinceModified": 985,
+              "daysSinceModified": 992,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:55.257Z"
+            "calculatedAt": "2026-05-04T08:30:09.852Z"
           },
           {
             "dimension": "structure",
@@ -2095,7 +2247,7 @@
                 "PDF": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:15:55.257Z"
+            "calculatedAt": "2026-05-04T08:30:09.852Z"
           },
           {
             "dimension": "accessibility",
@@ -2105,17 +2257,17 @@
               "checked": 22,
               "accessible": 22
             },
-            "calculatedAt": "2026-04-27T08:15:55.973Z"
+            "calculatedAt": "2026-05-04T08:30:10.512Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:exportaciones-de-bienes-valores-y-cantidad-de-empresas-por-sector-de-actividad",
       "externalId": "exportaciones-de-bienes-valores-y-cantidad-de-empresas-por-sector-de-actividad",
       "modifiedAt": "2023-08-11T22:55:48.742873",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:exportaciones-de-bienes-valores-y-cantidad-de-empresas-por-sector-de-actividad",
         "title": "Exportaciones de bienes (valores y cantidad de empresas), por sector de actividad",
@@ -2141,17 +2293,17 @@
               "tagCount": 5,
               "resourceCount": 22
             },
-            "calculatedAt": "2026-04-27T08:15:55.973Z"
+            "calculatedAt": "2026-05-04T08:30:10.512Z"
           },
           {
             "dimension": "freshness",
             "score": 0.022,
             "evidence": {
               "modifiedAt": "2023-08-11T22:55:48.742873",
-              "daysSinceModified": 989,
+              "daysSinceModified": 996,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:55.973Z"
+            "calculatedAt": "2026-05-04T08:30:10.512Z"
           },
           {
             "dimension": "structure",
@@ -2169,7 +2321,7 @@
                 "PDF": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:15:55.973Z"
+            "calculatedAt": "2026-05-04T08:30:10.512Z"
           },
           {
             "dimension": "accessibility",
@@ -2179,17 +2331,17 @@
               "checked": 22,
               "accessible": 22
             },
-            "calculatedAt": "2026-04-27T08:15:56.576Z"
+            "calculatedAt": "2026-05-04T08:30:11.124Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:importaciones-de-bienes-valores-y-cantidad-de-empresas-por-sector-de-actividad",
       "externalId": "importaciones-de-bienes-valores-y-cantidad-de-empresas-por-sector-de-actividad",
       "modifiedAt": "2023-08-11T22:54:27.831920",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:importaciones-de-bienes-valores-y-cantidad-de-empresas-por-sector-de-actividad",
         "title": "Importaciones de bienes (valores y cantidad de empresas), por sector de actividad",
@@ -2215,17 +2367,17 @@
               "tagCount": 5,
               "resourceCount": 22
             },
-            "calculatedAt": "2026-04-27T08:15:56.576Z"
+            "calculatedAt": "2026-05-04T08:30:11.124Z"
           },
           {
             "dimension": "freshness",
             "score": 0.022,
             "evidence": {
               "modifiedAt": "2023-08-11T22:54:27.831920",
-              "daysSinceModified": 989,
+              "daysSinceModified": 996,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:56.576Z"
+            "calculatedAt": "2026-05-04T08:30:11.124Z"
           },
           {
             "dimension": "structure",
@@ -2243,7 +2395,7 @@
                 "PDF": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:15:56.576Z"
+            "calculatedAt": "2026-05-04T08:30:11.124Z"
           },
           {
             "dimension": "accessibility",
@@ -2253,17 +2405,17 @@
               "checked": 22,
               "accessible": 22
             },
-            "calculatedAt": "2026-04-27T08:15:57.140Z"
+            "calculatedAt": "2026-05-04T08:30:11.766Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:proporcion-segun-generos-por-sector-de-actividad",
       "externalId": "proporcion-segun-generos-por-sector-de-actividad",
       "modifiedAt": "2023-08-11T22:50:57.322083",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:proporcion-segun-generos-por-sector-de-actividad",
         "title": "Porcentaje de puestos ocupados por mujeres, por sector de actividad",
@@ -2289,17 +2441,17 @@
               "tagCount": 5,
               "resourceCount": 12
             },
-            "calculatedAt": "2026-04-27T08:15:57.140Z"
+            "calculatedAt": "2026-05-04T08:30:11.766Z"
           },
           {
             "dimension": "freshness",
             "score": 0.022,
             "evidence": {
               "modifiedAt": "2023-08-11T22:50:57.322083",
-              "daysSinceModified": 989,
+              "daysSinceModified": 996,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:57.140Z"
+            "calculatedAt": "2026-05-04T08:30:11.766Z"
           },
           {
             "dimension": "structure",
@@ -2317,7 +2469,7 @@
                 "PDF": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:15:57.140Z"
+            "calculatedAt": "2026-05-04T08:30:11.766Z"
           },
           {
             "dimension": "accessibility",
@@ -2327,17 +2479,17 @@
               "checked": 12,
               "accessible": 12
             },
-            "calculatedAt": "2026-04-27T08:15:57.864Z"
+            "calculatedAt": "2026-05-04T08:30:12.320Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:cantidad-de-empleadores-que-declararon-trabajadores-por-sector-de-actividad",
       "externalId": "cantidad-de-empleadores-que-declararon-trabajadores-por-sector-de-actividad",
       "modifiedAt": "2023-08-11T22:49:05.903422",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:cantidad-de-empleadores-que-declararon-trabajadores-por-sector-de-actividad",
         "title": "Cantidad de empleadores que declararon trabajadores, por sector de actividad",
@@ -2363,17 +2515,17 @@
               "tagCount": 5,
               "resourceCount": 12
             },
-            "calculatedAt": "2026-04-27T08:15:57.864Z"
+            "calculatedAt": "2026-05-04T08:30:12.320Z"
           },
           {
             "dimension": "freshness",
             "score": 0.022,
             "evidence": {
               "modifiedAt": "2023-08-11T22:49:05.903422",
-              "daysSinceModified": 989,
+              "daysSinceModified": 996,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:57.864Z"
+            "calculatedAt": "2026-05-04T08:30:12.320Z"
           },
           {
             "dimension": "structure",
@@ -2391,7 +2543,7 @@
                 "PDF": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:15:57.864Z"
+            "calculatedAt": "2026-05-04T08:30:12.320Z"
           },
           {
             "dimension": "accessibility",
@@ -2401,17 +2553,17 @@
               "checked": 12,
               "accessible": 12
             },
-            "calculatedAt": "2026-04-27T08:15:58.633Z"
+            "calculatedAt": "2026-05-04T08:30:13.011Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:puestos-de-trabajo-por-sector-productivo",
       "externalId": "puestos-de-trabajo-por-sector-productivo",
       "modifiedAt": "2023-08-11T22:47:50.591099",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:puestos-de-trabajo-por-sector-productivo",
         "title": "Puestos de trabajo asalariados registrados, por sector de actividad",
@@ -2437,17 +2589,17 @@
               "tagCount": 4,
               "resourceCount": 12
             },
-            "calculatedAt": "2026-04-27T08:15:58.633Z"
+            "calculatedAt": "2026-05-04T08:30:13.011Z"
           },
           {
             "dimension": "freshness",
             "score": 0.022,
             "evidence": {
               "modifiedAt": "2023-08-11T22:47:50.591099",
-              "daysSinceModified": 989,
+              "daysSinceModified": 996,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:58.633Z"
+            "calculatedAt": "2026-05-04T08:30:13.011Z"
           },
           {
             "dimension": "structure",
@@ -2465,7 +2617,7 @@
                 "PDF": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:15:58.633Z"
+            "calculatedAt": "2026-05-04T08:30:13.011Z"
           },
           {
             "dimension": "accessibility",
@@ -2475,17 +2627,17 @@
               "checked": 12,
               "accessible": 12
             },
-            "calculatedAt": "2026-04-27T08:15:59.151Z"
+            "calculatedAt": "2026-05-04T08:30:13.772Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:variacion-interanual-mediana-en-la-facturacion-de-las-empresas",
       "externalId": "variacion-interanual-mediana-en-la-facturacion-de-las-empresas",
       "modifiedAt": "2023-08-11T22:46:54.584517",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:variacion-interanual-mediana-en-la-facturacion-de-las-empresas",
         "title": "Variación interanual mediana en la facturación de las empresas",
@@ -2511,17 +2663,17 @@
               "tagCount": 4,
               "resourceCount": 8
             },
-            "calculatedAt": "2026-04-27T08:15:59.151Z"
+            "calculatedAt": "2026-05-04T08:30:13.772Z"
           },
           {
             "dimension": "freshness",
             "score": 0.022,
             "evidence": {
               "modifiedAt": "2023-08-11T22:46:54.584517",
-              "daysSinceModified": 989,
+              "daysSinceModified": 996,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:59.151Z"
+            "calculatedAt": "2026-05-04T08:30:13.772Z"
           },
           {
             "dimension": "structure",
@@ -2539,7 +2691,7 @@
                 "PDF": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:15:59.151Z"
+            "calculatedAt": "2026-05-04T08:30:13.772Z"
           },
           {
             "dimension": "accessibility",
@@ -2549,17 +2701,17 @@
               "checked": 8,
               "accessible": 8
             },
-            "calculatedAt": "2026-04-27T08:15:59.755Z"
+            "calculatedAt": "2026-05-04T08:30:14.369Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:porcentaje-de-mujeres-por-provincia-y-sector-de-actividad",
       "externalId": "porcentaje-de-mujeres-por-provincia-y-sector-de-actividad",
       "modifiedAt": "2023-08-11T22:45:26.981778",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:porcentaje-de-mujeres-por-provincia-y-sector-de-actividad",
         "title": "Porcentaje de mujeres, por provincia y sector de actividad",
@@ -2585,17 +2737,17 @@
               "tagCount": 6,
               "resourceCount": 11
             },
-            "calculatedAt": "2026-04-27T08:15:59.755Z"
+            "calculatedAt": "2026-05-04T08:30:14.369Z"
           },
           {
             "dimension": "freshness",
             "score": 0.022,
             "evidence": {
               "modifiedAt": "2023-08-11T22:45:26.981778",
-              "daysSinceModified": 989,
+              "daysSinceModified": 996,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:15:59.755Z"
+            "calculatedAt": "2026-05-04T08:30:14.369Z"
           },
           {
             "dimension": "structure",
@@ -2613,7 +2765,7 @@
                 "PDF": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:15:59.755Z"
+            "calculatedAt": "2026-05-04T08:30:14.369Z"
           },
           {
             "dimension": "accessibility",
@@ -2623,17 +2775,17 @@
               "checked": 11,
               "accessible": 11
             },
-            "calculatedAt": "2026-04-27T08:16:00.316Z"
+            "calculatedAt": "2026-05-04T08:30:14.921Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:salarios-promedio-y-mediano-por-provincia-y-sector-de-actividad",
       "externalId": "salarios-promedio-y-mediano-por-provincia-y-sector-de-actividad",
       "modifiedAt": "2023-08-11T22:43:02.904019",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:salarios-promedio-y-mediano-por-provincia-y-sector-de-actividad",
         "title": "Salarios promedio y mediano, por provincia y sector de actividad",
@@ -2659,17 +2811,17 @@
               "tagCount": 6,
               "resourceCount": 20
             },
-            "calculatedAt": "2026-04-27T08:16:00.316Z"
+            "calculatedAt": "2026-05-04T08:30:14.921Z"
           },
           {
             "dimension": "freshness",
             "score": 0.022,
             "evidence": {
               "modifiedAt": "2023-08-11T22:43:02.904019",
-              "daysSinceModified": 989,
+              "daysSinceModified": 996,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:00.316Z"
+            "calculatedAt": "2026-05-04T08:30:14.921Z"
           },
           {
             "dimension": "structure",
@@ -2687,7 +2839,7 @@
                 "PDF": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:16:00.316Z"
+            "calculatedAt": "2026-05-04T08:30:14.921Z"
           },
           {
             "dimension": "accessibility",
@@ -2697,22 +2849,22 @@
               "checked": 20,
               "accessible": 20
             },
-            "calculatedAt": "2026-04-27T08:16:00.843Z"
+            "calculatedAt": "2026-05-04T08:30:15.482Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:programa-soluciona",
       "externalId": "programa-soluciona",
       "modifiedAt": "2023-07-13T17:24:36.061529",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:programa-soluciona",
         "title": "Programa SOLUCIONA",
         "organization": "Secretaría de Economía del Conocimiento",
-        "overall": 0.646,
+        "overall": 0.645,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -2733,17 +2885,17 @@
               "tagCount": 6,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:16:00.843Z"
+            "calculatedAt": "2026-05-04T08:30:15.482Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.02,
+            "score": 0.019,
             "evidence": {
               "modifiedAt": "2023-07-13T17:24:36.061529",
-              "daysSinceModified": 1019,
+              "daysSinceModified": 1026,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:00.843Z"
+            "calculatedAt": "2026-05-04T08:30:15.482Z"
           },
           {
             "dimension": "structure",
@@ -2759,7 +2911,7 @@
                 "XLS": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:16:00.843Z"
+            "calculatedAt": "2026-05-04T08:30:15.482Z"
           },
           {
             "dimension": "accessibility",
@@ -2769,22 +2921,22 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:16:01.327Z"
+            "calculatedAt": "2026-05-04T08:30:16.035Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:programa-nodos-de-la-economia-del-conocimiento",
       "externalId": "programa-nodos-de-la-economia-del-conocimiento",
       "modifiedAt": "2023-07-11T15:45:58.250105",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:programa-nodos-de-la-economia-del-conocimiento",
         "title": "Programa NODOS de la Economía del Conocimiento",
         "organization": "Secretaría de Economía del Conocimiento",
-        "overall": 0.646,
+        "overall": 0.645,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -2805,17 +2957,17 @@
               "tagCount": 5,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:16:01.327Z"
+            "calculatedAt": "2026-05-04T08:30:16.035Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.02,
+            "score": 0.019,
             "evidence": {
               "modifiedAt": "2023-07-11T15:45:58.250105",
-              "daysSinceModified": 1021,
+              "daysSinceModified": 1028,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:01.327Z"
+            "calculatedAt": "2026-05-04T08:30:16.035Z"
           },
           {
             "dimension": "structure",
@@ -2831,7 +2983,7 @@
                 "XLS": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:16:01.327Z"
+            "calculatedAt": "2026-05-04T08:30:16.035Z"
           },
           {
             "dimension": "accessibility",
@@ -2841,17 +2993,17 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:16:01.981Z"
+            "calculatedAt": "2026-05-04T08:30:16.566Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:programa-capacitacion-4-0-y-economia-del-conocimiento-para-gobiernos-subnacionales",
       "externalId": "programa-capacitacion-4-0-y-economia-del-conocimiento-para-gobiernos-subnacionales",
       "modifiedAt": "2023-07-07T15:09:10.338464",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:programa-capacitacion-4-0-y-economia-del-conocimiento-para-gobiernos-subnacionales",
         "title": "Programa Capacitación 4.0 y Economía del Conocimiento para Gobiernos Subnacionales",
@@ -2877,17 +3029,17 @@
               "tagCount": 5,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:16:01.981Z"
+            "calculatedAt": "2026-05-04T08:30:16.566Z"
           },
           {
             "dimension": "freshness",
             "score": 0.019,
             "evidence": {
               "modifiedAt": "2023-07-07T15:09:10.338464",
-              "daysSinceModified": 1025,
+              "daysSinceModified": 1032,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:01.981Z"
+            "calculatedAt": "2026-05-04T08:30:16.566Z"
           },
           {
             "dimension": "structure",
@@ -2903,7 +3055,7 @@
                 "XLS": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:16:01.981Z"
+            "calculatedAt": "2026-05-04T08:30:16.566Z"
           },
           {
             "dimension": "accessibility",
@@ -2913,22 +3065,22 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:16:02.593Z"
+            "calculatedAt": "2026-05-04T08:30:17.313Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:salarios-por-departamento-partido-y-sector-de-actividad",
       "externalId": "salarios-por-departamento-partido-y-sector-de-actividad",
       "modifiedAt": "2023-06-01T18:32:33.508001",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:salarios-por-departamento-partido-y-sector-de-actividad",
         "title": "Salarios por departamento/partido y sector de actividad",
         "organization": "Dirección Nacional de Estudios para la Producción (CEP XXI)",
-        "overall": 0.739,
+        "overall": 0.738,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -2949,17 +3101,17 @@
               "tagCount": 6,
               "resourceCount": 25
             },
-            "calculatedAt": "2026-04-27T08:16:02.593Z"
+            "calculatedAt": "2026-05-04T08:30:17.313Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.017,
+            "score": 0.016,
             "evidence": {
               "modifiedAt": "2023-06-01T18:32:33.508001",
-              "daysSinceModified": 1061,
+              "daysSinceModified": 1068,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:02.593Z"
+            "calculatedAt": "2026-05-04T08:30:17.313Z"
           },
           {
             "dimension": "structure",
@@ -2981,7 +3133,7 @@
                 "PDF": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:16:02.593Z"
+            "calculatedAt": "2026-05-04T08:30:17.313Z"
           },
           {
             "dimension": "accessibility",
@@ -2991,17 +3143,17 @@
               "checked": 25,
               "accessible": 25
             },
-            "calculatedAt": "2026-04-27T08:16:02.742Z"
+            "calculatedAt": "2026-05-04T08:30:17.589Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:indice-de-produccion-industrial-mundial-ipi-mundial",
       "externalId": "indice-de-produccion-industrial-mundial-ipi-mundial",
       "modifiedAt": "2023-04-20T15:32:57.001868",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:indice-de-produccion-industrial-mundial-ipi-mundial",
         "title": "Índice de Producción Industrial Mundial (IPI Mundial)",
@@ -3027,17 +3179,17 @@
               "tagCount": 2,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:16:02.742Z"
+            "calculatedAt": "2026-05-04T08:30:17.589Z"
           },
           {
             "dimension": "freshness",
             "score": 0.014,
             "evidence": {
               "modifiedAt": "2023-04-20T15:32:57.001868",
-              "daysSinceModified": 1103,
+              "daysSinceModified": 1110,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:02.742Z"
+            "calculatedAt": "2026-05-04T08:30:17.589Z"
           },
           {
             "dimension": "structure",
@@ -3053,7 +3205,7 @@
                 "CSV": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:16:02.742Z"
+            "calculatedAt": "2026-05-04T08:30:17.589Z"
           },
           {
             "dimension": "accessibility",
@@ -3063,17 +3215,17 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:16:03.251Z"
+            "calculatedAt": "2026-05-04T08:30:18.144Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:indicadores-de-actividad-economica-mensual-de-los-paises-americanos",
       "externalId": "indicadores-de-actividad-economica-mensual-de-los-paises-americanos",
       "modifiedAt": "2023-04-17T13:36:36.447694",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:indicadores-de-actividad-economica-mensual-de-los-paises-americanos",
         "title": "Indicadores de actividad económica mensual de los países americanos",
@@ -3099,17 +3251,17 @@
               "tagCount": 3,
               "resourceCount": 2
             },
-            "calculatedAt": "2026-04-27T08:16:03.251Z"
+            "calculatedAt": "2026-05-04T08:30:18.145Z"
           },
           {
             "dimension": "freshness",
             "score": 0.014,
             "evidence": {
               "modifiedAt": "2023-04-17T13:36:36.447694",
-              "daysSinceModified": 1106,
+              "daysSinceModified": 1113,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:03.251Z"
+            "calculatedAt": "2026-05-04T08:30:18.145Z"
           },
           {
             "dimension": "structure",
@@ -3125,7 +3277,7 @@
                 "CSV": 2
               }
             },
-            "calculatedAt": "2026-04-27T08:16:03.251Z"
+            "calculatedAt": "2026-05-04T08:30:18.145Z"
           },
           {
             "dimension": "accessibility",
@@ -3135,17 +3287,17 @@
               "checked": 2,
               "accessible": 2
             },
-            "calculatedAt": "2026-04-27T08:16:03.751Z"
+            "calculatedAt": "2026-05-04T08:30:18.758Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:plan-nacional-de-calidad",
       "externalId": "plan-nacional-de-calidad",
       "modifiedAt": "2023-03-23T12:56:00.305820",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:plan-nacional-de-calidad",
         "title": "Plan Nacional de Calidad",
@@ -3172,17 +3324,17 @@
               "tagCount": 0,
               "resourceCount": 2
             },
-            "calculatedAt": "2026-04-27T08:16:03.751Z"
+            "calculatedAt": "2026-05-04T08:30:18.758Z"
           },
           {
             "dimension": "freshness",
             "score": 0.013,
             "evidence": {
               "modifiedAt": "2023-03-23T12:56:00.305820",
-              "daysSinceModified": 1131,
+              "daysSinceModified": 1138,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:03.751Z"
+            "calculatedAt": "2026-05-04T08:30:18.758Z"
           },
           {
             "dimension": "structure",
@@ -3198,7 +3350,7 @@
                 "XLSX": 2
               }
             },
-            "calculatedAt": "2026-04-27T08:16:03.751Z"
+            "calculatedAt": "2026-05-04T08:30:18.758Z"
           },
           {
             "dimension": "accessibility",
@@ -3208,17 +3360,17 @@
               "checked": 2,
               "accessible": 2
             },
-            "calculatedAt": "2026-04-27T08:16:04.261Z"
+            "calculatedAt": "2026-05-04T08:30:19.309Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:indice-adelantado-de-produccion-industrial-cammesa",
       "externalId": "indice-adelantado-de-produccion-industrial-cammesa",
       "modifiedAt": "2023-02-14T18:06:52.689401",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:indice-adelantado-de-produccion-industrial-cammesa",
         "title": "Índice adelantado de producción industrial – CAMMESA",
@@ -3244,17 +3396,17 @@
               "tagCount": 3,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:16:04.261Z"
+            "calculatedAt": "2026-05-04T08:30:19.309Z"
           },
           {
             "dimension": "freshness",
             "score": 0.011,
             "evidence": {
               "modifiedAt": "2023-02-14T18:06:52.689401",
-              "daysSinceModified": 1168,
+              "daysSinceModified": 1175,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:04.261Z"
+            "calculatedAt": "2026-05-04T08:30:19.309Z"
           },
           {
             "dimension": "structure",
@@ -3270,7 +3422,7 @@
                 "CSV": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:16:04.261Z"
+            "calculatedAt": "2026-05-04T08:30:19.309Z"
           },
           {
             "dimension": "accessibility",
@@ -3280,17 +3432,17 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:16:04.754Z"
+            "calculatedAt": "2026-05-04T08:30:19.874Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:programa-consumidores-hipervulnerables",
       "externalId": "programa-consumidores-hipervulnerables",
       "modifiedAt": "2023-02-07T14:35:24.441362",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:programa-consumidores-hipervulnerables",
         "title": "Programa Consumidores Hipervulnerables",
@@ -3316,17 +3468,17 @@
               "tagCount": 3,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:16:04.754Z"
+            "calculatedAt": "2026-05-04T08:30:19.874Z"
           },
           {
             "dimension": "freshness",
             "score": 0.011,
             "evidence": {
               "modifiedAt": "2023-02-07T14:35:24.441362",
-              "daysSinceModified": 1175,
+              "daysSinceModified": 1182,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:04.754Z"
+            "calculatedAt": "2026-05-04T08:30:19.874Z"
           },
           {
             "dimension": "structure",
@@ -3342,7 +3494,7 @@
                 "CSV": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:16:04.754Z"
+            "calculatedAt": "2026-05-04T08:30:19.874Z"
           },
           {
             "dimension": "accessibility",
@@ -3352,17 +3504,17 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:16:05.250Z"
+            "calculatedAt": "2026-05-04T08:30:20.585Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:sanciones-aplicadas-en-defensa-de-las-y-los-consumidores",
       "externalId": "sanciones-aplicadas-en-defensa-de-las-y-los-consumidores",
       "modifiedAt": "2022-12-26T16:25:16.982564",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:sanciones-aplicadas-en-defensa-de-las-y-los-consumidores",
         "title": "Sanciones aplicadas en defensa de las y los consumidores",
@@ -3388,17 +3540,17 @@
               "tagCount": 5,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:16:05.250Z"
+            "calculatedAt": "2026-05-04T08:30:20.585Z"
           },
           {
             "dimension": "freshness",
             "score": 0.009,
             "evidence": {
               "modifiedAt": "2022-12-26T16:25:16.982564",
-              "daysSinceModified": 1218,
+              "daysSinceModified": 1225,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:05.250Z"
+            "calculatedAt": "2026-05-04T08:30:20.585Z"
           },
           {
             "dimension": "structure",
@@ -3414,7 +3566,7 @@
                 "XLS": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:16:05.250Z"
+            "calculatedAt": "2026-05-04T08:30:20.585Z"
           },
           {
             "dimension": "accessibility",
@@ -3424,17 +3576,17 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:16:05.764Z"
+            "calculatedAt": "2026-05-04T08:30:21.145Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:percentiles-de-salarios-por-genero-y-actividad",
       "externalId": "percentiles-de-salarios-por-genero-y-actividad",
       "modifiedAt": "2022-10-05T20:22:37.208643",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:percentiles-de-salarios-por-genero-y-actividad",
         "title": "Percentiles de salarios por género y actividad",
@@ -3460,17 +3612,17 @@
               "tagCount": 8,
               "resourceCount": 22
             },
-            "calculatedAt": "2026-04-27T08:16:05.764Z"
+            "calculatedAt": "2026-05-04T08:30:21.145Z"
           },
           {
             "dimension": "freshness",
             "score": 0.007,
             "evidence": {
               "modifiedAt": "2022-10-05T20:22:37.208643",
-              "daysSinceModified": 1299,
+              "daysSinceModified": 1307,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:05.764Z"
+            "calculatedAt": "2026-05-04T08:30:21.145Z"
           },
           {
             "dimension": "structure",
@@ -3488,7 +3640,7 @@
                 "CSV": 21
               }
             },
-            "calculatedAt": "2026-04-27T08:16:05.764Z"
+            "calculatedAt": "2026-05-04T08:30:21.145Z"
           },
           {
             "dimension": "accessibility",
@@ -3498,17 +3650,17 @@
               "checked": 22,
               "accessible": 22
             },
-            "calculatedAt": "2026-04-27T08:16:05.870Z"
+            "calculatedAt": "2026-05-04T08:30:21.347Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:distribucion-del-empleo-formal-en-el-amba",
       "externalId": "distribucion-del-empleo-formal-en-el-amba",
       "modifiedAt": "2022-10-04T19:03:03.028126",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:distribucion-del-empleo-formal-en-el-amba",
         "title": "Distribución del empleo formal en el AMBA",
@@ -3534,17 +3686,17 @@
               "tagCount": 5,
               "resourceCount": 7
             },
-            "calculatedAt": "2026-04-27T08:16:05.870Z"
+            "calculatedAt": "2026-05-04T08:30:21.347Z"
           },
           {
             "dimension": "freshness",
             "score": 0.007,
             "evidence": {
               "modifiedAt": "2022-10-04T19:03:03.028126",
-              "daysSinceModified": 1301,
+              "daysSinceModified": 1308,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:05.870Z"
+            "calculatedAt": "2026-05-04T08:30:21.347Z"
           },
           {
             "dimension": "structure",
@@ -3564,7 +3716,7 @@
                 "PDF": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:16:05.870Z"
+            "calculatedAt": "2026-05-04T08:30:21.347Z"
           },
           {
             "dimension": "accessibility",
@@ -3574,17 +3726,17 @@
               "checked": 7,
               "accessible": 7
             },
-            "calculatedAt": "2026-04-27T08:16:05.930Z"
+            "calculatedAt": "2026-05-04T08:30:21.492Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:puestos-de-trabajo-por-departamento-partido-y-sector-de-actividad",
       "externalId": "puestos-de-trabajo-por-departamento-partido-y-sector-de-actividad",
       "modifiedAt": "2022-09-09T15:17:15.069720",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:puestos-de-trabajo-por-departamento-partido-y-sector-de-actividad",
         "title": "Puestos de trabajo por departamento/partido y sector de actividad",
@@ -3610,17 +3762,17 @@
               "tagCount": 6,
               "resourceCount": 14
             },
-            "calculatedAt": "2026-04-27T08:16:05.930Z"
+            "calculatedAt": "2026-05-04T08:30:21.492Z"
           },
           {
             "dimension": "freshness",
             "score": 0.006,
             "evidence": {
               "modifiedAt": "2022-09-09T15:17:15.069720",
-              "daysSinceModified": 1326,
+              "daysSinceModified": 1333,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:05.930Z"
+            "calculatedAt": "2026-05-04T08:30:21.492Z"
           },
           {
             "dimension": "structure",
@@ -3640,7 +3792,7 @@
                 "DOCX": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:16:05.930Z"
+            "calculatedAt": "2026-05-04T08:30:21.492Z"
           },
           {
             "dimension": "accessibility",
@@ -3650,17 +3802,17 @@
               "checked": 14,
               "accessible": 14
             },
-            "calculatedAt": "2026-04-27T08:16:06.004Z"
+            "calculatedAt": "2026-05-04T08:30:21.644Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:fichas-sectoriales-cep-xxi",
       "externalId": "fichas-sectoriales-cep-xxi",
       "modifiedAt": "2022-08-04T13:51:38.176688",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:fichas-sectoriales-cep-xxi",
         "title": "Fichas Sectoriales CEP XXI",
@@ -3686,17 +3838,17 @@
               "tagCount": 10,
               "resourceCount": 3
             },
-            "calculatedAt": "2026-04-27T08:16:06.004Z"
+            "calculatedAt": "2026-05-04T08:30:21.645Z"
           },
           {
             "dimension": "freshness",
             "score": 0.005,
             "evidence": {
               "modifiedAt": "2022-08-04T13:51:38.176688",
-              "daysSinceModified": 1362,
+              "daysSinceModified": 1369,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:06.004Z"
+            "calculatedAt": "2026-05-04T08:30:21.645Z"
           },
           {
             "dimension": "structure",
@@ -3716,7 +3868,7 @@
                 "CSV": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:16:06.004Z"
+            "calculatedAt": "2026-05-04T08:30:21.645Z"
           },
           {
             "dimension": "accessibility",
@@ -3726,17 +3878,17 @@
               "checked": 3,
               "accessible": 3
             },
-            "calculatedAt": "2026-04-27T08:16:06.060Z"
+            "calculatedAt": "2026-05-04T08:30:21.772Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:registro-de-importacion-del-sector-editorial-rise",
       "externalId": "registro-de-importacion-del-sector-editorial-rise",
       "modifiedAt": "2022-08-04T13:22:45.532351",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:registro-de-importacion-del-sector-editorial-rise",
         "title": "Registro de Importación del Sector Editorial (RISE)",
@@ -3762,17 +3914,17 @@
               "tagCount": 3,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:16:06.060Z"
+            "calculatedAt": "2026-05-04T08:30:21.772Z"
           },
           {
             "dimension": "freshness",
             "score": 0.005,
             "evidence": {
               "modifiedAt": "2022-08-04T13:22:45.532351",
-              "daysSinceModified": 1362,
+              "daysSinceModified": 1369,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:06.060Z"
+            "calculatedAt": "2026-05-04T08:30:21.772Z"
           },
           {
             "dimension": "structure",
@@ -3788,7 +3940,7 @@
                 "XLS": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:16:06.060Z"
+            "calculatedAt": "2026-05-04T08:30:21.772Z"
           },
           {
             "dimension": "accessibility",
@@ -3798,17 +3950,17 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:16:06.721Z"
+            "calculatedAt": "2026-05-04T08:30:22.352Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:grandes-proyectos-de-inversion-res-256-2000",
       "externalId": "grandes-proyectos-de-inversion-res-256-2000",
       "modifiedAt": "2022-07-28T14:32:03.214878",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:grandes-proyectos-de-inversion-res-256-2000",
         "title": "Grandes Proyectos de Inversión (Res 256/2000)",
@@ -3834,17 +3986,17 @@
               "tagCount": 4,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:16:06.721Z"
+            "calculatedAt": "2026-05-04T08:30:22.352Z"
           },
           {
             "dimension": "freshness",
             "score": 0.005,
             "evidence": {
               "modifiedAt": "2022-07-28T14:32:03.214878",
-              "daysSinceModified": 1369,
+              "daysSinceModified": 1376,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:06.721Z"
+            "calculatedAt": "2026-05-04T08:30:22.352Z"
           },
           {
             "dimension": "structure",
@@ -3860,7 +4012,7 @@
                 "XLS": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:16:06.721Z"
+            "calculatedAt": "2026-05-04T08:30:22.352Z"
           },
           {
             "dimension": "accessibility",
@@ -3870,17 +4022,17 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:16:07.212Z"
+            "calculatedAt": "2026-05-04T08:30:22.905Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:importacion-temporaria-ctit",
       "externalId": "importacion-temporaria-ctit",
       "modifiedAt": "2022-07-28T13:43:44.470137",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:importacion-temporaria-ctit",
         "title": "Importación Temporaria CTIT",
@@ -3906,17 +4058,17 @@
               "tagCount": 3,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:16:07.212Z"
+            "calculatedAt": "2026-05-04T08:30:22.905Z"
           },
           {
             "dimension": "freshness",
             "score": 0.005,
             "evidence": {
               "modifiedAt": "2022-07-28T13:43:44.470137",
-              "daysSinceModified": 1369,
+              "daysSinceModified": 1376,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:07.212Z"
+            "calculatedAt": "2026-05-04T08:30:22.905Z"
           },
           {
             "dimension": "structure",
@@ -3932,7 +4084,7 @@
                 "XLS": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:16:07.212Z"
+            "calculatedAt": "2026-05-04T08:30:22.905Z"
           },
           {
             "dimension": "accessibility",
@@ -3942,17 +4094,17 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:16:07.710Z"
+            "calculatedAt": "2026-05-04T08:30:23.464Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:ciclo-de-capacitacion-aportes-a-la-mejora-de-la-insercion-internacional-de-las-empresas",
       "externalId": "ciclo-de-capacitacion-aportes-a-la-mejora-de-la-insercion-internacional-de-las-empresas",
       "modifiedAt": "2022-07-26T18:34:46.110142",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:ciclo-de-capacitacion-aportes-a-la-mejora-de-la-insercion-internacional-de-las-empresas",
         "title": "Ciclo de Capacitación: “Aportes a la mejora de la inserción internacional de las empresas\"",
@@ -3978,17 +4130,17 @@
               "tagCount": 4,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:16:07.710Z"
+            "calculatedAt": "2026-05-04T08:30:23.464Z"
           },
           {
             "dimension": "freshness",
             "score": 0.005,
             "evidence": {
               "modifiedAt": "2022-07-26T18:34:46.110142",
-              "daysSinceModified": 1371,
+              "daysSinceModified": 1378,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:07.710Z"
+            "calculatedAt": "2026-05-04T08:30:23.464Z"
           },
           {
             "dimension": "structure",
@@ -4004,7 +4156,7 @@
                 "XLS": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:16:07.710Z"
+            "calculatedAt": "2026-05-04T08:30:23.464Z"
           },
           {
             "dimension": "accessibility",
@@ -4014,17 +4166,17 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:16:08.225Z"
+            "calculatedAt": "2026-05-04T08:30:23.988Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:regimen-de-integracion-de-motocicletas",
       "externalId": "regimen-de-integracion-de-motocicletas",
       "modifiedAt": "2022-07-26T15:54:47.462140",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:regimen-de-integracion-de-motocicletas",
         "title": "Régimen de Integración de Motocicletas",
@@ -4050,17 +4202,17 @@
               "tagCount": 3,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:16:08.225Z"
+            "calculatedAt": "2026-05-04T08:30:23.988Z"
           },
           {
             "dimension": "freshness",
             "score": 0.005,
             "evidence": {
               "modifiedAt": "2022-07-26T15:54:47.462140",
-              "daysSinceModified": 1371,
+              "daysSinceModified": 1378,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:08.225Z"
+            "calculatedAt": "2026-05-04T08:30:23.988Z"
           },
           {
             "dimension": "structure",
@@ -4076,7 +4228,7 @@
                 "XLS": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:16:08.225Z"
+            "calculatedAt": "2026-05-04T08:30:23.988Z"
           },
           {
             "dimension": "accessibility",
@@ -4086,17 +4238,17 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:16:08.710Z"
+            "calculatedAt": "2026-05-04T08:30:24.548Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:creditos-aprobados-escalar-2021",
       "externalId": "creditos-aprobados-escalar-2021",
       "modifiedAt": "2022-06-16T19:49:17.573532",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:creditos-aprobados-escalar-2021",
         "title": "Créditos aprobados Escalar 2021",
@@ -4122,17 +4274,17 @@
               "tagCount": 3,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:16:08.710Z"
+            "calculatedAt": "2026-05-04T08:30:24.548Z"
           },
           {
             "dimension": "freshness",
             "score": 0.004,
             "evidence": {
               "modifiedAt": "2022-06-16T19:49:17.573532",
-              "daysSinceModified": 1411,
+              "daysSinceModified": 1418,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:08.710Z"
+            "calculatedAt": "2026-05-04T08:30:24.548Z"
           },
           {
             "dimension": "structure",
@@ -4148,7 +4300,7 @@
                 "XLSX": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:16:08.710Z"
+            "calculatedAt": "2026-05-04T08:30:24.548Z"
           },
           {
             "dimension": "accessibility",
@@ -4158,17 +4310,17 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:16:08.764Z"
+            "calculatedAt": "2026-05-04T08:30:24.674Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:programa-ahora-12",
       "externalId": "programa-ahora-12",
       "modifiedAt": "2022-04-11T19:29:58.725569",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:programa-ahora-12",
         "title": "Programa Ahora 12",
@@ -4194,17 +4346,17 @@
               "tagCount": 4,
               "resourceCount": 2
             },
-            "calculatedAt": "2026-04-27T08:16:08.764Z"
+            "calculatedAt": "2026-05-04T08:30:24.674Z"
           },
           {
             "dimension": "freshness",
             "score": 0.003,
             "evidence": {
               "modifiedAt": "2022-04-11T19:29:58.725569",
-              "daysSinceModified": 1477,
+              "daysSinceModified": 1484,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:08.764Z"
+            "calculatedAt": "2026-05-04T08:30:24.674Z"
           },
           {
             "dimension": "structure",
@@ -4220,7 +4372,7 @@
                 "CSV": 2
               }
             },
-            "calculatedAt": "2026-04-27T08:16:08.764Z"
+            "calculatedAt": "2026-05-04T08:30:24.674Z"
           },
           {
             "dimension": "accessibility",
@@ -4230,17 +4382,17 @@
               "checked": 2,
               "accessible": 2
             },
-            "calculatedAt": "2026-04-27T08:16:09.286Z"
+            "calculatedAt": "2026-05-04T08:30:25.352Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:programa-de-apoyo-a-la-competitividad-pac-emprendedores-2021",
       "externalId": "programa-de-apoyo-a-la-competitividad-pac-emprendedores-2021",
       "modifiedAt": "2022-03-30T14:48:12.853539",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:programa-de-apoyo-a-la-competitividad-pac-emprendedores-2021",
         "title": "Programa de apoyo a la competitividad (PAC)  Emprendedores 2021",
@@ -4266,17 +4418,17 @@
               "tagCount": 3,
               "resourceCount": 2
             },
-            "calculatedAt": "2026-04-27T08:16:09.286Z"
+            "calculatedAt": "2026-05-04T08:30:25.352Z"
           },
           {
             "dimension": "freshness",
             "score": 0.003,
             "evidence": {
               "modifiedAt": "2022-03-30T14:48:12.853539",
-              "daysSinceModified": 1489,
+              "daysSinceModified": 1496,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:09.286Z"
+            "calculatedAt": "2026-05-04T08:30:25.352Z"
           },
           {
             "dimension": "structure",
@@ -4292,7 +4444,7 @@
                 "XLS": 2
               }
             },
-            "calculatedAt": "2026-04-27T08:16:09.286Z"
+            "calculatedAt": "2026-05-04T08:30:25.352Z"
           },
           {
             "dimension": "accessibility",
@@ -4302,17 +4454,17 @@
               "checked": 2,
               "accessible": 2
             },
-            "calculatedAt": "2026-04-27T08:16:09.354Z"
+            "calculatedAt": "2026-05-04T08:30:25.483Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:graduados-universitarios-del-sistema-araucano-2016-2018",
       "externalId": "graduados-universitarios-del-sistema-araucano-2016-2018",
       "modifiedAt": "2022-03-15T21:41:53.104961",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:graduados-universitarios-del-sistema-araucano-2016-2018",
         "title": "Graduados universitarios del sistema Araucano (2016-2018)",
@@ -4338,17 +4490,17 @@
               "tagCount": 5,
               "resourceCount": 3
             },
-            "calculatedAt": "2026-04-27T08:16:09.354Z"
+            "calculatedAt": "2026-05-04T08:30:25.483Z"
           },
           {
             "dimension": "freshness",
             "score": 0.003,
             "evidence": {
               "modifiedAt": "2022-03-15T21:41:53.104961",
-              "daysSinceModified": 1503,
+              "daysSinceModified": 1510,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:09.354Z"
+            "calculatedAt": "2026-05-04T08:30:25.483Z"
           },
           {
             "dimension": "structure",
@@ -4368,7 +4520,7 @@
                 "XLSX": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:16:09.354Z"
+            "calculatedAt": "2026-05-04T08:30:25.483Z"
           },
           {
             "dimension": "accessibility",
@@ -4378,17 +4530,17 @@
               "checked": 3,
               "accessible": 3
             },
-            "calculatedAt": "2026-04-27T08:16:09.859Z"
+            "calculatedAt": "2026-05-04T08:30:26.193Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:plan-de-apertura-de-datos-del-ministerio-de-desarrollo-productivo",
       "externalId": "plan-de-apertura-de-datos-del-ministerio-de-desarrollo-productivo",
       "modifiedAt": "2021-11-11T13:50:55.687212",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:plan-de-apertura-de-datos-del-ministerio-de-desarrollo-productivo",
         "title": "Plan de Apertura de Datos del Ministerio de Desarrollo Productivo",
@@ -4414,17 +4566,17 @@
               "tagCount": 1,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:16:09.859Z"
+            "calculatedAt": "2026-05-04T08:30:26.193Z"
           },
           {
             "dimension": "freshness",
             "score": 0.002,
             "evidence": {
               "modifiedAt": "2021-11-11T13:50:55.687212",
-              "daysSinceModified": 1628,
+              "daysSinceModified": 1635,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:09.859Z"
+            "calculatedAt": "2026-05-04T08:30:26.193Z"
           },
           {
             "dimension": "structure",
@@ -4440,7 +4592,7 @@
                 "XLS": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:16:09.859Z"
+            "calculatedAt": "2026-05-04T08:30:26.193Z"
           },
           {
             "dimension": "accessibility",
@@ -4450,17 +4602,17 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:16:10.358Z"
+            "calculatedAt": "2026-05-04T08:30:26.725Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:concentracion-anual-del-valor-exportado-por-complejo-exportador",
       "externalId": "concentracion-anual-del-valor-exportado-por-complejo-exportador",
       "modifiedAt": "2021-10-26T13:10:36.833621",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:concentracion-anual-del-valor-exportado-por-complejo-exportador",
         "title": "Concentración anual del valor exportado por complejo exportador",
@@ -4486,17 +4638,17 @@
               "tagCount": 2,
               "resourceCount": 3
             },
-            "calculatedAt": "2026-04-27T08:16:10.358Z"
+            "calculatedAt": "2026-05-04T08:30:26.725Z"
           },
           {
             "dimension": "freshness",
             "score": 0.002,
             "evidence": {
               "modifiedAt": "2021-10-26T13:10:36.833621",
-              "daysSinceModified": 1644,
+              "daysSinceModified": 1651,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:10.358Z"
+            "calculatedAt": "2026-05-04T08:30:26.725Z"
           },
           {
             "dimension": "structure",
@@ -4512,7 +4664,7 @@
                 "XLS": 3
               }
             },
-            "calculatedAt": "2026-04-27T08:16:10.358Z"
+            "calculatedAt": "2026-05-04T08:30:26.725Z"
           },
           {
             "dimension": "accessibility",
@@ -4522,17 +4674,17 @@
               "checked": 3,
               "accessible": 3
             },
-            "calculatedAt": "2026-04-27T08:16:10.925Z"
+            "calculatedAt": "2026-05-04T08:30:27.313Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:asistencia-de-emergencia-al-trabajo-y-la-produccion-atp",
       "externalId": "asistencia-de-emergencia-al-trabajo-y-la-produccion-atp",
       "modifiedAt": "2021-10-22T13:15:13.166621",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:asistencia-de-emergencia-al-trabajo-y-la-produccion-atp",
         "title": "Asistencia de Emergencia al Trabajo y la Producción (ATP)",
@@ -4558,17 +4710,17 @@
               "tagCount": 6,
               "resourceCount": 19
             },
-            "calculatedAt": "2026-04-27T08:16:10.925Z"
+            "calculatedAt": "2026-05-04T08:30:27.313Z"
           },
           {
             "dimension": "freshness",
             "score": 0.002,
             "evidence": {
               "modifiedAt": "2021-10-22T13:15:13.166621",
-              "daysSinceModified": 1648,
+              "daysSinceModified": 1655,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:10.925Z"
+            "calculatedAt": "2026-05-04T08:30:27.313Z"
           },
           {
             "dimension": "structure",
@@ -4586,7 +4738,7 @@
                 "PDF": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:16:10.925Z"
+            "calculatedAt": "2026-05-04T08:30:27.313Z"
           },
           {
             "dimension": "accessibility",
@@ -4596,17 +4748,17 @@
               "checked": 19,
               "accessible": 19
             },
-            "calculatedAt": "2026-04-27T08:16:11.941Z"
+            "calculatedAt": "2026-05-04T08:30:28.340Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:concentracion-anual-del-valor-exportado-en-los-primeros-5-destinos-y-en-los-primeros-5-productos",
       "externalId": "concentracion-anual-del-valor-exportado-en-los-primeros-5-destinos-y-en-los-primeros-5-productos",
       "modifiedAt": "2021-10-13T21:59:08.323601",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:concentracion-anual-del-valor-exportado-en-los-primeros-5-destinos-y-en-los-primeros-5-productos",
         "title": "Concentración anual del valor exportado en los primeros 5 destinos y en los primeros 5 productos",
@@ -4632,17 +4784,17 @@
               "tagCount": 2,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:16:11.941Z"
+            "calculatedAt": "2026-05-04T08:30:28.340Z"
           },
           {
             "dimension": "freshness",
             "score": 0.002,
             "evidence": {
               "modifiedAt": "2021-10-13T21:59:08.323601",
-              "daysSinceModified": 1656,
+              "daysSinceModified": 1663,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:11.941Z"
+            "calculatedAt": "2026-05-04T08:30:28.340Z"
           },
           {
             "dimension": "structure",
@@ -4658,7 +4810,7 @@
                 "CSV": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:16:11.941Z"
+            "calculatedAt": "2026-05-04T08:30:28.340Z"
           },
           {
             "dimension": "accessibility",
@@ -4668,17 +4820,17 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:16:12.436Z"
+            "calculatedAt": "2026-05-04T08:30:28.873Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:empresas-mas-innovadoras-a-nivel-mundial",
       "externalId": "empresas-mas-innovadoras-a-nivel-mundial",
       "modifiedAt": "2021-10-12T13:56:45.136976",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:empresas-mas-innovadoras-a-nivel-mundial",
         "title": "Innovación productiva: empresas que más invierten en I+D a nivel mundial",
@@ -4704,17 +4856,17 @@
               "tagCount": 2,
               "resourceCount": 6
             },
-            "calculatedAt": "2026-04-27T08:16:12.436Z"
+            "calculatedAt": "2026-05-04T08:30:28.873Z"
           },
           {
             "dimension": "freshness",
             "score": 0.002,
             "evidence": {
               "modifiedAt": "2021-10-12T13:56:45.136976",
-              "daysSinceModified": 1658,
+              "daysSinceModified": 1665,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:12.436Z"
+            "calculatedAt": "2026-05-04T08:30:28.873Z"
           },
           {
             "dimension": "structure",
@@ -4730,7 +4882,7 @@
                 "XLS": 6
               }
             },
-            "calculatedAt": "2026-04-27T08:16:12.436Z"
+            "calculatedAt": "2026-05-04T08:30:28.873Z"
           },
           {
             "dimension": "accessibility",
@@ -4740,17 +4892,17 @@
               "checked": 6,
               "accessible": 6
             },
-            "calculatedAt": "2026-04-27T08:16:13.019Z"
+            "calculatedAt": "2026-05-04T08:30:29.499Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:pac-emprendedores",
       "externalId": "pac-emprendedores",
       "modifiedAt": "2021-08-26T14:37:11.763252",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:pac-emprendedores",
         "title": "Programa de Apoyo a la Competitividad (PAC). Emprendedores Reactivación Productiva",
@@ -4776,17 +4928,17 @@
               "tagCount": 6,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:16:13.019Z"
+            "calculatedAt": "2026-05-04T08:30:29.499Z"
           },
           {
             "dimension": "freshness",
             "score": 0.001,
             "evidence": {
               "modifiedAt": "2021-08-26T14:37:11.763252",
-              "daysSinceModified": 1705,
+              "daysSinceModified": 1712,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:13.019Z"
+            "calculatedAt": "2026-05-04T08:30:29.499Z"
           },
           {
             "dimension": "structure",
@@ -4802,7 +4954,7 @@
                 "XLSX": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:16:13.019Z"
+            "calculatedAt": "2026-05-04T08:30:29.499Z"
           },
           {
             "dimension": "accessibility",
@@ -4812,17 +4964,17 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:16:13.491Z"
+            "calculatedAt": "2026-05-04T08:30:30.038Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:registro-nacional-de-desarrollo-de-proveedores-redepro",
       "externalId": "registro-nacional-de-desarrollo-de-proveedores-redepro",
       "modifiedAt": "2021-07-19T15:39:32.424228",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:registro-nacional-de-desarrollo-de-proveedores-redepro",
         "title": "Registro Nacional de Desarrollo de Proveedores (REDEPRO)",
@@ -4848,17 +5000,17 @@
               "tagCount": 5,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:16:13.491Z"
+            "calculatedAt": "2026-05-04T08:30:30.038Z"
           },
           {
             "dimension": "freshness",
             "score": 0.001,
             "evidence": {
               "modifiedAt": "2021-07-19T15:39:32.424228",
-              "daysSinceModified": 1743,
+              "daysSinceModified": 1750,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:13.491Z"
+            "calculatedAt": "2026-05-04T08:30:30.038Z"
           },
           {
             "dimension": "structure",
@@ -4874,7 +5026,7 @@
                 "XLS": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:16:13.491Z"
+            "calculatedAt": "2026-05-04T08:30:30.038Z"
           },
           {
             "dimension": "accessibility",
@@ -4884,17 +5036,17 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:16:13.974Z"
+            "calculatedAt": "2026-05-04T08:30:30.563Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:regimen-de-aduana-en-factoria-raf",
       "externalId": "regimen-de-aduana-en-factoria-raf",
       "modifiedAt": "2021-06-09T16:29:22.508049",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:regimen-de-aduana-en-factoria-raf",
         "title": "Régimen de Aduana en Factoría (RAF)",
@@ -4920,17 +5072,17 @@
               "tagCount": 3,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:16:13.974Z"
+            "calculatedAt": "2026-05-04T08:30:30.563Z"
           },
           {
             "dimension": "freshness",
             "score": 0.001,
             "evidence": {
               "modifiedAt": "2021-06-09T16:29:22.508049",
-              "daysSinceModified": 1783,
+              "daysSinceModified": 1790,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:13.974Z"
+            "calculatedAt": "2026-05-04T08:30:30.563Z"
           },
           {
             "dimension": "structure",
@@ -4946,7 +5098,7 @@
                 "XLS": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:16:13.974Z"
+            "calculatedAt": "2026-05-04T08:30:30.563Z"
           },
           {
             "dimension": "accessibility",
@@ -4956,17 +5108,17 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:16:14.497Z"
+            "calculatedAt": "2026-05-04T08:30:31.108Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:archivo-2018-indicadores-de-comercio-exterior",
       "externalId": "archivo-2018-indicadores-de-comercio-exterior",
       "modifiedAt": "2021-05-12T17:14:20.122337",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:archivo-2018-indicadores-de-comercio-exterior",
         "title": "Archivo 2018: Indicadores de Comercio Exterior",
@@ -4992,17 +5144,17 @@
               "tagCount": 3,
               "resourceCount": 6
             },
-            "calculatedAt": "2026-04-27T08:16:14.497Z"
+            "calculatedAt": "2026-05-04T08:30:31.108Z"
           },
           {
             "dimension": "freshness",
             "score": 0.001,
             "evidence": {
               "modifiedAt": "2021-05-12T17:14:20.122337",
-              "daysSinceModified": 1811,
+              "daysSinceModified": 1818,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:14.497Z"
+            "calculatedAt": "2026-05-04T08:30:31.108Z"
           },
           {
             "dimension": "structure",
@@ -5020,7 +5172,7 @@
                 "CSV": 5
               }
             },
-            "calculatedAt": "2026-04-27T08:16:14.497Z"
+            "calculatedAt": "2026-05-04T08:30:31.108Z"
           },
           {
             "dimension": "accessibility",
@@ -5030,17 +5182,17 @@
               "checked": 6,
               "accessible": 6
             },
-            "calculatedAt": "2026-04-27T08:16:15.173Z"
+            "calculatedAt": "2026-05-04T08:30:31.859Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:programa-de-apoyo-al-sistema-productivo-nacional-en-el-area-de-equipamiento-medico-e-insumos-medicos",
       "externalId": "programa-de-apoyo-al-sistema-productivo-nacional-en-el-area-de-equipamiento-medico-e-insumos-medicos",
       "modifiedAt": "2021-05-11T18:57:45.818302",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:programa-de-apoyo-al-sistema-productivo-nacional-en-el-area-de-equipamiento-medico-e-insumos-medicos",
         "title": "Programa de Apoyo al Sistema Productivo Nacional en el Área de Equipamiento Médico e Insumos Médicos",
@@ -5066,17 +5218,17 @@
               "tagCount": 7,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:16:15.174Z"
+            "calculatedAt": "2026-05-04T08:30:31.859Z"
           },
           {
             "dimension": "freshness",
             "score": 0.001,
             "evidence": {
               "modifiedAt": "2021-05-11T18:57:45.818302",
-              "daysSinceModified": 1812,
+              "daysSinceModified": 1819,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:15.174Z"
+            "calculatedAt": "2026-05-04T08:30:31.859Z"
           },
           {
             "dimension": "structure",
@@ -5092,7 +5244,7 @@
                 "CSV": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:16:15.174Z"
+            "calculatedAt": "2026-05-04T08:30:31.859Z"
           },
           {
             "dimension": "accessibility",
@@ -5102,17 +5254,17 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:16:15.669Z"
+            "calculatedAt": "2026-05-04T08:30:32.411Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:programa-de-apoyo-a-la-competitividad-pac-proyectos-aprobados-en-llamados-especificos",
       "externalId": "programa-de-apoyo-a-la-competitividad-pac-proyectos-aprobados-en-llamados-especificos",
       "modifiedAt": "2021-05-11T18:56:53.374540",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:programa-de-apoyo-a-la-competitividad-pac-proyectos-aprobados-en-llamados-especificos",
         "title": "Programa de Apoyo a la Competitividad (PAC): Proyectos aprobados en llamados específicos.",
@@ -5138,17 +5290,17 @@
               "tagCount": 9,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:16:15.669Z"
+            "calculatedAt": "2026-05-04T08:30:32.411Z"
           },
           {
             "dimension": "freshness",
             "score": 0.001,
             "evidence": {
               "modifiedAt": "2021-05-11T18:56:53.374540",
-              "daysSinceModified": 1812,
+              "daysSinceModified": 1819,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:15.669Z"
+            "calculatedAt": "2026-05-04T08:30:32.411Z"
           },
           {
             "dimension": "structure",
@@ -5164,7 +5316,7 @@
                 "XLS": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:16:15.669Z"
+            "calculatedAt": "2026-05-04T08:30:32.411Z"
           },
           {
             "dimension": "accessibility",
@@ -5174,17 +5326,17 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:16:16.138Z"
+            "calculatedAt": "2026-05-04T08:30:32.940Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:creditos-con-tasa-bonificada-del-fondep",
       "externalId": "creditos-con-tasa-bonificada-del-fondep",
       "modifiedAt": "2021-05-11T18:56:35.055539",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:creditos-con-tasa-bonificada-del-fondep",
         "title": "Créditos con tasa bonificada del FONDEP",
@@ -5210,17 +5362,17 @@
               "tagCount": 4,
               "resourceCount": 2
             },
-            "calculatedAt": "2026-04-27T08:16:16.138Z"
+            "calculatedAt": "2026-05-04T08:30:32.940Z"
           },
           {
             "dimension": "freshness",
             "score": 0.001,
             "evidence": {
               "modifiedAt": "2021-05-11T18:56:35.055539",
-              "daysSinceModified": 1812,
+              "daysSinceModified": 1819,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:16.138Z"
+            "calculatedAt": "2026-05-04T08:30:32.940Z"
           },
           {
             "dimension": "structure",
@@ -5236,7 +5388,7 @@
                 "XLS": 2
               }
             },
-            "calculatedAt": "2026-04-27T08:16:16.138Z"
+            "calculatedAt": "2026-05-04T08:30:32.940Z"
           },
           {
             "dimension": "accessibility",
@@ -5246,17 +5398,17 @@
               "checked": 2,
               "accessible": 2
             },
-            "calculatedAt": "2026-04-27T08:16:16.713Z"
+            "calculatedAt": "2026-05-04T08:30:33.491Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:archivo-2013-2019-indicadores-sectoriales-de-motos",
       "externalId": "archivo-2013-2019-indicadores-sectoriales-de-motos",
       "modifiedAt": "2021-05-11T18:53:03.063203",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:archivo-2013-2019-indicadores-sectoriales-de-motos",
         "title": "Archivo 2013-2019: Indicadores Sectoriales de Motos",
@@ -5282,17 +5434,17 @@
               "tagCount": 2,
               "resourceCount": 2
             },
-            "calculatedAt": "2026-04-27T08:16:16.713Z"
+            "calculatedAt": "2026-05-04T08:30:33.491Z"
           },
           {
             "dimension": "freshness",
             "score": 0.001,
             "evidence": {
               "modifiedAt": "2021-05-11T18:53:03.063203",
-              "daysSinceModified": 1812,
+              "daysSinceModified": 1819,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:16.713Z"
+            "calculatedAt": "2026-05-04T08:30:33.491Z"
           },
           {
             "dimension": "structure",
@@ -5308,7 +5460,7 @@
                 "CSV": 2
               }
             },
-            "calculatedAt": "2026-04-27T08:16:16.713Z"
+            "calculatedAt": "2026-05-04T08:30:33.491Z"
           },
           {
             "dimension": "accessibility",
@@ -5318,17 +5470,17 @@
               "checked": 2,
               "accessible": 2
             },
-            "calculatedAt": "2026-04-27T08:16:17.231Z"
+            "calculatedAt": "2026-05-04T08:30:34.073Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:historico-2008-2017-areas-economicas-locales-oede",
       "externalId": "historico-2008-2017-areas-economicas-locales-oede",
       "modifiedAt": "2021-05-11T18:52:45.120882",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:historico-2008-2017-areas-economicas-locales-oede",
         "title": "Archivo 2008-2017: Áreas Económicas Locales (OEDE)",
@@ -5354,17 +5506,17 @@
               "tagCount": 6,
               "resourceCount": 2
             },
-            "calculatedAt": "2026-04-27T08:16:17.231Z"
+            "calculatedAt": "2026-05-04T08:30:34.073Z"
           },
           {
             "dimension": "freshness",
             "score": 0.001,
             "evidence": {
               "modifiedAt": "2021-05-11T18:52:45.120882",
-              "daysSinceModified": 1812,
+              "daysSinceModified": 1819,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:17.232Z"
+            "calculatedAt": "2026-05-04T08:30:34.073Z"
           },
           {
             "dimension": "structure",
@@ -5380,7 +5532,7 @@
                 "CSV": 2
               }
             },
-            "calculatedAt": "2026-04-27T08:16:17.232Z"
+            "calculatedAt": "2026-05-04T08:30:34.073Z"
           },
           {
             "dimension": "accessibility",
@@ -5390,17 +5542,17 @@
               "checked": 2,
               "accessible": 2
             },
-            "calculatedAt": "2026-04-27T08:16:17.885Z"
+            "calculatedAt": "2026-05-04T08:30:34.628Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:archivo-2004-2018-indicador-mensual-de-inversion",
       "externalId": "archivo-2004-2018-indicador-mensual-de-inversion",
       "modifiedAt": "2021-05-11T18:52:28.094693",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:archivo-2004-2018-indicador-mensual-de-inversion",
         "title": "Archivo 2004-2018: Indicador Mensual de Inversión",
@@ -5426,17 +5578,17 @@
               "tagCount": 1,
               "resourceCount": 3
             },
-            "calculatedAt": "2026-04-27T08:16:17.886Z"
+            "calculatedAt": "2026-05-04T08:30:34.628Z"
           },
           {
             "dimension": "freshness",
             "score": 0.001,
             "evidence": {
               "modifiedAt": "2021-05-11T18:52:28.094693",
-              "daysSinceModified": 1812,
+              "daysSinceModified": 1819,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:17.886Z"
+            "calculatedAt": "2026-05-04T08:30:34.628Z"
           },
           {
             "dimension": "structure",
@@ -5454,7 +5606,7 @@
                 "PDF": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:16:17.886Z"
+            "calculatedAt": "2026-05-04T08:30:34.628Z"
           },
           {
             "dimension": "accessibility",
@@ -5464,17 +5616,17 @@
               "checked": 3,
               "accessible": 3
             },
-            "calculatedAt": "2026-04-27T08:16:18.396Z"
+            "calculatedAt": "2026-05-04T08:30:35.190Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:archivo-2008-2019-indicadores-sectoriales-de-acero",
       "externalId": "archivo-2008-2019-indicadores-sectoriales-de-acero",
       "modifiedAt": "2021-05-11T18:52:05.230333",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:archivo-2008-2019-indicadores-sectoriales-de-acero",
         "title": "Archivo 1992-2019: Indicadores Sectoriales de Acero",
@@ -5500,17 +5652,17 @@
               "tagCount": 5,
               "resourceCount": 7
             },
-            "calculatedAt": "2026-04-27T08:16:18.397Z"
+            "calculatedAt": "2026-05-04T08:30:35.190Z"
           },
           {
             "dimension": "freshness",
             "score": 0.001,
             "evidence": {
               "modifiedAt": "2021-05-11T18:52:05.230333",
-              "daysSinceModified": 1812,
+              "daysSinceModified": 1819,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:18.397Z"
+            "calculatedAt": "2026-05-04T08:30:35.190Z"
           },
           {
             "dimension": "structure",
@@ -5526,7 +5678,7 @@
                 "CSV": 7
               }
             },
-            "calculatedAt": "2026-04-27T08:16:18.397Z"
+            "calculatedAt": "2026-05-04T08:30:35.190Z"
           },
           {
             "dimension": "accessibility",
@@ -5536,17 +5688,17 @@
               "checked": 7,
               "accessible": 7
             },
-            "calculatedAt": "2026-04-27T08:16:18.981Z"
+            "calculatedAt": "2026-05-04T08:30:35.875Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:archivo-2014-2019-indicadores-sectoriales-de-industria",
       "externalId": "archivo-2014-2019-indicadores-sectoriales-de-industria",
       "modifiedAt": "2021-05-11T18:51:41.851004",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:archivo-2014-2019-indicadores-sectoriales-de-industria",
         "title": "Archivo 2014-2019: Indicadores Sectoriales de Industria",
@@ -5572,17 +5724,17 @@
               "tagCount": 2,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-04-27T08:16:18.981Z"
+            "calculatedAt": "2026-05-04T08:30:35.875Z"
           },
           {
             "dimension": "freshness",
             "score": 0.001,
             "evidence": {
               "modifiedAt": "2021-05-11T18:51:41.851004",
-              "daysSinceModified": 1812,
+              "daysSinceModified": 1819,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:18.981Z"
+            "calculatedAt": "2026-05-04T08:30:35.875Z"
           },
           {
             "dimension": "structure",
@@ -5598,7 +5750,7 @@
                 "CSV": 1
               }
             },
-            "calculatedAt": "2026-04-27T08:16:18.981Z"
+            "calculatedAt": "2026-05-04T08:30:35.875Z"
           },
           {
             "dimension": "accessibility",
@@ -5608,17 +5760,17 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-04-27T08:16:19.472Z"
+            "calculatedAt": "2026-05-04T08:30:36.389Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:archivo-1997-2018-sector-externo",
       "externalId": "archivo-1997-2018-sector-externo",
       "modifiedAt": "2021-05-11T18:51:15.856388",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:archivo-1997-2018-sector-externo",
         "title": "Archivo 1997-2018: Sector Externo",
@@ -5644,17 +5796,17 @@
               "tagCount": 3,
               "resourceCount": 4
             },
-            "calculatedAt": "2026-04-27T08:16:19.472Z"
+            "calculatedAt": "2026-05-04T08:30:36.389Z"
           },
           {
             "dimension": "freshness",
             "score": 0.001,
             "evidence": {
               "modifiedAt": "2021-05-11T18:51:15.856388",
-              "daysSinceModified": 1812,
+              "daysSinceModified": 1819,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:19.472Z"
+            "calculatedAt": "2026-05-04T08:30:36.389Z"
           },
           {
             "dimension": "structure",
@@ -5670,7 +5822,7 @@
                 "CSV": 4
               }
             },
-            "calculatedAt": "2026-04-27T08:16:19.472Z"
+            "calculatedAt": "2026-05-04T08:30:36.389Z"
           },
           {
             "dimension": "accessibility",
@@ -5680,17 +5832,17 @@
               "checked": 4,
               "accessible": 4
             },
-            "calculatedAt": "2026-04-27T08:16:20.027Z"
+            "calculatedAt": "2026-05-04T08:30:36.972Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:historico-2009-2019-indicadores-sectoriales-de-transporte-y-logistica",
       "externalId": "historico-2009-2019-indicadores-sectoriales-de-transporte-y-logistica",
       "modifiedAt": "2021-05-11T18:50:53.607954",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:historico-2009-2019-indicadores-sectoriales-de-transporte-y-logistica",
         "title": "Archivo 2009-2019: Indicadores Sectoriales de Transporte y Logística",
@@ -5716,17 +5868,17 @@
               "tagCount": 5,
               "resourceCount": 3
             },
-            "calculatedAt": "2026-04-27T08:16:20.027Z"
+            "calculatedAt": "2026-05-04T08:30:36.972Z"
           },
           {
             "dimension": "freshness",
             "score": 0.001,
             "evidence": {
               "modifiedAt": "2021-05-11T18:50:53.607954",
-              "daysSinceModified": 1812,
+              "daysSinceModified": 1819,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:20.027Z"
+            "calculatedAt": "2026-05-04T08:30:36.972Z"
           },
           {
             "dimension": "structure",
@@ -5742,7 +5894,7 @@
                 "CSV": 3
               }
             },
-            "calculatedAt": "2026-04-27T08:16:20.027Z"
+            "calculatedAt": "2026-05-04T08:30:36.973Z"
           },
           {
             "dimension": "accessibility",
@@ -5752,22 +5904,22 @@
               "checked": 3,
               "accessible": 3
             },
-            "calculatedAt": "2026-04-27T08:16:20.569Z"
+            "calculatedAt": "2026-05-04T08:30:37.584Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:archivo-2003-2019-indicadores-sectoriales-de-automotores",
       "externalId": "archivo-2003-2019-indicadores-sectoriales-de-automotores",
       "modifiedAt": "2021-05-11T18:49:47.660532",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:archivo-2003-2019-indicadores-sectoriales-de-automotores",
         "title": "Archivo 2003-2019: Indicadores Sectoriales de Automotores",
         "organization": "Ex Ministerio de Producción y Trabajo",
-        "overall": 0.735,
+        "overall": 0.61,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -5788,17 +5940,17 @@
               "tagCount": 5,
               "resourceCount": 7
             },
-            "calculatedAt": "2026-04-27T08:16:20.569Z"
+            "calculatedAt": "2026-05-04T08:30:37.584Z"
           },
           {
             "dimension": "freshness",
             "score": 0.001,
             "evidence": {
               "modifiedAt": "2021-05-11T18:49:47.660532",
-              "daysSinceModified": 1812,
+              "daysSinceModified": 1819,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:20.569Z"
+            "calculatedAt": "2026-05-04T08:30:37.584Z"
           },
           {
             "dimension": "structure",
@@ -5814,27 +5966,27 @@
                 "CSV": 7
               }
             },
-            "calculatedAt": "2026-04-27T08:16:20.569Z"
+            "calculatedAt": "2026-05-04T08:30:37.584Z"
           },
           {
             "dimension": "accessibility",
-            "score": 1,
+            "score": 0.6,
             "evidence": {
               "resourceCount": 7,
               "checked": 7,
-              "accessible": 7
+              "accessible": 3
             },
-            "calculatedAt": "2026-04-27T08:16:21.208Z"
+            "calculatedAt": "2026-05-04T08:30:38.244Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:archivo-2002-2019-indicadores-sectoriales-de-la-construccion",
       "externalId": "archivo-2002-2019-indicadores-sectoriales-de-la-construccion",
       "modifiedAt": "2021-05-11T18:49:13.755997",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:archivo-2002-2019-indicadores-sectoriales-de-la-construccion",
         "title": "Archivo 2002-2019: Indicadores Sectoriales de la Construcción",
@@ -5860,17 +6012,17 @@
               "tagCount": 3,
               "resourceCount": 10
             },
-            "calculatedAt": "2026-04-27T08:16:21.208Z"
+            "calculatedAt": "2026-05-04T08:30:38.244Z"
           },
           {
             "dimension": "freshness",
             "score": 0.001,
             "evidence": {
               "modifiedAt": "2021-05-11T18:49:13.755997",
-              "daysSinceModified": 1812,
+              "daysSinceModified": 1819,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:21.208Z"
+            "calculatedAt": "2026-05-04T08:30:38.244Z"
           },
           {
             "dimension": "structure",
@@ -5886,7 +6038,7 @@
                 "CSV": 10
               }
             },
-            "calculatedAt": "2026-04-27T08:16:21.208Z"
+            "calculatedAt": "2026-05-04T08:30:38.244Z"
           },
           {
             "dimension": "accessibility",
@@ -5896,17 +6048,17 @@
               "checked": 10,
               "accessible": 0
             },
-            "calculatedAt": "2026-04-27T08:16:21.773Z"
+            "calculatedAt": "2026-05-04T08:30:38.851Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     },
     {
       "datasetId": "datos-produccion-ar:archivo-1996-2016-indicadores-de-empresas-privadas-oede",
       "externalId": "archivo-1996-2016-indicadores-de-empresas-privadas-oede",
       "modifiedAt": "2021-05-11T18:48:48.727704",
-      "lastScoredAt": "2026-04-27T08:15:41.381Z",
+      "lastScoredAt": "2026-05-04T08:29:54.001Z",
       "score": {
         "datasetId": "datos-produccion-ar:archivo-1996-2016-indicadores-de-empresas-privadas-oede",
         "title": "Archivo 1996-2016: Indicadores de Empresas privadas (OEDE)",
@@ -5932,17 +6084,17 @@
               "tagCount": 2,
               "resourceCount": 16
             },
-            "calculatedAt": "2026-04-27T08:16:21.773Z"
+            "calculatedAt": "2026-05-04T08:30:38.851Z"
           },
           {
             "dimension": "freshness",
             "score": 0.001,
             "evidence": {
               "modifiedAt": "2021-05-11T18:48:48.727704",
-              "daysSinceModified": 1812,
+              "daysSinceModified": 1819,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-04-27T08:16:21.773Z"
+            "calculatedAt": "2026-05-04T08:30:38.851Z"
           },
           {
             "dimension": "structure",
@@ -5958,7 +6110,7 @@
                 "CSV": 16
               }
             },
-            "calculatedAt": "2026-04-27T08:16:21.773Z"
+            "calculatedAt": "2026-05-04T08:30:38.851Z"
           },
           {
             "dimension": "accessibility",
@@ -5968,162 +6120,10 @@
               "checked": 16,
               "accessible": 0
             },
-            "calculatedAt": "2026-04-27T08:16:22.362Z"
+            "calculatedAt": "2026-05-04T08:30:39.464Z"
           }
         ],
-        "lastChecked": "2026-04-27T08:15:41.381Z"
-      }
-    },
-    {
-      "datasetId": "datos-produccion-ar:precios-claros-sepa-mayoristas",
-      "externalId": "precios-claros-sepa-mayoristas",
-      "modifiedAt": "2026-05-01T17:35:08.632088",
-      "lastScoredAt": "2026-05-02T07:25:36.719Z",
-      "score": {
-        "datasetId": "datos-produccion-ar:precios-claros-sepa-mayoristas",
-        "title": "Precios Claros - SEPA Mayorista",
-        "organization": "Secretaría de Comercio Interior",
-        "overall": 0.89,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 382,
-              "tagCount": 7,
-              "resourceCount": 9
-            },
-            "calculatedAt": "2026-05-02T07:25:36.719Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.998,
-            "evidence": {
-              "modifiedAt": "2026-05-01T17:35:08.632088",
-              "daysSinceModified": 1,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-05-02T07:25:36.719Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.65,
-            "evidence": {
-              "formats": [
-                "ZIP",
-                "XLSX",
-                "PDF"
-              ],
-              "bestFormat": "XLSX",
-              "bestFormatScore": 0.65,
-              "resourceCount": 9,
-              "formatDistribution": {
-                "ZIP": 7,
-                "XLSX": 1,
-                "PDF": 1
-              }
-            },
-            "calculatedAt": "2026-05-02T07:25:36.719Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 9,
-              "checked": 9,
-              "accessible": 9
-            },
-            "calculatedAt": "2026-05-02T07:25:37.952Z"
-          }
-        ],
-        "lastChecked": "2026-05-02T07:25:36.719Z"
-      }
-    },
-    {
-      "datasetId": "datos-produccion-ar:sepa-precios",
-      "externalId": "sepa-precios",
-      "modifiedAt": "2026-05-01T16:19:01.652096",
-      "lastScoredAt": "2026-05-02T07:25:36.719Z",
-      "score": {
-        "datasetId": "datos-produccion-ar:sepa-precios",
-        "title": "Precios Claros - Base SEPA",
-        "organization": "Secretaría de Comercio Interior",
-        "overall": 0.89,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 485,
-              "tagCount": 6,
-              "resourceCount": 9
-            },
-            "calculatedAt": "2026-05-02T07:25:37.952Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.998,
-            "evidence": {
-              "modifiedAt": "2026-05-01T16:19:01.652096",
-              "daysSinceModified": 1,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-05-02T07:25:37.952Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.65,
-            "evidence": {
-              "formats": [
-                "ZIP",
-                "XLSX",
-                "PDF"
-              ],
-              "bestFormat": "XLSX",
-              "bestFormatScore": 0.65,
-              "resourceCount": 9,
-              "formatDistribution": {
-                "ZIP": 7,
-                "XLSX": 1,
-                "PDF": 1
-              }
-            },
-            "calculatedAt": "2026-05-02T07:25:37.952Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 9,
-              "checked": 9,
-              "accessible": 9
-            },
-            "calculatedAt": "2026-05-02T07:25:38.921Z"
-          }
-        ],
-        "lastChecked": "2026-05-02T07:25:36.719Z"
+        "lastChecked": "2026-05-04T08:29:54.001Z"
       }
     }
   ]
