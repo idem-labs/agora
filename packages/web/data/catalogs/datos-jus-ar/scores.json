@@ -1,6 +1,6 @@
 {
   "catalogId": "datos-jus-ar",
-  "scoredAt": "2026-05-06T08:13:13.494Z",
+  "scoredAt": "2026-05-07T08:16:30.909Z",
   "datasetCount": 63,
   "datasets": [
     {
@@ -766,6 +766,74 @@
       "lastChecked": "2026-05-05T07:55:48.377Z"
     },
     {
+      "datasetId": "datos-jus-ar:igj-autoridades-genero",
+      "title": "IGJ. Autoridades género",
+      "organization": "IGJ - Inspección General de Justicia",
+      "overall": 0.977,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 160,
+            "tagCount": 12,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-05-06T08:13:13.494Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.971,
+          "evidence": {
+            "modifiedAt": "2026-04-28T15:22:04.574332",
+            "daysSinceModified": 8,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-05-06T08:13:13.494Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "GRÁFICO"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "CSV": 1,
+              "GRÁFICO": 1
+            }
+          },
+          "calculatedAt": "2026-05-06T08:13:13.494Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-05-06T08:13:14.465Z"
+        }
+      ],
+      "lastChecked": "2026-05-06T08:13:13.494Z"
+    },
+    {
       "datasetId": "datos-jus-ar:registro-nacional-de-sociedades",
       "title": "Registro Nacional de Sociedades",
       "organization": "Registro Nacional de Sociedades y del Registro Nacional de Concursos y Quiebras",
@@ -834,74 +902,6 @@
         }
       ],
       "lastChecked": "2026-05-02T07:22:32.942Z"
-    },
-    {
-      "datasetId": "datos-jus-ar:denuncias-a-empresas-y-trabajadores-de-control-de-admision-y-permanencia-en-rencap",
-      "title": "Denuncias a empresas y trabajadores de control de admisión y permanencia en RENCAP",
-      "organization": "Registro Nacional de empresas y trabajadores de control de admisión y permanencia - RENCAP",
-      "overall": 0.977,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 146,
-            "tagCount": 10,
-            "resourceCount": 10
-          },
-          "calculatedAt": "2026-04-30T08:05:23.996Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.971,
-          "evidence": {
-            "modifiedAt": "2026-04-22T17:23:53.877572",
-            "daysSinceModified": 8,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-30T08:05:23.996Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "ZIP"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 10,
-            "formatDistribution": {
-              "CSV": 1,
-              "ZIP": 9
-            }
-          },
-          "calculatedAt": "2026-04-30T08:05:23.996Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 10,
-            "checked": 10,
-            "accessible": 10
-          },
-          "calculatedAt": "2026-04-30T08:05:24.878Z"
-        }
-      ],
-      "lastChecked": "2026-04-30T08:05:23.996Z"
     },
     {
       "datasetId": "datos-jus-ar:lucha-contra-la-trata-de-personas-llamados-linea-145-denuncias",
@@ -1522,9 +1522,9 @@
       "lastChecked": "2026-05-02T07:22:32.942Z"
     },
     {
-      "datasetId": "datos-jus-ar:ministerios-publicos-casos",
-      "title": "Ministerios públicos - Casos",
-      "organization": "Dirección Nacional de Política Criminal en Materia de Justicia y Legislación Penal",
+      "datasetId": "datos-jus-ar:entidades-constituidas-en-la-inspeccion-general-de-justicia-igj",
+      "title": "Entidades constituidas en la Inspección General de Justicia",
+      "organization": "IGJ - Inspección General de Justicia",
       "overall": 0.958,
       "dimensions": [
         {
@@ -1542,21 +1542,21 @@
               "createdAt"
             ],
             "fieldsMissing": [],
-            "descriptionLength": 214,
-            "tagCount": 9,
-            "resourceCount": 8
+            "descriptionLength": 65,
+            "tagCount": 10,
+            "resourceCount": 25
           },
-          "calculatedAt": "2026-04-30T08:05:29.593Z"
+          "calculatedAt": "2026-05-06T08:13:14.465Z"
         },
         {
           "dimension": "freshness",
-          "score": 0.895,
+          "score": 0.896,
           "evidence": {
-            "modifiedAt": "2026-04-01T14:16:59.525131",
+            "modifiedAt": "2026-04-07T19:55:58.191411",
             "daysSinceModified": 29,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-04-30T08:05:29.593Z"
+          "calculatedAt": "2026-05-06T08:13:14.465Z"
         },
         {
           "dimension": "structure",
@@ -1564,37 +1564,35 @@
           "evidence": {
             "formats": [
               "CSV",
-              "ZIP",
-              "GRÁFICO"
+              "ZIP"
             ],
             "bestFormat": "CSV",
             "bestFormatScore": 0.95,
-            "resourceCount": 8,
+            "resourceCount": 25,
             "formatDistribution": {
-              "CSV": 3,
-              "ZIP": 4,
-              "GRÁFICO": 1
+              "CSV": 5,
+              "ZIP": 20
             }
           },
-          "calculatedAt": "2026-04-30T08:05:29.593Z"
+          "calculatedAt": "2026-05-06T08:13:14.465Z"
         },
         {
           "dimension": "accessibility",
           "score": 1,
           "evidence": {
-            "resourceCount": 8,
-            "checked": 8,
-            "accessible": 8
+            "resourceCount": 25,
+            "checked": 25,
+            "accessible": 25
           },
-          "calculatedAt": "2026-04-30T08:05:30.433Z"
+          "calculatedAt": "2026-05-06T08:13:17.245Z"
         }
       ],
-      "lastChecked": "2026-04-30T08:05:23.996Z"
+      "lastChecked": "2026-05-06T08:13:13.494Z"
     },
     {
-      "datasetId": "datos-jus-ar:poderes-judiciales-causas-no-penales",
-      "title": "Poderes judiciales - Causas no penales",
-      "organization": "Dirección Nacional de Política Criminal en Materia de Justicia y Legislación Penal",
+      "datasetId": "datos-jus-ar:declaraciones-juradas-de-actividades-anteriores-y-posteriores-a-la-funcion-publica",
+      "title": "Declaraciones Juradas de actividades anteriores y posteriores a la función pública",
+      "organization": "Oficina Anticorrupción",
       "overall": 0.958,
       "dimensions": [
         {
@@ -1612,21 +1610,21 @@
               "createdAt"
             ],
             "fieldsMissing": [],
-            "descriptionLength": 264,
-            "tagCount": 4,
-            "resourceCount": 8
+            "descriptionLength": 151,
+            "tagCount": 11,
+            "resourceCount": 7
           },
-          "calculatedAt": "2026-04-30T08:05:30.433Z"
+          "calculatedAt": "2026-05-06T08:13:17.245Z"
         },
         {
           "dimension": "freshness",
           "score": 0.895,
           "evidence": {
-            "modifiedAt": "2026-04-01T14:14:07.825766",
+            "modifiedAt": "2026-04-07T12:12:33.437068",
             "daysSinceModified": 29,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-04-30T08:05:30.433Z"
+          "calculatedAt": "2026-05-06T08:13:17.245Z"
         },
         {
           "dimension": "structure",
@@ -1634,170 +1632,30 @@
           "evidence": {
             "formats": [
               "CSV",
-              "ZIP",
-              "GRÁFICO"
+              "ZIP"
             ],
             "bestFormat": "CSV",
             "bestFormatScore": 0.95,
-            "resourceCount": 8,
+            "resourceCount": 7,
             "formatDistribution": {
-              "CSV": 3,
-              "ZIP": 4,
-              "GRÁFICO": 1
+              "CSV": 2,
+              "ZIP": 5
             }
           },
-          "calculatedAt": "2026-04-30T08:05:30.433Z"
+          "calculatedAt": "2026-05-06T08:13:17.245Z"
         },
         {
           "dimension": "accessibility",
           "score": 1,
           "evidence": {
-            "resourceCount": 8,
-            "checked": 8,
-            "accessible": 8
+            "resourceCount": 7,
+            "checked": 7,
+            "accessible": 7
           },
-          "calculatedAt": "2026-04-30T08:05:31.227Z"
+          "calculatedAt": "2026-05-06T08:13:17.980Z"
         }
       ],
-      "lastChecked": "2026-04-30T08:05:23.996Z"
-    },
-    {
-      "datasetId": "datos-jus-ar:poderes-judiciales-causas-penales",
-      "title": "Poderes judiciales - Causas penales",
-      "organization": "Dirección Nacional de Política Criminal en Materia de Justicia y Legislación Penal",
-      "overall": 0.958,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 261,
-            "tagCount": 7,
-            "resourceCount": 8
-          },
-          "calculatedAt": "2026-04-30T08:05:31.227Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.895,
-          "evidence": {
-            "modifiedAt": "2026-04-01T14:13:09.488761",
-            "daysSinceModified": 29,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-30T08:05:31.227Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "ZIP",
-              "GRÁFICO"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 8,
-            "formatDistribution": {
-              "CSV": 3,
-              "ZIP": 4,
-              "GRÁFICO": 1
-            }
-          },
-          "calculatedAt": "2026-04-30T08:05:31.227Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 8,
-            "checked": 8,
-            "accessible": 8
-          },
-          "calculatedAt": "2026-04-30T08:05:32.123Z"
-        }
-      ],
-      "lastChecked": "2026-04-30T08:05:23.996Z"
-    },
-    {
-      "datasetId": "datos-jus-ar:base-saij-de-normativa-provincial",
-      "title": "Base SAIJ de Normativa Provincial",
-      "organization": "Dirección Nacional del Sistema Argentino de Información Jurídica",
-      "overall": 0.958,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 185,
-            "tagCount": 6,
-            "resourceCount": 2
-          },
-          "calculatedAt": "2026-04-30T08:05:36.393Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.895,
-          "evidence": {
-            "modifiedAt": "2026-04-01T12:48:08.814897",
-            "daysSinceModified": 29,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-04-30T08:05:36.393Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "GRÁFICO"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 2,
-            "formatDistribution": {
-              "CSV": 1,
-              "GRÁFICO": 1
-            }
-          },
-          "calculatedAt": "2026-04-30T08:05:36.393Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-04-30T08:05:37.141Z"
-        }
-      ],
-      "lastChecked": "2026-04-30T08:05:23.996Z"
+      "lastChecked": "2026-05-06T08:13:13.494Z"
     },
     {
       "datasetId": "datos-jus-ar:renuncias-de-magistrados-de-la-justicia-federal-y-de-la-justicia-nacional",
@@ -4132,10 +3990,10 @@
       "lastChecked": "2026-05-03T08:03:39.276Z"
     },
     {
-      "datasetId": "datos-jus-ar:igj-autoridades-genero",
-      "title": "IGJ. Autoridades género",
-      "organization": "IGJ - Inspección General de Justicia",
-      "overall": 0.977,
+      "datasetId": "datos-jus-ar:denuncias-a-empresas-y-trabajadores-de-control-de-admision-y-permanencia-en-rencap",
+      "title": "Denuncias a empresas y trabajadores de control de admisión y permanencia en RENCAP",
+      "organization": "Registro Nacional de empresas y trabajadores de control de admisión y permanencia - RENCAP",
+      "overall": 0.971,
       "dimensions": [
         {
           "dimension": "completeness",
@@ -4152,21 +4010,299 @@
               "createdAt"
             ],
             "fieldsMissing": [],
-            "descriptionLength": 160,
-            "tagCount": 12,
-            "resourceCount": 2
+            "descriptionLength": 146,
+            "tagCount": 10,
+            "resourceCount": 10
           },
-          "calculatedAt": "2026-05-06T08:13:13.494Z"
+          "calculatedAt": "2026-05-07T08:16:30.909Z"
         },
         {
           "dimension": "freshness",
-          "score": 0.971,
+          "score": 0.945,
           "evidence": {
-            "modifiedAt": "2026-04-28T15:22:04.574332",
-            "daysSinceModified": 8,
+            "modifiedAt": "2026-04-22T17:23:53.877572",
+            "daysSinceModified": 15,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-05-06T08:13:13.494Z"
+          "calculatedAt": "2026-05-07T08:16:30.909Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "ZIP"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 10,
+            "formatDistribution": {
+              "CSV": 1,
+              "ZIP": 9
+            }
+          },
+          "calculatedAt": "2026-05-07T08:16:30.909Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 10,
+            "checked": 10,
+            "accessible": 10
+          },
+          "calculatedAt": "2026-05-07T08:16:31.782Z"
+        }
+      ],
+      "lastChecked": "2026-05-07T08:16:30.909Z"
+    },
+    {
+      "datasetId": "datos-jus-ar:ministerios-publicos-casos",
+      "title": "Ministerios públicos - Casos",
+      "organization": "Dirección Nacional de Política Criminal en Materia de Justicia y Legislación Penal",
+      "overall": 0.952,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 214,
+            "tagCount": 9,
+            "resourceCount": 8
+          },
+          "calculatedAt": "2026-05-07T08:16:31.782Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.871,
+          "evidence": {
+            "modifiedAt": "2026-04-01T14:16:59.525131",
+            "daysSinceModified": 36,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-05-07T08:16:31.782Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "ZIP",
+              "GRÁFICO"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 8,
+            "formatDistribution": {
+              "CSV": 3,
+              "ZIP": 4,
+              "GRÁFICO": 1
+            }
+          },
+          "calculatedAt": "2026-05-07T08:16:31.782Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 8,
+            "checked": 8,
+            "accessible": 8
+          },
+          "calculatedAt": "2026-05-07T08:16:32.451Z"
+        }
+      ],
+      "lastChecked": "2026-05-07T08:16:30.909Z"
+    },
+    {
+      "datasetId": "datos-jus-ar:poderes-judiciales-causas-no-penales",
+      "title": "Poderes judiciales - Causas no penales",
+      "organization": "Dirección Nacional de Política Criminal en Materia de Justicia y Legislación Penal",
+      "overall": 0.952,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 264,
+            "tagCount": 4,
+            "resourceCount": 8
+          },
+          "calculatedAt": "2026-05-07T08:16:32.451Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.871,
+          "evidence": {
+            "modifiedAt": "2026-04-01T14:14:07.825766",
+            "daysSinceModified": 36,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-05-07T08:16:32.451Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "ZIP",
+              "GRÁFICO"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 8,
+            "formatDistribution": {
+              "CSV": 3,
+              "ZIP": 4,
+              "GRÁFICO": 1
+            }
+          },
+          "calculatedAt": "2026-05-07T08:16:32.451Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 8,
+            "checked": 8,
+            "accessible": 8
+          },
+          "calculatedAt": "2026-05-07T08:16:33.190Z"
+        }
+      ],
+      "lastChecked": "2026-05-07T08:16:30.909Z"
+    },
+    {
+      "datasetId": "datos-jus-ar:poderes-judiciales-causas-penales",
+      "title": "Poderes judiciales - Causas penales",
+      "organization": "Dirección Nacional de Política Criminal en Materia de Justicia y Legislación Penal",
+      "overall": 0.952,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 261,
+            "tagCount": 7,
+            "resourceCount": 8
+          },
+          "calculatedAt": "2026-05-07T08:16:33.190Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.871,
+          "evidence": {
+            "modifiedAt": "2026-04-01T14:13:09.488761",
+            "daysSinceModified": 36,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-05-07T08:16:33.190Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "ZIP",
+              "GRÁFICO"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 8,
+            "formatDistribution": {
+              "CSV": 3,
+              "ZIP": 4,
+              "GRÁFICO": 1
+            }
+          },
+          "calculatedAt": "2026-05-07T08:16:33.190Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 8,
+            "checked": 8,
+            "accessible": 8
+          },
+          "calculatedAt": "2026-05-07T08:16:33.922Z"
+        }
+      ],
+      "lastChecked": "2026-05-07T08:16:30.909Z"
+    },
+    {
+      "datasetId": "datos-jus-ar:base-saij-de-normativa-provincial",
+      "title": "Base SAIJ de Normativa Provincial",
+      "organization": "Dirección Nacional del Sistema Argentino de Información Jurídica",
+      "overall": 0.952,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 185,
+            "tagCount": 6,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-05-07T08:16:33.922Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.871,
+          "evidence": {
+            "modifiedAt": "2026-04-01T12:48:08.814897",
+            "daysSinceModified": 36,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-05-07T08:16:33.922Z"
         },
         {
           "dimension": "structure",
@@ -4184,7 +4320,7 @@
               "GRÁFICO": 1
             }
           },
-          "calculatedAt": "2026-05-06T08:13:13.494Z"
+          "calculatedAt": "2026-05-07T08:16:33.922Z"
         },
         {
           "dimension": "accessibility",
@@ -4194,146 +4330,10 @@
             "checked": 2,
             "accessible": 2
           },
-          "calculatedAt": "2026-05-06T08:13:14.465Z"
+          "calculatedAt": "2026-05-07T08:16:34.543Z"
         }
       ],
-      "lastChecked": "2026-05-06T08:13:13.494Z"
-    },
-    {
-      "datasetId": "datos-jus-ar:entidades-constituidas-en-la-inspeccion-general-de-justicia-igj",
-      "title": "Entidades constituidas en la Inspección General de Justicia",
-      "organization": "IGJ - Inspección General de Justicia",
-      "overall": 0.958,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 65,
-            "tagCount": 10,
-            "resourceCount": 25
-          },
-          "calculatedAt": "2026-05-06T08:13:14.465Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.896,
-          "evidence": {
-            "modifiedAt": "2026-04-07T19:55:58.191411",
-            "daysSinceModified": 29,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-05-06T08:13:14.465Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "ZIP"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 25,
-            "formatDistribution": {
-              "CSV": 5,
-              "ZIP": 20
-            }
-          },
-          "calculatedAt": "2026-05-06T08:13:14.465Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 25,
-            "checked": 25,
-            "accessible": 25
-          },
-          "calculatedAt": "2026-05-06T08:13:17.245Z"
-        }
-      ],
-      "lastChecked": "2026-05-06T08:13:13.494Z"
-    },
-    {
-      "datasetId": "datos-jus-ar:declaraciones-juradas-de-actividades-anteriores-y-posteriores-a-la-funcion-publica",
-      "title": "Declaraciones Juradas de actividades anteriores y posteriores a la función pública",
-      "organization": "Oficina Anticorrupción",
-      "overall": 0.958,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 151,
-            "tagCount": 11,
-            "resourceCount": 7
-          },
-          "calculatedAt": "2026-05-06T08:13:17.245Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.895,
-          "evidence": {
-            "modifiedAt": "2026-04-07T12:12:33.437068",
-            "daysSinceModified": 29,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-05-06T08:13:17.245Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "ZIP"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 7,
-            "formatDistribution": {
-              "CSV": 2,
-              "ZIP": 5
-            }
-          },
-          "calculatedAt": "2026-05-06T08:13:17.245Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 7,
-            "checked": 7,
-            "accessible": 7
-          },
-          "calculatedAt": "2026-05-06T08:13:17.980Z"
-        }
-      ],
-      "lastChecked": "2026-05-06T08:13:13.494Z"
+      "lastChecked": "2026-05-07T08:16:30.909Z"
     }
   ],
   "coverage": 1
