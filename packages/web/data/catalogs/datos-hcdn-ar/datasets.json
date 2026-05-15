@@ -1,6 +1,6 @@
 {
   "catalogId": "datos-hcdn-ar",
-  "updatedAt": "2026-05-14T08:30:50.088Z",
+  "updatedAt": "2026-05-15T08:40:29.951Z",
   "datasets": [
     {
       "datasetId": "datos-hcdn-ar:movimientos-de-proyectos",
@@ -669,6 +669,80 @@
           }
         ],
         "lastChecked": "2026-05-13T08:41:18.610Z"
+      }
+    },
+    {
+      "datasetId": "datos-hcdn-ar:ejecucion-presupuestaria-de-la-camara-de-diputados-de-la-nacion",
+      "externalId": "ejecucion-presupuestaria-de-la-camara-de-diputados-de-la-nacion",
+      "modifiedAt": "2026-04-29T10:49:35.908597",
+      "lastScoredAt": "2026-05-14T08:30:50.088Z",
+      "score": {
+        "datasetId": "datos-hcdn-ar:ejecucion-presupuestaria-de-la-camara-de-diputados-de-la-nacion",
+        "title": "Ejecución Presupuestaria de la Cámara de Diputados de la Nación",
+        "organization": "Secretaría Administativa",
+        "overall": 0.97,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 258,
+              "tagCount": 3,
+              "resourceCount": 48
+            },
+            "calculatedAt": "2026-05-14T08:30:50.088Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.944,
+            "evidence": {
+              "modifiedAt": "2026-04-29T10:49:35.908597",
+              "daysSinceModified": 15,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-05-14T08:30:50.088Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV",
+                "JSON"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 48,
+              "formatDistribution": {
+                "CSV": 24,
+                "JSON": 24
+              }
+            },
+            "calculatedAt": "2026-05-14T08:30:50.088Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 48,
+              "checked": 48,
+              "accessible": 48
+            },
+            "calculatedAt": "2026-05-14T08:30:52.648Z"
+          }
+        ],
+        "lastChecked": "2026-05-14T08:30:50.088Z"
       }
     },
     {
@@ -2077,80 +2151,6 @@
           }
         ],
         "lastChecked": "2026-05-13T08:41:18.610Z"
-      }
-    },
-    {
-      "datasetId": "datos-hcdn-ar:ejecucion-presupuestaria-de-la-camara-de-diputados-de-la-nacion",
-      "externalId": "ejecucion-presupuestaria-de-la-camara-de-diputados-de-la-nacion",
-      "modifiedAt": "2026-04-29T10:49:35.908597",
-      "lastScoredAt": "2026-05-14T08:30:50.088Z",
-      "score": {
-        "datasetId": "datos-hcdn-ar:ejecucion-presupuestaria-de-la-camara-de-diputados-de-la-nacion",
-        "title": "Ejecución Presupuestaria de la Cámara de Diputados de la Nación",
-        "organization": "Secretaría Administativa",
-        "overall": 0.97,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 258,
-              "tagCount": 3,
-              "resourceCount": 48
-            },
-            "calculatedAt": "2026-05-14T08:30:50.088Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.944,
-            "evidence": {
-              "modifiedAt": "2026-04-29T10:49:35.908597",
-              "daysSinceModified": 15,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-05-14T08:30:50.088Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV",
-                "JSON"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 48,
-              "formatDistribution": {
-                "CSV": 24,
-                "JSON": 24
-              }
-            },
-            "calculatedAt": "2026-05-14T08:30:50.088Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 48,
-              "checked": 48,
-              "accessible": 48
-            },
-            "calculatedAt": "2026-05-14T08:30:52.648Z"
-          }
-        ],
-        "lastChecked": "2026-05-14T08:30:50.088Z"
       }
     }
   ]
