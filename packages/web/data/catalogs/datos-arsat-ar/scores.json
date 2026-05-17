@@ -1,8 +1,74 @@
 {
   "catalogId": "datos-arsat-ar",
-  "scoredAt": "2026-05-16T07:54:50.442Z",
+  "scoredAt": "2026-05-17T08:36:28.638Z",
   "datasetCount": 13,
   "datasets": [
+    {
+      "datasetId": "datos-arsat-ar:organigrama",
+      "title": "Organigrama",
+      "organization": "ARSAT",
+      "overall": 0.734,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 82,
+            "tagCount": 3,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-05-16T07:54:50.442Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.998,
+          "evidence": {
+            "modifiedAt": "2026-05-15T17:31:21.035001",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-05-16T07:54:50.442Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.15,
+          "evidence": {
+            "formats": [
+              "PDF"
+            ],
+            "bestFormat": "PDF",
+            "bestFormatScore": 0.15,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "PDF": 1
+            }
+          },
+          "calculatedAt": "2026-05-16T07:54:50.442Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-05-16T07:54:51.290Z"
+        }
+      ],
+      "lastChecked": "2026-05-16T07:54:50.442Z"
+    },
     {
       "datasetId": "datos-arsat-ar:personal",
       "title": "Personal",
@@ -802,72 +868,6 @@
         }
       ],
       "lastChecked": "2026-05-11T09:11:37.152Z"
-    },
-    {
-      "datasetId": "datos-arsat-ar:organigrama",
-      "title": "Organigrama",
-      "organization": "ARSAT",
-      "overall": 0.734,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 82,
-            "tagCount": 3,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-05-16T07:54:50.442Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-05-15T17:31:21.035001",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-05-16T07:54:50.442Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.15,
-          "evidence": {
-            "formats": [
-              "PDF"
-            ],
-            "bestFormat": "PDF",
-            "bestFormatScore": 0.15,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "PDF": 1
-            }
-          },
-          "calculatedAt": "2026-05-16T07:54:50.442Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-05-16T07:54:51.290Z"
-        }
-      ],
-      "lastChecked": "2026-05-16T07:54:50.442Z"
     }
   ],
   "coverage": 1
