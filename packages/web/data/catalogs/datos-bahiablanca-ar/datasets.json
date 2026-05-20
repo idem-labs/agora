@@ -1,6 +1,6 @@
 {
   "catalogId": "datos-bahiablanca-ar",
-  "updatedAt": "2026-05-19T09:02:43.118Z",
+  "updatedAt": "2026-05-20T09:08:21.631Z",
   "datasets": [
     {
       "datasetId": "datos-bahiablanca-ar:estadisticas-de-los-moviles-de-castracion",
@@ -147,15 +147,15 @@
       }
     },
     {
-      "datasetId": "datos-bahiablanca-ar:publicidad",
-      "externalId": "publicidad",
-      "modifiedAt": "2026-04-21T16:26:19.058320",
-      "lastScoredAt": "2026-05-13T08:40:02.084Z",
+      "datasetId": "datos-bahiablanca-ar:devengado",
+      "externalId": "devengado",
+      "modifiedAt": "2026-05-11T14:39:25.188350",
+      "lastScoredAt": "2026-05-19T09:02:43.118Z",
       "score": {
-        "datasetId": "datos-bahiablanca-ar:publicidad",
-        "title": "Publicidad",
+        "datasetId": "datos-bahiablanca-ar:devengado",
+        "title": "Devengado de Compras del Municipio",
         "organization": "Secretaría de Economía",
-        "overall": 0.964,
+        "overall": 0.961,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -172,21 +172,21 @@
                 "createdAt"
               ],
               "fieldsMissing": [],
-              "descriptionLength": 59,
-              "tagCount": 3,
+              "descriptionLength": 262,
+              "tagCount": 7,
               "resourceCount": 38
             },
-            "calculatedAt": "2026-05-13T08:40:10.549Z"
+            "calculatedAt": "2026-05-19T09:02:43.118Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.92,
+            "score": 0.971,
             "evidence": {
-              "modifiedAt": "2026-04-21T16:26:19.058320",
-              "daysSinceModified": 22,
+              "modifiedAt": "2026-05-11T14:39:25.188350",
+              "daysSinceModified": 8,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-05-13T08:40:10.549Z"
+            "calculatedAt": "2026-05-19T09:02:43.118Z"
           },
           {
             "dimension": "structure",
@@ -206,7 +206,83 @@
                 "XLS": 18
               }
             },
-            "calculatedAt": "2026-05-13T08:40:10.549Z"
+            "calculatedAt": "2026-05-19T09:02:43.118Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.947,
+            "evidence": {
+              "resourceCount": 38,
+              "checked": 38,
+              "accessible": 36
+            },
+            "calculatedAt": "2026-05-19T09:02:50.545Z"
+          }
+        ],
+        "lastChecked": "2026-05-19T09:02:43.118Z"
+      }
+    },
+    {
+      "datasetId": "datos-bahiablanca-ar:compras",
+      "externalId": "compras",
+      "modifiedAt": "2026-05-11T14:37:06.333834",
+      "lastScoredAt": "2026-05-19T09:02:43.118Z",
+      "score": {
+        "datasetId": "datos-bahiablanca-ar:compras",
+        "title": "Órdenes de Compras Municipales",
+        "organization": "Secretaría de Economía",
+        "overall": 0.977,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 65,
+              "tagCount": 2,
+              "resourceCount": 38
+            },
+            "calculatedAt": "2026-05-19T09:02:50.545Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.971,
+            "evidence": {
+              "modifiedAt": "2026-05-11T14:37:06.333834",
+              "daysSinceModified": 8,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-05-19T09:02:50.545Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "JSON",
+                "CSV",
+                "XLS"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 38,
+              "formatDistribution": {
+                "JSON": 1,
+                "CSV": 19,
+                "XLS": 18
+              }
+            },
+            "calculatedAt": "2026-05-19T09:02:50.545Z"
           },
           {
             "dimension": "accessibility",
@@ -216,10 +292,86 @@
               "checked": 38,
               "accessible": 38
             },
-            "calculatedAt": "2026-05-13T08:40:15.716Z"
+            "calculatedAt": "2026-05-19T09:02:54.024Z"
           }
         ],
-        "lastChecked": "2026-05-13T08:40:02.084Z"
+        "lastChecked": "2026-05-19T09:02:43.118Z"
+      }
+    },
+    {
+      "datasetId": "datos-bahiablanca-ar:solicitudes-recibidas-en-bahia-responde",
+      "externalId": "solicitudes-recibidas-en-bahia-responde",
+      "modifiedAt": "2026-05-11T12:58:02.811097",
+      "lastScoredAt": "2026-05-19T09:02:43.118Z",
+      "score": {
+        "datasetId": "datos-bahiablanca-ar:solicitudes-recibidas-en-bahia-responde",
+        "title": "Solicitudes recibidas en Bahía Responde",
+        "organization": "Unidad Intendencia",
+        "overall": 0.955,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 187,
+              "tagCount": 5,
+              "resourceCount": 14
+            },
+            "calculatedAt": "2026-05-19T09:02:54.024Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.97,
+            "evidence": {
+              "modifiedAt": "2026-05-11T12:58:02.811097",
+              "daysSinceModified": 8,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-05-19T09:02:54.024Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "JSON",
+                "CSV",
+                "XLS"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 14,
+              "formatDistribution": {
+                "JSON": 1,
+                "CSV": 7,
+                "XLS": 6
+              }
+            },
+            "calculatedAt": "2026-05-19T09:02:54.024Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.929,
+            "evidence": {
+              "resourceCount": 14,
+              "checked": 14,
+              "accessible": 13
+            },
+            "calculatedAt": "2026-05-19T09:02:55.056Z"
+          }
+        ],
+        "lastChecked": "2026-05-19T09:02:43.118Z"
       }
     },
     {
@@ -15889,15 +16041,15 @@
       }
     },
     {
-      "datasetId": "datos-bahiablanca-ar:devengado",
-      "externalId": "devengado",
-      "modifiedAt": "2026-05-11T14:39:25.188350",
-      "lastScoredAt": "2026-05-19T09:02:43.118Z",
+      "datasetId": "datos-bahiablanca-ar:publicidad",
+      "externalId": "publicidad",
+      "modifiedAt": "2026-04-21T16:26:19.058320",
+      "lastScoredAt": "2026-05-20T09:08:21.631Z",
       "score": {
-        "datasetId": "datos-bahiablanca-ar:devengado",
-        "title": "Devengado de Compras del Municipio",
+        "datasetId": "datos-bahiablanca-ar:publicidad",
+        "title": "Publicidad",
         "organization": "Secretaría de Economía",
-        "overall": 0.961,
+        "overall": 0.843,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -15914,21 +16066,21 @@
                 "createdAt"
               ],
               "fieldsMissing": [],
-              "descriptionLength": 262,
-              "tagCount": 7,
+              "descriptionLength": 59,
+              "tagCount": 3,
               "resourceCount": 38
             },
-            "calculatedAt": "2026-05-19T09:02:43.118Z"
+            "calculatedAt": "2026-05-20T09:08:21.631Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.971,
+            "score": 0.895,
             "evidence": {
-              "modifiedAt": "2026-05-11T14:39:25.188350",
-              "daysSinceModified": 8,
+              "modifiedAt": "2026-04-21T16:26:19.058320",
+              "daysSinceModified": 29,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-05-19T09:02:43.118Z"
+            "calculatedAt": "2026-05-20T09:08:21.631Z"
           },
           {
             "dimension": "structure",
@@ -15948,172 +16100,20 @@
                 "XLS": 18
               }
             },
-            "calculatedAt": "2026-05-19T09:02:43.118Z"
+            "calculatedAt": "2026-05-20T09:08:21.631Z"
           },
           {
             "dimension": "accessibility",
-            "score": 0.947,
+            "score": 0.632,
             "evidence": {
               "resourceCount": 38,
               "checked": 38,
-              "accessible": 36
+              "accessible": 24
             },
-            "calculatedAt": "2026-05-19T09:02:50.545Z"
+            "calculatedAt": "2026-05-20T09:08:30.417Z"
           }
         ],
-        "lastChecked": "2026-05-19T09:02:43.118Z"
-      }
-    },
-    {
-      "datasetId": "datos-bahiablanca-ar:compras",
-      "externalId": "compras",
-      "modifiedAt": "2026-05-11T14:37:06.333834",
-      "lastScoredAt": "2026-05-19T09:02:43.118Z",
-      "score": {
-        "datasetId": "datos-bahiablanca-ar:compras",
-        "title": "Órdenes de Compras Municipales",
-        "organization": "Secretaría de Economía",
-        "overall": 0.977,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 65,
-              "tagCount": 2,
-              "resourceCount": 38
-            },
-            "calculatedAt": "2026-05-19T09:02:50.545Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.971,
-            "evidence": {
-              "modifiedAt": "2026-05-11T14:37:06.333834",
-              "daysSinceModified": 8,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-05-19T09:02:50.545Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "JSON",
-                "CSV",
-                "XLS"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 38,
-              "formatDistribution": {
-                "JSON": 1,
-                "CSV": 19,
-                "XLS": 18
-              }
-            },
-            "calculatedAt": "2026-05-19T09:02:50.545Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 38,
-              "checked": 38,
-              "accessible": 38
-            },
-            "calculatedAt": "2026-05-19T09:02:54.024Z"
-          }
-        ],
-        "lastChecked": "2026-05-19T09:02:43.118Z"
-      }
-    },
-    {
-      "datasetId": "datos-bahiablanca-ar:solicitudes-recibidas-en-bahia-responde",
-      "externalId": "solicitudes-recibidas-en-bahia-responde",
-      "modifiedAt": "2026-05-11T12:58:02.811097",
-      "lastScoredAt": "2026-05-19T09:02:43.118Z",
-      "score": {
-        "datasetId": "datos-bahiablanca-ar:solicitudes-recibidas-en-bahia-responde",
-        "title": "Solicitudes recibidas en Bahía Responde",
-        "organization": "Unidad Intendencia",
-        "overall": 0.955,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 187,
-              "tagCount": 5,
-              "resourceCount": 14
-            },
-            "calculatedAt": "2026-05-19T09:02:54.024Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.97,
-            "evidence": {
-              "modifiedAt": "2026-05-11T12:58:02.811097",
-              "daysSinceModified": 8,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-05-19T09:02:54.024Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "JSON",
-                "CSV",
-                "XLS"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 14,
-              "formatDistribution": {
-                "JSON": 1,
-                "CSV": 7,
-                "XLS": 6
-              }
-            },
-            "calculatedAt": "2026-05-19T09:02:54.024Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0.929,
-            "evidence": {
-              "resourceCount": 14,
-              "checked": 14,
-              "accessible": 13
-            },
-            "calculatedAt": "2026-05-19T09:02:55.056Z"
-          }
-        ],
-        "lastChecked": "2026-05-19T09:02:43.118Z"
+        "lastChecked": "2026-05-20T09:08:21.631Z"
       }
     }
   ]
