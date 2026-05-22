@@ -1,7 +1,79 @@
 {
   "catalogId": "datos-corrientes-ar",
-  "updatedAt": "2026-05-21T09:00:48.988Z",
+  "updatedAt": "2026-05-22T08:52:52.619Z",
   "datasets": [
+    {
+      "datasetId": "datos-corrientes-ar:actas_infraccion",
+      "externalId": "actas_infraccion",
+      "modifiedAt": "2026-05-20T15:36:27.931445",
+      "lastScoredAt": "2026-05-21T09:00:48.988Z",
+      "score": {
+        "datasetId": "datos-corrientes-ar:actas_infraccion",
+        "title": "Actas de infracciones",
+        "organization": "Subsecretaria de Transporte",
+        "overall": 0.952,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 92,
+              "tagCount": 5,
+              "resourceCount": 1
+            },
+            "calculatedAt": "2026-05-21T09:00:48.988Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.997,
+            "evidence": {
+              "modifiedAt": "2026-05-20T15:36:27.931445",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-05-21T09:00:48.988Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 1,
+              "formatDistribution": {
+                "CSV": 1
+              }
+            },
+            "calculatedAt": "2026-05-21T09:00:48.988Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.9,
+            "evidence": {
+              "resourceCount": 1,
+              "checked": 1,
+              "accessible": 1
+            },
+            "calculatedAt": "2026-05-21T09:00:49.536Z"
+          }
+        ],
+        "lastChecked": "2026-05-21T09:00:48.988Z"
+      }
+    },
     {
       "datasetId": "datos-corrientes-ar:sistema-de-atencion-al-ciudadano",
       "externalId": "sistema-de-atencion-al-ciudadano",
@@ -577,6 +649,150 @@
           }
         ],
         "lastChecked": "2026-05-16T07:58:16.199Z"
+      }
+    },
+    {
+      "datasetId": "datos-corrientes-ar:hisopados",
+      "externalId": "hisopados",
+      "modifiedAt": "2026-05-06T15:21:40.001513",
+      "lastScoredAt": "2026-05-21T09:00:48.988Z",
+      "score": {
+        "datasetId": "datos-corrientes-ar:hisopados",
+        "title": "Hisopados",
+        "organization": "Subsecretaria de Salud",
+        "overall": 0.971,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 182,
+              "tagCount": 3,
+              "resourceCount": 1
+            },
+            "calculatedAt": "2026-05-21T09:00:49.537Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.945,
+            "evidence": {
+              "modifiedAt": "2026-05-06T15:21:40.001513",
+              "daysSinceModified": 15,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-05-21T09:00:49.537Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 1,
+              "formatDistribution": {
+                "CSV": 1
+              }
+            },
+            "calculatedAt": "2026-05-21T09:00:49.537Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 1,
+              "checked": 1,
+              "accessible": 1
+            },
+            "calculatedAt": "2026-05-21T09:00:49.802Z"
+          }
+        ],
+        "lastChecked": "2026-05-21T09:00:48.988Z"
+      }
+    },
+    {
+      "datasetId": "datos-corrientes-ar:observatorio-vial",
+      "externalId": "observatorio-vial",
+      "modifiedAt": "2026-04-22T13:35:29.941685",
+      "lastScoredAt": "2026-05-21T09:00:48.988Z",
+      "score": {
+        "datasetId": "datos-corrientes-ar:observatorio-vial",
+        "title": "Observatorio Vial",
+        "organization": "Subsecretaria de Transito y Seguridad Vial",
+        "overall": 0.927,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 116,
+              "tagCount": 4,
+              "resourceCount": 16
+            },
+            "calculatedAt": "2026-05-21T09:00:49.802Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.895,
+            "evidence": {
+              "modifiedAt": "2026-04-22T13:35:29.941685",
+              "daysSinceModified": 29,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-05-21T09:00:49.802Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 16,
+              "formatDistribution": {
+                "CSV": 16
+              }
+            },
+            "calculatedAt": "2026-05-21T09:00:49.802Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.9,
+            "evidence": {
+              "resourceCount": 16,
+              "checked": 16,
+              "accessible": 16
+            },
+            "calculatedAt": "2026-05-21T09:00:50.773Z"
+          }
+        ],
+        "lastChecked": "2026-05-21T09:00:48.988Z"
       }
     },
     {
@@ -4837,222 +5053,6 @@
           }
         ],
         "lastChecked": "2026-05-18T09:57:30.862Z"
-      }
-    },
-    {
-      "datasetId": "datos-corrientes-ar:actas_infraccion",
-      "externalId": "actas_infraccion",
-      "modifiedAt": "2026-05-20T15:36:27.931445",
-      "lastScoredAt": "2026-05-21T09:00:48.988Z",
-      "score": {
-        "datasetId": "datos-corrientes-ar:actas_infraccion",
-        "title": "Actas de infracciones",
-        "organization": "Subsecretaria de Transporte",
-        "overall": 0.952,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 92,
-              "tagCount": 5,
-              "resourceCount": 1
-            },
-            "calculatedAt": "2026-05-21T09:00:48.988Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.997,
-            "evidence": {
-              "modifiedAt": "2026-05-20T15:36:27.931445",
-              "daysSinceModified": 1,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-05-21T09:00:48.988Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 1,
-              "formatDistribution": {
-                "CSV": 1
-              }
-            },
-            "calculatedAt": "2026-05-21T09:00:48.988Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0.9,
-            "evidence": {
-              "resourceCount": 1,
-              "checked": 1,
-              "accessible": 1
-            },
-            "calculatedAt": "2026-05-21T09:00:49.536Z"
-          }
-        ],
-        "lastChecked": "2026-05-21T09:00:48.988Z"
-      }
-    },
-    {
-      "datasetId": "datos-corrientes-ar:hisopados",
-      "externalId": "hisopados",
-      "modifiedAt": "2026-05-06T15:21:40.001513",
-      "lastScoredAt": "2026-05-21T09:00:48.988Z",
-      "score": {
-        "datasetId": "datos-corrientes-ar:hisopados",
-        "title": "Hisopados",
-        "organization": "Subsecretaria de Salud",
-        "overall": 0.971,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 182,
-              "tagCount": 3,
-              "resourceCount": 1
-            },
-            "calculatedAt": "2026-05-21T09:00:49.537Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.945,
-            "evidence": {
-              "modifiedAt": "2026-05-06T15:21:40.001513",
-              "daysSinceModified": 15,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-05-21T09:00:49.537Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 1,
-              "formatDistribution": {
-                "CSV": 1
-              }
-            },
-            "calculatedAt": "2026-05-21T09:00:49.537Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 1,
-              "checked": 1,
-              "accessible": 1
-            },
-            "calculatedAt": "2026-05-21T09:00:49.802Z"
-          }
-        ],
-        "lastChecked": "2026-05-21T09:00:48.988Z"
-      }
-    },
-    {
-      "datasetId": "datos-corrientes-ar:observatorio-vial",
-      "externalId": "observatorio-vial",
-      "modifiedAt": "2026-04-22T13:35:29.941685",
-      "lastScoredAt": "2026-05-21T09:00:48.988Z",
-      "score": {
-        "datasetId": "datos-corrientes-ar:observatorio-vial",
-        "title": "Observatorio Vial",
-        "organization": "Subsecretaria de Transito y Seguridad Vial",
-        "overall": 0.927,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 116,
-              "tagCount": 4,
-              "resourceCount": 16
-            },
-            "calculatedAt": "2026-05-21T09:00:49.802Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.895,
-            "evidence": {
-              "modifiedAt": "2026-04-22T13:35:29.941685",
-              "daysSinceModified": 29,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-05-21T09:00:49.802Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 16,
-              "formatDistribution": {
-                "CSV": 16
-              }
-            },
-            "calculatedAt": "2026-05-21T09:00:49.802Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0.9,
-            "evidence": {
-              "resourceCount": 16,
-              "checked": 16,
-              "accessible": 16
-            },
-            "calculatedAt": "2026-05-21T09:00:50.773Z"
-          }
-        ],
-        "lastChecked": "2026-05-21T09:00:48.988Z"
       }
     }
   ]
