@@ -1,16 +1,16 @@
 {
   "catalogId": "catalogodatos-gub-uy",
-  "updatedAt": "2026-06-01T11:44:44.017Z",
+  "updatedAt": "2026-06-02T10:13:55.715Z",
   "datasets": [
     {
-      "datasetId": "catalogodatos-gub-uy:ursea-ursea_basesanciones2019",
-      "externalId": "ursea-ursea_basesanciones2019",
-      "modifiedAt": "2026-05-29T19:32:37.229954",
-      "lastScoredAt": "2026-05-30T08:23:03.983Z",
+      "datasetId": "catalogodatos-gub-uy:ide-ejes-vias-circulacion",
+      "externalId": "ide-ejes-vias-circulacion",
+      "modifiedAt": "2026-06-01T06:33:42.928659",
+      "lastScoredAt": "2026-06-01T11:44:44.017Z",
       "score": {
-        "datasetId": "catalogodatos-gub-uy:ursea-ursea_basesanciones2019",
-        "title": "Registro de Sanciones a Empresas",
-        "organization": "URSEA",
+        "datasetId": "catalogodatos-gub-uy:ide-ejes-vias-circulacion",
+        "title": "Ejes de vías de circulación",
+        "organization": "IDE",
         "overall": 0.984,
         "dimensions": [
           {
@@ -28,21 +28,711 @@
                 "createdAt"
               ],
               "fieldsMissing": [],
-              "descriptionLength": 382,
-              "tagCount": 17,
-              "resourceCount": 4
+              "descriptionLength": 240,
+              "tagCount": 3,
+              "resourceCount": 20
             },
-            "calculatedAt": "2026-05-30T08:24:04.439Z"
+            "calculatedAt": "2026-06-01T11:44:44.017Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.998,
+            "score": 0.999,
             "evidence": {
-              "modifiedAt": "2026-05-29T19:32:37.229954",
+              "modifiedAt": "2026-06-01T06:33:42.928659",
+              "daysSinceModified": 0,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-06-01T11:44:44.017Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "JSON",
+                "CSV"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 20,
+              "formatDistribution": {
+                "JSON": 1,
+                "CSV": 19
+              }
+            },
+            "calculatedAt": "2026-06-01T11:44:44.017Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 20,
+              "checked": 20,
+              "accessible": 20
+            },
+            "calculatedAt": "2026-06-01T11:44:45.161Z"
+          }
+        ],
+        "lastChecked": "2026-06-01T11:44:44.017Z"
+      }
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:reclamos-registrados-en-el-sistema-unico-de-reclamos-de-la-intendencia-de-montevideo",
+      "externalId": "reclamos-registrados-en-el-sistema-unico-de-reclamos-de-la-intendencia-de-montevideo",
+      "modifiedAt": "2026-06-01T06:18:18.818054",
+      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "score": {
+        "datasetId": "catalogodatos-gub-uy:reclamos-registrados-en-el-sistema-unico-de-reclamos-de-la-intendencia-de-montevideo",
+        "title": "Reclamos registrados en el Sistema Unico de Reclamos de la Intendencia de Montevideo",
+        "organization": "Intendencia de Montevideo",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 1609,
+              "tagCount": 4,
+              "resourceCount": 2
+            },
+            "calculatedAt": "2026-06-01T11:45:03.753Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.999,
+            "evidence": {
+              "modifiedAt": "2026-06-01T06:18:18.818054",
+              "daysSinceModified": 0,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-06-01T11:45:03.753Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "TXT",
+                "CSV"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 2,
+              "formatDistribution": {
+                "TXT": 1,
+                "CSV": 1
+              }
+            },
+            "calculatedAt": "2026-06-01T11:45:03.753Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 2,
+              "checked": 2,
+              "accessible": 2
+            },
+            "calculatedAt": "2026-06-01T11:45:04.347Z"
+          }
+        ],
+        "lastChecked": "2026-06-01T11:44:44.017Z"
+      }
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:ide-direcciones-geograficas-del-uruguay",
+      "externalId": "ide-direcciones-geograficas-del-uruguay",
+      "modifiedAt": "2026-06-01T06:04:28.984109",
+      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "score": {
+        "datasetId": "catalogodatos-gub-uy:ide-direcciones-geograficas-del-uruguay",
+        "title": "Direcciones Geográficas del Uruguay",
+        "organization": "IDE",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 1977,
+              "tagCount": 3,
+              "resourceCount": 20
+            },
+            "calculatedAt": "2026-06-01T11:45:33.670Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.999,
+            "evidence": {
+              "modifiedAt": "2026-06-01T06:04:28.984109",
+              "daysSinceModified": 0,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-06-01T11:45:33.670Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "JSON",
+                "CSV"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 20,
+              "formatDistribution": {
+                "JSON": 1,
+                "CSV": 19
+              }
+            },
+            "calculatedAt": "2026-06-01T11:45:33.670Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 20,
+              "checked": 20,
+              "accessible": 20
+            },
+            "calculatedAt": "2026-06-01T11:45:35.454Z"
+          }
+        ],
+        "lastChecked": "2026-06-01T11:44:44.017Z"
+      }
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:inumet-observaciones-meteorologicas-temperatura-del-aire-en-el-uruguay",
+      "externalId": "inumet-observaciones-meteorologicas-temperatura-del-aire-en-el-uruguay",
+      "modifiedAt": "2026-06-01T04:17:55.149709",
+      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "score": {
+        "datasetId": "catalogodatos-gub-uy:inumet-observaciones-meteorologicas-temperatura-del-aire-en-el-uruguay",
+        "title": "Observaciones meteorológicas - Temperatura del aire en el Uruguay",
+        "organization": "INUMET",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 662,
+              "tagCount": 5,
+              "resourceCount": 4
+            },
+            "calculatedAt": "2026-06-01T11:45:35.454Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.999,
+            "evidence": {
+              "modifiedAt": "2026-06-01T04:17:55.149709",
+              "daysSinceModified": 0,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-06-01T11:45:35.454Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "JSON",
+                "XML",
+                "CSV",
+                "XLSX"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 4,
+              "formatDistribution": {
+                "JSON": 1,
+                "XML": 1,
+                "CSV": 1,
+                "XLSX": 1
+              }
+            },
+            "calculatedAt": "2026-06-01T11:45:35.454Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 4,
+              "checked": 4,
+              "accessible": 4
+            },
+            "calculatedAt": "2026-06-01T11:45:36.076Z"
+          }
+        ],
+        "lastChecked": "2026-06-01T11:44:44.017Z"
+      }
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:inumet-observaciones-meteorologicas-insolacion-total-en-el-uruguay",
+      "externalId": "inumet-observaciones-meteorologicas-insolacion-total-en-el-uruguay",
+      "modifiedAt": "2026-06-01T04:15:39.091440",
+      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "score": {
+        "datasetId": "catalogodatos-gub-uy:inumet-observaciones-meteorologicas-insolacion-total-en-el-uruguay",
+        "title": "Observaciones meteorológicas - Insolación total en el Uruguay",
+        "organization": "INUMET",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 687,
+              "tagCount": 5,
+              "resourceCount": 4
+            },
+            "calculatedAt": "2026-06-01T11:45:36.076Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.999,
+            "evidence": {
+              "modifiedAt": "2026-06-01T04:15:39.091440",
+              "daysSinceModified": 0,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-06-01T11:45:36.076Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "JSON",
+                "XML",
+                "CSV",
+                "XLSX"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 4,
+              "formatDistribution": {
+                "JSON": 1,
+                "XML": 1,
+                "CSV": 1,
+                "XLSX": 1
+              }
+            },
+            "calculatedAt": "2026-06-01T11:45:36.076Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 4,
+              "checked": 4,
+              "accessible": 4
+            },
+            "calculatedAt": "2026-06-01T11:45:36.690Z"
+          }
+        ],
+        "lastChecked": "2026-06-01T11:44:44.017Z"
+      }
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:inumet-observaciones-meteorologicas-precipitacion-puntual-en-el-uruguay",
+      "externalId": "inumet-observaciones-meteorologicas-precipitacion-puntual-en-el-uruguay",
+      "modifiedAt": "2026-06-01T04:15:29.210011",
+      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "score": {
+        "datasetId": "catalogodatos-gub-uy:inumet-observaciones-meteorologicas-precipitacion-puntual-en-el-uruguay",
+        "title": "Observaciones meteorológicas - Precipitación puntual en el Uruguay",
+        "organization": "INUMET",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 671,
+              "tagCount": 6,
+              "resourceCount": 4
+            },
+            "calculatedAt": "2026-06-01T11:45:36.691Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.999,
+            "evidence": {
+              "modifiedAt": "2026-06-01T04:15:29.210011",
+              "daysSinceModified": 0,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-06-01T11:45:36.691Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "JSON",
+                "XML",
+                "CSV",
+                "XLSX"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 4,
+              "formatDistribution": {
+                "JSON": 1,
+                "XML": 1,
+                "CSV": 1,
+                "XLSX": 1
+              }
+            },
+            "calculatedAt": "2026-06-01T11:45:36.691Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 4,
+              "checked": 4,
+              "accessible": 4
+            },
+            "calculatedAt": "2026-06-01T11:45:37.304Z"
+          }
+        ],
+        "lastChecked": "2026-06-01T11:44:44.017Z"
+      }
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:inumet-observaciones-meteorologicas-presion-atmosferica-en-el-uruguay",
+      "externalId": "inumet-observaciones-meteorologicas-presion-atmosferica-en-el-uruguay",
+      "modifiedAt": "2026-06-01T04:13:27.912280",
+      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "score": {
+        "datasetId": "catalogodatos-gub-uy:inumet-observaciones-meteorologicas-presion-atmosferica-en-el-uruguay",
+        "title": "Observaciones meteorológicas - Presión atmosférica en el Uruguay",
+        "organization": "INUMET",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 686,
+              "tagCount": 6,
+              "resourceCount": 4
+            },
+            "calculatedAt": "2026-06-01T11:45:37.304Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.999,
+            "evidence": {
+              "modifiedAt": "2026-06-01T04:13:27.912280",
+              "daysSinceModified": 0,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-06-01T11:45:37.304Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "JSON",
+                "XML",
+                "CSV",
+                "XLSX"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 4,
+              "formatDistribution": {
+                "JSON": 1,
+                "XML": 1,
+                "CSV": 1,
+                "XLSX": 1
+              }
+            },
+            "calculatedAt": "2026-06-01T11:45:37.304Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 4,
+              "checked": 4,
+              "accessible": 4
+            },
+            "calculatedAt": "2026-06-01T11:45:37.909Z"
+          }
+        ],
+        "lastChecked": "2026-06-01T11:44:44.017Z"
+      }
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:inumet-observaciones-meteorologicas-direccion-e-intensidad-del-viento-en-el-uruguay",
+      "externalId": "inumet-observaciones-meteorologicas-direccion-e-intensidad-del-viento-en-el-uruguay",
+      "modifiedAt": "2026-06-01T04:11:29.942858",
+      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "score": {
+        "datasetId": "catalogodatos-gub-uy:inumet-observaciones-meteorologicas-direccion-e-intensidad-del-viento-en-el-uruguay",
+        "title": "Observaciones meteorológicas - Dirección e Intensidad del viento en el Uruguay",
+        "organization": "INUMET",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 704,
+              "tagCount": 5,
+              "resourceCount": 4
+            },
+            "calculatedAt": "2026-06-01T11:45:37.909Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.999,
+            "evidence": {
+              "modifiedAt": "2026-06-01T04:11:29.942858",
+              "daysSinceModified": 0,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-06-01T11:45:37.909Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "JSON",
+                "XML",
+                "CSV",
+                "XLSX"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 4,
+              "formatDistribution": {
+                "JSON": 1,
+                "XML": 1,
+                "CSV": 1,
+                "XLSX": 1
+              }
+            },
+            "calculatedAt": "2026-06-01T11:45:37.909Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 4,
+              "checked": 4,
+              "accessible": 4
+            },
+            "calculatedAt": "2026-06-01T11:45:38.558Z"
+          }
+        ],
+        "lastChecked": "2026-06-01T11:44:44.017Z"
+      }
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:suprema-corte-de-justicia-informacion-del-nuevo-codigo-de-proceso-penal",
+      "externalId": "suprema-corte-de-justicia-informacion-del-nuevo-codigo-de-proceso-penal",
+      "modifiedAt": "2026-06-01T03:37:02.527566",
+      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "score": {
+        "datasetId": "catalogodatos-gub-uy:suprema-corte-de-justicia-informacion-del-nuevo-codigo-de-proceso-penal",
+        "title": "Información del Nuevo Código de Proceso Penal",
+        "organization": "Poder Judicial",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 180,
+              "tagCount": 6,
+              "resourceCount": 16
+            },
+            "calculatedAt": "2026-06-01T11:45:39.191Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.999,
+            "evidence": {
+              "modifiedAt": "2026-06-01T03:37:02.527566",
+              "daysSinceModified": 0,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-06-01T11:45:39.191Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "XLSX",
+                "CSV",
+                "XML",
+                "JSON"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 16,
+              "formatDistribution": {
+                "XLSX": 4,
+                "CSV": 4,
+                "XML": 4,
+                "JSON": 4
+              }
+            },
+            "calculatedAt": "2026-06-01T11:45:39.191Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 16,
+              "checked": 16,
+              "accessible": 16
+            },
+            "calculatedAt": "2026-06-01T11:45:39.999Z"
+          }
+        ],
+        "lastChecked": "2026-06-01T11:44:44.017Z"
+      }
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:ministerio-de-turismo-registro-de-operadores",
+      "externalId": "ministerio-de-turismo-registro-de-operadores",
+      "modifiedAt": "2026-05-31T14:03:51.683880",
+      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "score": {
+        "datasetId": "catalogodatos-gub-uy:ministerio-de-turismo-registro-de-operadores",
+        "title": "Registro de Operadores Turísticos",
+        "organization": "Ministerio de Turismo",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 129,
+              "tagCount": 4,
+              "resourceCount": 4
+            },
+            "calculatedAt": "2026-06-01T11:45:40.624Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.997,
+            "evidence": {
+              "modifiedAt": "2026-05-31T14:03:51.683880",
               "daysSinceModified": 1,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-05-30T08:24:04.439Z"
+            "calculatedAt": "2026-06-01T11:45:40.624Z"
           },
           {
             "dimension": "structure",
@@ -64,7 +754,7 @@
                 "JSON": 1
               }
             },
-            "calculatedAt": "2026-05-30T08:24:04.439Z"
+            "calculatedAt": "2026-06-01T11:45:40.624Z"
           },
           {
             "dimension": "accessibility",
@@ -74,10 +764,10 @@
               "checked": 4,
               "accessible": 4
             },
-            "calculatedAt": "2026-05-30T08:24:04.976Z"
+            "calculatedAt": "2026-06-01T11:45:41.243Z"
           }
         ],
-        "lastChecked": "2026-05-30T08:23:03.983Z"
+        "lastChecked": "2026-06-01T11:44:44.017Z"
       }
     },
     {
@@ -851,390 +1541,6 @@
       }
     },
     {
-      "datasetId": "catalogodatos-gub-uy:ecocentros",
-      "externalId": "ecocentros",
-      "modifiedAt": "2026-05-26T00:17:46.037114",
-      "lastScoredAt": "2026-05-26T09:46:08.910Z",
-      "score": {
-        "datasetId": "catalogodatos-gub-uy:ecocentros",
-        "title": "Ecocentros",
-        "organization": "Intendencia de Montevideo",
-        "overall": 0.984,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 461,
-              "tagCount": 5,
-              "resourceCount": 2
-            },
-            "calculatedAt": "2026-05-26T09:47:04.403Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.998,
-            "evidence": {
-              "modifiedAt": "2026-05-26T00:17:46.037114",
-              "daysSinceModified": 0,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-05-26T09:47:04.403Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 2,
-              "formatDistribution": {
-                "CSV": 2
-              }
-            },
-            "calculatedAt": "2026-05-26T09:47:04.403Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 2,
-              "checked": 2,
-              "accessible": 2
-            },
-            "calculatedAt": "2026-05-26T09:47:04.898Z"
-          }
-        ],
-        "lastChecked": "2026-05-26T09:46:08.910Z"
-      }
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:instituto-nacional-de-empleo-y-formacion-profesional-llamados_y_concursos",
-      "externalId": "instituto-nacional-de-empleo-y-formacion-profesional-llamados_y_concursos",
-      "modifiedAt": "2026-05-25T19:09:24.959957",
-      "lastScoredAt": "2026-05-26T09:46:08.910Z",
-      "score": {
-        "datasetId": "catalogodatos-gub-uy:instituto-nacional-de-empleo-y-formacion-profesional-llamados_y_concursos",
-        "title": "Llamados a servicos",
-        "organization": "Instituto Nacional de Empleo y Formación Profesional",
-        "overall": 0.984,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 94,
-              "tagCount": 3,
-              "resourceCount": 4
-            },
-            "calculatedAt": "2026-05-26T09:47:06.000Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.998,
-            "evidence": {
-              "modifiedAt": "2026-05-25T19:09:24.959957",
-              "daysSinceModified": 1,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-05-26T09:47:06.000Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "XLSX",
-                "CSV",
-                "XML",
-                "JSON"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 4,
-              "formatDistribution": {
-                "XLSX": 1,
-                "CSV": 1,
-                "XML": 1,
-                "JSON": 1
-              }
-            },
-            "calculatedAt": "2026-05-26T09:47:06.000Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 4,
-              "checked": 4,
-              "accessible": 4
-            },
-            "calculatedAt": "2026-05-26T09:47:06.690Z"
-          }
-        ],
-        "lastChecked": "2026-05-26T09:46:08.910Z"
-      }
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:correo-organigrama_correo",
-      "externalId": "correo-organigrama_correo",
-      "modifiedAt": "2026-05-25T14:56:08.538049",
-      "lastScoredAt": "2026-05-26T09:46:08.910Z",
-      "score": {
-        "datasetId": "catalogodatos-gub-uy:correo-organigrama_correo",
-        "title": "Organigrama",
-        "organization": "Correo Uruguayo",
-        "overall": 0.984,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 130,
-              "tagCount": 1,
-              "resourceCount": 4
-            },
-            "calculatedAt": "2026-05-26T09:47:07.205Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.997,
-            "evidence": {
-              "modifiedAt": "2026-05-25T14:56:08.538049",
-              "daysSinceModified": 1,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-05-26T09:47:07.205Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "JSON",
-                "CSV",
-                "XLSX",
-                "XML"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 4,
-              "formatDistribution": {
-                "JSON": 1,
-                "CSV": 1,
-                "XLSX": 1,
-                "XML": 1
-              }
-            },
-            "calculatedAt": "2026-05-26T09:47:07.205Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 4,
-              "checked": 4,
-              "accessible": 4
-            },
-            "calculatedAt": "2026-05-26T09:47:07.734Z"
-          }
-        ],
-        "lastChecked": "2026-05-26T09:46:08.910Z"
-      }
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:correo-autoridades_correo",
-      "externalId": "correo-autoridades_correo",
-      "modifiedAt": "2026-05-25T14:55:13.504325",
-      "lastScoredAt": "2026-05-26T09:46:08.910Z",
-      "score": {
-        "datasetId": "catalogodatos-gub-uy:correo-autoridades_correo",
-        "title": "Autoridades",
-        "organization": "Correo Uruguayo",
-        "overall": 0.984,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 249,
-              "tagCount": 1,
-              "resourceCount": 4
-            },
-            "calculatedAt": "2026-05-26T09:47:07.734Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.997,
-            "evidence": {
-              "modifiedAt": "2026-05-25T14:55:13.504325",
-              "daysSinceModified": 1,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-05-26T09:47:07.734Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "JSON",
-                "CSV",
-                "XLSX",
-                "XML"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 4,
-              "formatDistribution": {
-                "JSON": 1,
-                "CSV": 1,
-                "XLSX": 1,
-                "XML": 1
-              }
-            },
-            "calculatedAt": "2026-05-26T09:47:07.734Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 4,
-              "checked": 4,
-              "accessible": 4
-            },
-            "calculatedAt": "2026-05-26T09:47:08.255Z"
-          }
-        ],
-        "lastChecked": "2026-05-26T09:46:08.910Z"
-      }
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:correo-actas_resoluciones_correo",
-      "externalId": "correo-actas_resoluciones_correo",
-      "modifiedAt": "2026-05-25T14:54:45.532848",
-      "lastScoredAt": "2026-05-26T09:46:08.910Z",
-      "score": {
-        "datasetId": "catalogodatos-gub-uy:correo-actas_resoluciones_correo",
-        "title": "Actas y Resoluciones de Directorio",
-        "organization": "Correo Uruguayo",
-        "overall": 0.984,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 149,
-              "tagCount": 1,
-              "resourceCount": 4
-            },
-            "calculatedAt": "2026-05-26T09:47:08.255Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.997,
-            "evidence": {
-              "modifiedAt": "2026-05-25T14:54:45.532848",
-              "daysSinceModified": 1,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-05-26T09:47:08.255Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "JSON",
-                "CSV",
-                "XLSX",
-                "XML"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 4,
-              "formatDistribution": {
-                "JSON": 1,
-                "CSV": 1,
-                "XLSX": 1,
-                "XML": 1
-              }
-            },
-            "calculatedAt": "2026-05-26T09:47:08.255Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 4,
-              "checked": 4,
-              "accessible": 4
-            },
-            "calculatedAt": "2026-05-26T09:47:08.767Z"
-          }
-        ],
-        "lastChecked": "2026-05-26T09:46:08.910Z"
-      }
-    },
-    {
       "datasetId": "catalogodatos-gub-uy:entradas-a-espectaculos",
       "externalId": "entradas-a-espectaculos",
       "modifiedAt": "2026-05-22T20:21:01.403992",
@@ -1456,308 +1762,6 @@
       }
     },
     {
-      "datasetId": "catalogodatos-gub-uy:inia-pad-por-grilla",
-      "externalId": "inia-pad-por-grilla",
-      "modifiedAt": "2026-05-21T17:34:04.429438",
-      "lastScoredAt": "2026-05-29T09:37:42.439Z",
-      "score": {
-        "datasetId": "catalogodatos-gub-uy:inia-pad-por-grilla",
-        "title": "Porcentaje de agua disponible en el suelo por grilla (PAD)",
-        "organization": "INIA",
-        "overall": 0.977,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 692,
-              "tagCount": 6,
-              "resourceCount": 55
-            },
-            "calculatedAt": "2026-05-29T09:38:57.843Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.971,
-            "evidence": {
-              "modifiedAt": "2026-05-21T17:34:04.429438",
-              "daysSinceModified": 8,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-05-29T09:38:57.843Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "JSON",
-                "CSV",
-                "KML"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 55,
-              "formatDistribution": {
-                "JSON": 1,
-                "CSV": 27,
-                "KML": 27
-              }
-            },
-            "calculatedAt": "2026-05-29T09:38:57.843Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 55,
-              "checked": 55,
-              "accessible": 55
-            },
-            "calculatedAt": "2026-05-29T09:39:00.943Z"
-          }
-        ],
-        "lastChecked": "2026-05-29T09:37:42.439Z"
-      }
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:inia-ibh-por-grilla",
-      "externalId": "inia-ibh-por-grilla",
-      "modifiedAt": "2026-05-21T17:05:11.942269",
-      "lastScoredAt": "2026-05-29T09:37:42.439Z",
-      "score": {
-        "datasetId": "catalogodatos-gub-uy:inia-ibh-por-grilla",
-        "title": "Índice de bienestar hídrico por grilla (IBH)",
-        "organization": "INIA",
-        "overall": 0.977,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 698,
-              "tagCount": 6,
-              "resourceCount": 55
-            },
-            "calculatedAt": "2026-05-29T09:39:00.943Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.971,
-            "evidence": {
-              "modifiedAt": "2026-05-21T17:05:11.942269",
-              "daysSinceModified": 8,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-05-29T09:39:00.943Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "JSON",
-                "CSV",
-                "KML"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 55,
-              "formatDistribution": {
-                "JSON": 1,
-                "CSV": 27,
-                "KML": 27
-              }
-            },
-            "calculatedAt": "2026-05-29T09:39:00.943Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 55,
-              "checked": 55,
-              "accessible": 55
-            },
-            "calculatedAt": "2026-05-29T09:39:04.530Z"
-          }
-        ],
-        "lastChecked": "2026-05-29T09:37:42.439Z"
-      }
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:inia-anr-por-grilla",
-      "externalId": "inia-anr-por-grilla",
-      "modifiedAt": "2026-05-21T17:03:55.274373",
-      "lastScoredAt": "2026-05-29T09:37:42.439Z",
-      "score": {
-        "datasetId": "catalogodatos-gub-uy:inia-anr-por-grilla",
-        "title": "Agua no retenida en el suelo por grilla (ANR)",
-        "organization": "INIA",
-        "overall": 0.977,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 716,
-              "tagCount": 6,
-              "resourceCount": 55
-            },
-            "calculatedAt": "2026-05-29T09:39:04.530Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.971,
-            "evidence": {
-              "modifiedAt": "2026-05-21T17:03:55.274373",
-              "daysSinceModified": 8,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-05-29T09:39:04.530Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "JSON",
-                "CSV",
-                "KML"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 55,
-              "formatDistribution": {
-                "JSON": 1,
-                "CSV": 27,
-                "KML": 27
-              }
-            },
-            "calculatedAt": "2026-05-29T09:39:04.530Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 55,
-              "checked": 55,
-              "accessible": 55
-            },
-            "calculatedAt": "2026-05-29T09:39:08.728Z"
-          }
-        ],
-        "lastChecked": "2026-05-29T09:37:42.439Z"
-      }
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:inia-precipitacion-temps-extremas-sg",
-      "externalId": "inia-precipitacion-temps-extremas-sg",
-      "modifiedAt": "2026-05-21T16:52:44.098141",
-      "lastScoredAt": "2026-05-29T09:37:42.439Z",
-      "score": {
-        "datasetId": "catalogodatos-gub-uy:inia-precipitacion-temps-extremas-sg",
-        "title": "Precipitación y temperaturas extremas - Estación Salto Grande",
-        "organization": "INIA",
-        "overall": 0.977,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 187,
-              "tagCount": 6,
-              "resourceCount": 58
-            },
-            "calculatedAt": "2026-05-29T09:39:08.728Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.971,
-            "evidence": {
-              "modifiedAt": "2026-05-21T16:52:44.098141",
-              "daysSinceModified": 8,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-05-29T09:39:08.728Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "JSON",
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 58,
-              "formatDistribution": {
-                "JSON": 1,
-                "CSV": 57
-              }
-            },
-            "calculatedAt": "2026-05-29T09:39:08.728Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 58,
-              "checked": 58,
-              "accessible": 58
-            },
-            "calculatedAt": "2026-05-29T09:39:11.459Z"
-          }
-        ],
-        "lastChecked": "2026-05-29T09:37:42.439Z"
-      }
-    },
-    {
       "datasetId": "catalogodatos-gub-uy:inia-precipitacion-temps-extremas-tyt",
       "externalId": "inia-precipitacion-temps-extremas-tyt",
       "modifiedAt": "2026-05-21T16:52:34.287187",
@@ -1826,228 +1830,6 @@
               "accessible": 57
             },
             "calculatedAt": "2026-05-29T09:39:14.100Z"
-          }
-        ],
-        "lastChecked": "2026-05-29T09:37:42.439Z"
-      }
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:inia-precipitacion-temps-extremas-tb",
-      "externalId": "inia-precipitacion-temps-extremas-tb",
-      "modifiedAt": "2026-05-21T16:52:26.618851",
-      "lastScoredAt": "2026-05-29T09:37:42.439Z",
-      "score": {
-        "datasetId": "catalogodatos-gub-uy:inia-precipitacion-temps-extremas-tb",
-        "title": "Precipitación y temperaturas extremas - Estación Tacuarembó",
-        "organization": "INIA",
-        "overall": 0.977,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 186,
-              "tagCount": 6,
-              "resourceCount": 50
-            },
-            "calculatedAt": "2026-05-29T09:39:14.100Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.971,
-            "evidence": {
-              "modifiedAt": "2026-05-21T16:52:26.618851",
-              "daysSinceModified": 8,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-05-29T09:39:14.100Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "JSON",
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 50,
-              "formatDistribution": {
-                "JSON": 1,
-                "CSV": 49
-              }
-            },
-            "calculatedAt": "2026-05-29T09:39:14.100Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 50,
-              "checked": 50,
-              "accessible": 50
-            },
-            "calculatedAt": "2026-05-29T09:39:16.184Z"
-          }
-        ],
-        "lastChecked": "2026-05-29T09:37:42.439Z"
-      }
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:inia-precipitacion-temps-extremas-le",
-      "externalId": "inia-precipitacion-temps-extremas-le",
-      "modifiedAt": "2026-05-21T16:52:19.386096",
-      "lastScoredAt": "2026-05-29T09:37:42.439Z",
-      "score": {
-        "datasetId": "catalogodatos-gub-uy:inia-precipitacion-temps-extremas-le",
-        "title": "Precipitación y temperaturas extremas - Estación La Estanzuela",
-        "organization": "INIA",
-        "overall": 0.977,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 188,
-              "tagCount": 6,
-              "resourceCount": 63
-            },
-            "calculatedAt": "2026-05-29T09:39:16.184Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.971,
-            "evidence": {
-              "modifiedAt": "2026-05-21T16:52:19.386096",
-              "daysSinceModified": 8,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-05-29T09:39:16.184Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "JSON",
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 63,
-              "formatDistribution": {
-                "JSON": 1,
-                "CSV": 62
-              }
-            },
-            "calculatedAt": "2026-05-29T09:39:16.184Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 63,
-              "checked": 63,
-              "accessible": 63
-            },
-            "calculatedAt": "2026-05-29T09:39:18.900Z"
-          }
-        ],
-        "lastChecked": "2026-05-29T09:37:42.439Z"
-      }
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:inia-precipitacion-temps-extremas-lb",
-      "externalId": "inia-precipitacion-temps-extremas-lb",
-      "modifiedAt": "2026-05-21T16:52:12.093806",
-      "lastScoredAt": "2026-05-29T09:37:42.439Z",
-      "score": {
-        "datasetId": "catalogodatos-gub-uy:inia-precipitacion-temps-extremas-lb",
-        "title": "Precipitación y temperaturas extremas - Estación Las Brujas",
-        "organization": "INIA",
-        "overall": 0.977,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 175,
-              "tagCount": 6,
-              "resourceCount": 56
-            },
-            "calculatedAt": "2026-05-29T09:39:18.900Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.971,
-            "evidence": {
-              "modifiedAt": "2026-05-21T16:52:12.093806",
-              "daysSinceModified": 8,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-05-29T09:39:18.900Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "JSON",
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 56,
-              "formatDistribution": {
-                "JSON": 1,
-                "CSV": 55
-              }
-            },
-            "calculatedAt": "2026-05-29T09:39:18.900Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 56,
-              "checked": 56,
-              "accessible": 56
-            },
-            "calculatedAt": "2026-05-29T09:39:21.798Z"
           }
         ],
         "lastChecked": "2026-05-29T09:37:42.439Z"
@@ -4724,78 +4506,6 @@
       }
     },
     {
-      "datasetId": "catalogodatos-gub-uy:arce-registro-unico-de-proveedores-del-estado-rupe-2026",
-      "externalId": "arce-registro-unico-de-proveedores-del-estado-rupe-2026",
-      "modifiedAt": "2026-05-05T13:32:20.883431",
-      "lastScoredAt": "2026-05-28T09:55:26.017Z",
-      "score": {
-        "datasetId": "catalogodatos-gub-uy:arce-registro-unico-de-proveedores-del-estado-rupe-2026",
-        "title": "Registro Unico de Proveedores del Estado (RUPE) - 2026",
-        "organization": "ARCE",
-        "overall": 0.963,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 269,
-              "tagCount": 4,
-              "resourceCount": 5
-            },
-            "calculatedAt": "2026-05-28T09:56:04.570Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.916,
-            "evidence": {
-              "modifiedAt": "2026-05-05T13:32:20.883431",
-              "daysSinceModified": 23,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-05-28T09:56:04.570Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 5,
-              "formatDistribution": {
-                "CSV": 5
-              }
-            },
-            "calculatedAt": "2026-05-28T09:56:04.570Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 5,
-              "checked": 5,
-              "accessible": 5
-            },
-            "calculatedAt": "2026-05-28T09:56:05.253Z"
-          }
-        ],
-        "lastChecked": "2026-05-28T09:55:26.017Z"
-      }
-    },
-    {
       "datasetId": "catalogodatos-gub-uy:banco-de-la-republica-oriental-del-uruguay-organigrama",
       "externalId": "banco-de-la-republica-oriental-del-uruguay-organigrama",
       "modifiedAt": "2026-05-04T17:36:11.910833",
@@ -5030,15 +4740,15 @@
       }
     },
     {
-      "datasetId": "catalogodatos-gub-uy:reclamos-de-arbolado-registrados-en-el-sistema-unico-de-reclamos",
-      "externalId": "reclamos-de-arbolado-registrados-en-el-sistema-unico-de-reclamos",
-      "modifiedAt": "2026-05-02T00:20:56.617765",
-      "lastScoredAt": "2026-05-30T08:23:03.983Z",
+      "datasetId": "catalogodatos-gub-uy:montevideo-libre",
+      "externalId": "montevideo-libre",
+      "modifiedAt": "2026-05-04T02:20:04.076899",
+      "lastScoredAt": "2026-06-01T11:44:44.017Z",
       "score": {
-        "datasetId": "catalogodatos-gub-uy:reclamos-de-arbolado-registrados-en-el-sistema-unico-de-reclamos",
-        "title": "Solicitudes de arbolado registrados en el Sistema Unico de Reclamos",
+        "datasetId": "catalogodatos-gub-uy:montevideo-libre",
+        "title": "Programa Montevideo Libre",
         "organization": "Intendencia de Montevideo",
-        "overall": 0.787,
+        "overall": 0.958,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -5055,52 +4765,52 @@
                 "createdAt"
               ],
               "fieldsMissing": [],
-              "descriptionLength": 183,
-              "tagCount": 1,
-              "resourceCount": 2
+              "descriptionLength": 659,
+              "tagCount": 9,
+              "resourceCount": 15
             },
-            "calculatedAt": "2026-05-30T08:24:12.566Z"
+            "calculatedAt": "2026-06-01T11:45:41.243Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.897,
+            "score": 0.896,
             "evidence": {
-              "modifiedAt": "2026-05-02T00:20:56.617765",
+              "modifiedAt": "2026-05-04T02:20:04.076899",
               "daysSinceModified": 28,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-05-30T08:24:12.566Z"
+            "calculatedAt": "2026-06-01T11:45:41.243Z"
           },
           {
             "dimension": "structure",
-            "score": 0.4,
+            "score": 0.95,
             "evidence": {
               "formats": [
                 "TXT",
-                "ZIP"
+                "CSV"
               ],
-              "bestFormat": "ZIP",
-              "bestFormatScore": 0.4,
-              "resourceCount": 2,
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 15,
               "formatDistribution": {
                 "TXT": 1,
-                "ZIP": 1
+                "CSV": 14
               }
             },
-            "calculatedAt": "2026-05-30T08:24:12.567Z"
+            "calculatedAt": "2026-06-01T11:45:41.243Z"
           },
           {
             "dimension": "accessibility",
             "score": 1,
             "evidence": {
-              "resourceCount": 2,
-              "checked": 2,
-              "accessible": 2
+              "resourceCount": 15,
+              "checked": 15,
+              "accessible": 15
             },
-            "calculatedAt": "2026-05-30T08:24:13.305Z"
+            "calculatedAt": "2026-06-01T11:45:43.097Z"
           }
         ],
-        "lastChecked": "2026-05-30T08:23:03.983Z"
+        "lastChecked": "2026-06-01T11:44:44.017Z"
       }
     },
     {
@@ -16129,86 +15839,6 @@
               "accessible": 13
             },
             "calculatedAt": "2026-05-28T09:58:48.576Z"
-          }
-        ],
-        "lastChecked": "2026-05-28T09:55:26.017Z"
-      }
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:presidencia-de-la-republica-intervenciones_en_infraestructura_de_servicios_publicos_en_uruguay",
-      "externalId": "presidencia-de-la-republica-intervenciones_en_infraestructura_de_servicios_publicos_en_uruguay",
-      "modifiedAt": "2025-12-19T17:12:23.686202",
-      "lastScoredAt": "2026-05-28T09:55:26.017Z",
-      "score": {
-        "datasetId": "catalogodatos-gub-uy:presidencia-de-la-republica-intervenciones_en_infraestructura_de_servicios_publicos_en_uruguay",
-        "title": "Intervenciones en infraestructura de servicios públicos en Uruguay",
-        "organization": "Presidencia de la República",
-        "overall": 0.87,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 652,
-              "tagCount": 4,
-              "resourceCount": 5
-            },
-            "calculatedAt": "2026-05-28T09:58:48.576Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.541,
-            "evidence": {
-              "modifiedAt": "2025-12-19T17:12:23.686202",
-              "daysSinceModified": 160,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-05-28T09:58:48.576Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "XLSX",
-                "CSV",
-                "XML",
-                "JSON",
-                "GEOJSON"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 5,
-              "formatDistribution": {
-                "XLSX": 1,
-                "CSV": 1,
-                "XML": 1,
-                "JSON": 1,
-                "GEOJSON": 1
-              }
-            },
-            "calculatedAt": "2026-05-28T09:58:48.576Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 5,
-              "checked": 5,
-              "accessible": 5
-            },
-            "calculatedAt": "2026-05-28T09:58:49.218Z"
           }
         ],
         "lastChecked": "2026-05-28T09:55:26.017Z"
@@ -204189,84 +203819,10 @@
       }
     },
     {
-      "datasetId": "catalogodatos-gub-uy:ide-ejes-vias-circulacion",
-      "externalId": "ide-ejes-vias-circulacion",
-      "modifiedAt": "2026-06-01T06:33:42.928659",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
-      "score": {
-        "datasetId": "catalogodatos-gub-uy:ide-ejes-vias-circulacion",
-        "title": "Ejes de vías de circulación",
-        "organization": "IDE",
-        "overall": 0.984,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 240,
-              "tagCount": 3,
-              "resourceCount": 20
-            },
-            "calculatedAt": "2026-06-01T11:44:44.017Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.999,
-            "evidence": {
-              "modifiedAt": "2026-06-01T06:33:42.928659",
-              "daysSinceModified": 0,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-06-01T11:44:44.017Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "JSON",
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 20,
-              "formatDistribution": {
-                "JSON": 1,
-                "CSV": 19
-              }
-            },
-            "calculatedAt": "2026-06-01T11:44:44.017Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 20,
-              "checked": 20,
-              "accessible": 20
-            },
-            "calculatedAt": "2026-06-01T11:44:45.161Z"
-          }
-        ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
-      }
-    },
-    {
       "datasetId": "catalogodatos-gub-uy:estacion-de-transferencia-de-residuos-solidos-urbanos",
       "externalId": "estacion-de-transferencia-de-residuos-solidos-urbanos",
-      "modifiedAt": "2026-06-01T06:18:42.900983",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "modifiedAt": "2026-06-02T08:18:31.844671",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
       "score": {
         "datasetId": "catalogodatos-gub-uy:estacion-de-transferencia-de-residuos-solidos-urbanos",
         "title": "Estación de Transferencia de Residuos Sólidos Urbanos",
@@ -204292,17 +203848,17 @@
               "tagCount": 4,
               "resourceCount": 4
             },
-            "calculatedAt": "2026-06-01T11:44:45.161Z"
+            "calculatedAt": "2026-06-02T10:13:55.715Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.999,
+            "score": 1,
             "evidence": {
-              "modifiedAt": "2026-06-01T06:18:42.900983",
+              "modifiedAt": "2026-06-02T08:18:31.844671",
               "daysSinceModified": 0,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-06-01T11:44:45.161Z"
+            "calculatedAt": "2026-06-02T10:13:55.715Z"
           },
           {
             "dimension": "structure",
@@ -204318,7 +203874,7 @@
                 "CSV": 4
               }
             },
-            "calculatedAt": "2026-06-01T11:44:45.161Z"
+            "calculatedAt": "2026-06-02T10:13:55.715Z"
           },
           {
             "dimension": "accessibility",
@@ -204328,17 +203884,17 @@
               "checked": 4,
               "accessible": 4
             },
-            "calculatedAt": "2026-06-01T11:44:47.069Z"
+            "calculatedAt": "2026-06-02T10:13:57.703Z"
           }
         ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
+        "lastChecked": "2026-06-02T10:13:55.715Z"
       }
     },
     {
       "datasetId": "catalogodatos-gub-uy:rotulado-de-alimentos",
       "externalId": "rotulado-de-alimentos",
-      "modifiedAt": "2026-06-01T06:18:42.121588",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "modifiedAt": "2026-06-02T08:18:31.113806",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
       "score": {
         "datasetId": "catalogodatos-gub-uy:rotulado-de-alimentos",
         "title": "Rotulado de alimentos",
@@ -204364,17 +203920,17 @@
               "tagCount": 1,
               "resourceCount": 3
             },
-            "calculatedAt": "2026-06-01T11:44:47.069Z"
+            "calculatedAt": "2026-06-02T10:13:57.703Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.999,
+            "score": 1,
             "evidence": {
-              "modifiedAt": "2026-06-01T06:18:42.121588",
+              "modifiedAt": "2026-06-02T08:18:31.113806",
               "daysSinceModified": 0,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-06-01T11:44:47.069Z"
+            "calculatedAt": "2026-06-02T10:13:57.703Z"
           },
           {
             "dimension": "structure",
@@ -204390,7 +203946,7 @@
                 "CSV": 3
               }
             },
-            "calculatedAt": "2026-06-01T11:44:47.069Z"
+            "calculatedAt": "2026-06-02T10:13:57.703Z"
           },
           {
             "dimension": "accessibility",
@@ -204400,22 +203956,22 @@
               "checked": 3,
               "accessible": 3
             },
-            "calculatedAt": "2026-06-01T11:44:48.415Z"
+            "calculatedAt": "2026-06-02T10:13:58.762Z"
           }
         ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
+        "lastChecked": "2026-06-02T10:13:55.715Z"
       }
     },
     {
       "datasetId": "catalogodatos-gub-uy:velocidad-promedio-vehicular-en-las-principales-avenidas-de-montevideo",
       "externalId": "velocidad-promedio-vehicular-en-las-principales-avenidas-de-montevideo",
-      "modifiedAt": "2026-06-01T06:18:22.940236",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "modifiedAt": "2026-06-02T08:18:11.800279",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
       "score": {
         "datasetId": "catalogodatos-gub-uy:velocidad-promedio-vehicular-en-las-principales-avenidas-de-montevideo",
         "title": "Velocidad promedio vehicular en las principales avenidas de Montevideo",
         "organization": "Intendencia de Montevideo",
-        "overall": 0.927,
+        "overall": 0.928,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -204436,17 +203992,17 @@
               "tagCount": 4,
               "resourceCount": 66
             },
-            "calculatedAt": "2026-06-01T11:44:48.415Z"
+            "calculatedAt": "2026-06-02T10:13:58.762Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.999,
+            "score": 1,
             "evidence": {
-              "modifiedAt": "2026-06-01T06:18:22.940236",
+              "modifiedAt": "2026-06-02T08:18:11.800279",
               "daysSinceModified": 0,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-06-01T11:44:48.415Z"
+            "calculatedAt": "2026-06-02T10:13:58.762Z"
           },
           {
             "dimension": "structure",
@@ -204466,7 +204022,7 @@
                 "CSV ZIP": 9
               }
             },
-            "calculatedAt": "2026-06-01T11:44:48.415Z"
+            "calculatedAt": "2026-06-02T10:13:58.762Z"
           },
           {
             "dimension": "accessibility",
@@ -204476,22 +204032,22 @@
               "checked": 66,
               "accessible": 54
             },
-            "calculatedAt": "2026-06-01T11:44:58.750Z"
+            "calculatedAt": "2026-06-02T10:14:08.910Z"
           }
         ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
+        "lastChecked": "2026-06-02T10:13:55.715Z"
       }
     },
     {
       "datasetId": "catalogodatos-gub-uy:vias-de-montevideo-con-cabezales-de-numeracion-significado-tipo-y-titulo",
       "externalId": "vias-de-montevideo-con-cabezales-de-numeracion-significado-tipo-y-titulo",
-      "modifiedAt": "2026-06-01T06:18:20.062402",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "modifiedAt": "2026-06-02T08:18:08.458757",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
       "score": {
         "datasetId": "catalogodatos-gub-uy:vias-de-montevideo-con-cabezales-de-numeracion-significado-tipo-y-titulo",
         "title": "Listado de calles de Montevideo con información de numeración, significado, tipo, título, categoría y subcategoría",
         "organization": "Intendencia de Montevideo",
-        "overall": 0.953,
+        "overall": 0.984,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -204512,17 +204068,17 @@
               "tagCount": 2,
               "resourceCount": 10
             },
-            "calculatedAt": "2026-06-01T11:44:58.750Z"
+            "calculatedAt": "2026-06-02T10:14:08.910Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.999,
+            "score": 1,
             "evidence": {
-              "modifiedAt": "2026-06-01T06:18:20.062402",
+              "modifiedAt": "2026-06-02T08:18:08.458757",
               "daysSinceModified": 0,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-06-01T11:44:58.750Z"
+            "calculatedAt": "2026-06-02T10:14:08.910Z"
           },
           {
             "dimension": "structure",
@@ -204540,101 +204096,27 @@
                 "TXT": 5
               }
             },
-            "calculatedAt": "2026-06-01T11:44:58.750Z"
+            "calculatedAt": "2026-06-02T10:14:08.910Z"
           },
           {
             "dimension": "accessibility",
-            "score": 0.9,
+            "score": 1,
             "evidence": {
               "resourceCount": 10,
               "checked": 10,
-              "accessible": 9
+              "accessible": 10
             },
-            "calculatedAt": "2026-06-01T11:45:03.753Z"
+            "calculatedAt": "2026-06-02T10:14:09.905Z"
           }
         ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
-      }
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:reclamos-registrados-en-el-sistema-unico-de-reclamos-de-la-intendencia-de-montevideo",
-      "externalId": "reclamos-registrados-en-el-sistema-unico-de-reclamos-de-la-intendencia-de-montevideo",
-      "modifiedAt": "2026-06-01T06:18:18.818054",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
-      "score": {
-        "datasetId": "catalogodatos-gub-uy:reclamos-registrados-en-el-sistema-unico-de-reclamos-de-la-intendencia-de-montevideo",
-        "title": "Reclamos registrados en el Sistema Unico de Reclamos de la Intendencia de Montevideo",
-        "organization": "Intendencia de Montevideo",
-        "overall": 0.984,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 1609,
-              "tagCount": 4,
-              "resourceCount": 2
-            },
-            "calculatedAt": "2026-06-01T11:45:03.753Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.999,
-            "evidence": {
-              "modifiedAt": "2026-06-01T06:18:18.818054",
-              "daysSinceModified": 0,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-06-01T11:45:03.753Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "TXT",
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 2,
-              "formatDistribution": {
-                "TXT": 1,
-                "CSV": 1
-              }
-            },
-            "calculatedAt": "2026-06-01T11:45:03.753Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 2,
-              "checked": 2,
-              "accessible": 2
-            },
-            "calculatedAt": "2026-06-01T11:45:04.347Z"
-          }
-        ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
+        "lastChecked": "2026-06-02T10:13:55.715Z"
       }
     },
     {
       "datasetId": "catalogodatos-gub-uy:dioxido-de-nitrogeno",
       "externalId": "dioxido-de-nitrogeno",
-      "modifiedAt": "2026-06-01T06:18:17.616072",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "modifiedAt": "2026-06-02T08:18:05.683170",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
       "score": {
         "datasetId": "catalogodatos-gub-uy:dioxido-de-nitrogeno",
         "title": "Dióxido de Nitrógeno",
@@ -204660,17 +204142,17 @@
               "tagCount": 2,
               "resourceCount": 9
             },
-            "calculatedAt": "2026-06-01T11:45:04.347Z"
+            "calculatedAt": "2026-06-02T10:14:09.905Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.999,
+            "score": 1,
             "evidence": {
-              "modifiedAt": "2026-06-01T06:18:17.616072",
+              "modifiedAt": "2026-06-02T08:18:05.683170",
               "daysSinceModified": 0,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-06-01T11:45:04.347Z"
+            "calculatedAt": "2026-06-02T10:14:09.905Z"
           },
           {
             "dimension": "structure",
@@ -204686,7 +204168,7 @@
                 "CSV": 9
               }
             },
-            "calculatedAt": "2026-06-01T11:45:04.347Z"
+            "calculatedAt": "2026-06-02T10:14:09.905Z"
           },
           {
             "dimension": "accessibility",
@@ -204696,22 +204178,22 @@
               "checked": 9,
               "accessible": 9
             },
-            "calculatedAt": "2026-06-01T11:45:06.206Z"
+            "calculatedAt": "2026-06-02T10:14:10.750Z"
           }
         ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
+        "lastChecked": "2026-06-02T10:13:55.715Z"
       }
     },
     {
       "datasetId": "catalogodatos-gub-uy:datos-por-estacion-pm-2-5",
       "externalId": "datos-por-estacion-pm-2-5",
-      "modifiedAt": "2026-06-01T06:18:15.847496",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "modifiedAt": "2026-06-02T08:18:03.635846",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
       "score": {
         "datasetId": "catalogodatos-gub-uy:datos-por-estacion-pm-2-5",
         "title": "Monitoreo de material particulado (PM 2.5)",
         "organization": "Intendencia de Montevideo",
-        "overall": 0.949,
+        "overall": 0.95,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -204732,17 +204214,17 @@
               "tagCount": 3,
               "resourceCount": 9
             },
-            "calculatedAt": "2026-06-01T11:45:06.206Z"
+            "calculatedAt": "2026-06-02T10:14:10.750Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.999,
+            "score": 1,
             "evidence": {
-              "modifiedAt": "2026-06-01T06:18:15.847496",
+              "modifiedAt": "2026-06-02T08:18:03.635846",
               "daysSinceModified": 0,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-06-01T11:45:06.206Z"
+            "calculatedAt": "2026-06-02T10:14:10.750Z"
           },
           {
             "dimension": "structure",
@@ -204760,7 +204242,7 @@
                 "CSV": 8
               }
             },
-            "calculatedAt": "2026-06-01T11:45:06.206Z"
+            "calculatedAt": "2026-06-02T10:14:10.750Z"
           },
           {
             "dimension": "accessibility",
@@ -204770,17 +204252,17 @@
               "checked": 9,
               "accessible": 8
             },
-            "calculatedAt": "2026-06-01T11:45:07.798Z"
+            "calculatedAt": "2026-06-02T10:14:12.106Z"
           }
         ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
+        "lastChecked": "2026-06-02T10:13:55.715Z"
       }
     },
     {
       "datasetId": "catalogodatos-gub-uy:monitoreo-de-agua-de-playas",
       "externalId": "monitoreo-de-agua-de-playas",
-      "modifiedAt": "2026-06-01T06:18:14.501992",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "modifiedAt": "2026-06-02T08:18:01.965291",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
       "score": {
         "datasetId": "catalogodatos-gub-uy:monitoreo-de-agua-de-playas",
         "title": "Monitoreo de agua de playas",
@@ -204806,17 +204288,17 @@
               "tagCount": 5,
               "resourceCount": 3
             },
-            "calculatedAt": "2026-06-01T11:45:07.798Z"
+            "calculatedAt": "2026-06-02T10:14:12.106Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.999,
+            "score": 1,
             "evidence": {
-              "modifiedAt": "2026-06-01T06:18:14.501992",
+              "modifiedAt": "2026-06-02T08:18:01.965291",
               "daysSinceModified": 0,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-06-01T11:45:07.798Z"
+            "calculatedAt": "2026-06-02T10:14:12.106Z"
           },
           {
             "dimension": "structure",
@@ -204834,7 +204316,7 @@
                 "CSV": 2
               }
             },
-            "calculatedAt": "2026-06-01T11:45:07.798Z"
+            "calculatedAt": "2026-06-02T10:14:12.106Z"
           },
           {
             "dimension": "accessibility",
@@ -204844,17 +204326,17 @@
               "checked": 3,
               "accessible": 3
             },
-            "calculatedAt": "2026-06-01T11:45:08.630Z"
+            "calculatedAt": "2026-06-02T10:14:13.174Z"
           }
         ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
+        "lastChecked": "2026-06-02T10:13:55.715Z"
       }
     },
     {
       "datasetId": "catalogodatos-gub-uy:aliviaderos",
       "externalId": "aliviaderos",
-      "modifiedAt": "2026-06-01T06:18:13.517478",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "modifiedAt": "2026-06-02T08:18:00.413895",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
       "score": {
         "datasetId": "catalogodatos-gub-uy:aliviaderos",
         "title": "Aliviaderos",
@@ -204880,17 +204362,17 @@
               "tagCount": 2,
               "resourceCount": 6
             },
-            "calculatedAt": "2026-06-01T11:45:08.630Z"
+            "calculatedAt": "2026-06-02T10:14:13.174Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.999,
+            "score": 1,
             "evidence": {
-              "modifiedAt": "2026-06-01T06:18:13.517478",
+              "modifiedAt": "2026-06-02T08:18:00.413895",
               "daysSinceModified": 0,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-06-01T11:45:08.630Z"
+            "calculatedAt": "2026-06-02T10:14:13.174Z"
           },
           {
             "dimension": "structure",
@@ -204906,7 +204388,7 @@
                 "CSV": 6
               }
             },
-            "calculatedAt": "2026-06-01T11:45:08.630Z"
+            "calculatedAt": "2026-06-02T10:14:13.174Z"
           },
           {
             "dimension": "accessibility",
@@ -204916,22 +204398,22 @@
               "checked": 6,
               "accessible": 6
             },
-            "calculatedAt": "2026-06-01T11:45:10.446Z"
+            "calculatedAt": "2026-06-02T10:14:13.997Z"
           }
         ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
+        "lastChecked": "2026-06-02T10:13:55.715Z"
       }
     },
     {
       "datasetId": "catalogodatos-gub-uy:conteo-vehicular-en-las-principales-avenidas-de-montevideo",
       "externalId": "conteo-vehicular-en-las-principales-avenidas-de-montevideo",
-      "modifiedAt": "2026-06-01T06:17:49.214492",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "modifiedAt": "2026-06-02T08:17:37.206804",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
       "score": {
         "datasetId": "catalogodatos-gub-uy:conteo-vehicular-en-las-principales-avenidas-de-montevideo",
         "title": "Conteo vehicular en las principales avenidas de Montevideo",
         "organization": "Intendencia de Montevideo",
-        "overall": 0.95,
+        "overall": 0.951,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -204952,17 +204434,17 @@
               "tagCount": 4,
               "resourceCount": 83
             },
-            "calculatedAt": "2026-06-01T11:45:10.446Z"
+            "calculatedAt": "2026-06-02T10:14:13.997Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.999,
+            "score": 1,
             "evidence": {
-              "modifiedAt": "2026-06-01T06:17:49.214492",
+              "modifiedAt": "2026-06-02T08:17:37.206804",
               "daysSinceModified": 0,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-06-01T11:45:10.446Z"
+            "calculatedAt": "2026-06-02T10:14:13.997Z"
           },
           {
             "dimension": "structure",
@@ -204982,7 +204464,7 @@
                 "CSV": 68
               }
             },
-            "calculatedAt": "2026-06-01T11:45:10.446Z"
+            "calculatedAt": "2026-06-02T10:14:13.997Z"
           },
           {
             "dimension": "accessibility",
@@ -204992,17 +204474,17 @@
               "checked": 83,
               "accessible": 74
             },
-            "calculatedAt": "2026-06-01T11:45:17.423Z"
+            "calculatedAt": "2026-06-02T10:14:19.766Z"
           }
         ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
+        "lastChecked": "2026-06-02T10:13:55.715Z"
       }
     },
     {
       "datasetId": "catalogodatos-gub-uy:antecedentes-de-nomenclatura-de-vias-de-transito-de-montevideo",
       "externalId": "antecedentes-de-nomenclatura-de-vias-de-transito-de-montevideo",
-      "modifiedAt": "2026-06-01T06:17:47.924323",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "modifiedAt": "2026-06-02T08:17:35.663277",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
       "score": {
         "datasetId": "catalogodatos-gub-uy:antecedentes-de-nomenclatura-de-vias-de-transito-de-montevideo",
         "title": "Antecedentes de nomenclatura de vías de tránsito de Montevideo",
@@ -205028,17 +204510,17 @@
               "tagCount": 2,
               "resourceCount": 2
             },
-            "calculatedAt": "2026-06-01T11:45:17.423Z"
+            "calculatedAt": "2026-06-02T10:14:19.766Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.999,
+            "score": 1,
             "evidence": {
-              "modifiedAt": "2026-06-01T06:17:47.924323",
+              "modifiedAt": "2026-06-02T08:17:35.663277",
               "daysSinceModified": 0,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-06-01T11:45:17.423Z"
+            "calculatedAt": "2026-06-02T10:14:19.766Z"
           },
           {
             "dimension": "structure",
@@ -205056,7 +204538,7 @@
                 "CSV": 1
               }
             },
-            "calculatedAt": "2026-06-01T11:45:17.423Z"
+            "calculatedAt": "2026-06-02T10:14:19.766Z"
           },
           {
             "dimension": "accessibility",
@@ -205066,17 +204548,17 @@
               "checked": 2,
               "accessible": 2
             },
-            "calculatedAt": "2026-06-01T11:45:18.263Z"
+            "calculatedAt": "2026-06-02T10:14:20.583Z"
           }
         ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
+        "lastChecked": "2026-06-02T10:13:55.715Z"
       }
     },
     {
       "datasetId": "catalogodatos-gub-uy:aceras-y-cabezales-de-numeracion",
       "externalId": "aceras-y-cabezales-de-numeracion",
-      "modifiedAt": "2026-06-01T06:17:47.182158",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "modifiedAt": "2026-06-02T08:17:34.754420",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
       "score": {
         "datasetId": "catalogodatos-gub-uy:aceras-y-cabezales-de-numeracion",
         "title": "Aceras y cabezales de numeración",
@@ -205102,17 +204584,17 @@
               "tagCount": 3,
               "resourceCount": 2
             },
-            "calculatedAt": "2026-06-01T11:45:18.264Z"
+            "calculatedAt": "2026-06-02T10:14:20.583Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.999,
+            "score": 1,
             "evidence": {
-              "modifiedAt": "2026-06-01T06:17:47.182158",
+              "modifiedAt": "2026-06-02T08:17:34.754420",
               "daysSinceModified": 0,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-06-01T11:45:18.264Z"
+            "calculatedAt": "2026-06-02T10:14:20.583Z"
           },
           {
             "dimension": "structure",
@@ -205130,7 +204612,7 @@
                 "TXT": 1
               }
             },
-            "calculatedAt": "2026-06-01T11:45:18.264Z"
+            "calculatedAt": "2026-06-02T10:14:20.583Z"
           },
           {
             "dimension": "accessibility",
@@ -205140,17 +204622,17 @@
               "checked": 2,
               "accessible": 2
             },
-            "calculatedAt": "2026-06-01T11:45:18.846Z"
+            "calculatedAt": "2026-06-02T10:14:21.285Z"
           }
         ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
+        "lastChecked": "2026-06-02T10:13:55.715Z"
       }
     },
     {
       "datasetId": "catalogodatos-gub-uy:monitoreo-de-calidad-en-los-cuerpos-de-agua",
       "externalId": "monitoreo-de-calidad-en-los-cuerpos-de-agua",
-      "modifiedAt": "2026-06-01T06:17:46.700224",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "modifiedAt": "2026-06-02T08:17:34.233055",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
       "score": {
         "datasetId": "catalogodatos-gub-uy:monitoreo-de-calidad-en-los-cuerpos-de-agua",
         "title": "Monitoreo de calidad en los cuerpos de agua",
@@ -205176,17 +204658,17 @@
               "tagCount": 6,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-06-01T11:45:18.846Z"
+            "calculatedAt": "2026-06-02T10:14:21.285Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.999,
+            "score": 1,
             "evidence": {
-              "modifiedAt": "2026-06-01T06:17:46.700224",
+              "modifiedAt": "2026-06-02T08:17:34.233055",
               "daysSinceModified": 0,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-06-01T11:45:18.846Z"
+            "calculatedAt": "2026-06-02T10:14:21.285Z"
           },
           {
             "dimension": "structure",
@@ -205202,7 +204684,7 @@
                 "CSV": 1
               }
             },
-            "calculatedAt": "2026-06-01T11:45:18.846Z"
+            "calculatedAt": "2026-06-02T10:14:21.285Z"
           },
           {
             "dimension": "accessibility",
@@ -205212,17 +204694,91 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-06-01T11:45:19.450Z"
+            "calculatedAt": "2026-06-02T10:14:21.859Z"
           }
         ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
+        "lastChecked": "2026-06-02T10:13:55.715Z"
+      }
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:reclamos-de-arbolado-registrados-en-el-sistema-unico-de-reclamos",
+      "externalId": "reclamos-de-arbolado-registrados-en-el-sistema-unico-de-reclamos",
+      "modifiedAt": "2026-06-02T08:17:32.243563",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
+      "score": {
+        "datasetId": "catalogodatos-gub-uy:reclamos-de-arbolado-registrados-en-el-sistema-unico-de-reclamos",
+        "title": "Solicitudes de arbolado registrados en el Sistema Unico de Reclamos",
+        "organization": "Intendencia de Montevideo",
+        "overall": 0.813,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 183,
+              "tagCount": 1,
+              "resourceCount": 2
+            },
+            "calculatedAt": "2026-06-02T10:14:21.860Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 1,
+            "evidence": {
+              "modifiedAt": "2026-06-02T08:17:32.243563",
+              "daysSinceModified": 0,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-06-02T10:14:21.860Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.4,
+            "evidence": {
+              "formats": [
+                "TXT",
+                "ZIP"
+              ],
+              "bestFormat": "ZIP",
+              "bestFormatScore": 0.4,
+              "resourceCount": 2,
+              "formatDistribution": {
+                "TXT": 1,
+                "ZIP": 1
+              }
+            },
+            "calculatedAt": "2026-06-02T10:14:21.860Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 2,
+              "checked": 2,
+              "accessible": 2
+            },
+            "calculatedAt": "2026-06-02T10:14:22.423Z"
+          }
+        ],
+        "lastChecked": "2026-06-02T10:13:55.715Z"
       }
     },
     {
       "datasetId": "catalogodatos-gub-uy:calidad-del-aire-ozono-o3",
       "externalId": "calidad-del-aire-ozono-o3",
-      "modifiedAt": "2026-06-01T06:17:42.769572",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "modifiedAt": "2026-06-02T08:17:29.684793",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
       "score": {
         "datasetId": "catalogodatos-gub-uy:calidad-del-aire-ozono-o3",
         "title": "Ozono (O3)",
@@ -205248,17 +204804,17 @@
               "tagCount": 2,
               "resourceCount": 8
             },
-            "calculatedAt": "2026-06-01T11:45:19.450Z"
+            "calculatedAt": "2026-06-02T10:14:22.423Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.999,
+            "score": 1,
             "evidence": {
-              "modifiedAt": "2026-06-01T06:17:42.769572",
+              "modifiedAt": "2026-06-02T08:17:29.684793",
               "daysSinceModified": 0,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-06-01T11:45:19.450Z"
+            "calculatedAt": "2026-06-02T10:14:22.423Z"
           },
           {
             "dimension": "structure",
@@ -205274,7 +204830,7 @@
                 "CSV": 8
               }
             },
-            "calculatedAt": "2026-06-01T11:45:19.450Z"
+            "calculatedAt": "2026-06-02T10:14:22.423Z"
           },
           {
             "dimension": "accessibility",
@@ -205284,17 +204840,17 @@
               "checked": 8,
               "accessible": 8
             },
-            "calculatedAt": "2026-06-01T11:45:20.780Z"
+            "calculatedAt": "2026-06-02T10:14:23.316Z"
           }
         ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
+        "lastChecked": "2026-06-02T10:13:55.715Z"
       }
     },
     {
       "datasetId": "catalogodatos-gub-uy:informacion-de-levantes-de-contenedores-domiciliarios",
       "externalId": "informacion-de-levantes-de-contenedores-domiciliarios",
-      "modifiedAt": "2026-06-01T06:17:37.080955",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "modifiedAt": "2026-06-02T08:17:23.238298",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
       "score": {
         "datasetId": "catalogodatos-gub-uy:informacion-de-levantes-de-contenedores-domiciliarios",
         "title": "Información de levantes de contenedores domiciliarios",
@@ -205320,17 +204876,17 @@
               "tagCount": 5,
               "resourceCount": 9
             },
-            "calculatedAt": "2026-06-01T11:45:20.780Z"
+            "calculatedAt": "2026-06-02T10:14:23.316Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.999,
+            "score": 1,
             "evidence": {
-              "modifiedAt": "2026-06-01T06:17:37.080955",
+              "modifiedAt": "2026-06-02T08:17:23.238298",
               "daysSinceModified": 0,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-06-01T11:45:20.780Z"
+            "calculatedAt": "2026-06-02T10:14:23.316Z"
           },
           {
             "dimension": "structure",
@@ -205348,7 +204904,7 @@
                 "CSV": 8
               }
             },
-            "calculatedAt": "2026-06-01T11:45:20.780Z"
+            "calculatedAt": "2026-06-02T10:14:23.316Z"
           },
           {
             "dimension": "accessibility",
@@ -205358,17 +204914,17 @@
               "checked": 9,
               "accessible": 9
             },
-            "calculatedAt": "2026-06-01T11:45:21.628Z"
+            "calculatedAt": "2026-06-02T10:14:24.124Z"
           }
         ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
+        "lastChecked": "2026-06-02T10:13:55.715Z"
       }
     },
     {
       "datasetId": "catalogodatos-gub-uy:monitoreo-de-polen-y-esporas-fungicas-en-el-aire-de-montevideo",
       "externalId": "monitoreo-de-polen-y-esporas-fungicas-en-el-aire-de-montevideo",
-      "modifiedAt": "2026-06-01T06:17:36.105018",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "modifiedAt": "2026-06-02T08:17:22.133634",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
       "score": {
         "datasetId": "catalogodatos-gub-uy:monitoreo-de-polen-y-esporas-fungicas-en-el-aire-de-montevideo",
         "title": "Monitoreo de polen y esporas fúngicas en el aire de Montevideo",
@@ -205394,17 +204950,17 @@
               "tagCount": 3,
               "resourceCount": 6
             },
-            "calculatedAt": "2026-06-01T11:45:21.628Z"
+            "calculatedAt": "2026-06-02T10:14:24.124Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.999,
+            "score": 1,
             "evidence": {
-              "modifiedAt": "2026-06-01T06:17:36.105018",
+              "modifiedAt": "2026-06-02T08:17:22.133634",
               "daysSinceModified": 0,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-06-01T11:45:21.628Z"
+            "calculatedAt": "2026-06-02T10:14:24.125Z"
           },
           {
             "dimension": "structure",
@@ -205420,7 +204976,7 @@
                 "CSV": 6
               }
             },
-            "calculatedAt": "2026-06-01T11:45:21.628Z"
+            "calculatedAt": "2026-06-02T10:14:24.125Z"
           },
           {
             "dimension": "accessibility",
@@ -205430,17 +204986,17 @@
               "checked": 6,
               "accessible": 6
             },
-            "calculatedAt": "2026-06-01T11:45:23.454Z"
+            "calculatedAt": "2026-06-02T10:14:24.960Z"
           }
         ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
+        "lastChecked": "2026-06-02T10:13:55.715Z"
       }
     },
     {
       "datasetId": "catalogodatos-gub-uy:informacion-pluviometrica",
       "externalId": "informacion-pluviometrica",
-      "modifiedAt": "2026-06-01T06:17:33.978494",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "modifiedAt": "2026-06-02T08:17:19.461097",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
       "score": {
         "datasetId": "catalogodatos-gub-uy:informacion-pluviometrica",
         "title": "Información pluviométrica",
@@ -205466,17 +205022,17 @@
               "tagCount": 2,
               "resourceCount": 15
             },
-            "calculatedAt": "2026-06-01T11:45:23.454Z"
+            "calculatedAt": "2026-06-02T10:14:24.960Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.999,
+            "score": 1,
             "evidence": {
-              "modifiedAt": "2026-06-01T06:17:33.978494",
+              "modifiedAt": "2026-06-02T08:17:19.461097",
               "daysSinceModified": 0,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-06-01T11:45:23.454Z"
+            "calculatedAt": "2026-06-02T10:14:24.960Z"
           },
           {
             "dimension": "structure",
@@ -205496,7 +205052,7 @@
                 "ZIP": 5
               }
             },
-            "calculatedAt": "2026-06-01T11:45:23.454Z"
+            "calculatedAt": "2026-06-02T10:14:24.960Z"
           },
           {
             "dimension": "accessibility",
@@ -205506,17 +205062,17 @@
               "checked": 15,
               "accessible": 15
             },
-            "calculatedAt": "2026-06-01T11:45:24.308Z"
+            "calculatedAt": "2026-06-02T10:14:25.792Z"
           }
         ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
+        "lastChecked": "2026-06-02T10:13:55.715Z"
       }
     },
     {
       "datasetId": "catalogodatos-gub-uy:datos-historicos-de-limpieza-reportados-en-el-centro-operativo-de-montevideo",
       "externalId": "datos-historicos-de-limpieza-reportados-en-el-centro-operativo-de-montevideo",
-      "modifiedAt": "2026-06-01T06:17:33.134966",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "modifiedAt": "2026-06-02T08:17:18.082344",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
       "score": {
         "datasetId": "catalogodatos-gub-uy:datos-historicos-de-limpieza-reportados-en-el-centro-operativo-de-montevideo",
         "title": "Montevideo más verde en línea: solicitudes realizadas",
@@ -205542,17 +205098,17 @@
               "tagCount": 4,
               "resourceCount": 6
             },
-            "calculatedAt": "2026-06-01T11:45:24.308Z"
+            "calculatedAt": "2026-06-02T10:14:25.792Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.999,
+            "score": 1,
             "evidence": {
-              "modifiedAt": "2026-06-01T06:17:33.134966",
+              "modifiedAt": "2026-06-02T08:17:18.082344",
               "daysSinceModified": 0,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-06-01T11:45:24.308Z"
+            "calculatedAt": "2026-06-02T10:14:25.792Z"
           },
           {
             "dimension": "structure",
@@ -205570,7 +205126,7 @@
                 "CSV": 5
               }
             },
-            "calculatedAt": "2026-06-01T11:45:24.308Z"
+            "calculatedAt": "2026-06-02T10:14:25.792Z"
           },
           {
             "dimension": "accessibility",
@@ -205580,17 +205136,17 @@
               "checked": 6,
               "accessible": 6
             },
-            "calculatedAt": "2026-06-01T11:45:26.091Z"
+            "calculatedAt": "2026-06-02T10:14:28.018Z"
           }
         ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
+        "lastChecked": "2026-06-02T10:13:55.715Z"
       }
     },
     {
       "datasetId": "catalogodatos-gub-uy:nivel-de-tanques",
       "externalId": "nivel-de-tanques",
-      "modifiedAt": "2026-06-01T06:17:31.913816",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "modifiedAt": "2026-06-02T08:17:16.207495",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
       "score": {
         "datasetId": "catalogodatos-gub-uy:nivel-de-tanques",
         "title": "Nivel de Tanques",
@@ -205616,17 +205172,17 @@
               "tagCount": 3,
               "resourceCount": 10
             },
-            "calculatedAt": "2026-06-01T11:45:26.091Z"
+            "calculatedAt": "2026-06-02T10:14:28.018Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.999,
+            "score": 1,
             "evidence": {
-              "modifiedAt": "2026-06-01T06:17:31.913816",
+              "modifiedAt": "2026-06-02T08:17:16.207495",
               "daysSinceModified": 0,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-06-01T11:45:26.091Z"
+            "calculatedAt": "2026-06-02T10:14:28.018Z"
           },
           {
             "dimension": "structure",
@@ -205642,7 +205198,7 @@
                 "CSV": 10
               }
             },
-            "calculatedAt": "2026-06-01T11:45:26.091Z"
+            "calculatedAt": "2026-06-02T10:14:28.018Z"
           },
           {
             "dimension": "accessibility",
@@ -205652,17 +205208,17 @@
               "checked": 10,
               "accessible": 10
             },
-            "calculatedAt": "2026-06-01T11:45:26.930Z"
+            "calculatedAt": "2026-06-02T10:14:28.836Z"
           }
         ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
+        "lastChecked": "2026-06-02T10:13:55.715Z"
       }
     },
     {
       "datasetId": "catalogodatos-gub-uy:limnigrafo-2022",
       "externalId": "limnigrafo-2022",
-      "modifiedAt": "2026-06-01T06:17:29.383210",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "modifiedAt": "2026-06-02T08:17:13.316280",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
       "score": {
         "datasetId": "catalogodatos-gub-uy:limnigrafo-2022",
         "title": "Limnígrafos",
@@ -205688,17 +205244,17 @@
               "tagCount": 1,
               "resourceCount": 6
             },
-            "calculatedAt": "2026-06-01T11:45:26.930Z"
+            "calculatedAt": "2026-06-02T10:14:28.836Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.999,
+            "score": 1,
             "evidence": {
-              "modifiedAt": "2026-06-01T06:17:29.383210",
+              "modifiedAt": "2026-06-02T08:17:13.316280",
               "daysSinceModified": 0,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-06-01T11:45:26.930Z"
+            "calculatedAt": "2026-06-02T10:14:28.836Z"
           },
           {
             "dimension": "structure",
@@ -205714,7 +205270,7 @@
                 "CSV": 6
               }
             },
-            "calculatedAt": "2026-06-01T11:45:26.930Z"
+            "calculatedAt": "2026-06-02T10:14:28.836Z"
           },
           {
             "dimension": "accessibility",
@@ -205724,17 +205280,17 @@
               "checked": 6,
               "accessible": 6
             },
-            "calculatedAt": "2026-06-01T11:45:27.788Z"
+            "calculatedAt": "2026-06-02T10:14:29.651Z"
           }
         ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
+        "lastChecked": "2026-06-02T10:13:55.715Z"
       }
     },
     {
       "datasetId": "catalogodatos-gub-uy:residuos-retirados-por-playa",
       "externalId": "residuos-retirados-por-playa",
-      "modifiedAt": "2026-06-01T06:17:27.334005",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "modifiedAt": "2026-06-02T08:17:10.838292",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
       "score": {
         "datasetId": "catalogodatos-gub-uy:residuos-retirados-por-playa",
         "title": "Residuos retirados por playa",
@@ -205760,17 +205316,17 @@
               "tagCount": 4,
               "resourceCount": 2
             },
-            "calculatedAt": "2026-06-01T11:45:27.788Z"
+            "calculatedAt": "2026-06-02T10:14:29.651Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.999,
+            "score": 1,
             "evidence": {
-              "modifiedAt": "2026-06-01T06:17:27.334005",
+              "modifiedAt": "2026-06-02T08:17:10.838292",
               "daysSinceModified": 0,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-06-01T11:45:27.788Z"
+            "calculatedAt": "2026-06-02T10:14:29.651Z"
           },
           {
             "dimension": "structure",
@@ -205788,7 +205344,7 @@
                 "TXT": 1
               }
             },
-            "calculatedAt": "2026-06-01T11:45:27.788Z"
+            "calculatedAt": "2026-06-02T10:14:29.651Z"
           },
           {
             "dimension": "accessibility",
@@ -205798,17 +205354,17 @@
               "checked": 2,
               "accessible": 2
             },
-            "calculatedAt": "2026-06-01T11:45:28.373Z"
+            "calculatedAt": "2026-06-02T10:14:30.467Z"
           }
         ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
+        "lastChecked": "2026-06-02T10:13:55.715Z"
       }
     },
     {
       "datasetId": "catalogodatos-gub-uy:conteo-ciclovia",
       "externalId": "conteo-ciclovia",
-      "modifiedAt": "2026-06-01T06:17:24.611455",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "modifiedAt": "2026-06-02T08:17:08.163002",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
       "score": {
         "datasetId": "catalogodatos-gub-uy:conteo-ciclovia",
         "title": "Conteo Ciclovia",
@@ -205834,17 +205390,17 @@
               "tagCount": 1,
               "resourceCount": 3
             },
-            "calculatedAt": "2026-06-01T11:45:28.373Z"
+            "calculatedAt": "2026-06-02T10:14:30.467Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.999,
+            "score": 1,
             "evidence": {
-              "modifiedAt": "2026-06-01T06:17:24.611455",
+              "modifiedAt": "2026-06-02T08:17:08.163002",
               "daysSinceModified": 0,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-06-01T11:45:28.373Z"
+            "calculatedAt": "2026-06-02T10:14:30.467Z"
           },
           {
             "dimension": "structure",
@@ -205860,7 +205416,7 @@
                 "CSV": 3
               }
             },
-            "calculatedAt": "2026-06-01T11:45:28.373Z"
+            "calculatedAt": "2026-06-02T10:14:30.467Z"
           },
           {
             "dimension": "accessibility",
@@ -205870,17 +205426,17 @@
               "checked": 3,
               "accessible": 3
             },
-            "calculatedAt": "2026-06-01T11:45:29.450Z"
+            "calculatedAt": "2026-06-02T10:14:31.082Z"
           }
         ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
+        "lastChecked": "2026-06-02T10:13:55.715Z"
       }
     },
     {
       "datasetId": "catalogodatos-gub-uy:ubicacion-de-sensores-de-medicion-de-conteo-vehiculos",
       "externalId": "ubicacion-de-sensores-de-medicion-de-conteo-vehiculos",
-      "modifiedAt": "2026-06-01T06:17:07.065154",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "modifiedAt": "2026-06-02T08:16:51.379381",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
       "score": {
         "datasetId": "catalogodatos-gub-uy:ubicacion-de-sensores-de-medicion-de-conteo-vehiculos",
         "title": "Ubicación de sensores de medición de conteo vehículos",
@@ -205906,17 +205462,17 @@
               "tagCount": 6,
               "resourceCount": 67
             },
-            "calculatedAt": "2026-06-01T11:45:29.450Z"
+            "calculatedAt": "2026-06-02T10:14:31.082Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.999,
+            "score": 1,
             "evidence": {
-              "modifiedAt": "2026-06-01T06:17:07.065154",
+              "modifiedAt": "2026-06-02T08:16:51.379381",
               "daysSinceModified": 0,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-06-01T11:45:29.450Z"
+            "calculatedAt": "2026-06-02T10:14:31.082Z"
           },
           {
             "dimension": "structure",
@@ -205934,7 +205490,7 @@
                 "CSV": 66
               }
             },
-            "calculatedAt": "2026-06-01T11:45:29.450Z"
+            "calculatedAt": "2026-06-02T10:14:31.082Z"
           },
           {
             "dimension": "accessibility",
@@ -205944,17 +205500,17 @@
               "checked": 67,
               "accessible": 67
             },
-            "calculatedAt": "2026-06-01T11:45:32.790Z"
+            "calculatedAt": "2026-06-02T10:14:34.003Z"
           }
         ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
+        "lastChecked": "2026-06-02T10:13:55.715Z"
       }
     },
     {
       "datasetId": "catalogodatos-gub-uy:historico-indice-uv",
       "externalId": "historico-indice-uv",
-      "modifiedAt": "2026-06-01T06:17:04.728778",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "modifiedAt": "2026-06-02T08:16:49.581696",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
       "score": {
         "datasetId": "catalogodatos-gub-uy:historico-indice-uv",
         "title": "Medidas de la Radiación Solar en Montevideo",
@@ -205980,17 +205536,17 @@
               "tagCount": 5,
               "resourceCount": 9
             },
-            "calculatedAt": "2026-06-01T11:45:32.790Z"
+            "calculatedAt": "2026-06-02T10:14:34.003Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.999,
+            "score": 1,
             "evidence": {
-              "modifiedAt": "2026-06-01T06:17:04.728778",
+              "modifiedAt": "2026-06-02T08:16:49.581696",
               "daysSinceModified": 0,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-06-01T11:45:32.790Z"
+            "calculatedAt": "2026-06-02T10:14:34.003Z"
           },
           {
             "dimension": "structure",
@@ -206006,7 +205562,7 @@
                 "CSV": 9
               }
             },
-            "calculatedAt": "2026-06-01T11:45:32.790Z"
+            "calculatedAt": "2026-06-02T10:14:34.003Z"
           },
           {
             "dimension": "accessibility",
@@ -206016,21 +205572,21 @@
               "checked": 9,
               "accessible": 9
             },
-            "calculatedAt": "2026-06-01T11:45:33.670Z"
+            "calculatedAt": "2026-06-02T10:14:34.899Z"
           }
         ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
+        "lastChecked": "2026-06-02T10:13:55.715Z"
       }
     },
     {
-      "datasetId": "catalogodatos-gub-uy:ide-direcciones-geograficas-del-uruguay",
-      "externalId": "ide-direcciones-geograficas-del-uruguay",
-      "modifiedAt": "2026-06-01T06:04:28.984109",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "datasetId": "catalogodatos-gub-uy:ecocentros",
+      "externalId": "ecocentros",
+      "modifiedAt": "2026-06-02T08:16:48.343503",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
       "score": {
-        "datasetId": "catalogodatos-gub-uy:ide-direcciones-geograficas-del-uruguay",
-        "title": "Direcciones Geográficas del Uruguay",
-        "organization": "IDE",
+        "datasetId": "catalogodatos-gub-uy:ecocentros",
+        "title": "Ecocentros",
+        "organization": "Intendencia de Montevideo",
         "overall": 0.984,
         "dimensions": [
           {
@@ -206048,449 +205604,57 @@
                 "createdAt"
               ],
               "fieldsMissing": [],
-              "descriptionLength": 1977,
-              "tagCount": 3,
-              "resourceCount": 20
+              "descriptionLength": 461,
+              "tagCount": 5,
+              "resourceCount": 2
             },
-            "calculatedAt": "2026-06-01T11:45:33.670Z"
+            "calculatedAt": "2026-06-02T10:14:34.899Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.999,
+            "score": 1,
             "evidence": {
-              "modifiedAt": "2026-06-01T06:04:28.984109",
+              "modifiedAt": "2026-06-02T08:16:48.343503",
               "daysSinceModified": 0,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-06-01T11:45:33.670Z"
+            "calculatedAt": "2026-06-02T10:14:34.899Z"
           },
           {
             "dimension": "structure",
             "score": 0.95,
             "evidence": {
               "formats": [
-                "JSON",
                 "CSV"
               ],
               "bestFormat": "CSV",
               "bestFormatScore": 0.95,
-              "resourceCount": 20,
+              "resourceCount": 2,
               "formatDistribution": {
-                "JSON": 1,
-                "CSV": 19
+                "CSV": 2
               }
             },
-            "calculatedAt": "2026-06-01T11:45:33.670Z"
+            "calculatedAt": "2026-06-02T10:14:34.899Z"
           },
           {
             "dimension": "accessibility",
             "score": 1,
             "evidence": {
-              "resourceCount": 20,
-              "checked": 20,
-              "accessible": 20
+              "resourceCount": 2,
+              "checked": 2,
+              "accessible": 2
             },
-            "calculatedAt": "2026-06-01T11:45:35.454Z"
+            "calculatedAt": "2026-06-02T10:14:35.480Z"
           }
         ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
-      }
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:inumet-observaciones-meteorologicas-temperatura-del-aire-en-el-uruguay",
-      "externalId": "inumet-observaciones-meteorologicas-temperatura-del-aire-en-el-uruguay",
-      "modifiedAt": "2026-06-01T04:17:55.149709",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
-      "score": {
-        "datasetId": "catalogodatos-gub-uy:inumet-observaciones-meteorologicas-temperatura-del-aire-en-el-uruguay",
-        "title": "Observaciones meteorológicas - Temperatura del aire en el Uruguay",
-        "organization": "INUMET",
-        "overall": 0.984,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 662,
-              "tagCount": 5,
-              "resourceCount": 4
-            },
-            "calculatedAt": "2026-06-01T11:45:35.454Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.999,
-            "evidence": {
-              "modifiedAt": "2026-06-01T04:17:55.149709",
-              "daysSinceModified": 0,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-06-01T11:45:35.454Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "JSON",
-                "XML",
-                "CSV",
-                "XLSX"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 4,
-              "formatDistribution": {
-                "JSON": 1,
-                "XML": 1,
-                "CSV": 1,
-                "XLSX": 1
-              }
-            },
-            "calculatedAt": "2026-06-01T11:45:35.454Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 4,
-              "checked": 4,
-              "accessible": 4
-            },
-            "calculatedAt": "2026-06-01T11:45:36.076Z"
-          }
-        ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
-      }
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:inumet-observaciones-meteorologicas-insolacion-total-en-el-uruguay",
-      "externalId": "inumet-observaciones-meteorologicas-insolacion-total-en-el-uruguay",
-      "modifiedAt": "2026-06-01T04:15:39.091440",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
-      "score": {
-        "datasetId": "catalogodatos-gub-uy:inumet-observaciones-meteorologicas-insolacion-total-en-el-uruguay",
-        "title": "Observaciones meteorológicas - Insolación total en el Uruguay",
-        "organization": "INUMET",
-        "overall": 0.984,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 687,
-              "tagCount": 5,
-              "resourceCount": 4
-            },
-            "calculatedAt": "2026-06-01T11:45:36.076Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.999,
-            "evidence": {
-              "modifiedAt": "2026-06-01T04:15:39.091440",
-              "daysSinceModified": 0,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-06-01T11:45:36.076Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "JSON",
-                "XML",
-                "CSV",
-                "XLSX"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 4,
-              "formatDistribution": {
-                "JSON": 1,
-                "XML": 1,
-                "CSV": 1,
-                "XLSX": 1
-              }
-            },
-            "calculatedAt": "2026-06-01T11:45:36.076Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 4,
-              "checked": 4,
-              "accessible": 4
-            },
-            "calculatedAt": "2026-06-01T11:45:36.690Z"
-          }
-        ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
-      }
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:inumet-observaciones-meteorologicas-precipitacion-puntual-en-el-uruguay",
-      "externalId": "inumet-observaciones-meteorologicas-precipitacion-puntual-en-el-uruguay",
-      "modifiedAt": "2026-06-01T04:15:29.210011",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
-      "score": {
-        "datasetId": "catalogodatos-gub-uy:inumet-observaciones-meteorologicas-precipitacion-puntual-en-el-uruguay",
-        "title": "Observaciones meteorológicas - Precipitación puntual en el Uruguay",
-        "organization": "INUMET",
-        "overall": 0.984,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 671,
-              "tagCount": 6,
-              "resourceCount": 4
-            },
-            "calculatedAt": "2026-06-01T11:45:36.691Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.999,
-            "evidence": {
-              "modifiedAt": "2026-06-01T04:15:29.210011",
-              "daysSinceModified": 0,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-06-01T11:45:36.691Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "JSON",
-                "XML",
-                "CSV",
-                "XLSX"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 4,
-              "formatDistribution": {
-                "JSON": 1,
-                "XML": 1,
-                "CSV": 1,
-                "XLSX": 1
-              }
-            },
-            "calculatedAt": "2026-06-01T11:45:36.691Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 4,
-              "checked": 4,
-              "accessible": 4
-            },
-            "calculatedAt": "2026-06-01T11:45:37.304Z"
-          }
-        ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
-      }
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:inumet-observaciones-meteorologicas-presion-atmosferica-en-el-uruguay",
-      "externalId": "inumet-observaciones-meteorologicas-presion-atmosferica-en-el-uruguay",
-      "modifiedAt": "2026-06-01T04:13:27.912280",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
-      "score": {
-        "datasetId": "catalogodatos-gub-uy:inumet-observaciones-meteorologicas-presion-atmosferica-en-el-uruguay",
-        "title": "Observaciones meteorológicas - Presión atmosférica en el Uruguay",
-        "organization": "INUMET",
-        "overall": 0.984,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 686,
-              "tagCount": 6,
-              "resourceCount": 4
-            },
-            "calculatedAt": "2026-06-01T11:45:37.304Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.999,
-            "evidence": {
-              "modifiedAt": "2026-06-01T04:13:27.912280",
-              "daysSinceModified": 0,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-06-01T11:45:37.304Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "JSON",
-                "XML",
-                "CSV",
-                "XLSX"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 4,
-              "formatDistribution": {
-                "JSON": 1,
-                "XML": 1,
-                "CSV": 1,
-                "XLSX": 1
-              }
-            },
-            "calculatedAt": "2026-06-01T11:45:37.304Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 4,
-              "checked": 4,
-              "accessible": 4
-            },
-            "calculatedAt": "2026-06-01T11:45:37.909Z"
-          }
-        ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
-      }
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:inumet-observaciones-meteorologicas-direccion-e-intensidad-del-viento-en-el-uruguay",
-      "externalId": "inumet-observaciones-meteorologicas-direccion-e-intensidad-del-viento-en-el-uruguay",
-      "modifiedAt": "2026-06-01T04:11:29.942858",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
-      "score": {
-        "datasetId": "catalogodatos-gub-uy:inumet-observaciones-meteorologicas-direccion-e-intensidad-del-viento-en-el-uruguay",
-        "title": "Observaciones meteorológicas - Dirección e Intensidad del viento en el Uruguay",
-        "organization": "INUMET",
-        "overall": 0.984,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 704,
-              "tagCount": 5,
-              "resourceCount": 4
-            },
-            "calculatedAt": "2026-06-01T11:45:37.909Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.999,
-            "evidence": {
-              "modifiedAt": "2026-06-01T04:11:29.942858",
-              "daysSinceModified": 0,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-06-01T11:45:37.909Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "JSON",
-                "XML",
-                "CSV",
-                "XLSX"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 4,
-              "formatDistribution": {
-                "JSON": 1,
-                "XML": 1,
-                "CSV": 1,
-                "XLSX": 1
-              }
-            },
-            "calculatedAt": "2026-06-01T11:45:37.909Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 4,
-              "checked": 4,
-              "accessible": 4
-            },
-            "calculatedAt": "2026-06-01T11:45:38.558Z"
-          }
-        ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
+        "lastChecked": "2026-06-02T10:13:55.715Z"
       }
     },
     {
       "datasetId": "catalogodatos-gub-uy:inumet-observaciones-meteorologicas-humedad-relativa-en-el-uruguay",
       "externalId": "inumet-observaciones-meteorologicas-humedad-relativa-en-el-uruguay",
-      "modifiedAt": "2026-06-01T04:10:16.056978",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "modifiedAt": "2026-06-02T04:03:18.365338",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
       "score": {
         "datasetId": "catalogodatos-gub-uy:inumet-observaciones-meteorologicas-humedad-relativa-en-el-uruguay",
         "title": "Observaciones meteorológicas - Humedad relativa en el Uruguay",
@@ -206516,17 +205680,17 @@
               "tagCount": 4,
               "resourceCount": 4
             },
-            "calculatedAt": "2026-06-01T11:45:38.558Z"
+            "calculatedAt": "2026-06-02T10:14:35.480Z"
           },
           {
             "dimension": "freshness",
             "score": 0.999,
             "evidence": {
-              "modifiedAt": "2026-06-01T04:10:16.056978",
+              "modifiedAt": "2026-06-02T04:03:18.365338",
               "daysSinceModified": 0,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-06-01T11:45:38.558Z"
+            "calculatedAt": "2026-06-02T10:14:35.480Z"
           },
           {
             "dimension": "structure",
@@ -206548,7 +205712,7 @@
                 "JSON": 1
               }
             },
-            "calculatedAt": "2026-06-01T11:45:38.558Z"
+            "calculatedAt": "2026-06-02T10:14:35.480Z"
           },
           {
             "dimension": "accessibility",
@@ -206558,21 +205722,21 @@
               "checked": 4,
               "accessible": 4
             },
-            "calculatedAt": "2026-06-01T11:45:39.191Z"
+            "calculatedAt": "2026-06-02T10:14:36.714Z"
           }
         ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
+        "lastChecked": "2026-06-02T10:13:55.715Z"
       }
     },
     {
-      "datasetId": "catalogodatos-gub-uy:suprema-corte-de-justicia-informacion-del-nuevo-codigo-de-proceso-penal",
-      "externalId": "suprema-corte-de-justicia-informacion-del-nuevo-codigo-de-proceso-penal",
-      "modifiedAt": "2026-06-01T03:37:02.527566",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "datasetId": "catalogodatos-gub-uy:inia-precipitacion-temps-extremas-sg",
+      "externalId": "inia-precipitacion-temps-extremas-sg",
+      "modifiedAt": "2026-06-01T20:43:19.582558",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
       "score": {
-        "datasetId": "catalogodatos-gub-uy:suprema-corte-de-justicia-informacion-del-nuevo-codigo-de-proceso-penal",
-        "title": "Información del Nuevo Código de Proceso Penal",
-        "organization": "Poder Judicial",
+        "datasetId": "catalogodatos-gub-uy:inia-precipitacion-temps-extremas-sg",
+        "title": "Precipitación y temperaturas extremas - Estación Salto Grande",
+        "organization": "INIA",
         "overall": 0.984,
         "dimensions": [
           {
@@ -206590,63 +205754,509 @@
                 "createdAt"
               ],
               "fieldsMissing": [],
-              "descriptionLength": 180,
+              "descriptionLength": 187,
               "tagCount": 6,
-              "resourceCount": 16
+              "resourceCount": 58
             },
-            "calculatedAt": "2026-06-01T11:45:39.191Z"
+            "calculatedAt": "2026-06-02T10:14:36.714Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.999,
+            "score": 0.998,
             "evidence": {
-              "modifiedAt": "2026-06-01T03:37:02.527566",
-              "daysSinceModified": 0,
+              "modifiedAt": "2026-06-01T20:43:19.582558",
+              "daysSinceModified": 1,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-06-01T11:45:39.191Z"
+            "calculatedAt": "2026-06-02T10:14:36.714Z"
           },
           {
             "dimension": "structure",
             "score": 0.95,
             "evidence": {
               "formats": [
-                "XLSX",
-                "CSV",
-                "XML",
-                "JSON"
+                "JSON",
+                "CSV"
               ],
               "bestFormat": "CSV",
               "bestFormatScore": 0.95,
-              "resourceCount": 16,
+              "resourceCount": 58,
               "formatDistribution": {
-                "XLSX": 4,
-                "CSV": 4,
-                "XML": 4,
-                "JSON": 4
+                "JSON": 1,
+                "CSV": 57
               }
             },
-            "calculatedAt": "2026-06-01T11:45:39.191Z"
+            "calculatedAt": "2026-06-02T10:14:36.714Z"
           },
           {
             "dimension": "accessibility",
             "score": 1,
             "evidence": {
-              "resourceCount": 16,
-              "checked": 16,
-              "accessible": 16
+              "resourceCount": 58,
+              "checked": 58,
+              "accessible": 58
             },
-            "calculatedAt": "2026-06-01T11:45:39.999Z"
+            "calculatedAt": "2026-06-02T10:14:39.299Z"
           }
         ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
+        "lastChecked": "2026-06-02T10:13:55.715Z"
+      }
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:inia-precipitacion-temps-extremas-tb",
+      "externalId": "inia-precipitacion-temps-extremas-tb",
+      "modifiedAt": "2026-06-01T20:43:11.939952",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
+      "score": {
+        "datasetId": "catalogodatos-gub-uy:inia-precipitacion-temps-extremas-tb",
+        "title": "Precipitación y temperaturas extremas - Estación Tacuarembó",
+        "organization": "INIA",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 186,
+              "tagCount": 6,
+              "resourceCount": 50
+            },
+            "calculatedAt": "2026-06-02T10:14:39.299Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.998,
+            "evidence": {
+              "modifiedAt": "2026-06-01T20:43:11.939952",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-06-02T10:14:39.299Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "JSON",
+                "CSV"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 50,
+              "formatDistribution": {
+                "JSON": 1,
+                "CSV": 49
+              }
+            },
+            "calculatedAt": "2026-06-02T10:14:39.299Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 50,
+              "checked": 50,
+              "accessible": 50
+            },
+            "calculatedAt": "2026-06-02T10:14:41.551Z"
+          }
+        ],
+        "lastChecked": "2026-06-02T10:13:55.715Z"
+      }
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:inia-precipitacion-temps-extremas-le",
+      "externalId": "inia-precipitacion-temps-extremas-le",
+      "modifiedAt": "2026-06-01T20:43:05.080595",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
+      "score": {
+        "datasetId": "catalogodatos-gub-uy:inia-precipitacion-temps-extremas-le",
+        "title": "Precipitación y temperaturas extremas - Estación La Estanzuela",
+        "organization": "INIA",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 188,
+              "tagCount": 6,
+              "resourceCount": 63
+            },
+            "calculatedAt": "2026-06-02T10:14:41.551Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.998,
+            "evidence": {
+              "modifiedAt": "2026-06-01T20:43:05.080595",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-06-02T10:14:41.551Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "JSON",
+                "CSV"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 63,
+              "formatDistribution": {
+                "JSON": 1,
+                "CSV": 62
+              }
+            },
+            "calculatedAt": "2026-06-02T10:14:41.551Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 63,
+              "checked": 63,
+              "accessible": 63
+            },
+            "calculatedAt": "2026-06-02T10:14:44.260Z"
+          }
+        ],
+        "lastChecked": "2026-06-02T10:13:55.715Z"
+      }
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:inia-precipitacion-temps-extremas-lb",
+      "externalId": "inia-precipitacion-temps-extremas-lb",
+      "modifiedAt": "2026-06-01T20:42:56.512568",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
+      "score": {
+        "datasetId": "catalogodatos-gub-uy:inia-precipitacion-temps-extremas-lb",
+        "title": "Precipitación y temperaturas extremas - Estación Las Brujas",
+        "organization": "INIA",
+        "overall": 0.978,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 175,
+              "tagCount": 6,
+              "resourceCount": 56
+            },
+            "calculatedAt": "2026-06-02T10:14:44.260Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.998,
+            "evidence": {
+              "modifiedAt": "2026-06-01T20:42:56.512568",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-06-02T10:14:44.260Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "JSON",
+                "CSV"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 56,
+              "formatDistribution": {
+                "JSON": 1,
+                "CSV": 55
+              }
+            },
+            "calculatedAt": "2026-06-02T10:14:44.260Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.982,
+            "evidence": {
+              "resourceCount": 56,
+              "checked": 56,
+              "accessible": 55
+            },
+            "calculatedAt": "2026-06-02T10:14:46.725Z"
+          }
+        ],
+        "lastChecked": "2026-06-02T10:13:55.715Z"
+      }
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:inia-pad-por-grilla",
+      "externalId": "inia-pad-por-grilla",
+      "modifiedAt": "2026-06-01T19:44:05.786832",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
+      "score": {
+        "datasetId": "catalogodatos-gub-uy:inia-pad-por-grilla",
+        "title": "Porcentaje de agua disponible en el suelo por grilla (PAD)",
+        "organization": "INIA",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 692,
+              "tagCount": 6,
+              "resourceCount": 55
+            },
+            "calculatedAt": "2026-06-02T10:14:46.725Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.998,
+            "evidence": {
+              "modifiedAt": "2026-06-01T19:44:05.786832",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-06-02T10:14:46.725Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "JSON",
+                "CSV",
+                "KML"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 55,
+              "formatDistribution": {
+                "JSON": 1,
+                "CSV": 27,
+                "KML": 27
+              }
+            },
+            "calculatedAt": "2026-06-02T10:14:46.725Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 55,
+              "checked": 55,
+              "accessible": 55
+            },
+            "calculatedAt": "2026-06-02T10:14:49.816Z"
+          }
+        ],
+        "lastChecked": "2026-06-02T10:13:55.715Z"
+      }
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:inia-ibh-por-grilla",
+      "externalId": "inia-ibh-por-grilla",
+      "modifiedAt": "2026-06-01T19:35:24.391261",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
+      "score": {
+        "datasetId": "catalogodatos-gub-uy:inia-ibh-por-grilla",
+        "title": "Índice de bienestar hídrico por grilla (IBH)",
+        "organization": "INIA",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 698,
+              "tagCount": 6,
+              "resourceCount": 55
+            },
+            "calculatedAt": "2026-06-02T10:14:49.816Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.998,
+            "evidence": {
+              "modifiedAt": "2026-06-01T19:35:24.391261",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-06-02T10:14:49.816Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "JSON",
+                "CSV",
+                "KML"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 55,
+              "formatDistribution": {
+                "JSON": 1,
+                "CSV": 27,
+                "KML": 27
+              }
+            },
+            "calculatedAt": "2026-06-02T10:14:49.816Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 55,
+              "checked": 55,
+              "accessible": 55
+            },
+            "calculatedAt": "2026-06-02T10:14:52.152Z"
+          }
+        ],
+        "lastChecked": "2026-06-02T10:13:55.715Z"
+      }
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:inia-anr-por-grilla",
+      "externalId": "inia-anr-por-grilla",
+      "modifiedAt": "2026-06-01T19:27:21.669528",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
+      "score": {
+        "datasetId": "catalogodatos-gub-uy:inia-anr-por-grilla",
+        "title": "Agua no retenida en el suelo por grilla (ANR)",
+        "organization": "INIA",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 716,
+              "tagCount": 6,
+              "resourceCount": 55
+            },
+            "calculatedAt": "2026-06-02T10:14:52.152Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.998,
+            "evidence": {
+              "modifiedAt": "2026-06-01T19:27:21.669528",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-06-02T10:14:52.152Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "JSON",
+                "CSV",
+                "KML"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 55,
+              "formatDistribution": {
+                "JSON": 1,
+                "CSV": 27,
+                "KML": 27
+              }
+            },
+            "calculatedAt": "2026-06-02T10:14:52.152Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 55,
+              "checked": 55,
+              "accessible": 55
+            },
+            "calculatedAt": "2026-06-02T10:14:54.440Z"
+          }
+        ],
+        "lastChecked": "2026-06-02T10:13:55.715Z"
       }
     },
     {
       "datasetId": "catalogodatos-gub-uy:ministerio-de-turismo-turismo-emisivo",
       "externalId": "ministerio-de-turismo-turismo-emisivo",
-      "modifiedAt": "2026-05-31T19:20:13.734610",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "modifiedAt": "2026-06-01T19:21:47.064596",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
       "score": {
         "datasetId": "catalogodatos-gub-uy:ministerio-de-turismo-turismo-emisivo",
         "title": "Turismo Emisivo",
@@ -206672,17 +206282,17 @@
               "tagCount": 4,
               "resourceCount": 4
             },
-            "calculatedAt": "2026-06-01T11:45:39.999Z"
+            "calculatedAt": "2026-06-02T10:14:54.440Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.997,
+            "score": 0.998,
             "evidence": {
-              "modifiedAt": "2026-05-31T19:20:13.734610",
+              "modifiedAt": "2026-06-01T19:21:47.064596",
               "daysSinceModified": 1,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-06-01T11:45:39.999Z"
+            "calculatedAt": "2026-06-02T10:14:54.440Z"
           },
           {
             "dimension": "structure",
@@ -206704,7 +206314,7 @@
                 "JSON": 1
               }
             },
-            "calculatedAt": "2026-06-01T11:45:39.999Z"
+            "calculatedAt": "2026-06-02T10:14:54.440Z"
           },
           {
             "dimension": "accessibility",
@@ -206714,21 +206324,21 @@
               "checked": 4,
               "accessible": 4
             },
-            "calculatedAt": "2026-06-01T11:45:40.624Z"
+            "calculatedAt": "2026-06-02T10:14:55.037Z"
           }
         ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
+        "lastChecked": "2026-06-02T10:13:55.715Z"
       }
     },
     {
-      "datasetId": "catalogodatos-gub-uy:ministerio-de-turismo-registro-de-operadores",
-      "externalId": "ministerio-de-turismo-registro-de-operadores",
-      "modifiedAt": "2026-05-31T14:03:51.683880",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "datasetId": "catalogodatos-gub-uy:arce-registro-unico-de-proveedores-del-estado-rupe-2026",
+      "externalId": "arce-registro-unico-de-proveedores-del-estado-rupe-2026",
+      "modifiedAt": "2026-06-01T18:54:39.375645",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
       "score": {
-        "datasetId": "catalogodatos-gub-uy:ministerio-de-turismo-registro-de-operadores",
-        "title": "Registro de Operadores Turísticos",
-        "organization": "Ministerio de Turismo",
+        "datasetId": "catalogodatos-gub-uy:arce-registro-unico-de-proveedores-del-estado-rupe-2026",
+        "title": "Registro Unico de Proveedores del Estado (RUPE) - 2026",
+        "organization": "ARCE",
         "overall": 0.984,
         "dimensions": [
           {
@@ -206746,21 +206356,173 @@
                 "createdAt"
               ],
               "fieldsMissing": [],
-              "descriptionLength": 129,
+              "descriptionLength": 269,
               "tagCount": 4,
-              "resourceCount": 4
+              "resourceCount": 6
             },
-            "calculatedAt": "2026-06-01T11:45:40.624Z"
+            "calculatedAt": "2026-06-02T10:14:55.037Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.998,
+            "evidence": {
+              "modifiedAt": "2026-06-01T18:54:39.375645",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-06-02T10:14:55.037Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 6,
+              "formatDistribution": {
+                "CSV": 6
+              }
+            },
+            "calculatedAt": "2026-06-02T10:14:55.037Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 6,
+              "checked": 6,
+              "accessible": 6
+            },
+            "calculatedAt": "2026-06-02T10:14:55.637Z"
+          }
+        ],
+        "lastChecked": "2026-06-02T10:13:55.715Z"
+      }
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:presidencia-de-la-republica-intervenciones_en_infraestructura_de_servicios_publicos_en_uruguay",
+      "externalId": "presidencia-de-la-republica-intervenciones_en_infraestructura_de_servicios_publicos_en_uruguay",
+      "modifiedAt": "2026-06-01T14:05:05.229760",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
+      "score": {
+        "datasetId": "catalogodatos-gub-uy:presidencia-de-la-republica-intervenciones_en_infraestructura_de_servicios_publicos_en_uruguay",
+        "title": "Intervenciones en infraestructura de servicios públicos en Uruguay",
+        "organization": "Presidencia de la República",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 652,
+              "tagCount": 4,
+              "resourceCount": 5
+            },
+            "calculatedAt": "2026-06-02T10:14:55.637Z"
           },
           {
             "dimension": "freshness",
             "score": 0.997,
             "evidence": {
-              "modifiedAt": "2026-05-31T14:03:51.683880",
+              "modifiedAt": "2026-06-01T14:05:05.229760",
               "daysSinceModified": 1,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-06-01T11:45:40.624Z"
+            "calculatedAt": "2026-06-02T10:14:55.637Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "XLSX",
+                "CSV",
+                "XML",
+                "GEOJSON",
+                "JSON"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 5,
+              "formatDistribution": {
+                "XLSX": 1,
+                "CSV": 1,
+                "XML": 1,
+                "GEOJSON": 1,
+                "JSON": 1
+              }
+            },
+            "calculatedAt": "2026-06-02T10:14:55.637Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 5,
+              "checked": 5,
+              "accessible": 5
+            },
+            "calculatedAt": "2026-06-02T10:14:56.230Z"
+          }
+        ],
+        "lastChecked": "2026-06-02T10:13:55.715Z"
+      }
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:ursea-ursea_basesanciones2019",
+      "externalId": "ursea-ursea_basesanciones2019",
+      "modifiedAt": "2026-06-01T12:51:41.510280",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
+      "score": {
+        "datasetId": "catalogodatos-gub-uy:ursea-ursea_basesanciones2019",
+        "title": "Registro de Sanciones a Empresas",
+        "organization": "URSEA",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 382,
+              "tagCount": 17,
+              "resourceCount": 4
+            },
+            "calculatedAt": "2026-06-02T10:14:56.230Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.997,
+            "evidence": {
+              "modifiedAt": "2026-06-01T12:51:41.510280",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-06-02T10:14:56.230Z"
           },
           {
             "dimension": "structure",
@@ -206782,7 +206544,7 @@
                 "JSON": 1
               }
             },
-            "calculatedAt": "2026-06-01T11:45:40.624Z"
+            "calculatedAt": "2026-06-02T10:14:56.230Z"
           },
           {
             "dimension": "accessibility",
@@ -206792,22 +206554,22 @@
               "checked": 4,
               "accessible": 4
             },
-            "calculatedAt": "2026-06-01T11:45:41.243Z"
+            "calculatedAt": "2026-06-02T10:14:56.827Z"
           }
         ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
+        "lastChecked": "2026-06-02T10:13:55.715Z"
       }
     },
     {
-      "datasetId": "catalogodatos-gub-uy:montevideo-libre",
-      "externalId": "montevideo-libre",
-      "modifiedAt": "2026-05-04T02:20:04.076899",
-      "lastScoredAt": "2026-06-01T11:44:44.017Z",
+      "datasetId": "catalogodatos-gub-uy:instituto-nacional-de-empleo-y-formacion-profesional-llamados_y_concursos",
+      "externalId": "instituto-nacional-de-empleo-y-formacion-profesional-llamados_y_concursos",
+      "modifiedAt": "2026-05-25T19:09:24.959957",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
       "score": {
-        "datasetId": "catalogodatos-gub-uy:montevideo-libre",
-        "title": "Programa Montevideo Libre",
-        "organization": "Intendencia de Montevideo",
-        "overall": 0.958,
+        "datasetId": "catalogodatos-gub-uy:instituto-nacional-de-empleo-y-formacion-profesional-llamados_y_concursos",
+        "title": "Llamados a servicos",
+        "organization": "Instituto Nacional de Empleo y Formación Profesional",
+        "overall": 0.977,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -206824,52 +206586,290 @@
                 "createdAt"
               ],
               "fieldsMissing": [],
-              "descriptionLength": 659,
-              "tagCount": 9,
-              "resourceCount": 15
+              "descriptionLength": 94,
+              "tagCount": 3,
+              "resourceCount": 4
             },
-            "calculatedAt": "2026-06-01T11:45:41.243Z"
+            "calculatedAt": "2026-06-02T10:14:56.827Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.896,
+            "score": 0.971,
             "evidence": {
-              "modifiedAt": "2026-05-04T02:20:04.076899",
-              "daysSinceModified": 28,
+              "modifiedAt": "2026-05-25T19:09:24.959957",
+              "daysSinceModified": 8,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-06-01T11:45:41.243Z"
+            "calculatedAt": "2026-06-02T10:14:56.827Z"
           },
           {
             "dimension": "structure",
             "score": 0.95,
             "evidence": {
               "formats": [
-                "TXT",
-                "CSV"
+                "XLSX",
+                "CSV",
+                "XML",
+                "JSON"
               ],
               "bestFormat": "CSV",
               "bestFormatScore": 0.95,
-              "resourceCount": 15,
+              "resourceCount": 4,
               "formatDistribution": {
-                "TXT": 1,
-                "CSV": 14
+                "XLSX": 1,
+                "CSV": 1,
+                "XML": 1,
+                "JSON": 1
               }
             },
-            "calculatedAt": "2026-06-01T11:45:41.243Z"
+            "calculatedAt": "2026-06-02T10:14:56.827Z"
           },
           {
             "dimension": "accessibility",
             "score": 1,
             "evidence": {
-              "resourceCount": 15,
-              "checked": 15,
-              "accessible": 15
+              "resourceCount": 4,
+              "checked": 4,
+              "accessible": 4
             },
-            "calculatedAt": "2026-06-01T11:45:43.097Z"
+            "calculatedAt": "2026-06-02T10:14:57.420Z"
           }
         ],
-        "lastChecked": "2026-06-01T11:44:44.017Z"
+        "lastChecked": "2026-06-02T10:13:55.715Z"
+      }
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:correo-organigrama_correo",
+      "externalId": "correo-organigrama_correo",
+      "modifiedAt": "2026-05-25T14:56:08.538049",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
+      "score": {
+        "datasetId": "catalogodatos-gub-uy:correo-organigrama_correo",
+        "title": "Organigrama",
+        "organization": "Correo Uruguayo",
+        "overall": 0.977,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 130,
+              "tagCount": 1,
+              "resourceCount": 4
+            },
+            "calculatedAt": "2026-06-02T10:14:57.420Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.97,
+            "evidence": {
+              "modifiedAt": "2026-05-25T14:56:08.538049",
+              "daysSinceModified": 8,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-06-02T10:14:57.420Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "JSON",
+                "CSV",
+                "XLSX",
+                "XML"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 4,
+              "formatDistribution": {
+                "JSON": 1,
+                "CSV": 1,
+                "XLSX": 1,
+                "XML": 1
+              }
+            },
+            "calculatedAt": "2026-06-02T10:14:57.420Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 4,
+              "checked": 4,
+              "accessible": 4
+            },
+            "calculatedAt": "2026-06-02T10:14:58.002Z"
+          }
+        ],
+        "lastChecked": "2026-06-02T10:13:55.715Z"
+      }
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:correo-autoridades_correo",
+      "externalId": "correo-autoridades_correo",
+      "modifiedAt": "2026-05-25T14:55:13.504325",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
+      "score": {
+        "datasetId": "catalogodatos-gub-uy:correo-autoridades_correo",
+        "title": "Autoridades",
+        "organization": "Correo Uruguayo",
+        "overall": 0.977,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 249,
+              "tagCount": 1,
+              "resourceCount": 4
+            },
+            "calculatedAt": "2026-06-02T10:14:58.002Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.97,
+            "evidence": {
+              "modifiedAt": "2026-05-25T14:55:13.504325",
+              "daysSinceModified": 8,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-06-02T10:14:58.002Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "JSON",
+                "CSV",
+                "XLSX",
+                "XML"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 4,
+              "formatDistribution": {
+                "JSON": 1,
+                "CSV": 1,
+                "XLSX": 1,
+                "XML": 1
+              }
+            },
+            "calculatedAt": "2026-06-02T10:14:58.002Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 4,
+              "checked": 4,
+              "accessible": 4
+            },
+            "calculatedAt": "2026-06-02T10:14:58.604Z"
+          }
+        ],
+        "lastChecked": "2026-06-02T10:13:55.715Z"
+      }
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:correo-actas_resoluciones_correo",
+      "externalId": "correo-actas_resoluciones_correo",
+      "modifiedAt": "2026-05-25T14:54:45.532848",
+      "lastScoredAt": "2026-06-02T10:13:55.715Z",
+      "score": {
+        "datasetId": "catalogodatos-gub-uy:correo-actas_resoluciones_correo",
+        "title": "Actas y Resoluciones de Directorio",
+        "organization": "Correo Uruguayo",
+        "overall": 0.977,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 149,
+              "tagCount": 1,
+              "resourceCount": 4
+            },
+            "calculatedAt": "2026-06-02T10:14:58.604Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.97,
+            "evidence": {
+              "modifiedAt": "2026-05-25T14:54:45.532848",
+              "daysSinceModified": 8,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-06-02T10:14:58.604Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "JSON",
+                "CSV",
+                "XLSX",
+                "XML"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 4,
+              "formatDistribution": {
+                "JSON": 1,
+                "CSV": 1,
+                "XLSX": 1,
+                "XML": 1
+              }
+            },
+            "calculatedAt": "2026-06-02T10:14:58.604Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 4,
+              "checked": 4,
+              "accessible": 4
+            },
+            "calculatedAt": "2026-06-02T10:14:59.193Z"
+          }
+        ],
+        "lastChecked": "2026-06-02T10:13:55.715Z"
       }
     }
   ]
