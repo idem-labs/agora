@@ -1,8 +1,74 @@
 {
   "catalogId": "datos-arsat-ar",
-  "scoredAt": "2026-06-03T10:52:11.910Z",
+  "scoredAt": "2026-06-04T09:45:09.401Z",
   "datasetCount": 13,
   "datasets": [
+    {
+      "datasetId": "datos-arsat-ar:organigrama",
+      "title": "Organigrama",
+      "organization": "ARSAT",
+      "overall": 0.734,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 82,
+            "tagCount": 3,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-06-03T10:52:11.910Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.998,
+          "evidence": {
+            "modifiedAt": "2026-06-02T19:28:10.936240",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-06-03T10:52:11.910Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.15,
+          "evidence": {
+            "formats": [
+              "PDF"
+            ],
+            "bestFormat": "PDF",
+            "bestFormatScore": 0.15,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "PDF": 1
+            }
+          },
+          "calculatedAt": "2026-06-03T10:52:11.910Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-06-03T10:52:12.121Z"
+        }
+      ],
+      "lastChecked": "2026-06-03T10:52:11.910Z"
+    },
     {
       "datasetId": "datos-arsat-ar:personal",
       "title": "Personal",
@@ -468,72 +534,6 @@
       "lastChecked": "2026-06-01T11:27:07.716Z"
     },
     {
-      "datasetId": "datos-arsat-ar:cinear-play",
-      "title": "Cine.Ar Play",
-      "organization": "ARSAT",
-      "overall": 0.809,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 260,
-            "tagCount": 20,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-06-01T11:27:12.957Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.299,
-          "evidence": {
-            "modifiedAt": "2025-07-22T16:36:48.828292",
-            "daysSinceModified": 314,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-06-01T11:27:12.957Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "CSV": 4
-            }
-          },
-          "calculatedAt": "2026-06-01T11:27:12.957Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-06-01T11:27:13.531Z"
-        }
-      ],
-      "lastChecked": "2026-06-01T11:27:07.716Z"
-    },
-    {
       "datasetId": "datos-arsat-ar:finanzas",
       "title": "Finanzas",
       "organization": "Gerencia de Administración y finanzas",
@@ -804,10 +804,10 @@
       "lastChecked": "2026-06-01T11:27:07.716Z"
     },
     {
-      "datasetId": "datos-arsat-ar:organigrama",
-      "title": "Organigrama",
+      "datasetId": "datos-arsat-ar:cinear-play",
+      "title": "Cine.Ar Play",
       "organization": "ARSAT",
-      "overall": 0.734,
+      "overall": 0.984,
       "dimensions": [
         {
           "dimension": "completeness",
@@ -824,50 +824,50 @@
               "createdAt"
             ],
             "fieldsMissing": [],
-            "descriptionLength": 82,
-            "tagCount": 3,
-            "resourceCount": 1
+            "descriptionLength": 262,
+            "tagCount": 20,
+            "resourceCount": 4
           },
-          "calculatedAt": "2026-06-03T10:52:11.910Z"
+          "calculatedAt": "2026-06-04T09:45:09.401Z"
         },
         {
           "dimension": "freshness",
-          "score": 0.998,
+          "score": 0.997,
           "evidence": {
-            "modifiedAt": "2026-06-02T19:28:10.936240",
+            "modifiedAt": "2026-06-03T17:01:54.499009",
             "daysSinceModified": 1,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-06-03T10:52:11.910Z"
+          "calculatedAt": "2026-06-04T09:45:09.401Z"
         },
         {
           "dimension": "structure",
-          "score": 0.15,
+          "score": 0.95,
           "evidence": {
             "formats": [
-              "PDF"
+              "CSV"
             ],
-            "bestFormat": "PDF",
-            "bestFormatScore": 0.15,
-            "resourceCount": 1,
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
             "formatDistribution": {
-              "PDF": 1
+              "CSV": 4
             }
           },
-          "calculatedAt": "2026-06-03T10:52:11.910Z"
+          "calculatedAt": "2026-06-04T09:45:09.401Z"
         },
         {
           "dimension": "accessibility",
           "score": 1,
           "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
           },
-          "calculatedAt": "2026-06-03T10:52:12.121Z"
+          "calculatedAt": "2026-06-04T09:45:10.282Z"
         }
       ],
-      "lastChecked": "2026-06-03T10:52:11.910Z"
+      "lastChecked": "2026-06-04T09:45:09.401Z"
     }
   ],
   "coverage": 1

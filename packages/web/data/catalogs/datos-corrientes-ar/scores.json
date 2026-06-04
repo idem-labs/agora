@@ -1,6 +1,6 @@
 {
   "catalogId": "datos-corrientes-ar",
-  "scoredAt": "2026-06-03T10:53:20.898Z",
+  "scoredAt": "2026-06-04T09:45:35.865Z",
   "datasetCount": 71,
   "datasets": [
     {
@@ -68,6 +68,72 @@
         }
       ],
       "lastChecked": "2026-05-28T09:49:28.191Z"
+    },
+    {
+      "datasetId": "datos-corrientes-ar:retiro_via_publica",
+      "title": "Retiros de la vía pública por infracción",
+      "organization": "Subsecretaria de Transporte",
+      "overall": 0.946,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 104,
+            "tagCount": 8,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-06-03T10:53:20.898Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.97,
+          "evidence": {
+            "modifiedAt": "2026-05-26T12:48:44.044851",
+            "daysSinceModified": 8,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-06-03T10:53:20.898Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-06-03T10:53:20.898Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.9,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-06-03T10:53:21.517Z"
+        }
+      ],
+      "lastChecked": "2026-06-03T10:53:20.898Z"
     },
     {
       "datasetId": "datos-corrientes-ar:habilitaciones-vehiculos",
@@ -4635,72 +4701,6 @@
         }
       ],
       "lastChecked": "2026-06-01T11:32:15.159Z"
-    },
-    {
-      "datasetId": "datos-corrientes-ar:retiro_via_publica",
-      "title": "Retiros de la vía pública por infracción",
-      "organization": "Subsecretaria de Transporte",
-      "overall": 0.946,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 104,
-            "tagCount": 8,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-06-03T10:53:20.898Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.97,
-          "evidence": {
-            "modifiedAt": "2026-05-26T12:48:44.044851",
-            "daysSinceModified": 8,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-06-03T10:53:20.898Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-06-03T10:53:20.898Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.9,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-06-03T10:53:21.517Z"
-        }
-      ],
-      "lastChecked": "2026-06-03T10:53:20.898Z"
     }
   ],
   "coverage": 1
