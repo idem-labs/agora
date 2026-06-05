@@ -1,7 +1,85 @@
 {
   "catalogId": "datosgestionabierta-cba-ar",
-  "updatedAt": "2026-06-04T09:45:20.861Z",
+  "updatedAt": "2026-06-05T09:33:11.992Z",
   "datasets": [
+    {
+      "datasetId": "datosgestionabierta-cba-ar:oncativo",
+      "externalId": "oncativo",
+      "modifiedAt": "2026-06-03T12:56:33.518528",
+      "lastScoredAt": "2026-06-04T09:45:20.861Z",
+      "score": {
+        "datasetId": "datosgestionabierta-cba-ar:oncativo",
+        "title": "Municipalidad de Oncativo - Transparencia activa",
+        "organization": "Gobiernos Locales",
+        "overall": 0.956,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 776,
+              "tagCount": 2,
+              "resourceCount": 19
+            },
+            "calculatedAt": "2026-06-04T09:45:20.861Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.997,
+            "evidence": {
+              "modifiedAt": "2026-06-03T12:56:33.518528",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-06-04T09:45:20.861Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "XLSX",
+                "CSV",
+                "PDF",
+                "ENLACE"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 19,
+              "formatDistribution": {
+                "XLSX": 6,
+                "CSV": 6,
+                "PDF": 5,
+                "ENLACE": 2
+              }
+            },
+            "calculatedAt": "2026-06-04T09:45:20.861Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.911,
+            "evidence": {
+              "resourceCount": 19,
+              "checked": 19,
+              "accessible": 19
+            },
+            "calculatedAt": "2026-06-04T09:45:23.552Z"
+          }
+        ],
+        "lastChecked": "2026-06-04T09:45:20.861Z"
+      }
+    },
     {
       "datasetId": "datosgestionabierta-cba-ar:diego-de-rojas",
       "externalId": "diego-de-rojas",
@@ -1474,154 +1552,6 @@
           }
         ],
         "lastChecked": "2026-05-30T08:21:16.057Z"
-      }
-    },
-    {
-      "datasetId": "datosgestionabierta-cba-ar:empleados-poder-ejecutivo",
-      "externalId": "empleados-poder-ejecutivo",
-      "modifiedAt": "2026-04-14T17:42:25.302897",
-      "lastScoredAt": "2026-05-28T09:49:10.024Z",
-      "score": {
-        "datasetId": "datosgestionabierta-cba-ar:empleados-poder-ejecutivo",
-        "title": "Listado de agentes del Poder Ejecutivo",
-        "organization": "Gobierno de la Provincia de Córdoba",
-        "overall": 0.914,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 4915,
-              "tagCount": 1,
-              "resourceCount": 30
-            },
-            "calculatedAt": "2026-05-28T09:49:10.024Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.845,
-            "evidence": {
-              "modifiedAt": "2026-04-14T17:42:25.302897",
-              "daysSinceModified": 44,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-05-28T09:49:10.024Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "XLSX",
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 30,
-              "formatDistribution": {
-                "XLSX": 15,
-                "CSV": 15
-              }
-            },
-            "calculatedAt": "2026-05-28T09:49:10.024Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0.9,
-            "evidence": {
-              "resourceCount": 30,
-              "checked": 30,
-              "accessible": 30
-            },
-            "calculatedAt": "2026-05-28T09:49:14.532Z"
-          }
-        ],
-        "lastChecked": "2026-05-28T09:49:10.024Z"
-      }
-    },
-    {
-      "datasetId": "datosgestionabierta-cba-ar:intendentes-y-jefes-comunales",
-      "externalId": "intendentes-y-jefes-comunales",
-      "modifiedAt": "2026-04-08T14:53:12.118316",
-      "lastScoredAt": "2026-05-28T09:49:10.024Z",
-      "score": {
-        "datasetId": "datosgestionabierta-cba-ar:intendentes-y-jefes-comunales",
-        "title": "Intendentes y jefes comunales",
-        "organization": "Ministerio de Gobierno",
-        "overall": 0.91,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 384,
-              "tagCount": 3,
-              "resourceCount": 2
-            },
-            "calculatedAt": "2026-05-28T09:49:14.532Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.826,
-            "evidence": {
-              "modifiedAt": "2026-04-08T14:53:12.118316",
-              "daysSinceModified": 50,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-05-28T09:49:14.532Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "XLSX",
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 2,
-              "formatDistribution": {
-                "XLSX": 1,
-                "CSV": 1
-              }
-            },
-            "calculatedAt": "2026-05-28T09:49:14.532Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0.9,
-            "evidence": {
-              "resourceCount": 2,
-              "checked": 2,
-              "accessible": 2
-            },
-            "calculatedAt": "2026-05-28T09:49:15.054Z"
-          }
-        ],
-        "lastChecked": "2026-05-28T09:49:10.024Z"
       }
     },
     {
@@ -11005,15 +10935,15 @@
       }
     },
     {
-      "datasetId": "datosgestionabierta-cba-ar:oncativo",
-      "externalId": "oncativo",
-      "modifiedAt": "2026-06-03T12:56:33.518528",
-      "lastScoredAt": "2026-06-04T09:45:20.861Z",
+      "datasetId": "datosgestionabierta-cba-ar:empleados-poder-ejecutivo",
+      "externalId": "empleados-poder-ejecutivo",
+      "modifiedAt": "2026-04-14T17:42:25.302897",
+      "lastScoredAt": "2026-06-05T09:33:11.992Z",
       "score": {
-        "datasetId": "datosgestionabierta-cba-ar:oncativo",
-        "title": "Municipalidad de Oncativo - Transparencia activa",
-        "organization": "Gobiernos Locales",
-        "overall": 0.956,
+        "datasetId": "datosgestionabierta-cba-ar:empleados-poder-ejecutivo",
+        "title": "Listado de agentes del Poder Ejecutivo",
+        "organization": "Gobierno de la Provincia de Córdoba",
+        "overall": 0.908,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -11030,21 +10960,21 @@
                 "createdAt"
               ],
               "fieldsMissing": [],
-              "descriptionLength": 776,
-              "tagCount": 2,
-              "resourceCount": 19
+              "descriptionLength": 4915,
+              "tagCount": 1,
+              "resourceCount": 30
             },
-            "calculatedAt": "2026-06-04T09:45:20.861Z"
+            "calculatedAt": "2026-06-05T09:33:11.992Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.997,
+            "score": 0.82,
             "evidence": {
-              "modifiedAt": "2026-06-03T12:56:33.518528",
-              "daysSinceModified": 1,
+              "modifiedAt": "2026-04-14T17:42:25.302897",
+              "daysSinceModified": 52,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-06-04T09:45:20.861Z"
+            "calculatedAt": "2026-06-05T09:33:11.992Z"
           },
           {
             "dimension": "structure",
@@ -11052,34 +10982,104 @@
             "evidence": {
               "formats": [
                 "XLSX",
-                "CSV",
-                "PDF",
-                "ENLACE"
+                "CSV"
               ],
               "bestFormat": "CSV",
               "bestFormatScore": 0.95,
-              "resourceCount": 19,
+              "resourceCount": 30,
               "formatDistribution": {
-                "XLSX": 6,
-                "CSV": 6,
-                "PDF": 5,
-                "ENLACE": 2
+                "XLSX": 15,
+                "CSV": 15
               }
             },
-            "calculatedAt": "2026-06-04T09:45:20.861Z"
+            "calculatedAt": "2026-06-05T09:33:11.992Z"
           },
           {
             "dimension": "accessibility",
-            "score": 0.911,
+            "score": 0.9,
             "evidence": {
-              "resourceCount": 19,
-              "checked": 19,
-              "accessible": 19
+              "resourceCount": 30,
+              "checked": 30,
+              "accessible": 30
             },
-            "calculatedAt": "2026-06-04T09:45:23.552Z"
+            "calculatedAt": "2026-06-05T09:33:16.267Z"
           }
         ],
-        "lastChecked": "2026-06-04T09:45:20.861Z"
+        "lastChecked": "2026-06-05T09:33:11.992Z"
+      }
+    },
+    {
+      "datasetId": "datosgestionabierta-cba-ar:intendentes-y-jefes-comunales",
+      "externalId": "intendentes-y-jefes-comunales",
+      "modifiedAt": "2026-04-08T14:53:12.118316",
+      "lastScoredAt": "2026-06-05T09:33:11.992Z",
+      "score": {
+        "datasetId": "datosgestionabierta-cba-ar:intendentes-y-jefes-comunales",
+        "title": "Intendentes y jefes comunales",
+        "organization": "Ministerio de Gobierno",
+        "overall": 0.903,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 384,
+              "tagCount": 3,
+              "resourceCount": 2
+            },
+            "calculatedAt": "2026-06-05T09:33:16.267Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.801,
+            "evidence": {
+              "modifiedAt": "2026-04-08T14:53:12.118316",
+              "daysSinceModified": 58,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-06-05T09:33:16.267Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "XLSX",
+                "CSV"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 2,
+              "formatDistribution": {
+                "XLSX": 1,
+                "CSV": 1
+              }
+            },
+            "calculatedAt": "2026-06-05T09:33:16.267Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.9,
+            "evidence": {
+              "resourceCount": 2,
+              "checked": 2,
+              "accessible": 2
+            },
+            "calculatedAt": "2026-06-05T09:33:16.763Z"
+          }
+        ],
+        "lastChecked": "2026-06-05T09:33:11.992Z"
       }
     }
   ]

@@ -1,7 +1,85 @@
 {
   "catalogId": "datos-bahiablanca-ar",
-  "updatedAt": "2026-06-04T09:44:24.029Z",
+  "updatedAt": "2026-06-05T09:31:30.698Z",
   "datasets": [
+    {
+      "datasetId": "datos-bahiablanca-ar:sueldos-personal",
+      "externalId": "sueldos-personal",
+      "modifiedAt": "2026-06-03T14:35:06.921519",
+      "lastScoredAt": "2026-06-04T09:44:24.029Z",
+      "score": {
+        "datasetId": "datos-bahiablanca-ar:sueldos-personal",
+        "title": "Sueldos del personal Municipal",
+        "organization": "Secretaría de Economía",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 29,
+              "tagCount": 3,
+              "resourceCount": 5
+            },
+            "calculatedAt": "2026-06-04T09:44:24.029Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.997,
+            "evidence": {
+              "modifiedAt": "2026-06-03T14:35:06.921519",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-06-04T09:44:24.029Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "JSON",
+                "CSV",
+                "XLS",
+                "PDF"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 5,
+              "formatDistribution": {
+                "JSON": 1,
+                "CSV": 2,
+                "XLS": 1,
+                "PDF": 1
+              }
+            },
+            "calculatedAt": "2026-06-04T09:44:24.029Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 5,
+              "checked": 5,
+              "accessible": 5
+            },
+            "calculatedAt": "2026-06-04T09:44:26.638Z"
+          }
+        ],
+        "lastChecked": "2026-06-04T09:44:24.029Z"
+      }
+    },
     {
       "datasetId": "datos-bahiablanca-ar:estadisticas-de-los-moviles-de-castracion",
       "externalId": "estadisticas-de-los-moviles-de-castracion",
@@ -372,82 +450,6 @@
           }
         ],
         "lastChecked": "2026-06-02T10:04:34.132Z"
-      }
-    },
-    {
-      "datasetId": "datos-bahiablanca-ar:publicidad",
-      "externalId": "publicidad",
-      "modifiedAt": "2026-04-21T16:26:19.058320",
-      "lastScoredAt": "2026-05-28T09:46:30.652Z",
-      "score": {
-        "datasetId": "datos-bahiablanca-ar:publicidad",
-        "title": "Publicidad",
-        "organization": "Secretaría de Economía",
-        "overall": 0.951,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 59,
-              "tagCount": 3,
-              "resourceCount": 38
-            },
-            "calculatedAt": "2026-05-28T09:46:30.652Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.868,
-            "evidence": {
-              "modifiedAt": "2026-04-21T16:26:19.058320",
-              "daysSinceModified": 37,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-05-28T09:46:30.652Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "JSON",
-                "CSV",
-                "XLS"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 38,
-              "formatDistribution": {
-                "JSON": 1,
-                "CSV": 19,
-                "XLS": 18
-              }
-            },
-            "calculatedAt": "2026-05-28T09:46:30.652Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 38,
-              "checked": 38,
-              "accessible": 38
-            },
-            "calculatedAt": "2026-05-28T09:46:35.855Z"
-          }
-        ],
-        "lastChecked": "2026-05-28T09:46:30.652Z"
       }
     },
     {
@@ -1039,222 +1041,6 @@
               "accessible": 2
             },
             "calculatedAt": "2026-05-31T08:56:42.894Z"
-          }
-        ],
-        "lastChecked": "2026-05-31T08:56:28.934Z"
-      }
-    },
-    {
-      "datasetId": "datos-bahiablanca-ar:subsidios-a-espacios-culturales-independientes",
-      "externalId": "subsidios-a-espacios-culturales-independientes",
-      "modifiedAt": "2025-07-16T13:39:07.020475",
-      "lastScoredAt": "2026-05-31T08:56:28.934Z",
-      "score": {
-        "datasetId": "datos-bahiablanca-ar:subsidios-a-espacios-culturales-independientes",
-        "title": "Subsidios a Espacios Culturales Independientes",
-        "organization": "Instituto Cultural",
-        "overall": 0.714,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 56,
-              "tagCount": 2,
-              "resourceCount": 1
-            },
-            "calculatedAt": "2026-05-31T08:56:42.894Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.293,
-            "evidence": {
-              "modifiedAt": "2025-07-16T13:39:07.020475",
-              "daysSinceModified": 319,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-05-31T08:56:42.894Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.65,
-            "evidence": {
-              "formats": [
-                "XLS"
-              ],
-              "bestFormat": "XLS",
-              "bestFormatScore": 0.65,
-              "resourceCount": 1,
-              "formatDistribution": {
-                "XLS": 1
-              }
-            },
-            "calculatedAt": "2026-05-31T08:56:42.894Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 1,
-              "checked": 1,
-              "accessible": 1
-            },
-            "calculatedAt": "2026-05-31T08:56:43.510Z"
-          }
-        ],
-        "lastChecked": "2026-05-31T08:56:28.934Z"
-      }
-    },
-    {
-      "datasetId": "datos-bahiablanca-ar:fondo-municipal-de-las-artes",
-      "externalId": "fondo-municipal-de-las-artes",
-      "modifiedAt": "2025-07-16T13:36:52.373897",
-      "lastScoredAt": "2026-05-31T08:56:28.934Z",
-      "score": {
-        "datasetId": "datos-bahiablanca-ar:fondo-municipal-de-las-artes",
-        "title": "Fondo Municipal de las Artes",
-        "organization": "Instituto Cultural",
-        "overall": 0.714,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 274,
-              "tagCount": 3,
-              "resourceCount": 6
-            },
-            "calculatedAt": "2026-05-31T08:56:43.510Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.293,
-            "evidence": {
-              "modifiedAt": "2025-07-16T13:36:52.373897",
-              "daysSinceModified": 319,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-05-31T08:56:43.510Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.65,
-            "evidence": {
-              "formats": [
-                "XLS"
-              ],
-              "bestFormat": "XLS",
-              "bestFormatScore": 0.65,
-              "resourceCount": 6,
-              "formatDistribution": {
-                "XLS": 6
-              }
-            },
-            "calculatedAt": "2026-05-31T08:56:43.511Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 6,
-              "checked": 6,
-              "accessible": 6
-            },
-            "calculatedAt": "2026-05-31T08:56:44.896Z"
-          }
-        ],
-        "lastChecked": "2026-05-31T08:56:28.934Z"
-      }
-    },
-    {
-      "datasetId": "datos-bahiablanca-ar:aportes-a-eventos-permanentes",
-      "externalId": "aportes-a-eventos-permanentes",
-      "modifiedAt": "2025-07-16T13:31:59.803939",
-      "lastScoredAt": "2026-05-31T08:56:28.934Z",
-      "score": {
-        "datasetId": "datos-bahiablanca-ar:aportes-a-eventos-permanentes",
-        "title": "Aportes a Eventos Permanentes",
-        "organization": "Instituto Cultural",
-        "overall": 0.714,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 384,
-              "tagCount": 2,
-              "resourceCount": 1
-            },
-            "calculatedAt": "2026-05-31T08:56:44.896Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.293,
-            "evidence": {
-              "modifiedAt": "2025-07-16T13:31:59.803939",
-              "daysSinceModified": 319,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-05-31T08:56:44.896Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.65,
-            "evidence": {
-              "formats": [
-                "XLS"
-              ],
-              "bestFormat": "XLS",
-              "bestFormatScore": 0.65,
-              "resourceCount": 1,
-              "formatDistribution": {
-                "XLS": 1
-              }
-            },
-            "calculatedAt": "2026-05-31T08:56:44.896Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 1,
-              "checked": 1,
-              "accessible": 1
-            },
-            "calculatedAt": "2026-05-31T08:56:45.521Z"
           }
         ],
         "lastChecked": "2026-05-31T08:56:28.934Z"
@@ -16039,15 +15825,15 @@
       }
     },
     {
-      "datasetId": "datos-bahiablanca-ar:sueldos-personal",
-      "externalId": "sueldos-personal",
-      "modifiedAt": "2026-06-03T14:35:06.921519",
-      "lastScoredAt": "2026-06-04T09:44:24.029Z",
+      "datasetId": "datos-bahiablanca-ar:aportes-a-eventos-permanentes",
+      "externalId": "aportes-a-eventos-permanentes",
+      "modifiedAt": "2026-06-04T14:19:43.539673",
+      "lastScoredAt": "2026-06-05T09:31:30.698Z",
       "score": {
-        "datasetId": "datos-bahiablanca-ar:sueldos-personal",
-        "title": "Sueldos del personal Municipal",
-        "organization": "Secretaría de Economía",
-        "overall": 0.984,
+        "datasetId": "datos-bahiablanca-ar:aportes-a-eventos-permanentes",
+        "title": "Aportes a Eventos Permanentes",
+        "organization": "Instituto Cultural",
+        "overall": 0.89,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -16064,21 +15850,237 @@
                 "createdAt"
               ],
               "fieldsMissing": [],
-              "descriptionLength": 29,
-              "tagCount": 3,
-              "resourceCount": 5
+              "descriptionLength": 384,
+              "tagCount": 2,
+              "resourceCount": 1
             },
-            "calculatedAt": "2026-06-04T09:44:24.029Z"
+            "calculatedAt": "2026-06-05T09:31:30.698Z"
           },
           {
             "dimension": "freshness",
             "score": 0.997,
             "evidence": {
-              "modifiedAt": "2026-06-03T14:35:06.921519",
+              "modifiedAt": "2026-06-04T14:19:43.539673",
               "daysSinceModified": 1,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-06-04T09:44:24.029Z"
+            "calculatedAt": "2026-06-05T09:31:30.698Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.65,
+            "evidence": {
+              "formats": [
+                "XLS"
+              ],
+              "bestFormat": "XLS",
+              "bestFormatScore": 0.65,
+              "resourceCount": 1,
+              "formatDistribution": {
+                "XLS": 1
+              }
+            },
+            "calculatedAt": "2026-06-05T09:31:30.698Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 1,
+              "checked": 1,
+              "accessible": 1
+            },
+            "calculatedAt": "2026-06-05T09:31:31.939Z"
+          }
+        ],
+        "lastChecked": "2026-06-05T09:31:30.698Z"
+      }
+    },
+    {
+      "datasetId": "datos-bahiablanca-ar:fondo-municipal-de-las-artes",
+      "externalId": "fondo-municipal-de-las-artes",
+      "modifiedAt": "2026-06-04T14:17:35.354140",
+      "lastScoredAt": "2026-06-05T09:31:30.698Z",
+      "score": {
+        "datasetId": "datos-bahiablanca-ar:fondo-municipal-de-las-artes",
+        "title": "Fondo Municipal de las Artes",
+        "organization": "Instituto Cultural",
+        "overall": 0.89,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 274,
+              "tagCount": 3,
+              "resourceCount": 7
+            },
+            "calculatedAt": "2026-06-05T09:31:31.939Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.997,
+            "evidence": {
+              "modifiedAt": "2026-06-04T14:17:35.354140",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-06-05T09:31:31.939Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.65,
+            "evidence": {
+              "formats": [
+                "XLS"
+              ],
+              "bestFormat": "XLS",
+              "bestFormatScore": 0.65,
+              "resourceCount": 7,
+              "formatDistribution": {
+                "XLS": 7
+              }
+            },
+            "calculatedAt": "2026-06-05T09:31:31.940Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 7,
+              "checked": 7,
+              "accessible": 7
+            },
+            "calculatedAt": "2026-06-05T09:31:33.868Z"
+          }
+        ],
+        "lastChecked": "2026-06-05T09:31:30.698Z"
+      }
+    },
+    {
+      "datasetId": "datos-bahiablanca-ar:subsidios-a-espacios-culturales-independientes",
+      "externalId": "subsidios-a-espacios-culturales-independientes",
+      "modifiedAt": "2026-06-04T14:12:59.745768",
+      "lastScoredAt": "2026-06-05T09:31:30.698Z",
+      "score": {
+        "datasetId": "datos-bahiablanca-ar:subsidios-a-espacios-culturales-independientes",
+        "title": "Subsidios a Espacios Culturales Independientes",
+        "organization": "Instituto Cultural",
+        "overall": 0.89,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 56,
+              "tagCount": 2,
+              "resourceCount": 1
+            },
+            "calculatedAt": "2026-06-05T09:31:33.868Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.997,
+            "evidence": {
+              "modifiedAt": "2026-06-04T14:12:59.745768",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-06-05T09:31:33.868Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.65,
+            "evidence": {
+              "formats": [
+                "XLS"
+              ],
+              "bestFormat": "XLS",
+              "bestFormatScore": 0.65,
+              "resourceCount": 1,
+              "formatDistribution": {
+                "XLS": 1
+              }
+            },
+            "calculatedAt": "2026-06-05T09:31:33.868Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 1,
+              "checked": 1,
+              "accessible": 1
+            },
+            "calculatedAt": "2026-06-05T09:31:35.095Z"
+          }
+        ],
+        "lastChecked": "2026-06-05T09:31:30.698Z"
+      }
+    },
+    {
+      "datasetId": "datos-bahiablanca-ar:publicidad",
+      "externalId": "publicidad",
+      "modifiedAt": "2026-04-21T16:26:19.058320",
+      "lastScoredAt": "2026-06-05T09:31:30.698Z",
+      "score": {
+        "datasetId": "datos-bahiablanca-ar:publicidad",
+        "title": "Publicidad",
+        "organization": "Secretaría de Economía",
+        "overall": 0.928,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 59,
+              "tagCount": 3,
+              "resourceCount": 38
+            },
+            "calculatedAt": "2026-06-05T09:31:35.095Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.842,
+            "evidence": {
+              "modifiedAt": "2026-04-21T16:26:19.058320",
+              "daysSinceModified": 45,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-06-05T09:31:35.095Z"
           },
           {
             "dimension": "structure",
@@ -16087,33 +16089,31 @@
               "formats": [
                 "JSON",
                 "CSV",
-                "XLS",
-                "PDF"
+                "XLS"
               ],
               "bestFormat": "CSV",
               "bestFormatScore": 0.95,
-              "resourceCount": 5,
+              "resourceCount": 38,
               "formatDistribution": {
                 "JSON": 1,
-                "CSV": 2,
-                "XLS": 1,
-                "PDF": 1
+                "CSV": 19,
+                "XLS": 18
               }
             },
-            "calculatedAt": "2026-06-04T09:44:24.029Z"
+            "calculatedAt": "2026-06-05T09:31:35.095Z"
           },
           {
             "dimension": "accessibility",
-            "score": 1,
+            "score": 0.947,
             "evidence": {
-              "resourceCount": 5,
-              "checked": 5,
-              "accessible": 5
+              "resourceCount": 38,
+              "checked": 38,
+              "accessible": 36
             },
-            "calculatedAt": "2026-06-04T09:44:26.638Z"
+            "calculatedAt": "2026-06-05T09:31:42.693Z"
           }
         ],
-        "lastChecked": "2026-06-04T09:44:24.029Z"
+        "lastChecked": "2026-06-05T09:31:30.698Z"
       }
     }
   ]
