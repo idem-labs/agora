@@ -1,7 +1,79 @@
 {
   "catalogId": "datos-arsat-ar",
-  "updatedAt": "2026-06-05T09:32:48.105Z",
+  "updatedAt": "2026-06-06T08:29:07.869Z",
   "datasets": [
+    {
+      "datasetId": "datos-arsat-ar:ejecuciones-presupuestarias",
+      "externalId": "ejecuciones-presupuestarias",
+      "modifiedAt": "2026-06-04T15:45:57.642232",
+      "lastScoredAt": "2026-06-05T09:32:48.105Z",
+      "score": {
+        "datasetId": "datos-arsat-ar:ejecuciones-presupuestarias",
+        "title": "Ejecuciones presupuestarias",
+        "organization": "Gerencia de Administración y finanzas",
+        "overall": 0.955,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 38,
+              "tagCount": 3,
+              "resourceCount": 11
+            },
+            "calculatedAt": "2026-06-05T09:32:48.105Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.997,
+            "evidence": {
+              "modifiedAt": "2026-06-04T15:45:57.642232",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-06-05T09:32:48.105Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 11,
+              "formatDistribution": {
+                "CSV": 11
+              }
+            },
+            "calculatedAt": "2026-06-05T09:32:48.105Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.909,
+            "evidence": {
+              "resourceCount": 11,
+              "checked": 11,
+              "accessible": 10
+            },
+            "calculatedAt": "2026-06-05T09:32:50.009Z"
+          }
+        ],
+        "lastChecked": "2026-06-05T09:32:48.105Z"
+      }
+    },
     {
       "datasetId": "datos-arsat-ar:cinear-play",
       "externalId": "cinear-play",
@@ -75,15 +147,15 @@
       }
     },
     {
-      "datasetId": "datos-arsat-ar:organigrama",
-      "externalId": "organigrama",
-      "modifiedAt": "2026-06-02T19:28:10.936240",
-      "lastScoredAt": "2026-06-03T10:52:11.910Z",
+      "datasetId": "datos-arsat-ar:declaraciones-juradas-patrimoniales",
+      "externalId": "declaraciones-juradas-patrimoniales",
+      "modifiedAt": "2026-05-06T15:13:56.059111",
+      "lastScoredAt": "2026-06-05T09:32:48.105Z",
       "score": {
-        "datasetId": "datos-arsat-ar:organigrama",
-        "title": "Organigrama",
+        "datasetId": "datos-arsat-ar:declaraciones-juradas-patrimoniales",
+        "title": "Declaraciones Juradas Patrimoniales",
         "organization": "ARSAT",
-        "overall": 0.734,
+        "overall": 0.895,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -100,122 +172,52 @@
                 "createdAt"
               ],
               "fieldsMissing": [],
-              "descriptionLength": 82,
-              "tagCount": 3,
-              "resourceCount": 1
+              "descriptionLength": 359,
+              "tagCount": 1,
+              "resourceCount": 5
             },
-            "calculatedAt": "2026-06-03T10:52:11.910Z"
+            "calculatedAt": "2026-06-05T09:32:50.009Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.998,
+            "score": 0.892,
             "evidence": {
-              "modifiedAt": "2026-06-02T19:28:10.936240",
-              "daysSinceModified": 1,
+              "modifiedAt": "2026-05-06T15:13:56.059111",
+              "daysSinceModified": 30,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-06-03T10:52:11.910Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.15,
-            "evidence": {
-              "formats": [
-                "PDF"
-              ],
-              "bestFormat": "PDF",
-              "bestFormatScore": 0.15,
-              "resourceCount": 1,
-              "formatDistribution": {
-                "PDF": 1
-              }
-            },
-            "calculatedAt": "2026-06-03T10:52:11.910Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 1,
-              "checked": 1,
-              "accessible": 1
-            },
-            "calculatedAt": "2026-06-03T10:52:12.121Z"
-          }
-        ],
-        "lastChecked": "2026-06-03T10:52:11.910Z"
-      }
-    },
-    {
-      "datasetId": "datos-arsat-ar:personal",
-      "externalId": "personal",
-      "modifiedAt": "2026-05-29T17:07:06.115364",
-      "lastScoredAt": "2026-05-30T08:21:04.892Z",
-      "score": {
-        "datasetId": "datos-arsat-ar:personal",
-        "title": "Personal",
-        "organization": "Subgerencia de Recursos Humanos y RSE",
-        "overall": 0.984,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 44,
-              "tagCount": 2,
-              "resourceCount": 9
-            },
-            "calculatedAt": "2026-05-30T08:21:04.892Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.998,
-            "evidence": {
-              "modifiedAt": "2026-05-29T17:07:06.115364",
-              "daysSinceModified": 1,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-05-30T08:21:04.892Z"
+            "calculatedAt": "2026-06-05T09:32:50.009Z"
           },
           {
             "dimension": "structure",
             "score": 0.95,
             "evidence": {
               "formats": [
+                "PDF",
                 "CSV"
               ],
               "bestFormat": "CSV",
               "bestFormatScore": 0.95,
-              "resourceCount": 9,
+              "resourceCount": 5,
               "formatDistribution": {
-                "CSV": 9
+                "PDF": 1,
+                "CSV": 4
               }
             },
-            "calculatedAt": "2026-05-30T08:21:04.892Z"
+            "calculatedAt": "2026-06-05T09:32:50.009Z"
           },
           {
             "dimension": "accessibility",
-            "score": 1,
+            "score": 0.8,
             "evidence": {
-              "resourceCount": 9,
-              "checked": 9,
-              "accessible": 9
+              "resourceCount": 5,
+              "checked": 5,
+              "accessible": 4
             },
-            "calculatedAt": "2026-05-30T08:21:06.634Z"
+            "calculatedAt": "2026-06-05T09:32:50.592Z"
           }
         ],
-        "lastChecked": "2026-05-30T08:21:04.892Z"
+        "lastChecked": "2026-06-05T09:32:48.105Z"
       }
     },
     {
@@ -801,15 +803,15 @@
       }
     },
     {
-      "datasetId": "datos-arsat-ar:ejecuciones-presupuestarias",
-      "externalId": "ejecuciones-presupuestarias",
-      "modifiedAt": "2026-06-04T15:45:57.642232",
-      "lastScoredAt": "2026-06-05T09:32:48.105Z",
+      "datasetId": "datos-arsat-ar:organigrama",
+      "externalId": "organigrama",
+      "modifiedAt": "2026-06-05T12:20:57.505666",
+      "lastScoredAt": "2026-06-06T08:29:07.869Z",
       "score": {
-        "datasetId": "datos-arsat-ar:ejecuciones-presupuestarias",
-        "title": "Ejecuciones presupuestarias",
-        "organization": "Gerencia de Administración y finanzas",
-        "overall": 0.955,
+        "datasetId": "datos-arsat-ar:organigrama",
+        "title": "Organigrama",
+        "organization": "ARSAT",
+        "overall": 0.734,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -826,62 +828,62 @@
                 "createdAt"
               ],
               "fieldsMissing": [],
-              "descriptionLength": 38,
+              "descriptionLength": 82,
               "tagCount": 3,
-              "resourceCount": 11
+              "resourceCount": 1
             },
-            "calculatedAt": "2026-06-05T09:32:48.105Z"
+            "calculatedAt": "2026-06-06T08:29:07.869Z"
           },
           {
             "dimension": "freshness",
             "score": 0.997,
             "evidence": {
-              "modifiedAt": "2026-06-04T15:45:57.642232",
+              "modifiedAt": "2026-06-05T12:20:57.505666",
               "daysSinceModified": 1,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-06-05T09:32:48.105Z"
+            "calculatedAt": "2026-06-06T08:29:07.869Z"
           },
           {
             "dimension": "structure",
-            "score": 0.95,
+            "score": 0.15,
             "evidence": {
               "formats": [
-                "CSV"
+                "PDF"
               ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 11,
+              "bestFormat": "PDF",
+              "bestFormatScore": 0.15,
+              "resourceCount": 1,
               "formatDistribution": {
-                "CSV": 11
+                "PDF": 1
               }
             },
-            "calculatedAt": "2026-06-05T09:32:48.105Z"
+            "calculatedAt": "2026-06-06T08:29:07.869Z"
           },
           {
             "dimension": "accessibility",
-            "score": 0.909,
+            "score": 1,
             "evidence": {
-              "resourceCount": 11,
-              "checked": 11,
-              "accessible": 10
+              "resourceCount": 1,
+              "checked": 1,
+              "accessible": 1
             },
-            "calculatedAt": "2026-06-05T09:32:50.009Z"
+            "calculatedAt": "2026-06-06T08:29:08.031Z"
           }
         ],
-        "lastChecked": "2026-06-05T09:32:48.105Z"
+        "lastChecked": "2026-06-06T08:29:07.869Z"
       }
     },
     {
-      "datasetId": "datos-arsat-ar:declaraciones-juradas-patrimoniales",
-      "externalId": "declaraciones-juradas-patrimoniales",
-      "modifiedAt": "2026-05-06T15:13:56.059111",
-      "lastScoredAt": "2026-06-05T09:32:48.105Z",
+      "datasetId": "datos-arsat-ar:personal",
+      "externalId": "personal",
+      "modifiedAt": "2026-05-29T17:07:06.115364",
+      "lastScoredAt": "2026-06-06T08:29:07.869Z",
       "score": {
-        "datasetId": "datos-arsat-ar:declaraciones-juradas-patrimoniales",
-        "title": "Declaraciones Juradas Patrimoniales",
-        "organization": "ARSAT",
-        "overall": 0.895,
+        "datasetId": "datos-arsat-ar:personal",
+        "title": "Personal",
+        "organization": "Subgerencia de Recursos Humanos y RSE",
+        "overall": 0.977,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -898,52 +900,50 @@
                 "createdAt"
               ],
               "fieldsMissing": [],
-              "descriptionLength": 359,
-              "tagCount": 1,
-              "resourceCount": 5
+              "descriptionLength": 44,
+              "tagCount": 2,
+              "resourceCount": 9
             },
-            "calculatedAt": "2026-06-05T09:32:50.009Z"
+            "calculatedAt": "2026-06-06T08:29:08.031Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.892,
+            "score": 0.971,
             "evidence": {
-              "modifiedAt": "2026-05-06T15:13:56.059111",
-              "daysSinceModified": 30,
+              "modifiedAt": "2026-05-29T17:07:06.115364",
+              "daysSinceModified": 8,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-06-05T09:32:50.009Z"
+            "calculatedAt": "2026-06-06T08:29:08.031Z"
           },
           {
             "dimension": "structure",
             "score": 0.95,
             "evidence": {
               "formats": [
-                "PDF",
                 "CSV"
               ],
               "bestFormat": "CSV",
               "bestFormatScore": 0.95,
-              "resourceCount": 5,
+              "resourceCount": 9,
               "formatDistribution": {
-                "PDF": 1,
-                "CSV": 4
+                "CSV": 9
               }
             },
-            "calculatedAt": "2026-06-05T09:32:50.009Z"
+            "calculatedAt": "2026-06-06T08:29:08.031Z"
           },
           {
             "dimension": "accessibility",
-            "score": 0.8,
+            "score": 1,
             "evidence": {
-              "resourceCount": 5,
-              "checked": 5,
-              "accessible": 4
+              "resourceCount": 9,
+              "checked": 9,
+              "accessible": 9
             },
-            "calculatedAt": "2026-06-05T09:32:50.592Z"
+            "calculatedAt": "2026-06-06T08:29:09.710Z"
           }
         ],
-        "lastChecked": "2026-06-05T09:32:48.105Z"
+        "lastChecked": "2026-06-06T08:29:07.869Z"
       }
     }
   ]
