@@ -1,8 +1,76 @@
 {
   "catalogId": "datos-energia-ar",
-  "scoredAt": "2026-06-07T08:50:19.263Z",
+  "scoredAt": "2026-06-08T10:28:35.719Z",
   "datasetCount": 178,
   "datasets": [
+    {
+      "datasetId": "datos-energia-ar:energias-renovables-plantas-biocombustibles",
+      "title": "Energías renovables - Plantas de biocombustibles",
+      "organization": "Subsecretaría de Eficiencia e Información Energética",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 166,
+            "tagCount": 4,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-06-07T08:50:25.601Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.999,
+          "evidence": {
+            "modifiedAt": "2026-06-07T05:00:04.032242",
+            "daysSinceModified": 0,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-06-07T08:50:25.601Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "SHP"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "CSV": 1,
+              "SHP": 1
+            }
+          },
+          "calculatedAt": "2026-06-07T08:50:25.601Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-06-07T08:50:26.201Z"
+        }
+      ],
+      "lastChecked": "2026-06-07T08:50:19.263Z"
+    },
     {
       "datasetId": "datos-energia-ar:transporte-de-hidrocarburos",
       "title": "Transporte de Hidrocarburos",
@@ -10282,74 +10350,6 @@
       "lastChecked": "2026-06-02T10:05:20.488Z"
     },
     {
-      "datasetId": "datos-energia-ar:distribucion-electrica-edelap",
-      "title": "Distribución Eléctrica Edelap",
-      "organization": "Subsecretaría de Eficiencia e Información Energética",
-      "overall": 0.971,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 109,
-            "tagCount": 8,
-            "resourceCount": 12
-          },
-          "calculatedAt": "2026-06-02T10:06:12.529Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.945,
-          "evidence": {
-            "modifiedAt": "2026-05-18T16:01:25.009571",
-            "daysSinceModified": 15,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-06-02T10:06:12.529Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "SHP"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 12,
-            "formatDistribution": {
-              "CSV": 6,
-              "SHP": 6
-            }
-          },
-          "calculatedAt": "2026-06-02T10:06:12.529Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 12,
-            "checked": 12,
-            "accessible": 12
-          },
-          "calculatedAt": "2026-06-02T10:06:13.212Z"
-        }
-      ],
-      "lastChecked": "2026-06-02T10:05:20.488Z"
-    },
-    {
       "datasetId": "datos-energia-ar:compras-glp",
       "title": "Compras de GLP",
       "organization": "Dirección Nacional de Gas Licuado",
@@ -11627,10 +11627,10 @@
       "lastChecked": "2026-06-01T11:26:10.723Z"
     },
     {
-      "datasetId": "datos-energia-ar:operadores_glp",
-      "title": "Operadores de GLP",
+      "datasetId": "datos-energia-ar:precios-en-surtidor",
+      "title": "Precios en Surtidor - Resolución 314/2016",
       "organization": "Subsecretaría de Eficiencia e Información Energética",
-      "overall": 0.984,
+      "overall": 0.88,
       "dimensions": [
         {
           "dimension": "completeness",
@@ -11647,54 +11647,52 @@
               "createdAt"
             ],
             "fieldsMissing": [],
-            "descriptionLength": 146,
-            "tagCount": 5,
-            "resourceCount": 26
+            "descriptionLength": 383,
+            "tagCount": 4,
+            "resourceCount": 3
           },
-          "calculatedAt": "2026-06-07T08:50:19.264Z"
+          "calculatedAt": "2026-06-08T10:28:35.719Z"
         },
         {
           "dimension": "freshness",
           "score": 1,
           "evidence": {
-            "modifiedAt": "2026-06-07T07:01:32.596503",
+            "modifiedAt": "2026-06-08T10:01:28.814700",
             "daysSinceModified": 0,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-06-07T08:50:19.264Z"
+          "calculatedAt": "2026-06-08T10:28:35.719Z"
         },
         {
           "dimension": "structure",
           "score": 0.95,
           "evidence": {
             "formats": [
-              "SHP",
               "CSV",
-              "PDF"
+              "HTML"
             ],
             "bestFormat": "CSV",
             "bestFormatScore": 0.95,
-            "resourceCount": 26,
+            "resourceCount": 3,
             "formatDistribution": {
-              "SHP": 12,
-              "CSV": 12,
-              "PDF": 2
+              "CSV": 2,
+              "HTML": 1
             }
           },
-          "calculatedAt": "2026-06-07T08:50:19.264Z"
+          "calculatedAt": "2026-06-08T10:28:35.719Z"
         },
         {
           "dimension": "accessibility",
-          "score": 1,
+          "score": 0.667,
           "evidence": {
-            "resourceCount": 26,
-            "checked": 26,
-            "accessible": 26
+            "resourceCount": 3,
+            "checked": 3,
+            "accessible": 2
           },
-          "calculatedAt": "2026-06-07T08:50:22.546Z"
+          "calculatedAt": "2026-06-08T10:28:36.252Z"
         }
       ],
-      "lastChecked": "2026-06-07T08:50:19.263Z"
+      "lastChecked": "2026-06-08T10:28:35.719Z"
     },
     {
       "datasetId": "datos-energia-ar:produccion-de-petroleo-y-gas-por-pozo",
@@ -11721,17 +11719,17 @@
             "tagCount": 8,
             "resourceCount": 53
           },
-          "calculatedAt": "2026-06-07T08:50:22.547Z"
+          "calculatedAt": "2026-06-08T10:28:36.252Z"
         },
         {
           "dimension": "freshness",
           "score": 1,
           "evidence": {
-            "modifiedAt": "2026-06-07T07:01:24.854690",
+            "modifiedAt": "2026-06-08T10:01:05.013714",
             "daysSinceModified": 0,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-06-07T08:50:22.547Z"
+          "calculatedAt": "2026-06-08T10:28:36.252Z"
         },
         {
           "dimension": "structure",
@@ -11749,7 +11747,7 @@
               "SHP": 1
             }
           },
-          "calculatedAt": "2026-06-07T08:50:22.547Z"
+          "calculatedAt": "2026-06-08T10:28:36.252Z"
         },
         {
           "dimension": "accessibility",
@@ -11759,14 +11757,14 @@
             "checked": 53,
             "accessible": 53
           },
-          "calculatedAt": "2026-06-07T08:50:25.601Z"
+          "calculatedAt": "2026-06-08T10:28:39.216Z"
         }
       ],
-      "lastChecked": "2026-06-07T08:50:19.263Z"
+      "lastChecked": "2026-06-08T10:28:35.719Z"
     },
     {
-      "datasetId": "datos-energia-ar:energias-renovables-plantas-biocombustibles",
-      "title": "Energías renovables - Plantas de biocombustibles",
+      "datasetId": "datos-energia-ar:operadores_glp",
+      "title": "Operadores de GLP",
       "organization": "Subsecretaría de Eficiencia e Información Energética",
       "overall": 0.984,
       "dimensions": [
@@ -11785,58 +11783,60 @@
               "createdAt"
             ],
             "fieldsMissing": [],
-            "descriptionLength": 166,
-            "tagCount": 4,
-            "resourceCount": 2
+            "descriptionLength": 146,
+            "tagCount": 5,
+            "resourceCount": 26
           },
-          "calculatedAt": "2026-06-07T08:50:25.601Z"
+          "calculatedAt": "2026-06-08T10:28:39.216Z"
         },
         {
           "dimension": "freshness",
           "score": 0.999,
           "evidence": {
-            "modifiedAt": "2026-06-07T05:00:04.032242",
+            "modifiedAt": "2026-06-08T07:00:17.856394",
             "daysSinceModified": 0,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-06-07T08:50:25.601Z"
+          "calculatedAt": "2026-06-08T10:28:39.216Z"
         },
         {
           "dimension": "structure",
           "score": 0.95,
           "evidence": {
             "formats": [
+              "SHP",
               "CSV",
-              "SHP"
+              "PDF"
             ],
             "bestFormat": "CSV",
             "bestFormatScore": 0.95,
-            "resourceCount": 2,
+            "resourceCount": 26,
             "formatDistribution": {
-              "CSV": 1,
-              "SHP": 1
+              "SHP": 12,
+              "CSV": 12,
+              "PDF": 2
             }
           },
-          "calculatedAt": "2026-06-07T08:50:25.601Z"
+          "calculatedAt": "2026-06-08T10:28:39.216Z"
         },
         {
           "dimension": "accessibility",
           "score": 1,
           "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
+            "resourceCount": 26,
+            "checked": 26,
+            "accessible": 26
           },
-          "calculatedAt": "2026-06-07T08:50:26.201Z"
+          "calculatedAt": "2026-06-08T10:28:40.694Z"
         }
       ],
-      "lastChecked": "2026-06-07T08:50:19.263Z"
+      "lastChecked": "2026-06-08T10:28:35.719Z"
     },
     {
-      "datasetId": "datos-energia-ar:precios-en-surtidor",
-      "title": "Precios en Surtidor - Resolución 314/2016",
+      "datasetId": "datos-energia-ar:distribucion-electrica-edelap",
+      "title": "Distribución Eléctrica Edelap",
       "organization": "Subsecretaría de Eficiencia e Información Energética",
-      "overall": 0.88,
+      "overall": 0.984,
       "dimensions": [
         {
           "dimension": "completeness",
@@ -11853,21 +11853,21 @@
               "createdAt"
             ],
             "fieldsMissing": [],
-            "descriptionLength": 383,
-            "tagCount": 4,
-            "resourceCount": 3
+            "descriptionLength": 109,
+            "tagCount": 8,
+            "resourceCount": 12
           },
-          "calculatedAt": "2026-06-07T08:50:26.201Z"
+          "calculatedAt": "2026-06-08T10:28:40.694Z"
         },
         {
           "dimension": "freshness",
           "score": 0.999,
           "evidence": {
-            "modifiedAt": "2026-06-07T04:00:26.395861",
+            "modifiedAt": "2026-06-08T06:00:06.456675",
             "daysSinceModified": 0,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-06-07T08:50:26.201Z"
+          "calculatedAt": "2026-06-08T10:28:40.694Z"
         },
         {
           "dimension": "structure",
@@ -11875,30 +11875,30 @@
           "evidence": {
             "formats": [
               "CSV",
-              "HTML"
+              "SHP"
             ],
             "bestFormat": "CSV",
             "bestFormatScore": 0.95,
-            "resourceCount": 3,
+            "resourceCount": 12,
             "formatDistribution": {
-              "CSV": 2,
-              "HTML": 1
+              "CSV": 6,
+              "SHP": 6
             }
           },
-          "calculatedAt": "2026-06-07T08:50:26.201Z"
+          "calculatedAt": "2026-06-08T10:28:40.694Z"
         },
         {
           "dimension": "accessibility",
-          "score": 0.667,
+          "score": 1,
           "evidence": {
-            "resourceCount": 3,
-            "checked": 3,
-            "accessible": 2
+            "resourceCount": 12,
+            "checked": 12,
+            "accessible": 12
           },
-          "calculatedAt": "2026-06-07T08:50:26.553Z"
+          "calculatedAt": "2026-06-08T10:28:41.564Z"
         }
       ],
-      "lastChecked": "2026-06-07T08:50:19.263Z"
+      "lastChecked": "2026-06-08T10:28:35.719Z"
     },
     {
       "datasetId": "datos-energia-ar:datos-de-fractura-de-pozos-adjunto-iv",
@@ -11925,17 +11925,17 @@
             "tagCount": 7,
             "resourceCount": 2
           },
-          "calculatedAt": "2026-06-07T08:50:26.553Z"
+          "calculatedAt": "2026-06-08T10:28:41.564Z"
         },
         {
           "dimension": "freshness",
           "score": 0.999,
           "evidence": {
-            "modifiedAt": "2026-06-07T04:00:02.825083",
+            "modifiedAt": "2026-06-08T04:00:03.170313",
             "daysSinceModified": 0,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-06-07T08:50:26.553Z"
+          "calculatedAt": "2026-06-08T10:28:41.564Z"
         },
         {
           "dimension": "structure",
@@ -11953,7 +11953,7 @@
               "PDF": 1
             }
           },
-          "calculatedAt": "2026-06-07T08:50:26.553Z"
+          "calculatedAt": "2026-06-08T10:28:41.564Z"
         },
         {
           "dimension": "accessibility",
@@ -11963,10 +11963,10 @@
             "checked": 2,
             "accessible": 2
           },
-          "calculatedAt": "2026-06-07T08:50:26.991Z"
+          "calculatedAt": "2026-06-08T10:28:42.045Z"
         }
       ],
-      "lastChecked": "2026-06-07T08:50:19.263Z"
+      "lastChecked": "2026-06-08T10:28:35.719Z"
     }
   ],
   "coverage": 1
