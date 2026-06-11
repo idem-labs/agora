@@ -1,7 +1,79 @@
 {
   "catalogId": "datos-arsat-ar",
-  "updatedAt": "2026-06-10T09:47:02.602Z",
+  "updatedAt": "2026-06-11T10:11:21.189Z",
   "datasets": [
+    {
+      "datasetId": "datos-arsat-ar:autoridades-y-designaciones",
+      "externalId": "autoridades-y-designaciones",
+      "modifiedAt": "2026-06-09T14:45:13.130906",
+      "lastScoredAt": "2026-06-10T09:47:02.602Z",
+      "score": {
+        "datasetId": "datos-arsat-ar:autoridades-y-designaciones",
+        "title": "Autoridades y Designaciones",
+        "organization": "ARSAT",
+        "overall": 0.734,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 117,
+              "tagCount": 3,
+              "resourceCount": 18
+            },
+            "calculatedAt": "2026-06-10T09:47:02.602Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.997,
+            "evidence": {
+              "modifiedAt": "2026-06-09T14:45:13.130906",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-06-10T09:47:02.602Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.15,
+            "evidence": {
+              "formats": [
+                "PDF"
+              ],
+              "bestFormat": "PDF",
+              "bestFormatScore": 0.15,
+              "resourceCount": 18,
+              "formatDistribution": {
+                "PDF": 18
+              }
+            },
+            "calculatedAt": "2026-06-10T09:47:02.602Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 18,
+              "checked": 18,
+              "accessible": 18
+            },
+            "calculatedAt": "2026-06-10T09:47:07.060Z"
+          }
+        ],
+        "lastChecked": "2026-06-10T09:47:02.602Z"
+      }
+    },
     {
       "datasetId": "datos-arsat-ar:declaraciones-juradas-patrimoniales",
       "externalId": "declaraciones-juradas-patrimoniales",
@@ -290,78 +362,6 @@
           }
         ],
         "lastChecked": "2026-06-05T09:32:48.105Z"
-      }
-    },
-    {
-      "datasetId": "datos-arsat-ar:cinear-play",
-      "externalId": "cinear-play",
-      "modifiedAt": "2026-06-03T17:01:54.499009",
-      "lastScoredAt": "2026-06-04T09:45:09.401Z",
-      "score": {
-        "datasetId": "datos-arsat-ar:cinear-play",
-        "title": "Cine.Ar Play",
-        "organization": "ARSAT",
-        "overall": 0.984,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 262,
-              "tagCount": 20,
-              "resourceCount": 4
-            },
-            "calculatedAt": "2026-06-04T09:45:09.401Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.997,
-            "evidence": {
-              "modifiedAt": "2026-06-03T17:01:54.499009",
-              "daysSinceModified": 1,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-06-04T09:45:09.401Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 4,
-              "formatDistribution": {
-                "CSV": 4
-              }
-            },
-            "calculatedAt": "2026-06-04T09:45:09.401Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 4,
-              "checked": 4,
-              "accessible": 4
-            },
-            "calculatedAt": "2026-06-04T09:45:10.282Z"
-          }
-        ],
-        "lastChecked": "2026-06-04T09:45:09.401Z"
       }
     },
     {
@@ -875,15 +875,15 @@
       }
     },
     {
-      "datasetId": "datos-arsat-ar:autoridades-y-designaciones",
-      "externalId": "autoridades-y-designaciones",
-      "modifiedAt": "2026-06-09T14:45:13.130906",
-      "lastScoredAt": "2026-06-10T09:47:02.602Z",
+      "datasetId": "datos-arsat-ar:cinear-play",
+      "externalId": "cinear-play",
+      "modifiedAt": "2026-06-03T17:01:54.499009",
+      "lastScoredAt": "2026-06-11T10:11:21.189Z",
       "score": {
-        "datasetId": "datos-arsat-ar:autoridades-y-designaciones",
-        "title": "Autoridades y Designaciones",
+        "datasetId": "datos-arsat-ar:cinear-play",
+        "title": "Cine.Ar Play",
         "organization": "ARSAT",
-        "overall": 0.734,
+        "overall": 0.977,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -900,50 +900,50 @@
                 "createdAt"
               ],
               "fieldsMissing": [],
-              "descriptionLength": 117,
-              "tagCount": 3,
-              "resourceCount": 18
+              "descriptionLength": 262,
+              "tagCount": 20,
+              "resourceCount": 4
             },
-            "calculatedAt": "2026-06-10T09:47:02.602Z"
+            "calculatedAt": "2026-06-11T10:11:21.189Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.997,
+            "score": 0.971,
             "evidence": {
-              "modifiedAt": "2026-06-09T14:45:13.130906",
-              "daysSinceModified": 1,
+              "modifiedAt": "2026-06-03T17:01:54.499009",
+              "daysSinceModified": 8,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-06-10T09:47:02.602Z"
+            "calculatedAt": "2026-06-11T10:11:21.189Z"
           },
           {
             "dimension": "structure",
-            "score": 0.15,
+            "score": 0.95,
             "evidence": {
               "formats": [
-                "PDF"
+                "CSV"
               ],
-              "bestFormat": "PDF",
-              "bestFormatScore": 0.15,
-              "resourceCount": 18,
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 4,
               "formatDistribution": {
-                "PDF": 18
+                "CSV": 4
               }
             },
-            "calculatedAt": "2026-06-10T09:47:02.602Z"
+            "calculatedAt": "2026-06-11T10:11:21.189Z"
           },
           {
             "dimension": "accessibility",
             "score": 1,
             "evidence": {
-              "resourceCount": 18,
-              "checked": 18,
-              "accessible": 18
+              "resourceCount": 4,
+              "checked": 4,
+              "accessible": 4
             },
-            "calculatedAt": "2026-06-10T09:47:07.060Z"
+            "calculatedAt": "2026-06-11T10:11:22.454Z"
           }
         ],
-        "lastChecked": "2026-06-10T09:47:02.602Z"
+        "lastChecked": "2026-06-11T10:11:21.189Z"
       }
     }
   ]
