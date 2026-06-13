@@ -1,13 +1,13 @@
 {
   "catalogId": "datos-corrientes-ar",
-  "scoredAt": "2026-06-12T10:00:21.070Z",
+  "scoredAt": "2026-06-13T08:51:31.191Z",
   "datasetCount": 71,
   "datasets": [
     {
-      "datasetId": "datos-corrientes-ar:servicios_enfermeria",
-      "title": "Servicio de enfermería",
-      "organization": "Subsecretaria de Salud",
-      "overall": 0.933,
+      "datasetId": "datos-corrientes-ar:retiro_via_publica",
+      "title": "Retiros de la vía pública por infracción",
+      "organization": "Subsecretaria de Transporte",
+      "overall": 0.946,
       "dimensions": [
         {
           "dimension": "completeness",
@@ -24,21 +24,87 @@
               "createdAt"
             ],
             "fieldsMissing": [],
-            "descriptionLength": 98,
+            "descriptionLength": 104,
+            "tagCount": 8,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-06-12T10:00:21.070Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.97,
+          "evidence": {
+            "modifiedAt": "2026-06-04T13:00:18.990115",
+            "daysSinceModified": 8,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-06-12T10:00:21.070Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-06-12T10:00:21.070Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.9,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-06-12T10:00:21.705Z"
+        }
+      ],
+      "lastChecked": "2026-06-12T10:00:21.070Z"
+    },
+    {
+      "datasetId": "datos-corrientes-ar:habilitaciones-a-choferes",
+      "title": "Habilitaciones a Choferes",
+      "organization": "Subsecretaria de Transporte",
+      "overall": 0.946,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 122,
             "tagCount": 5,
             "resourceCount": 1
           },
-          "calculatedAt": "2026-06-06T08:30:22.962Z"
+          "calculatedAt": "2026-06-12T10:00:21.705Z"
         },
         {
           "dimension": "freshness",
-          "score": 0.92,
+          "score": 0.97,
           "evidence": {
-            "modifiedAt": "2026-05-15T15:11:38.295305",
-            "daysSinceModified": 22,
+            "modifiedAt": "2026-06-04T12:59:10.937353",
+            "daysSinceModified": 8,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-06-06T08:30:22.962Z"
+          "calculatedAt": "2026-06-12T10:00:21.705Z"
         },
         {
           "dimension": "structure",
@@ -54,7 +120,7 @@
               "CSV": 1
             }
           },
-          "calculatedAt": "2026-06-06T08:30:22.962Z"
+          "calculatedAt": "2026-06-12T10:00:21.705Z"
         },
         {
           "dimension": "accessibility",
@@ -64,16 +130,16 @@
             "checked": 1,
             "accessible": 1
           },
-          "calculatedAt": "2026-06-06T08:30:23.476Z"
+          "calculatedAt": "2026-06-12T10:00:22.074Z"
         }
       ],
-      "lastChecked": "2026-06-06T08:30:22.962Z"
+      "lastChecked": "2026-06-12T10:00:21.070Z"
     },
     {
-      "datasetId": "datos-corrientes-ar:id_salud",
-      "title": "Bases de Salud",
-      "organization": "Subsecretaria de Salud",
-      "overall": 0.86,
+      "datasetId": "datos-corrientes-ar:habilitaciones-vehiculos",
+      "title": "Habilitaciones de transporte",
+      "organization": "Subsecretaria de Transporte",
+      "overall": 0.946,
       "dimensions": [
         {
           "dimension": "completeness",
@@ -90,219 +156,21 @@
               "createdAt"
             ],
             "fieldsMissing": [],
-            "descriptionLength": 69,
-            "tagCount": 9,
-            "resourceCount": 3
-          },
-          "calculatedAt": "2026-06-06T08:30:23.476Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.92,
-          "evidence": {
-            "modifiedAt": "2026-05-15T15:03:16.873105",
-            "daysSinceModified": 22,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-06-06T08:30:23.476Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 3,
-            "formatDistribution": {
-              "CSV": 3
-            }
-          },
-          "calculatedAt": "2026-06-06T08:30:23.476Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.667,
-          "evidence": {
-            "resourceCount": 3,
-            "checked": 3,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-06-06T08:30:24.739Z"
-        }
-      ],
-      "lastChecked": "2026-06-06T08:30:22.962Z"
-    },
-    {
-      "datasetId": "datos-corrientes-ar:consultas_odontologica",
-      "title": "Consultas odontológicas",
-      "organization": "Subsecretaria de Salud",
-      "overall": 0.933,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 111,
-            "tagCount": 5,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-06-06T08:30:24.739Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.92,
-          "evidence": {
-            "modifiedAt": "2026-05-15T14:54:19.119925",
-            "daysSinceModified": 22,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-06-06T08:30:24.739Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-06-06T08:30:24.739Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.9,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-06-06T08:30:25.056Z"
-        }
-      ],
-      "lastChecked": "2026-06-06T08:30:22.962Z"
-    },
-    {
-      "datasetId": "datos-corrientes-ar:inmunizaciones",
-      "title": "Inmunizaciones",
-      "organization": "Subsecretaria de Salud",
-      "overall": 0.933,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 70,
-            "tagCount": 6,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-06-06T08:30:25.056Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.92,
-          "evidence": {
-            "modifiedAt": "2026-05-15T14:29:01.983401",
-            "daysSinceModified": 22,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-06-06T08:30:25.056Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-06-06T08:30:25.056Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.9,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-06-06T08:30:25.428Z"
-        }
-      ],
-      "lastChecked": "2026-06-06T08:30:22.962Z"
-    },
-    {
-      "datasetId": "datos-corrientes-ar:consultas_medicas",
-      "title": "Consultas médicas",
-      "organization": "Subsecretaria de Salud",
-      "overall": 0.933,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 108,
+            "descriptionLength": 112,
             "tagCount": 4,
             "resourceCount": 1
           },
-          "calculatedAt": "2026-06-06T08:30:25.428Z"
+          "calculatedAt": "2026-06-12T10:00:22.074Z"
         },
         {
           "dimension": "freshness",
-          "score": 0.92,
+          "score": 0.97,
           "evidence": {
-            "modifiedAt": "2026-05-15T14:01:07.521358",
-            "daysSinceModified": 22,
+            "modifiedAt": "2026-06-04T12:53:09.588974",
+            "daysSinceModified": 8,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-06-06T08:30:25.428Z"
+          "calculatedAt": "2026-06-12T10:00:22.074Z"
         },
         {
           "dimension": "structure",
@@ -318,7 +186,7 @@
               "CSV": 1
             }
           },
-          "calculatedAt": "2026-06-06T08:30:25.428Z"
+          "calculatedAt": "2026-06-12T10:00:22.074Z"
         },
         {
           "dimension": "accessibility",
@@ -328,83 +196,16 @@
             "checked": 1,
             "accessible": 1
           },
-          "calculatedAt": "2026-06-06T08:30:25.924Z"
+          "calculatedAt": "2026-06-12T10:00:22.476Z"
         }
       ],
-      "lastChecked": "2026-06-06T08:30:22.962Z"
+      "lastChecked": "2026-06-12T10:00:21.070Z"
     },
     {
-      "datasetId": "datos-corrientes-ar:consultas-segun-patologias-medicas",
-      "title": "Consultas según patologías médicas",
-      "organization": "Subsecretaria de Salud",
-      "overall": 0.914,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 0.85,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [
-              "tags"
-            ],
-            "descriptionLength": 103,
-            "tagCount": 0,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-06-06T08:30:25.924Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.92,
-          "evidence": {
-            "modifiedAt": "2026-05-15T13:47:44.879148",
-            "daysSinceModified": 22,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-06-06T08:30:25.924Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-06-06T08:30:25.924Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.9,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-06-06T08:30:26.321Z"
-        }
-      ],
-      "lastChecked": "2026-06-06T08:30:22.962Z"
-    },
-    {
-      "datasetId": "datos-corrientes-ar:nutricion",
-      "title": "Estado nutricional",
-      "organization": "Subsecretaria de Salud",
-      "overall": 0.964,
+      "datasetId": "datos-corrientes-ar:actas_infraccion",
+      "title": "Actas de infracciones",
+      "organization": "Subsecretaria de Transporte",
+      "overall": 0.946,
       "dimensions": [
         {
           "dimension": "completeness",
@@ -421,21 +222,21 @@
               "createdAt"
             ],
             "fieldsMissing": [],
-            "descriptionLength": 141,
+            "descriptionLength": 92,
             "tagCount": 5,
             "resourceCount": 1
           },
-          "calculatedAt": "2026-06-06T08:30:26.321Z"
+          "calculatedAt": "2026-06-12T10:00:22.476Z"
         },
         {
           "dimension": "freshness",
-          "score": 0.919,
+          "score": 0.97,
           "evidence": {
-            "modifiedAt": "2026-05-15T13:04:06.274363",
-            "daysSinceModified": 22,
+            "modifiedAt": "2026-06-04T12:23:13.347679",
+            "daysSinceModified": 8,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-06-06T08:30:26.321Z"
+          "calculatedAt": "2026-06-12T10:00:22.476Z"
         },
         {
           "dimension": "structure",
@@ -451,7 +252,139 @@
               "CSV": 1
             }
           },
-          "calculatedAt": "2026-06-06T08:30:26.321Z"
+          "calculatedAt": "2026-06-12T10:00:22.476Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.9,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-06-12T10:00:22.824Z"
+        }
+      ],
+      "lastChecked": "2026-06-12T10:00:21.070Z"
+    },
+    {
+      "datasetId": "datos-corrientes-ar:sistema-de-atencion-al-ciudadano",
+      "title": "Servicio de Atención al Ciudadano",
+      "organization": "Dirección General de Atención y Cercanía Ciudadana",
+      "overall": 0.959,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 160,
+            "tagCount": 11,
+            "resourceCount": 9
+          },
+          "calculatedAt": "2026-06-12T10:00:22.824Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.912,
+          "evidence": {
+            "modifiedAt": "2026-05-19T13:14:24.808360",
+            "daysSinceModified": 24,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-06-12T10:00:22.824Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 9,
+            "formatDistribution": {
+              "CSV": 9
+            }
+          },
+          "calculatedAt": "2026-06-12T10:00:22.824Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.989,
+          "evidence": {
+            "resourceCount": 9,
+            "checked": 9,
+            "accessible": 9
+          },
+          "calculatedAt": "2026-06-12T10:00:24.186Z"
+        }
+      ],
+      "lastChecked": "2026-06-12T10:00:21.070Z"
+    },
+    {
+      "datasetId": "datos-corrientes-ar:hisopados",
+      "title": "Hisopados",
+      "organization": "Subsecretaria de Salud",
+      "overall": 0.951,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 182,
+            "tagCount": 3,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-06-12T10:00:24.186Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.868,
+          "evidence": {
+            "modifiedAt": "2026-05-06T15:21:40.001513",
+            "daysSinceModified": 37,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-06-12T10:00:24.186Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-06-12T10:00:24.186Z"
         },
         {
           "dimension": "accessibility",
@@ -461,10 +394,76 @@
             "checked": 1,
             "accessible": 1
           },
-          "calculatedAt": "2026-06-06T08:30:27.193Z"
+          "calculatedAt": "2026-06-12T10:00:24.945Z"
         }
       ],
-      "lastChecked": "2026-06-06T08:30:22.962Z"
+      "lastChecked": "2026-06-12T10:00:21.070Z"
+    },
+    {
+      "datasetId": "datos-corrientes-ar:observatorio-vial",
+      "title": "Observatorio Vial",
+      "organization": "Subsecretaria de Transito y Seguridad Vial",
+      "overall": 0.909,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 116,
+            "tagCount": 4,
+            "resourceCount": 16
+          },
+          "calculatedAt": "2026-06-12T10:00:24.945Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.822,
+          "evidence": {
+            "modifiedAt": "2026-04-22T13:35:29.941685",
+            "daysSinceModified": 51,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-06-12T10:00:24.945Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 16,
+            "formatDistribution": {
+              "CSV": 16
+            }
+          },
+          "calculatedAt": "2026-06-12T10:00:24.945Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.9,
+          "evidence": {
+            "resourceCount": 16,
+            "checked": 16,
+            "accessible": 16
+          },
+          "calculatedAt": "2026-06-12T10:00:25.686Z"
+        }
+      ],
+      "lastChecked": "2026-06-12T10:00:21.070Z"
     },
     {
       "datasetId": "datos-corrientes-ar:barrios",
@@ -4241,340 +4240,10 @@
       "lastChecked": "2026-06-09T09:22:30.000Z"
     },
     {
-      "datasetId": "datos-corrientes-ar:retiro_via_publica",
-      "title": "Retiros de la vía pública por infracción",
-      "organization": "Subsecretaria de Transporte",
-      "overall": 0.946,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 104,
-            "tagCount": 8,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-06-12T10:00:21.070Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.97,
-          "evidence": {
-            "modifiedAt": "2026-06-04T13:00:18.990115",
-            "daysSinceModified": 8,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-06-12T10:00:21.070Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-06-12T10:00:21.070Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.9,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-06-12T10:00:21.705Z"
-        }
-      ],
-      "lastChecked": "2026-06-12T10:00:21.070Z"
-    },
-    {
-      "datasetId": "datos-corrientes-ar:habilitaciones-a-choferes",
-      "title": "Habilitaciones a Choferes",
-      "organization": "Subsecretaria de Transporte",
-      "overall": 0.946,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 122,
-            "tagCount": 5,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-06-12T10:00:21.705Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.97,
-          "evidence": {
-            "modifiedAt": "2026-06-04T12:59:10.937353",
-            "daysSinceModified": 8,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-06-12T10:00:21.705Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-06-12T10:00:21.705Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.9,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-06-12T10:00:22.074Z"
-        }
-      ],
-      "lastChecked": "2026-06-12T10:00:21.070Z"
-    },
-    {
-      "datasetId": "datos-corrientes-ar:habilitaciones-vehiculos",
-      "title": "Habilitaciones de transporte",
-      "organization": "Subsecretaria de Transporte",
-      "overall": 0.946,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 112,
-            "tagCount": 4,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-06-12T10:00:22.074Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.97,
-          "evidence": {
-            "modifiedAt": "2026-06-04T12:53:09.588974",
-            "daysSinceModified": 8,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-06-12T10:00:22.074Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-06-12T10:00:22.074Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.9,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-06-12T10:00:22.476Z"
-        }
-      ],
-      "lastChecked": "2026-06-12T10:00:21.070Z"
-    },
-    {
-      "datasetId": "datos-corrientes-ar:actas_infraccion",
-      "title": "Actas de infracciones",
-      "organization": "Subsecretaria de Transporte",
-      "overall": 0.946,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 92,
-            "tagCount": 5,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-06-12T10:00:22.476Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.97,
-          "evidence": {
-            "modifiedAt": "2026-06-04T12:23:13.347679",
-            "daysSinceModified": 8,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-06-12T10:00:22.476Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-06-12T10:00:22.476Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.9,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-06-12T10:00:22.824Z"
-        }
-      ],
-      "lastChecked": "2026-06-12T10:00:21.070Z"
-    },
-    {
-      "datasetId": "datos-corrientes-ar:sistema-de-atencion-al-ciudadano",
-      "title": "Servicio de Atención al Ciudadano",
-      "organization": "Dirección General de Atención y Cercanía Ciudadana",
-      "overall": 0.959,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 160,
-            "tagCount": 11,
-            "resourceCount": 9
-          },
-          "calculatedAt": "2026-06-12T10:00:22.824Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.912,
-          "evidence": {
-            "modifiedAt": "2026-05-19T13:14:24.808360",
-            "daysSinceModified": 24,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-06-12T10:00:22.824Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 9,
-            "formatDistribution": {
-              "CSV": 9
-            }
-          },
-          "calculatedAt": "2026-06-12T10:00:22.824Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.989,
-          "evidence": {
-            "resourceCount": 9,
-            "checked": 9,
-            "accessible": 9
-          },
-          "calculatedAt": "2026-06-12T10:00:24.186Z"
-        }
-      ],
-      "lastChecked": "2026-06-12T10:00:21.070Z"
-    },
-    {
-      "datasetId": "datos-corrientes-ar:hisopados",
-      "title": "Hisopados",
+      "datasetId": "datos-corrientes-ar:servicios_enfermeria",
+      "title": "Servicio de enfermería",
       "organization": "Subsecretaria de Salud",
-      "overall": 0.951,
+      "overall": 0.927,
       "dimensions": [
         {
           "dimension": "completeness",
@@ -4591,21 +4260,21 @@
               "createdAt"
             ],
             "fieldsMissing": [],
-            "descriptionLength": 182,
-            "tagCount": 3,
+            "descriptionLength": 98,
+            "tagCount": 5,
             "resourceCount": 1
           },
-          "calculatedAt": "2026-06-12T10:00:24.186Z"
+          "calculatedAt": "2026-06-13T08:51:31.191Z"
         },
         {
           "dimension": "freshness",
-          "score": 0.868,
+          "score": 0.895,
           "evidence": {
-            "modifiedAt": "2026-05-06T15:21:40.001513",
-            "daysSinceModified": 37,
+            "modifiedAt": "2026-05-15T15:11:38.295305",
+            "daysSinceModified": 29,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-06-12T10:00:24.186Z"
+          "calculatedAt": "2026-06-13T08:51:31.191Z"
         },
         {
           "dimension": "structure",
@@ -4621,26 +4290,26 @@
               "CSV": 1
             }
           },
-          "calculatedAt": "2026-06-12T10:00:24.186Z"
+          "calculatedAt": "2026-06-13T08:51:31.191Z"
         },
         {
           "dimension": "accessibility",
-          "score": 1,
+          "score": 0.9,
           "evidence": {
             "resourceCount": 1,
             "checked": 1,
             "accessible": 1
           },
-          "calculatedAt": "2026-06-12T10:00:24.945Z"
+          "calculatedAt": "2026-06-13T08:51:31.646Z"
         }
       ],
-      "lastChecked": "2026-06-12T10:00:21.070Z"
+      "lastChecked": "2026-06-13T08:51:31.191Z"
     },
     {
-      "datasetId": "datos-corrientes-ar:observatorio-vial",
-      "title": "Observatorio Vial",
-      "organization": "Subsecretaria de Transito y Seguridad Vial",
-      "overall": 0.909,
+      "datasetId": "datos-corrientes-ar:id_salud",
+      "title": "Bases de Salud",
+      "organization": "Subsecretaria de Salud",
+      "overall": 0.854,
       "dimensions": [
         {
           "dimension": "completeness",
@@ -4657,21 +4326,21 @@
               "createdAt"
             ],
             "fieldsMissing": [],
-            "descriptionLength": 116,
-            "tagCount": 4,
-            "resourceCount": 16
+            "descriptionLength": 69,
+            "tagCount": 9,
+            "resourceCount": 3
           },
-          "calculatedAt": "2026-06-12T10:00:24.945Z"
+          "calculatedAt": "2026-06-13T08:51:31.646Z"
         },
         {
           "dimension": "freshness",
-          "score": 0.822,
+          "score": 0.895,
           "evidence": {
-            "modifiedAt": "2026-04-22T13:35:29.941685",
-            "daysSinceModified": 51,
+            "modifiedAt": "2026-05-15T15:03:16.873105",
+            "daysSinceModified": 29,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-06-12T10:00:24.945Z"
+          "calculatedAt": "2026-06-13T08:51:31.646Z"
         },
         {
           "dimension": "structure",
@@ -4682,25 +4351,356 @@
             ],
             "bestFormat": "CSV",
             "bestFormatScore": 0.95,
-            "resourceCount": 16,
+            "resourceCount": 3,
             "formatDistribution": {
-              "CSV": 16
+              "CSV": 3
             }
           },
-          "calculatedAt": "2026-06-12T10:00:24.945Z"
+          "calculatedAt": "2026-06-13T08:51:31.646Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.667,
+          "evidence": {
+            "resourceCount": 3,
+            "checked": 3,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-06-13T08:51:32.413Z"
+        }
+      ],
+      "lastChecked": "2026-06-13T08:51:31.191Z"
+    },
+    {
+      "datasetId": "datos-corrientes-ar:consultas_odontologica",
+      "title": "Consultas odontológicas",
+      "organization": "Subsecretaria de Salud",
+      "overall": 0.927,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 111,
+            "tagCount": 5,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-06-13T08:51:32.413Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.895,
+          "evidence": {
+            "modifiedAt": "2026-05-15T14:54:19.119925",
+            "daysSinceModified": 29,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-06-13T08:51:32.413Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-06-13T08:51:32.413Z"
         },
         {
           "dimension": "accessibility",
           "score": 0.9,
           "evidence": {
-            "resourceCount": 16,
-            "checked": 16,
-            "accessible": 16
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
           },
-          "calculatedAt": "2026-06-12T10:00:25.686Z"
+          "calculatedAt": "2026-06-13T08:51:32.800Z"
         }
       ],
-      "lastChecked": "2026-06-12T10:00:21.070Z"
+      "lastChecked": "2026-06-13T08:51:31.191Z"
+    },
+    {
+      "datasetId": "datos-corrientes-ar:inmunizaciones",
+      "title": "Inmunizaciones",
+      "organization": "Subsecretaria de Salud",
+      "overall": 0.927,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 70,
+            "tagCount": 6,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-06-13T08:51:32.800Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.895,
+          "evidence": {
+            "modifiedAt": "2026-05-15T14:29:01.983401",
+            "daysSinceModified": 29,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-06-13T08:51:32.800Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-06-13T08:51:32.800Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.9,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-06-13T08:51:33.295Z"
+        }
+      ],
+      "lastChecked": "2026-06-13T08:51:31.191Z"
+    },
+    {
+      "datasetId": "datos-corrientes-ar:consultas_medicas",
+      "title": "Consultas médicas",
+      "organization": "Subsecretaria de Salud",
+      "overall": 0.927,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 108,
+            "tagCount": 4,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-06-13T08:51:33.295Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.895,
+          "evidence": {
+            "modifiedAt": "2026-05-15T14:01:07.521358",
+            "daysSinceModified": 29,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-06-13T08:51:33.295Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-06-13T08:51:33.295Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.9,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-06-13T08:51:33.700Z"
+        }
+      ],
+      "lastChecked": "2026-06-13T08:51:31.191Z"
+    },
+    {
+      "datasetId": "datos-corrientes-ar:consultas-segun-patologias-medicas",
+      "title": "Consultas según patologías médicas",
+      "organization": "Subsecretaria de Salud",
+      "overall": 0.908,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 0.85,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [
+              "tags"
+            ],
+            "descriptionLength": 103,
+            "tagCount": 0,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-06-13T08:51:33.700Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.895,
+          "evidence": {
+            "modifiedAt": "2026-05-15T13:47:44.879148",
+            "daysSinceModified": 29,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-06-13T08:51:33.700Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-06-13T08:51:33.700Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.9,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-06-13T08:51:34.183Z"
+        }
+      ],
+      "lastChecked": "2026-06-13T08:51:31.191Z"
+    },
+    {
+      "datasetId": "datos-corrientes-ar:nutricion",
+      "title": "Estado nutricional",
+      "organization": "Subsecretaria de Salud",
+      "overall": 0.958,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 141,
+            "tagCount": 5,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-06-13T08:51:34.183Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.895,
+          "evidence": {
+            "modifiedAt": "2026-05-15T13:04:06.274363",
+            "daysSinceModified": 29,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-06-13T08:51:34.183Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-06-13T08:51:34.183Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-06-13T08:51:35.006Z"
+        }
+      ],
+      "lastChecked": "2026-06-13T08:51:31.191Z"
     }
   ],
   "coverage": 1
