@@ -1,8 +1,74 @@
 {
   "catalogId": "sep-tucuman-ar",
-  "scoredAt": "2026-06-20T08:41:43.573Z",
+  "scoredAt": "2026-06-21T09:45:32.959Z",
   "datasetCount": 231,
   "datasets": [
+    {
+      "datasetId": "sep-tucuman-ar:obras",
+      "title": "Obras",
+      "organization": "Dirección de Arquitectura y Urbanismo",
+      "overall": 0.859,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 262,
+            "tagCount": 4,
+            "resourceCount": 26
+          },
+          "calculatedAt": "2026-06-20T08:41:43.573Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.997,
+          "evidence": {
+            "modifiedAt": "2026-06-19T12:22:49.868131",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-06-20T08:41:43.573Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.65,
+          "evidence": {
+            "formats": [
+              "XLSX"
+            ],
+            "bestFormat": "XLSX",
+            "bestFormatScore": 0.65,
+            "resourceCount": 26,
+            "formatDistribution": {
+              "XLSX": 26
+            }
+          },
+          "calculatedAt": "2026-06-20T08:41:43.573Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.9,
+          "evidence": {
+            "resourceCount": 26,
+            "checked": 26,
+            "accessible": 26
+          },
+          "calculatedAt": "2026-06-20T08:41:45.391Z"
+        }
+      ],
+      "lastChecked": "2026-06-20T08:41:43.573Z"
+    },
     {
       "datasetId": "sep-tucuman-ar:http-sep-tucuman-gob-ar-dataset-informalidad",
       "title": "Tasa de informalidad",
@@ -15428,72 +15494,6 @@
         }
       ],
       "lastChecked": "2026-06-15T11:57:15.122Z"
-    },
-    {
-      "datasetId": "sep-tucuman-ar:obras",
-      "title": "Obras",
-      "organization": "Dirección de Arquitectura y Urbanismo",
-      "overall": 0.859,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 262,
-            "tagCount": 4,
-            "resourceCount": 26
-          },
-          "calculatedAt": "2026-06-20T08:41:43.573Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.997,
-          "evidence": {
-            "modifiedAt": "2026-06-19T12:22:49.868131",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-06-20T08:41:43.573Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.65,
-          "evidence": {
-            "formats": [
-              "XLSX"
-            ],
-            "bestFormat": "XLSX",
-            "bestFormatScore": 0.65,
-            "resourceCount": 26,
-            "formatDistribution": {
-              "XLSX": 26
-            }
-          },
-          "calculatedAt": "2026-06-20T08:41:43.573Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.9,
-          "evidence": {
-            "resourceCount": 26,
-            "checked": 26,
-            "accessible": 26
-          },
-          "calculatedAt": "2026-06-20T08:41:45.391Z"
-        }
-      ],
-      "lastChecked": "2026-06-20T08:41:43.573Z"
     }
   ],
   "coverage": 1
