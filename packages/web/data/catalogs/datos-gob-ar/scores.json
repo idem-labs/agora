@@ -1,8 +1,74 @@
 {
   "catalogId": "datos-gob-ar",
-  "scoredAt": "2026-06-22T11:33:28.012Z",
-  "datasetCount": 1235,
+  "scoredAt": "2026-06-23T08:57:34.950Z",
+  "datasetCount": 1236,
   "datasets": [
+    {
+      "datasetId": "datos-gob-ar:energia-produccion-combustibles",
+      "title": "Producción de combustibles",
+      "organization": "Secretaría de Energía",
+      "overall": 0.983,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 32,
+            "tagCount": 8,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-06-22T11:33:49.827Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.996,
+          "evidence": {
+            "modifiedAt": "2026-06-21T09:36:39.663543",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-06-22T11:33:49.827Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-06-22T11:33:49.827Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-06-22T11:33:50.159Z"
+        }
+      ],
+      "lastChecked": "2026-06-22T11:33:28.012Z"
+    },
     {
       "datasetId": "datos-gob-ar:ambiente-monitoreo-calidad-agua",
       "title": "Monitoreo de calidad del agua",
@@ -133,74 +199,6 @@
             "accessible": 38
           },
           "calculatedAt": "2026-06-21T09:35:12.105Z"
-        }
-      ],
-      "lastChecked": "2026-06-21T09:34:57.934Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:energia-datos-fractura-pozos-hidrocarburos-adjunto-iv",
-      "title": "Datos de fractura de pozos de hidrocarburos (Adjunto IV)",
-      "organization": "Secretaría de Energía",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 427,
-            "tagCount": 8,
-            "resourceCount": 2
-          },
-          "calculatedAt": "2026-06-21T09:35:18.358Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.999,
-          "evidence": {
-            "modifiedAt": "2026-06-21T04:30:18.210778",
-            "daysSinceModified": 0,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-06-21T09:35:18.358Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "PDF"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 2,
-            "formatDistribution": {
-              "CSV": 1,
-              "PDF": 1
-            }
-          },
-          "calculatedAt": "2026-06-21T09:35:18.358Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-06-21T09:35:18.880Z"
         }
       ],
       "lastChecked": "2026-06-21T09:34:57.934Z"
@@ -471,74 +469,6 @@
             "accessible": 3
           },
           "calculatedAt": "2026-06-21T09:35:43.549Z"
-        }
-      ],
-      "lastChecked": "2026-06-21T09:34:57.934Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:energia-precios-volumenes-eess---resolucion-110404",
-      "title": "Precios y volúmenes EESS - Resolución 1104/04",
-      "organization": "Secretaría de Energía",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 259,
-            "tagCount": 5,
-            "resourceCount": 29
-          },
-          "calculatedAt": "2026-06-21T09:35:44.294Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.999,
-          "evidence": {
-            "modifiedAt": "2026-06-21T04:29:56.190768",
-            "daysSinceModified": 0,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-06-21T09:35:44.294Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "SHP"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 29,
-            "formatDistribution": {
-              "CSV": 28,
-              "SHP": 1
-            }
-          },
-          "calculatedAt": "2026-06-21T09:35:44.294Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 29,
-            "checked": 29,
-            "accessible": 29
-          },
-          "calculatedAt": "2026-06-21T09:35:45.555Z"
         }
       ],
       "lastChecked": "2026-06-21T09:34:57.934Z"
@@ -1606,138 +1536,6 @@
         }
       ],
       "lastChecked": "2026-06-18T10:03:51.780Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:energia-ventas-glp",
-      "title": "Ventas GLP",
-      "organization": "Secretaría de Energía",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 95,
-            "tagCount": 4,
-            "resourceCount": 6
-          },
-          "calculatedAt": "2026-06-15T11:44:35.073Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 1,
-          "evidence": {
-            "modifiedAt": "2026-06-15T10:23:39.132292",
-            "daysSinceModified": 0,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-06-15T11:44:35.073Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 6,
-            "formatDistribution": {
-              "CSV": 6
-            }
-          },
-          "calculatedAt": "2026-06-15T11:44:35.074Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 6,
-            "checked": 6,
-            "accessible": 6
-          },
-          "calculatedAt": "2026-06-15T11:44:37.667Z"
-        }
-      ],
-      "lastChecked": "2026-06-15T11:44:35.073Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:energia-compras-glp",
-      "title": "Compras de GLP",
-      "organization": "Secretaría de Energía",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 85,
-            "tagCount": 4,
-            "resourceCount": 8
-          },
-          "calculatedAt": "2026-06-15T11:44:48.685Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 1,
-          "evidence": {
-            "modifiedAt": "2026-06-15T10:23:08.609285",
-            "daysSinceModified": 0,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-06-15T11:44:48.685Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 8,
-            "formatDistribution": {
-              "CSV": 8
-            }
-          },
-          "calculatedAt": "2026-06-15T11:44:48.685Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 8,
-            "checked": 8,
-            "accessible": 8
-          },
-          "calculatedAt": "2026-06-15T11:44:49.297Z"
-        }
-      ],
-      "lastChecked": "2026-06-15T11:44:35.073Z"
     },
     {
       "datasetId": "datos-gob-ar:transporte-aterrizajes-despegues-procesados-por-administracion-nacional-aviacion-civil-anac",
@@ -4394,74 +4192,6 @@
         }
       ],
       "lastChecked": "2026-06-16T10:53:06.030Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:energia-energias-renovables---plantas-biocombustibles",
-      "title": "Energías renovables - Plantas de biocombustibles",
-      "organization": "Secretaría de Energía",
-      "overall": 0.978,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 166,
-            "tagCount": 6,
-            "resourceCount": 2
-          },
-          "calculatedAt": "2026-06-15T11:45:00.438Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.973,
-          "evidence": {
-            "modifiedAt": "2026-06-08T10:05:11.544055",
-            "daysSinceModified": 7,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-06-15T11:45:00.438Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "SHP"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 2,
-            "formatDistribution": {
-              "CSV": 1,
-              "SHP": 1
-            }
-          },
-          "calculatedAt": "2026-06-15T11:45:00.438Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-06-15T11:45:00.852Z"
-        }
-      ],
-      "lastChecked": "2026-06-15T11:44:35.073Z"
     },
     {
       "datasetId": "datos-gob-ar:justicia-robos-recuperos-autos",
@@ -82145,10 +81875,10 @@
       "lastChecked": "2026-06-19T10:11:43.947Z"
     },
     {
-      "datasetId": "datos-gob-ar:produccion-precios-claros---sepa-mayorista",
-      "title": "Precios Claros - SEPA Mayorista",
-      "organization": "Secretaría de Industria y Comercio",
-      "overall": 0.671,
+      "datasetId": "datos-gob-ar:energia-operadores-glp",
+      "title": "Operadores de GLP",
+      "organization": "Secretaría de Energía",
+      "overall": 0.984,
       "dimensions": [
         {
           "dimension": "completeness",
@@ -82165,60 +81895,128 @@
               "createdAt"
             ],
             "fieldsMissing": [],
-            "descriptionLength": 382,
+            "descriptionLength": 146,
             "tagCount": 7,
-            "resourceCount": 9
+            "resourceCount": 26
           },
-          "calculatedAt": "2026-06-22T11:33:28.012Z"
+          "calculatedAt": "2026-06-23T08:57:34.950Z"
         },
         {
           "dimension": "freshness",
-          "score": 0.997,
+          "score": 1,
           "evidence": {
-            "modifiedAt": "2026-06-21T19:49:50.905346",
-            "daysSinceModified": 1,
+            "modifiedAt": "2026-06-23T08:01:40.605959",
+            "daysSinceModified": 0,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-06-22T11:33:28.012Z"
+          "calculatedAt": "2026-06-23T08:57:34.950Z"
         },
         {
           "dimension": "structure",
-          "score": 0.65,
+          "score": 0.95,
           "evidence": {
             "formats": [
-              "ZIP",
-              "XLSX",
+              "SHP",
+              "CSV",
               "PDF"
             ],
-            "bestFormat": "XLSX",
-            "bestFormatScore": 0.65,
-            "resourceCount": 9,
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 26,
             "formatDistribution": {
-              "ZIP": 7,
-              "XLSX": 1,
-              "PDF": 1
+              "SHP": 12,
+              "CSV": 12,
+              "PDF": 2
             }
           },
-          "calculatedAt": "2026-06-22T11:33:28.012Z"
+          "calculatedAt": "2026-06-23T08:57:34.950Z"
         },
         {
           "dimension": "accessibility",
-          "score": 0.3,
+          "score": 1,
           "evidence": {
-            "resourceCount": 9,
-            "checked": 9,
-            "accessible": 0
+            "resourceCount": 26,
+            "checked": 26,
+            "accessible": 26
           },
-          "calculatedAt": "2026-06-22T11:33:29.227Z"
+          "calculatedAt": "2026-06-23T08:57:40.763Z"
         }
       ],
-      "lastChecked": "2026-06-22T11:33:28.012Z"
+      "lastChecked": "2026-06-23T08:57:34.950Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:energia-datos-fractura-pozos-hidrocarburos-adjunto-iv",
+      "title": "Datos de fractura de pozos de hidrocarburos (Adjunto IV)",
+      "organization": "Secretaría de Energía",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 427,
+            "tagCount": 8,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-06-23T08:57:40.764Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 1,
+          "evidence": {
+            "modifiedAt": "2026-06-23T08:01:30.373684",
+            "daysSinceModified": 0,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-06-23T08:57:40.764Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "PDF"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "CSV": 1,
+              "PDF": 1
+            }
+          },
+          "calculatedAt": "2026-06-23T08:57:40.764Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-06-23T08:57:41.198Z"
+        }
+      ],
+      "lastChecked": "2026-06-23T08:57:34.950Z"
     },
     {
       "datasetId": "datos-gob-ar:produccion-precios-claros---base-sepa",
       "title": "Precios Claros - Base SEPA",
       "organization": "Secretaría de Industria y Comercio",
-      "overall": 0.671,
+      "overall": 0.672,
       "dimensions": [
         {
           "dimension": "completeness",
@@ -82239,17 +82037,17 @@
             "tagCount": 7,
             "resourceCount": 9
           },
-          "calculatedAt": "2026-06-22T11:33:29.227Z"
+          "calculatedAt": "2026-06-23T08:57:41.198Z"
         },
         {
           "dimension": "freshness",
-          "score": 0.997,
+          "score": 0.999,
           "evidence": {
-            "modifiedAt": "2026-06-21T19:49:46.235361",
-            "daysSinceModified": 1,
+            "modifiedAt": "2026-06-23T04:41:12.486721",
+            "daysSinceModified": 0,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-06-22T11:33:29.227Z"
+          "calculatedAt": "2026-06-23T08:57:41.198Z"
         },
         {
           "dimension": "structure",
@@ -82269,7 +82067,7 @@
               "PDF": 1
             }
           },
-          "calculatedAt": "2026-06-22T11:33:29.227Z"
+          "calculatedAt": "2026-06-23T08:57:41.198Z"
         },
         {
           "dimension": "accessibility",
@@ -82279,10 +82077,148 @@
             "checked": 9,
             "accessible": 0
           },
-          "calculatedAt": "2026-06-22T11:33:30.420Z"
+          "calculatedAt": "2026-06-23T08:57:42.332Z"
         }
       ],
-      "lastChecked": "2026-06-22T11:33:28.012Z"
+      "lastChecked": "2026-06-23T08:57:34.950Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:produccion-precios-claros---sepa-mayorista",
+      "title": "Precios Claros - SEPA Mayorista",
+      "organization": "Secretaría de Industria y Comercio",
+      "overall": 0.672,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 382,
+            "tagCount": 7,
+            "resourceCount": 9
+          },
+          "calculatedAt": "2026-06-23T08:57:42.332Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.999,
+          "evidence": {
+            "modifiedAt": "2026-06-23T04:40:49.172256",
+            "daysSinceModified": 0,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-06-23T08:57:42.332Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.65,
+          "evidence": {
+            "formats": [
+              "ZIP",
+              "XLSX",
+              "PDF"
+            ],
+            "bestFormat": "XLSX",
+            "bestFormatScore": 0.65,
+            "resourceCount": 9,
+            "formatDistribution": {
+              "ZIP": 7,
+              "XLSX": 1,
+              "PDF": 1
+            }
+          },
+          "calculatedAt": "2026-06-23T08:57:42.332Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.3,
+          "evidence": {
+            "resourceCount": 9,
+            "checked": 9,
+            "accessible": 0
+          },
+          "calculatedAt": "2026-06-23T08:57:43.379Z"
+        }
+      ],
+      "lastChecked": "2026-06-23T08:57:34.950Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:energia-produccion-petroleo-gas-por-pozo-capitulo-iv",
+      "title": "Producción de petróleo y gas por pozo (Capítulo IV)",
+      "organization": "Secretaría de Energía",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 129,
+            "tagCount": 10,
+            "resourceCount": 53
+          },
+          "calculatedAt": "2026-06-23T08:57:43.379Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.999,
+          "evidence": {
+            "modifiedAt": "2026-06-23T03:57:39.656630",
+            "daysSinceModified": 0,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-06-23T08:57:43.379Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "SHP"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 53,
+            "formatDistribution": {
+              "CSV": 52,
+              "SHP": 1
+            }
+          },
+          "calculatedAt": "2026-06-23T08:57:43.379Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 53,
+            "checked": 53,
+            "accessible": 53
+          },
+          "calculatedAt": "2026-06-23T08:57:48.002Z"
+        }
+      ],
+      "lastChecked": "2026-06-23T08:57:34.950Z"
     },
     {
       "datasetId": "datos-gob-ar:energia-precios-surtidor---resolucion-3142016",
@@ -82309,17 +82245,17 @@
             "tagCount": 5,
             "resourceCount": 3
           },
-          "calculatedAt": "2026-06-22T11:33:30.420Z"
+          "calculatedAt": "2026-06-23T08:57:48.002Z"
         },
         {
           "dimension": "freshness",
-          "score": 0.997,
+          "score": 0.999,
           "evidence": {
-            "modifiedAt": "2026-06-21T19:48:23.487354",
-            "daysSinceModified": 1,
+            "modifiedAt": "2026-06-23T03:57:31.332934",
+            "daysSinceModified": 0,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-06-22T11:33:30.420Z"
+          "calculatedAt": "2026-06-23T08:57:48.002Z"
         },
         {
           "dimension": "structure",
@@ -82337,7 +82273,7 @@
               "HTML": 1
             }
           },
-          "calculatedAt": "2026-06-22T11:33:30.420Z"
+          "calculatedAt": "2026-06-23T08:57:48.002Z"
         },
         {
           "dimension": "accessibility",
@@ -82347,16 +82283,150 @@
             "checked": 3,
             "accessible": 2
           },
-          "calculatedAt": "2026-06-22T11:33:31.637Z"
+          "calculatedAt": "2026-06-23T08:57:48.336Z"
         }
       ],
-      "lastChecked": "2026-06-22T11:33:28.012Z"
+      "lastChecked": "2026-06-23T08:57:34.950Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:energia-precios-volumenes-eess---resolucion-110404",
+      "title": "Precios y volúmenes EESS - Resolución 1104/04",
+      "organization": "Secretaría de Energía",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 259,
+            "tagCount": 5,
+            "resourceCount": 29
+          },
+          "calculatedAt": "2026-06-23T08:57:48.336Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.999,
+          "evidence": {
+            "modifiedAt": "2026-06-23T03:57:30.792006",
+            "daysSinceModified": 0,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-06-23T08:57:48.336Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "SHP"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 29,
+            "formatDistribution": {
+              "CSV": 28,
+              "SHP": 1
+            }
+          },
+          "calculatedAt": "2026-06-23T08:57:48.336Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 29,
+            "checked": 29,
+            "accessible": 29
+          },
+          "calculatedAt": "2026-06-23T08:57:51.414Z"
+        }
+      ],
+      "lastChecked": "2026-06-23T08:57:34.950Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:ambiente-actividad-minera",
+      "title": "Actividad minera",
+      "organization": "Subsecretaría de Ambiente",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 137,
+            "tagCount": 2,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-06-23T08:57:51.414Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.997,
+          "evidence": {
+            "modifiedAt": "2026-06-22T16:53:03.465597",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-06-23T08:57:51.414Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "CSV": 2
+            }
+          },
+          "calculatedAt": "2026-06-23T08:57:51.414Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-06-23T08:57:52.561Z"
+        }
+      ],
+      "lastChecked": "2026-06-23T08:57:34.950Z"
     },
     {
       "datasetId": "datos-gob-ar:energia-produccion-petroleo-gas-sesco",
       "title": "Producción de Petróleo y Gas (SESCO)",
       "organization": "Secretaría de Energía",
-      "overall": 0.686,
+      "overall": 0.984,
       "dimensions": [
         {
           "dimension": "completeness",
@@ -82377,17 +82447,17 @@
             "tagCount": 7,
             "resourceCount": 41
           },
-          "calculatedAt": "2026-06-22T11:33:31.637Z"
+          "calculatedAt": "2026-06-23T08:57:52.561Z"
         },
         {
           "dimension": "freshness",
           "score": 0.997,
           "evidence": {
-            "modifiedAt": "2026-06-21T14:42:35.232367",
+            "modifiedAt": "2026-06-22T11:48:07.738541",
             "daysSinceModified": 1,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-06-22T11:33:31.637Z"
+          "calculatedAt": "2026-06-23T08:57:52.561Z"
         },
         {
           "dimension": "structure",
@@ -82405,26 +82475,26 @@
               "CSV": 37
             }
           },
-          "calculatedAt": "2026-06-22T11:33:31.637Z"
+          "calculatedAt": "2026-06-23T08:57:52.561Z"
         },
         {
           "dimension": "accessibility",
-          "score": 0.049,
+          "score": 1,
           "evidence": {
             "resourceCount": 41,
             "checked": 41,
-            "accessible": 2
+            "accessible": 41
           },
-          "calculatedAt": "2026-06-22T11:33:42.460Z"
+          "calculatedAt": "2026-06-23T08:57:54.925Z"
         }
       ],
-      "lastChecked": "2026-06-22T11:33:28.012Z"
+      "lastChecked": "2026-06-23T08:57:34.950Z"
     },
     {
-      "datasetId": "datos-gob-ar:energia-produccion-petroleo-gas-por-pozo-capitulo-iv",
-      "title": "Producción de petróleo y gas por pozo (Capítulo IV)",
+      "datasetId": "datos-gob-ar:energia-ventas-glp",
+      "title": "Ventas GLP",
       "organization": "Secretaría de Energía",
-      "overall": 0.966,
+      "overall": 0.977,
       "dimensions": [
         {
           "dimension": "completeness",
@@ -82441,21 +82511,153 @@
               "createdAt"
             ],
             "fieldsMissing": [],
-            "descriptionLength": 129,
-            "tagCount": 10,
-            "resourceCount": 53
+            "descriptionLength": 95,
+            "tagCount": 4,
+            "resourceCount": 6
           },
-          "calculatedAt": "2026-06-22T11:33:42.460Z"
+          "calculatedAt": "2026-06-23T08:57:54.925Z"
         },
         {
           "dimension": "freshness",
-          "score": 0.997,
+          "score": 0.97,
           "evidence": {
-            "modifiedAt": "2026-06-21T14:42:31.261784",
-            "daysSinceModified": 1,
+            "modifiedAt": "2026-06-15T10:23:39.132292",
+            "daysSinceModified": 8,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-06-22T11:33:42.460Z"
+          "calculatedAt": "2026-06-23T08:57:54.925Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 6,
+            "formatDistribution": {
+              "CSV": 6
+            }
+          },
+          "calculatedAt": "2026-06-23T08:57:54.925Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 6,
+            "checked": 6,
+            "accessible": 6
+          },
+          "calculatedAt": "2026-06-23T08:57:55.938Z"
+        }
+      ],
+      "lastChecked": "2026-06-23T08:57:34.950Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:energia-compras-glp",
+      "title": "Compras de GLP",
+      "organization": "Secretaría de Energía",
+      "overall": 0.977,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 85,
+            "tagCount": 4,
+            "resourceCount": 8
+          },
+          "calculatedAt": "2026-06-23T08:57:55.938Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.97,
+          "evidence": {
+            "modifiedAt": "2026-06-15T10:23:08.609285",
+            "daysSinceModified": 8,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-06-23T08:57:55.938Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 8,
+            "formatDistribution": {
+              "CSV": 8
+            }
+          },
+          "calculatedAt": "2026-06-23T08:57:55.939Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 8,
+            "checked": 8,
+            "accessible": 8
+          },
+          "calculatedAt": "2026-06-23T08:57:56.441Z"
+        }
+      ],
+      "lastChecked": "2026-06-23T08:57:34.950Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:energia-energias-renovables---plantas-biocombustibles",
+      "title": "Energías renovables - Plantas de biocombustibles",
+      "organization": "Secretaría de Energía",
+      "overall": 0.97,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 166,
+            "tagCount": 6,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-06-23T08:57:56.441Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.944,
+          "evidence": {
+            "modifiedAt": "2026-06-08T10:05:11.544055",
+            "daysSinceModified": 15,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-06-23T08:57:56.441Z"
         },
         {
           "dimension": "structure",
@@ -82467,162 +82669,26 @@
             ],
             "bestFormat": "CSV",
             "bestFormatScore": 0.95,
-            "resourceCount": 53,
+            "resourceCount": 2,
             "formatDistribution": {
-              "CSV": 52,
+              "CSV": 1,
               "SHP": 1
             }
           },
-          "calculatedAt": "2026-06-22T11:33:42.460Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.943,
-          "evidence": {
-            "resourceCount": 53,
-            "checked": 53,
-            "accessible": 50
-          },
-          "calculatedAt": "2026-06-22T11:33:49.827Z"
-        }
-      ],
-      "lastChecked": "2026-06-22T11:33:28.012Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:energia-produccion-combustibles",
-      "title": "Producción de combustibles",
-      "organization": "Secretaría de Energía",
-      "overall": 0.983,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 32,
-            "tagCount": 8,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-06-22T11:33:49.827Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.996,
-          "evidence": {
-            "modifiedAt": "2026-06-21T09:36:39.663543",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-06-22T11:33:49.827Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-06-22T11:33:49.827Z"
+          "calculatedAt": "2026-06-23T08:57:56.441Z"
         },
         {
           "dimension": "accessibility",
           "score": 1,
           "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
           },
-          "calculatedAt": "2026-06-22T11:33:50.159Z"
+          "calculatedAt": "2026-06-23T08:57:56.781Z"
         }
       ],
-      "lastChecked": "2026-06-22T11:33:28.012Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:energia-operadores-glp",
-      "title": "Operadores de GLP",
-      "organization": "Secretaría de Energía",
-      "overall": 0.983,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 146,
-            "tagCount": 7,
-            "resourceCount": 26
-          },
-          "calculatedAt": "2026-06-22T11:33:50.159Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.996,
-          "evidence": {
-            "modifiedAt": "2026-06-21T09:36:37.418614",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-06-22T11:33:50.159Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "SHP",
-              "CSV",
-              "PDF"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 26,
-            "formatDistribution": {
-              "SHP": 12,
-              "CSV": 12,
-              "PDF": 2
-            }
-          },
-          "calculatedAt": "2026-06-22T11:33:50.159Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 26,
-            "checked": 26,
-            "accessible": 26
-          },
-          "calculatedAt": "2026-06-22T11:33:51.305Z"
-        }
-      ],
-      "lastChecked": "2026-06-22T11:33:28.012Z"
+      "lastChecked": "2026-06-23T08:57:34.950Z"
     }
   ],
   "coverage": 1
