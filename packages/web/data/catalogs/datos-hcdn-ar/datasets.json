@@ -1,7 +1,81 @@
 {
   "catalogId": "datos-hcdn-ar",
-  "updatedAt": "2026-06-28T08:41:23.229Z",
+  "updatedAt": "2026-06-29T10:26:58.338Z",
   "datasets": [
+    {
+      "datasetId": "datos-hcdn-ar:comisiones",
+      "externalId": "comisiones",
+      "modifiedAt": "2026-06-19T11:07:00.110488",
+      "lastScoredAt": "2026-06-28T08:41:23.229Z",
+      "score": {
+        "datasetId": "datos-hcdn-ar:comisiones",
+        "title": "Comisiones",
+        "organization": "Secretaría Parlamentaria",
+        "overall": 0.976,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 361,
+              "tagCount": 6,
+              "resourceCount": 14
+            },
+            "calculatedAt": "2026-06-28T08:41:23.229Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.966,
+            "evidence": {
+              "modifiedAt": "2026-06-19T11:07:00.110488",
+              "daysSinceModified": 9,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-06-28T08:41:23.229Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV",
+                "JSON"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 14,
+              "formatDistribution": {
+                "CSV": 7,
+                "JSON": 7
+              }
+            },
+            "calculatedAt": "2026-06-28T08:41:23.229Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 14,
+              "checked": 14,
+              "accessible": 14
+            },
+            "calculatedAt": "2026-06-28T08:41:24.366Z"
+          }
+        ],
+        "lastChecked": "2026-06-28T08:41:23.229Z"
+      }
+    },
     {
       "datasetId": "datos-hcdn-ar:movimientos-de-proyectos",
       "externalId": "movimientos-de-proyectos",
@@ -2077,80 +2151,6 @@
           }
         ],
         "lastChecked": "2026-06-27T08:34:07.772Z"
-      }
-    },
-    {
-      "datasetId": "datos-hcdn-ar:comisiones",
-      "externalId": "comisiones",
-      "modifiedAt": "2026-06-19T11:07:00.110488",
-      "lastScoredAt": "2026-06-28T08:41:23.229Z",
-      "score": {
-        "datasetId": "datos-hcdn-ar:comisiones",
-        "title": "Comisiones",
-        "organization": "Secretaría Parlamentaria",
-        "overall": 0.976,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 361,
-              "tagCount": 6,
-              "resourceCount": 14
-            },
-            "calculatedAt": "2026-06-28T08:41:23.229Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.966,
-            "evidence": {
-              "modifiedAt": "2026-06-19T11:07:00.110488",
-              "daysSinceModified": 9,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-06-28T08:41:23.229Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV",
-                "JSON"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 14,
-              "formatDistribution": {
-                "CSV": 7,
-                "JSON": 7
-              }
-            },
-            "calculatedAt": "2026-06-28T08:41:23.229Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 14,
-              "checked": 14,
-              "accessible": 14
-            },
-            "calculatedAt": "2026-06-28T08:41:24.366Z"
-          }
-        ],
-        "lastChecked": "2026-06-28T08:41:23.229Z"
       }
     }
   ]

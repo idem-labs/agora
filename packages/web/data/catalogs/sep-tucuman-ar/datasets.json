@@ -1,7 +1,79 @@
 {
   "catalogId": "sep-tucuman-ar",
-  "updatedAt": "2026-06-28T08:42:41.211Z",
+  "updatedAt": "2026-06-29T10:28:04.192Z",
   "datasets": [
+    {
+      "datasetId": "sep-tucuman-ar:obras",
+      "externalId": "obras",
+      "modifiedAt": "2026-06-19T12:22:49.868131",
+      "lastScoredAt": "2026-06-28T08:42:41.211Z",
+      "score": {
+        "datasetId": "sep-tucuman-ar:obras",
+        "title": "Obras",
+        "organization": "Dirección de Arquitectura y Urbanismo",
+        "overall": 0.851,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 262,
+              "tagCount": 4,
+              "resourceCount": 26
+            },
+            "calculatedAt": "2026-06-28T08:42:41.211Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.967,
+            "evidence": {
+              "modifiedAt": "2026-06-19T12:22:49.868131",
+              "daysSinceModified": 9,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-06-28T08:42:41.211Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.65,
+            "evidence": {
+              "formats": [
+                "XLSX"
+              ],
+              "bestFormat": "XLSX",
+              "bestFormatScore": 0.65,
+              "resourceCount": 26,
+              "formatDistribution": {
+                "XLSX": 26
+              }
+            },
+            "calculatedAt": "2026-06-28T08:42:41.211Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.9,
+            "evidence": {
+              "resourceCount": 26,
+              "checked": 26,
+              "accessible": 26
+            },
+            "calculatedAt": "2026-06-28T08:42:43.590Z"
+          }
+        ],
+        "lastChecked": "2026-06-28T08:42:41.211Z"
+      }
+    },
     {
       "datasetId": "sep-tucuman-ar:http-sep-tucuman-gob-ar-dataset-informalidad",
       "externalId": "http-sep-tucuman-gob-ar-dataset-informalidad",
@@ -16806,78 +16878,6 @@
           }
         ],
         "lastChecked": "2026-06-23T09:08:40.954Z"
-      }
-    },
-    {
-      "datasetId": "sep-tucuman-ar:obras",
-      "externalId": "obras",
-      "modifiedAt": "2026-06-19T12:22:49.868131",
-      "lastScoredAt": "2026-06-28T08:42:41.211Z",
-      "score": {
-        "datasetId": "sep-tucuman-ar:obras",
-        "title": "Obras",
-        "organization": "Dirección de Arquitectura y Urbanismo",
-        "overall": 0.851,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 262,
-              "tagCount": 4,
-              "resourceCount": 26
-            },
-            "calculatedAt": "2026-06-28T08:42:41.211Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.967,
-            "evidence": {
-              "modifiedAt": "2026-06-19T12:22:49.868131",
-              "daysSinceModified": 9,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-06-28T08:42:41.211Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.65,
-            "evidence": {
-              "formats": [
-                "XLSX"
-              ],
-              "bestFormat": "XLSX",
-              "bestFormatScore": 0.65,
-              "resourceCount": 26,
-              "formatDistribution": {
-                "XLSX": 26
-              }
-            },
-            "calculatedAt": "2026-06-28T08:42:41.211Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0.9,
-            "evidence": {
-              "resourceCount": 26,
-              "checked": 26,
-              "accessible": 26
-            },
-            "calculatedAt": "2026-06-28T08:42:43.590Z"
-          }
-        ],
-        "lastChecked": "2026-06-28T08:42:41.211Z"
       }
     }
   ]
