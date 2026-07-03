@@ -1,7 +1,84 @@
 {
   "catalogId": "catalogo-datos-gba-ar",
-  "updatedAt": "2026-07-02T08:41:46.671Z",
+  "updatedAt": "2026-07-03T08:48:23.043Z",
   "datasets": [
+    {
+      "datasetId": "catalogo-datos-gba-ar:cultura",
+      "externalId": "cultura",
+      "modifiedAt": "2026-07-01T13:21:49.866538",
+      "lastScoredAt": "2026-07-02T08:41:46.671Z",
+      "score": {
+        "datasetId": "catalogo-datos-gba-ar:cultura",
+        "title": "Establecimientos culturales",
+        "organization": "Instituto Cultural de la Provincia de Buenos Aires",
+        "overall": 0.965,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 0.85,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [
+                "tags"
+              ],
+              "descriptionLength": 91,
+              "tagCount": 0,
+              "resourceCount": 3
+            },
+            "calculatedAt": "2026-07-02T08:41:46.671Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.997,
+            "evidence": {
+              "modifiedAt": "2026-07-01T13:21:49.866538",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-02T08:41:46.671Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV",
+                "XLS",
+                "ZIP"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 3,
+              "formatDistribution": {
+                "CSV": 1,
+                "XLS": 1,
+                "ZIP": 1
+              }
+            },
+            "calculatedAt": "2026-07-02T08:41:46.671Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 3,
+              "checked": 3,
+              "accessible": 3
+            },
+            "calculatedAt": "2026-07-02T08:41:47.774Z"
+          }
+        ],
+        "lastChecked": "2026-07-02T08:41:46.671Z"
+      }
+    },
     {
       "datasetId": "catalogo-datos-gba-ar:ampliaciones-sistema-educativo",
       "externalId": "ampliaciones-sistema-educativo",
@@ -315,231 +392,6 @@
       }
     },
     {
-      "datasetId": "catalogo-datos-gba-ar:pbg",
-      "externalId": "pbg",
-      "modifiedAt": "2026-06-24T15:05:12.288765",
-      "lastScoredAt": "2026-06-25T08:46:36.968Z",
-      "score": {
-        "datasetId": "catalogo-datos-gba-ar:pbg",
-        "title": "Producto Bruto Geográfico (PBG)",
-        "organization": "Ministerio de Economía",
-        "overall": 0.965,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 0.85,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [
-                "tags"
-              ],
-              "descriptionLength": 41,
-              "tagCount": 0,
-              "resourceCount": 2
-            },
-            "calculatedAt": "2026-06-25T08:46:36.969Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.997,
-            "evidence": {
-              "modifiedAt": "2026-06-24T15:05:12.288765",
-              "daysSinceModified": 1,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-06-25T08:46:36.969Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "XLS",
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 2,
-              "formatDistribution": {
-                "XLS": 1,
-                "CSV": 1
-              }
-            },
-            "calculatedAt": "2026-06-25T08:46:36.969Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 2,
-              "checked": 2,
-              "accessible": 2
-            },
-            "calculatedAt": "2026-06-25T08:46:37.847Z"
-          }
-        ],
-        "lastChecked": "2026-06-25T08:46:36.968Z"
-      }
-    },
-    {
-      "datasetId": "catalogo-datos-gba-ar:resultados-aprender",
-      "externalId": "resultados-aprender",
-      "modifiedAt": "2026-06-24T12:47:25.779796",
-      "lastScoredAt": "2026-06-25T08:46:36.968Z",
-      "score": {
-        "datasetId": "catalogo-datos-gba-ar:resultados-aprender",
-        "title": "Resultados Aprender",
-        "organization": "Dirección General de Cultura y Educación",
-        "overall": 0.965,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 0.85,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [
-                "tags"
-              ],
-              "descriptionLength": 68,
-              "tagCount": 0,
-              "resourceCount": 1
-            },
-            "calculatedAt": "2026-06-25T08:46:37.847Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.997,
-            "evidence": {
-              "modifiedAt": "2026-06-24T12:47:25.779796",
-              "daysSinceModified": 1,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-06-25T08:46:37.847Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 1,
-              "formatDistribution": {
-                "CSV": 1
-              }
-            },
-            "calculatedAt": "2026-06-25T08:46:37.847Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 1,
-              "checked": 1,
-              "accessible": 1
-            },
-            "calculatedAt": "2026-06-25T08:46:38.058Z"
-          }
-        ],
-        "lastChecked": "2026-06-25T08:46:36.968Z"
-      }
-    },
-    {
-      "datasetId": "catalogo-datos-gba-ar:centros-de-testeo-de-vih-sifilis-y-hepatitis-virales",
-      "externalId": "centros-de-testeo-de-vih-sifilis-y-hepatitis-virales",
-      "modifiedAt": "2026-06-24T12:41:35.084692",
-      "lastScoredAt": "2026-06-25T08:46:36.968Z",
-      "score": {
-        "datasetId": "catalogo-datos-gba-ar:centros-de-testeo-de-vih-sifilis-y-hepatitis-virales",
-        "title": "Centros de testeo de salud",
-        "organization": "Ministerio de Salud",
-        "overall": 0.965,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 0.85,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [
-                "tags"
-              ],
-              "descriptionLength": 97,
-              "tagCount": 0,
-              "resourceCount": 3
-            },
-            "calculatedAt": "2026-06-25T08:46:38.058Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.997,
-            "evidence": {
-              "modifiedAt": "2026-06-24T12:41:35.084692",
-              "daysSinceModified": 1,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-06-25T08:46:38.058Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV",
-                "XLS",
-                "ZIP"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 3,
-              "formatDistribution": {
-                "CSV": 1,
-                "XLS": 1,
-                "ZIP": 1
-              }
-            },
-            "calculatedAt": "2026-06-25T08:46:38.058Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 3,
-              "checked": 3,
-              "accessible": 3
-            },
-            "calculatedAt": "2026-06-25T08:46:38.625Z"
-          }
-        ],
-        "lastChecked": "2026-06-25T08:46:36.968Z"
-      }
-    },
-    {
       "datasetId": "catalogo-datos-gba-ar:partidos",
       "externalId": "partidos",
       "modifiedAt": "2026-06-17T13:29:57.799588",
@@ -768,156 +620,6 @@
           }
         ],
         "lastChecked": "2026-06-26T08:52:12.303Z"
-      }
-    },
-    {
-      "datasetId": "catalogo-datos-gba-ar:tranferencias-consejos-escolares",
-      "externalId": "tranferencias-consejos-escolares",
-      "modifiedAt": "2026-06-16T13:36:03.001615",
-      "lastScoredAt": "2026-06-25T08:46:36.968Z",
-      "score": {
-        "datasetId": "catalogo-datos-gba-ar:tranferencias-consejos-escolares",
-        "title": "Transferencias a Consejos Escolares",
-        "organization": "Ministerio de Economía",
-        "overall": 0.957,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 0.85,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [
-                "tags"
-              ],
-              "descriptionLength": 185,
-              "tagCount": 0,
-              "resourceCount": 2
-            },
-            "calculatedAt": "2026-06-25T08:46:38.625Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.967,
-            "evidence": {
-              "modifiedAt": "2026-06-16T13:36:03.001615",
-              "daysSinceModified": 9,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-06-25T08:46:38.625Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV",
-                "XLS"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 2,
-              "formatDistribution": {
-                "CSV": 1,
-                "XLS": 1
-              }
-            },
-            "calculatedAt": "2026-06-25T08:46:38.625Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 2,
-              "checked": 2,
-              "accessible": 2
-            },
-            "calculatedAt": "2026-06-25T08:46:39.510Z"
-          }
-        ],
-        "lastChecked": "2026-06-25T08:46:36.968Z"
-      }
-    },
-    {
-      "datasetId": "catalogo-datos-gba-ar:recaudacion",
-      "externalId": "recaudacion",
-      "modifiedAt": "2026-06-16T13:26:33.312359",
-      "lastScoredAt": "2026-06-25T08:46:36.968Z",
-      "score": {
-        "datasetId": "catalogo-datos-gba-ar:recaudacion",
-        "title": "Recaudación provincial",
-        "organization": "Ministerio de Economía",
-        "overall": 0.957,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 0.85,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [
-                "tags"
-              ],
-              "descriptionLength": 67,
-              "tagCount": 0,
-              "resourceCount": 2
-            },
-            "calculatedAt": "2026-06-25T08:46:39.510Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.967,
-            "evidence": {
-              "modifiedAt": "2026-06-16T13:26:33.312359",
-              "daysSinceModified": 9,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-06-25T08:46:39.510Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV",
-                "XLS"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 2,
-              "formatDistribution": {
-                "CSV": 1,
-                "XLS": 1
-              }
-            },
-            "calculatedAt": "2026-06-25T08:46:39.510Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 2,
-              "checked": 2,
-              "accessible": 2
-            },
-            "calculatedAt": "2026-06-25T08:46:40.075Z"
-          }
-        ],
-        "lastChecked": "2026-06-25T08:46:36.968Z"
       }
     },
     {
@@ -7745,15 +7447,15 @@
       }
     },
     {
-      "datasetId": "catalogo-datos-gba-ar:cultura",
-      "externalId": "cultura",
-      "modifiedAt": "2026-07-01T13:21:49.866538",
-      "lastScoredAt": "2026-07-02T08:41:46.671Z",
+      "datasetId": "catalogo-datos-gba-ar:pbg",
+      "externalId": "pbg",
+      "modifiedAt": "2026-06-24T15:05:12.288765",
+      "lastScoredAt": "2026-07-03T08:48:23.043Z",
       "score": {
-        "datasetId": "catalogo-datos-gba-ar:cultura",
-        "title": "Establecimientos culturales",
-        "organization": "Instituto Cultural de la Provincia de Buenos Aires",
-        "overall": 0.965,
+        "datasetId": "catalogo-datos-gba-ar:pbg",
+        "title": "Producto Bruto Geográfico (PBG)",
+        "organization": "Ministerio de Economía",
+        "overall": 0.957,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -7771,21 +7473,169 @@
               "fieldsMissing": [
                 "tags"
               ],
-              "descriptionLength": 91,
+              "descriptionLength": 41,
               "tagCount": 0,
-              "resourceCount": 3
+              "resourceCount": 2
             },
-            "calculatedAt": "2026-07-02T08:41:46.671Z"
+            "calculatedAt": "2026-07-03T08:48:23.043Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.997,
+            "score": 0.967,
             "evidence": {
-              "modifiedAt": "2026-07-01T13:21:49.866538",
-              "daysSinceModified": 1,
+              "modifiedAt": "2026-06-24T15:05:12.288765",
+              "daysSinceModified": 9,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-07-02T08:41:46.671Z"
+            "calculatedAt": "2026-07-03T08:48:23.043Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "XLS",
+                "CSV"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 2,
+              "formatDistribution": {
+                "XLS": 1,
+                "CSV": 1
+              }
+            },
+            "calculatedAt": "2026-07-03T08:48:23.043Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 2,
+              "checked": 2,
+              "accessible": 2
+            },
+            "calculatedAt": "2026-07-03T08:48:24.268Z"
+          }
+        ],
+        "lastChecked": "2026-07-03T08:48:23.043Z"
+      }
+    },
+    {
+      "datasetId": "catalogo-datos-gba-ar:resultados-aprender",
+      "externalId": "resultados-aprender",
+      "modifiedAt": "2026-06-24T12:47:25.779796",
+      "lastScoredAt": "2026-07-03T08:48:23.043Z",
+      "score": {
+        "datasetId": "catalogo-datos-gba-ar:resultados-aprender",
+        "title": "Resultados Aprender",
+        "organization": "Dirección General de Cultura y Educación",
+        "overall": 0.957,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 0.85,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [
+                "tags"
+              ],
+              "descriptionLength": 68,
+              "tagCount": 0,
+              "resourceCount": 1
+            },
+            "calculatedAt": "2026-07-03T08:48:24.268Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.967,
+            "evidence": {
+              "modifiedAt": "2026-06-24T12:47:25.779796",
+              "daysSinceModified": 9,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-03T08:48:24.268Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 1,
+              "formatDistribution": {
+                "CSV": 1
+              }
+            },
+            "calculatedAt": "2026-07-03T08:48:24.268Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 1,
+              "checked": 1,
+              "accessible": 1
+            },
+            "calculatedAt": "2026-07-03T08:48:24.447Z"
+          }
+        ],
+        "lastChecked": "2026-07-03T08:48:23.043Z"
+      }
+    },
+    {
+      "datasetId": "catalogo-datos-gba-ar:centros-de-testeo-de-vih-sifilis-y-hepatitis-virales",
+      "externalId": "centros-de-testeo-de-vih-sifilis-y-hepatitis-virales",
+      "modifiedAt": "2026-06-24T12:41:35.084692",
+      "lastScoredAt": "2026-07-03T08:48:23.043Z",
+      "score": {
+        "datasetId": "catalogo-datos-gba-ar:centros-de-testeo-de-vih-sifilis-y-hepatitis-virales",
+        "title": "Centros de testeo de salud",
+        "organization": "Ministerio de Salud",
+        "overall": 0.957,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 0.85,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [
+                "tags"
+              ],
+              "descriptionLength": 97,
+              "tagCount": 0,
+              "resourceCount": 3
+            },
+            "calculatedAt": "2026-07-03T08:48:24.447Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.967,
+            "evidence": {
+              "modifiedAt": "2026-06-24T12:41:35.084692",
+              "daysSinceModified": 9,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-03T08:48:24.447Z"
           },
           {
             "dimension": "structure",
@@ -7805,7 +7655,7 @@
                 "ZIP": 1
               }
             },
-            "calculatedAt": "2026-07-02T08:41:46.671Z"
+            "calculatedAt": "2026-07-03T08:48:24.447Z"
           },
           {
             "dimension": "accessibility",
@@ -7815,10 +7665,160 @@
               "checked": 3,
               "accessible": 3
             },
-            "calculatedAt": "2026-07-02T08:41:47.774Z"
+            "calculatedAt": "2026-07-03T08:48:25.947Z"
           }
         ],
-        "lastChecked": "2026-07-02T08:41:46.671Z"
+        "lastChecked": "2026-07-03T08:48:23.043Z"
+      }
+    },
+    {
+      "datasetId": "catalogo-datos-gba-ar:tranferencias-consejos-escolares",
+      "externalId": "tranferencias-consejos-escolares",
+      "modifiedAt": "2026-06-16T13:36:03.001615",
+      "lastScoredAt": "2026-07-03T08:48:23.043Z",
+      "score": {
+        "datasetId": "catalogo-datos-gba-ar:tranferencias-consejos-escolares",
+        "title": "Transferencias a Consejos Escolares",
+        "organization": "Ministerio de Economía",
+        "overall": 0.95,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 0.85,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [
+                "tags"
+              ],
+              "descriptionLength": 185,
+              "tagCount": 0,
+              "resourceCount": 2
+            },
+            "calculatedAt": "2026-07-03T08:48:25.947Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.937,
+            "evidence": {
+              "modifiedAt": "2026-06-16T13:36:03.001615",
+              "daysSinceModified": 17,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-03T08:48:25.947Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV",
+                "XLS"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 2,
+              "formatDistribution": {
+                "CSV": 1,
+                "XLS": 1
+              }
+            },
+            "calculatedAt": "2026-07-03T08:48:25.947Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 2,
+              "checked": 2,
+              "accessible": 2
+            },
+            "calculatedAt": "2026-07-03T08:48:27.198Z"
+          }
+        ],
+        "lastChecked": "2026-07-03T08:48:23.043Z"
+      }
+    },
+    {
+      "datasetId": "catalogo-datos-gba-ar:recaudacion",
+      "externalId": "recaudacion",
+      "modifiedAt": "2026-06-16T13:26:33.312359",
+      "lastScoredAt": "2026-07-03T08:48:23.043Z",
+      "score": {
+        "datasetId": "catalogo-datos-gba-ar:recaudacion",
+        "title": "Recaudación provincial",
+        "organization": "Ministerio de Economía",
+        "overall": 0.95,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 0.85,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [
+                "tags"
+              ],
+              "descriptionLength": 67,
+              "tagCount": 0,
+              "resourceCount": 2
+            },
+            "calculatedAt": "2026-07-03T08:48:27.198Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.937,
+            "evidence": {
+              "modifiedAt": "2026-06-16T13:26:33.312359",
+              "daysSinceModified": 17,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-03T08:48:27.198Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV",
+                "XLS"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 2,
+              "formatDistribution": {
+                "CSV": 1,
+                "XLS": 1
+              }
+            },
+            "calculatedAt": "2026-07-03T08:48:27.198Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 2,
+              "checked": 2,
+              "accessible": 2
+            },
+            "calculatedAt": "2026-07-03T08:48:27.974Z"
+          }
+        ],
+        "lastChecked": "2026-07-03T08:48:23.043Z"
       }
     }
   ]
