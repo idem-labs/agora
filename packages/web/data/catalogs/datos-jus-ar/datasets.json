@@ -1,6 +1,6 @@
 {
   "catalogId": "datos-jus-ar",
-  "updatedAt": "2026-07-03T08:48:36.617Z",
+  "updatedAt": "2026-07-04T08:26:12.034Z",
   "datasets": [
     {
       "datasetId": "datos-jus-ar:sneep",
@@ -983,6 +983,80 @@
       }
     },
     {
+      "datasetId": "datos-jus-ar:solicitudes-de-acceso-a-la-informacion-publica-en-el-ministerio-de-justicia-y-derechos-humanos",
+      "externalId": "solicitudes-de-acceso-a-la-informacion-publica-en-el-ministerio-de-justicia-y-derechos-humanos",
+      "modifiedAt": "2026-06-09T13:16:02.189574",
+      "lastScoredAt": "2026-07-03T08:48:36.617Z",
+      "score": {
+        "datasetId": "datos-jus-ar:solicitudes-de-acceso-a-la-informacion-publica-en-el-ministerio-de-justicia-y-derechos-humanos",
+        "title": "Solicitudes de acceso a la información pública en el Ministerio de Justicia y Derechos Humanos",
+        "organization": "Subsecretaría de Gestión Administrativa",
+        "overall": 0.962,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 76,
+              "tagCount": 5,
+              "resourceCount": 11
+            },
+            "calculatedAt": "2026-07-03T08:48:36.617Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.912,
+            "evidence": {
+              "modifiedAt": "2026-06-09T13:16:02.189574",
+              "daysSinceModified": 24,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-03T08:48:36.617Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV",
+                "ZIP"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 11,
+              "formatDistribution": {
+                "CSV": 1,
+                "ZIP": 10
+              }
+            },
+            "calculatedAt": "2026-07-03T08:48:36.617Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 11,
+              "checked": 11,
+              "accessible": 11
+            },
+            "calculatedAt": "2026-07-03T08:48:39.536Z"
+          }
+        ],
+        "lastChecked": "2026-07-03T08:48:36.617Z"
+      }
+    },
+    {
       "datasetId": "datos-jus-ar:magistrados-justicia-federal-y-de-la-justicia-nacional",
       "externalId": "magistrados-justicia-federal-y-de-la-justicia-nacional",
       "modifiedAt": "2026-06-08T16:40:18.928316",
@@ -1805,6 +1879,78 @@
       }
     },
     {
+      "datasetId": "datos-jus-ar:sistema-nacional-de-estadisticas-sobre-ejecucion-de-la-pena-sneep-series-de-tiempo",
+      "externalId": "sistema-nacional-de-estadisticas-sobre-ejecucion-de-la-pena-sneep-series-de-tiempo",
+      "modifiedAt": "2026-05-18T19:58:04.774378",
+      "lastScoredAt": "2026-07-03T08:48:36.617Z",
+      "score": {
+        "datasetId": "datos-jus-ar:sistema-nacional-de-estadisticas-sobre-ejecucion-de-la-pena-sneep-series-de-tiempo",
+        "title": "Sistema Nacional de Estadísticas sobre Ejecución de la Pena - SNEEP - Series de tiempo",
+        "organization": "Dirección Nacional de Política Criminal en Materia de Justicia y Legislación Penal",
+        "overall": 0.944,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 201,
+              "tagCount": 9,
+              "resourceCount": 20
+            },
+            "calculatedAt": "2026-07-03T08:48:39.536Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.839,
+            "evidence": {
+              "modifiedAt": "2026-05-18T19:58:04.774378",
+              "daysSinceModified": 46,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-03T08:48:39.536Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 20,
+              "formatDistribution": {
+                "CSV": 20
+              }
+            },
+            "calculatedAt": "2026-07-03T08:48:39.536Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 20,
+              "checked": 20,
+              "accessible": 20
+            },
+            "calculatedAt": "2026-07-03T08:48:43.018Z"
+          }
+        ],
+        "lastChecked": "2026-07-03T08:48:36.617Z"
+      }
+    },
+    {
       "datasetId": "datos-jus-ar:seleccion-de-magistrados-del-poder-judicial-y-el-ministerio-publico-de-la-nacion",
       "externalId": "seleccion-de-magistrados-del-poder-judicial-y-el-ministerio-publico-de-la-nacion",
       "modifiedAt": "2026-05-08T16:39:14.746148",
@@ -2171,80 +2317,6 @@
               "accessible": 10
             },
             "calculatedAt": "2026-06-27T08:31:34.080Z"
-          }
-        ],
-        "lastChecked": "2026-06-27T08:31:21.920Z"
-      }
-    },
-    {
-      "datasetId": "datos-jus-ar:declaraciones-juradas-de-actividades-anteriores-y-posteriores-a-la-funcion-publica",
-      "externalId": "declaraciones-juradas-de-actividades-anteriores-y-posteriores-a-la-funcion-publica",
-      "modifiedAt": "2026-04-07T12:12:33.437068",
-      "lastScoredAt": "2026-06-27T08:31:21.920Z",
-      "score": {
-        "datasetId": "datos-jus-ar:declaraciones-juradas-de-actividades-anteriores-y-posteriores-a-la-funcion-publica",
-        "title": "Declaraciones Juradas de actividades anteriores y posteriores a la función pública",
-        "organization": "Oficina Anticorrupción",
-        "overall": 0.917,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 151,
-              "tagCount": 11,
-              "resourceCount": 7
-            },
-            "calculatedAt": "2026-06-27T08:31:34.080Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.732,
-            "evidence": {
-              "modifiedAt": "2026-04-07T12:12:33.437068",
-              "daysSinceModified": 81,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-06-27T08:31:34.080Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV",
-                "ZIP"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 7,
-              "formatDistribution": {
-                "CSV": 2,
-                "ZIP": 5
-              }
-            },
-            "calculatedAt": "2026-06-27T08:31:34.080Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 7,
-              "checked": 7,
-              "accessible": 7
-            },
-            "calculatedAt": "2026-06-27T08:31:34.981Z"
           }
         ],
         "lastChecked": "2026-06-27T08:31:21.920Z"
@@ -4567,15 +4639,15 @@
       }
     },
     {
-      "datasetId": "datos-jus-ar:solicitudes-de-acceso-a-la-informacion-publica-en-el-ministerio-de-justicia-y-derechos-humanos",
-      "externalId": "solicitudes-de-acceso-a-la-informacion-publica-en-el-ministerio-de-justicia-y-derechos-humanos",
-      "modifiedAt": "2026-06-09T13:16:02.189574",
-      "lastScoredAt": "2026-07-03T08:48:36.617Z",
+      "datasetId": "datos-jus-ar:declaraciones-juradas-de-actividades-anteriores-y-posteriores-a-la-funcion-publica",
+      "externalId": "declaraciones-juradas-de-actividades-anteriores-y-posteriores-a-la-funcion-publica",
+      "modifiedAt": "2026-07-03T13:05:32.197982",
+      "lastScoredAt": "2026-07-04T08:26:12.034Z",
       "score": {
-        "datasetId": "datos-jus-ar:solicitudes-de-acceso-a-la-informacion-publica-en-el-ministerio-de-justicia-y-derechos-humanos",
-        "title": "Solicitudes de acceso a la información pública en el Ministerio de Justicia y Derechos Humanos",
-        "organization": "Subsecretaría de Gestión Administrativa",
-        "overall": 0.962,
+        "datasetId": "datos-jus-ar:declaraciones-juradas-de-actividades-anteriores-y-posteriores-a-la-funcion-publica",
+        "title": "Declaraciones Juradas de actividades anteriores y posteriores a la función pública",
+        "organization": "Oficina Anticorrupción",
+        "overall": 0.984,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -4592,21 +4664,21 @@
                 "createdAt"
               ],
               "fieldsMissing": [],
-              "descriptionLength": 76,
-              "tagCount": 5,
-              "resourceCount": 11
+              "descriptionLength": 151,
+              "tagCount": 11,
+              "resourceCount": 7
             },
-            "calculatedAt": "2026-07-03T08:48:36.617Z"
+            "calculatedAt": "2026-07-04T08:26:12.034Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.912,
+            "score": 0.997,
             "evidence": {
-              "modifiedAt": "2026-06-09T13:16:02.189574",
-              "daysSinceModified": 24,
+              "modifiedAt": "2026-07-03T13:05:32.197982",
+              "daysSinceModified": 1,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-07-03T08:48:36.617Z"
+            "calculatedAt": "2026-07-04T08:26:12.034Z"
           },
           {
             "dimension": "structure",
@@ -4618,98 +4690,26 @@
               ],
               "bestFormat": "CSV",
               "bestFormatScore": 0.95,
-              "resourceCount": 11,
+              "resourceCount": 7,
               "formatDistribution": {
-                "CSV": 1,
-                "ZIP": 10
+                "CSV": 2,
+                "ZIP": 5
               }
             },
-            "calculatedAt": "2026-07-03T08:48:36.617Z"
+            "calculatedAt": "2026-07-04T08:26:12.034Z"
           },
           {
             "dimension": "accessibility",
             "score": 1,
             "evidence": {
-              "resourceCount": 11,
-              "checked": 11,
-              "accessible": 11
+              "resourceCount": 7,
+              "checked": 7,
+              "accessible": 7
             },
-            "calculatedAt": "2026-07-03T08:48:39.536Z"
+            "calculatedAt": "2026-07-04T08:26:13.464Z"
           }
         ],
-        "lastChecked": "2026-07-03T08:48:36.617Z"
-      }
-    },
-    {
-      "datasetId": "datos-jus-ar:sistema-nacional-de-estadisticas-sobre-ejecucion-de-la-pena-sneep-series-de-tiempo",
-      "externalId": "sistema-nacional-de-estadisticas-sobre-ejecucion-de-la-pena-sneep-series-de-tiempo",
-      "modifiedAt": "2026-05-18T19:58:04.774378",
-      "lastScoredAt": "2026-07-03T08:48:36.617Z",
-      "score": {
-        "datasetId": "datos-jus-ar:sistema-nacional-de-estadisticas-sobre-ejecucion-de-la-pena-sneep-series-de-tiempo",
-        "title": "Sistema Nacional de Estadísticas sobre Ejecución de la Pena - SNEEP - Series de tiempo",
-        "organization": "Dirección Nacional de Política Criminal en Materia de Justicia y Legislación Penal",
-        "overall": 0.944,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 201,
-              "tagCount": 9,
-              "resourceCount": 20
-            },
-            "calculatedAt": "2026-07-03T08:48:39.536Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.839,
-            "evidence": {
-              "modifiedAt": "2026-05-18T19:58:04.774378",
-              "daysSinceModified": 46,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-03T08:48:39.536Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 20,
-              "formatDistribution": {
-                "CSV": 20
-              }
-            },
-            "calculatedAt": "2026-07-03T08:48:39.536Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 20,
-              "checked": 20,
-              "accessible": 20
-            },
-            "calculatedAt": "2026-07-03T08:48:43.018Z"
-          }
-        ],
-        "lastChecked": "2026-07-03T08:48:36.617Z"
+        "lastChecked": "2026-07-04T08:26:12.034Z"
       }
     }
   ]
