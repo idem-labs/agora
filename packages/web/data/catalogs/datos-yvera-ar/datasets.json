@@ -1,7 +1,81 @@
 {
   "catalogId": "datos-yvera-ar",
-  "updatedAt": "2026-07-05T08:50:27.016Z",
+  "updatedAt": "2026-07-06T09:55:37.684Z",
   "datasets": [
+    {
+      "datasetId": "datos-yvera-ar:turismo-internacional-total-pais",
+      "externalId": "turismo-internacional-total-pais",
+      "modifiedAt": "2026-06-26T16:32:36.544215",
+      "lastScoredAt": "2026-07-05T08:50:27.016Z",
+      "score": {
+        "datasetId": "datos-yvera-ar:turismo-internacional-total-pais",
+        "title": "Turismo Internacional - Total País",
+        "organization": "Dirección Nacional de Mercados y Estadísticas de Turismo",
+        "overall": 0.976,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 350,
+              "tagCount": 3,
+              "resourceCount": 6
+            },
+            "calculatedAt": "2026-07-05T08:50:27.016Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.967,
+            "evidence": {
+              "modifiedAt": "2026-06-26T16:32:36.544215",
+              "daysSinceModified": 9,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-05T08:50:27.016Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV",
+                "PDF"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 6,
+              "formatDistribution": {
+                "CSV": 5,
+                "PDF": 1
+              }
+            },
+            "calculatedAt": "2026-07-05T08:50:27.016Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 6,
+              "checked": 6,
+              "accessible": 6
+            },
+            "calculatedAt": "2026-07-05T08:50:28.440Z"
+          }
+        ],
+        "lastChecked": "2026-07-05T08:50:27.016Z"
+      }
+    },
     {
       "datasetId": "datos-yvera-ar:conectividad-aerea",
       "externalId": "conectividad-aerea",
@@ -148,80 +222,6 @@
           }
         ],
         "lastChecked": "2026-06-29T10:27:20.192Z"
-      }
-    },
-    {
-      "datasetId": "datos-yvera-ar:turismo-internacional-total-pais",
-      "externalId": "turismo-internacional-total-pais",
-      "modifiedAt": "2026-06-26T16:32:36.544215",
-      "lastScoredAt": "2026-07-05T08:50:27.016Z",
-      "score": {
-        "datasetId": "datos-yvera-ar:turismo-internacional-total-pais",
-        "title": "Turismo Internacional - Total País",
-        "organization": "Dirección Nacional de Mercados y Estadísticas de Turismo",
-        "overall": 0.976,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 350,
-              "tagCount": 3,
-              "resourceCount": 6
-            },
-            "calculatedAt": "2026-07-05T08:50:27.016Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.967,
-            "evidence": {
-              "modifiedAt": "2026-06-26T16:32:36.544215",
-              "daysSinceModified": 9,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-05T08:50:27.016Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV",
-                "PDF"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 6,
-              "formatDistribution": {
-                "CSV": 5,
-                "PDF": 1
-              }
-            },
-            "calculatedAt": "2026-07-05T08:50:27.016Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 6,
-              "checked": 6,
-              "accessible": 6
-            },
-            "calculatedAt": "2026-07-05T08:50:28.440Z"
-          }
-        ],
-        "lastChecked": "2026-07-05T08:50:27.016Z"
       }
     },
     {
