@@ -1,7 +1,229 @@
 {
   "catalogId": "datos-energia-ar",
-  "updatedAt": "2026-07-10T09:18:59.851Z",
+  "updatedAt": "2026-07-11T07:40:54.768Z",
   "datasets": [
+    {
+      "datasetId": "datos-energia-ar:precios-de-gas-natural",
+      "externalId": "precios-de-gas-natural",
+      "modifiedAt": "2026-07-10T08:00:02.567451",
+      "lastScoredAt": "2026-07-10T09:18:59.851Z",
+      "score": {
+        "datasetId": "datos-energia-ar:precios-de-gas-natural",
+        "title": "Precios de Gas Natural",
+        "organization": "Subsecretaría de Eficiencia e Información Energética",
+        "overall": 0.906,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 22,
+              "tagCount": 3,
+              "resourceCount": 4
+            },
+            "calculatedAt": "2026-07-10T09:18:59.851Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 1,
+            "evidence": {
+              "modifiedAt": "2026-07-10T08:00:02.567451",
+              "daysSinceModified": 0,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-10T09:18:59.851Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "PHP",
+                "CSV",
+                "XLS"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 4,
+              "formatDistribution": {
+                "PHP": 1,
+                "CSV": 2,
+                "XLS": 1
+              }
+            },
+            "calculatedAt": "2026-07-10T09:18:59.851Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.75,
+            "evidence": {
+              "resourceCount": 4,
+              "checked": 4,
+              "accessible": 3
+            },
+            "calculatedAt": "2026-07-10T09:19:00.728Z"
+          }
+        ],
+        "lastChecked": "2026-07-10T09:18:59.851Z"
+      }
+    },
+    {
+      "datasetId": "datos-energia-ar:medicion-de-petroleo-y-gas",
+      "externalId": "medicion-de-petroleo-y-gas",
+      "modifiedAt": "2026-07-10T05:00:06.576092",
+      "lastScoredAt": "2026-07-10T09:18:59.851Z",
+      "score": {
+        "datasetId": "datos-energia-ar:medicion-de-petroleo-y-gas",
+        "title": "Padrón de medidores de petróleo y gas",
+        "organization": "Subsecretaría de Hidrocarburos y Combustibles",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 70,
+              "tagCount": 5,
+              "resourceCount": 4
+            },
+            "calculatedAt": "2026-07-10T09:19:01.987Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.999,
+            "evidence": {
+              "modifiedAt": "2026-07-10T05:00:06.576092",
+              "daysSinceModified": 0,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-10T09:19:01.987Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 4,
+              "formatDistribution": {
+                "CSV": 4
+              }
+            },
+            "calculatedAt": "2026-07-10T09:19:01.987Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 4,
+              "checked": 4,
+              "accessible": 4
+            },
+            "calculatedAt": "2026-07-10T09:19:02.371Z"
+          }
+        ],
+        "lastChecked": "2026-07-10T09:18:59.851Z"
+      }
+    },
+    {
+      "datasetId": "datos-energia-ar:transporte-hidrocarburos-ductos-troncales-gasoductos",
+      "externalId": "transporte-hidrocarburos-ductos-troncales-gasoductos",
+      "modifiedAt": "2026-07-10T05:00:05.218016",
+      "lastScoredAt": "2026-07-10T09:18:59.851Z",
+      "score": {
+        "datasetId": "datos-energia-ar:transporte-hidrocarburos-ductos-troncales-gasoductos",
+        "title": "Gasoductos (ENARGAS)",
+        "organization": "Subsecretaría de Eficiencia e Información Energética",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 128,
+              "tagCount": 6,
+              "resourceCount": 9
+            },
+            "calculatedAt": "2026-07-10T09:19:02.371Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.999,
+            "evidence": {
+              "modifiedAt": "2026-07-10T05:00:05.218016",
+              "daysSinceModified": 0,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-10T09:19:02.371Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV",
+                "SHP"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 9,
+              "formatDistribution": {
+                "CSV": 4,
+                "SHP": 5
+              }
+            },
+            "calculatedAt": "2026-07-10T09:19:02.371Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 9,
+              "checked": 9,
+              "accessible": 9
+            },
+            "calculatedAt": "2026-07-10T09:19:02.919Z"
+          }
+        ],
+        "lastChecked": "2026-07-10T09:18:59.851Z"
+      }
+    },
     {
       "datasetId": "datos-energia-ar:distribucion-electrica-edelap",
       "externalId": "distribucion-electrica-edelap",
@@ -444,6 +666,154 @@
           }
         ],
         "lastChecked": "2026-07-04T08:29:48.895Z"
+      }
+    },
+    {
+      "datasetId": "datos-energia-ar:permer-ii",
+      "externalId": "permer-ii",
+      "modifiedAt": "2026-07-02T13:02:13.901867",
+      "lastScoredAt": "2026-07-10T09:18:59.851Z",
+      "score": {
+        "datasetId": "datos-energia-ar:permer-ii",
+        "title": "PERMER II",
+        "organization": "Subsecretaría de Eficiencia e Información Energética",
+        "overall": 0.722,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 74,
+              "tagCount": 8,
+              "resourceCount": 49
+            },
+            "calculatedAt": "2026-07-10T09:19:06.469Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.97,
+            "evidence": {
+              "modifiedAt": "2026-07-02T13:02:13.901867",
+              "daysSinceModified": 8,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-10T09:19:06.469Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "SHP",
+                "CSV",
+                "PDF"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 49,
+              "formatDistribution": {
+                "SHP": 6,
+                "CSV": 3,
+                "PDF": 40
+              }
+            },
+            "calculatedAt": "2026-07-10T09:19:06.469Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.184,
+            "evidence": {
+              "resourceCount": 49,
+              "checked": 49,
+              "accessible": 9
+            },
+            "calculatedAt": "2026-07-10T09:19:08.327Z"
+          }
+        ],
+        "lastChecked": "2026-07-10T09:18:59.851Z"
+      }
+    },
+    {
+      "datasetId": "datos-energia-ar:permer-i",
+      "externalId": "permer-i",
+      "modifiedAt": "2026-07-02T13:02:11.100356",
+      "lastScoredAt": "2026-07-10T09:18:59.851Z",
+      "score": {
+        "datasetId": "datos-energia-ar:permer-i",
+        "title": "PERMER I",
+        "organization": "Subsecretaría de Eficiencia e Información Energética",
+        "overall": 0.977,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 73,
+              "tagCount": 2,
+              "resourceCount": 2
+            },
+            "calculatedAt": "2026-07-10T09:19:08.327Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.97,
+            "evidence": {
+              "modifiedAt": "2026-07-02T13:02:11.100356",
+              "daysSinceModified": 8,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-10T09:19:08.327Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 2,
+              "formatDistribution": {
+                "CSV": 2
+              }
+            },
+            "calculatedAt": "2026-07-10T09:19:08.327Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 2,
+              "checked": 2,
+              "accessible": 2
+            },
+            "calculatedAt": "2026-07-10T09:19:08.754Z"
+          }
+        ],
+        "lastChecked": "2026-07-10T09:18:59.851Z"
       }
     },
     {
@@ -5932,1991 +6302,6 @@
       }
     },
     {
-      "datasetId": "datos-energia-ar:empresas-y-cooperativas-distribuidoras",
-      "externalId": "empresas-y-cooperativas-distribuidoras",
-      "modifiedAt": "2025-12-08T05:00:11.054445",
-      "lastScoredAt": "2026-07-09T09:44:41.176Z",
-      "score": {
-        "datasetId": "datos-energia-ar:empresas-y-cooperativas-distribuidoras",
-        "title": "Empresas y Cooperativas Distribuidoras",
-        "organization": "Subsecretaría de Eficiencia e Información Energética",
-        "overall": 0.844,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 241,
-              "tagCount": 3,
-              "resourceCount": 2
-            },
-            "calculatedAt": "2026-07-09T09:45:03.232Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.44,
-            "evidence": {
-              "modifiedAt": "2025-12-08T05:00:11.054445",
-              "daysSinceModified": 213,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-09T09:45:03.232Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV",
-                "SHP"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 2,
-              "formatDistribution": {
-                "CSV": 1,
-                "SHP": 1
-              }
-            },
-            "calculatedAt": "2026-07-09T09:45:03.232Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 2,
-              "checked": 2,
-              "accessible": 2
-            },
-            "calculatedAt": "2026-07-09T09:45:03.609Z"
-          }
-        ],
-        "lastChecked": "2026-07-09T09:44:41.176Z"
-      }
-    },
-    {
-      "datasetId": "datos-energia-ar:estaciones-de-bombeo",
-      "externalId": "estaciones-de-bombeo",
-      "modifiedAt": "2025-12-08T05:00:04.753157",
-      "lastScoredAt": "2026-07-09T09:44:41.176Z",
-      "score": {
-        "datasetId": "datos-energia-ar:estaciones-de-bombeo",
-        "title": "Estaciones de Bombeo",
-        "organization": "Subsecretaría de Eficiencia e Información Energética",
-        "overall": 0.844,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 55,
-              "tagCount": 2,
-              "resourceCount": 2
-            },
-            "calculatedAt": "2026-07-09T09:45:03.609Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.44,
-            "evidence": {
-              "modifiedAt": "2025-12-08T05:00:04.753157",
-              "daysSinceModified": 213,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-09T09:45:03.609Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "SHP",
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 2,
-              "formatDistribution": {
-                "SHP": 1,
-                "CSV": 1
-              }
-            },
-            "calculatedAt": "2026-07-09T09:45:03.609Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 2,
-              "checked": 2,
-              "accessible": 2
-            },
-            "calculatedAt": "2026-07-09T09:45:03.991Z"
-          }
-        ],
-        "lastChecked": "2026-07-09T09:44:41.176Z"
-      }
-    },
-    {
-      "datasetId": "datos-energia-ar:inventario-de-presas-y-centrales-hidroelectricas-de-la-republica-argentina",
-      "externalId": "inventario-de-presas-y-centrales-hidroelectricas-de-la-republica-argentina",
-      "modifiedAt": "2024-09-27T13:13:11.279324",
-      "lastScoredAt": "2026-07-09T09:44:41.176Z",
-      "score": {
-        "datasetId": "datos-energia-ar:inventario-de-presas-y-centrales-hidroelectricas-de-la-republica-argentina",
-        "title": "Inventario de Presas y Centrales Hidroeléctricas de la República Argentina",
-        "organization": "Subsecretaría de Eficiencia e Información Energética",
-        "overall": 0.192,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 147,
-              "tagCount": 4,
-              "resourceCount": 4
-            },
-            "calculatedAt": "2026-07-09T09:45:03.991Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.082,
-            "evidence": {
-              "modifiedAt": "2024-09-27T13:13:11.279324",
-              "daysSinceModified": 650,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-09T09:45:03.991Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.15,
-            "evidence": {
-              "formats": [
-                "PDF"
-              ],
-              "bestFormat": "PDF",
-              "bestFormatScore": 0.15,
-              "resourceCount": 4,
-              "formatDistribution": {
-                "PDF": 4
-              }
-            },
-            "calculatedAt": "2026-07-09T09:45:03.991Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0,
-            "evidence": {
-              "resourceCount": 4,
-              "checked": 4,
-              "accessible": 0
-            },
-            "calculatedAt": "2026-07-09T09:45:04.481Z"
-          }
-        ],
-        "lastChecked": "2026-07-09T09:44:41.176Z"
-      }
-    },
-    {
-      "datasetId": "datos-energia-ar:mapas-de-transporte-de-hidrocarburos",
-      "externalId": "mapas-de-transporte-de-hidrocarburos",
-      "modifiedAt": "2024-09-17T18:15:31.249330",
-      "lastScoredAt": "2026-07-09T09:44:41.176Z",
-      "score": {
-        "datasetId": "datos-energia-ar:mapas-de-transporte-de-hidrocarburos",
-        "title": "Mapas de Transporte de Hidrocarburos",
-        "organization": "Subsecretaría de Eficiencia e Información Energética",
-        "overall": 0.476,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 48,
-              "tagCount": 4,
-              "resourceCount": 11
-            },
-            "calculatedAt": "2026-07-09T09:45:04.481Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.079,
-            "evidence": {
-              "modifiedAt": "2024-09-17T18:15:31.249330",
-              "daysSinceModified": 660,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-09T09:45:04.481Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.15,
-            "evidence": {
-              "formats": [
-                "PDF"
-              ],
-              "bestFormat": "PDF",
-              "bestFormatScore": 0.15,
-              "resourceCount": 11,
-              "formatDistribution": {
-                "PDF": 11
-              }
-            },
-            "calculatedAt": "2026-07-09T09:45:04.481Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0.909,
-            "evidence": {
-              "resourceCount": 11,
-              "checked": 11,
-              "accessible": 10
-            },
-            "calculatedAt": "2026-07-09T09:45:04.965Z"
-          }
-        ],
-        "lastChecked": "2026-07-09T09:44:41.176Z"
-      }
-    },
-    {
-      "datasetId": "datos-energia-ar:distribucion-electrica-areas-de-distribucion-de-cooperativas-",
-      "externalId": "distribucion-electrica-areas-de-distribucion-de-cooperativas-",
-      "modifiedAt": "2024-06-11T14:01:10.885032",
-      "lastScoredAt": "2026-07-09T09:44:41.176Z",
-      "score": {
-        "datasetId": "datos-energia-ar:distribucion-electrica-areas-de-distribucion-de-cooperativas-",
-        "title": "Distribución Eléctrica - Áreas de distribución de cooperativas",
-        "organization": "Subsecretaría de Eficiencia e Información Energética",
-        "overall": 0.748,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 177,
-              "tagCount": 3,
-              "resourceCount": 2
-            },
-            "calculatedAt": "2026-07-09T09:45:04.965Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.054,
-            "evidence": {
-              "modifiedAt": "2024-06-11T14:01:10.885032",
-              "daysSinceModified": 758,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-09T09:45:04.965Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "SHP",
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 2,
-              "formatDistribution": {
-                "SHP": 1,
-                "CSV": 1
-              }
-            },
-            "calculatedAt": "2026-07-09T09:45:04.965Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 2,
-              "checked": 2,
-              "accessible": 2
-            },
-            "calculatedAt": "2026-07-09T09:45:05.340Z"
-          }
-        ],
-        "lastChecked": "2026-07-09T09:44:41.176Z"
-      }
-    },
-    {
-      "datasetId": "datos-energia-ar:emisiones-de-co2-calculadas-a-partir-de-ventas-de-combustibles-liquidos-en-estaciones-de-servicio",
-      "externalId": "emisiones-de-co2-calculadas-a-partir-de-ventas-de-combustibles-liquidos-en-estaciones-de-servicio",
-      "modifiedAt": "2024-06-11T13:59:50.548614",
-      "lastScoredAt": "2026-07-09T09:44:41.176Z",
-      "score": {
-        "datasetId": "datos-energia-ar:emisiones-de-co2-calculadas-a-partir-de-ventas-de-combustibles-liquidos-en-estaciones-de-servicio",
-        "title": "Emisiones de CO2. Calculadas a partir de ventas de combustibles líquidos en estaciones de servicio",
-        "organization": "Subsecretaría de Eficiencia e Información Energética",
-        "overall": 0.467,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 0.75,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [
-                "description"
-              ],
-              "descriptionLength": 0,
-              "tagCount": 6,
-              "resourceCount": 3
-            },
-            "calculatedAt": "2026-07-09T09:45:05.340Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.054,
-            "evidence": {
-              "modifiedAt": "2024-06-11T13:59:50.548614",
-              "daysSinceModified": 758,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-09T09:45:05.340Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.15,
-            "evidence": {
-              "formats": [
-                "PDF"
-              ],
-              "bestFormat": "PDF",
-              "bestFormatScore": 0.15,
-              "resourceCount": 3,
-              "formatDistribution": {
-                "PDF": 3
-              }
-            },
-            "calculatedAt": "2026-07-09T09:45:05.340Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 3,
-              "checked": 3,
-              "accessible": 3
-            },
-            "calculatedAt": "2026-07-09T09:45:05.663Z"
-          }
-        ],
-        "lastChecked": "2026-07-09T09:44:41.176Z"
-      }
-    },
-    {
-      "datasetId": "datos-energia-ar:participacion-en-el-mercado-por-bandera-de-estaciones-de-servicio",
-      "externalId": "participacion-en-el-mercado-por-bandera-de-estaciones-de-servicio",
-      "modifiedAt": "2024-06-11T13:59:31.222114",
-      "lastScoredAt": "2026-07-09T09:44:41.176Z",
-      "score": {
-        "datasetId": "datos-energia-ar:participacion-en-el-mercado-por-bandera-de-estaciones-de-servicio",
-        "title": "Participación en el Mercado por bandera de estaciones de servicio",
-        "organization": "Subsecretaría de Eficiencia e Información Energética",
-        "overall": 0.498,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 160,
-              "tagCount": 5,
-              "resourceCount": 3
-            },
-            "calculatedAt": "2026-07-09T09:45:05.663Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.054,
-            "evidence": {
-              "modifiedAt": "2024-06-11T13:59:31.222114",
-              "daysSinceModified": 758,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-09T09:45:05.663Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.15,
-            "evidence": {
-              "formats": [
-                "PDF"
-              ],
-              "bestFormat": "PDF",
-              "bestFormatScore": 0.15,
-              "resourceCount": 3,
-              "formatDistribution": {
-                "PDF": 3
-              }
-            },
-            "calculatedAt": "2026-07-09T09:45:05.663Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 3,
-              "checked": 3,
-              "accessible": 3
-            },
-            "calculatedAt": "2026-07-09T09:45:05.989Z"
-          }
-        ],
-        "lastChecked": "2026-07-09T09:44:41.176Z"
-      }
-    },
-    {
-      "datasetId": "datos-energia-ar:cuencas-hidricas-cohife",
-      "externalId": "cuencas-hidricas-cohife",
-      "modifiedAt": "2023-07-13T17:58:37.851393",
-      "lastScoredAt": "2026-07-09T09:44:41.176Z",
-      "score": {
-        "datasetId": "datos-energia-ar:cuencas-hidricas-cohife",
-        "title": "Cuencas Hídricas - COHIFE",
-        "organization": "Subsecretaría de Eficiencia e Información Energética",
-        "overall": 0.738,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 122,
-              "tagCount": 1,
-              "resourceCount": 2
-            },
-            "calculatedAt": "2026-07-09T09:45:05.989Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.015,
-            "evidence": {
-              "modifiedAt": "2023-07-13T17:58:37.851393",
-              "daysSinceModified": 1092,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-09T09:45:05.989Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV",
-                "SHP"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 2,
-              "formatDistribution": {
-                "CSV": 1,
-                "SHP": 1
-              }
-            },
-            "calculatedAt": "2026-07-09T09:45:05.989Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 2,
-              "checked": 2,
-              "accessible": 2
-            },
-            "calculatedAt": "2026-07-09T09:45:06.376Z"
-          }
-        ],
-        "lastChecked": "2026-07-09T09:44:41.176Z"
-      }
-    },
-    {
-      "datasetId": "datos-energia-ar:plantas-productoras-y-refinadoras-de-aceite-vegetal",
-      "externalId": "plantas-productoras-y-refinadoras-de-aceite-vegetal",
-      "modifiedAt": "2023-06-07T17:44:43.638745",
-      "lastScoredAt": "2026-07-09T09:44:41.176Z",
-      "score": {
-        "datasetId": "datos-energia-ar:plantas-productoras-y-refinadoras-de-aceite-vegetal",
-        "title": "Plantas Productoras y Refinadoras de Aceite Vegetal",
-        "organization": "Subsecretaría de Eficiencia e Información Energética",
-        "overall": 0.738,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 255,
-              "tagCount": 5,
-              "resourceCount": 2
-            },
-            "calculatedAt": "2026-07-09T09:45:06.376Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.013,
-            "evidence": {
-              "modifiedAt": "2023-06-07T17:44:43.638745",
-              "daysSinceModified": 1128,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-09T09:45:06.376Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "SHP",
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 2,
-              "formatDistribution": {
-                "SHP": 1,
-                "CSV": 1
-              }
-            },
-            "calculatedAt": "2026-07-09T09:45:06.376Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 2,
-              "checked": 2,
-              "accessible": 2
-            },
-            "calculatedAt": "2026-07-09T09:45:06.763Z"
-          }
-        ],
-        "lastChecked": "2026-07-09T09:44:41.176Z"
-      }
-    },
-    {
-      "datasetId": "datos-energia-ar:plantas-biodigestoras-de-biomasa",
-      "externalId": "plantas-biodigestoras-de-biomasa",
-      "modifiedAt": "2023-05-17T20:16:53.355651",
-      "lastScoredAt": "2026-07-09T09:44:41.176Z",
-      "score": {
-        "datasetId": "datos-energia-ar:plantas-biodigestoras-de-biomasa",
-        "title": "Plantas biodigestoras de biomasa",
-        "organization": "Subsecretaría de Eficiencia e Información Energética",
-        "overall": 0.737,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 128,
-              "tagCount": 4,
-              "resourceCount": 2
-            },
-            "calculatedAt": "2026-07-09T09:45:06.763Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.012,
-            "evidence": {
-              "modifiedAt": "2023-05-17T20:16:53.355651",
-              "daysSinceModified": 1149,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-09T09:45:06.763Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "SHP",
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 2,
-              "formatDistribution": {
-                "SHP": 1,
-                "CSV": 1
-              }
-            },
-            "calculatedAt": "2026-07-09T09:45:06.763Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 2,
-              "checked": 2,
-              "accessible": 2
-            },
-            "calculatedAt": "2026-07-09T09:45:07.164Z"
-          }
-        ],
-        "lastChecked": "2026-07-09T09:44:41.176Z"
-      }
-    },
-    {
-      "datasetId": "datos-energia-ar:potencia-de-vientos",
-      "externalId": "potencia-de-vientos",
-      "modifiedAt": "2023-04-17T15:10:35.525011",
-      "lastScoredAt": "2026-07-09T09:44:41.176Z",
-      "score": {
-        "datasetId": "datos-energia-ar:potencia-de-vientos",
-        "title": "Potencia de vientos y  distribución de proyectos eólicos RenovAr",
-        "organization": "Subsecretaría de Eficiencia e Información Energética",
-        "overall": 0.456,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 0.75,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [
-                "description"
-              ],
-              "descriptionLength": 0,
-              "tagCount": 3,
-              "resourceCount": 3
-            },
-            "calculatedAt": "2026-07-09T09:45:07.164Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.011,
-            "evidence": {
-              "modifiedAt": "2023-04-17T15:10:35.525011",
-              "daysSinceModified": 1179,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-09T09:45:07.164Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.15,
-            "evidence": {
-              "formats": [
-                "PDF"
-              ],
-              "bestFormat": "PDF",
-              "bestFormatScore": 0.15,
-              "resourceCount": 3,
-              "formatDistribution": {
-                "PDF": 3
-              }
-            },
-            "calculatedAt": "2026-07-09T09:45:07.164Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 3,
-              "checked": 3,
-              "accessible": 3
-            },
-            "calculatedAt": "2026-07-09T09:45:07.490Z"
-          }
-        ],
-        "lastChecked": "2026-07-09T09:44:41.176Z"
-      }
-    },
-    {
-      "datasetId": "datos-energia-ar:radiacion-solar",
-      "externalId": "radiacion-solar",
-      "modifiedAt": "2023-04-17T15:10:07.750635",
-      "lastScoredAt": "2026-07-09T09:44:41.176Z",
-      "score": {
-        "datasetId": "datos-energia-ar:radiacion-solar",
-        "title": "Radiación solar y distribución de proyectos solares RenovAr",
-        "organization": "Subsecretaría de Eficiencia e Información Energética",
-        "overall": 0.456,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 0.75,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [
-                "description"
-              ],
-              "descriptionLength": 0,
-              "tagCount": 3,
-              "resourceCount": 3
-            },
-            "calculatedAt": "2026-07-09T09:45:07.490Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.011,
-            "evidence": {
-              "modifiedAt": "2023-04-17T15:10:07.750635",
-              "daysSinceModified": 1179,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-09T09:45:07.490Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.15,
-            "evidence": {
-              "formats": [
-                "PDF"
-              ],
-              "bestFormat": "PDF",
-              "bestFormatScore": 0.15,
-              "resourceCount": 3,
-              "formatDistribution": {
-                "PDF": 3
-              }
-            },
-            "calculatedAt": "2026-07-09T09:45:07.490Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 3,
-              "checked": 3,
-              "accessible": 3
-            },
-            "calculatedAt": "2026-07-09T09:45:07.813Z"
-          }
-        ],
-        "lastChecked": "2026-07-09T09:44:41.176Z"
-      }
-    },
-    {
-      "datasetId": "datos-energia-ar:programa-renovar-proyecto-solar-cauchari",
-      "externalId": "programa-renovar-proyecto-solar-cauchari",
-      "modifiedAt": "2023-04-17T15:09:44.389684",
-      "lastScoredAt": "2026-07-09T09:44:41.176Z",
-      "score": {
-        "datasetId": "datos-energia-ar:programa-renovar-proyecto-solar-cauchari",
-        "title": "Programa RenovAR - Proyecto solar Cauchari",
-        "organization": "Subsecretaría de Eficiencia e Información Energética",
-        "overall": 0.456,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 0.75,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [
-                "description"
-              ],
-              "descriptionLength": 0,
-              "tagCount": 2,
-              "resourceCount": 3
-            },
-            "calculatedAt": "2026-07-09T09:45:07.813Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.011,
-            "evidence": {
-              "modifiedAt": "2023-04-17T15:09:44.389684",
-              "daysSinceModified": 1179,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-09T09:45:07.813Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.15,
-            "evidence": {
-              "formats": [
-                "PDF"
-              ],
-              "bestFormat": "PDF",
-              "bestFormatScore": 0.15,
-              "resourceCount": 3,
-              "formatDistribution": {
-                "PDF": 3
-              }
-            },
-            "calculatedAt": "2026-07-09T09:45:07.813Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 3,
-              "checked": 3,
-              "accessible": 3
-            },
-            "calculatedAt": "2026-07-09T09:45:08.136Z"
-          }
-        ],
-        "lastChecked": "2026-07-09T09:44:41.176Z"
-      }
-    },
-    {
-      "datasetId": "datos-energia-ar:emisiones-de-co2-producidas-por-centrales-termicas-de-generacion-electrica",
-      "externalId": "emisiones-de-co2-producidas-por-centrales-termicas-de-generacion-electrica",
-      "modifiedAt": "2021-07-06T16:52:29.911774",
-      "lastScoredAt": "2026-07-09T09:44:41.176Z",
-      "score": {
-        "datasetId": "datos-energia-ar:emisiones-de-co2-producidas-por-centrales-termicas-de-generacion-electrica",
-        "title": "Emisiones de CO2. Producidas por centrales térmicas de generación eléctrica",
-        "organization": "Subsecretaría de Eficiencia e Información Energética",
-        "overall": 0.453,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 0.75,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [
-                "description"
-              ],
-              "descriptionLength": 0,
-              "tagCount": 5,
-              "resourceCount": 3
-            },
-            "calculatedAt": "2026-07-09T09:45:08.136Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.001,
-            "evidence": {
-              "modifiedAt": "2021-07-06T16:52:29.911774",
-              "daysSinceModified": 1829,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-09T09:45:08.136Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.15,
-            "evidence": {
-              "formats": [
-                "PDF"
-              ],
-              "bestFormat": "PDF",
-              "bestFormatScore": 0.15,
-              "resourceCount": 3,
-              "formatDistribution": {
-                "PDF": 3
-              }
-            },
-            "calculatedAt": "2026-07-09T09:45:08.136Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 3,
-              "checked": 3,
-              "accessible": 3
-            },
-            "calculatedAt": "2026-07-09T09:45:08.458Z"
-          }
-        ],
-        "lastChecked": "2026-07-09T09:44:41.176Z"
-      }
-    },
-    {
-      "datasetId": "datos-energia-ar:emisiones-de-dioxido-de-nitrogeno-no2",
-      "externalId": "emisiones-de-dioxido-de-nitrogeno-no2",
-      "modifiedAt": "2021-01-20T13:40:35.643132",
-      "lastScoredAt": "2026-07-09T09:44:41.176Z",
-      "score": {
-        "datasetId": "datos-energia-ar:emisiones-de-dioxido-de-nitrogeno-no2",
-        "title": "Emisiones de dióxido de nitrógeno (NO2)",
-        "organization": "Subsecretaría de Eficiencia e Información Energética",
-        "overall": 0.484,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 39,
-              "tagCount": 4,
-              "resourceCount": 6
-            },
-            "calculatedAt": "2026-07-09T09:45:08.458Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0,
-            "evidence": {
-              "modifiedAt": "2021-01-20T13:40:35.643132",
-              "daysSinceModified": 1996,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-09T09:45:08.458Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.15,
-            "evidence": {
-              "formats": [
-                "PDF"
-              ],
-              "bestFormat": "PDF",
-              "bestFormatScore": 0.15,
-              "resourceCount": 6,
-              "formatDistribution": {
-                "PDF": 6
-              }
-            },
-            "calculatedAt": "2026-07-09T09:45:08.458Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 6,
-              "checked": 6,
-              "accessible": 6
-            },
-            "calculatedAt": "2026-07-09T09:45:08.785Z"
-          }
-        ],
-        "lastChecked": "2026-07-09T09:44:41.176Z"
-      }
-    },
-    {
-      "datasetId": "datos-energia-ar:mapa-de-vaca-muerta",
-      "externalId": "mapa-de-vaca-muerta",
-      "modifiedAt": "2020-04-24T15:03:08.325266",
-      "lastScoredAt": "2026-07-09T09:44:41.176Z",
-      "score": {
-        "datasetId": "datos-energia-ar:mapa-de-vaca-muerta",
-        "title": "Mapa de Vaca Muerta",
-        "organization": "Subsecretaría de Eficiencia e Información Energética",
-        "overall": 0.453,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 0.75,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [
-                "description"
-              ],
-              "descriptionLength": 0,
-              "tagCount": 5,
-              "resourceCount": 5
-            },
-            "calculatedAt": "2026-07-09T09:45:08.786Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0,
-            "evidence": {
-              "modifiedAt": "2020-04-24T15:03:08.325266",
-              "daysSinceModified": 2267,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-09T09:45:08.786Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.15,
-            "evidence": {
-              "formats": [
-                "PDF"
-              ],
-              "bestFormat": "PDF",
-              "bestFormatScore": 0.15,
-              "resourceCount": 5,
-              "formatDistribution": {
-                "PDF": 5
-              }
-            },
-            "calculatedAt": "2026-07-09T09:45:08.786Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 5,
-              "checked": 5,
-              "accessible": 5
-            },
-            "calculatedAt": "2026-07-09T09:45:09.111Z"
-          }
-        ],
-        "lastChecked": "2026-07-09T09:44:41.176Z"
-      }
-    },
-    {
-      "datasetId": "datos-energia-ar:grupo-de-trabajo-de-transiciones-energeticas-presidencia-argentina-de-g20",
-      "externalId": "grupo-de-trabajo-de-transiciones-energeticas-presidencia-argentina-de-g20",
-      "modifiedAt": "2019-12-09T13:50:55.338448",
-      "lastScoredAt": "2026-07-09T09:44:41.176Z",
-      "score": {
-        "datasetId": "datos-energia-ar:grupo-de-trabajo-de-transiciones-energeticas-presidencia-argentina-de-g20",
-        "title": "Grupo de Trabajo de Transiciones Energéticas, Presidencia Argentina de G20",
-        "organization": "Subsecretaría de Eficiencia e Información Energética",
-        "overall": 0.453,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 0.75,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [
-                "description"
-              ],
-              "descriptionLength": 0,
-              "tagCount": 1,
-              "resourceCount": 7
-            },
-            "calculatedAt": "2026-07-09T09:45:09.111Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0,
-            "evidence": {
-              "modifiedAt": "2019-12-09T13:50:55.338448",
-              "daysSinceModified": 2404,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-09T09:45:09.111Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.15,
-            "evidence": {
-              "formats": [
-                "PDF"
-              ],
-              "bestFormat": "PDF",
-              "bestFormatScore": 0.15,
-              "resourceCount": 7,
-              "formatDistribution": {
-                "PDF": 7
-              }
-            },
-            "calculatedAt": "2026-07-09T09:45:09.111Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 7,
-              "checked": 7,
-              "accessible": 7
-            },
-            "calculatedAt": "2026-07-09T09:45:09.440Z"
-          }
-        ],
-        "lastChecked": "2026-07-09T09:44:41.176Z"
-      }
-    },
-    {
-      "datasetId": "datos-energia-ar:precios-de-gas-natural",
-      "externalId": "precios-de-gas-natural",
-      "modifiedAt": "2026-07-10T08:00:02.567451",
-      "lastScoredAt": "2026-07-10T09:18:59.851Z",
-      "score": {
-        "datasetId": "datos-energia-ar:precios-de-gas-natural",
-        "title": "Precios de Gas Natural",
-        "organization": "Subsecretaría de Eficiencia e Información Energética",
-        "overall": 0.906,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 22,
-              "tagCount": 3,
-              "resourceCount": 4
-            },
-            "calculatedAt": "2026-07-10T09:18:59.851Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 1,
-            "evidence": {
-              "modifiedAt": "2026-07-10T08:00:02.567451",
-              "daysSinceModified": 0,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-10T09:18:59.851Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "PHP",
-                "CSV",
-                "XLS"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 4,
-              "formatDistribution": {
-                "PHP": 1,
-                "CSV": 2,
-                "XLS": 1
-              }
-            },
-            "calculatedAt": "2026-07-10T09:18:59.851Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0.75,
-            "evidence": {
-              "resourceCount": 4,
-              "checked": 4,
-              "accessible": 3
-            },
-            "calculatedAt": "2026-07-10T09:19:00.728Z"
-          }
-        ],
-        "lastChecked": "2026-07-10T09:18:59.851Z"
-      }
-    },
-    {
-      "datasetId": "datos-energia-ar:operadores_glp",
-      "externalId": "operadores_glp",
-      "modifiedAt": "2026-07-10T07:00:14.758085",
-      "lastScoredAt": "2026-07-10T09:18:59.851Z",
-      "score": {
-        "datasetId": "datos-energia-ar:operadores_glp",
-        "title": "Operadores de GLP",
-        "organization": "Subsecretaría de Eficiencia e Información Energética",
-        "overall": 0.984,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 146,
-              "tagCount": 5,
-              "resourceCount": 26
-            },
-            "calculatedAt": "2026-07-10T09:19:00.728Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 1,
-            "evidence": {
-              "modifiedAt": "2026-07-10T07:00:14.758085",
-              "daysSinceModified": 0,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-10T09:19:00.728Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "SHP",
-                "CSV",
-                "PDF"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 26,
-              "formatDistribution": {
-                "SHP": 12,
-                "CSV": 12,
-                "PDF": 2
-              }
-            },
-            "calculatedAt": "2026-07-10T09:19:00.728Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 26,
-              "checked": 26,
-              "accessible": 26
-            },
-            "calculatedAt": "2026-07-10T09:19:01.987Z"
-          }
-        ],
-        "lastChecked": "2026-07-10T09:18:59.851Z"
-      }
-    },
-    {
-      "datasetId": "datos-energia-ar:medicion-de-petroleo-y-gas",
-      "externalId": "medicion-de-petroleo-y-gas",
-      "modifiedAt": "2026-07-10T05:00:06.576092",
-      "lastScoredAt": "2026-07-10T09:18:59.851Z",
-      "score": {
-        "datasetId": "datos-energia-ar:medicion-de-petroleo-y-gas",
-        "title": "Padrón de medidores de petróleo y gas",
-        "organization": "Subsecretaría de Hidrocarburos y Combustibles",
-        "overall": 0.984,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 70,
-              "tagCount": 5,
-              "resourceCount": 4
-            },
-            "calculatedAt": "2026-07-10T09:19:01.987Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.999,
-            "evidence": {
-              "modifiedAt": "2026-07-10T05:00:06.576092",
-              "daysSinceModified": 0,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-10T09:19:01.987Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 4,
-              "formatDistribution": {
-                "CSV": 4
-              }
-            },
-            "calculatedAt": "2026-07-10T09:19:01.987Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 4,
-              "checked": 4,
-              "accessible": 4
-            },
-            "calculatedAt": "2026-07-10T09:19:02.371Z"
-          }
-        ],
-        "lastChecked": "2026-07-10T09:18:59.851Z"
-      }
-    },
-    {
-      "datasetId": "datos-energia-ar:transporte-hidrocarburos-ductos-troncales-gasoductos",
-      "externalId": "transporte-hidrocarburos-ductos-troncales-gasoductos",
-      "modifiedAt": "2026-07-10T05:00:05.218016",
-      "lastScoredAt": "2026-07-10T09:18:59.851Z",
-      "score": {
-        "datasetId": "datos-energia-ar:transporte-hidrocarburos-ductos-troncales-gasoductos",
-        "title": "Gasoductos (ENARGAS)",
-        "organization": "Subsecretaría de Eficiencia e Información Energética",
-        "overall": 0.984,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 128,
-              "tagCount": 6,
-              "resourceCount": 9
-            },
-            "calculatedAt": "2026-07-10T09:19:02.371Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.999,
-            "evidence": {
-              "modifiedAt": "2026-07-10T05:00:05.218016",
-              "daysSinceModified": 0,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-10T09:19:02.371Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV",
-                "SHP"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 9,
-              "formatDistribution": {
-                "CSV": 4,
-                "SHP": 5
-              }
-            },
-            "calculatedAt": "2026-07-10T09:19:02.371Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 9,
-              "checked": 9,
-              "accessible": 9
-            },
-            "calculatedAt": "2026-07-10T09:19:02.919Z"
-          }
-        ],
-        "lastChecked": "2026-07-10T09:18:59.851Z"
-      }
-    },
-    {
-      "datasetId": "datos-energia-ar:comercializacion-hidrocarburos-combustibles-liquidos-terminales-de-despacho",
-      "externalId": "comercializacion-hidrocarburos-combustibles-liquidos-terminales-de-despacho",
-      "modifiedAt": "2026-07-10T05:00:00.249886",
-      "lastScoredAt": "2026-07-10T09:18:59.851Z",
-      "score": {
-        "datasetId": "datos-energia-ar:comercializacion-hidrocarburos-combustibles-liquidos-terminales-de-despacho",
-        "title": "Comercialización de hidrocarburos - Terminales de despacho de combustibles líquidos (Res. 1102)",
-        "organization": "Subsecretaría de Eficiencia e Información Energética",
-        "overall": 0.984,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 73,
-              "tagCount": 6,
-              "resourceCount": 2
-            },
-            "calculatedAt": "2026-07-10T09:19:02.919Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.999,
-            "evidence": {
-              "modifiedAt": "2026-07-10T05:00:00.249886",
-              "daysSinceModified": 0,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-10T09:19:02.919Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "SHP",
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 2,
-              "formatDistribution": {
-                "SHP": 1,
-                "CSV": 1
-              }
-            },
-            "calculatedAt": "2026-07-10T09:19:02.919Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 2,
-              "checked": 2,
-              "accessible": 2
-            },
-            "calculatedAt": "2026-07-10T09:19:03.286Z"
-          }
-        ],
-        "lastChecked": "2026-07-10T09:18:59.851Z"
-      }
-    },
-    {
-      "datasetId": "datos-energia-ar:precios-en-surtidor",
-      "externalId": "precios-en-surtidor",
-      "modifiedAt": "2026-07-10T04:00:29.190603",
-      "lastScoredAt": "2026-07-10T09:18:59.851Z",
-      "score": {
-        "datasetId": "datos-energia-ar:precios-en-surtidor",
-        "title": "Precios en Surtidor - Resolución 314/2016",
-        "organization": "Subsecretaría de Eficiencia e Información Energética",
-        "overall": 0.88,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 383,
-              "tagCount": 4,
-              "resourceCount": 3
-            },
-            "calculatedAt": "2026-07-10T09:19:03.286Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.999,
-            "evidence": {
-              "modifiedAt": "2026-07-10T04:00:29.190603",
-              "daysSinceModified": 0,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-10T09:19:03.286Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV",
-                "HTML"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 3,
-              "formatDistribution": {
-                "CSV": 2,
-                "HTML": 1
-              }
-            },
-            "calculatedAt": "2026-07-10T09:19:03.286Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0.667,
-            "evidence": {
-              "resourceCount": 3,
-              "checked": 3,
-              "accessible": 2
-            },
-            "calculatedAt": "2026-07-10T09:19:03.658Z"
-          }
-        ],
-        "lastChecked": "2026-07-10T09:18:59.851Z"
-      }
-    },
-    {
-      "datasetId": "datos-energia-ar:datos-de-fractura-de-pozos-adjunto-iv",
-      "externalId": "datos-de-fractura-de-pozos-adjunto-iv",
-      "modifiedAt": "2026-07-10T04:00:04.327897",
-      "lastScoredAt": "2026-07-10T09:18:59.851Z",
-      "score": {
-        "datasetId": "datos-energia-ar:datos-de-fractura-de-pozos-adjunto-iv",
-        "title": "Datos de fractura de pozos de hidrocarburos (Adjunto IV)",
-        "organization": "Dirección Nacional de Exploración y Producción",
-        "overall": 0.984,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 427,
-              "tagCount": 7,
-              "resourceCount": 2
-            },
-            "calculatedAt": "2026-07-10T09:19:03.658Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.999,
-            "evidence": {
-              "modifiedAt": "2026-07-10T04:00:04.327897",
-              "daysSinceModified": 0,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-10T09:19:03.658Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV",
-                "PDF"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 2,
-              "formatDistribution": {
-                "CSV": 1,
-                "PDF": 1
-              }
-            },
-            "calculatedAt": "2026-07-10T09:19:03.658Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 2,
-              "checked": 2,
-              "accessible": 2
-            },
-            "calculatedAt": "2026-07-10T09:19:04.025Z"
-          }
-        ],
-        "lastChecked": "2026-07-10T09:18:59.851Z"
-      }
-    },
-    {
-      "datasetId": "datos-energia-ar:produccion-de-petroleo-y-gas-por-pozo",
-      "externalId": "produccion-de-petroleo-y-gas-por-pozo",
-      "modifiedAt": "2026-07-09T10:01:57.485486",
-      "lastScoredAt": "2026-07-10T09:18:59.851Z",
-      "score": {
-        "datasetId": "datos-energia-ar:produccion-de-petroleo-y-gas-por-pozo",
-        "title": "Producción de petróleo y gas por pozo (Capítulo IV)",
-        "organization": "Dirección Nacional de Exploración y Producción",
-        "overall": 0.983,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 129,
-              "tagCount": 8,
-              "resourceCount": 53
-            },
-            "calculatedAt": "2026-07-10T09:19:04.025Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.996,
-            "evidence": {
-              "modifiedAt": "2026-07-09T10:01:57.485486",
-              "daysSinceModified": 1,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-10T09:19:04.025Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV",
-                "SHP"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 53,
-              "formatDistribution": {
-                "CSV": 52,
-                "SHP": 1
-              }
-            },
-            "calculatedAt": "2026-07-10T09:19:04.025Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 53,
-              "checked": 53,
-              "accessible": 53
-            },
-            "calculatedAt": "2026-07-10T09:19:06.469Z"
-          }
-        ],
-        "lastChecked": "2026-07-10T09:18:59.851Z"
-      }
-    },
-    {
-      "datasetId": "datos-energia-ar:permer-ii",
-      "externalId": "permer-ii",
-      "modifiedAt": "2026-07-02T13:02:13.901867",
-      "lastScoredAt": "2026-07-10T09:18:59.851Z",
-      "score": {
-        "datasetId": "datos-energia-ar:permer-ii",
-        "title": "PERMER II",
-        "organization": "Subsecretaría de Eficiencia e Información Energética",
-        "overall": 0.722,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 74,
-              "tagCount": 8,
-              "resourceCount": 49
-            },
-            "calculatedAt": "2026-07-10T09:19:06.469Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.97,
-            "evidence": {
-              "modifiedAt": "2026-07-02T13:02:13.901867",
-              "daysSinceModified": 8,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-10T09:19:06.469Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "SHP",
-                "CSV",
-                "PDF"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 49,
-              "formatDistribution": {
-                "SHP": 6,
-                "CSV": 3,
-                "PDF": 40
-              }
-            },
-            "calculatedAt": "2026-07-10T09:19:06.469Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0.184,
-            "evidence": {
-              "resourceCount": 49,
-              "checked": 49,
-              "accessible": 9
-            },
-            "calculatedAt": "2026-07-10T09:19:08.327Z"
-          }
-        ],
-        "lastChecked": "2026-07-10T09:18:59.851Z"
-      }
-    },
-    {
-      "datasetId": "datos-energia-ar:permer-i",
-      "externalId": "permer-i",
-      "modifiedAt": "2026-07-02T13:02:11.100356",
-      "lastScoredAt": "2026-07-10T09:18:59.851Z",
-      "score": {
-        "datasetId": "datos-energia-ar:permer-i",
-        "title": "PERMER I",
-        "organization": "Subsecretaría de Eficiencia e Información Energética",
-        "overall": 0.977,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 73,
-              "tagCount": 2,
-              "resourceCount": 2
-            },
-            "calculatedAt": "2026-07-10T09:19:08.327Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.97,
-            "evidence": {
-              "modifiedAt": "2026-07-02T13:02:11.100356",
-              "daysSinceModified": 8,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-10T09:19:08.327Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 2,
-              "formatDistribution": {
-                "CSV": 2
-              }
-            },
-            "calculatedAt": "2026-07-10T09:19:08.327Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 2,
-              "checked": 2,
-              "accessible": 2
-            },
-            "calculatedAt": "2026-07-10T09:19:08.754Z"
-          }
-        ],
-        "lastChecked": "2026-07-10T09:18:59.851Z"
-      }
-    },
-    {
       "datasetId": "datos-energia-ar:informacion-socioeconomica-areas-urbanas-segun-calles-osm",
       "externalId": "informacion-socioeconomica-areas-urbanas-segun-calles-osm",
       "modifiedAt": "2026-05-18T16:51:44.870977",
@@ -13033,6 +11418,1621 @@
           }
         ],
         "lastChecked": "2026-07-10T09:18:59.851Z"
+      }
+    },
+    {
+      "datasetId": "datos-energia-ar:empresas-y-cooperativas-distribuidoras",
+      "externalId": "empresas-y-cooperativas-distribuidoras",
+      "modifiedAt": "2025-12-08T05:00:11.054445",
+      "lastScoredAt": "2026-07-09T09:44:41.176Z",
+      "score": {
+        "datasetId": "datos-energia-ar:empresas-y-cooperativas-distribuidoras",
+        "title": "Empresas y Cooperativas Distribuidoras",
+        "organization": "Subsecretaría de Eficiencia e Información Energética",
+        "overall": 0.844,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 241,
+              "tagCount": 3,
+              "resourceCount": 2
+            },
+            "calculatedAt": "2026-07-09T09:45:03.232Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.44,
+            "evidence": {
+              "modifiedAt": "2025-12-08T05:00:11.054445",
+              "daysSinceModified": 213,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-09T09:45:03.232Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV",
+                "SHP"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 2,
+              "formatDistribution": {
+                "CSV": 1,
+                "SHP": 1
+              }
+            },
+            "calculatedAt": "2026-07-09T09:45:03.232Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 2,
+              "checked": 2,
+              "accessible": 2
+            },
+            "calculatedAt": "2026-07-09T09:45:03.609Z"
+          }
+        ],
+        "lastChecked": "2026-07-09T09:44:41.176Z"
+      }
+    },
+    {
+      "datasetId": "datos-energia-ar:estaciones-de-bombeo",
+      "externalId": "estaciones-de-bombeo",
+      "modifiedAt": "2025-12-08T05:00:04.753157",
+      "lastScoredAt": "2026-07-09T09:44:41.176Z",
+      "score": {
+        "datasetId": "datos-energia-ar:estaciones-de-bombeo",
+        "title": "Estaciones de Bombeo",
+        "organization": "Subsecretaría de Eficiencia e Información Energética",
+        "overall": 0.844,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 55,
+              "tagCount": 2,
+              "resourceCount": 2
+            },
+            "calculatedAt": "2026-07-09T09:45:03.609Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.44,
+            "evidence": {
+              "modifiedAt": "2025-12-08T05:00:04.753157",
+              "daysSinceModified": 213,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-09T09:45:03.609Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "SHP",
+                "CSV"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 2,
+              "formatDistribution": {
+                "SHP": 1,
+                "CSV": 1
+              }
+            },
+            "calculatedAt": "2026-07-09T09:45:03.609Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 2,
+              "checked": 2,
+              "accessible": 2
+            },
+            "calculatedAt": "2026-07-09T09:45:03.991Z"
+          }
+        ],
+        "lastChecked": "2026-07-09T09:44:41.176Z"
+      }
+    },
+    {
+      "datasetId": "datos-energia-ar:inventario-de-presas-y-centrales-hidroelectricas-de-la-republica-argentina",
+      "externalId": "inventario-de-presas-y-centrales-hidroelectricas-de-la-republica-argentina",
+      "modifiedAt": "2024-09-27T13:13:11.279324",
+      "lastScoredAt": "2026-07-09T09:44:41.176Z",
+      "score": {
+        "datasetId": "datos-energia-ar:inventario-de-presas-y-centrales-hidroelectricas-de-la-republica-argentina",
+        "title": "Inventario de Presas y Centrales Hidroeléctricas de la República Argentina",
+        "organization": "Subsecretaría de Eficiencia e Información Energética",
+        "overall": 0.192,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 147,
+              "tagCount": 4,
+              "resourceCount": 4
+            },
+            "calculatedAt": "2026-07-09T09:45:03.991Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.082,
+            "evidence": {
+              "modifiedAt": "2024-09-27T13:13:11.279324",
+              "daysSinceModified": 650,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-09T09:45:03.991Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.15,
+            "evidence": {
+              "formats": [
+                "PDF"
+              ],
+              "bestFormat": "PDF",
+              "bestFormatScore": 0.15,
+              "resourceCount": 4,
+              "formatDistribution": {
+                "PDF": 4
+              }
+            },
+            "calculatedAt": "2026-07-09T09:45:03.991Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0,
+            "evidence": {
+              "resourceCount": 4,
+              "checked": 4,
+              "accessible": 0
+            },
+            "calculatedAt": "2026-07-09T09:45:04.481Z"
+          }
+        ],
+        "lastChecked": "2026-07-09T09:44:41.176Z"
+      }
+    },
+    {
+      "datasetId": "datos-energia-ar:mapas-de-transporte-de-hidrocarburos",
+      "externalId": "mapas-de-transporte-de-hidrocarburos",
+      "modifiedAt": "2024-09-17T18:15:31.249330",
+      "lastScoredAt": "2026-07-09T09:44:41.176Z",
+      "score": {
+        "datasetId": "datos-energia-ar:mapas-de-transporte-de-hidrocarburos",
+        "title": "Mapas de Transporte de Hidrocarburos",
+        "organization": "Subsecretaría de Eficiencia e Información Energética",
+        "overall": 0.476,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 48,
+              "tagCount": 4,
+              "resourceCount": 11
+            },
+            "calculatedAt": "2026-07-09T09:45:04.481Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.079,
+            "evidence": {
+              "modifiedAt": "2024-09-17T18:15:31.249330",
+              "daysSinceModified": 660,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-09T09:45:04.481Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.15,
+            "evidence": {
+              "formats": [
+                "PDF"
+              ],
+              "bestFormat": "PDF",
+              "bestFormatScore": 0.15,
+              "resourceCount": 11,
+              "formatDistribution": {
+                "PDF": 11
+              }
+            },
+            "calculatedAt": "2026-07-09T09:45:04.481Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.909,
+            "evidence": {
+              "resourceCount": 11,
+              "checked": 11,
+              "accessible": 10
+            },
+            "calculatedAt": "2026-07-09T09:45:04.965Z"
+          }
+        ],
+        "lastChecked": "2026-07-09T09:44:41.176Z"
+      }
+    },
+    {
+      "datasetId": "datos-energia-ar:distribucion-electrica-areas-de-distribucion-de-cooperativas-",
+      "externalId": "distribucion-electrica-areas-de-distribucion-de-cooperativas-",
+      "modifiedAt": "2024-06-11T14:01:10.885032",
+      "lastScoredAt": "2026-07-09T09:44:41.176Z",
+      "score": {
+        "datasetId": "datos-energia-ar:distribucion-electrica-areas-de-distribucion-de-cooperativas-",
+        "title": "Distribución Eléctrica - Áreas de distribución de cooperativas",
+        "organization": "Subsecretaría de Eficiencia e Información Energética",
+        "overall": 0.748,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 177,
+              "tagCount": 3,
+              "resourceCount": 2
+            },
+            "calculatedAt": "2026-07-09T09:45:04.965Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.054,
+            "evidence": {
+              "modifiedAt": "2024-06-11T14:01:10.885032",
+              "daysSinceModified": 758,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-09T09:45:04.965Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "SHP",
+                "CSV"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 2,
+              "formatDistribution": {
+                "SHP": 1,
+                "CSV": 1
+              }
+            },
+            "calculatedAt": "2026-07-09T09:45:04.965Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 2,
+              "checked": 2,
+              "accessible": 2
+            },
+            "calculatedAt": "2026-07-09T09:45:05.340Z"
+          }
+        ],
+        "lastChecked": "2026-07-09T09:44:41.176Z"
+      }
+    },
+    {
+      "datasetId": "datos-energia-ar:emisiones-de-co2-calculadas-a-partir-de-ventas-de-combustibles-liquidos-en-estaciones-de-servicio",
+      "externalId": "emisiones-de-co2-calculadas-a-partir-de-ventas-de-combustibles-liquidos-en-estaciones-de-servicio",
+      "modifiedAt": "2024-06-11T13:59:50.548614",
+      "lastScoredAt": "2026-07-09T09:44:41.176Z",
+      "score": {
+        "datasetId": "datos-energia-ar:emisiones-de-co2-calculadas-a-partir-de-ventas-de-combustibles-liquidos-en-estaciones-de-servicio",
+        "title": "Emisiones de CO2. Calculadas a partir de ventas de combustibles líquidos en estaciones de servicio",
+        "organization": "Subsecretaría de Eficiencia e Información Energética",
+        "overall": 0.467,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 0.75,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [
+                "description"
+              ],
+              "descriptionLength": 0,
+              "tagCount": 6,
+              "resourceCount": 3
+            },
+            "calculatedAt": "2026-07-09T09:45:05.340Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.054,
+            "evidence": {
+              "modifiedAt": "2024-06-11T13:59:50.548614",
+              "daysSinceModified": 758,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-09T09:45:05.340Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.15,
+            "evidence": {
+              "formats": [
+                "PDF"
+              ],
+              "bestFormat": "PDF",
+              "bestFormatScore": 0.15,
+              "resourceCount": 3,
+              "formatDistribution": {
+                "PDF": 3
+              }
+            },
+            "calculatedAt": "2026-07-09T09:45:05.340Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 3,
+              "checked": 3,
+              "accessible": 3
+            },
+            "calculatedAt": "2026-07-09T09:45:05.663Z"
+          }
+        ],
+        "lastChecked": "2026-07-09T09:44:41.176Z"
+      }
+    },
+    {
+      "datasetId": "datos-energia-ar:participacion-en-el-mercado-por-bandera-de-estaciones-de-servicio",
+      "externalId": "participacion-en-el-mercado-por-bandera-de-estaciones-de-servicio",
+      "modifiedAt": "2024-06-11T13:59:31.222114",
+      "lastScoredAt": "2026-07-09T09:44:41.176Z",
+      "score": {
+        "datasetId": "datos-energia-ar:participacion-en-el-mercado-por-bandera-de-estaciones-de-servicio",
+        "title": "Participación en el Mercado por bandera de estaciones de servicio",
+        "organization": "Subsecretaría de Eficiencia e Información Energética",
+        "overall": 0.498,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 160,
+              "tagCount": 5,
+              "resourceCount": 3
+            },
+            "calculatedAt": "2026-07-09T09:45:05.663Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.054,
+            "evidence": {
+              "modifiedAt": "2024-06-11T13:59:31.222114",
+              "daysSinceModified": 758,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-09T09:45:05.663Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.15,
+            "evidence": {
+              "formats": [
+                "PDF"
+              ],
+              "bestFormat": "PDF",
+              "bestFormatScore": 0.15,
+              "resourceCount": 3,
+              "formatDistribution": {
+                "PDF": 3
+              }
+            },
+            "calculatedAt": "2026-07-09T09:45:05.663Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 3,
+              "checked": 3,
+              "accessible": 3
+            },
+            "calculatedAt": "2026-07-09T09:45:05.989Z"
+          }
+        ],
+        "lastChecked": "2026-07-09T09:44:41.176Z"
+      }
+    },
+    {
+      "datasetId": "datos-energia-ar:cuencas-hidricas-cohife",
+      "externalId": "cuencas-hidricas-cohife",
+      "modifiedAt": "2023-07-13T17:58:37.851393",
+      "lastScoredAt": "2026-07-09T09:44:41.176Z",
+      "score": {
+        "datasetId": "datos-energia-ar:cuencas-hidricas-cohife",
+        "title": "Cuencas Hídricas - COHIFE",
+        "organization": "Subsecretaría de Eficiencia e Información Energética",
+        "overall": 0.738,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 122,
+              "tagCount": 1,
+              "resourceCount": 2
+            },
+            "calculatedAt": "2026-07-09T09:45:05.989Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.015,
+            "evidence": {
+              "modifiedAt": "2023-07-13T17:58:37.851393",
+              "daysSinceModified": 1092,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-09T09:45:05.989Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV",
+                "SHP"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 2,
+              "formatDistribution": {
+                "CSV": 1,
+                "SHP": 1
+              }
+            },
+            "calculatedAt": "2026-07-09T09:45:05.989Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 2,
+              "checked": 2,
+              "accessible": 2
+            },
+            "calculatedAt": "2026-07-09T09:45:06.376Z"
+          }
+        ],
+        "lastChecked": "2026-07-09T09:44:41.176Z"
+      }
+    },
+    {
+      "datasetId": "datos-energia-ar:plantas-productoras-y-refinadoras-de-aceite-vegetal",
+      "externalId": "plantas-productoras-y-refinadoras-de-aceite-vegetal",
+      "modifiedAt": "2023-06-07T17:44:43.638745",
+      "lastScoredAt": "2026-07-09T09:44:41.176Z",
+      "score": {
+        "datasetId": "datos-energia-ar:plantas-productoras-y-refinadoras-de-aceite-vegetal",
+        "title": "Plantas Productoras y Refinadoras de Aceite Vegetal",
+        "organization": "Subsecretaría de Eficiencia e Información Energética",
+        "overall": 0.738,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 255,
+              "tagCount": 5,
+              "resourceCount": 2
+            },
+            "calculatedAt": "2026-07-09T09:45:06.376Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.013,
+            "evidence": {
+              "modifiedAt": "2023-06-07T17:44:43.638745",
+              "daysSinceModified": 1128,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-09T09:45:06.376Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "SHP",
+                "CSV"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 2,
+              "formatDistribution": {
+                "SHP": 1,
+                "CSV": 1
+              }
+            },
+            "calculatedAt": "2026-07-09T09:45:06.376Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 2,
+              "checked": 2,
+              "accessible": 2
+            },
+            "calculatedAt": "2026-07-09T09:45:06.763Z"
+          }
+        ],
+        "lastChecked": "2026-07-09T09:44:41.176Z"
+      }
+    },
+    {
+      "datasetId": "datos-energia-ar:plantas-biodigestoras-de-biomasa",
+      "externalId": "plantas-biodigestoras-de-biomasa",
+      "modifiedAt": "2023-05-17T20:16:53.355651",
+      "lastScoredAt": "2026-07-09T09:44:41.176Z",
+      "score": {
+        "datasetId": "datos-energia-ar:plantas-biodigestoras-de-biomasa",
+        "title": "Plantas biodigestoras de biomasa",
+        "organization": "Subsecretaría de Eficiencia e Información Energética",
+        "overall": 0.737,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 128,
+              "tagCount": 4,
+              "resourceCount": 2
+            },
+            "calculatedAt": "2026-07-09T09:45:06.763Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.012,
+            "evidence": {
+              "modifiedAt": "2023-05-17T20:16:53.355651",
+              "daysSinceModified": 1149,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-09T09:45:06.763Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "SHP",
+                "CSV"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 2,
+              "formatDistribution": {
+                "SHP": 1,
+                "CSV": 1
+              }
+            },
+            "calculatedAt": "2026-07-09T09:45:06.763Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 2,
+              "checked": 2,
+              "accessible": 2
+            },
+            "calculatedAt": "2026-07-09T09:45:07.164Z"
+          }
+        ],
+        "lastChecked": "2026-07-09T09:44:41.176Z"
+      }
+    },
+    {
+      "datasetId": "datos-energia-ar:potencia-de-vientos",
+      "externalId": "potencia-de-vientos",
+      "modifiedAt": "2023-04-17T15:10:35.525011",
+      "lastScoredAt": "2026-07-09T09:44:41.176Z",
+      "score": {
+        "datasetId": "datos-energia-ar:potencia-de-vientos",
+        "title": "Potencia de vientos y  distribución de proyectos eólicos RenovAr",
+        "organization": "Subsecretaría de Eficiencia e Información Energética",
+        "overall": 0.456,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 0.75,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [
+                "description"
+              ],
+              "descriptionLength": 0,
+              "tagCount": 3,
+              "resourceCount": 3
+            },
+            "calculatedAt": "2026-07-09T09:45:07.164Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.011,
+            "evidence": {
+              "modifiedAt": "2023-04-17T15:10:35.525011",
+              "daysSinceModified": 1179,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-09T09:45:07.164Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.15,
+            "evidence": {
+              "formats": [
+                "PDF"
+              ],
+              "bestFormat": "PDF",
+              "bestFormatScore": 0.15,
+              "resourceCount": 3,
+              "formatDistribution": {
+                "PDF": 3
+              }
+            },
+            "calculatedAt": "2026-07-09T09:45:07.164Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 3,
+              "checked": 3,
+              "accessible": 3
+            },
+            "calculatedAt": "2026-07-09T09:45:07.490Z"
+          }
+        ],
+        "lastChecked": "2026-07-09T09:44:41.176Z"
+      }
+    },
+    {
+      "datasetId": "datos-energia-ar:radiacion-solar",
+      "externalId": "radiacion-solar",
+      "modifiedAt": "2023-04-17T15:10:07.750635",
+      "lastScoredAt": "2026-07-09T09:44:41.176Z",
+      "score": {
+        "datasetId": "datos-energia-ar:radiacion-solar",
+        "title": "Radiación solar y distribución de proyectos solares RenovAr",
+        "organization": "Subsecretaría de Eficiencia e Información Energética",
+        "overall": 0.456,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 0.75,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [
+                "description"
+              ],
+              "descriptionLength": 0,
+              "tagCount": 3,
+              "resourceCount": 3
+            },
+            "calculatedAt": "2026-07-09T09:45:07.490Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.011,
+            "evidence": {
+              "modifiedAt": "2023-04-17T15:10:07.750635",
+              "daysSinceModified": 1179,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-09T09:45:07.490Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.15,
+            "evidence": {
+              "formats": [
+                "PDF"
+              ],
+              "bestFormat": "PDF",
+              "bestFormatScore": 0.15,
+              "resourceCount": 3,
+              "formatDistribution": {
+                "PDF": 3
+              }
+            },
+            "calculatedAt": "2026-07-09T09:45:07.490Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 3,
+              "checked": 3,
+              "accessible": 3
+            },
+            "calculatedAt": "2026-07-09T09:45:07.813Z"
+          }
+        ],
+        "lastChecked": "2026-07-09T09:44:41.176Z"
+      }
+    },
+    {
+      "datasetId": "datos-energia-ar:programa-renovar-proyecto-solar-cauchari",
+      "externalId": "programa-renovar-proyecto-solar-cauchari",
+      "modifiedAt": "2023-04-17T15:09:44.389684",
+      "lastScoredAt": "2026-07-09T09:44:41.176Z",
+      "score": {
+        "datasetId": "datos-energia-ar:programa-renovar-proyecto-solar-cauchari",
+        "title": "Programa RenovAR - Proyecto solar Cauchari",
+        "organization": "Subsecretaría de Eficiencia e Información Energética",
+        "overall": 0.456,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 0.75,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [
+                "description"
+              ],
+              "descriptionLength": 0,
+              "tagCount": 2,
+              "resourceCount": 3
+            },
+            "calculatedAt": "2026-07-09T09:45:07.813Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.011,
+            "evidence": {
+              "modifiedAt": "2023-04-17T15:09:44.389684",
+              "daysSinceModified": 1179,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-09T09:45:07.813Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.15,
+            "evidence": {
+              "formats": [
+                "PDF"
+              ],
+              "bestFormat": "PDF",
+              "bestFormatScore": 0.15,
+              "resourceCount": 3,
+              "formatDistribution": {
+                "PDF": 3
+              }
+            },
+            "calculatedAt": "2026-07-09T09:45:07.813Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 3,
+              "checked": 3,
+              "accessible": 3
+            },
+            "calculatedAt": "2026-07-09T09:45:08.136Z"
+          }
+        ],
+        "lastChecked": "2026-07-09T09:44:41.176Z"
+      }
+    },
+    {
+      "datasetId": "datos-energia-ar:emisiones-de-co2-producidas-por-centrales-termicas-de-generacion-electrica",
+      "externalId": "emisiones-de-co2-producidas-por-centrales-termicas-de-generacion-electrica",
+      "modifiedAt": "2021-07-06T16:52:29.911774",
+      "lastScoredAt": "2026-07-09T09:44:41.176Z",
+      "score": {
+        "datasetId": "datos-energia-ar:emisiones-de-co2-producidas-por-centrales-termicas-de-generacion-electrica",
+        "title": "Emisiones de CO2. Producidas por centrales térmicas de generación eléctrica",
+        "organization": "Subsecretaría de Eficiencia e Información Energética",
+        "overall": 0.453,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 0.75,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [
+                "description"
+              ],
+              "descriptionLength": 0,
+              "tagCount": 5,
+              "resourceCount": 3
+            },
+            "calculatedAt": "2026-07-09T09:45:08.136Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.001,
+            "evidence": {
+              "modifiedAt": "2021-07-06T16:52:29.911774",
+              "daysSinceModified": 1829,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-09T09:45:08.136Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.15,
+            "evidence": {
+              "formats": [
+                "PDF"
+              ],
+              "bestFormat": "PDF",
+              "bestFormatScore": 0.15,
+              "resourceCount": 3,
+              "formatDistribution": {
+                "PDF": 3
+              }
+            },
+            "calculatedAt": "2026-07-09T09:45:08.136Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 3,
+              "checked": 3,
+              "accessible": 3
+            },
+            "calculatedAt": "2026-07-09T09:45:08.458Z"
+          }
+        ],
+        "lastChecked": "2026-07-09T09:44:41.176Z"
+      }
+    },
+    {
+      "datasetId": "datos-energia-ar:emisiones-de-dioxido-de-nitrogeno-no2",
+      "externalId": "emisiones-de-dioxido-de-nitrogeno-no2",
+      "modifiedAt": "2021-01-20T13:40:35.643132",
+      "lastScoredAt": "2026-07-09T09:44:41.176Z",
+      "score": {
+        "datasetId": "datos-energia-ar:emisiones-de-dioxido-de-nitrogeno-no2",
+        "title": "Emisiones de dióxido de nitrógeno (NO2)",
+        "organization": "Subsecretaría de Eficiencia e Información Energética",
+        "overall": 0.484,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 39,
+              "tagCount": 4,
+              "resourceCount": 6
+            },
+            "calculatedAt": "2026-07-09T09:45:08.458Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0,
+            "evidence": {
+              "modifiedAt": "2021-01-20T13:40:35.643132",
+              "daysSinceModified": 1996,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-09T09:45:08.458Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.15,
+            "evidence": {
+              "formats": [
+                "PDF"
+              ],
+              "bestFormat": "PDF",
+              "bestFormatScore": 0.15,
+              "resourceCount": 6,
+              "formatDistribution": {
+                "PDF": 6
+              }
+            },
+            "calculatedAt": "2026-07-09T09:45:08.458Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 6,
+              "checked": 6,
+              "accessible": 6
+            },
+            "calculatedAt": "2026-07-09T09:45:08.785Z"
+          }
+        ],
+        "lastChecked": "2026-07-09T09:44:41.176Z"
+      }
+    },
+    {
+      "datasetId": "datos-energia-ar:mapa-de-vaca-muerta",
+      "externalId": "mapa-de-vaca-muerta",
+      "modifiedAt": "2020-04-24T15:03:08.325266",
+      "lastScoredAt": "2026-07-09T09:44:41.176Z",
+      "score": {
+        "datasetId": "datos-energia-ar:mapa-de-vaca-muerta",
+        "title": "Mapa de Vaca Muerta",
+        "organization": "Subsecretaría de Eficiencia e Información Energética",
+        "overall": 0.453,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 0.75,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [
+                "description"
+              ],
+              "descriptionLength": 0,
+              "tagCount": 5,
+              "resourceCount": 5
+            },
+            "calculatedAt": "2026-07-09T09:45:08.786Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0,
+            "evidence": {
+              "modifiedAt": "2020-04-24T15:03:08.325266",
+              "daysSinceModified": 2267,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-09T09:45:08.786Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.15,
+            "evidence": {
+              "formats": [
+                "PDF"
+              ],
+              "bestFormat": "PDF",
+              "bestFormatScore": 0.15,
+              "resourceCount": 5,
+              "formatDistribution": {
+                "PDF": 5
+              }
+            },
+            "calculatedAt": "2026-07-09T09:45:08.786Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 5,
+              "checked": 5,
+              "accessible": 5
+            },
+            "calculatedAt": "2026-07-09T09:45:09.111Z"
+          }
+        ],
+        "lastChecked": "2026-07-09T09:44:41.176Z"
+      }
+    },
+    {
+      "datasetId": "datos-energia-ar:grupo-de-trabajo-de-transiciones-energeticas-presidencia-argentina-de-g20",
+      "externalId": "grupo-de-trabajo-de-transiciones-energeticas-presidencia-argentina-de-g20",
+      "modifiedAt": "2019-12-09T13:50:55.338448",
+      "lastScoredAt": "2026-07-09T09:44:41.176Z",
+      "score": {
+        "datasetId": "datos-energia-ar:grupo-de-trabajo-de-transiciones-energeticas-presidencia-argentina-de-g20",
+        "title": "Grupo de Trabajo de Transiciones Energéticas, Presidencia Argentina de G20",
+        "organization": "Subsecretaría de Eficiencia e Información Energética",
+        "overall": 0.453,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 0.75,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [
+                "description"
+              ],
+              "descriptionLength": 0,
+              "tagCount": 1,
+              "resourceCount": 7
+            },
+            "calculatedAt": "2026-07-09T09:45:09.111Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0,
+            "evidence": {
+              "modifiedAt": "2019-12-09T13:50:55.338448",
+              "daysSinceModified": 2404,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-09T09:45:09.111Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.15,
+            "evidence": {
+              "formats": [
+                "PDF"
+              ],
+              "bestFormat": "PDF",
+              "bestFormatScore": 0.15,
+              "resourceCount": 7,
+              "formatDistribution": {
+                "PDF": 7
+              }
+            },
+            "calculatedAt": "2026-07-09T09:45:09.111Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 7,
+              "checked": 7,
+              "accessible": 7
+            },
+            "calculatedAt": "2026-07-09T09:45:09.440Z"
+          }
+        ],
+        "lastChecked": "2026-07-09T09:44:41.176Z"
+      }
+    },
+    {
+      "datasetId": "datos-energia-ar:operadores_glp",
+      "externalId": "operadores_glp",
+      "modifiedAt": "2026-07-11T07:00:15.785184",
+      "lastScoredAt": "2026-07-11T07:40:54.768Z",
+      "score": {
+        "datasetId": "datos-energia-ar:operadores_glp",
+        "title": "Operadores de GLP",
+        "organization": "Subsecretaría de Eficiencia e Información Energética",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 146,
+              "tagCount": 5,
+              "resourceCount": 26
+            },
+            "calculatedAt": "2026-07-11T07:40:54.768Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 1,
+            "evidence": {
+              "modifiedAt": "2026-07-11T07:00:15.785184",
+              "daysSinceModified": 0,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-11T07:40:54.768Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "SHP",
+                "CSV",
+                "PDF"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 26,
+              "formatDistribution": {
+                "SHP": 12,
+                "CSV": 12,
+                "PDF": 2
+              }
+            },
+            "calculatedAt": "2026-07-11T07:40:54.768Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 26,
+              "checked": 26,
+              "accessible": 26
+            },
+            "calculatedAt": "2026-07-11T07:40:56.053Z"
+          }
+        ],
+        "lastChecked": "2026-07-11T07:40:54.768Z"
+      }
+    },
+    {
+      "datasetId": "datos-energia-ar:comercializacion-hidrocarburos-combustibles-liquidos-terminales-de-despacho",
+      "externalId": "comercializacion-hidrocarburos-combustibles-liquidos-terminales-de-despacho",
+      "modifiedAt": "2026-07-11T05:00:00.807082",
+      "lastScoredAt": "2026-07-11T07:40:54.768Z",
+      "score": {
+        "datasetId": "datos-energia-ar:comercializacion-hidrocarburos-combustibles-liquidos-terminales-de-despacho",
+        "title": "Comercialización de hidrocarburos - Terminales de despacho de combustibles líquidos (Res. 1102)",
+        "organization": "Subsecretaría de Eficiencia e Información Energética",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 73,
+              "tagCount": 6,
+              "resourceCount": 2
+            },
+            "calculatedAt": "2026-07-11T07:40:56.053Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 1,
+            "evidence": {
+              "modifiedAt": "2026-07-11T05:00:00.807082",
+              "daysSinceModified": 0,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-11T07:40:56.053Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "SHP",
+                "CSV"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 2,
+              "formatDistribution": {
+                "SHP": 1,
+                "CSV": 1
+              }
+            },
+            "calculatedAt": "2026-07-11T07:40:56.053Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 2,
+              "checked": 2,
+              "accessible": 2
+            },
+            "calculatedAt": "2026-07-11T07:40:56.448Z"
+          }
+        ],
+        "lastChecked": "2026-07-11T07:40:54.768Z"
+      }
+    },
+    {
+      "datasetId": "datos-energia-ar:precios-en-surtidor",
+      "externalId": "precios-en-surtidor",
+      "modifiedAt": "2026-07-11T04:00:26.576149",
+      "lastScoredAt": "2026-07-11T07:40:54.768Z",
+      "score": {
+        "datasetId": "datos-energia-ar:precios-en-surtidor",
+        "title": "Precios en Surtidor - Resolución 314/2016",
+        "organization": "Subsecretaría de Eficiencia e Información Energética",
+        "overall": 0.88,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 383,
+              "tagCount": 4,
+              "resourceCount": 3
+            },
+            "calculatedAt": "2026-07-11T07:40:56.448Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.999,
+            "evidence": {
+              "modifiedAt": "2026-07-11T04:00:26.576149",
+              "daysSinceModified": 0,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-11T07:40:56.448Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV",
+                "HTML"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 3,
+              "formatDistribution": {
+                "CSV": 2,
+                "HTML": 1
+              }
+            },
+            "calculatedAt": "2026-07-11T07:40:56.448Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.667,
+            "evidence": {
+              "resourceCount": 3,
+              "checked": 3,
+              "accessible": 2
+            },
+            "calculatedAt": "2026-07-11T07:40:56.809Z"
+          }
+        ],
+        "lastChecked": "2026-07-11T07:40:54.768Z"
+      }
+    },
+    {
+      "datasetId": "datos-energia-ar:datos-de-fractura-de-pozos-adjunto-iv",
+      "externalId": "datos-de-fractura-de-pozos-adjunto-iv",
+      "modifiedAt": "2026-07-11T04:00:01.443218",
+      "lastScoredAt": "2026-07-11T07:40:54.768Z",
+      "score": {
+        "datasetId": "datos-energia-ar:datos-de-fractura-de-pozos-adjunto-iv",
+        "title": "Datos de fractura de pozos de hidrocarburos (Adjunto IV)",
+        "organization": "Dirección Nacional de Exploración y Producción",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 427,
+              "tagCount": 7,
+              "resourceCount": 2
+            },
+            "calculatedAt": "2026-07-11T07:40:56.809Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.999,
+            "evidence": {
+              "modifiedAt": "2026-07-11T04:00:01.443218",
+              "daysSinceModified": 0,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-11T07:40:56.809Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV",
+                "PDF"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 2,
+              "formatDistribution": {
+                "CSV": 1,
+                "PDF": 1
+              }
+            },
+            "calculatedAt": "2026-07-11T07:40:56.809Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 2,
+              "checked": 2,
+              "accessible": 2
+            },
+            "calculatedAt": "2026-07-11T07:40:57.251Z"
+          }
+        ],
+        "lastChecked": "2026-07-11T07:40:54.768Z"
+      }
+    },
+    {
+      "datasetId": "datos-energia-ar:produccion-de-petroleo-y-gas-por-pozo",
+      "externalId": "produccion-de-petroleo-y-gas-por-pozo",
+      "modifiedAt": "2026-07-10T10:02:01.568589",
+      "lastScoredAt": "2026-07-11T07:40:54.768Z",
+      "score": {
+        "datasetId": "datos-energia-ar:produccion-de-petroleo-y-gas-por-pozo",
+        "title": "Producción de petróleo y gas por pozo (Capítulo IV)",
+        "organization": "Dirección Nacional de Exploración y Producción",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 129,
+              "tagCount": 8,
+              "resourceCount": 53
+            },
+            "calculatedAt": "2026-07-11T07:40:57.251Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.997,
+            "evidence": {
+              "modifiedAt": "2026-07-10T10:02:01.568589",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-11T07:40:57.251Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV",
+                "SHP"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 53,
+              "formatDistribution": {
+                "CSV": 52,
+                "SHP": 1
+              }
+            },
+            "calculatedAt": "2026-07-11T07:40:57.251Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 53,
+              "checked": 53,
+              "accessible": 53
+            },
+            "calculatedAt": "2026-07-11T07:41:00.310Z"
+          }
+        ],
+        "lastChecked": "2026-07-11T07:40:54.768Z"
       }
     }
   ]

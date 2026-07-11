@@ -1,6 +1,6 @@
 {
   "catalogId": "datos-avellaneda-ar",
-  "updatedAt": "2026-07-10T09:20:22.385Z",
+  "updatedAt": "2026-07-11T07:41:23.507Z",
   "datasets": [
     {
       "datasetId": "datos-avellaneda-ar:tablero-dinamico-empleo",
@@ -432,6 +432,80 @@
           }
         ],
         "lastChecked": "2026-07-04T08:30:19.826Z"
+      }
+    },
+    {
+      "datasetId": "datos-avellaneda-ar:ordenanzas-2019",
+      "externalId": "ordenanzas-2019",
+      "modifiedAt": "2026-07-02T21:52:47.697421",
+      "lastScoredAt": "2026-07-10T09:20:22.385Z",
+      "score": {
+        "datasetId": "datos-avellaneda-ar:ordenanzas-2019",
+        "title": "Ordenanzas 2019",
+        "organization": "Concejo Municipal de Avellaneda",
+        "overall": 0.696,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 97,
+              "tagCount": 1,
+              "resourceCount": 38
+            },
+            "calculatedAt": "2026-07-10T09:20:22.385Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.972,
+            "evidence": {
+              "modifiedAt": "2026-07-02T21:52:47.697421",
+              "daysSinceModified": 7,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-10T09:20:22.385Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.15,
+            "evidence": {
+              "formats": [
+                "UNKNOWN",
+                "PDF"
+              ],
+              "bestFormat": "PDF",
+              "bestFormatScore": 0.15,
+              "resourceCount": 38,
+              "formatDistribution": {
+                "UNKNOWN": 1,
+                "PDF": 37
+              }
+            },
+            "calculatedAt": "2026-07-10T09:20:22.385Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.9,
+            "evidence": {
+              "resourceCount": 38,
+              "checked": 38,
+              "accessible": 38
+            },
+            "calculatedAt": "2026-07-10T09:20:22.478Z"
+          }
+        ],
+        "lastChecked": "2026-07-10T09:20:22.385Z"
       }
     },
     {
@@ -3600,80 +3674,6 @@
           }
         ],
         "lastChecked": "2026-07-09T09:52:31.039Z"
-      }
-    },
-    {
-      "datasetId": "datos-avellaneda-ar:ordenanzas-2019",
-      "externalId": "ordenanzas-2019",
-      "modifiedAt": "2026-07-02T21:52:47.697421",
-      "lastScoredAt": "2026-07-10T09:20:22.385Z",
-      "score": {
-        "datasetId": "datos-avellaneda-ar:ordenanzas-2019",
-        "title": "Ordenanzas 2019",
-        "organization": "Concejo Municipal de Avellaneda",
-        "overall": 0.696,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 97,
-              "tagCount": 1,
-              "resourceCount": 38
-            },
-            "calculatedAt": "2026-07-10T09:20:22.385Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.972,
-            "evidence": {
-              "modifiedAt": "2026-07-02T21:52:47.697421",
-              "daysSinceModified": 7,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-10T09:20:22.385Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.15,
-            "evidence": {
-              "formats": [
-                "UNKNOWN",
-                "PDF"
-              ],
-              "bestFormat": "PDF",
-              "bestFormatScore": 0.15,
-              "resourceCount": 38,
-              "formatDistribution": {
-                "UNKNOWN": 1,
-                "PDF": 37
-              }
-            },
-            "calculatedAt": "2026-07-10T09:20:22.385Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0.9,
-            "evidence": {
-              "resourceCount": 38,
-              "checked": 38,
-              "accessible": 38
-            },
-            "calculatedAt": "2026-07-10T09:20:22.478Z"
-          }
-        ],
-        "lastChecked": "2026-07-10T09:20:22.385Z"
       }
     }
   ]
