@@ -1,17 +1,305 @@
 {
   "catalogId": "datosabiertos-mercedes-ar",
-  "updatedAt": "2026-07-14T07:47:20.548Z",
+  "updatedAt": "2026-07-15T07:55:53.235Z",
   "datasets": [
     {
-      "datasetId": "datosabiertos-mercedes-ar:presupuesto-participativo-2025-presentacion-institucional",
-      "externalId": "presupuesto-participativo-2025-presentacion-institucional",
-      "modifiedAt": "2026-05-21T11:45:38.560530",
-      "lastScoredAt": "2026-07-07T09:29:48.322Z",
+      "datasetId": "datosabiertos-mercedes-ar:stock_deuda",
+      "externalId": "stock_deuda",
+      "modifiedAt": "2026-07-13T15:12:57.552139",
+      "lastScoredAt": "2026-07-14T07:47:20.548Z",
       "score": {
-        "datasetId": "datosabiertos-mercedes-ar:presupuesto-participativo-2025-presentacion-institucional",
-        "title": "Presupuesto Participativo 2025 – Presentación institucional",
-        "organization": "Centro Universitario Regional (CUR)",
-        "overall": 0.831,
+        "datasetId": "datosabiertos-mercedes-ar:stock_deuda",
+        "title": "Stock de deuda",
+        "organization": "Secretaría de Economía y Hacienda",
+        "overall": 0.734,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 24,
+              "tagCount": 3,
+              "resourceCount": 11
+            },
+            "calculatedAt": "2026-07-14T07:47:20.548Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.997,
+            "evidence": {
+              "modifiedAt": "2026-07-13T15:12:57.552139",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-14T07:47:20.548Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.15,
+            "evidence": {
+              "formats": [
+                "PDF"
+              ],
+              "bestFormat": "PDF",
+              "bestFormatScore": 0.15,
+              "resourceCount": 11,
+              "formatDistribution": {
+                "PDF": 11
+              }
+            },
+            "calculatedAt": "2026-07-14T07:47:20.548Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 11,
+              "checked": 11,
+              "accessible": 11
+            },
+            "calculatedAt": "2026-07-14T07:47:22.491Z"
+          }
+        ],
+        "lastChecked": "2026-07-14T07:47:20.548Z"
+      }
+    },
+    {
+      "datasetId": "datosabiertos-mercedes-ar:ejecucion_presup_recursos",
+      "externalId": "ejecucion_presup_recursos",
+      "modifiedAt": "2026-07-13T15:10:26.760594",
+      "lastScoredAt": "2026-07-14T07:47:20.548Z",
+      "score": {
+        "datasetId": "datosabiertos-mercedes-ar:ejecucion_presup_recursos",
+        "title": "Ejecución Presupuestaria - Recursos",
+        "organization": "Secretaría de Economía y Hacienda",
+        "overall": 0.734,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 52,
+              "tagCount": 2,
+              "resourceCount": 11
+            },
+            "calculatedAt": "2026-07-14T07:47:23.534Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.997,
+            "evidence": {
+              "modifiedAt": "2026-07-13T15:10:26.760594",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-14T07:47:23.534Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.15,
+            "evidence": {
+              "formats": [
+                "PDF"
+              ],
+              "bestFormat": "PDF",
+              "bestFormatScore": 0.15,
+              "resourceCount": 11,
+              "formatDistribution": {
+                "PDF": 11
+              }
+            },
+            "calculatedAt": "2026-07-14T07:47:23.534Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 11,
+              "checked": 11,
+              "accessible": 11
+            },
+            "calculatedAt": "2026-07-14T07:47:24.250Z"
+          }
+        ],
+        "lastChecked": "2026-07-14T07:47:20.548Z"
+      }
+    },
+    {
+      "datasetId": "datosabiertos-mercedes-ar:ejecucion_presupuestaria_gastos_fyf",
+      "externalId": "ejecucion_presupuestaria_gastos_fyf",
+      "modifiedAt": "2026-07-13T15:09:16.206984",
+      "lastScoredAt": "2026-07-14T07:47:20.548Z",
+      "score": {
+        "datasetId": "datosabiertos-mercedes-ar:ejecucion_presupuestaria_gastos_fyf",
+        "title": "Ejecución Presupuestaria - Gastos por Finalidad y Función",
+        "organization": "Secretaría de Economía y Hacienda",
+        "overall": 0.734,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 82,
+              "tagCount": 2,
+              "resourceCount": 11
+            },
+            "calculatedAt": "2026-07-14T07:47:24.250Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.997,
+            "evidence": {
+              "modifiedAt": "2026-07-13T15:09:16.206984",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-14T07:47:24.250Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.15,
+            "evidence": {
+              "formats": [
+                "PDF"
+              ],
+              "bestFormat": "PDF",
+              "bestFormatScore": 0.15,
+              "resourceCount": 11,
+              "formatDistribution": {
+                "PDF": 11
+              }
+            },
+            "calculatedAt": "2026-07-14T07:47:24.250Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 11,
+              "checked": 11,
+              "accessible": 11
+            },
+            "calculatedAt": "2026-07-14T07:47:25.650Z"
+          }
+        ],
+        "lastChecked": "2026-07-14T07:47:20.548Z"
+      }
+    },
+    {
+      "datasetId": "datosabiertos-mercedes-ar:ejecucion_presupuestaria_gastos",
+      "externalId": "ejecucion_presupuestaria_gastos",
+      "modifiedAt": "2026-07-13T15:07:49.317668",
+      "lastScoredAt": "2026-07-14T07:47:20.548Z",
+      "score": {
+        "datasetId": "datosabiertos-mercedes-ar:ejecucion_presupuestaria_gastos",
+        "title": "Ejecución Presupuestaria - Gastos",
+        "organization": "Secretaría de Economía y Hacienda",
+        "overall": 0.734,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 69,
+              "tagCount": 3,
+              "resourceCount": 11
+            },
+            "calculatedAt": "2026-07-14T07:47:25.650Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.997,
+            "evidence": {
+              "modifiedAt": "2026-07-13T15:07:49.317668",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-14T07:47:25.650Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.15,
+            "evidence": {
+              "formats": [
+                "PDF"
+              ],
+              "bestFormat": "PDF",
+              "bestFormatScore": 0.15,
+              "resourceCount": 11,
+              "formatDistribution": {
+                "PDF": 11
+              }
+            },
+            "calculatedAt": "2026-07-14T07:47:25.650Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 11,
+              "checked": 11,
+              "accessible": 11
+            },
+            "calculatedAt": "2026-07-14T07:47:26.475Z"
+          }
+        ],
+        "lastChecked": "2026-07-14T07:47:20.548Z"
+      }
+    },
+    {
+      "datasetId": "datosabiertos-mercedes-ar:ejecucion_presup_basedevengado",
+      "externalId": "ejecucion_presup_basedevengado",
+      "modifiedAt": "2026-07-13T15:02:50.853021",
+      "lastScoredAt": "2026-07-14T07:47:20.548Z",
+      "score": {
+        "datasetId": "datosabiertos-mercedes-ar:ejecucion_presup_basedevengado",
+        "title": "Ejecución Presupuestaria - base devengado",
+        "organization": "Secretaría de Economía y Hacienda",
+        "overall": 0.715,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -29,52 +317,122 @@
               "fieldsMissing": [
                 "tags"
               ],
-              "descriptionLength": 286,
+              "descriptionLength": 52,
               "tagCount": 0,
-              "resourceCount": 2
+              "resourceCount": 11
             },
-            "calculatedAt": "2026-07-07T09:29:48.322Z"
+            "calculatedAt": "2026-07-14T07:47:26.476Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.835,
+            "score": 0.997,
             "evidence": {
-              "modifiedAt": "2026-05-21T11:45:38.560530",
-              "daysSinceModified": 47,
+              "modifiedAt": "2026-07-13T15:02:50.853021",
+              "daysSinceModified": 1,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-07-07T09:29:48.322Z"
+            "calculatedAt": "2026-07-14T07:47:26.476Z"
           },
           {
             "dimension": "structure",
-            "score": 0.65,
+            "score": 0.15,
             "evidence": {
               "formats": [
-                "PDF",
-                "XLSX"
+                "PDF"
               ],
-              "bestFormat": "XLSX",
-              "bestFormatScore": 0.65,
-              "resourceCount": 2,
+              "bestFormat": "PDF",
+              "bestFormatScore": 0.15,
+              "resourceCount": 11,
               "formatDistribution": {
-                "PDF": 1,
-                "XLSX": 1
+                "PDF": 11
               }
             },
-            "calculatedAt": "2026-07-07T09:29:48.322Z"
+            "calculatedAt": "2026-07-14T07:47:26.476Z"
           },
           {
             "dimension": "accessibility",
             "score": 1,
             "evidence": {
-              "resourceCount": 2,
-              "checked": 2,
-              "accessible": 2
+              "resourceCount": 11,
+              "checked": 11,
+              "accessible": 11
             },
-            "calculatedAt": "2026-07-07T09:29:48.963Z"
+            "calculatedAt": "2026-07-14T07:47:27.247Z"
           }
         ],
-        "lastChecked": "2026-07-07T09:29:48.322Z"
+        "lastChecked": "2026-07-14T07:47:20.548Z"
+      }
+    },
+    {
+      "datasetId": "datosabiertos-mercedes-ar:ejecucion_presup_basecaja",
+      "externalId": "ejecucion_presup_basecaja",
+      "modifiedAt": "2026-07-13T14:58:29.467453",
+      "lastScoredAt": "2026-07-14T07:47:20.548Z",
+      "score": {
+        "datasetId": "datosabiertos-mercedes-ar:ejecucion_presup_basecaja",
+        "title": "Ejecución Presupuestaria - base caja",
+        "organization": "Secretaría de Economía y Hacienda",
+        "overall": 0.734,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 51,
+              "tagCount": 2,
+              "resourceCount": 11
+            },
+            "calculatedAt": "2026-07-14T07:47:27.247Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.997,
+            "evidence": {
+              "modifiedAt": "2026-07-13T14:58:29.467453",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-14T07:47:27.247Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.15,
+            "evidence": {
+              "formats": [
+                "PDF"
+              ],
+              "bestFormat": "PDF",
+              "bestFormatScore": 0.15,
+              "resourceCount": 11,
+              "formatDistribution": {
+                "PDF": 11
+              }
+            },
+            "calculatedAt": "2026-07-14T07:47:27.247Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 11,
+              "checked": 11,
+              "accessible": 11
+            },
+            "calculatedAt": "2026-07-14T07:47:28.085Z"
+          }
+        ],
+        "lastChecked": "2026-07-14T07:47:20.548Z"
       }
     },
     {
@@ -22155,82 +22513,10 @@
       }
     },
     {
-      "datasetId": "datosabiertos-mercedes-ar:stock_deuda",
-      "externalId": "stock_deuda",
-      "modifiedAt": "2026-07-13T15:12:57.552139",
-      "lastScoredAt": "2026-07-14T07:47:20.548Z",
-      "score": {
-        "datasetId": "datosabiertos-mercedes-ar:stock_deuda",
-        "title": "Stock de deuda",
-        "organization": "Secretaría de Economía y Hacienda",
-        "overall": 0.734,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 24,
-              "tagCount": 3,
-              "resourceCount": 11
-            },
-            "calculatedAt": "2026-07-14T07:47:20.548Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.997,
-            "evidence": {
-              "modifiedAt": "2026-07-13T15:12:57.552139",
-              "daysSinceModified": 1,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-14T07:47:20.548Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.15,
-            "evidence": {
-              "formats": [
-                "PDF"
-              ],
-              "bestFormat": "PDF",
-              "bestFormatScore": 0.15,
-              "resourceCount": 11,
-              "formatDistribution": {
-                "PDF": 11
-              }
-            },
-            "calculatedAt": "2026-07-14T07:47:20.548Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 11,
-              "checked": 11,
-              "accessible": 11
-            },
-            "calculatedAt": "2026-07-14T07:47:22.491Z"
-          }
-        ],
-        "lastChecked": "2026-07-14T07:47:20.548Z"
-      }
-    },
-    {
       "datasetId": "datosabiertos-mercedes-ar:situacion_economico_financiera",
       "externalId": "situacion_economico_financiera",
-      "modifiedAt": "2026-07-13T15:11:48.069237",
-      "lastScoredAt": "2026-07-14T07:47:20.548Z",
+      "modifiedAt": "2026-07-14T13:10:28.268910",
+      "lastScoredAt": "2026-07-15T07:55:53.235Z",
       "score": {
         "datasetId": "datosabiertos-mercedes-ar:situacion_economico_financiera",
         "title": "Situación Económico Financiera",
@@ -22256,17 +22542,17 @@
               "tagCount": 3,
               "resourceCount": 11
             },
-            "calculatedAt": "2026-07-14T07:47:22.491Z"
+            "calculatedAt": "2026-07-15T07:55:53.235Z"
           },
           {
             "dimension": "freshness",
             "score": 0.997,
             "evidence": {
-              "modifiedAt": "2026-07-13T15:11:48.069237",
+              "modifiedAt": "2026-07-14T13:10:28.268910",
               "daysSinceModified": 1,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-07-14T07:47:22.491Z"
+            "calculatedAt": "2026-07-15T07:55:53.235Z"
           },
           {
             "dimension": "structure",
@@ -22282,7 +22568,7 @@
                 "PDF": 11
               }
             },
-            "calculatedAt": "2026-07-14T07:47:22.491Z"
+            "calculatedAt": "2026-07-15T07:55:53.235Z"
           },
           {
             "dimension": "accessibility",
@@ -22292,238 +22578,22 @@
               "checked": 11,
               "accessible": 11
             },
-            "calculatedAt": "2026-07-14T07:47:23.534Z"
+            "calculatedAt": "2026-07-15T07:55:54.664Z"
           }
         ],
-        "lastChecked": "2026-07-14T07:47:20.548Z"
+        "lastChecked": "2026-07-15T07:55:53.235Z"
       }
     },
     {
-      "datasetId": "datosabiertos-mercedes-ar:ejecucion_presup_recursos",
-      "externalId": "ejecucion_presup_recursos",
-      "modifiedAt": "2026-07-13T15:10:26.760594",
-      "lastScoredAt": "2026-07-14T07:47:20.548Z",
+      "datasetId": "datosabiertos-mercedes-ar:presupuesto-participativo-2025-presentacion-institucional",
+      "externalId": "presupuesto-participativo-2025-presentacion-institucional",
+      "modifiedAt": "2026-05-21T11:45:38.560530",
+      "lastScoredAt": "2026-07-15T07:55:53.235Z",
       "score": {
-        "datasetId": "datosabiertos-mercedes-ar:ejecucion_presup_recursos",
-        "title": "Ejecución Presupuestaria - Recursos",
-        "organization": "Secretaría de Economía y Hacienda",
-        "overall": 0.734,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 52,
-              "tagCount": 2,
-              "resourceCount": 11
-            },
-            "calculatedAt": "2026-07-14T07:47:23.534Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.997,
-            "evidence": {
-              "modifiedAt": "2026-07-13T15:10:26.760594",
-              "daysSinceModified": 1,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-14T07:47:23.534Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.15,
-            "evidence": {
-              "formats": [
-                "PDF"
-              ],
-              "bestFormat": "PDF",
-              "bestFormatScore": 0.15,
-              "resourceCount": 11,
-              "formatDistribution": {
-                "PDF": 11
-              }
-            },
-            "calculatedAt": "2026-07-14T07:47:23.534Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 11,
-              "checked": 11,
-              "accessible": 11
-            },
-            "calculatedAt": "2026-07-14T07:47:24.250Z"
-          }
-        ],
-        "lastChecked": "2026-07-14T07:47:20.548Z"
-      }
-    },
-    {
-      "datasetId": "datosabiertos-mercedes-ar:ejecucion_presupuestaria_gastos_fyf",
-      "externalId": "ejecucion_presupuestaria_gastos_fyf",
-      "modifiedAt": "2026-07-13T15:09:16.206984",
-      "lastScoredAt": "2026-07-14T07:47:20.548Z",
-      "score": {
-        "datasetId": "datosabiertos-mercedes-ar:ejecucion_presupuestaria_gastos_fyf",
-        "title": "Ejecución Presupuestaria - Gastos por Finalidad y Función",
-        "organization": "Secretaría de Economía y Hacienda",
-        "overall": 0.734,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 82,
-              "tagCount": 2,
-              "resourceCount": 11
-            },
-            "calculatedAt": "2026-07-14T07:47:24.250Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.997,
-            "evidence": {
-              "modifiedAt": "2026-07-13T15:09:16.206984",
-              "daysSinceModified": 1,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-14T07:47:24.250Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.15,
-            "evidence": {
-              "formats": [
-                "PDF"
-              ],
-              "bestFormat": "PDF",
-              "bestFormatScore": 0.15,
-              "resourceCount": 11,
-              "formatDistribution": {
-                "PDF": 11
-              }
-            },
-            "calculatedAt": "2026-07-14T07:47:24.250Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 11,
-              "checked": 11,
-              "accessible": 11
-            },
-            "calculatedAt": "2026-07-14T07:47:25.650Z"
-          }
-        ],
-        "lastChecked": "2026-07-14T07:47:20.548Z"
-      }
-    },
-    {
-      "datasetId": "datosabiertos-mercedes-ar:ejecucion_presupuestaria_gastos",
-      "externalId": "ejecucion_presupuestaria_gastos",
-      "modifiedAt": "2026-07-13T15:07:49.317668",
-      "lastScoredAt": "2026-07-14T07:47:20.548Z",
-      "score": {
-        "datasetId": "datosabiertos-mercedes-ar:ejecucion_presupuestaria_gastos",
-        "title": "Ejecución Presupuestaria - Gastos",
-        "organization": "Secretaría de Economía y Hacienda",
-        "overall": 0.734,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 69,
-              "tagCount": 3,
-              "resourceCount": 11
-            },
-            "calculatedAt": "2026-07-14T07:47:25.650Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.997,
-            "evidence": {
-              "modifiedAt": "2026-07-13T15:07:49.317668",
-              "daysSinceModified": 1,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-14T07:47:25.650Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.15,
-            "evidence": {
-              "formats": [
-                "PDF"
-              ],
-              "bestFormat": "PDF",
-              "bestFormatScore": 0.15,
-              "resourceCount": 11,
-              "formatDistribution": {
-                "PDF": 11
-              }
-            },
-            "calculatedAt": "2026-07-14T07:47:25.650Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 11,
-              "checked": 11,
-              "accessible": 11
-            },
-            "calculatedAt": "2026-07-14T07:47:26.475Z"
-          }
-        ],
-        "lastChecked": "2026-07-14T07:47:20.548Z"
-      }
-    },
-    {
-      "datasetId": "datosabiertos-mercedes-ar:ejecucion_presup_basedevengado",
-      "externalId": "ejecucion_presup_basedevengado",
-      "modifiedAt": "2026-07-13T15:02:50.853021",
-      "lastScoredAt": "2026-07-14T07:47:20.548Z",
-      "score": {
-        "datasetId": "datosabiertos-mercedes-ar:ejecucion_presup_basedevengado",
-        "title": "Ejecución Presupuestaria - base devengado",
-        "organization": "Secretaría de Economía y Hacienda",
-        "overall": 0.715,
+        "datasetId": "datosabiertos-mercedes-ar:presupuesto-participativo-2025-presentacion-institucional",
+        "title": "Presupuesto Participativo 2025 – Presentación institucional",
+        "organization": "Centro Universitario Regional (CUR)",
+        "overall": 0.824,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -22541,122 +22611,52 @@
               "fieldsMissing": [
                 "tags"
               ],
-              "descriptionLength": 52,
+              "descriptionLength": 286,
               "tagCount": 0,
-              "resourceCount": 11
+              "resourceCount": 2
             },
-            "calculatedAt": "2026-07-14T07:47:26.476Z"
+            "calculatedAt": "2026-07-15T07:55:54.664Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.997,
+            "score": 0.81,
             "evidence": {
-              "modifiedAt": "2026-07-13T15:02:50.853021",
-              "daysSinceModified": 1,
+              "modifiedAt": "2026-05-21T11:45:38.560530",
+              "daysSinceModified": 55,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-07-14T07:47:26.476Z"
+            "calculatedAt": "2026-07-15T07:55:54.664Z"
           },
           {
             "dimension": "structure",
-            "score": 0.15,
+            "score": 0.65,
             "evidence": {
               "formats": [
-                "PDF"
+                "PDF",
+                "XLSX"
               ],
-              "bestFormat": "PDF",
-              "bestFormatScore": 0.15,
-              "resourceCount": 11,
+              "bestFormat": "XLSX",
+              "bestFormatScore": 0.65,
+              "resourceCount": 2,
               "formatDistribution": {
-                "PDF": 11
+                "PDF": 1,
+                "XLSX": 1
               }
             },
-            "calculatedAt": "2026-07-14T07:47:26.476Z"
+            "calculatedAt": "2026-07-15T07:55:54.665Z"
           },
           {
             "dimension": "accessibility",
             "score": 1,
             "evidence": {
-              "resourceCount": 11,
-              "checked": 11,
-              "accessible": 11
+              "resourceCount": 2,
+              "checked": 2,
+              "accessible": 2
             },
-            "calculatedAt": "2026-07-14T07:47:27.247Z"
+            "calculatedAt": "2026-07-15T07:55:55.243Z"
           }
         ],
-        "lastChecked": "2026-07-14T07:47:20.548Z"
-      }
-    },
-    {
-      "datasetId": "datosabiertos-mercedes-ar:ejecucion_presup_basecaja",
-      "externalId": "ejecucion_presup_basecaja",
-      "modifiedAt": "2026-07-13T14:58:29.467453",
-      "lastScoredAt": "2026-07-14T07:47:20.548Z",
-      "score": {
-        "datasetId": "datosabiertos-mercedes-ar:ejecucion_presup_basecaja",
-        "title": "Ejecución Presupuestaria - base caja",
-        "organization": "Secretaría de Economía y Hacienda",
-        "overall": 0.734,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 51,
-              "tagCount": 2,
-              "resourceCount": 11
-            },
-            "calculatedAt": "2026-07-14T07:47:27.247Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.997,
-            "evidence": {
-              "modifiedAt": "2026-07-13T14:58:29.467453",
-              "daysSinceModified": 1,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-14T07:47:27.247Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.15,
-            "evidence": {
-              "formats": [
-                "PDF"
-              ],
-              "bestFormat": "PDF",
-              "bestFormatScore": 0.15,
-              "resourceCount": 11,
-              "formatDistribution": {
-                "PDF": 11
-              }
-            },
-            "calculatedAt": "2026-07-14T07:47:27.247Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 11,
-              "checked": 11,
-              "accessible": 11
-            },
-            "calculatedAt": "2026-07-14T07:47:28.085Z"
-          }
-        ],
-        "lastChecked": "2026-07-14T07:47:20.548Z"
+        "lastChecked": "2026-07-15T07:55:53.235Z"
       }
     }
   ]
