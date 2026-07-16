@@ -1,7 +1,79 @@
 {
   "catalogId": "datos-legislatura-caba-ar",
-  "updatedAt": "2026-07-15T07:57:17.391Z",
+  "updatedAt": "2026-07-16T07:55:33.072Z",
   "datasets": [
+    {
+      "datasetId": "datos-legislatura-caba-ar:modulos",
+      "externalId": "modulos",
+      "modifiedAt": "2026-07-14T18:21:27.962121",
+      "lastScoredAt": "2026-07-15T07:57:17.391Z",
+      "score": {
+        "datasetId": "datos-legislatura-caba-ar:modulos",
+        "title": "Módulos",
+        "organization": "Legislatura de la Ciudad Autónoma de Buenos Aires",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 62,
+              "tagCount": 2,
+              "resourceCount": 4
+            },
+            "calculatedAt": "2026-07-15T07:57:17.391Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.998,
+            "evidence": {
+              "modifiedAt": "2026-07-14T18:21:27.962121",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-15T07:57:17.391Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 4,
+              "formatDistribution": {
+                "CSV": 4
+              }
+            },
+            "calculatedAt": "2026-07-15T07:57:17.391Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 4,
+              "checked": 4,
+              "accessible": 4
+            },
+            "calculatedAt": "2026-07-15T07:57:18.065Z"
+          }
+        ],
+        "lastChecked": "2026-07-15T07:57:17.391Z"
+      }
+    },
     {
       "datasetId": "datos-legislatura-caba-ar:planta-institucional",
       "externalId": "planta-institucional",
@@ -3675,78 +3747,6 @@
           }
         ],
         "lastChecked": "2026-07-09T09:46:05.165Z"
-      }
-    },
-    {
-      "datasetId": "datos-legislatura-caba-ar:modulos",
-      "externalId": "modulos",
-      "modifiedAt": "2026-07-14T18:21:27.962121",
-      "lastScoredAt": "2026-07-15T07:57:17.391Z",
-      "score": {
-        "datasetId": "datos-legislatura-caba-ar:modulos",
-        "title": "Módulos",
-        "organization": "Legislatura de la Ciudad Autónoma de Buenos Aires",
-        "overall": 0.984,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 62,
-              "tagCount": 2,
-              "resourceCount": 4
-            },
-            "calculatedAt": "2026-07-15T07:57:17.391Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.998,
-            "evidence": {
-              "modifiedAt": "2026-07-14T18:21:27.962121",
-              "daysSinceModified": 1,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-15T07:57:17.391Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 4,
-              "formatDistribution": {
-                "CSV": 4
-              }
-            },
-            "calculatedAt": "2026-07-15T07:57:17.391Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 4,
-              "checked": 4,
-              "accessible": 4
-            },
-            "calculatedAt": "2026-07-15T07:57:18.065Z"
-          }
-        ],
-        "lastChecked": "2026-07-15T07:57:17.391Z"
       }
     }
   ]
