@@ -1,7 +1,81 @@
 {
   "catalogId": "datos-yvera-ar",
-  "updatedAt": "2026-07-17T08:09:43.971Z",
+  "updatedAt": "2026-07-18T07:33:17.357Z",
   "datasets": [
+    {
+      "datasetId": "datos-yvera-ar:conectividad-aerea",
+      "externalId": "conectividad-aerea",
+      "modifiedAt": "2026-07-16T16:35:02.416248",
+      "lastScoredAt": "2026-07-17T08:09:43.971Z",
+      "score": {
+        "datasetId": "datos-yvera-ar:conectividad-aerea",
+        "title": "Conectividad Aérea",
+        "organization": "Dirección Nacional de Mercados y Estadísticas de Turismo",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 285,
+              "tagCount": 2,
+              "resourceCount": 9
+            },
+            "calculatedAt": "2026-07-17T08:09:43.971Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.998,
+            "evidence": {
+              "modifiedAt": "2026-07-16T16:35:02.416248",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-17T08:09:43.971Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV",
+                "PDF"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 9,
+              "formatDistribution": {
+                "CSV": 8,
+                "PDF": 1
+              }
+            },
+            "calculatedAt": "2026-07-17T08:09:43.971Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 9,
+              "checked": 9,
+              "accessible": 9
+            },
+            "calculatedAt": "2026-07-17T08:09:45.524Z"
+          }
+        ],
+        "lastChecked": "2026-07-17T08:09:43.971Z"
+      }
+    },
     {
       "datasetId": "datos-yvera-ar:turismo-internacional-total-pais",
       "externalId": "turismo-internacional-total-pais",
@@ -1048,80 +1122,6 @@
           }
         ],
         "lastChecked": "2026-07-13T08:59:53.917Z"
-      }
-    },
-    {
-      "datasetId": "datos-yvera-ar:conectividad-aerea",
-      "externalId": "conectividad-aerea",
-      "modifiedAt": "2026-07-16T16:35:02.416248",
-      "lastScoredAt": "2026-07-17T08:09:43.971Z",
-      "score": {
-        "datasetId": "datos-yvera-ar:conectividad-aerea",
-        "title": "Conectividad Aérea",
-        "organization": "Dirección Nacional de Mercados y Estadísticas de Turismo",
-        "overall": 0.984,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 285,
-              "tagCount": 2,
-              "resourceCount": 9
-            },
-            "calculatedAt": "2026-07-17T08:09:43.971Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.998,
-            "evidence": {
-              "modifiedAt": "2026-07-16T16:35:02.416248",
-              "daysSinceModified": 1,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-17T08:09:43.971Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV",
-                "PDF"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 9,
-              "formatDistribution": {
-                "CSV": 8,
-                "PDF": 1
-              }
-            },
-            "calculatedAt": "2026-07-17T08:09:43.971Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 9,
-              "checked": 9,
-              "accessible": 9
-            },
-            "calculatedAt": "2026-07-17T08:09:45.524Z"
-          }
-        ],
-        "lastChecked": "2026-07-17T08:09:43.971Z"
       }
     }
   ]
