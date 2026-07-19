@@ -1,6 +1,6 @@
 {
   "catalogId": "datos-arsat-ar",
-  "scoredAt": "2026-07-18T07:33:13.114Z",
+  "scoredAt": "2026-07-19T07:59:01.730Z",
   "datasetCount": 13,
   "datasets": [
     {
@@ -70,6 +70,72 @@
         }
       ],
       "lastChecked": "2026-07-16T07:55:27.314Z"
+    },
+    {
+      "datasetId": "datos-arsat-ar:organigrama",
+      "title": "Organigrama",
+      "organization": "ARSAT",
+      "overall": 0.72,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 82,
+            "tagCount": 3,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-07-18T07:33:13.114Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.942,
+          "evidence": {
+            "modifiedAt": "2026-07-02T18:56:10.086432",
+            "daysSinceModified": 16,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-07-18T07:33:13.114Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.15,
+          "evidence": {
+            "formats": [
+              "PDF"
+            ],
+            "bestFormat": "PDF",
+            "bestFormatScore": 0.15,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "PDF": 1
+            }
+          },
+          "calculatedAt": "2026-07-18T07:33:13.114Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-07-18T07:33:13.295Z"
+        }
+      ],
+      "lastChecked": "2026-07-18T07:33:13.114Z"
     },
     {
       "datasetId": "datos-arsat-ar:autoridades-y-designaciones",
@@ -802,72 +868,6 @@
         }
       ],
       "lastChecked": "2026-07-17T08:09:05.919Z"
-    },
-    {
-      "datasetId": "datos-arsat-ar:organigrama",
-      "title": "Organigrama",
-      "organization": "ARSAT",
-      "overall": 0.72,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 82,
-            "tagCount": 3,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-07-18T07:33:13.114Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.942,
-          "evidence": {
-            "modifiedAt": "2026-07-02T18:56:10.086432",
-            "daysSinceModified": 16,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-07-18T07:33:13.114Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.15,
-          "evidence": {
-            "formats": [
-              "PDF"
-            ],
-            "bestFormat": "PDF",
-            "bestFormatScore": 0.15,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "PDF": 1
-            }
-          },
-          "calculatedAt": "2026-07-18T07:33:13.114Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-07-18T07:33:13.295Z"
-        }
-      ],
-      "lastChecked": "2026-07-18T07:33:13.114Z"
     }
   ],
   "coverage": 1

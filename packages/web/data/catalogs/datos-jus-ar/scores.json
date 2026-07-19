@@ -1,8 +1,74 @@
 {
   "catalogId": "datos-jus-ar",
-  "scoredAt": "2026-07-18T07:27:11.408Z",
+  "scoredAt": "2026-07-19T07:58:29.515Z",
   "datasetCount": 63,
   "datasets": [
+    {
+      "datasetId": "datos-jus-ar:sistema-nacional-de-estadisticas-sobre-ejecucion-de-la-pena-sneep-series-de-tiempo",
+      "title": "Sistema Nacional de Estadísticas sobre Ejecución de la Pena - SNEEP - Series de tiempo",
+      "organization": "Dirección Nacional de Política Criminal en Materia de Justicia y Legislación Penal",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 201,
+            "tagCount": 9,
+            "resourceCount": 28
+          },
+          "calculatedAt": "2026-07-18T07:27:11.408Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.998,
+          "evidence": {
+            "modifiedAt": "2026-07-17T18:02:03.305137",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-07-18T07:27:11.408Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 28,
+            "formatDistribution": {
+              "CSV": 28
+            }
+          },
+          "calculatedAt": "2026-07-18T07:27:11.408Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 28,
+            "checked": 28,
+            "accessible": 28
+          },
+          "calculatedAt": "2026-07-18T07:27:13.630Z"
+        }
+      ],
+      "lastChecked": "2026-07-18T07:27:11.408Z"
+    },
     {
       "datasetId": "datos-jus-ar:renuncias-de-magistrados-de-la-justicia-federal-y-de-la-justicia-nacional",
       "title": "Renuncias de magistrados de la Justicia Federal y de la Justicia Nacional",
@@ -4268,72 +4334,6 @@
         }
       ],
       "lastChecked": "2026-07-17T08:03:13.100Z"
-    },
-    {
-      "datasetId": "datos-jus-ar:sistema-nacional-de-estadisticas-sobre-ejecucion-de-la-pena-sneep-series-de-tiempo",
-      "title": "Sistema Nacional de Estadísticas sobre Ejecución de la Pena - SNEEP - Series de tiempo",
-      "organization": "Dirección Nacional de Política Criminal en Materia de Justicia y Legislación Penal",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 201,
-            "tagCount": 9,
-            "resourceCount": 28
-          },
-          "calculatedAt": "2026-07-18T07:27:11.408Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-07-17T18:02:03.305137",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-07-18T07:27:11.408Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 28,
-            "formatDistribution": {
-              "CSV": 28
-            }
-          },
-          "calculatedAt": "2026-07-18T07:27:11.408Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 28,
-            "checked": 28,
-            "accessible": 28
-          },
-          "calculatedAt": "2026-07-18T07:27:13.630Z"
-        }
-      ],
-      "lastChecked": "2026-07-18T07:27:11.408Z"
     }
   ],
   "coverage": 1
