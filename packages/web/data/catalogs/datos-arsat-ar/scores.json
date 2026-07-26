@@ -1,6 +1,6 @@
 {
   "catalogId": "datos-arsat-ar",
-  "scoredAt": "2026-07-25T07:59:20.643Z",
+  "scoredAt": "2026-07-26T08:07:55.990Z",
   "datasetCount": 13,
   "datasets": [
     {
@@ -70,6 +70,72 @@
         }
       ],
       "lastChecked": "2026-07-23T08:13:58.802Z"
+    },
+    {
+      "datasetId": "datos-arsat-ar:organigrama",
+      "title": "Organigrama",
+      "organization": "ARSAT",
+      "overall": 0.714,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 82,
+            "tagCount": 3,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-07-25T07:59:20.643Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.917,
+          "evidence": {
+            "modifiedAt": "2026-07-02T18:56:10.086432",
+            "daysSinceModified": 23,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-07-25T07:59:20.643Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.15,
+          "evidence": {
+            "formats": [
+              "PDF"
+            ],
+            "bestFormat": "PDF",
+            "bestFormatScore": 0.15,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "PDF": 1
+            }
+          },
+          "calculatedAt": "2026-07-25T07:59:20.643Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-07-25T07:59:20.862Z"
+        }
+      ],
+      "lastChecked": "2026-07-25T07:59:20.643Z"
     },
     {
       "datasetId": "datos-arsat-ar:autoridades-y-designaciones",
@@ -802,72 +868,6 @@
         }
       ],
       "lastChecked": "2026-07-24T08:24:13.624Z"
-    },
-    {
-      "datasetId": "datos-arsat-ar:organigrama",
-      "title": "Organigrama",
-      "organization": "ARSAT",
-      "overall": 0.714,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 82,
-            "tagCount": 3,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-07-25T07:59:20.643Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.917,
-          "evidence": {
-            "modifiedAt": "2026-07-02T18:56:10.086432",
-            "daysSinceModified": 23,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-07-25T07:59:20.643Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.15,
-          "evidence": {
-            "formats": [
-              "PDF"
-            ],
-            "bestFormat": "PDF",
-            "bestFormatScore": 0.15,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "PDF": 1
-            }
-          },
-          "calculatedAt": "2026-07-25T07:59:20.643Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-07-25T07:59:20.862Z"
-        }
-      ],
-      "lastChecked": "2026-07-25T07:59:20.643Z"
     }
   ],
   "coverage": 1
