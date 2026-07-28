@@ -1,7 +1,79 @@
 {
   "catalogId": "sep-tucuman-ar",
-  "updatedAt": "2026-07-26T08:08:16.883Z",
+  "updatedAt": "2026-07-28T08:33:50.361Z",
   "datasets": [
+    {
+      "datasetId": "sep-tucuman-ar:obras",
+      "externalId": "obras",
+      "modifiedAt": "2026-07-17T12:59:45.659697",
+      "lastScoredAt": "2026-07-26T08:08:16.883Z",
+      "score": {
+        "datasetId": "sep-tucuman-ar:obras",
+        "title": "Obras",
+        "organization": "Dirección de Arquitectura y Urbanismo",
+        "overall": 0.851,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 262,
+              "tagCount": 4,
+              "resourceCount": 27
+            },
+            "calculatedAt": "2026-07-26T08:08:16.883Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.967,
+            "evidence": {
+              "modifiedAt": "2026-07-17T12:59:45.659697",
+              "daysSinceModified": 9,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-26T08:08:16.883Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.65,
+            "evidence": {
+              "formats": [
+                "XLSX"
+              ],
+              "bestFormat": "XLSX",
+              "bestFormatScore": 0.65,
+              "resourceCount": 27,
+              "formatDistribution": {
+                "XLSX": 27
+              }
+            },
+            "calculatedAt": "2026-07-26T08:08:16.883Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.9,
+            "evidence": {
+              "resourceCount": 27,
+              "checked": 27,
+              "accessible": 27
+            },
+            "calculatedAt": "2026-07-26T08:08:18.529Z"
+          }
+        ],
+        "lastChecked": "2026-07-26T08:08:16.883Z"
+      }
+    },
     {
       "datasetId": "sep-tucuman-ar:notificaciones-recibidas-en-el-mes-de-marzo-2026",
       "externalId": "notificaciones-recibidas-en-el-mes-de-marzo-2026",
@@ -78,15 +150,15 @@
       }
     },
     {
-      "datasetId": "sep-tucuman-ar:http-sep-tucuman-gob-ar-dataset-informalidad",
-      "externalId": "http-sep-tucuman-gob-ar-dataset-informalidad",
-      "modifiedAt": "2026-06-04T16:12:08.389351",
-      "lastScoredAt": "2026-07-21T08:18:12.189Z",
+      "datasetId": "sep-tucuman-ar:producto-bruto-geografico",
+      "externalId": "producto-bruto-geografico",
+      "modifiedAt": "2026-06-01T16:32:46.571163",
+      "lastScoredAt": "2026-07-26T08:08:16.883Z",
       "score": {
-        "datasetId": "sep-tucuman-ar:http-sep-tucuman-gob-ar-dataset-informalidad",
-        "title": "Tasa de informalidad",
+        "datasetId": "sep-tucuman-ar:producto-bruto-geografico",
+        "title": "Producto Bruto Geográfico",
         "organization": "Dirección de Estadística de la Provincia",
-        "overall": 0.85,
+        "overall": 0.921,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -103,37 +175,111 @@
                 "createdAt"
               ],
               "fieldsMissing": [],
-              "descriptionLength": 160,
-              "tagCount": 6,
-              "resourceCount": 1
+              "descriptionLength": 144,
+              "tagCount": 9,
+              "resourceCount": 4
             },
-            "calculatedAt": "2026-07-21T08:18:12.189Z"
+            "calculatedAt": "2026-07-26T08:08:18.529Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.836,
+            "score": 0.81,
             "evidence": {
-              "modifiedAt": "2026-06-04T16:12:08.389351",
-              "daysSinceModified": 47,
+              "modifiedAt": "2026-06-01T16:32:46.571163",
+              "daysSinceModified": 55,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-07-21T08:18:12.189Z"
+            "calculatedAt": "2026-07-26T08:08:18.529Z"
           },
           {
             "dimension": "structure",
-            "score": 0.65,
+            "score": 0.95,
             "evidence": {
               "formats": [
-                "XLSX"
+                "XLS",
+                "CSV"
               ],
-              "bestFormat": "XLSX",
-              "bestFormatScore": 0.65,
-              "resourceCount": 1,
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 4,
               "formatDistribution": {
-                "XLSX": 1
+                "XLS": 2,
+                "CSV": 2
               }
             },
-            "calculatedAt": "2026-07-21T08:18:12.189Z"
+            "calculatedAt": "2026-07-26T08:08:18.530Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.95,
+            "evidence": {
+              "resourceCount": 4,
+              "checked": 4,
+              "accessible": 4
+            },
+            "calculatedAt": "2026-07-26T08:08:19.329Z"
+          }
+        ],
+        "lastChecked": "2026-07-26T08:08:16.883Z"
+      }
+    },
+    {
+      "datasetId": "sep-tucuman-ar:visor-de-mapas",
+      "externalId": "visor-de-mapas",
+      "modifiedAt": "2026-06-01T16:32:22.436796",
+      "lastScoredAt": "2026-07-26T08:08:16.883Z",
+      "score": {
+        "datasetId": "sep-tucuman-ar:visor-de-mapas",
+        "title": "Visor de Mapas",
+        "organization": "Dirección de Estadística de la Provincia",
+        "overall": 0.671,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 215,
+              "tagCount": 6,
+              "resourceCount": 1
+            },
+            "calculatedAt": "2026-07-26T08:08:19.329Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.81,
+            "evidence": {
+              "modifiedAt": "2026-06-01T16:32:22.436796",
+              "daysSinceModified": 55,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-26T08:08:19.329Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.1,
+            "evidence": {
+              "formats": [
+                "UNKNOWN"
+              ],
+              "bestFormat": "UNKNOWN",
+              "bestFormatScore": 0.1,
+              "resourceCount": 1,
+              "formatDistribution": {
+                "UNKNOWN": 1
+              }
+            },
+            "calculatedAt": "2026-07-26T08:08:19.329Z"
           },
           {
             "dimension": "accessibility",
@@ -143,22 +289,22 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-07-21T08:18:13.143Z"
+            "calculatedAt": "2026-07-26T08:08:19.828Z"
           }
         ],
-        "lastChecked": "2026-07-21T08:18:12.189Z"
+        "lastChecked": "2026-07-26T08:08:16.883Z"
       }
     },
     {
-      "datasetId": "sep-tucuman-ar:http-sep-tucuman-gob-ar-dataset",
-      "externalId": "http-sep-tucuman-gob-ar-dataset",
-      "modifiedAt": "2026-06-04T16:11:16.606136",
-      "lastScoredAt": "2026-07-21T08:18:12.189Z",
+      "datasetId": "sep-tucuman-ar:http-estadistica-tucuman-gov-ar-archivos-isaet-isaet-20serie-20historica-20ene-13-100-xlsx",
+      "externalId": "http-estadistica-tucuman-gov-ar-archivos-isaet-isaet-20serie-20historica-20ene-13-100-xlsx",
+      "modifiedAt": "2026-06-01T16:32:01.314824",
+      "lastScoredAt": "2026-07-26T08:08:16.883Z",
       "score": {
-        "datasetId": "sep-tucuman-ar:http-sep-tucuman-gob-ar-dataset",
-        "title": "Tasas de Actividad y Empleo",
+        "datasetId": "sep-tucuman-ar:http-estadistica-tucuman-gov-ar-archivos-isaet-isaet-20serie-20historica-20ene-13-100-xlsx",
+        "title": "Indicador Sintético de Actividad Económica de Tucumán (ISAET)",
         "organization": "Dirección de Estadística de la Provincia",
-        "overall": 0.85,
+        "overall": 0.843,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -175,37 +321,37 @@
                 "createdAt"
               ],
               "fieldsMissing": [],
-              "descriptionLength": 168,
-              "tagCount": 6,
+              "descriptionLength": 288,
+              "tagCount": 1,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-07-21T08:18:13.143Z"
+            "calculatedAt": "2026-07-26T08:08:19.828Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.836,
+            "score": 0.81,
             "evidence": {
-              "modifiedAt": "2026-06-04T16:11:16.606136",
-              "daysSinceModified": 47,
+              "modifiedAt": "2026-06-01T16:32:01.314824",
+              "daysSinceModified": 55,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-07-21T08:18:13.143Z"
+            "calculatedAt": "2026-07-26T08:08:19.828Z"
           },
           {
             "dimension": "structure",
             "score": 0.65,
             "evidence": {
               "formats": [
-                "XLSX"
+                "XLS"
               ],
-              "bestFormat": "XLSX",
+              "bestFormat": "XLS",
               "bestFormatScore": 0.65,
               "resourceCount": 1,
               "formatDistribution": {
-                "XLSX": 1
+                "XLS": 1
               }
             },
-            "calculatedAt": "2026-07-21T08:18:13.144Z"
+            "calculatedAt": "2026-07-26T08:08:19.828Z"
           },
           {
             "dimension": "accessibility",
@@ -215,22 +361,22 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-07-21T08:18:13.732Z"
+            "calculatedAt": "2026-07-26T08:08:20.434Z"
           }
         ],
-        "lastChecked": "2026-07-21T08:18:12.189Z"
+        "lastChecked": "2026-07-26T08:08:16.883Z"
       }
     },
     {
-      "datasetId": "sep-tucuman-ar:tasas-de-desocupacion",
-      "externalId": "tasas-de-desocupacion",
-      "modifiedAt": "2026-06-04T13:51:19.344085",
-      "lastScoredAt": "2026-07-21T08:18:12.189Z",
+      "datasetId": "sep-tucuman-ar:monitoreo-de-precios-de-materiales-y-equipos-de-construccion",
+      "externalId": "monitoreo-de-precios-de-materiales-y-equipos-de-construccion",
+      "modifiedAt": "2026-06-01T16:31:16.557912",
+      "lastScoredAt": "2026-07-26T08:08:16.883Z",
       "score": {
-        "datasetId": "sep-tucuman-ar:tasas-de-desocupacion",
-        "title": "Tasas de desocupación",
+        "datasetId": "sep-tucuman-ar:monitoreo-de-precios-de-materiales-y-equipos-de-construccion",
+        "title": "Monitoreo de precios de materiales y equipos de construcción",
         "organization": "Dirección de Estadística de la Provincia",
-        "overall": 0.849,
+        "overall": 0.843,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -247,93 +393,21 @@
                 "createdAt"
               ],
               "fieldsMissing": [],
-              "descriptionLength": 162,
-              "tagCount": 7,
-              "resourceCount": 3
-            },
-            "calculatedAt": "2026-07-21T08:18:13.732Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.835,
-            "evidence": {
-              "modifiedAt": "2026-06-04T13:51:19.344085",
-              "daysSinceModified": 47,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-21T08:18:13.732Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.65,
-            "evidence": {
-              "formats": [
-                "XLSX"
-              ],
-              "bestFormat": "XLSX",
-              "bestFormatScore": 0.65,
-              "resourceCount": 3,
-              "formatDistribution": {
-                "XLSX": 3
-              }
-            },
-            "calculatedAt": "2026-07-21T08:18:13.732Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 3,
-              "checked": 3,
-              "accessible": 3
-            },
-            "calculatedAt": "2026-07-21T08:18:14.489Z"
-          }
-        ],
-        "lastChecked": "2026-07-21T08:18:12.189Z"
-      }
-    },
-    {
-      "datasetId": "sep-tucuman-ar:linea-de-pobreza-e-indigencia",
-      "externalId": "linea-de-pobreza-e-indigencia",
-      "modifiedAt": "2026-06-04T13:18:23.591380",
-      "lastScoredAt": "2026-07-21T08:18:12.189Z",
-      "score": {
-        "datasetId": "sep-tucuman-ar:linea-de-pobreza-e-indigencia",
-        "title": "Línea de Pobreza e Indigencia",
-        "organization": "Dirección de Estadística de la Provincia",
-        "overall": 0.849,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 386,
-              "tagCount": 8,
+              "descriptionLength": 345,
+              "tagCount": 15,
               "resourceCount": 2
             },
-            "calculatedAt": "2026-07-21T08:18:14.489Z"
+            "calculatedAt": "2026-07-26T08:08:20.434Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.835,
+            "score": 0.81,
             "evidence": {
-              "modifiedAt": "2026-06-04T13:18:23.591380",
-              "daysSinceModified": 47,
+              "modifiedAt": "2026-06-01T16:31:16.557912",
+              "daysSinceModified": 55,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-07-21T08:18:14.489Z"
+            "calculatedAt": "2026-07-26T08:08:20.434Z"
           },
           {
             "dimension": "structure",
@@ -349,7 +423,7 @@
                 "XLS": 2
               }
             },
-            "calculatedAt": "2026-07-21T08:18:14.489Z"
+            "calculatedAt": "2026-07-26T08:08:20.434Z"
           },
           {
             "dimension": "accessibility",
@@ -359,22 +433,22 @@
               "checked": 2,
               "accessible": 2
             },
-            "calculatedAt": "2026-07-21T08:18:15.249Z"
+            "calculatedAt": "2026-07-26T08:08:21.063Z"
           }
         ],
-        "lastChecked": "2026-07-21T08:18:12.189Z"
+        "lastChecked": "2026-07-26T08:08:16.883Z"
       }
     },
     {
-      "datasetId": "sep-tucuman-ar:coeficiente-de-gini",
-      "externalId": "coeficiente-de-gini",
-      "modifiedAt": "2026-06-04T13:01:25.861164",
-      "lastScoredAt": "2026-07-21T08:18:12.189Z",
+      "datasetId": "sep-tucuman-ar:http-estadistica-tucuman-gov-ar-index-php-2015-01-27-12-06-02-2015-01-27-12-56-14",
+      "externalId": "http-estadistica-tucuman-gov-ar-index-php-2015-01-27-12-06-02-2015-01-27-12-56-14",
+      "modifiedAt": "2026-06-01T16:30:19.731790",
+      "lastScoredAt": "2026-07-26T08:08:16.883Z",
       "score": {
-        "datasetId": "sep-tucuman-ar:coeficiente-de-gini",
-        "title": "Coeficiente de Gini",
+        "datasetId": "sep-tucuman-ar:http-estadistica-tucuman-gov-ar-index-php-2015-01-27-12-06-02-2015-01-27-12-56-14",
+        "title": "Empleo Registrado",
         "organization": "Dirección de Estadística de la Provincia",
-        "overall": 0.849,
+        "overall": 0.921,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -391,205 +465,63 @@
                 "createdAt"
               ],
               "fieldsMissing": [],
-              "descriptionLength": 309,
-              "tagCount": 9,
-              "resourceCount": 1
-            },
-            "calculatedAt": "2026-07-21T08:18:15.249Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.835,
-            "evidence": {
-              "modifiedAt": "2026-06-04T13:01:25.861164",
-              "daysSinceModified": 47,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-21T08:18:15.249Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.65,
-            "evidence": {
-              "formats": [
-                "XLSX"
-              ],
-              "bestFormat": "XLSX",
-              "bestFormatScore": 0.65,
-              "resourceCount": 1,
-              "formatDistribution": {
-                "XLSX": 1
-              }
-            },
-            "calculatedAt": "2026-07-21T08:18:15.249Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 1,
-              "checked": 1,
-              "accessible": 1
-            },
-            "calculatedAt": "2026-07-21T08:18:15.846Z"
-          }
-        ],
-        "lastChecked": "2026-07-21T08:18:12.189Z"
-      }
-    },
-    {
-      "datasetId": "sep-tucuman-ar:brecha-de-ingresos",
-      "externalId": "brecha-de-ingresos",
-      "modifiedAt": "2026-06-04T12:59:39.668123",
-      "lastScoredAt": "2026-07-21T08:18:12.189Z",
-      "score": {
-        "datasetId": "sep-tucuman-ar:brecha-de-ingresos",
-        "title": "Brecha de Ingresos",
-        "organization": "Dirección de Estadística de la Provincia",
-        "overall": 0.849,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 355,
-              "tagCount": 12,
-              "resourceCount": 1
-            },
-            "calculatedAt": "2026-07-21T08:18:15.846Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.835,
-            "evidence": {
-              "modifiedAt": "2026-06-04T12:59:39.668123",
-              "daysSinceModified": 47,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-21T08:18:15.846Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.65,
-            "evidence": {
-              "formats": [
-                "XLSX"
-              ],
-              "bestFormat": "XLSX",
-              "bestFormatScore": 0.65,
-              "resourceCount": 1,
-              "formatDistribution": {
-                "XLSX": 1
-              }
-            },
-            "calculatedAt": "2026-07-21T08:18:15.846Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 1,
-              "checked": 1,
-              "accessible": 1
-            },
-            "calculatedAt": "2026-07-21T08:18:16.606Z"
-          }
-        ],
-        "lastChecked": "2026-07-21T08:18:12.189Z"
-      }
-    },
-    {
-      "datasetId": "sep-tucuman-ar:canasta-basica-alimentaria-y-canasta-basica-total",
-      "externalId": "canasta-basica-alimentaria-y-canasta-basica-total",
-      "modifiedAt": "2026-06-04T12:47:28.113825",
-      "lastScoredAt": "2026-07-21T08:18:12.189Z",
-      "score": {
-        "datasetId": "sep-tucuman-ar:canasta-basica-alimentaria-y-canasta-basica-total",
-        "title": "Canasta Básica Alimentaria y Canasta Básica Total",
-        "organization": "Dirección de Estadística de la Provincia",
-        "overall": 0.849,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 147,
+              "descriptionLength": 51,
               "tagCount": 10,
-              "resourceCount": 1
+              "resourceCount": 2
             },
-            "calculatedAt": "2026-07-21T08:18:16.606Z"
+            "calculatedAt": "2026-07-26T08:08:21.063Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.835,
+            "score": 0.81,
             "evidence": {
-              "modifiedAt": "2026-06-04T12:47:28.113825",
-              "daysSinceModified": 47,
+              "modifiedAt": "2026-06-01T16:30:19.731790",
+              "daysSinceModified": 55,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-07-21T08:18:16.606Z"
+            "calculatedAt": "2026-07-26T08:08:21.063Z"
           },
           {
             "dimension": "structure",
-            "score": 0.65,
+            "score": 0.95,
             "evidence": {
               "formats": [
-                "XLSX"
+                "XLS",
+                "CSV"
               ],
-              "bestFormat": "XLSX",
-              "bestFormatScore": 0.65,
-              "resourceCount": 1,
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 2,
               "formatDistribution": {
-                "XLSX": 1
+                "XLS": 1,
+                "CSV": 1
               }
             },
-            "calculatedAt": "2026-07-21T08:18:16.606Z"
+            "calculatedAt": "2026-07-26T08:08:21.063Z"
           },
           {
             "dimension": "accessibility",
-            "score": 1,
+            "score": 0.95,
             "evidence": {
-              "resourceCount": 1,
-              "checked": 1,
-              "accessible": 1
+              "resourceCount": 2,
+              "checked": 2,
+              "accessible": 2
             },
-            "calculatedAt": "2026-07-21T08:18:17.199Z"
+            "calculatedAt": "2026-07-26T08:08:21.540Z"
           }
         ],
-        "lastChecked": "2026-07-21T08:18:12.189Z"
+        "lastChecked": "2026-07-26T08:08:16.883Z"
       }
     },
     {
-      "datasetId": "sep-tucuman-ar:cantidad-de-tramites-realizados-en-la-dgc-en-el-ano-2026",
-      "externalId": "cantidad-de-tramites-realizados-en-la-dgc-en-el-ano-2026",
-      "modifiedAt": "2026-05-27T15:12:15.297833",
-      "lastScoredAt": "2026-07-21T08:18:12.189Z",
+      "datasetId": "sep-tucuman-ar:patentameintos-en-tucuman",
+      "externalId": "patentameintos-en-tucuman",
+      "modifiedAt": "2026-06-01T16:29:54.717948",
+      "lastScoredAt": "2026-07-26T08:08:16.883Z",
       "score": {
-        "datasetId": "sep-tucuman-ar:cantidad-de-tramites-realizados-en-la-dgc-en-el-ano-2026",
-        "title": "Cantidad de trámites realizados en la DGC en el año 2026",
-        "organization": "Dirección General de Catastro",
+        "datasetId": "sep-tucuman-ar:patentameintos-en-tucuman",
+        "title": "Patentamientos en Tucumán",
+        "organization": "Dirección de Estadística de la Provincia",
         "overall": 0.812,
         "dimensions": [
           {
@@ -607,21 +539,1207 @@
                 "createdAt"
               ],
               "fieldsMissing": [],
-              "descriptionLength": 189,
-              "tagCount": 1,
+              "descriptionLength": 314,
+              "tagCount": 3,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-07-21T08:18:17.200Z"
+            "calculatedAt": "2026-07-26T08:08:21.540Z"
           },
           {
             "dimension": "freshness",
             "score": 0.81,
             "evidence": {
-              "modifiedAt": "2026-05-27T15:12:15.297833",
+              "modifiedAt": "2026-06-01T16:29:54.717948",
               "daysSinceModified": 55,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-07-21T08:18:17.200Z"
+            "calculatedAt": "2026-07-26T08:08:21.540Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.65,
+            "evidence": {
+              "formats": [
+                "XLS"
+              ],
+              "bestFormat": "XLS",
+              "bestFormatScore": 0.65,
+              "resourceCount": 1,
+              "formatDistribution": {
+                "XLS": 1
+              }
+            },
+            "calculatedAt": "2026-07-26T08:08:21.540Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.9,
+            "evidence": {
+              "resourceCount": 1,
+              "checked": 1,
+              "accessible": 1
+            },
+            "calculatedAt": "2026-07-26T08:08:21.987Z"
+          }
+        ],
+        "lastChecked": "2026-07-26T08:08:16.883Z"
+      }
+    },
+    {
+      "datasetId": "sep-tucuman-ar:http-estadistica-tucuman-gov-ar-index-php-2015-01-27-12-06-02-comercio-exterior",
+      "externalId": "http-estadistica-tucuman-gov-ar-index-php-2015-01-27-12-06-02-comercio-exterior",
+      "modifiedAt": "2026-06-01T16:29:34.722602",
+      "lastScoredAt": "2026-07-26T08:08:16.883Z",
+      "score": {
+        "datasetId": "sep-tucuman-ar:http-estadistica-tucuman-gov-ar-index-php-2015-01-27-12-06-02-comercio-exterior",
+        "title": "Exportaciones de Tucumán",
+        "organization": "Dirección de Estadística de la Provincia",
+        "overall": 0.843,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 166,
+              "tagCount": 6,
+              "resourceCount": 2
+            },
+            "calculatedAt": "2026-07-26T08:08:21.987Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.81,
+            "evidence": {
+              "modifiedAt": "2026-06-01T16:29:34.722602",
+              "daysSinceModified": 55,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-26T08:08:21.987Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.65,
+            "evidence": {
+              "formats": [
+                "XLS"
+              ],
+              "bestFormat": "XLS",
+              "bestFormatScore": 0.65,
+              "resourceCount": 2,
+              "formatDistribution": {
+                "XLS": 2
+              }
+            },
+            "calculatedAt": "2026-07-26T08:08:21.987Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 2,
+              "checked": 2,
+              "accessible": 2
+            },
+            "calculatedAt": "2026-07-26T08:08:22.473Z"
+          }
+        ],
+        "lastChecked": "2026-07-26T08:08:16.883Z"
+      }
+    },
+    {
+      "datasetId": "sep-tucuman-ar:tasas-de-entrada-salida-y-rotacion",
+      "externalId": "tasas-de-entrada-salida-y-rotacion",
+      "modifiedAt": "2026-06-01T16:29:11.646939",
+      "lastScoredAt": "2026-07-26T08:08:16.883Z",
+      "score": {
+        "datasetId": "sep-tucuman-ar:tasas-de-entrada-salida-y-rotacion",
+        "title": "Tasas de entrada, salida y rotación de empleados",
+        "organization": "Dirección de Estadística de la Provincia",
+        "overall": 0.906,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 211,
+              "tagCount": 8,
+              "resourceCount": 2
+            },
+            "calculatedAt": "2026-07-26T08:08:22.473Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.81,
+            "evidence": {
+              "modifiedAt": "2026-06-01T16:29:11.646939",
+              "daysSinceModified": 55,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-26T08:08:22.473Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "XLS",
+                "CSV"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 2,
+              "formatDistribution": {
+                "XLS": 1,
+                "CSV": 1
+              }
+            },
+            "calculatedAt": "2026-07-26T08:08:22.473Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.9,
+            "evidence": {
+              "resourceCount": 2,
+              "checked": 2,
+              "accessible": 2
+            },
+            "calculatedAt": "2026-07-26T08:08:22.928Z"
+          }
+        ],
+        "lastChecked": "2026-07-26T08:08:16.883Z"
+      }
+    },
+    {
+      "datasetId": "sep-tucuman-ar:estadisticas-vitales",
+      "externalId": "estadisticas-vitales",
+      "modifiedAt": "2026-06-01T16:28:50.804647",
+      "lastScoredAt": "2026-07-26T08:08:16.883Z",
+      "score": {
+        "datasetId": "sep-tucuman-ar:estadisticas-vitales",
+        "title": "Estadísticas Vitales",
+        "organization": "Dirección de Estadística de la Provincia",
+        "overall": 0.921,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 216,
+              "tagCount": 12,
+              "resourceCount": 2
+            },
+            "calculatedAt": "2026-07-26T08:08:22.928Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.81,
+            "evidence": {
+              "modifiedAt": "2026-06-01T16:28:50.804647",
+              "daysSinceModified": 55,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-26T08:08:22.928Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "XLS",
+                "CSV"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 2,
+              "formatDistribution": {
+                "XLS": 1,
+                "CSV": 1
+              }
+            },
+            "calculatedAt": "2026-07-26T08:08:22.928Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.95,
+            "evidence": {
+              "resourceCount": 2,
+              "checked": 2,
+              "accessible": 2
+            },
+            "calculatedAt": "2026-07-26T08:08:23.428Z"
+          }
+        ],
+        "lastChecked": "2026-07-26T08:08:16.883Z"
+      }
+    },
+    {
+      "datasetId": "sep-tucuman-ar:deficit-habitacional-cuantitativo-compuesto",
+      "externalId": "deficit-habitacional-cuantitativo-compuesto",
+      "modifiedAt": "2026-06-01T16:28:20.387762",
+      "lastScoredAt": "2026-07-26T08:08:16.883Z",
+      "score": {
+        "datasetId": "sep-tucuman-ar:deficit-habitacional-cuantitativo-compuesto",
+        "title": "Déficit habitacional cuantitativo compuesto",
+        "organization": "Dirección de Estadística de la Provincia",
+        "overall": 0.812,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 167,
+              "tagCount": 10,
+              "resourceCount": 6
+            },
+            "calculatedAt": "2026-07-26T08:08:23.428Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.81,
+            "evidence": {
+              "modifiedAt": "2026-06-01T16:28:20.387762",
+              "daysSinceModified": 55,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-26T08:08:23.428Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.65,
+            "evidence": {
+              "formats": [
+                "XLS",
+                "PDF",
+                "PNG"
+              ],
+              "bestFormat": "XLS",
+              "bestFormatScore": 0.65,
+              "resourceCount": 6,
+              "formatDistribution": {
+                "XLS": 2,
+                "PDF": 1,
+                "PNG": 3
+              }
+            },
+            "calculatedAt": "2026-07-26T08:08:23.428Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.9,
+            "evidence": {
+              "resourceCount": 6,
+              "checked": 6,
+              "accessible": 6
+            },
+            "calculatedAt": "2026-07-26T08:08:23.883Z"
+          }
+        ],
+        "lastChecked": "2026-07-26T08:08:16.883Z"
+      }
+    },
+    {
+      "datasetId": "sep-tucuman-ar:encuesta-de-ocupacion-hotelera",
+      "externalId": "encuesta-de-ocupacion-hotelera",
+      "modifiedAt": "2026-06-01T16:27:32.772273",
+      "lastScoredAt": "2026-07-26T08:08:16.883Z",
+      "score": {
+        "datasetId": "sep-tucuman-ar:encuesta-de-ocupacion-hotelera",
+        "title": "Encuesta de Ocupación Hotelera",
+        "organization": "Dirección de Estadística de la Provincia",
+        "overall": 0.916,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 284,
+              "tagCount": 11,
+              "resourceCount": 3
+            },
+            "calculatedAt": "2026-07-26T08:08:23.883Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.81,
+            "evidence": {
+              "modifiedAt": "2026-06-01T16:27:32.772273",
+              "daysSinceModified": 55,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-26T08:08:23.883Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "XLS",
+                "CSV"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 3,
+              "formatDistribution": {
+                "XLS": 1,
+                "CSV": 2
+              }
+            },
+            "calculatedAt": "2026-07-26T08:08:23.883Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.933,
+            "evidence": {
+              "resourceCount": 3,
+              "checked": 3,
+              "accessible": 3
+            },
+            "calculatedAt": "2026-07-26T08:08:24.369Z"
+          }
+        ],
+        "lastChecked": "2026-07-26T08:08:16.883Z"
+      }
+    },
+    {
+      "datasetId": "sep-tucuman-ar:precios-promedios-de-los-materiales-y-equipos-de-la-construccion-publica",
+      "externalId": "precios-promedios-de-los-materiales-y-equipos-de-la-construccion-publica",
+      "modifiedAt": "2026-06-01T16:27:09.771142",
+      "lastScoredAt": "2026-07-26T08:08:16.883Z",
+      "score": {
+        "datasetId": "sep-tucuman-ar:precios-promedios-de-los-materiales-y-equipos-de-la-construccion-publica",
+        "title": "Precios promedios de los materiales y equipos de la construcción pública",
+        "organization": "Dirección de Estadística de la Provincia",
+        "overall": 0.906,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 160,
+              "tagCount": 4,
+              "resourceCount": 2
+            },
+            "calculatedAt": "2026-07-26T08:08:24.369Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.81,
+            "evidence": {
+              "modifiedAt": "2026-06-01T16:27:09.771142",
+              "daysSinceModified": 55,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-26T08:08:24.369Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV",
+                "XLS"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 2,
+              "formatDistribution": {
+                "CSV": 1,
+                "XLS": 1
+              }
+            },
+            "calculatedAt": "2026-07-26T08:08:24.369Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.9,
+            "evidence": {
+              "resourceCount": 2,
+              "checked": 2,
+              "accessible": 2
+            },
+            "calculatedAt": "2026-07-26T08:08:24.820Z"
+          }
+        ],
+        "lastChecked": "2026-07-26T08:08:16.883Z"
+      }
+    },
+    {
+      "datasetId": "sep-tucuman-ar:indice-de-precios-al-consumidor",
+      "externalId": "indice-de-precios-al-consumidor",
+      "modifiedAt": "2026-06-01T16:26:21.319210",
+      "lastScoredAt": "2026-07-26T08:08:16.883Z",
+      "score": {
+        "datasetId": "sep-tucuman-ar:indice-de-precios-al-consumidor",
+        "title": "Índice de Precios al Consumidor",
+        "organization": "Dirección de Estadística de la Provincia",
+        "overall": 0.906,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 163,
+              "tagCount": 7,
+              "resourceCount": 2
+            },
+            "calculatedAt": "2026-07-26T08:08:24.820Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.81,
+            "evidence": {
+              "modifiedAt": "2026-06-01T16:26:21.319210",
+              "daysSinceModified": 55,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-26T08:08:24.820Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "XLS",
+                "CSV"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 2,
+              "formatDistribution": {
+                "XLS": 1,
+                "CSV": 1
+              }
+            },
+            "calculatedAt": "2026-07-26T08:08:24.820Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.9,
+            "evidence": {
+              "resourceCount": 2,
+              "checked": 2,
+              "accessible": 2
+            },
+            "calculatedAt": "2026-07-26T08:08:25.144Z"
+          }
+        ],
+        "lastChecked": "2026-07-26T08:08:16.883Z"
+      }
+    },
+    {
+      "datasetId": "sep-tucuman-ar:proyeccion-de-poblacion-por-sexo-y-grupos-de-edad-tucuman-2005-al-2015",
+      "externalId": "proyeccion-de-poblacion-por-sexo-y-grupos-de-edad-tucuman-2005-al-2015",
+      "modifiedAt": "2026-06-01T16:25:57.497641",
+      "lastScoredAt": "2026-07-26T08:08:16.883Z",
+      "score": {
+        "datasetId": "sep-tucuman-ar:proyeccion-de-poblacion-por-sexo-y-grupos-de-edad-tucuman-2005-al-2015",
+        "title": "Proyecciones poblacionales",
+        "organization": "Dirección de Estadística de la Provincia",
+        "overall": 0.812,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 205,
+              "tagCount": 9,
+              "resourceCount": 5
+            },
+            "calculatedAt": "2026-07-26T08:08:25.144Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.81,
+            "evidence": {
+              "modifiedAt": "2026-06-01T16:25:57.497641",
+              "daysSinceModified": 55,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-26T08:08:25.144Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.65,
+            "evidence": {
+              "formats": [
+                "XLS",
+                "PDF"
+              ],
+              "bestFormat": "XLS",
+              "bestFormatScore": 0.65,
+              "resourceCount": 5,
+              "formatDistribution": {
+                "XLS": 4,
+                "PDF": 1
+              }
+            },
+            "calculatedAt": "2026-07-26T08:08:25.144Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.9,
+            "evidence": {
+              "resourceCount": 5,
+              "checked": 5,
+              "accessible": 5
+            },
+            "calculatedAt": "2026-07-26T08:08:25.481Z"
+          }
+        ],
+        "lastChecked": "2026-07-26T08:08:16.883Z"
+      }
+    },
+    {
+      "datasetId": "sep-tucuman-ar:evolucion-del-empleo",
+      "externalId": "evolucion-del-empleo",
+      "modifiedAt": "2026-06-01T16:25:31.906091",
+      "lastScoredAt": "2026-07-26T08:08:16.883Z",
+      "score": {
+        "datasetId": "sep-tucuman-ar:evolucion-del-empleo",
+        "title": "Evolución del empleo",
+        "organization": "Dirección de Estadística de la Provincia",
+        "overall": 0.906,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 199,
+              "tagCount": 8,
+              "resourceCount": 2
+            },
+            "calculatedAt": "2026-07-26T08:08:25.481Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.81,
+            "evidence": {
+              "modifiedAt": "2026-06-01T16:25:31.906091",
+              "daysSinceModified": 55,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-26T08:08:25.481Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "XLS",
+                "CSV"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 2,
+              "formatDistribution": {
+                "XLS": 1,
+                "CSV": 1
+              }
+            },
+            "calculatedAt": "2026-07-26T08:08:25.481Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.9,
+            "evidence": {
+              "resourceCount": 2,
+              "checked": 2,
+              "accessible": 2
+            },
+            "calculatedAt": "2026-07-26T08:08:25.930Z"
+          }
+        ],
+        "lastChecked": "2026-07-26T08:08:16.883Z"
+      }
+    },
+    {
+      "datasetId": "sep-tucuman-ar:estadisticas-de-energia",
+      "externalId": "estadisticas-de-energia",
+      "modifiedAt": "2026-06-01T16:23:57.001271",
+      "lastScoredAt": "2026-07-26T08:08:16.883Z",
+      "score": {
+        "datasetId": "sep-tucuman-ar:estadisticas-de-energia",
+        "title": "Estadísticas de energía",
+        "organization": "Dirección de Estadística de la Provincia",
+        "overall": 0.812,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 102,
+              "tagCount": 9,
+              "resourceCount": 1
+            },
+            "calculatedAt": "2026-07-26T08:08:25.930Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.81,
+            "evidence": {
+              "modifiedAt": "2026-06-01T16:23:57.001271",
+              "daysSinceModified": 55,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-26T08:08:25.930Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.65,
+            "evidence": {
+              "formats": [
+                "XLS"
+              ],
+              "bestFormat": "XLS",
+              "bestFormatScore": 0.65,
+              "resourceCount": 1,
+              "formatDistribution": {
+                "XLS": 1
+              }
+            },
+            "calculatedAt": "2026-07-26T08:08:25.930Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.9,
+            "evidence": {
+              "resourceCount": 1,
+              "checked": 1,
+              "accessible": 1
+            },
+            "calculatedAt": "2026-07-26T08:08:26.266Z"
+          }
+        ],
+        "lastChecked": "2026-07-26T08:08:16.883Z"
+      }
+    },
+    {
+      "datasetId": "sep-tucuman-ar:discapacidad",
+      "externalId": "discapacidad",
+      "modifiedAt": "2026-06-01T16:23:32.152656",
+      "lastScoredAt": "2026-07-26T08:08:16.883Z",
+      "score": {
+        "datasetId": "sep-tucuman-ar:discapacidad",
+        "title": "Discapacidad",
+        "organization": "Dirección de Estadística de la Provincia",
+        "overall": 0.812,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 216,
+              "tagCount": 6,
+              "resourceCount": 22
+            },
+            "calculatedAt": "2026-07-26T08:08:26.266Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.81,
+            "evidence": {
+              "modifiedAt": "2026-06-01T16:23:32.152656",
+              "daysSinceModified": 55,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-26T08:08:26.266Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.65,
+            "evidence": {
+              "formats": [
+                "PDF",
+                "XLS",
+                "PNG"
+              ],
+              "bestFormat": "XLS",
+              "bestFormatScore": 0.65,
+              "resourceCount": 22,
+              "formatDistribution": {
+                "PDF": 1,
+                "XLS": 1,
+                "PNG": 20
+              }
+            },
+            "calculatedAt": "2026-07-26T08:08:26.266Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.9,
+            "evidence": {
+              "resourceCount": 22,
+              "checked": 22,
+              "accessible": 22
+            },
+            "calculatedAt": "2026-07-26T08:08:26.916Z"
+          }
+        ],
+        "lastChecked": "2026-07-26T08:08:16.883Z"
+      }
+    },
+    {
+      "datasetId": "sep-tucuman-ar:poblacion",
+      "externalId": "poblacion",
+      "modifiedAt": "2026-06-01T16:23:10.218096",
+      "lastScoredAt": "2026-07-26T08:08:16.883Z",
+      "score": {
+        "datasetId": "sep-tucuman-ar:poblacion",
+        "title": "Población",
+        "organization": "Dirección de Estadística de la Provincia",
+        "overall": 0.812,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 35,
+              "tagCount": 7,
+              "resourceCount": 4
+            },
+            "calculatedAt": "2026-07-26T08:08:26.916Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.81,
+            "evidence": {
+              "modifiedAt": "2026-06-01T16:23:10.218096",
+              "daysSinceModified": 55,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-26T08:08:26.916Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.65,
+            "evidence": {
+              "formats": [
+                "XLS",
+                "PDF",
+                "PNG"
+              ],
+              "bestFormat": "XLS",
+              "bestFormatScore": 0.65,
+              "resourceCount": 4,
+              "formatDistribution": {
+                "XLS": 1,
+                "PDF": 1,
+                "PNG": 2
+              }
+            },
+            "calculatedAt": "2026-07-26T08:08:26.916Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.9,
+            "evidence": {
+              "resourceCount": 4,
+              "checked": 4,
+              "accessible": 4
+            },
+            "calculatedAt": "2026-07-26T08:08:27.243Z"
+          }
+        ],
+        "lastChecked": "2026-07-26T08:08:16.883Z"
+      }
+    },
+    {
+      "datasetId": "sep-tucuman-ar:necesidades-basicas-insatisfechas",
+      "externalId": "necesidades-basicas-insatisfechas",
+      "modifiedAt": "2026-06-01T16:22:45.336400",
+      "lastScoredAt": "2026-07-26T08:08:16.883Z",
+      "score": {
+        "datasetId": "sep-tucuman-ar:necesidades-basicas-insatisfechas",
+        "title": "Necesidades Básicas Insatisfechas",
+        "organization": "Dirección de Estadística de la Provincia",
+        "overall": 0.812,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 397,
+              "tagCount": 10,
+              "resourceCount": 23
+            },
+            "calculatedAt": "2026-07-26T08:08:27.243Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.81,
+            "evidence": {
+              "modifiedAt": "2026-06-01T16:22:45.336400",
+              "daysSinceModified": 55,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-26T08:08:27.243Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.65,
+            "evidence": {
+              "formats": [
+                "XLS",
+                "PDF",
+                "PNG"
+              ],
+              "bestFormat": "XLS",
+              "bestFormatScore": 0.65,
+              "resourceCount": 23,
+              "formatDistribution": {
+                "XLS": 1,
+                "PDF": 1,
+                "PNG": 21
+              }
+            },
+            "calculatedAt": "2026-07-26T08:08:27.243Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.9,
+            "evidence": {
+              "resourceCount": 23,
+              "checked": 23,
+              "accessible": 23
+            },
+            "calculatedAt": "2026-07-26T08:08:28.065Z"
+          }
+        ],
+        "lastChecked": "2026-07-26T08:08:16.883Z"
+      }
+    },
+    {
+      "datasetId": "sep-tucuman-ar:indiceprivacionmaterialhogaresipmh",
+      "externalId": "indiceprivacionmaterialhogaresipmh",
+      "modifiedAt": "2026-06-01T16:22:22.514322",
+      "lastScoredAt": "2026-07-26T08:08:16.883Z",
+      "score": {
+        "datasetId": "sep-tucuman-ar:indiceprivacionmaterialhogaresipmh",
+        "title": "Índice de Privación Material de los Hogares (IPMH)",
+        "organization": "Dirección de Estadística de la Provincia",
+        "overall": 0.812,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 356,
+              "tagCount": 8,
+              "resourceCount": 38
+            },
+            "calculatedAt": "2026-07-26T08:08:28.065Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.81,
+            "evidence": {
+              "modifiedAt": "2026-06-01T16:22:22.514322",
+              "daysSinceModified": 55,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-26T08:08:28.065Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.65,
+            "evidence": {
+              "formats": [
+                "XLS",
+                "PDF",
+                "PNG"
+              ],
+              "bestFormat": "XLS",
+              "bestFormatScore": 0.65,
+              "resourceCount": 38,
+              "formatDistribution": {
+                "XLS": 1,
+                "PDF": 1,
+                "PNG": 36
+              }
+            },
+            "calculatedAt": "2026-07-26T08:08:28.065Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.9,
+            "evidence": {
+              "resourceCount": 38,
+              "checked": 38,
+              "accessible": 38
+            },
+            "calculatedAt": "2026-07-26T08:08:29.196Z"
+          }
+        ],
+        "lastChecked": "2026-07-26T08:08:16.883Z"
+      }
+    },
+    {
+      "datasetId": "sep-tucuman-ar:registro-unico-de-casos-de-violencia-contra-las-mujeres-rucvm",
+      "externalId": "registro-unico-de-casos-de-violencia-contra-las-mujeres-rucvm",
+      "modifiedAt": "2026-06-01T16:21:58.480796",
+      "lastScoredAt": "2026-07-26T08:08:16.883Z",
+      "score": {
+        "datasetId": "sep-tucuman-ar:registro-unico-de-casos-de-violencia-contra-las-mujeres-rucvm",
+        "title": "Registro Único de Casos de Violencia contra las Mujeres (RUCVM)",
+        "organization": "Dirección de Estadística de la Provincia",
+        "overall": 0.812,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 410,
+              "tagCount": 4,
+              "resourceCount": 1
+            },
+            "calculatedAt": "2026-07-26T08:08:29.196Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.81,
+            "evidence": {
+              "modifiedAt": "2026-06-01T16:21:58.480796",
+              "daysSinceModified": 55,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-26T08:08:29.196Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.65,
+            "evidence": {
+              "formats": [
+                "XLS"
+              ],
+              "bestFormat": "XLS",
+              "bestFormatScore": 0.65,
+              "resourceCount": 1,
+              "formatDistribution": {
+                "XLS": 1
+              }
+            },
+            "calculatedAt": "2026-07-26T08:08:29.196Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.9,
+            "evidence": {
+              "resourceCount": 1,
+              "checked": 1,
+              "accessible": 1
+            },
+            "calculatedAt": "2026-07-26T08:08:29.524Z"
+          }
+        ],
+        "lastChecked": "2026-07-26T08:08:16.883Z"
+      }
+    },
+    {
+      "datasetId": "sep-tucuman-ar:principales-tasas-del-mercado-laboral",
+      "externalId": "principales-tasas-del-mercado-laboral",
+      "modifiedAt": "2026-06-01T16:11:16.835038",
+      "lastScoredAt": "2026-07-26T08:08:16.883Z",
+      "score": {
+        "datasetId": "sep-tucuman-ar:principales-tasas-del-mercado-laboral",
+        "title": "Principales tasas del mercado laboral",
+        "organization": "Dirección de Estadística de la Provincia",
+        "overall": 0.843,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 166,
+              "tagCount": 8,
+              "resourceCount": 1
+            },
+            "calculatedAt": "2026-07-26T08:08:29.524Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.81,
+            "evidence": {
+              "modifiedAt": "2026-06-01T16:11:16.835038",
+              "daysSinceModified": 55,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-26T08:08:29.524Z"
           },
           {
             "dimension": "structure",
@@ -637,20 +1755,92 @@
                 "XLSX": 1
               }
             },
-            "calculatedAt": "2026-07-21T08:18:17.200Z"
+            "calculatedAt": "2026-07-26T08:08:29.524Z"
           },
           {
             "dimension": "accessibility",
-            "score": 0.9,
+            "score": 1,
             "evidence": {
               "resourceCount": 1,
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-07-21T08:18:17.588Z"
+            "calculatedAt": "2026-07-26T08:08:30.006Z"
           }
         ],
-        "lastChecked": "2026-07-21T08:18:12.189Z"
+        "lastChecked": "2026-07-26T08:08:16.883Z"
+      }
+    },
+    {
+      "datasetId": "sep-tucuman-ar:indicadores-de-condiciones-de-vida-de-los-hogares",
+      "externalId": "indicadores-de-condiciones-de-vida-de-los-hogares",
+      "modifiedAt": "2026-06-01T15:15:49.675898",
+      "lastScoredAt": "2026-07-26T08:08:16.883Z",
+      "score": {
+        "datasetId": "sep-tucuman-ar:indicadores-de-condiciones-de-vida-de-los-hogares",
+        "title": "Indicadores de condiciones de vida de los hogares",
+        "organization": "Dirección de Estadística de la Provincia",
+        "overall": 0.843,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 496,
+              "tagCount": 3,
+              "resourceCount": 2
+            },
+            "calculatedAt": "2026-07-26T08:08:30.006Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.81,
+            "evidence": {
+              "modifiedAt": "2026-06-01T15:15:49.675898",
+              "daysSinceModified": 55,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-26T08:08:30.006Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.65,
+            "evidence": {
+              "formats": [
+                "XLSX"
+              ],
+              "bestFormat": "XLSX",
+              "bestFormatScore": 0.65,
+              "resourceCount": 2,
+              "formatDistribution": {
+                "XLSX": 2
+              }
+            },
+            "calculatedAt": "2026-07-26T08:08:30.006Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 2,
+              "checked": 2,
+              "accessible": 2
+            },
+            "calculatedAt": "2026-07-26T08:08:30.499Z"
+          }
+        ],
+        "lastChecked": "2026-07-26T08:08:16.883Z"
       }
     },
     {
@@ -15115,893 +16305,15 @@
       }
     },
     {
-      "datasetId": "sep-tucuman-ar:obras",
-      "externalId": "obras",
-      "modifiedAt": "2026-07-17T12:59:45.659697",
-      "lastScoredAt": "2026-07-26T08:08:16.883Z",
+      "datasetId": "sep-tucuman-ar:http-sep-tucuman-gob-ar-dataset-informalidad",
+      "externalId": "http-sep-tucuman-gob-ar-dataset-informalidad",
+      "modifiedAt": "2026-06-04T16:12:08.389351",
+      "lastScoredAt": "2026-07-28T08:33:50.361Z",
       "score": {
-        "datasetId": "sep-tucuman-ar:obras",
-        "title": "Obras",
-        "organization": "Dirección de Arquitectura y Urbanismo",
-        "overall": 0.851,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 262,
-              "tagCount": 4,
-              "resourceCount": 27
-            },
-            "calculatedAt": "2026-07-26T08:08:16.883Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.967,
-            "evidence": {
-              "modifiedAt": "2026-07-17T12:59:45.659697",
-              "daysSinceModified": 9,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-26T08:08:16.883Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.65,
-            "evidence": {
-              "formats": [
-                "XLSX"
-              ],
-              "bestFormat": "XLSX",
-              "bestFormatScore": 0.65,
-              "resourceCount": 27,
-              "formatDistribution": {
-                "XLSX": 27
-              }
-            },
-            "calculatedAt": "2026-07-26T08:08:16.883Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0.9,
-            "evidence": {
-              "resourceCount": 27,
-              "checked": 27,
-              "accessible": 27
-            },
-            "calculatedAt": "2026-07-26T08:08:18.529Z"
-          }
-        ],
-        "lastChecked": "2026-07-26T08:08:16.883Z"
-      }
-    },
-    {
-      "datasetId": "sep-tucuman-ar:producto-bruto-geografico",
-      "externalId": "producto-bruto-geografico",
-      "modifiedAt": "2026-06-01T16:32:46.571163",
-      "lastScoredAt": "2026-07-26T08:08:16.883Z",
-      "score": {
-        "datasetId": "sep-tucuman-ar:producto-bruto-geografico",
-        "title": "Producto Bruto Geográfico",
+        "datasetId": "sep-tucuman-ar:http-sep-tucuman-gob-ar-dataset-informalidad",
+        "title": "Tasa de informalidad",
         "organization": "Dirección de Estadística de la Provincia",
-        "overall": 0.921,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 144,
-              "tagCount": 9,
-              "resourceCount": 4
-            },
-            "calculatedAt": "2026-07-26T08:08:18.529Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.81,
-            "evidence": {
-              "modifiedAt": "2026-06-01T16:32:46.571163",
-              "daysSinceModified": 55,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-26T08:08:18.529Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "XLS",
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 4,
-              "formatDistribution": {
-                "XLS": 2,
-                "CSV": 2
-              }
-            },
-            "calculatedAt": "2026-07-26T08:08:18.530Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0.95,
-            "evidence": {
-              "resourceCount": 4,
-              "checked": 4,
-              "accessible": 4
-            },
-            "calculatedAt": "2026-07-26T08:08:19.329Z"
-          }
-        ],
-        "lastChecked": "2026-07-26T08:08:16.883Z"
-      }
-    },
-    {
-      "datasetId": "sep-tucuman-ar:visor-de-mapas",
-      "externalId": "visor-de-mapas",
-      "modifiedAt": "2026-06-01T16:32:22.436796",
-      "lastScoredAt": "2026-07-26T08:08:16.883Z",
-      "score": {
-        "datasetId": "sep-tucuman-ar:visor-de-mapas",
-        "title": "Visor de Mapas",
-        "organization": "Dirección de Estadística de la Provincia",
-        "overall": 0.671,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 215,
-              "tagCount": 6,
-              "resourceCount": 1
-            },
-            "calculatedAt": "2026-07-26T08:08:19.329Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.81,
-            "evidence": {
-              "modifiedAt": "2026-06-01T16:32:22.436796",
-              "daysSinceModified": 55,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-26T08:08:19.329Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.1,
-            "evidence": {
-              "formats": [
-                "UNKNOWN"
-              ],
-              "bestFormat": "UNKNOWN",
-              "bestFormatScore": 0.1,
-              "resourceCount": 1,
-              "formatDistribution": {
-                "UNKNOWN": 1
-              }
-            },
-            "calculatedAt": "2026-07-26T08:08:19.329Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 1,
-              "checked": 1,
-              "accessible": 1
-            },
-            "calculatedAt": "2026-07-26T08:08:19.828Z"
-          }
-        ],
-        "lastChecked": "2026-07-26T08:08:16.883Z"
-      }
-    },
-    {
-      "datasetId": "sep-tucuman-ar:http-estadistica-tucuman-gov-ar-archivos-isaet-isaet-20serie-20historica-20ene-13-100-xlsx",
-      "externalId": "http-estadistica-tucuman-gov-ar-archivos-isaet-isaet-20serie-20historica-20ene-13-100-xlsx",
-      "modifiedAt": "2026-06-01T16:32:01.314824",
-      "lastScoredAt": "2026-07-26T08:08:16.883Z",
-      "score": {
-        "datasetId": "sep-tucuman-ar:http-estadistica-tucuman-gov-ar-archivos-isaet-isaet-20serie-20historica-20ene-13-100-xlsx",
-        "title": "Indicador Sintético de Actividad Económica de Tucumán (ISAET)",
-        "organization": "Dirección de Estadística de la Provincia",
-        "overall": 0.843,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 288,
-              "tagCount": 1,
-              "resourceCount": 1
-            },
-            "calculatedAt": "2026-07-26T08:08:19.828Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.81,
-            "evidence": {
-              "modifiedAt": "2026-06-01T16:32:01.314824",
-              "daysSinceModified": 55,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-26T08:08:19.828Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.65,
-            "evidence": {
-              "formats": [
-                "XLS"
-              ],
-              "bestFormat": "XLS",
-              "bestFormatScore": 0.65,
-              "resourceCount": 1,
-              "formatDistribution": {
-                "XLS": 1
-              }
-            },
-            "calculatedAt": "2026-07-26T08:08:19.828Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 1,
-              "checked": 1,
-              "accessible": 1
-            },
-            "calculatedAt": "2026-07-26T08:08:20.434Z"
-          }
-        ],
-        "lastChecked": "2026-07-26T08:08:16.883Z"
-      }
-    },
-    {
-      "datasetId": "sep-tucuman-ar:monitoreo-de-precios-de-materiales-y-equipos-de-construccion",
-      "externalId": "monitoreo-de-precios-de-materiales-y-equipos-de-construccion",
-      "modifiedAt": "2026-06-01T16:31:16.557912",
-      "lastScoredAt": "2026-07-26T08:08:16.883Z",
-      "score": {
-        "datasetId": "sep-tucuman-ar:monitoreo-de-precios-de-materiales-y-equipos-de-construccion",
-        "title": "Monitoreo de precios de materiales y equipos de construcción",
-        "organization": "Dirección de Estadística de la Provincia",
-        "overall": 0.843,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 345,
-              "tagCount": 15,
-              "resourceCount": 2
-            },
-            "calculatedAt": "2026-07-26T08:08:20.434Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.81,
-            "evidence": {
-              "modifiedAt": "2026-06-01T16:31:16.557912",
-              "daysSinceModified": 55,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-26T08:08:20.434Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.65,
-            "evidence": {
-              "formats": [
-                "XLS"
-              ],
-              "bestFormat": "XLS",
-              "bestFormatScore": 0.65,
-              "resourceCount": 2,
-              "formatDistribution": {
-                "XLS": 2
-              }
-            },
-            "calculatedAt": "2026-07-26T08:08:20.434Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 2,
-              "checked": 2,
-              "accessible": 2
-            },
-            "calculatedAt": "2026-07-26T08:08:21.063Z"
-          }
-        ],
-        "lastChecked": "2026-07-26T08:08:16.883Z"
-      }
-    },
-    {
-      "datasetId": "sep-tucuman-ar:http-estadistica-tucuman-gov-ar-index-php-2015-01-27-12-06-02-2015-01-27-12-56-14",
-      "externalId": "http-estadistica-tucuman-gov-ar-index-php-2015-01-27-12-06-02-2015-01-27-12-56-14",
-      "modifiedAt": "2026-06-01T16:30:19.731790",
-      "lastScoredAt": "2026-07-26T08:08:16.883Z",
-      "score": {
-        "datasetId": "sep-tucuman-ar:http-estadistica-tucuman-gov-ar-index-php-2015-01-27-12-06-02-2015-01-27-12-56-14",
-        "title": "Empleo Registrado",
-        "organization": "Dirección de Estadística de la Provincia",
-        "overall": 0.921,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 51,
-              "tagCount": 10,
-              "resourceCount": 2
-            },
-            "calculatedAt": "2026-07-26T08:08:21.063Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.81,
-            "evidence": {
-              "modifiedAt": "2026-06-01T16:30:19.731790",
-              "daysSinceModified": 55,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-26T08:08:21.063Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "XLS",
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 2,
-              "formatDistribution": {
-                "XLS": 1,
-                "CSV": 1
-              }
-            },
-            "calculatedAt": "2026-07-26T08:08:21.063Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0.95,
-            "evidence": {
-              "resourceCount": 2,
-              "checked": 2,
-              "accessible": 2
-            },
-            "calculatedAt": "2026-07-26T08:08:21.540Z"
-          }
-        ],
-        "lastChecked": "2026-07-26T08:08:16.883Z"
-      }
-    },
-    {
-      "datasetId": "sep-tucuman-ar:patentameintos-en-tucuman",
-      "externalId": "patentameintos-en-tucuman",
-      "modifiedAt": "2026-06-01T16:29:54.717948",
-      "lastScoredAt": "2026-07-26T08:08:16.883Z",
-      "score": {
-        "datasetId": "sep-tucuman-ar:patentameintos-en-tucuman",
-        "title": "Patentamientos en Tucumán",
-        "organization": "Dirección de Estadística de la Provincia",
-        "overall": 0.812,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 314,
-              "tagCount": 3,
-              "resourceCount": 1
-            },
-            "calculatedAt": "2026-07-26T08:08:21.540Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.81,
-            "evidence": {
-              "modifiedAt": "2026-06-01T16:29:54.717948",
-              "daysSinceModified": 55,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-26T08:08:21.540Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.65,
-            "evidence": {
-              "formats": [
-                "XLS"
-              ],
-              "bestFormat": "XLS",
-              "bestFormatScore": 0.65,
-              "resourceCount": 1,
-              "formatDistribution": {
-                "XLS": 1
-              }
-            },
-            "calculatedAt": "2026-07-26T08:08:21.540Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0.9,
-            "evidence": {
-              "resourceCount": 1,
-              "checked": 1,
-              "accessible": 1
-            },
-            "calculatedAt": "2026-07-26T08:08:21.987Z"
-          }
-        ],
-        "lastChecked": "2026-07-26T08:08:16.883Z"
-      }
-    },
-    {
-      "datasetId": "sep-tucuman-ar:http-estadistica-tucuman-gov-ar-index-php-2015-01-27-12-06-02-comercio-exterior",
-      "externalId": "http-estadistica-tucuman-gov-ar-index-php-2015-01-27-12-06-02-comercio-exterior",
-      "modifiedAt": "2026-06-01T16:29:34.722602",
-      "lastScoredAt": "2026-07-26T08:08:16.883Z",
-      "score": {
-        "datasetId": "sep-tucuman-ar:http-estadistica-tucuman-gov-ar-index-php-2015-01-27-12-06-02-comercio-exterior",
-        "title": "Exportaciones de Tucumán",
-        "organization": "Dirección de Estadística de la Provincia",
-        "overall": 0.843,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 166,
-              "tagCount": 6,
-              "resourceCount": 2
-            },
-            "calculatedAt": "2026-07-26T08:08:21.987Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.81,
-            "evidence": {
-              "modifiedAt": "2026-06-01T16:29:34.722602",
-              "daysSinceModified": 55,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-26T08:08:21.987Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.65,
-            "evidence": {
-              "formats": [
-                "XLS"
-              ],
-              "bestFormat": "XLS",
-              "bestFormatScore": 0.65,
-              "resourceCount": 2,
-              "formatDistribution": {
-                "XLS": 2
-              }
-            },
-            "calculatedAt": "2026-07-26T08:08:21.987Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 2,
-              "checked": 2,
-              "accessible": 2
-            },
-            "calculatedAt": "2026-07-26T08:08:22.473Z"
-          }
-        ],
-        "lastChecked": "2026-07-26T08:08:16.883Z"
-      }
-    },
-    {
-      "datasetId": "sep-tucuman-ar:tasas-de-entrada-salida-y-rotacion",
-      "externalId": "tasas-de-entrada-salida-y-rotacion",
-      "modifiedAt": "2026-06-01T16:29:11.646939",
-      "lastScoredAt": "2026-07-26T08:08:16.883Z",
-      "score": {
-        "datasetId": "sep-tucuman-ar:tasas-de-entrada-salida-y-rotacion",
-        "title": "Tasas de entrada, salida y rotación de empleados",
-        "organization": "Dirección de Estadística de la Provincia",
-        "overall": 0.906,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 211,
-              "tagCount": 8,
-              "resourceCount": 2
-            },
-            "calculatedAt": "2026-07-26T08:08:22.473Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.81,
-            "evidence": {
-              "modifiedAt": "2026-06-01T16:29:11.646939",
-              "daysSinceModified": 55,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-26T08:08:22.473Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "XLS",
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 2,
-              "formatDistribution": {
-                "XLS": 1,
-                "CSV": 1
-              }
-            },
-            "calculatedAt": "2026-07-26T08:08:22.473Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0.9,
-            "evidence": {
-              "resourceCount": 2,
-              "checked": 2,
-              "accessible": 2
-            },
-            "calculatedAt": "2026-07-26T08:08:22.928Z"
-          }
-        ],
-        "lastChecked": "2026-07-26T08:08:16.883Z"
-      }
-    },
-    {
-      "datasetId": "sep-tucuman-ar:estadisticas-vitales",
-      "externalId": "estadisticas-vitales",
-      "modifiedAt": "2026-06-01T16:28:50.804647",
-      "lastScoredAt": "2026-07-26T08:08:16.883Z",
-      "score": {
-        "datasetId": "sep-tucuman-ar:estadisticas-vitales",
-        "title": "Estadísticas Vitales",
-        "organization": "Dirección de Estadística de la Provincia",
-        "overall": 0.921,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 216,
-              "tagCount": 12,
-              "resourceCount": 2
-            },
-            "calculatedAt": "2026-07-26T08:08:22.928Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.81,
-            "evidence": {
-              "modifiedAt": "2026-06-01T16:28:50.804647",
-              "daysSinceModified": 55,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-26T08:08:22.928Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "XLS",
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 2,
-              "formatDistribution": {
-                "XLS": 1,
-                "CSV": 1
-              }
-            },
-            "calculatedAt": "2026-07-26T08:08:22.928Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0.95,
-            "evidence": {
-              "resourceCount": 2,
-              "checked": 2,
-              "accessible": 2
-            },
-            "calculatedAt": "2026-07-26T08:08:23.428Z"
-          }
-        ],
-        "lastChecked": "2026-07-26T08:08:16.883Z"
-      }
-    },
-    {
-      "datasetId": "sep-tucuman-ar:deficit-habitacional-cuantitativo-compuesto",
-      "externalId": "deficit-habitacional-cuantitativo-compuesto",
-      "modifiedAt": "2026-06-01T16:28:20.387762",
-      "lastScoredAt": "2026-07-26T08:08:16.883Z",
-      "score": {
-        "datasetId": "sep-tucuman-ar:deficit-habitacional-cuantitativo-compuesto",
-        "title": "Déficit habitacional cuantitativo compuesto",
-        "organization": "Dirección de Estadística de la Provincia",
-        "overall": 0.812,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 167,
-              "tagCount": 10,
-              "resourceCount": 6
-            },
-            "calculatedAt": "2026-07-26T08:08:23.428Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.81,
-            "evidence": {
-              "modifiedAt": "2026-06-01T16:28:20.387762",
-              "daysSinceModified": 55,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-26T08:08:23.428Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.65,
-            "evidence": {
-              "formats": [
-                "XLS",
-                "PDF",
-                "PNG"
-              ],
-              "bestFormat": "XLS",
-              "bestFormatScore": 0.65,
-              "resourceCount": 6,
-              "formatDistribution": {
-                "XLS": 2,
-                "PDF": 1,
-                "PNG": 3
-              }
-            },
-            "calculatedAt": "2026-07-26T08:08:23.428Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0.9,
-            "evidence": {
-              "resourceCount": 6,
-              "checked": 6,
-              "accessible": 6
-            },
-            "calculatedAt": "2026-07-26T08:08:23.883Z"
-          }
-        ],
-        "lastChecked": "2026-07-26T08:08:16.883Z"
-      }
-    },
-    {
-      "datasetId": "sep-tucuman-ar:encuesta-de-ocupacion-hotelera",
-      "externalId": "encuesta-de-ocupacion-hotelera",
-      "modifiedAt": "2026-06-01T16:27:32.772273",
-      "lastScoredAt": "2026-07-26T08:08:16.883Z",
-      "score": {
-        "datasetId": "sep-tucuman-ar:encuesta-de-ocupacion-hotelera",
-        "title": "Encuesta de Ocupación Hotelera",
-        "organization": "Dirección de Estadística de la Provincia",
-        "overall": 0.916,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 284,
-              "tagCount": 11,
-              "resourceCount": 3
-            },
-            "calculatedAt": "2026-07-26T08:08:23.883Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.81,
-            "evidence": {
-              "modifiedAt": "2026-06-01T16:27:32.772273",
-              "daysSinceModified": 55,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-26T08:08:23.883Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "XLS",
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 3,
-              "formatDistribution": {
-                "XLS": 1,
-                "CSV": 2
-              }
-            },
-            "calculatedAt": "2026-07-26T08:08:23.883Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0.933,
-            "evidence": {
-              "resourceCount": 3,
-              "checked": 3,
-              "accessible": 3
-            },
-            "calculatedAt": "2026-07-26T08:08:24.369Z"
-          }
-        ],
-        "lastChecked": "2026-07-26T08:08:16.883Z"
-      }
-    },
-    {
-      "datasetId": "sep-tucuman-ar:precios-promedios-de-los-materiales-y-equipos-de-la-construccion-publica",
-      "externalId": "precios-promedios-de-los-materiales-y-equipos-de-la-construccion-publica",
-      "modifiedAt": "2026-06-01T16:27:09.771142",
-      "lastScoredAt": "2026-07-26T08:08:16.883Z",
-      "score": {
-        "datasetId": "sep-tucuman-ar:precios-promedios-de-los-materiales-y-equipos-de-la-construccion-publica",
-        "title": "Precios promedios de los materiales y equipos de la construcción pública",
-        "organization": "Dirección de Estadística de la Provincia",
-        "overall": 0.906,
+        "overall": 0.844,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -16019,764 +16331,20 @@
               ],
               "fieldsMissing": [],
               "descriptionLength": 160,
-              "tagCount": 4,
-              "resourceCount": 2
-            },
-            "calculatedAt": "2026-07-26T08:08:24.369Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.81,
-            "evidence": {
-              "modifiedAt": "2026-06-01T16:27:09.771142",
-              "daysSinceModified": 55,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-26T08:08:24.369Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV",
-                "XLS"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 2,
-              "formatDistribution": {
-                "CSV": 1,
-                "XLS": 1
-              }
-            },
-            "calculatedAt": "2026-07-26T08:08:24.369Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0.9,
-            "evidence": {
-              "resourceCount": 2,
-              "checked": 2,
-              "accessible": 2
-            },
-            "calculatedAt": "2026-07-26T08:08:24.820Z"
-          }
-        ],
-        "lastChecked": "2026-07-26T08:08:16.883Z"
-      }
-    },
-    {
-      "datasetId": "sep-tucuman-ar:indice-de-precios-al-consumidor",
-      "externalId": "indice-de-precios-al-consumidor",
-      "modifiedAt": "2026-06-01T16:26:21.319210",
-      "lastScoredAt": "2026-07-26T08:08:16.883Z",
-      "score": {
-        "datasetId": "sep-tucuman-ar:indice-de-precios-al-consumidor",
-        "title": "Índice de Precios al Consumidor",
-        "organization": "Dirección de Estadística de la Provincia",
-        "overall": 0.906,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 163,
-              "tagCount": 7,
-              "resourceCount": 2
-            },
-            "calculatedAt": "2026-07-26T08:08:24.820Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.81,
-            "evidence": {
-              "modifiedAt": "2026-06-01T16:26:21.319210",
-              "daysSinceModified": 55,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-26T08:08:24.820Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "XLS",
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 2,
-              "formatDistribution": {
-                "XLS": 1,
-                "CSV": 1
-              }
-            },
-            "calculatedAt": "2026-07-26T08:08:24.820Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0.9,
-            "evidence": {
-              "resourceCount": 2,
-              "checked": 2,
-              "accessible": 2
-            },
-            "calculatedAt": "2026-07-26T08:08:25.144Z"
-          }
-        ],
-        "lastChecked": "2026-07-26T08:08:16.883Z"
-      }
-    },
-    {
-      "datasetId": "sep-tucuman-ar:proyeccion-de-poblacion-por-sexo-y-grupos-de-edad-tucuman-2005-al-2015",
-      "externalId": "proyeccion-de-poblacion-por-sexo-y-grupos-de-edad-tucuman-2005-al-2015",
-      "modifiedAt": "2026-06-01T16:25:57.497641",
-      "lastScoredAt": "2026-07-26T08:08:16.883Z",
-      "score": {
-        "datasetId": "sep-tucuman-ar:proyeccion-de-poblacion-por-sexo-y-grupos-de-edad-tucuman-2005-al-2015",
-        "title": "Proyecciones poblacionales",
-        "organization": "Dirección de Estadística de la Provincia",
-        "overall": 0.812,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 205,
-              "tagCount": 9,
-              "resourceCount": 5
-            },
-            "calculatedAt": "2026-07-26T08:08:25.144Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.81,
-            "evidence": {
-              "modifiedAt": "2026-06-01T16:25:57.497641",
-              "daysSinceModified": 55,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-26T08:08:25.144Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.65,
-            "evidence": {
-              "formats": [
-                "XLS",
-                "PDF"
-              ],
-              "bestFormat": "XLS",
-              "bestFormatScore": 0.65,
-              "resourceCount": 5,
-              "formatDistribution": {
-                "XLS": 4,
-                "PDF": 1
-              }
-            },
-            "calculatedAt": "2026-07-26T08:08:25.144Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0.9,
-            "evidence": {
-              "resourceCount": 5,
-              "checked": 5,
-              "accessible": 5
-            },
-            "calculatedAt": "2026-07-26T08:08:25.481Z"
-          }
-        ],
-        "lastChecked": "2026-07-26T08:08:16.883Z"
-      }
-    },
-    {
-      "datasetId": "sep-tucuman-ar:evolucion-del-empleo",
-      "externalId": "evolucion-del-empleo",
-      "modifiedAt": "2026-06-01T16:25:31.906091",
-      "lastScoredAt": "2026-07-26T08:08:16.883Z",
-      "score": {
-        "datasetId": "sep-tucuman-ar:evolucion-del-empleo",
-        "title": "Evolución del empleo",
-        "organization": "Dirección de Estadística de la Provincia",
-        "overall": 0.906,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 199,
-              "tagCount": 8,
-              "resourceCount": 2
-            },
-            "calculatedAt": "2026-07-26T08:08:25.481Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.81,
-            "evidence": {
-              "modifiedAt": "2026-06-01T16:25:31.906091",
-              "daysSinceModified": 55,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-26T08:08:25.481Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "XLS",
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 2,
-              "formatDistribution": {
-                "XLS": 1,
-                "CSV": 1
-              }
-            },
-            "calculatedAt": "2026-07-26T08:08:25.481Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0.9,
-            "evidence": {
-              "resourceCount": 2,
-              "checked": 2,
-              "accessible": 2
-            },
-            "calculatedAt": "2026-07-26T08:08:25.930Z"
-          }
-        ],
-        "lastChecked": "2026-07-26T08:08:16.883Z"
-      }
-    },
-    {
-      "datasetId": "sep-tucuman-ar:estadisticas-de-energia",
-      "externalId": "estadisticas-de-energia",
-      "modifiedAt": "2026-06-01T16:23:57.001271",
-      "lastScoredAt": "2026-07-26T08:08:16.883Z",
-      "score": {
-        "datasetId": "sep-tucuman-ar:estadisticas-de-energia",
-        "title": "Estadísticas de energía",
-        "organization": "Dirección de Estadística de la Provincia",
-        "overall": 0.812,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 102,
-              "tagCount": 9,
-              "resourceCount": 1
-            },
-            "calculatedAt": "2026-07-26T08:08:25.930Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.81,
-            "evidence": {
-              "modifiedAt": "2026-06-01T16:23:57.001271",
-              "daysSinceModified": 55,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-26T08:08:25.930Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.65,
-            "evidence": {
-              "formats": [
-                "XLS"
-              ],
-              "bestFormat": "XLS",
-              "bestFormatScore": 0.65,
-              "resourceCount": 1,
-              "formatDistribution": {
-                "XLS": 1
-              }
-            },
-            "calculatedAt": "2026-07-26T08:08:25.930Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0.9,
-            "evidence": {
-              "resourceCount": 1,
-              "checked": 1,
-              "accessible": 1
-            },
-            "calculatedAt": "2026-07-26T08:08:26.266Z"
-          }
-        ],
-        "lastChecked": "2026-07-26T08:08:16.883Z"
-      }
-    },
-    {
-      "datasetId": "sep-tucuman-ar:discapacidad",
-      "externalId": "discapacidad",
-      "modifiedAt": "2026-06-01T16:23:32.152656",
-      "lastScoredAt": "2026-07-26T08:08:16.883Z",
-      "score": {
-        "datasetId": "sep-tucuman-ar:discapacidad",
-        "title": "Discapacidad",
-        "organization": "Dirección de Estadística de la Provincia",
-        "overall": 0.812,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 216,
               "tagCount": 6,
-              "resourceCount": 22
-            },
-            "calculatedAt": "2026-07-26T08:08:26.266Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.81,
-            "evidence": {
-              "modifiedAt": "2026-06-01T16:23:32.152656",
-              "daysSinceModified": 55,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-26T08:08:26.266Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.65,
-            "evidence": {
-              "formats": [
-                "PDF",
-                "XLS",
-                "PNG"
-              ],
-              "bestFormat": "XLS",
-              "bestFormatScore": 0.65,
-              "resourceCount": 22,
-              "formatDistribution": {
-                "PDF": 1,
-                "XLS": 1,
-                "PNG": 20
-              }
-            },
-            "calculatedAt": "2026-07-26T08:08:26.266Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0.9,
-            "evidence": {
-              "resourceCount": 22,
-              "checked": 22,
-              "accessible": 22
-            },
-            "calculatedAt": "2026-07-26T08:08:26.916Z"
-          }
-        ],
-        "lastChecked": "2026-07-26T08:08:16.883Z"
-      }
-    },
-    {
-      "datasetId": "sep-tucuman-ar:poblacion",
-      "externalId": "poblacion",
-      "modifiedAt": "2026-06-01T16:23:10.218096",
-      "lastScoredAt": "2026-07-26T08:08:16.883Z",
-      "score": {
-        "datasetId": "sep-tucuman-ar:poblacion",
-        "title": "Población",
-        "organization": "Dirección de Estadística de la Provincia",
-        "overall": 0.812,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 35,
-              "tagCount": 7,
-              "resourceCount": 4
-            },
-            "calculatedAt": "2026-07-26T08:08:26.916Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.81,
-            "evidence": {
-              "modifiedAt": "2026-06-01T16:23:10.218096",
-              "daysSinceModified": 55,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-26T08:08:26.916Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.65,
-            "evidence": {
-              "formats": [
-                "XLS",
-                "PDF",
-                "PNG"
-              ],
-              "bestFormat": "XLS",
-              "bestFormatScore": 0.65,
-              "resourceCount": 4,
-              "formatDistribution": {
-                "XLS": 1,
-                "PDF": 1,
-                "PNG": 2
-              }
-            },
-            "calculatedAt": "2026-07-26T08:08:26.916Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0.9,
-            "evidence": {
-              "resourceCount": 4,
-              "checked": 4,
-              "accessible": 4
-            },
-            "calculatedAt": "2026-07-26T08:08:27.243Z"
-          }
-        ],
-        "lastChecked": "2026-07-26T08:08:16.883Z"
-      }
-    },
-    {
-      "datasetId": "sep-tucuman-ar:necesidades-basicas-insatisfechas",
-      "externalId": "necesidades-basicas-insatisfechas",
-      "modifiedAt": "2026-06-01T16:22:45.336400",
-      "lastScoredAt": "2026-07-26T08:08:16.883Z",
-      "score": {
-        "datasetId": "sep-tucuman-ar:necesidades-basicas-insatisfechas",
-        "title": "Necesidades Básicas Insatisfechas",
-        "organization": "Dirección de Estadística de la Provincia",
-        "overall": 0.812,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 397,
-              "tagCount": 10,
-              "resourceCount": 23
-            },
-            "calculatedAt": "2026-07-26T08:08:27.243Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.81,
-            "evidence": {
-              "modifiedAt": "2026-06-01T16:22:45.336400",
-              "daysSinceModified": 55,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-26T08:08:27.243Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.65,
-            "evidence": {
-              "formats": [
-                "XLS",
-                "PDF",
-                "PNG"
-              ],
-              "bestFormat": "XLS",
-              "bestFormatScore": 0.65,
-              "resourceCount": 23,
-              "formatDistribution": {
-                "XLS": 1,
-                "PDF": 1,
-                "PNG": 21
-              }
-            },
-            "calculatedAt": "2026-07-26T08:08:27.243Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0.9,
-            "evidence": {
-              "resourceCount": 23,
-              "checked": 23,
-              "accessible": 23
-            },
-            "calculatedAt": "2026-07-26T08:08:28.065Z"
-          }
-        ],
-        "lastChecked": "2026-07-26T08:08:16.883Z"
-      }
-    },
-    {
-      "datasetId": "sep-tucuman-ar:indiceprivacionmaterialhogaresipmh",
-      "externalId": "indiceprivacionmaterialhogaresipmh",
-      "modifiedAt": "2026-06-01T16:22:22.514322",
-      "lastScoredAt": "2026-07-26T08:08:16.883Z",
-      "score": {
-        "datasetId": "sep-tucuman-ar:indiceprivacionmaterialhogaresipmh",
-        "title": "Índice de Privación Material de los Hogares (IPMH)",
-        "organization": "Dirección de Estadística de la Provincia",
-        "overall": 0.812,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 356,
-              "tagCount": 8,
-              "resourceCount": 38
-            },
-            "calculatedAt": "2026-07-26T08:08:28.065Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.81,
-            "evidence": {
-              "modifiedAt": "2026-06-01T16:22:22.514322",
-              "daysSinceModified": 55,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-26T08:08:28.065Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.65,
-            "evidence": {
-              "formats": [
-                "XLS",
-                "PDF",
-                "PNG"
-              ],
-              "bestFormat": "XLS",
-              "bestFormatScore": 0.65,
-              "resourceCount": 38,
-              "formatDistribution": {
-                "XLS": 1,
-                "PDF": 1,
-                "PNG": 36
-              }
-            },
-            "calculatedAt": "2026-07-26T08:08:28.065Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0.9,
-            "evidence": {
-              "resourceCount": 38,
-              "checked": 38,
-              "accessible": 38
-            },
-            "calculatedAt": "2026-07-26T08:08:29.196Z"
-          }
-        ],
-        "lastChecked": "2026-07-26T08:08:16.883Z"
-      }
-    },
-    {
-      "datasetId": "sep-tucuman-ar:registro-unico-de-casos-de-violencia-contra-las-mujeres-rucvm",
-      "externalId": "registro-unico-de-casos-de-violencia-contra-las-mujeres-rucvm",
-      "modifiedAt": "2026-06-01T16:21:58.480796",
-      "lastScoredAt": "2026-07-26T08:08:16.883Z",
-      "score": {
-        "datasetId": "sep-tucuman-ar:registro-unico-de-casos-de-violencia-contra-las-mujeres-rucvm",
-        "title": "Registro Único de Casos de Violencia contra las Mujeres (RUCVM)",
-        "organization": "Dirección de Estadística de la Provincia",
-        "overall": 0.812,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 410,
-              "tagCount": 4,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-07-26T08:08:29.196Z"
+            "calculatedAt": "2026-07-28T08:33:50.361Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.81,
+            "score": 0.813,
             "evidence": {
-              "modifiedAt": "2026-06-01T16:21:58.480796",
-              "daysSinceModified": 55,
+              "modifiedAt": "2026-06-04T16:12:08.389351",
+              "daysSinceModified": 54,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-07-26T08:08:29.196Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.65,
-            "evidence": {
-              "formats": [
-                "XLS"
-              ],
-              "bestFormat": "XLS",
-              "bestFormatScore": 0.65,
-              "resourceCount": 1,
-              "formatDistribution": {
-                "XLS": 1
-              }
-            },
-            "calculatedAt": "2026-07-26T08:08:29.196Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0.9,
-            "evidence": {
-              "resourceCount": 1,
-              "checked": 1,
-              "accessible": 1
-            },
-            "calculatedAt": "2026-07-26T08:08:29.524Z"
-          }
-        ],
-        "lastChecked": "2026-07-26T08:08:16.883Z"
-      }
-    },
-    {
-      "datasetId": "sep-tucuman-ar:principales-tasas-del-mercado-laboral",
-      "externalId": "principales-tasas-del-mercado-laboral",
-      "modifiedAt": "2026-06-01T16:11:16.835038",
-      "lastScoredAt": "2026-07-26T08:08:16.883Z",
-      "score": {
-        "datasetId": "sep-tucuman-ar:principales-tasas-del-mercado-laboral",
-        "title": "Principales tasas del mercado laboral",
-        "organization": "Dirección de Estadística de la Provincia",
-        "overall": 0.843,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 166,
-              "tagCount": 8,
-              "resourceCount": 1
-            },
-            "calculatedAt": "2026-07-26T08:08:29.524Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.81,
-            "evidence": {
-              "modifiedAt": "2026-06-01T16:11:16.835038",
-              "daysSinceModified": 55,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-26T08:08:29.524Z"
+            "calculatedAt": "2026-07-28T08:33:50.361Z"
           },
           {
             "dimension": "structure",
@@ -16792,7 +16360,7 @@
                 "XLSX": 1
               }
             },
-            "calculatedAt": "2026-07-26T08:08:29.524Z"
+            "calculatedAt": "2026-07-28T08:33:50.361Z"
           },
           {
             "dimension": "accessibility",
@@ -16802,22 +16370,22 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-07-26T08:08:30.006Z"
+            "calculatedAt": "2026-07-28T08:33:51.171Z"
           }
         ],
-        "lastChecked": "2026-07-26T08:08:16.883Z"
+        "lastChecked": "2026-07-28T08:33:50.361Z"
       }
     },
     {
-      "datasetId": "sep-tucuman-ar:indicadores-de-condiciones-de-vida-de-los-hogares",
-      "externalId": "indicadores-de-condiciones-de-vida-de-los-hogares",
-      "modifiedAt": "2026-06-01T15:15:49.675898",
-      "lastScoredAt": "2026-07-26T08:08:16.883Z",
+      "datasetId": "sep-tucuman-ar:http-sep-tucuman-gob-ar-dataset",
+      "externalId": "http-sep-tucuman-gob-ar-dataset",
+      "modifiedAt": "2026-06-04T16:11:16.606136",
+      "lastScoredAt": "2026-07-28T08:33:50.361Z",
       "score": {
-        "datasetId": "sep-tucuman-ar:indicadores-de-condiciones-de-vida-de-los-hogares",
-        "title": "Indicadores de condiciones de vida de los hogares",
+        "datasetId": "sep-tucuman-ar:http-sep-tucuman-gob-ar-dataset",
+        "title": "Tasas de Actividad y Empleo",
         "organization": "Dirección de Estadística de la Provincia",
-        "overall": 0.843,
+        "overall": 0.844,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -16834,21 +16402,21 @@
                 "createdAt"
               ],
               "fieldsMissing": [],
-              "descriptionLength": 496,
-              "tagCount": 3,
-              "resourceCount": 2
+              "descriptionLength": 168,
+              "tagCount": 6,
+              "resourceCount": 1
             },
-            "calculatedAt": "2026-07-26T08:08:30.006Z"
+            "calculatedAt": "2026-07-28T08:33:51.171Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.81,
+            "score": 0.813,
             "evidence": {
-              "modifiedAt": "2026-06-01T15:15:49.675898",
-              "daysSinceModified": 55,
+              "modifiedAt": "2026-06-04T16:11:16.606136",
+              "daysSinceModified": 54,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-07-26T08:08:30.006Z"
+            "calculatedAt": "2026-07-28T08:33:51.171Z"
           },
           {
             "dimension": "structure",
@@ -16859,12 +16427,156 @@
               ],
               "bestFormat": "XLSX",
               "bestFormatScore": 0.65,
-              "resourceCount": 2,
+              "resourceCount": 1,
               "formatDistribution": {
-                "XLSX": 2
+                "XLSX": 1
               }
             },
-            "calculatedAt": "2026-07-26T08:08:30.006Z"
+            "calculatedAt": "2026-07-28T08:33:51.171Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 1,
+              "checked": 1,
+              "accessible": 1
+            },
+            "calculatedAt": "2026-07-28T08:33:51.806Z"
+          }
+        ],
+        "lastChecked": "2026-07-28T08:33:50.361Z"
+      }
+    },
+    {
+      "datasetId": "sep-tucuman-ar:tasas-de-desocupacion",
+      "externalId": "tasas-de-desocupacion",
+      "modifiedAt": "2026-06-04T13:51:19.344085",
+      "lastScoredAt": "2026-07-28T08:33:50.361Z",
+      "score": {
+        "datasetId": "sep-tucuman-ar:tasas-de-desocupacion",
+        "title": "Tasas de desocupación",
+        "organization": "Dirección de Estadística de la Provincia",
+        "overall": 0.844,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 162,
+              "tagCount": 7,
+              "resourceCount": 3
+            },
+            "calculatedAt": "2026-07-28T08:33:51.806Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.813,
+            "evidence": {
+              "modifiedAt": "2026-06-04T13:51:19.344085",
+              "daysSinceModified": 54,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-28T08:33:51.806Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.65,
+            "evidence": {
+              "formats": [
+                "XLSX"
+              ],
+              "bestFormat": "XLSX",
+              "bestFormatScore": 0.65,
+              "resourceCount": 3,
+              "formatDistribution": {
+                "XLSX": 3
+              }
+            },
+            "calculatedAt": "2026-07-28T08:33:51.806Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 3,
+              "checked": 3,
+              "accessible": 3
+            },
+            "calculatedAt": "2026-07-28T08:33:52.593Z"
+          }
+        ],
+        "lastChecked": "2026-07-28T08:33:50.361Z"
+      }
+    },
+    {
+      "datasetId": "sep-tucuman-ar:linea-de-pobreza-e-indigencia",
+      "externalId": "linea-de-pobreza-e-indigencia",
+      "modifiedAt": "2026-06-04T13:18:23.591380",
+      "lastScoredAt": "2026-07-28T08:33:50.361Z",
+      "score": {
+        "datasetId": "sep-tucuman-ar:linea-de-pobreza-e-indigencia",
+        "title": "Línea de Pobreza e Indigencia",
+        "organization": "Dirección de Estadística de la Provincia",
+        "overall": 0.844,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 386,
+              "tagCount": 8,
+              "resourceCount": 2
+            },
+            "calculatedAt": "2026-07-28T08:33:52.594Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.813,
+            "evidence": {
+              "modifiedAt": "2026-06-04T13:18:23.591380",
+              "daysSinceModified": 54,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-28T08:33:52.594Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.65,
+            "evidence": {
+              "formats": [
+                "XLS"
+              ],
+              "bestFormat": "XLS",
+              "bestFormatScore": 0.65,
+              "resourceCount": 2,
+              "formatDistribution": {
+                "XLS": 2
+              }
+            },
+            "calculatedAt": "2026-07-28T08:33:52.594Z"
           },
           {
             "dimension": "accessibility",
@@ -16874,10 +16586,298 @@
               "checked": 2,
               "accessible": 2
             },
-            "calculatedAt": "2026-07-26T08:08:30.499Z"
+            "calculatedAt": "2026-07-28T08:33:53.091Z"
           }
         ],
-        "lastChecked": "2026-07-26T08:08:16.883Z"
+        "lastChecked": "2026-07-28T08:33:50.361Z"
+      }
+    },
+    {
+      "datasetId": "sep-tucuman-ar:coeficiente-de-gini",
+      "externalId": "coeficiente-de-gini",
+      "modifiedAt": "2026-06-04T13:01:25.861164",
+      "lastScoredAt": "2026-07-28T08:33:50.361Z",
+      "score": {
+        "datasetId": "sep-tucuman-ar:coeficiente-de-gini",
+        "title": "Coeficiente de Gini",
+        "organization": "Dirección de Estadística de la Provincia",
+        "overall": 0.844,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 309,
+              "tagCount": 9,
+              "resourceCount": 1
+            },
+            "calculatedAt": "2026-07-28T08:33:53.091Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.813,
+            "evidence": {
+              "modifiedAt": "2026-06-04T13:01:25.861164",
+              "daysSinceModified": 54,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-28T08:33:53.091Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.65,
+            "evidence": {
+              "formats": [
+                "XLSX"
+              ],
+              "bestFormat": "XLSX",
+              "bestFormatScore": 0.65,
+              "resourceCount": 1,
+              "formatDistribution": {
+                "XLSX": 1
+              }
+            },
+            "calculatedAt": "2026-07-28T08:33:53.091Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 1,
+              "checked": 1,
+              "accessible": 1
+            },
+            "calculatedAt": "2026-07-28T08:33:53.742Z"
+          }
+        ],
+        "lastChecked": "2026-07-28T08:33:50.361Z"
+      }
+    },
+    {
+      "datasetId": "sep-tucuman-ar:brecha-de-ingresos",
+      "externalId": "brecha-de-ingresos",
+      "modifiedAt": "2026-06-04T12:59:39.668123",
+      "lastScoredAt": "2026-07-28T08:33:50.361Z",
+      "score": {
+        "datasetId": "sep-tucuman-ar:brecha-de-ingresos",
+        "title": "Brecha de Ingresos",
+        "organization": "Dirección de Estadística de la Provincia",
+        "overall": 0.844,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 355,
+              "tagCount": 12,
+              "resourceCount": 1
+            },
+            "calculatedAt": "2026-07-28T08:33:53.742Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.813,
+            "evidence": {
+              "modifiedAt": "2026-06-04T12:59:39.668123",
+              "daysSinceModified": 54,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-28T08:33:53.742Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.65,
+            "evidence": {
+              "formats": [
+                "XLSX"
+              ],
+              "bestFormat": "XLSX",
+              "bestFormatScore": 0.65,
+              "resourceCount": 1,
+              "formatDistribution": {
+                "XLSX": 1
+              }
+            },
+            "calculatedAt": "2026-07-28T08:33:53.742Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 1,
+              "checked": 1,
+              "accessible": 1
+            },
+            "calculatedAt": "2026-07-28T08:33:54.395Z"
+          }
+        ],
+        "lastChecked": "2026-07-28T08:33:50.361Z"
+      }
+    },
+    {
+      "datasetId": "sep-tucuman-ar:canasta-basica-alimentaria-y-canasta-basica-total",
+      "externalId": "canasta-basica-alimentaria-y-canasta-basica-total",
+      "modifiedAt": "2026-06-04T12:47:28.113825",
+      "lastScoredAt": "2026-07-28T08:33:50.361Z",
+      "score": {
+        "datasetId": "sep-tucuman-ar:canasta-basica-alimentaria-y-canasta-basica-total",
+        "title": "Canasta Básica Alimentaria y Canasta Básica Total",
+        "organization": "Dirección de Estadística de la Provincia",
+        "overall": 0.844,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 147,
+              "tagCount": 10,
+              "resourceCount": 1
+            },
+            "calculatedAt": "2026-07-28T08:33:54.395Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.813,
+            "evidence": {
+              "modifiedAt": "2026-06-04T12:47:28.113825",
+              "daysSinceModified": 54,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-28T08:33:54.395Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.65,
+            "evidence": {
+              "formats": [
+                "XLSX"
+              ],
+              "bestFormat": "XLSX",
+              "bestFormatScore": 0.65,
+              "resourceCount": 1,
+              "formatDistribution": {
+                "XLSX": 1
+              }
+            },
+            "calculatedAt": "2026-07-28T08:33:54.395Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 1,
+              "checked": 1,
+              "accessible": 1
+            },
+            "calculatedAt": "2026-07-28T08:33:54.906Z"
+          }
+        ],
+        "lastChecked": "2026-07-28T08:33:50.361Z"
+      }
+    },
+    {
+      "datasetId": "sep-tucuman-ar:cantidad-de-tramites-realizados-en-la-dgc-en-el-ano-2026",
+      "externalId": "cantidad-de-tramites-realizados-en-la-dgc-en-el-ano-2026",
+      "modifiedAt": "2026-05-27T15:12:15.297833",
+      "lastScoredAt": "2026-07-28T08:33:50.361Z",
+      "score": {
+        "datasetId": "sep-tucuman-ar:cantidad-de-tramites-realizados-en-la-dgc-en-el-ano-2026",
+        "title": "Cantidad de trámites realizados en la DGC en el año 2026",
+        "organization": "Dirección General de Catastro",
+        "overall": 0.806,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 189,
+              "tagCount": 1,
+              "resourceCount": 1
+            },
+            "calculatedAt": "2026-07-28T08:33:54.906Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.788,
+            "evidence": {
+              "modifiedAt": "2026-05-27T15:12:15.297833",
+              "daysSinceModified": 62,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-28T08:33:54.906Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.65,
+            "evidence": {
+              "formats": [
+                "XLSX"
+              ],
+              "bestFormat": "XLSX",
+              "bestFormatScore": 0.65,
+              "resourceCount": 1,
+              "formatDistribution": {
+                "XLSX": 1
+              }
+            },
+            "calculatedAt": "2026-07-28T08:33:54.906Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.9,
+            "evidence": {
+              "resourceCount": 1,
+              "checked": 1,
+              "accessible": 1
+            },
+            "calculatedAt": "2026-07-28T08:33:55.249Z"
+          }
+        ],
+        "lastChecked": "2026-07-28T08:33:50.361Z"
       }
     }
   ]
