@@ -1,8 +1,76 @@
 {
   "catalogId": "datosgestionabierta-cba-ar",
-  "scoredAt": "2026-07-28T08:31:49.576Z",
+  "scoredAt": "2026-07-29T08:37:13.341Z",
   "datasetCount": 151,
   "datasets": [
+    {
+      "datasetId": "datosgestionabierta-cba-ar:municipalidad-de-alicia-transparencia-activa",
+      "title": "Municipalidad de Alicia - Transparencia activa",
+      "organization": "Gobiernos Locales",
+      "overall": 0.609,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 720,
+            "tagCount": 2,
+            "resourceCount": 3
+          },
+          "calculatedAt": "2026-07-28T08:31:49.576Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.997,
+          "evidence": {
+            "modifiedAt": "2026-07-27T14:13:24.086874",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-07-28T08:31:49.576Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.15,
+          "evidence": {
+            "formats": [
+              "PDF",
+              "ENLACE"
+            ],
+            "bestFormat": "PDF",
+            "bestFormatScore": 0.15,
+            "resourceCount": 3,
+            "formatDistribution": {
+              "PDF": 2,
+              "ENLACE": 1
+            }
+          },
+          "calculatedAt": "2026-07-28T08:31:49.576Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.6,
+          "evidence": {
+            "resourceCount": 3,
+            "checked": 3,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-07-28T08:31:50.663Z"
+        }
+      ],
+      "lastChecked": "2026-07-28T08:31:49.576Z"
+    },
     {
       "datasetId": "datosgestionabierta-cba-ar:rio-cuarto",
       "title": "Municipalidad de Río Cuarto - Transparencia activa",
@@ -1513,10 +1581,10 @@
       "lastChecked": "2026-07-27T09:34:38.018Z"
     },
     {
-      "datasetId": "datosgestionabierta-cba-ar:sampacho",
-      "title": "Municipalidad de Sampacho - Transparencia activa",
-      "organization": "Gobiernos Locales",
-      "overall": 0.904,
+      "datasetId": "datosgestionabierta-cba-ar:empleados-poder-ejecutivo",
+      "title": "Listado de agentes del Poder Ejecutivo",
+      "organization": "Gobierno de la Provincia de Córdoba",
+      "overall": 0.87,
       "dimensions": [
         {
           "dimension": "completeness",
@@ -1533,21 +1601,21 @@
               "createdAt"
             ],
             "fieldsMissing": [],
-            "descriptionLength": 769,
-            "tagCount": 2,
-            "resourceCount": 9
+            "descriptionLength": 4915,
+            "tagCount": 1,
+            "resourceCount": 30
           },
-          "calculatedAt": "2026-07-22T08:14:26.493Z"
+          "calculatedAt": "2026-07-28T08:31:50.663Z"
         },
         {
           "dimension": "freshness",
-          "score": 0.791,
+          "score": 0.668,
           "evidence": {
-            "modifiedAt": "2026-05-22T13:29:23.037610",
-            "daysSinceModified": 61,
+            "modifiedAt": "2026-04-14T17:42:25.302897",
+            "daysSinceModified": 105,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-07-22T08:14:26.493Z"
+          "calculatedAt": "2026-07-28T08:31:50.663Z"
         },
         {
           "dimension": "structure",
@@ -1555,40 +1623,36 @@
           "evidence": {
             "formats": [
               "XLSX",
-              "CSV",
-              "PDF",
-              "ENLACE"
+              "CSV"
             ],
             "bestFormat": "CSV",
             "bestFormatScore": 0.95,
-            "resourceCount": 9,
+            "resourceCount": 30,
             "formatDistribution": {
-              "XLSX": 2,
-              "CSV": 2,
-              "PDF": 4,
-              "ENLACE": 1
+              "XLSX": 15,
+              "CSV": 15
             }
           },
-          "calculatedAt": "2026-07-22T08:14:26.493Z"
+          "calculatedAt": "2026-07-28T08:31:50.663Z"
         },
         {
           "dimension": "accessibility",
-          "score": 0.911,
+          "score": 0.9,
           "evidence": {
-            "resourceCount": 9,
-            "checked": 9,
-            "accessible": 9
+            "resourceCount": 30,
+            "checked": 30,
+            "accessible": 30
           },
-          "calculatedAt": "2026-07-22T08:14:28.173Z"
+          "calculatedAt": "2026-07-28T08:31:55.876Z"
         }
       ],
-      "lastChecked": "2026-07-22T08:14:26.493Z"
+      "lastChecked": "2026-07-28T08:31:49.576Z"
     },
     {
-      "datasetId": "datosgestionabierta-cba-ar:san-marcos-sierras",
-      "title": "Municipalidad de San Marcos Sierras - Transparencia activa",
-      "organization": "Gobiernos Locales",
-      "overall": 0.646,
+      "datasetId": "datosgestionabierta-cba-ar:intendentes-y-jefes-comunales",
+      "title": "Intendentes y jefes comunales",
+      "organization": "Ministerio de Gobierno",
+      "overall": 0.866,
       "dimensions": [
         {
           "dimension": "completeness",
@@ -1605,50 +1669,52 @@
               "createdAt"
             ],
             "fieldsMissing": [],
-            "descriptionLength": 615,
-            "tagCount": 2,
-            "resourceCount": 4
+            "descriptionLength": 384,
+            "tagCount": 3,
+            "resourceCount": 2
           },
-          "calculatedAt": "2026-07-22T08:14:28.173Z"
+          "calculatedAt": "2026-07-28T08:31:55.876Z"
         },
         {
           "dimension": "freshness",
-          "score": 0.71,
+          "score": 0.653,
           "evidence": {
-            "modifiedAt": "2026-04-24T13:48:57.845931",
-            "daysSinceModified": 89,
+            "modifiedAt": "2026-04-08T14:53:12.118316",
+            "daysSinceModified": 111,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-07-22T08:14:28.173Z"
+          "calculatedAt": "2026-07-28T08:31:55.876Z"
         },
         {
           "dimension": "structure",
-          "score": 0.1,
+          "score": 0.95,
           "evidence": {
             "formats": [
-              "ENLACE"
+              "XLSX",
+              "CSV"
             ],
-            "bestFormat": "ENLACE",
-            "bestFormatScore": 0.1,
-            "resourceCount": 4,
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
             "formatDistribution": {
-              "ENLACE": 4
+              "XLSX": 1,
+              "CSV": 1
             }
           },
-          "calculatedAt": "2026-07-22T08:14:28.173Z"
+          "calculatedAt": "2026-07-28T08:31:55.876Z"
         },
         {
           "dimension": "accessibility",
-          "score": 1,
+          "score": 0.9,
           "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
           },
-          "calculatedAt": "2026-07-22T08:14:29.733Z"
+          "calculatedAt": "2026-07-28T08:31:56.279Z"
         }
       ],
-      "lastChecked": "2026-07-22T08:14:26.493Z"
+      "lastChecked": "2026-07-28T08:31:49.576Z"
     },
     {
       "datasetId": "datosgestionabierta-cba-ar:resultados-electorales",
@@ -10124,10 +10190,10 @@
       "lastChecked": "2026-07-24T08:25:07.606Z"
     },
     {
-      "datasetId": "datosgestionabierta-cba-ar:municipalidad-de-alicia-transparencia-activa",
-      "title": "Municipalidad de Alicia - Transparencia activa",
+      "datasetId": "datosgestionabierta-cba-ar:sampacho",
+      "title": "Municipalidad de Sampacho - Transparencia activa",
       "organization": "Gobiernos Locales",
-      "overall": 0.609,
+      "overall": 0.899,
       "dimensions": [
         {
           "dimension": "completeness",
@@ -10144,58 +10210,62 @@
               "createdAt"
             ],
             "fieldsMissing": [],
-            "descriptionLength": 720,
+            "descriptionLength": 769,
             "tagCount": 2,
-            "resourceCount": 3
+            "resourceCount": 9
           },
-          "calculatedAt": "2026-07-28T08:31:49.576Z"
+          "calculatedAt": "2026-07-29T08:37:13.341Z"
         },
         {
           "dimension": "freshness",
-          "score": 0.997,
+          "score": 0.77,
           "evidence": {
-            "modifiedAt": "2026-07-27T14:13:24.086874",
-            "daysSinceModified": 1,
+            "modifiedAt": "2026-05-22T13:29:23.037610",
+            "daysSinceModified": 68,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-07-28T08:31:49.576Z"
+          "calculatedAt": "2026-07-29T08:37:13.341Z"
         },
         {
           "dimension": "structure",
-          "score": 0.15,
+          "score": 0.95,
           "evidence": {
             "formats": [
+              "XLSX",
+              "CSV",
               "PDF",
               "ENLACE"
             ],
-            "bestFormat": "PDF",
-            "bestFormatScore": 0.15,
-            "resourceCount": 3,
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 9,
             "formatDistribution": {
-              "PDF": 2,
+              "XLSX": 2,
+              "CSV": 2,
+              "PDF": 4,
               "ENLACE": 1
             }
           },
-          "calculatedAt": "2026-07-28T08:31:49.576Z"
+          "calculatedAt": "2026-07-29T08:37:13.341Z"
         },
         {
           "dimension": "accessibility",
-          "score": 0.6,
+          "score": 0.911,
           "evidence": {
-            "resourceCount": 3,
-            "checked": 3,
-            "accessible": 2
+            "resourceCount": 9,
+            "checked": 9,
+            "accessible": 9
           },
-          "calculatedAt": "2026-07-28T08:31:50.663Z"
+          "calculatedAt": "2026-07-29T08:37:14.546Z"
         }
       ],
-      "lastChecked": "2026-07-28T08:31:49.576Z"
+      "lastChecked": "2026-07-29T08:37:13.341Z"
     },
     {
-      "datasetId": "datosgestionabierta-cba-ar:empleados-poder-ejecutivo",
-      "title": "Listado de agentes del Poder Ejecutivo",
-      "organization": "Gobierno de la Provincia de Córdoba",
-      "overall": 0.87,
+      "datasetId": "datosgestionabierta-cba-ar:san-marcos-sierras",
+      "title": "Municipalidad de San Marcos Sierras - Transparencia activa",
+      "organization": "Gobiernos Locales",
+      "overall": 0.642,
       "dimensions": [
         {
           "dimension": "completeness",
@@ -10212,120 +10282,50 @@
               "createdAt"
             ],
             "fieldsMissing": [],
-            "descriptionLength": 4915,
-            "tagCount": 1,
-            "resourceCount": 30
+            "descriptionLength": 615,
+            "tagCount": 2,
+            "resourceCount": 4
           },
-          "calculatedAt": "2026-07-28T08:31:50.663Z"
+          "calculatedAt": "2026-07-29T08:37:14.546Z"
         },
         {
           "dimension": "freshness",
-          "score": 0.668,
+          "score": 0.692,
           "evidence": {
-            "modifiedAt": "2026-04-14T17:42:25.302897",
-            "daysSinceModified": 105,
+            "modifiedAt": "2026-04-24T13:48:57.845931",
+            "daysSinceModified": 96,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-07-28T08:31:50.663Z"
+          "calculatedAt": "2026-07-29T08:37:14.547Z"
         },
         {
           "dimension": "structure",
-          "score": 0.95,
+          "score": 0.1,
           "evidence": {
             "formats": [
-              "XLSX",
-              "CSV"
+              "ENLACE"
             ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 30,
+            "bestFormat": "ENLACE",
+            "bestFormatScore": 0.1,
+            "resourceCount": 4,
             "formatDistribution": {
-              "XLSX": 15,
-              "CSV": 15
+              "ENLACE": 4
             }
           },
-          "calculatedAt": "2026-07-28T08:31:50.663Z"
+          "calculatedAt": "2026-07-29T08:37:14.547Z"
         },
         {
           "dimension": "accessibility",
-          "score": 0.9,
-          "evidence": {
-            "resourceCount": 30,
-            "checked": 30,
-            "accessible": 30
-          },
-          "calculatedAt": "2026-07-28T08:31:55.876Z"
-        }
-      ],
-      "lastChecked": "2026-07-28T08:31:49.576Z"
-    },
-    {
-      "datasetId": "datosgestionabierta-cba-ar:intendentes-y-jefes-comunales",
-      "title": "Intendentes y jefes comunales",
-      "organization": "Ministerio de Gobierno",
-      "overall": 0.866,
-      "dimensions": [
-        {
-          "dimension": "completeness",
           "score": 1,
           "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 384,
-            "tagCount": 3,
-            "resourceCount": 2
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
           },
-          "calculatedAt": "2026-07-28T08:31:55.876Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.653,
-          "evidence": {
-            "modifiedAt": "2026-04-08T14:53:12.118316",
-            "daysSinceModified": 111,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-07-28T08:31:55.876Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "XLSX",
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 2,
-            "formatDistribution": {
-              "XLSX": 1,
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-07-28T08:31:55.876Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.9,
-          "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-07-28T08:31:56.279Z"
+          "calculatedAt": "2026-07-29T08:37:16.311Z"
         }
       ],
-      "lastChecked": "2026-07-28T08:31:49.576Z"
+      "lastChecked": "2026-07-29T08:37:13.341Z"
     }
   ],
   "coverage": 1
