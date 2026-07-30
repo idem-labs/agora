@@ -1,6 +1,6 @@
 {
   "catalogId": "datos-yvera-ar",
-  "updatedAt": "2026-07-29T08:37:07.600Z",
+  "updatedAt": "2026-07-30T08:20:49.059Z",
   "datasets": [
     {
       "datasetId": "datos-yvera-ar:conectividad-aerea",
@@ -148,6 +148,80 @@
           }
         ],
         "lastChecked": "2026-07-28T08:31:32.854Z"
+      }
+    },
+    {
+      "datasetId": "datos-yvera-ar:parques-nacionales",
+      "externalId": "parques-nacionales",
+      "modifiedAt": "2026-05-15T14:44:14.421202",
+      "lastScoredAt": "2026-07-29T08:37:07.600Z",
+      "score": {
+        "datasetId": "datos-yvera-ar:parques-nacionales",
+        "title": "Parques Nacionales",
+        "organization": "Dirección Nacional de Mercados y Estadísticas de Turismo",
+        "overall": 0.922,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 306,
+              "tagCount": 6,
+              "resourceCount": 5
+            },
+            "calculatedAt": "2026-07-29T08:37:07.600Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.75,
+            "evidence": {
+              "modifiedAt": "2026-05-15T14:44:14.421202",
+              "daysSinceModified": 75,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-07-29T08:37:07.600Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV",
+                "PDF"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 5,
+              "formatDistribution": {
+                "CSV": 4,
+                "PDF": 1
+              }
+            },
+            "calculatedAt": "2026-07-29T08:37:07.600Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 5,
+              "checked": 5,
+              "accessible": 5
+            },
+            "calculatedAt": "2026-07-29T08:37:09.031Z"
+          }
+        ],
+        "lastChecked": "2026-07-29T08:37:07.600Z"
       }
     },
     {
@@ -1048,80 +1122,6 @@
           }
         ],
         "lastChecked": "2026-07-28T08:31:32.854Z"
-      }
-    },
-    {
-      "datasetId": "datos-yvera-ar:parques-nacionales",
-      "externalId": "parques-nacionales",
-      "modifiedAt": "2026-05-15T14:44:14.421202",
-      "lastScoredAt": "2026-07-29T08:37:07.600Z",
-      "score": {
-        "datasetId": "datos-yvera-ar:parques-nacionales",
-        "title": "Parques Nacionales",
-        "organization": "Dirección Nacional de Mercados y Estadísticas de Turismo",
-        "overall": 0.922,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 306,
-              "tagCount": 6,
-              "resourceCount": 5
-            },
-            "calculatedAt": "2026-07-29T08:37:07.600Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.75,
-            "evidence": {
-              "modifiedAt": "2026-05-15T14:44:14.421202",
-              "daysSinceModified": 75,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-29T08:37:07.600Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV",
-                "PDF"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 5,
-              "formatDistribution": {
-                "CSV": 4,
-                "PDF": 1
-              }
-            },
-            "calculatedAt": "2026-07-29T08:37:07.600Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 5,
-              "checked": 5,
-              "accessible": 5
-            },
-            "calculatedAt": "2026-07-29T08:37:09.031Z"
-          }
-        ],
-        "lastChecked": "2026-07-29T08:37:07.600Z"
       }
     }
   ]

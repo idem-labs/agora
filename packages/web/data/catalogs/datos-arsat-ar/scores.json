@@ -1,76 +1,8 @@
 {
   "catalogId": "datos-arsat-ar",
-  "scoredAt": "2026-07-29T08:37:01.938Z",
+  "scoredAt": "2026-07-30T08:20:45.112Z",
   "datasetCount": 13,
   "datasets": [
-    {
-      "datasetId": "datos-arsat-ar:finanzas",
-      "title": "Finanzas",
-      "organization": "Gerencia de Administración y finanzas",
-      "overall": 0.969,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 90,
-            "tagCount": 4,
-            "resourceCount": 3
-          },
-          "calculatedAt": "2026-07-23T08:13:58.802Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.938,
-          "evidence": {
-            "modifiedAt": "2026-07-06T14:42:31.896967",
-            "daysSinceModified": 17,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-07-23T08:13:58.802Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "PDF"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 3,
-            "formatDistribution": {
-              "CSV": 2,
-              "PDF": 1
-            }
-          },
-          "calculatedAt": "2026-07-23T08:13:58.802Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 3,
-            "checked": 3,
-            "accessible": 3
-          },
-          "calculatedAt": "2026-07-23T08:13:59.529Z"
-        }
-      ],
-      "lastChecked": "2026-07-23T08:13:58.802Z"
-    },
     {
       "datasetId": "datos-arsat-ar:organigrama",
       "title": "Organigrama",
@@ -868,6 +800,74 @@
         }
       ],
       "lastChecked": "2026-07-24T08:24:13.624Z"
+    },
+    {
+      "datasetId": "datos-arsat-ar:finanzas",
+      "title": "Finanzas",
+      "organization": "Gerencia de Administración y finanzas",
+      "overall": 0.963,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 90,
+            "tagCount": 4,
+            "resourceCount": 3
+          },
+          "calculatedAt": "2026-07-30T08:20:45.112Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.913,
+          "evidence": {
+            "modifiedAt": "2026-07-06T14:42:31.896967",
+            "daysSinceModified": 24,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-07-30T08:20:45.112Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "PDF"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 3,
+            "formatDistribution": {
+              "CSV": 2,
+              "PDF": 1
+            }
+          },
+          "calculatedAt": "2026-07-30T08:20:45.112Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 3,
+            "checked": 3,
+            "accessible": 3
+          },
+          "calculatedAt": "2026-07-30T08:20:45.955Z"
+        }
+      ],
+      "lastChecked": "2026-07-30T08:20:45.112Z"
     }
   ],
   "coverage": 1
