@@ -1,8 +1,144 @@
 {
   "catalogId": "datos-gob-ar",
-  "scoredAt": "2026-08-01T08:02:29.645Z",
+  "scoredAt": "2026-08-02T08:04:18.122Z",
   "datasetCount": 1235,
   "datasets": [
+    {
+      "datasetId": "datos-gob-ar:actividad-energetica1",
+      "title": "Actividad energética",
+      "organization": "Subsecretaría de Ambiente",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 79,
+            "tagCount": 1,
+            "resourceCount": 6
+          },
+          "calculatedAt": "2026-08-01T08:02:29.645Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.999,
+          "evidence": {
+            "modifiedAt": "2026-07-31T23:01:59.994357",
+            "daysSinceModified": 0,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-01T08:02:29.645Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 6,
+            "formatDistribution": {
+              "CSV": 6
+            }
+          },
+          "calculatedAt": "2026-08-01T08:02:29.645Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 6,
+            "checked": 6,
+            "accessible": 6
+          },
+          "calculatedAt": "2026-08-01T08:02:31.552Z"
+        }
+      ],
+      "lastChecked": "2026-08-01T08:02:29.645Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:deteccion-satelital-de-venteos",
+      "title": "Detección Satelital de Venteos",
+      "organization": "Secretaría de Energía",
+      "overall": 0.767,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 254,
+            "tagCount": 6,
+            "resourceCount": 151
+          },
+          "calculatedAt": "2026-08-01T08:02:42.230Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.999,
+          "evidence": {
+            "modifiedAt": "2026-07-31T23:01:36.432837",
+            "daysSinceModified": 0,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-01T08:02:42.230Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "PDF",
+              "CSV",
+              "SHP"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 151,
+            "formatDistribution": {
+              "PDF": 149,
+              "CSV": 1,
+              "SHP": 1
+            }
+          },
+          "calculatedAt": "2026-08-01T08:02:42.230Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.304,
+          "evidence": {
+            "resourceCount": 151,
+            "checked": 151,
+            "accessible": 46
+          },
+          "calculatedAt": "2026-08-01T08:02:59.525Z"
+        }
+      ],
+      "lastChecked": "2026-08-01T08:02:29.645Z"
+    },
     {
       "datasetId": "datos-gob-ar:indice-de-precios-internos-al-por-mayor-ipim-dic-2015-1001",
       "title": "Índice de Precios Internos al por Mayor (IPIM). Dic-2015 = 100",
@@ -17696,76 +17832,6 @@
       "lastChecked": "2026-07-31T08:32:31.578Z"
     },
     {
-      "datasetId": "datos-gob-ar:trayectoria-de-pozos",
-      "title": "Trayectorias de Pozo Vaca Muerta",
-      "organization": "Secretaría de Energía",
-      "overall": 0.88,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 82,
-            "tagCount": 4,
-            "resourceCount": 3
-          },
-          "calculatedAt": "2026-07-31T08:35:16.319Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-07-30T19:52:15.730601",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-07-31T08:35:16.319Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "SHP",
-              "PDF"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 3,
-            "formatDistribution": {
-              "CSV": 1,
-              "SHP": 1,
-              "PDF": 1
-            }
-          },
-          "calculatedAt": "2026-07-31T08:35:16.319Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.667,
-          "evidence": {
-            "resourceCount": 3,
-            "checked": 3,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-07-31T08:35:16.758Z"
-        }
-      ],
-      "lastChecked": "2026-07-31T08:32:31.578Z"
-    },
-    {
       "datasetId": "datos-gob-ar:permer-ii",
       "title": "PERMER II",
       "organization": "Secretaría de Energía",
@@ -18903,74 +18969,6 @@
             "accessible": 0
           },
           "calculatedAt": "2026-07-31T08:35:29.422Z"
-        }
-      ],
-      "lastChecked": "2026-07-31T08:32:31.578Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:produccion-hidrocarburos-lotes-de-explotacion",
-      "title": "Producción de hidrocarburos - Lotes de Explotación",
-      "organization": "Secretaría de Energía",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 160,
-            "tagCount": 6,
-            "resourceCount": 2
-          },
-          "calculatedAt": "2026-07-31T08:35:29.423Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-07-30T19:52:04.261251",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-07-31T08:35:29.423Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "SHP",
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 2,
-            "formatDistribution": {
-              "SHP": 1,
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-07-31T08:35:29.423Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-07-31T08:35:29.759Z"
         }
       ],
       "lastChecked": "2026-07-31T08:32:31.578Z"
@@ -21982,74 +21980,6 @@
       "lastChecked": "2026-07-31T08:32:31.578Z"
     },
     {
-      "datasetId": "datos-gob-ar:instalaciones-hidrocarburos-ductos-res-319-93",
-      "title": "Ductos de hidrocarburos y agua (Res. 319/93)",
-      "organization": "Secretaría de Energía",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 424,
-            "tagCount": 6,
-            "resourceCount": 2
-          },
-          "calculatedAt": "2026-07-31T08:35:50.046Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-07-30T19:51:38.934349",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-07-31T08:35:50.046Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "SHP"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 2,
-            "formatDistribution": {
-              "CSV": 1,
-              "SHP": 1
-            }
-          },
-          "calculatedAt": "2026-07-31T08:35:50.046Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-07-31T08:35:50.415Z"
-        }
-      ],
-      "lastChecked": "2026-07-31T08:32:31.578Z"
-    },
-    {
       "datasetId": "datos-gob-ar:inversiones-en-mercado-de-hidrocarburos-upstream",
       "title": "Inversiones en mercado de hidrocarburos upstream",
       "organization": "Secretaría de Energía",
@@ -22179,76 +22109,6 @@
             "accessible": 25
           },
           "calculatedAt": "2026-07-31T08:35:51.912Z"
-        }
-      ],
-      "lastChecked": "2026-07-31T08:32:31.578Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:produccion-hidrocarburos-concesiones-de-explotacion",
-      "title": "Producción de hidrocarburos - Concesiones de Explotación",
-      "organization": "Secretaría de Energía",
-      "overall": 0.88,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 191,
-            "tagCount": 6,
-            "resourceCount": 3
-          },
-          "calculatedAt": "2026-07-31T08:35:51.912Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-07-30T19:51:36.259449",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-07-31T08:35:51.912Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "SHP",
-              "CSV",
-              "PHP"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 3,
-            "formatDistribution": {
-              "SHP": 1,
-              "CSV": 1,
-              "PHP": 1
-            }
-          },
-          "calculatedAt": "2026-07-31T08:35:51.912Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.667,
-          "evidence": {
-            "resourceCount": 3,
-            "checked": 3,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-07-31T08:35:52.355Z"
         }
       ],
       "lastChecked": "2026-07-31T08:32:31.578Z"
@@ -24144,74 +24004,6 @@
       "lastChecked": "2026-07-31T08:32:31.578Z"
     },
     {
-      "datasetId": "datos-gob-ar:exploracion-hidrocarburos-permisos-de-exploracion",
-      "title": "Exploración de hidrocarburos - Permisos de Exploración",
-      "organization": "Secretaría de Energía",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 188,
-            "tagCount": 3,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-07-31T08:36:25.431Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-07-30T19:51:14.015021",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-07-31T08:36:25.431Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "SHP"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "CSV": 2,
-              "SHP": 2
-            }
-          },
-          "calculatedAt": "2026-07-31T08:36:25.431Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-07-31T08:36:25.820Z"
-        }
-      ],
-      "lastChecked": "2026-07-31T08:32:31.578Z"
-    },
-    {
       "datasetId": "datos-gob-ar:disponibilidad-de-petroleo-a-fin-de-mes",
       "title": "Disponibilidad de petróleo a fin de mes",
       "organization": "Secretaría de Energía",
@@ -25082,74 +24874,6 @@
       "lastChecked": "2026-07-31T08:32:31.578Z"
     },
     {
-      "datasetId": "datos-gob-ar:produccion-de-petroleo-y-gas-tablas-dinamicas",
-      "title": "Producción de Petróleo y Gas (SESCO)",
-      "organization": "Secretaría de Energía",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 37,
-            "tagCount": 6,
-            "resourceCount": 41
-          },
-          "calculatedAt": "2026-07-31T08:36:34.483Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-07-30T19:51:06.169559",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-07-31T08:36:34.483Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "ZIP",
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 41,
-            "formatDistribution": {
-              "ZIP": 4,
-              "CSV": 37
-            }
-          },
-          "calculatedAt": "2026-07-31T08:36:34.483Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 41,
-            "checked": 41,
-            "accessible": 41
-          },
-          "calculatedAt": "2026-07-31T08:36:36.131Z"
-        }
-      ],
-      "lastChecked": "2026-07-31T08:32:31.578Z"
-    },
-    {
       "datasetId": "datos-gob-ar:elaboracion-de-combustibles",
       "title": "Elaboración de combustibles",
       "organization": "Secretaría de Energía",
@@ -25277,74 +25001,6 @@
             "accessible": 3
           },
           "calculatedAt": "2026-07-31T08:36:37.012Z"
-        }
-      ],
-      "lastChecked": "2026-07-31T08:32:31.578Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:produccion-hidrocarburos-puntos-de-venteo-declarados",
-      "title": "Producción de hidrocarburos - Puntos de Venteo Declarados",
-      "organization": "Secretaría de Energía",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 181,
-            "tagCount": 3,
-            "resourceCount": 2
-          },
-          "calculatedAt": "2026-07-31T08:36:37.012Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-07-30T19:51:05.082915",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-07-31T08:36:37.012Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "SHP"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 2,
-            "formatDistribution": {
-              "CSV": 1,
-              "SHP": 1
-            }
-          },
-          "calculatedAt": "2026-07-31T08:36:37.012Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-07-31T08:36:37.354Z"
         }
       ],
       "lastChecked": "2026-07-31T08:32:31.578Z"
@@ -27965,74 +27621,6 @@
       "lastChecked": "2026-07-31T08:32:31.578Z"
     },
     {
-      "datasetId": "datos-gob-ar:exploracion-hidrocarburos-sismicas-3d",
-      "title": "Exploración de hidrocarburos - Inventario de Sísmicas 3D",
-      "organization": "Secretaría de Energía",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 165,
-            "tagCount": 4,
-            "resourceCount": 2
-          },
-          "calculatedAt": "2026-07-31T08:36:54.572Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-07-30T19:50:49.314488",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-07-31T08:36:54.572Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "SHP"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 2,
-            "formatDistribution": {
-              "CSV": 1,
-              "SHP": 1
-            }
-          },
-          "calculatedAt": "2026-07-31T08:36:54.572Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-07-31T08:36:54.908Z"
-        }
-      ],
-      "lastChecked": "2026-07-31T08:32:31.578Z"
-    },
-    {
       "datasetId": "datos-gob-ar:limites-maritimos-internacionales-onu-2016",
       "title": "Límites maritimos internacionales ONU 2016",
       "organization": "Secretaría de Energía",
@@ -28502,74 +28090,6 @@
             "accessible": 2
           },
           "calculatedAt": "2026-07-31T08:36:57.448Z"
-        }
-      ],
-      "lastChecked": "2026-07-31T08:32:31.578Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:exploracion-hidrocarburos-lineas-sismicas-2d",
-      "title": "Exploración de Hidrocarburos -  Inventario de Líneas Sísmicas 2D",
-      "organization": "Secretaría de Energía",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 165,
-            "tagCount": 5,
-            "resourceCount": 2
-          },
-          "calculatedAt": "2026-07-31T08:36:58.689Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-07-30T19:50:45.697805",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-07-31T08:36:58.689Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "SHP"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 2,
-            "formatDistribution": {
-              "CSV": 1,
-              "SHP": 1
-            }
-          },
-          "calculatedAt": "2026-07-31T08:36:58.689Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-07-31T08:36:59.061Z"
         }
       ],
       "lastChecked": "2026-07-31T08:32:31.578Z"
@@ -40153,6 +39673,2216 @@
         }
       ],
       "lastChecked": "2026-07-31T08:32:31.578Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:arroz-siembra-cosecha-produccion-rendimiento",
+      "title": "Arroz - siembra, cosecha, producción, rendimiento",
+      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
+      "overall": 0.983,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 126,
+            "tagCount": 7,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-08-01T08:03:05.111Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.994,
+          "evidence": {
+            "modifiedAt": "2026-07-30T19:42:39.489929",
+            "daysSinceModified": 2,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-01T08:03:05.111Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "CSV": 2
+            }
+          },
+          "calculatedAt": "2026-08-01T08:03:05.111Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-08-01T08:03:06.222Z"
+        }
+      ],
+      "lastChecked": "2026-08-01T08:02:29.645Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:precio-promedio-por-kg-solidos-utiles-pagados-al-productor",
+      "title": "Lácteos - Precio promedio por kilo de sólidos útiles",
+      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
+      "overall": 0.983,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 127,
+            "tagCount": 3,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-08-01T08:03:06.222Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.994,
+          "evidence": {
+            "modifiedAt": "2026-07-30T19:42:39.116187",
+            "daysSinceModified": 2,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-01T08:03:06.222Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-08-01T08:03:06.222Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-08-01T08:03:06.909Z"
+        }
+      ],
+      "lastChecked": "2026-08-01T08:02:29.645Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:lacteos-exportaciones",
+      "title": "Lácteos - Exportaciones",
+      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
+      "overall": 0.983,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 44,
+            "tagCount": 9,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-08-01T08:03:06.909Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.994,
+          "evidence": {
+            "modifiedAt": "2026-07-30T19:42:38.632003",
+            "daysSinceModified": 2,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-01T08:03:06.909Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-08-01T08:03:06.909Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-08-01T08:03:07.632Z"
+        }
+      ],
+      "lastChecked": "2026-08-01T08:02:29.645Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:censo-mano-de-obra-cna-02",
+      "title": "Censo - Mano de obra CNA 02",
+      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
+      "overall": 0.983,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 118,
+            "tagCount": 7,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-08-01T08:03:07.632Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.994,
+          "evidence": {
+            "modifiedAt": "2026-07-30T19:42:38.139695",
+            "daysSinceModified": 2,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-01T08:03:07.632Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-08-01T08:03:07.632Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-08-01T08:03:08.346Z"
+        }
+      ],
+      "lastChecked": "2026-08-01T08:02:29.645Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:datos-comercio-exterior",
+      "title": "Comercio exterior - Consulta de datos",
+      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
+      "overall": 0.405,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 115,
+            "tagCount": 7,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-08-01T08:03:08.346Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.994,
+          "evidence": {
+            "modifiedAt": "2026-07-30T19:42:37.820362",
+            "daysSinceModified": 2,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-01T08:03:08.346Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.1,
+          "evidence": {
+            "formats": [
+              "URL"
+            ],
+            "bestFormat": "URL",
+            "bestFormatScore": 0.1,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "URL": 1
+            }
+          },
+          "calculatedAt": "2026-08-01T08:03:08.347Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 0
+          },
+          "calculatedAt": "2026-08-01T08:03:08.797Z"
+        }
+      ],
+      "lastChecked": "2026-08-01T08:02:29.645Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:sio-carnes",
+      "title": "SIO Carnes",
+      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
+      "overall": 0.983,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 309,
+            "tagCount": 25,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-08-01T08:03:08.797Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.994,
+          "evidence": {
+            "modifiedAt": "2026-07-30T19:42:37.420405",
+            "daysSinceModified": 2,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-01T08:03:08.797Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "JPEG"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "CSV": 3,
+              "JPEG": 1
+            }
+          },
+          "calculatedAt": "2026-08-01T08:03:08.797Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-08-01T08:03:09.542Z"
+        }
+      ],
+      "lastChecked": "2026-08-01T08:02:29.645Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:produccion-bioetanol-por-insumo-utilizado",
+      "title": "Biocombustible - Producción por insumo bioetanol",
+      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
+      "overall": 0.983,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 93,
+            "tagCount": 6,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-08-01T08:03:09.542Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.994,
+          "evidence": {
+            "modifiedAt": "2026-07-30T19:42:37.057705",
+            "daysSinceModified": 2,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-01T08:03:09.542Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "CSV": 2
+            }
+          },
+          "calculatedAt": "2026-08-01T08:03:09.542Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-08-01T08:03:10.251Z"
+        }
+      ],
+      "lastChecked": "2026-08-01T08:02:29.645Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:produccion-de-carne-aviar",
+      "title": "Aves - Producción de carne aviar",
+      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
+      "overall": 0.983,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 195,
+            "tagCount": 5,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-08-01T08:03:10.251Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.994,
+          "evidence": {
+            "modifiedAt": "2026-07-30T19:42:36.748750",
+            "daysSinceModified": 2,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-01T08:03:10.251Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-08-01T08:03:10.251Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-08-01T08:03:10.984Z"
+        }
+      ],
+      "lastChecked": "2026-08-01T08:02:29.645Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:indice-novillo-sio-carnes-insc",
+      "title": "SIO Carnes - Índice Novillo INSC",
+      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
+      "overall": 0.983,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 358,
+            "tagCount": 8,
+            "resourceCount": 3
+          },
+          "calculatedAt": "2026-08-01T08:03:10.984Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.994,
+          "evidence": {
+            "modifiedAt": "2026-07-30T19:42:36.379924",
+            "daysSinceModified": 2,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-01T08:03:10.984Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "JPEG"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 3,
+            "formatDistribution": {
+              "CSV": 1,
+              "JPEG": 2
+            }
+          },
+          "calculatedAt": "2026-08-01T08:03:10.985Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 3,
+            "checked": 3,
+            "accessible": 3
+          },
+          "calculatedAt": "2026-08-01T08:03:11.700Z"
+        }
+      ],
+      "lastChecked": "2026-08-01T08:02:29.645Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:fitosanitarios-provincias-y-autoridades-competentes-ley-27279",
+      "title": "Producciones Sostenibles - Autoridades provinciales competentes de aplicación Ley 27.279",
+      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
+      "overall": 0.983,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 186,
+            "tagCount": 3,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-08-01T08:03:11.700Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.994,
+          "evidence": {
+            "modifiedAt": "2026-07-30T19:42:36.070510",
+            "daysSinceModified": 2,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-01T08:03:11.700Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-08-01T08:03:11.700Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-08-01T08:03:12.235Z"
+        }
+      ],
+      "lastChecked": "2026-08-01T08:02:29.645Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:existencias-lacteas-periodo-comprendido-entre-anos-1998-2008",
+      "title": "Lácteos - Existencias entre los años 1998 y 2008",
+      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
+      "overall": 0.983,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 87,
+            "tagCount": 15,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-08-01T08:03:12.235Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.994,
+          "evidence": {
+            "modifiedAt": "2026-07-30T19:42:35.743629",
+            "daysSinceModified": 2,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-01T08:03:12.235Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "CSV": 2
+            }
+          },
+          "calculatedAt": "2026-08-01T08:03:12.235Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-08-01T08:03:12.796Z"
+        }
+      ],
+      "lastChecked": "2026-08-01T08:02:29.645Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:registro-nacional-de-productores-apicolas",
+      "title": "Apicultura - Registro Nacional de Productores Apícolas",
+      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
+      "overall": 0.91,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 199,
+            "tagCount": 6,
+            "resourceCount": 3
+          },
+          "calculatedAt": "2026-08-01T08:03:12.796Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.994,
+          "evidence": {
+            "modifiedAt": "2026-07-30T19:42:35.376939",
+            "daysSinceModified": 2,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-01T08:03:12.796Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "URL"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 3,
+            "formatDistribution": {
+              "CSV": 2,
+              "URL": 1
+            }
+          },
+          "calculatedAt": "2026-08-01T08:03:12.796Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.767,
+          "evidence": {
+            "resourceCount": 3,
+            "checked": 3,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-08-01T08:03:13.598Z"
+        }
+      ],
+      "lastChecked": "2026-08-01T08:02:29.645Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:integrantes-de-los-nucleos-de-agricultura-familiar-naf",
+      "title": "Agricultura Familiar - Integrantes de los núcleos (NAF)",
+      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
+      "overall": 0.983,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 244,
+            "tagCount": 5,
+            "resourceCount": 3
+          },
+          "calculatedAt": "2026-08-01T08:03:13.598Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.994,
+          "evidence": {
+            "modifiedAt": "2026-07-30T19:42:35.004618",
+            "daysSinceModified": 2,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-01T08:03:13.598Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "DOCX"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 3,
+            "formatDistribution": {
+              "CSV": 2,
+              "DOCX": 1
+            }
+          },
+          "calculatedAt": "2026-08-01T08:03:13.598Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 3,
+            "checked": 3,
+            "accessible": 3
+          },
+          "calculatedAt": "2026-08-01T08:03:14.489Z"
+        }
+      ],
+      "lastChecked": "2026-08-01T08:02:29.645Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:recuento-de-celulas-somaticas-lecheria",
+      "title": "Lácteos - Calidad higiénico sanitaria de la leche cruda a nivel departamental",
+      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
+      "overall": 0.91,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 162,
+            "tagCount": 9,
+            "resourceCount": 3
+          },
+          "calculatedAt": "2026-08-01T08:03:14.489Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.994,
+          "evidence": {
+            "modifiedAt": "2026-07-30T19:42:34.637162",
+            "daysSinceModified": 2,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-01T08:03:14.489Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "URL"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 3,
+            "formatDistribution": {
+              "CSV": 2,
+              "URL": 1
+            }
+          },
+          "calculatedAt": "2026-08-01T08:03:14.489Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.767,
+          "evidence": {
+            "resourceCount": 3,
+            "checked": 3,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-08-01T08:03:15.330Z"
+        }
+      ],
+      "lastChecked": "2026-08-01T08:02:29.645Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:resoluciones-de-pago",
+      "title": "Forestales - Ley 25.080 inversiones para bosques cultivados",
+      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
+      "overall": 0.983,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 108,
+            "tagCount": 7,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-08-01T08:03:15.330Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.994,
+          "evidence": {
+            "modifiedAt": "2026-07-30T19:42:34.305784",
+            "daysSinceModified": 2,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-01T08:03:15.330Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-08-01T08:03:15.330Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-08-01T08:03:15.868Z"
+        }
+      ],
+      "lastChecked": "2026-08-01T08:02:29.645Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:senasa-existencias-caprinas",
+      "title": "SENASA - Existencias caprinas",
+      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
+      "overall": 0.983,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 88,
+            "tagCount": 6,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-08-01T08:03:15.869Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.994,
+          "evidence": {
+            "modifiedAt": "2026-07-30T19:42:33.967477",
+            "daysSinceModified": 2,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-01T08:03:15.869Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "CSV": 2
+            }
+          },
+          "calculatedAt": "2026-08-01T08:03:15.869Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-08-01T08:03:16.463Z"
+        }
+      ],
+      "lastChecked": "2026-08-01T08:02:29.645Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:senasa-existencias-ovinas",
+      "title": "SENASA - Existencias ovinas",
+      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
+      "overall": 0.983,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 86,
+            "tagCount": 6,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-08-01T08:03:16.463Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.994,
+          "evidence": {
+            "modifiedAt": "2026-07-30T19:42:33.633451",
+            "daysSinceModified": 2,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-01T08:03:16.463Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "CSV": 2
+            }
+          },
+          "calculatedAt": "2026-08-01T08:03:16.463Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-08-01T08:03:17.031Z"
+        }
+      ],
+      "lastChecked": "2026-08-01T08:02:29.645Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:trigo-siembra-cosecha-produccion-rendimiento",
+      "title": "Trigo - siembra, cosecha, producción, rendimiento",
+      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
+      "overall": 0.983,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 126,
+            "tagCount": 5,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-08-01T08:03:17.031Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.994,
+          "evidence": {
+            "modifiedAt": "2026-07-30T19:42:33.296965",
+            "daysSinceModified": 2,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-01T08:03:17.031Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "CSV": 2
+            }
+          },
+          "calculatedAt": "2026-08-01T08:03:17.031Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-08-01T08:03:17.636Z"
+        }
+      ],
+      "lastChecked": "2026-08-01T08:02:29.645Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:senasa-movimientos-productos-y-subproductos-animales",
+      "title": "SENASA - Movimientos subproductos animales",
+      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
+      "overall": 0.983,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 99,
+            "tagCount": 8,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-08-01T08:03:17.636Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.994,
+          "evidence": {
+            "modifiedAt": "2026-07-30T19:42:32.983716",
+            "daysSinceModified": 2,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-01T08:03:17.636Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-08-01T08:03:17.636Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-08-01T08:03:18.177Z"
+        }
+      ],
+      "lastChecked": "2026-08-01T08:02:29.645Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:indicadores-economicos-para-ganaderia-bovina",
+      "title": "Ganadería - Indicadores económicos bovinos",
+      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
+      "overall": 0.983,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 267,
+            "tagCount": 9,
+            "resourceCount": 5
+          },
+          "calculatedAt": "2026-08-01T08:03:18.177Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.994,
+          "evidence": {
+            "modifiedAt": "2026-07-30T19:42:32.571949",
+            "daysSinceModified": 2,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-01T08:03:18.177Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "JPEG"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 5,
+            "formatDistribution": {
+              "CSV": 4,
+              "JPEG": 1
+            }
+          },
+          "calculatedAt": "2026-08-01T08:03:18.177Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 5,
+            "checked": 5,
+            "accessible": 5
+          },
+          "calculatedAt": "2026-08-01T08:03:18.847Z"
+        }
+      ],
+      "lastChecked": "2026-08-01T08:02:29.645Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:explotaciones-agropecuarias-segun-censo-nacional-agropecuario-anos-1988-2002-2008",
+      "title": "Censo - Explotaciones agropecuarias CNA 88, 02 y 08",
+      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
+      "overall": 0.983,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 172,
+            "tagCount": 8,
+            "resourceCount": 3
+          },
+          "calculatedAt": "2026-08-01T08:03:18.847Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.994,
+          "evidence": {
+            "modifiedAt": "2026-07-30T19:42:32.206358",
+            "daysSinceModified": 2,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-01T08:03:18.847Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 3,
+            "formatDistribution": {
+              "CSV": 3
+            }
+          },
+          "calculatedAt": "2026-08-01T08:03:18.847Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 3,
+            "checked": 3,
+            "accessible": 3
+          },
+          "calculatedAt": "2026-08-01T08:03:19.440Z"
+        }
+      ],
+      "lastChecked": "2026-08-01T08:02:29.645Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:produccion-nacional-lactea-por-mes-y-por-anio",
+      "title": "Lácteos - Producción nacional de leche por mes y por año",
+      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
+      "overall": 0.827,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 66,
+            "tagCount": 5,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-08-01T08:03:19.440Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.994,
+          "evidence": {
+            "modifiedAt": "2026-07-30T19:42:31.862414",
+            "daysSinceModified": 2,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-01T08:03:19.440Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "HTML"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "CSV": 1,
+              "HTML": 1
+            }
+          },
+          "calculatedAt": "2026-08-01T08:03:19.440Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.5,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-08-01T08:03:19.981Z"
+        }
+      ],
+      "lastChecked": "2026-08-01T08:02:29.645Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:precio-promedio-litro-leche-pagado-al-productor",
+      "title": "Lácteos - Precio promedio del litro de leche",
+      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
+      "overall": 0.983,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 94,
+            "tagCount": 4,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-08-01T08:03:19.981Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.994,
+          "evidence": {
+            "modifiedAt": "2026-07-30T19:42:31.514527",
+            "daysSinceModified": 2,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-01T08:03:19.982Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "CSV": 2
+            }
+          },
+          "calculatedAt": "2026-08-01T08:03:19.982Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-08-01T08:03:20.682Z"
+        }
+      ],
+      "lastChecked": "2026-08-01T08:02:29.645Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:censo-maquinaria-cna-02",
+      "title": "Censo - Maquinaria CNA 02",
+      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
+      "overall": 0.983,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 123,
+            "tagCount": 6,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-08-01T08:03:20.682Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.994,
+          "evidence": {
+            "modifiedAt": "2026-07-30T19:42:31.132799",
+            "daysSinceModified": 2,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-01T08:03:20.682Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "CSV": 4
+            }
+          },
+          "calculatedAt": "2026-08-01T08:03:20.682Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-08-01T08:03:21.296Z"
+        }
+      ],
+      "lastChecked": "2026-08-01T08:02:29.645Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:cebada-siembra-cosecha-produccion-rendimiento",
+      "title": "Cebada - siembra, cosecha, producción, rendimiento",
+      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
+      "overall": 0.983,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 127,
+            "tagCount": 9,
+            "resourceCount": 6
+          },
+          "calculatedAt": "2026-08-01T08:03:21.296Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.994,
+          "evidence": {
+            "modifiedAt": "2026-07-30T19:42:30.713040",
+            "daysSinceModified": 2,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-01T08:03:21.296Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 6,
+            "formatDistribution": {
+              "CSV": 6
+            }
+          },
+          "calculatedAt": "2026-08-01T08:03:21.296Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 6,
+            "checked": 6,
+            "accessible": 6
+          },
+          "calculatedAt": "2026-08-01T08:03:22.140Z"
+        }
+      ],
+      "lastChecked": "2026-08-01T08:02:29.645Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:produccion-nacional-fiscalizada-por-especies-ubicacion-registrada-inase",
+      "title": "INASE - Producción de semillas por especies y ubicación",
+      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
+      "overall": 0.983,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 161,
+            "tagCount": 28,
+            "resourceCount": 3
+          },
+          "calculatedAt": "2026-08-01T08:03:22.140Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.994,
+          "evidence": {
+            "modifiedAt": "2026-07-30T19:42:30.333890",
+            "daysSinceModified": 2,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-01T08:03:22.140Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 3,
+            "formatDistribution": {
+              "CSV": 3
+            }
+          },
+          "calculatedAt": "2026-08-01T08:03:22.140Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 3,
+            "checked": 3,
+            "accessible": 3
+          },
+          "calculatedAt": "2026-08-01T08:03:22.738Z"
+        }
+      ],
+      "lastChecked": "2026-08-01T08:02:29.645Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:senasa-movimientos-avicolas",
+      "title": "SENASA - Movimientos avícolas",
+      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
+      "overall": 0.983,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 113,
+            "tagCount": 14,
+            "resourceCount": 5
+          },
+          "calculatedAt": "2026-08-01T08:03:22.738Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.994,
+          "evidence": {
+            "modifiedAt": "2026-07-30T19:42:29.738724",
+            "daysSinceModified": 2,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-01T08:03:22.738Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 5,
+            "formatDistribution": {
+              "CSV": 5
+            }
+          },
+          "calculatedAt": "2026-08-01T08:03:22.738Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 5,
+            "checked": 5,
+            "accessible": 5
+          },
+          "calculatedAt": "2026-08-01T08:03:23.438Z"
+        }
+      ],
+      "lastChecked": "2026-08-01T08:02:29.645Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:puntos-digitales1",
+      "title": "Puntos Digitales",
+      "organization": "Jefatura de Gabinete de Ministros",
+      "overall": 0.983,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 218,
+            "tagCount": 5,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-08-01T08:03:23.438Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.994,
+          "evidence": {
+            "modifiedAt": "2026-07-30T17:25:09.458657",
+            "daysSinceModified": 2,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-01T08:03:23.438Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "XLSX"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "CSV": 1,
+              "XLSX": 1
+            }
+          },
+          "calculatedAt": "2026-08-01T08:03:23.438Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-08-01T08:03:25.636Z"
+        }
+      ],
+      "lastChecked": "2026-08-01T08:02:29.645Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:unidades-territoriales",
+      "title": "Unidades Territoriales",
+      "organization": "Instituto Geográfico Nacional (IGN)",
+      "overall": 0.939,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 0.9,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [
+              "license"
+            ],
+            "descriptionLength": 395,
+            "tagCount": 7,
+            "resourceCount": 16
+          },
+          "calculatedAt": "2026-08-01T08:03:25.636Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.993,
+          "evidence": {
+            "modifiedAt": "2026-07-30T14:14:50.601895",
+            "daysSinceModified": 2,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-01T08:03:25.636Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "ZIP",
+              "KMZ",
+              "PDF"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 16,
+            "formatDistribution": {
+              "CSV": 4,
+              "ZIP": 4,
+              "KMZ": 4,
+              "PDF": 4
+            }
+          },
+          "calculatedAt": "2026-08-01T08:03:25.636Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.9,
+          "evidence": {
+            "resourceCount": 16,
+            "checked": 16,
+            "accessible": 16
+          },
+          "calculatedAt": "2026-08-01T08:03:28.501Z"
+        }
+      ],
+      "lastChecked": "2026-08-01T08:02:29.645Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:base-de-datos-legislativos-infoleg",
+      "title": "Base Infoleg de Normativa Nacional",
+      "organization": "Ministerio de Justicia",
+      "overall": 0.983,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 287,
+            "tagCount": 8,
+            "resourceCount": 7
+          },
+          "calculatedAt": "2026-08-01T08:03:28.501Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.993,
+          "evidence": {
+            "modifiedAt": "2026-07-30T14:12:50.338824",
+            "daysSinceModified": 2,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-01T08:03:28.501Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "GRÁFICO",
+              "ZIP"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 7,
+            "formatDistribution": {
+              "CSV": 3,
+              "GRÁFICO": 1,
+              "ZIP": 3
+            }
+          },
+          "calculatedAt": "2026-08-01T08:03:28.501Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 7,
+            "checked": 7,
+            "accessible": 7
+          },
+          "calculatedAt": "2026-08-01T08:03:30.833Z"
+        }
+      ],
+      "lastChecked": "2026-08-01T08:02:29.645Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:linea-137-victimas-de-violencia-sexual",
+      "title": "Línea 137 - víctimas de violencia sexual - llamados e intervenciones domiciliarias",
+      "organization": "Ministerio de Justicia",
+      "overall": 0.983,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 163,
+            "tagCount": 12,
+            "resourceCount": 3
+          },
+          "calculatedAt": "2026-08-01T08:03:30.833Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.993,
+          "evidence": {
+            "modifiedAt": "2026-07-30T14:10:37.337471",
+            "daysSinceModified": 2,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-01T08:03:30.833Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "ZIP"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 3,
+            "formatDistribution": {
+              "CSV": 2,
+              "ZIP": 1
+            }
+          },
+          "calculatedAt": "2026-08-01T08:03:30.833Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 3,
+            "checked": 3,
+            "accessible": 3
+          },
+          "calculatedAt": "2026-08-01T08:03:32.481Z"
+        }
+      ],
+      "lastChecked": "2026-08-01T08:02:29.645Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:transferencias-de-autos",
+      "title": "Transferencias de autos",
+      "organization": "Ministerio de Justicia",
+      "overall": 0.97,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 0.9,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [
+              "license"
+            ],
+            "descriptionLength": 133,
+            "tagCount": 9,
+            "resourceCount": 10
+          },
+          "calculatedAt": "2026-08-01T08:03:32.481Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.993,
+          "evidence": {
+            "modifiedAt": "2026-07-30T13:28:21.368870",
+            "daysSinceModified": 2,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-01T08:03:32.481Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "ZIP"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 10,
+            "formatDistribution": {
+              "CSV": 1,
+              "ZIP": 9
+            }
+          },
+          "calculatedAt": "2026-08-01T08:03:32.481Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 10,
+            "checked": 10,
+            "accessible": 10
+          },
+          "calculatedAt": "2026-08-01T08:03:34.198Z"
+        }
+      ],
+      "lastChecked": "2026-08-01T08:02:29.645Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:plataforma-de-tramites-a-distancia-tad1",
+      "title": "Plataforma de Trámites a Distancia - TAD",
+      "organization": "Jefatura de Gabinete de Ministros",
+      "overall": 0.983,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 305,
+            "tagCount": 4,
+            "resourceCount": 5
+          },
+          "calculatedAt": "2026-08-01T08:03:34.198Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.993,
+          "evidence": {
+            "modifiedAt": "2026-07-30T12:52:07.974719",
+            "daysSinceModified": 2,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-01T08:03:34.198Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 5,
+            "formatDistribution": {
+              "CSV": 5
+            }
+          },
+          "calculatedAt": "2026-08-01T08:03:34.198Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 5,
+            "checked": 5,
+            "accessible": 5
+          },
+          "calculatedAt": "2026-08-01T08:03:35.181Z"
+        }
+      ],
+      "lastChecked": "2026-08-01T08:02:29.645Z"
     },
     {
       "datasetId": "datos-gob-ar:liquidadores-de-siniestros-y-averias",
@@ -80032,10 +81762,10 @@
       "lastChecked": "2026-07-30T08:06:17.794Z"
     },
     {
-      "datasetId": "datos-gob-ar:actividad-energetica1",
-      "title": "Actividad energética",
-      "organization": "Subsecretaría de Ambiente",
-      "overall": 0.984,
+      "datasetId": "datos-gob-ar:produccion-de-petroleo-y-gas-tablas-dinamicas",
+      "title": "Producción de Petróleo y Gas (SESCO)",
+      "organization": "Secretaría de Energía",
+      "overall": 0.931,
       "dimensions": [
         {
           "dimension": "completeness",
@@ -80052,394 +81782,52 @@
               "createdAt"
             ],
             "fieldsMissing": [],
-            "descriptionLength": 79,
-            "tagCount": 1,
-            "resourceCount": 6
+            "descriptionLength": 37,
+            "tagCount": 6,
+            "resourceCount": 41
           },
-          "calculatedAt": "2026-08-01T08:02:29.645Z"
+          "calculatedAt": "2026-08-02T08:04:18.122Z"
         },
         {
           "dimension": "freshness",
-          "score": 0.999,
+          "score": 1,
           "evidence": {
-            "modifiedAt": "2026-07-31T23:01:59.994357",
+            "modifiedAt": "2026-08-02T07:01:07.330288",
             "daysSinceModified": 0,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-08-01T08:02:29.645Z"
+          "calculatedAt": "2026-08-02T08:04:18.122Z"
         },
         {
           "dimension": "structure",
           "score": 0.95,
           "evidence": {
             "formats": [
+              "ZIP",
               "CSV"
             ],
             "bestFormat": "CSV",
             "bestFormatScore": 0.95,
-            "resourceCount": 6,
+            "resourceCount": 41,
             "formatDistribution": {
-              "CSV": 6
+              "ZIP": 4,
+              "CSV": 37
             }
           },
-          "calculatedAt": "2026-08-01T08:02:29.645Z"
+          "calculatedAt": "2026-08-02T08:04:18.122Z"
         },
         {
           "dimension": "accessibility",
-          "score": 1,
+          "score": 0.829,
           "evidence": {
-            "resourceCount": 6,
-            "checked": 6,
-            "accessible": 6
+            "resourceCount": 41,
+            "checked": 41,
+            "accessible": 34
           },
-          "calculatedAt": "2026-08-01T08:02:31.552Z"
+          "calculatedAt": "2026-08-02T08:04:28.092Z"
         }
       ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:produccion-de-petroleo-y-gas-por-pozo",
-      "title": "Producción de petróleo y gas por pozo (Capítulo IV)",
-      "organization": "Secretaría de Energía",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 129,
-            "tagCount": 8,
-            "resourceCount": 53
-          },
-          "calculatedAt": "2026-08-01T08:02:31.552Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.999,
-          "evidence": {
-            "modifiedAt": "2026-07-31T23:01:41.140733",
-            "daysSinceModified": 0,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:02:31.552Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "SHP"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 53,
-            "formatDistribution": {
-              "CSV": 52,
-              "SHP": 1
-            }
-          },
-          "calculatedAt": "2026-08-01T08:02:31.552Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 53,
-            "checked": 53,
-            "accessible": 53
-          },
-          "calculatedAt": "2026-08-01T08:02:41.202Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:comercializacion-hidrocarburos-combustibles-liquidos-terminales-de-despacho",
-      "title": "Comercialización de hidrocarburos - Terminales de despacho de combustibles líquidos (Res. 1102)",
-      "organization": "Secretaría de Energía",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 73,
-            "tagCount": 6,
-            "resourceCount": 2
-          },
-          "calculatedAt": "2026-08-01T08:02:41.203Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.999,
-          "evidence": {
-            "modifiedAt": "2026-07-31T23:01:37.759008",
-            "daysSinceModified": 0,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:02:41.203Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "SHP",
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 2,
-            "formatDistribution": {
-              "SHP": 1,
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-08-01T08:02:41.203Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-08-01T08:02:42.230Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:deteccion-satelital-de-venteos",
-      "title": "Detección Satelital de Venteos",
-      "organization": "Secretaría de Energía",
-      "overall": 0.767,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 254,
-            "tagCount": 6,
-            "resourceCount": 151
-          },
-          "calculatedAt": "2026-08-01T08:02:42.230Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.999,
-          "evidence": {
-            "modifiedAt": "2026-07-31T23:01:36.432837",
-            "daysSinceModified": 0,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:02:42.230Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "PDF",
-              "CSV",
-              "SHP"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 151,
-            "formatDistribution": {
-              "PDF": 149,
-              "CSV": 1,
-              "SHP": 1
-            }
-          },
-          "calculatedAt": "2026-08-01T08:02:42.230Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.304,
-          "evidence": {
-            "resourceCount": 151,
-            "checked": 151,
-            "accessible": 46
-          },
-          "calculatedAt": "2026-08-01T08:02:59.525Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:datos-de-fractura-de-pozos-adjunto-iv",
-      "title": "Datos de fractura de pozos de hidrocarburos (Adjunto IV)",
-      "organization": "Secretaría de Energía",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 427,
-            "tagCount": 7,
-            "resourceCount": 2
-          },
-          "calculatedAt": "2026-08-01T08:02:59.525Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.999,
-          "evidence": {
-            "modifiedAt": "2026-07-31T23:01:35.020666",
-            "daysSinceModified": 0,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:02:59.525Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "PDF"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 2,
-            "formatDistribution": {
-              "CSV": 1,
-              "PDF": 1
-            }
-          },
-          "calculatedAt": "2026-08-01T08:02:59.525Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-08-01T08:03:00.480Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:precios-de-gas-natural",
-      "title": "Precios de Gas Natural",
-      "organization": "Secretaría de Energía",
-      "overall": 0.906,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 22,
-            "tagCount": 3,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-08-01T08:03:00.481Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.999,
-          "evidence": {
-            "modifiedAt": "2026-07-31T23:01:34.609641",
-            "daysSinceModified": 0,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:03:00.481Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "PHP",
-              "CSV",
-              "XLS"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "PHP": 1,
-              "CSV": 2,
-              "XLS": 1
-            }
-          },
-          "calculatedAt": "2026-08-01T08:03:00.481Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.75,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 3
-          },
-          "calculatedAt": "2026-08-01T08:03:01.424Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
+      "lastChecked": "2026-08-02T08:04:18.122Z"
     },
     {
       "datasetId": "datos-gob-ar:transporte-de-hidrocarburos",
@@ -80466,17 +81854,17 @@
             "tagCount": 4,
             "resourceCount": 15
           },
-          "calculatedAt": "2026-08-01T08:03:01.425Z"
+          "calculatedAt": "2026-08-02T08:04:28.093Z"
         },
         {
           "dimension": "freshness",
-          "score": 0.999,
+          "score": 1,
           "evidence": {
-            "modifiedAt": "2026-07-31T23:01:34.108370",
+            "modifiedAt": "2026-08-02T07:01:06.194834",
             "daysSinceModified": 0,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-08-01T08:03:01.425Z"
+          "calculatedAt": "2026-08-02T08:04:28.093Z"
         },
         {
           "dimension": "structure",
@@ -80496,7 +81884,7 @@
               "PHP": 2
             }
           },
-          "calculatedAt": "2026-08-01T08:03:01.425Z"
+          "calculatedAt": "2026-08-02T08:04:28.093Z"
         },
         {
           "dimension": "accessibility",
@@ -80506,10 +81894,696 @@
             "checked": 15,
             "accessible": 15
           },
-          "calculatedAt": "2026-08-01T08:03:03.173Z"
+          "calculatedAt": "2026-08-02T08:04:30.209Z"
         }
       ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
+      "lastChecked": "2026-08-02T08:04:18.122Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:trayectoria-de-pozos",
+      "title": "Trayectorias de Pozo Vaca Muerta",
+      "organization": "Secretaría de Energía",
+      "overall": 0.88,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 82,
+            "tagCount": 4,
+            "resourceCount": 3
+          },
+          "calculatedAt": "2026-08-02T08:04:30.209Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.999,
+          "evidence": {
+            "modifiedAt": "2026-08-02T03:02:06.369061",
+            "daysSinceModified": 0,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-02T08:04:30.209Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "SHP",
+              "PDF"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 3,
+            "formatDistribution": {
+              "CSV": 1,
+              "SHP": 1,
+              "PDF": 1
+            }
+          },
+          "calculatedAt": "2026-08-02T08:04:30.209Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.667,
+          "evidence": {
+            "resourceCount": 3,
+            "checked": 3,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-08-02T08:04:30.760Z"
+        }
+      ],
+      "lastChecked": "2026-08-02T08:04:18.122Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:produccion-hidrocarburos-lotes-de-explotacion",
+      "title": "Producción de hidrocarburos - Lotes de Explotación",
+      "organization": "Secretaría de Energía",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 160,
+            "tagCount": 6,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-08-02T08:04:30.760Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.999,
+          "evidence": {
+            "modifiedAt": "2026-08-02T03:02:05.765809",
+            "daysSinceModified": 0,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-02T08:04:30.760Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "SHP",
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "SHP": 1,
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-08-02T08:04:30.760Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-08-02T08:04:31.138Z"
+        }
+      ],
+      "lastChecked": "2026-08-02T08:04:18.122Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:produccion-de-petroleo-y-gas-por-pozo",
+      "title": "Producción de petróleo y gas por pozo (Capítulo IV)",
+      "organization": "Secretaría de Energía",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 129,
+            "tagCount": 8,
+            "resourceCount": 53
+          },
+          "calculatedAt": "2026-08-02T08:04:31.138Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.999,
+          "evidence": {
+            "modifiedAt": "2026-08-02T03:02:03.810902",
+            "daysSinceModified": 0,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-02T08:04:31.138Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "SHP"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 53,
+            "formatDistribution": {
+              "CSV": 52,
+              "SHP": 1
+            }
+          },
+          "calculatedAt": "2026-08-02T08:04:31.138Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 53,
+            "checked": 53,
+            "accessible": 53
+          },
+          "calculatedAt": "2026-08-02T08:04:34.721Z"
+        }
+      ],
+      "lastChecked": "2026-08-02T08:04:18.122Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:comercializacion-hidrocarburos-combustibles-liquidos-terminales-de-despacho",
+      "title": "Comercialización de hidrocarburos - Terminales de despacho de combustibles líquidos (Res. 1102)",
+      "organization": "Secretaría de Energía",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 73,
+            "tagCount": 6,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-08-02T08:04:34.721Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.999,
+          "evidence": {
+            "modifiedAt": "2026-08-02T03:02:02.290038",
+            "daysSinceModified": 0,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-02T08:04:34.721Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "SHP",
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "SHP": 1,
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-08-02T08:04:34.721Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-08-02T08:04:35.100Z"
+        }
+      ],
+      "lastChecked": "2026-08-02T08:04:18.122Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:instalaciones-hidrocarburos-ductos-res-319-93",
+      "title": "Ductos de hidrocarburos y agua (Res. 319/93)",
+      "organization": "Secretaría de Energía",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 424,
+            "tagCount": 6,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-08-02T08:04:35.100Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.999,
+          "evidence": {
+            "modifiedAt": "2026-08-02T03:02:01.484764",
+            "daysSinceModified": 0,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-02T08:04:35.100Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "SHP"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "CSV": 1,
+              "SHP": 1
+            }
+          },
+          "calculatedAt": "2026-08-02T08:04:35.100Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-08-02T08:04:35.493Z"
+        }
+      ],
+      "lastChecked": "2026-08-02T08:04:18.122Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:produccion-hidrocarburos-concesiones-de-explotacion",
+      "title": "Producción de hidrocarburos - Concesiones de Explotación",
+      "organization": "Secretaría de Energía",
+      "overall": 0.88,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 191,
+            "tagCount": 6,
+            "resourceCount": 3
+          },
+          "calculatedAt": "2026-08-02T08:04:35.493Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.999,
+          "evidence": {
+            "modifiedAt": "2026-08-02T03:02:00.418598",
+            "daysSinceModified": 0,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-02T08:04:35.493Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "SHP",
+              "CSV",
+              "PHP"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 3,
+            "formatDistribution": {
+              "SHP": 1,
+              "CSV": 1,
+              "PHP": 1
+            }
+          },
+          "calculatedAt": "2026-08-02T08:04:35.493Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.667,
+          "evidence": {
+            "resourceCount": 3,
+            "checked": 3,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-08-02T08:04:36.002Z"
+        }
+      ],
+      "lastChecked": "2026-08-02T08:04:18.122Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:datos-de-fractura-de-pozos-adjunto-iv",
+      "title": "Datos de fractura de pozos de hidrocarburos (Adjunto IV)",
+      "organization": "Secretaría de Energía",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 427,
+            "tagCount": 7,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-08-02T08:04:36.002Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.999,
+          "evidence": {
+            "modifiedAt": "2026-08-02T03:01:59.485860",
+            "daysSinceModified": 0,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-02T08:04:36.002Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "PDF"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "CSV": 1,
+              "PDF": 1
+            }
+          },
+          "calculatedAt": "2026-08-02T08:04:36.002Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-08-02T08:04:36.498Z"
+        }
+      ],
+      "lastChecked": "2026-08-02T08:04:18.122Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:exploracion-hidrocarburos-permisos-de-exploracion",
+      "title": "Exploración de hidrocarburos - Permisos de Exploración",
+      "organization": "Secretaría de Energía",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 188,
+            "tagCount": 3,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-08-02T08:04:36.498Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.999,
+          "evidence": {
+            "modifiedAt": "2026-08-02T03:01:59.185354",
+            "daysSinceModified": 0,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-02T08:04:36.498Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "SHP"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "CSV": 2,
+              "SHP": 2
+            }
+          },
+          "calculatedAt": "2026-08-02T08:04:36.498Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-08-02T08:04:36.900Z"
+        }
+      ],
+      "lastChecked": "2026-08-02T08:04:18.122Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:precios-de-gas-natural",
+      "title": "Precios de Gas Natural",
+      "organization": "Secretaría de Energía",
+      "overall": 0.906,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 22,
+            "tagCount": 3,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-08-02T08:04:36.900Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.999,
+          "evidence": {
+            "modifiedAt": "2026-08-02T03:01:44.769002",
+            "daysSinceModified": 0,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-02T08:04:36.900Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "PHP",
+              "CSV",
+              "XLS"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "PHP": 1,
+              "CSV": 2,
+              "XLS": 1
+            }
+          },
+          "calculatedAt": "2026-08-02T08:04:36.900Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.75,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 3
+          },
+          "calculatedAt": "2026-08-02T08:04:37.764Z"
+        }
+      ],
+      "lastChecked": "2026-08-02T08:04:18.122Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:produccion-hidrocarburos-puntos-de-venteo-declarados",
+      "title": "Producción de hidrocarburos - Puntos de Venteo Declarados",
+      "organization": "Secretaría de Energía",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 181,
+            "tagCount": 3,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-08-02T08:04:37.764Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.999,
+          "evidence": {
+            "modifiedAt": "2026-08-02T03:01:13.340588",
+            "daysSinceModified": 0,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-02T08:04:37.764Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "SHP"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "CSV": 1,
+              "SHP": 1
+            }
+          },
+          "calculatedAt": "2026-08-02T08:04:37.764Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-08-02T08:04:38.142Z"
+        }
+      ],
+      "lastChecked": "2026-08-02T08:04:18.122Z"
     },
     {
       "datasetId": "datos-gob-ar:precios-en-surtidor",
@@ -80536,17 +82610,17 @@
             "tagCount": 4,
             "resourceCount": 3
           },
-          "calculatedAt": "2026-08-01T08:03:03.173Z"
+          "calculatedAt": "2026-08-02T08:04:38.142Z"
         },
         {
           "dimension": "freshness",
           "score": 0.999,
           "evidence": {
-            "modifiedAt": "2026-07-31T23:01:33.488453",
+            "modifiedAt": "2026-08-02T03:00:37.350892",
             "daysSinceModified": 0,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-08-01T08:03:03.173Z"
+          "calculatedAt": "2026-08-02T08:04:38.142Z"
         },
         {
           "dimension": "structure",
@@ -80564,7 +82638,7 @@
               "HTML": 1
             }
           },
-          "calculatedAt": "2026-08-01T08:03:03.173Z"
+          "calculatedAt": "2026-08-02T08:04:38.142Z"
         },
         {
           "dimension": "accessibility",
@@ -80574,10 +82648,78 @@
             "checked": 3,
             "accessible": 2
           },
-          "calculatedAt": "2026-08-01T08:03:03.720Z"
+          "calculatedAt": "2026-08-02T08:04:38.531Z"
         }
       ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
+      "lastChecked": "2026-08-02T08:04:18.122Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:exploracion-hidrocarburos-sismicas-3d",
+      "title": "Exploración de hidrocarburos - Inventario de Sísmicas 3D",
+      "organization": "Secretaría de Energía",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 165,
+            "tagCount": 4,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-08-02T08:04:38.531Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.999,
+          "evidence": {
+            "modifiedAt": "2026-08-02T03:00:36.961239",
+            "daysSinceModified": 0,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-02T08:04:38.531Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "SHP"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "CSV": 1,
+              "SHP": 1
+            }
+          },
+          "calculatedAt": "2026-08-02T08:04:38.531Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-08-02T08:04:38.909Z"
+        }
+      ],
+      "lastChecked": "2026-08-02T08:04:18.122Z"
     },
     {
       "datasetId": "datos-gob-ar:operadores_glp",
@@ -80604,17 +82746,17 @@
             "tagCount": 5,
             "resourceCount": 26
           },
-          "calculatedAt": "2026-08-01T08:03:03.720Z"
+          "calculatedAt": "2026-08-02T08:04:38.909Z"
         },
         {
           "dimension": "freshness",
           "score": 0.999,
           "evidence": {
-            "modifiedAt": "2026-07-31T23:01:32.330902",
+            "modifiedAt": "2026-08-02T03:00:35.703587",
             "daysSinceModified": 0,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-08-01T08:03:03.720Z"
+          "calculatedAt": "2026-08-02T08:04:38.909Z"
         },
         {
           "dimension": "structure",
@@ -80634,7 +82776,7 @@
               "PDF": 2
             }
           },
-          "calculatedAt": "2026-08-01T08:03:03.720Z"
+          "calculatedAt": "2026-08-02T08:04:38.910Z"
         },
         {
           "dimension": "accessibility",
@@ -80644,16 +82786,16 @@
             "checked": 26,
             "accessible": 26
           },
-          "calculatedAt": "2026-08-01T08:03:05.111Z"
+          "calculatedAt": "2026-08-02T08:04:40.268Z"
         }
       ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
+      "lastChecked": "2026-08-02T08:04:18.122Z"
     },
     {
-      "datasetId": "datos-gob-ar:arroz-siembra-cosecha-produccion-rendimiento",
-      "title": "Arroz - siembra, cosecha, producción, rendimiento",
-      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
-      "overall": 0.983,
+      "datasetId": "datos-gob-ar:exploracion-hidrocarburos-lineas-sismicas-2d",
+      "title": "Exploración de Hidrocarburos -  Inventario de Líneas Sísmicas 2D",
+      "organization": "Secretaría de Energía",
+      "overall": 0.984,
       "dimensions": [
         {
           "dimension": "completeness",
@@ -80670,1285 +82812,21 @@
               "createdAt"
             ],
             "fieldsMissing": [],
-            "descriptionLength": 126,
-            "tagCount": 7,
-            "resourceCount": 2
-          },
-          "calculatedAt": "2026-08-01T08:03:05.111Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.994,
-          "evidence": {
-            "modifiedAt": "2026-07-30T19:42:39.489929",
-            "daysSinceModified": 2,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:03:05.111Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 2,
-            "formatDistribution": {
-              "CSV": 2
-            }
-          },
-          "calculatedAt": "2026-08-01T08:03:05.111Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-08-01T08:03:06.222Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:precio-promedio-por-kg-solidos-utiles-pagados-al-productor",
-      "title": "Lácteos - Precio promedio por kilo de sólidos útiles",
-      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
-      "overall": 0.983,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 127,
-            "tagCount": 3,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-08-01T08:03:06.222Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.994,
-          "evidence": {
-            "modifiedAt": "2026-07-30T19:42:39.116187",
-            "daysSinceModified": 2,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:03:06.222Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-08-01T08:03:06.222Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-08-01T08:03:06.909Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:lacteos-exportaciones",
-      "title": "Lácteos - Exportaciones",
-      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
-      "overall": 0.983,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 44,
-            "tagCount": 9,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-08-01T08:03:06.909Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.994,
-          "evidence": {
-            "modifiedAt": "2026-07-30T19:42:38.632003",
-            "daysSinceModified": 2,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:03:06.909Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-08-01T08:03:06.909Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-08-01T08:03:07.632Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:censo-mano-de-obra-cna-02",
-      "title": "Censo - Mano de obra CNA 02",
-      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
-      "overall": 0.983,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 118,
-            "tagCount": 7,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-08-01T08:03:07.632Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.994,
-          "evidence": {
-            "modifiedAt": "2026-07-30T19:42:38.139695",
-            "daysSinceModified": 2,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:03:07.632Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-08-01T08:03:07.632Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-08-01T08:03:08.346Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:datos-comercio-exterior",
-      "title": "Comercio exterior - Consulta de datos",
-      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
-      "overall": 0.405,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 115,
-            "tagCount": 7,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-08-01T08:03:08.346Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.994,
-          "evidence": {
-            "modifiedAt": "2026-07-30T19:42:37.820362",
-            "daysSinceModified": 2,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:03:08.346Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.1,
-          "evidence": {
-            "formats": [
-              "URL"
-            ],
-            "bestFormat": "URL",
-            "bestFormatScore": 0.1,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "URL": 1
-            }
-          },
-          "calculatedAt": "2026-08-01T08:03:08.347Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 0
-          },
-          "calculatedAt": "2026-08-01T08:03:08.797Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:sio-carnes",
-      "title": "SIO Carnes",
-      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
-      "overall": 0.983,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 309,
-            "tagCount": 25,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-08-01T08:03:08.797Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.994,
-          "evidence": {
-            "modifiedAt": "2026-07-30T19:42:37.420405",
-            "daysSinceModified": 2,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:03:08.797Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "JPEG"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "CSV": 3,
-              "JPEG": 1
-            }
-          },
-          "calculatedAt": "2026-08-01T08:03:08.797Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-08-01T08:03:09.542Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:produccion-bioetanol-por-insumo-utilizado",
-      "title": "Biocombustible - Producción por insumo bioetanol",
-      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
-      "overall": 0.983,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 93,
-            "tagCount": 6,
-            "resourceCount": 2
-          },
-          "calculatedAt": "2026-08-01T08:03:09.542Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.994,
-          "evidence": {
-            "modifiedAt": "2026-07-30T19:42:37.057705",
-            "daysSinceModified": 2,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:03:09.542Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 2,
-            "formatDistribution": {
-              "CSV": 2
-            }
-          },
-          "calculatedAt": "2026-08-01T08:03:09.542Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-08-01T08:03:10.251Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:produccion-de-carne-aviar",
-      "title": "Aves - Producción de carne aviar",
-      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
-      "overall": 0.983,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 195,
-            "tagCount": 5,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-08-01T08:03:10.251Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.994,
-          "evidence": {
-            "modifiedAt": "2026-07-30T19:42:36.748750",
-            "daysSinceModified": 2,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:03:10.251Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-08-01T08:03:10.251Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-08-01T08:03:10.984Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:indice-novillo-sio-carnes-insc",
-      "title": "SIO Carnes - Índice Novillo INSC",
-      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
-      "overall": 0.983,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 358,
-            "tagCount": 8,
-            "resourceCount": 3
-          },
-          "calculatedAt": "2026-08-01T08:03:10.984Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.994,
-          "evidence": {
-            "modifiedAt": "2026-07-30T19:42:36.379924",
-            "daysSinceModified": 2,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:03:10.984Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "JPEG"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 3,
-            "formatDistribution": {
-              "CSV": 1,
-              "JPEG": 2
-            }
-          },
-          "calculatedAt": "2026-08-01T08:03:10.985Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 3,
-            "checked": 3,
-            "accessible": 3
-          },
-          "calculatedAt": "2026-08-01T08:03:11.700Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:fitosanitarios-provincias-y-autoridades-competentes-ley-27279",
-      "title": "Producciones Sostenibles - Autoridades provinciales competentes de aplicación Ley 27.279",
-      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
-      "overall": 0.983,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 186,
-            "tagCount": 3,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-08-01T08:03:11.700Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.994,
-          "evidence": {
-            "modifiedAt": "2026-07-30T19:42:36.070510",
-            "daysSinceModified": 2,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:03:11.700Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-08-01T08:03:11.700Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-08-01T08:03:12.235Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:existencias-lacteas-periodo-comprendido-entre-anos-1998-2008",
-      "title": "Lácteos - Existencias entre los años 1998 y 2008",
-      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
-      "overall": 0.983,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 87,
-            "tagCount": 15,
-            "resourceCount": 2
-          },
-          "calculatedAt": "2026-08-01T08:03:12.235Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.994,
-          "evidence": {
-            "modifiedAt": "2026-07-30T19:42:35.743629",
-            "daysSinceModified": 2,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:03:12.235Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 2,
-            "formatDistribution": {
-              "CSV": 2
-            }
-          },
-          "calculatedAt": "2026-08-01T08:03:12.235Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-08-01T08:03:12.796Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:registro-nacional-de-productores-apicolas",
-      "title": "Apicultura - Registro Nacional de Productores Apícolas",
-      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
-      "overall": 0.91,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 199,
-            "tagCount": 6,
-            "resourceCount": 3
-          },
-          "calculatedAt": "2026-08-01T08:03:12.796Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.994,
-          "evidence": {
-            "modifiedAt": "2026-07-30T19:42:35.376939",
-            "daysSinceModified": 2,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:03:12.796Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "URL"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 3,
-            "formatDistribution": {
-              "CSV": 2,
-              "URL": 1
-            }
-          },
-          "calculatedAt": "2026-08-01T08:03:12.796Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.767,
-          "evidence": {
-            "resourceCount": 3,
-            "checked": 3,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-08-01T08:03:13.598Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:integrantes-de-los-nucleos-de-agricultura-familiar-naf",
-      "title": "Agricultura Familiar - Integrantes de los núcleos (NAF)",
-      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
-      "overall": 0.983,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 244,
-            "tagCount": 5,
-            "resourceCount": 3
-          },
-          "calculatedAt": "2026-08-01T08:03:13.598Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.994,
-          "evidence": {
-            "modifiedAt": "2026-07-30T19:42:35.004618",
-            "daysSinceModified": 2,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:03:13.598Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "DOCX"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 3,
-            "formatDistribution": {
-              "CSV": 2,
-              "DOCX": 1
-            }
-          },
-          "calculatedAt": "2026-08-01T08:03:13.598Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 3,
-            "checked": 3,
-            "accessible": 3
-          },
-          "calculatedAt": "2026-08-01T08:03:14.489Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:recuento-de-celulas-somaticas-lecheria",
-      "title": "Lácteos - Calidad higiénico sanitaria de la leche cruda a nivel departamental",
-      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
-      "overall": 0.91,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 162,
-            "tagCount": 9,
-            "resourceCount": 3
-          },
-          "calculatedAt": "2026-08-01T08:03:14.489Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.994,
-          "evidence": {
-            "modifiedAt": "2026-07-30T19:42:34.637162",
-            "daysSinceModified": 2,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:03:14.489Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "URL"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 3,
-            "formatDistribution": {
-              "CSV": 2,
-              "URL": 1
-            }
-          },
-          "calculatedAt": "2026-08-01T08:03:14.489Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.767,
-          "evidence": {
-            "resourceCount": 3,
-            "checked": 3,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-08-01T08:03:15.330Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:resoluciones-de-pago",
-      "title": "Forestales - Ley 25.080 inversiones para bosques cultivados",
-      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
-      "overall": 0.983,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 108,
-            "tagCount": 7,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-08-01T08:03:15.330Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.994,
-          "evidence": {
-            "modifiedAt": "2026-07-30T19:42:34.305784",
-            "daysSinceModified": 2,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:03:15.330Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-08-01T08:03:15.330Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-08-01T08:03:15.868Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:senasa-existencias-caprinas",
-      "title": "SENASA - Existencias caprinas",
-      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
-      "overall": 0.983,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 88,
-            "tagCount": 6,
-            "resourceCount": 2
-          },
-          "calculatedAt": "2026-08-01T08:03:15.869Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.994,
-          "evidence": {
-            "modifiedAt": "2026-07-30T19:42:33.967477",
-            "daysSinceModified": 2,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:03:15.869Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 2,
-            "formatDistribution": {
-              "CSV": 2
-            }
-          },
-          "calculatedAt": "2026-08-01T08:03:15.869Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-08-01T08:03:16.463Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:senasa-existencias-ovinas",
-      "title": "SENASA - Existencias ovinas",
-      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
-      "overall": 0.983,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 86,
-            "tagCount": 6,
-            "resourceCount": 2
-          },
-          "calculatedAt": "2026-08-01T08:03:16.463Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.994,
-          "evidence": {
-            "modifiedAt": "2026-07-30T19:42:33.633451",
-            "daysSinceModified": 2,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:03:16.463Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 2,
-            "formatDistribution": {
-              "CSV": 2
-            }
-          },
-          "calculatedAt": "2026-08-01T08:03:16.463Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-08-01T08:03:17.031Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:trigo-siembra-cosecha-produccion-rendimiento",
-      "title": "Trigo - siembra, cosecha, producción, rendimiento",
-      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
-      "overall": 0.983,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 126,
+            "descriptionLength": 165,
             "tagCount": 5,
             "resourceCount": 2
           },
-          "calculatedAt": "2026-08-01T08:03:17.031Z"
+          "calculatedAt": "2026-08-02T08:04:40.268Z"
         },
         {
           "dimension": "freshness",
-          "score": 0.994,
+          "score": 0.999,
           "evidence": {
-            "modifiedAt": "2026-07-30T19:42:33.296965",
-            "daysSinceModified": 2,
+            "modifiedAt": "2026-08-02T03:00:35.141621",
+            "daysSinceModified": 0,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-08-01T08:03:17.031Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 2,
-            "formatDistribution": {
-              "CSV": 2
-            }
-          },
-          "calculatedAt": "2026-08-01T08:03:17.031Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-08-01T08:03:17.636Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:senasa-movimientos-productos-y-subproductos-animales",
-      "title": "SENASA - Movimientos subproductos animales",
-      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
-      "overall": 0.983,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 99,
-            "tagCount": 8,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-08-01T08:03:17.636Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.994,
-          "evidence": {
-            "modifiedAt": "2026-07-30T19:42:32.983716",
-            "daysSinceModified": 2,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:03:17.636Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-08-01T08:03:17.636Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-08-01T08:03:18.177Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:indicadores-economicos-para-ganaderia-bovina",
-      "title": "Ganadería - Indicadores económicos bovinos",
-      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
-      "overall": 0.983,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 267,
-            "tagCount": 9,
-            "resourceCount": 5
-          },
-          "calculatedAt": "2026-08-01T08:03:18.177Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.994,
-          "evidence": {
-            "modifiedAt": "2026-07-30T19:42:32.571949",
-            "daysSinceModified": 2,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:03:18.177Z"
+          "calculatedAt": "2026-08-02T08:04:40.268Z"
         },
         {
           "dimension": "structure",
@@ -81956,217 +82834,17 @@
           "evidence": {
             "formats": [
               "CSV",
-              "JPEG"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 5,
-            "formatDistribution": {
-              "CSV": 4,
-              "JPEG": 1
-            }
-          },
-          "calculatedAt": "2026-08-01T08:03:18.177Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 5,
-            "checked": 5,
-            "accessible": 5
-          },
-          "calculatedAt": "2026-08-01T08:03:18.847Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:explotaciones-agropecuarias-segun-censo-nacional-agropecuario-anos-1988-2002-2008",
-      "title": "Censo - Explotaciones agropecuarias CNA 88, 02 y 08",
-      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
-      "overall": 0.983,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 172,
-            "tagCount": 8,
-            "resourceCount": 3
-          },
-          "calculatedAt": "2026-08-01T08:03:18.847Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.994,
-          "evidence": {
-            "modifiedAt": "2026-07-30T19:42:32.206358",
-            "daysSinceModified": 2,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:03:18.847Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 3,
-            "formatDistribution": {
-              "CSV": 3
-            }
-          },
-          "calculatedAt": "2026-08-01T08:03:18.847Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 3,
-            "checked": 3,
-            "accessible": 3
-          },
-          "calculatedAt": "2026-08-01T08:03:19.440Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:produccion-nacional-lactea-por-mes-y-por-anio",
-      "title": "Lácteos - Producción nacional de leche por mes y por año",
-      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
-      "overall": 0.827,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 66,
-            "tagCount": 5,
-            "resourceCount": 2
-          },
-          "calculatedAt": "2026-08-01T08:03:19.440Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.994,
-          "evidence": {
-            "modifiedAt": "2026-07-30T19:42:31.862414",
-            "daysSinceModified": 2,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:03:19.440Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "HTML"
+              "SHP"
             ],
             "bestFormat": "CSV",
             "bestFormatScore": 0.95,
             "resourceCount": 2,
             "formatDistribution": {
               "CSV": 1,
-              "HTML": 1
+              "SHP": 1
             }
           },
-          "calculatedAt": "2026-08-01T08:03:19.440Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.5,
-          "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-08-01T08:03:19.981Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:precio-promedio-litro-leche-pagado-al-productor",
-      "title": "Lácteos - Precio promedio del litro de leche",
-      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
-      "overall": 0.983,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 94,
-            "tagCount": 4,
-            "resourceCount": 2
-          },
-          "calculatedAt": "2026-08-01T08:03:19.981Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.994,
-          "evidence": {
-            "modifiedAt": "2026-07-30T19:42:31.514527",
-            "daysSinceModified": 2,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:03:19.982Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 2,
-            "formatDistribution": {
-              "CSV": 2
-            }
-          },
-          "calculatedAt": "2026-08-01T08:03:19.982Z"
+          "calculatedAt": "2026-08-02T08:04:40.268Z"
         },
         {
           "dimension": "accessibility",
@@ -82176,688 +82854,10 @@
             "checked": 2,
             "accessible": 2
           },
-          "calculatedAt": "2026-08-01T08:03:20.682Z"
+          "calculatedAt": "2026-08-02T08:04:40.671Z"
         }
       ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:censo-maquinaria-cna-02",
-      "title": "Censo - Maquinaria CNA 02",
-      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
-      "overall": 0.983,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 123,
-            "tagCount": 6,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-08-01T08:03:20.682Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.994,
-          "evidence": {
-            "modifiedAt": "2026-07-30T19:42:31.132799",
-            "daysSinceModified": 2,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:03:20.682Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "CSV": 4
-            }
-          },
-          "calculatedAt": "2026-08-01T08:03:20.682Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-08-01T08:03:21.296Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:cebada-siembra-cosecha-produccion-rendimiento",
-      "title": "Cebada - siembra, cosecha, producción, rendimiento",
-      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
-      "overall": 0.983,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 127,
-            "tagCount": 9,
-            "resourceCount": 6
-          },
-          "calculatedAt": "2026-08-01T08:03:21.296Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.994,
-          "evidence": {
-            "modifiedAt": "2026-07-30T19:42:30.713040",
-            "daysSinceModified": 2,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:03:21.296Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 6,
-            "formatDistribution": {
-              "CSV": 6
-            }
-          },
-          "calculatedAt": "2026-08-01T08:03:21.296Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 6,
-            "checked": 6,
-            "accessible": 6
-          },
-          "calculatedAt": "2026-08-01T08:03:22.140Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:produccion-nacional-fiscalizada-por-especies-ubicacion-registrada-inase",
-      "title": "INASE - Producción de semillas por especies y ubicación",
-      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
-      "overall": 0.983,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 161,
-            "tagCount": 28,
-            "resourceCount": 3
-          },
-          "calculatedAt": "2026-08-01T08:03:22.140Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.994,
-          "evidence": {
-            "modifiedAt": "2026-07-30T19:42:30.333890",
-            "daysSinceModified": 2,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:03:22.140Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 3,
-            "formatDistribution": {
-              "CSV": 3
-            }
-          },
-          "calculatedAt": "2026-08-01T08:03:22.140Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 3,
-            "checked": 3,
-            "accessible": 3
-          },
-          "calculatedAt": "2026-08-01T08:03:22.738Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:senasa-movimientos-avicolas",
-      "title": "SENASA - Movimientos avícolas",
-      "organization": "Secretaría de Agricultura, Ganadería y Pesca",
-      "overall": 0.983,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 113,
-            "tagCount": 14,
-            "resourceCount": 5
-          },
-          "calculatedAt": "2026-08-01T08:03:22.738Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.994,
-          "evidence": {
-            "modifiedAt": "2026-07-30T19:42:29.738724",
-            "daysSinceModified": 2,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:03:22.738Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 5,
-            "formatDistribution": {
-              "CSV": 5
-            }
-          },
-          "calculatedAt": "2026-08-01T08:03:22.738Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 5,
-            "checked": 5,
-            "accessible": 5
-          },
-          "calculatedAt": "2026-08-01T08:03:23.438Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:puntos-digitales1",
-      "title": "Puntos Digitales",
-      "organization": "Jefatura de Gabinete de Ministros",
-      "overall": 0.983,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 218,
-            "tagCount": 5,
-            "resourceCount": 2
-          },
-          "calculatedAt": "2026-08-01T08:03:23.438Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.994,
-          "evidence": {
-            "modifiedAt": "2026-07-30T17:25:09.458657",
-            "daysSinceModified": 2,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:03:23.438Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "XLSX"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 2,
-            "formatDistribution": {
-              "CSV": 1,
-              "XLSX": 1
-            }
-          },
-          "calculatedAt": "2026-08-01T08:03:23.438Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-08-01T08:03:25.636Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:unidades-territoriales",
-      "title": "Unidades Territoriales",
-      "organization": "Instituto Geográfico Nacional (IGN)",
-      "overall": 0.939,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 0.9,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [
-              "license"
-            ],
-            "descriptionLength": 395,
-            "tagCount": 7,
-            "resourceCount": 16
-          },
-          "calculatedAt": "2026-08-01T08:03:25.636Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.993,
-          "evidence": {
-            "modifiedAt": "2026-07-30T14:14:50.601895",
-            "daysSinceModified": 2,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:03:25.636Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "ZIP",
-              "KMZ",
-              "PDF"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 16,
-            "formatDistribution": {
-              "CSV": 4,
-              "ZIP": 4,
-              "KMZ": 4,
-              "PDF": 4
-            }
-          },
-          "calculatedAt": "2026-08-01T08:03:25.636Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.9,
-          "evidence": {
-            "resourceCount": 16,
-            "checked": 16,
-            "accessible": 16
-          },
-          "calculatedAt": "2026-08-01T08:03:28.501Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:base-de-datos-legislativos-infoleg",
-      "title": "Base Infoleg de Normativa Nacional",
-      "organization": "Ministerio de Justicia",
-      "overall": 0.983,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 287,
-            "tagCount": 8,
-            "resourceCount": 7
-          },
-          "calculatedAt": "2026-08-01T08:03:28.501Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.993,
-          "evidence": {
-            "modifiedAt": "2026-07-30T14:12:50.338824",
-            "daysSinceModified": 2,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:03:28.501Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "GRÁFICO",
-              "ZIP"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 7,
-            "formatDistribution": {
-              "CSV": 3,
-              "GRÁFICO": 1,
-              "ZIP": 3
-            }
-          },
-          "calculatedAt": "2026-08-01T08:03:28.501Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 7,
-            "checked": 7,
-            "accessible": 7
-          },
-          "calculatedAt": "2026-08-01T08:03:30.833Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:linea-137-victimas-de-violencia-sexual",
-      "title": "Línea 137 - víctimas de violencia sexual - llamados e intervenciones domiciliarias",
-      "organization": "Ministerio de Justicia",
-      "overall": 0.983,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 163,
-            "tagCount": 12,
-            "resourceCount": 3
-          },
-          "calculatedAt": "2026-08-01T08:03:30.833Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.993,
-          "evidence": {
-            "modifiedAt": "2026-07-30T14:10:37.337471",
-            "daysSinceModified": 2,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:03:30.833Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "ZIP"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 3,
-            "formatDistribution": {
-              "CSV": 2,
-              "ZIP": 1
-            }
-          },
-          "calculatedAt": "2026-08-01T08:03:30.833Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 3,
-            "checked": 3,
-            "accessible": 3
-          },
-          "calculatedAt": "2026-08-01T08:03:32.481Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:transferencias-de-autos",
-      "title": "Transferencias de autos",
-      "organization": "Ministerio de Justicia",
-      "overall": 0.97,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 0.9,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [
-              "license"
-            ],
-            "descriptionLength": 133,
-            "tagCount": 9,
-            "resourceCount": 10
-          },
-          "calculatedAt": "2026-08-01T08:03:32.481Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.993,
-          "evidence": {
-            "modifiedAt": "2026-07-30T13:28:21.368870",
-            "daysSinceModified": 2,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:03:32.481Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "ZIP"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 10,
-            "formatDistribution": {
-              "CSV": 1,
-              "ZIP": 9
-            }
-          },
-          "calculatedAt": "2026-08-01T08:03:32.481Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 10,
-            "checked": 10,
-            "accessible": 10
-          },
-          "calculatedAt": "2026-08-01T08:03:34.198Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:plataforma-de-tramites-a-distancia-tad1",
-      "title": "Plataforma de Trámites a Distancia - TAD",
-      "organization": "Jefatura de Gabinete de Ministros",
-      "overall": 0.983,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 305,
-            "tagCount": 4,
-            "resourceCount": 5
-          },
-          "calculatedAt": "2026-08-01T08:03:34.198Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.993,
-          "evidence": {
-            "modifiedAt": "2026-07-30T12:52:07.974719",
-            "daysSinceModified": 2,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-01T08:03:34.198Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 5,
-            "formatDistribution": {
-              "CSV": 5
-            }
-          },
-          "calculatedAt": "2026-08-01T08:03:34.198Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 5,
-            "checked": 5,
-            "accessible": 5
-          },
-          "calculatedAt": "2026-08-01T08:03:35.181Z"
-        }
-      ],
-      "lastChecked": "2026-08-01T08:02:29.645Z"
+      "lastChecked": "2026-08-02T08:04:18.122Z"
     }
   ],
   "coverage": 1
