@@ -1,8 +1,76 @@
 {
   "catalogId": "datos-yvera-ar",
-  "scoredAt": "2026-08-04T08:38:20.224Z",
+  "scoredAt": "2026-08-05T08:22:17.323Z",
   "datasetCount": 15,
   "datasets": [
+    {
+      "datasetId": "datos-yvera-ar:turismo-internacional-total-pais",
+      "title": "Turismo Internacional - Total País",
+      "organization": "Dirección Nacional de Mercados y Estadísticas de Turismo",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 350,
+            "tagCount": 3,
+            "resourceCount": 6
+          },
+          "calculatedAt": "2026-08-04T08:38:20.224Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.997,
+          "evidence": {
+            "modifiedAt": "2026-08-03T15:38:27.659004",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-04T08:38:20.224Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "PDF"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 6,
+            "formatDistribution": {
+              "CSV": 5,
+              "PDF": 1
+            }
+          },
+          "calculatedAt": "2026-08-04T08:38:20.224Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 6,
+            "checked": 6,
+            "accessible": 6
+          },
+          "calculatedAt": "2026-08-04T08:38:21.303Z"
+        }
+      ],
+      "lastChecked": "2026-08-04T08:38:20.224Z"
+    },
     {
       "datasetId": "datos-yvera-ar:conectividad-aerea",
       "title": "Conectividad Aérea",
@@ -138,74 +206,6 @@
         }
       ],
       "lastChecked": "2026-07-29T08:37:07.600Z"
-    },
-    {
-      "datasetId": "datos-yvera-ar:turismo-internacional-total-pais",
-      "title": "Turismo Internacional - Total País",
-      "organization": "Dirección Nacional de Mercados y Estadísticas de Turismo",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 350,
-            "tagCount": 3,
-            "resourceCount": 6
-          },
-          "calculatedAt": "2026-08-04T08:38:20.224Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.997,
-          "evidence": {
-            "modifiedAt": "2026-08-03T15:38:27.659004",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-04T08:38:20.224Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "PDF"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 6,
-            "formatDistribution": {
-              "CSV": 5,
-              "PDF": 1
-            }
-          },
-          "calculatedAt": "2026-08-04T08:38:20.224Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 6,
-            "checked": 6,
-            "accessible": 6
-          },
-          "calculatedAt": "2026-08-04T08:38:21.303Z"
-        }
-      ],
-      "lastChecked": "2026-08-04T08:38:20.224Z"
     },
     {
       "datasetId": "datos-yvera-ar:crucerismo-maritimo",
