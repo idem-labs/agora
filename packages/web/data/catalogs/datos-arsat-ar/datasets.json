@@ -1,81 +1,7 @@
 {
   "catalogId": "datos-arsat-ar",
-  "updatedAt": "2026-08-05T08:22:12.353Z",
+  "updatedAt": "2026-08-06T08:20:49.488Z",
   "datasets": [
-    {
-      "datasetId": "datos-arsat-ar:finanzas",
-      "externalId": "finanzas",
-      "modifiedAt": "2026-07-06T14:42:31.896967",
-      "lastScoredAt": "2026-07-30T08:20:45.112Z",
-      "score": {
-        "datasetId": "datos-arsat-ar:finanzas",
-        "title": "Finanzas",
-        "organization": "Gerencia de Administración y finanzas",
-        "overall": 0.963,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 90,
-              "tagCount": 4,
-              "resourceCount": 3
-            },
-            "calculatedAt": "2026-07-30T08:20:45.112Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.913,
-            "evidence": {
-              "modifiedAt": "2026-07-06T14:42:31.896967",
-              "daysSinceModified": 24,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-07-30T08:20:45.112Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV",
-                "PDF"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 3,
-              "formatDistribution": {
-                "CSV": 2,
-                "PDF": 1
-              }
-            },
-            "calculatedAt": "2026-07-30T08:20:45.112Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 3,
-              "checked": 3,
-              "accessible": 3
-            },
-            "calculatedAt": "2026-07-30T08:20:45.955Z"
-          }
-        ],
-        "lastChecked": "2026-07-30T08:20:45.112Z"
-      }
-    },
     {
       "datasetId": "datos-arsat-ar:organigrama",
       "externalId": "organigrama",
@@ -944,6 +870,80 @@
           }
         ],
         "lastChecked": "2026-07-31T08:58:25.598Z"
+      }
+    },
+    {
+      "datasetId": "datos-arsat-ar:finanzas",
+      "externalId": "finanzas",
+      "modifiedAt": "2026-07-06T14:42:31.896967",
+      "lastScoredAt": "2026-08-06T08:20:49.488Z",
+      "score": {
+        "datasetId": "datos-arsat-ar:finanzas",
+        "title": "Finanzas",
+        "organization": "Gerencia de Administración y finanzas",
+        "overall": 0.956,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 90,
+              "tagCount": 4,
+              "resourceCount": 3
+            },
+            "calculatedAt": "2026-08-06T08:20:49.488Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.888,
+            "evidence": {
+              "modifiedAt": "2026-07-06T14:42:31.896967",
+              "daysSinceModified": 31,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-08-06T08:20:49.488Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV",
+                "PDF"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 3,
+              "formatDistribution": {
+                "CSV": 2,
+                "PDF": 1
+              }
+            },
+            "calculatedAt": "2026-08-06T08:20:49.488Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 3,
+              "checked": 3,
+              "accessible": 3
+            },
+            "calculatedAt": "2026-08-06T08:20:50.505Z"
+          }
+        ],
+        "lastChecked": "2026-08-06T08:20:49.488Z"
       }
     }
   ]
