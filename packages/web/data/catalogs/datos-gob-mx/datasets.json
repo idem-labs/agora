@@ -1,7 +1,155 @@
 {
   "catalogId": "datos-gob-mx",
-  "updatedAt": "2026-08-15T06:37:05.195Z",
+  "updatedAt": "2026-08-16T06:54:58.759Z",
   "datasets": [
+    {
+      "datasetId": "datos-gob-mx:inventario_sitios_contaminados_remediados",
+      "externalId": "inventario_sitios_contaminados_remediados",
+      "modifiedAt": "2026-08-14T21:25:34.284361",
+      "lastScoredAt": "2026-08-15T06:37:05.195Z",
+      "score": {
+        "datasetId": "datos-gob-mx:inventario_sitios_contaminados_remediados",
+        "title": "Inventario de sitios contaminados y remediados",
+        "organization": "Secretaría de Medio Ambiente y Recursos Naturales (SEMARNAT)",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 148,
+              "tagCount": 5,
+              "resourceCount": 2
+            },
+            "calculatedAt": "2026-08-15T06:37:05.195Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.999,
+            "evidence": {
+              "modifiedAt": "2026-08-14T21:25:34.284361",
+              "daysSinceModified": 0,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-08-15T06:37:05.195Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 2,
+              "formatDistribution": {
+                "CSV": 2
+              }
+            },
+            "calculatedAt": "2026-08-15T06:37:05.195Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 2,
+              "checked": 2,
+              "accessible": 2
+            },
+            "calculatedAt": "2026-08-15T06:37:05.791Z"
+          }
+        ],
+        "lastChecked": "2026-08-15T06:37:05.195Z"
+      }
+    },
+    {
+      "datasetId": "datos-gob-mx:aguas_subterraneas",
+      "externalId": "aguas_subterraneas",
+      "modifiedAt": "2026-08-14T16:29:38.836645",
+      "lastScoredAt": "2026-08-15T06:37:05.195Z",
+      "score": {
+        "datasetId": "datos-gob-mx:aguas_subterraneas",
+        "title": "Aguas subterráneas",
+        "organization": "Comisión Nacional del Agua (CONAGUA)",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 83,
+              "tagCount": 14,
+              "resourceCount": 8
+            },
+            "calculatedAt": "2026-08-15T06:37:05.791Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.998,
+            "evidence": {
+              "modifiedAt": "2026-08-14T16:29:38.836645",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-08-15T06:37:05.791Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV",
+                "SHP",
+                "ZIP"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 8,
+              "formatDistribution": {
+                "CSV": 1,
+                "SHP": 6,
+                "ZIP": 1
+              }
+            },
+            "calculatedAt": "2026-08-15T06:37:05.792Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 8,
+              "checked": 8,
+              "accessible": 8
+            },
+            "calculatedAt": "2026-08-15T06:37:06.034Z"
+          }
+        ],
+        "lastChecked": "2026-08-15T06:37:05.195Z"
+      }
+    },
     {
       "datasetId": "datos-gob-mx:movimiento_operativo_cruceros",
       "externalId": "movimiento_operativo_cruceros",
@@ -124803,154 +124951,6 @@
           }
         ],
         "lastChecked": "2026-08-14T07:21:02.924Z"
-      }
-    },
-    {
-      "datasetId": "datos-gob-mx:inventario_sitios_contaminados_remediados",
-      "externalId": "inventario_sitios_contaminados_remediados",
-      "modifiedAt": "2026-08-14T21:25:34.284361",
-      "lastScoredAt": "2026-08-15T06:37:05.195Z",
-      "score": {
-        "datasetId": "datos-gob-mx:inventario_sitios_contaminados_remediados",
-        "title": "Inventario de sitios contaminados y remediados",
-        "organization": "Secretaría de Medio Ambiente y Recursos Naturales (SEMARNAT)",
-        "overall": 0.984,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 148,
-              "tagCount": 5,
-              "resourceCount": 2
-            },
-            "calculatedAt": "2026-08-15T06:37:05.195Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.999,
-            "evidence": {
-              "modifiedAt": "2026-08-14T21:25:34.284361",
-              "daysSinceModified": 0,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-08-15T06:37:05.195Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 2,
-              "formatDistribution": {
-                "CSV": 2
-              }
-            },
-            "calculatedAt": "2026-08-15T06:37:05.195Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 2,
-              "checked": 2,
-              "accessible": 2
-            },
-            "calculatedAt": "2026-08-15T06:37:05.791Z"
-          }
-        ],
-        "lastChecked": "2026-08-15T06:37:05.195Z"
-      }
-    },
-    {
-      "datasetId": "datos-gob-mx:aguas_subterraneas",
-      "externalId": "aguas_subterraneas",
-      "modifiedAt": "2026-08-14T16:29:38.836645",
-      "lastScoredAt": "2026-08-15T06:37:05.195Z",
-      "score": {
-        "datasetId": "datos-gob-mx:aguas_subterraneas",
-        "title": "Aguas subterráneas",
-        "organization": "Comisión Nacional del Agua (CONAGUA)",
-        "overall": 0.984,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 83,
-              "tagCount": 14,
-              "resourceCount": 8
-            },
-            "calculatedAt": "2026-08-15T06:37:05.791Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.998,
-            "evidence": {
-              "modifiedAt": "2026-08-14T16:29:38.836645",
-              "daysSinceModified": 1,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-08-15T06:37:05.791Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV",
-                "SHP",
-                "ZIP"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 8,
-              "formatDistribution": {
-                "CSV": 1,
-                "SHP": 6,
-                "ZIP": 1
-              }
-            },
-            "calculatedAt": "2026-08-15T06:37:05.792Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 8,
-              "checked": 8,
-              "accessible": 8
-            },
-            "calculatedAt": "2026-08-15T06:37:06.034Z"
-          }
-        ],
-        "lastChecked": "2026-08-15T06:37:05.195Z"
       }
     }
   ]
