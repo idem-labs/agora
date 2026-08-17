@@ -1,8 +1,76 @@
 {
   "catalogId": "catalogodatos-gub-uy",
-  "scoredAt": "2026-08-16T06:46:26.994Z",
+  "scoredAt": "2026-08-17T06:42:16.159Z",
   "datasetCount": 2696,
   "datasets": [
+    {
+      "datasetId": "catalogodatos-gub-uy:viajes-realizados-en-los-omnibus-del-sistema-de-transporte-metropolitano-stm",
+      "title": "Viajes realizados en los ómnibus del Sistema de Transporte Metropolitano - STM",
+      "organization": "Intendencia de Montevideo",
+      "overall": 0.755,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 559,
+            "tagCount": 3,
+            "resourceCount": 82
+          },
+          "calculatedAt": "2026-08-16T06:47:13.557Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.998,
+          "evidence": {
+            "modifiedAt": "2026-08-15T16:16:49.339447",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-16T06:47:13.557Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "CSV ZIP"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 82,
+            "formatDistribution": {
+              "CSV": 21,
+              "CSV ZIP": 61
+            }
+          },
+          "calculatedAt": "2026-08-16T06:47:13.557Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.268,
+          "evidence": {
+            "resourceCount": 82,
+            "checked": 82,
+            "accessible": 22
+          },
+          "calculatedAt": "2026-08-16T06:47:16.689Z"
+        }
+      ],
+      "lastChecked": "2026-08-16T06:46:26.994Z"
+    },
     {
       "datasetId": "catalogodatos-gub-uy:ancap-ventas-gas-natural-por-zona",
       "title": "Ventas Gas Natural - Volúmenes por zona geográfica",
@@ -3034,10 +3102,10 @@
       "lastChecked": "2026-08-11T06:56:16.776Z"
     },
     {
-      "datasetId": "catalogodatos-gub-uy:reclamos-registrados-en-el-sistema-unico-de-reclamos-de-la-intendencia-de-montevideo",
-      "title": "Reclamos registrados en el Sistema Unico de Reclamos de la Intendencia de Montevideo",
-      "organization": "Intendencia de Montevideo",
-      "overall": 0.983,
+      "datasetId": "catalogodatos-gub-uy:facturacion-y-consumo",
+      "title": "Facturación y consumo",
+      "organization": "OSE",
+      "overall": 0.901,
       "dimensions": [
         {
           "dimension": "completeness",
@@ -3054,52 +3122,272 @@
               "createdAt"
             ],
             "fieldsMissing": [],
-            "descriptionLength": 1609,
-            "tagCount": 4,
-            "resourceCount": 2
+            "descriptionLength": 633,
+            "tagCount": 3,
+            "resourceCount": 78
           },
-          "calculatedAt": "2026-08-11T06:56:40.370Z"
+          "calculatedAt": "2026-08-16T06:47:17.485Z"
         },
         {
           "dimension": "freshness",
-          "score": 0.996,
+          "score": 0.97,
           "evidence": {
-            "modifiedAt": "2026-08-10T08:20:07.987409",
-            "daysSinceModified": 1,
+            "modifiedAt": "2026-08-08T06:17:59.956996",
+            "daysSinceModified": 8,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-08-11T06:56:40.370Z"
+          "calculatedAt": "2026-08-16T06:47:17.485Z"
         },
         {
           "dimension": "structure",
           "score": 0.95,
           "evidence": {
             "formats": [
-              "TXT",
               "CSV"
             ],
             "bestFormat": "CSV",
             "bestFormatScore": 0.95,
-            "resourceCount": 2,
+            "resourceCount": 78,
             "formatDistribution": {
-              "TXT": 1,
-              "CSV": 1
+              "CSV": 78
             }
           },
-          "calculatedAt": "2026-08-11T06:56:40.370Z"
+          "calculatedAt": "2026-08-16T06:47:17.485Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.756,
+          "evidence": {
+            "resourceCount": 78,
+            "checked": 78,
+            "accessible": 59
+          },
+          "calculatedAt": "2026-08-16T06:47:29.828Z"
+        }
+      ],
+      "lastChecked": "2026-08-16T06:46:26.994Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:direccion-nacional-de-catastro-padrones-urbanos-y-rurales",
+      "title": "Padrones urbanos y rurales",
+      "organization": "Dirección Nacional de Catastro",
+      "overall": 0.973,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 77,
+            "tagCount": 3,
+            "resourceCount": 187
+          },
+          "calculatedAt": "2026-08-16T06:47:29.828Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.968,
+          "evidence": {
+            "modifiedAt": "2026-08-07T18:01:19.068690",
+            "daysSinceModified": 9,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-16T06:47:29.828Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "RAR",
+              "PDF",
+              "CSV",
+              "ZIP",
+              "ODT",
+              "CSV ZIP",
+              "ZIP CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 187,
+            "formatDistribution": {
+              "RAR": 3,
+              "PDF": 72,
+              "CSV": 1,
+              "ZIP": 69,
+              "ODT": 1,
+              "CSV ZIP": 24,
+              "ZIP CSV": 17
+            }
+          },
+          "calculatedAt": "2026-08-16T06:47:29.828Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.989,
+          "evidence": {
+            "resourceCount": 187,
+            "checked": 187,
+            "accessible": 185
+          },
+          "calculatedAt": "2026-08-16T06:47:54.730Z"
+        }
+      ],
+      "lastChecked": "2026-08-16T06:46:26.994Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:senaclaft-personas_expuestas_politicamente",
+      "title": "Personas Expuestas Políticamente",
+      "organization": "SENACLAFT",
+      "overall": 0.976,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 668,
+            "tagCount": 5,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-08-16T06:47:54.730Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.968,
+          "evidence": {
+            "modifiedAt": "2026-08-07T17:45:49.891550",
+            "daysSinceModified": 9,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-16T06:47:54.730Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "XLSX",
+              "CSV",
+              "XML",
+              "JSON"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "XLSX": 1,
+              "CSV": 1,
+              "XML": 1,
+              "JSON": 1
+            }
+          },
+          "calculatedAt": "2026-08-16T06:47:54.730Z"
         },
         {
           "dimension": "accessibility",
           "score": 1,
           "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
           },
-          "calculatedAt": "2026-08-11T06:56:40.870Z"
+          "calculatedAt": "2026-08-16T06:47:55.269Z"
         }
       ],
-      "lastChecked": "2026-08-11T06:56:16.776Z"
+      "lastChecked": "2026-08-16T06:46:26.994Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:banco-central-del-uruguay-comisiones_exterior",
+      "title": "Comisiones de servicios en el exterior",
+      "organization": "Banco Central del Uruguay",
+      "overall": 0.976,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 451,
+            "tagCount": 4,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-08-16T06:47:55.269Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.967,
+          "evidence": {
+            "modifiedAt": "2026-08-07T14:13:58.502546",
+            "daysSinceModified": 9,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-16T06:47:55.269Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "XLSX",
+              "CSV",
+              "XML",
+              "JSON"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "XLSX": 1,
+              "CSV": 1,
+              "XML": 1,
+              "JSON": 1
+            }
+          },
+          "calculatedAt": "2026-08-16T06:47:55.269Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-08-16T06:47:55.822Z"
+        }
+      ],
+      "lastChecked": "2026-08-16T06:46:26.994Z"
     },
     {
       "datasetId": "catalogodatos-gub-uy:banco-central-del-uruguay-resoluciones",
@@ -4470,432 +4758,6 @@
       "lastChecked": "2026-08-10T07:14:30.959Z"
     },
     {
-      "datasetId": "catalogodatos-gub-uy:ide-ejes-vias-circulacion",
-      "title": "Ejes de vías de circulación",
-      "organization": "IDE",
-      "overall": 0.977,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 240,
-            "tagCount": 3,
-            "resourceCount": 20
-          },
-          "calculatedAt": "2026-08-09T06:50:11.669Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.97,
-          "evidence": {
-            "modifiedAt": "2026-08-01T06:33:18.570264",
-            "daysSinceModified": 8,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-09T06:50:11.669Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "JSON",
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 20,
-            "formatDistribution": {
-              "JSON": 1,
-              "CSV": 19
-            }
-          },
-          "calculatedAt": "2026-08-09T06:50:11.669Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 20,
-            "checked": 20,
-            "accessible": 20
-          },
-          "calculatedAt": "2026-08-09T06:50:12.656Z"
-        }
-      ],
-      "lastChecked": "2026-08-09T06:49:19.086Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:ide-direcciones-geograficas-del-uruguay",
-      "title": "Direcciones Geográficas del Uruguay",
-      "organization": "IDE",
-      "overall": 0.977,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 1977,
-            "tagCount": 3,
-            "resourceCount": 20
-          },
-          "calculatedAt": "2026-08-09T06:50:12.656Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.97,
-          "evidence": {
-            "modifiedAt": "2026-08-01T06:03:43.885485",
-            "daysSinceModified": 8,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-09T06:50:12.656Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "JSON",
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 20,
-            "formatDistribution": {
-              "JSON": 1,
-              "CSV": 19
-            }
-          },
-          "calculatedAt": "2026-08-09T06:50:12.656Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 20,
-            "checked": 20,
-            "accessible": 20
-          },
-          "calculatedAt": "2026-08-09T06:50:13.900Z"
-        }
-      ],
-      "lastChecked": "2026-08-09T06:49:19.086Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:suprema-corte-de-justicia-informacion-del-nuevo-codigo-de-proceso-penal",
-      "title": "Información del Nuevo Código de Proceso Penal",
-      "organization": "Poder Judicial",
-      "overall": 0.977,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 180,
-            "tagCount": 6,
-            "resourceCount": 16
-          },
-          "calculatedAt": "2026-08-09T06:50:13.900Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.969,
-          "evidence": {
-            "modifiedAt": "2026-08-01T03:33:56.928496",
-            "daysSinceModified": 8,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-09T06:50:13.900Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "XLSX",
-              "CSV",
-              "XML",
-              "JSON"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 16,
-            "formatDistribution": {
-              "XLSX": 4,
-              "CSV": 4,
-              "XML": 4,
-              "JSON": 4
-            }
-          },
-          "calculatedAt": "2026-08-09T06:50:13.900Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 16,
-            "checked": 16,
-            "accessible": 16
-          },
-          "calculatedAt": "2026-08-09T06:50:14.731Z"
-        }
-      ],
-      "lastChecked": "2026-08-09T06:49:19.086Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:miem-dei",
-      "title": "Directorio de Empresas Industriales (DEI)",
-      "organization": "Ministerio de Industria, Energía y Minería",
-      "overall": 0.976,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 1338,
-            "tagCount": 4,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-08-09T06:50:14.731Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.968,
-          "evidence": {
-            "modifiedAt": "2026-07-31T17:18:40.045103",
-            "daysSinceModified": 9,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-09T06:50:14.731Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "XLSX",
-              "XML",
-              "JSON"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "CSV": 1,
-              "XLSX": 1,
-              "XML": 1,
-              "JSON": 1
-            }
-          },
-          "calculatedAt": "2026-08-09T06:50:14.731Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-08-09T06:50:15.525Z"
-        }
-      ],
-      "lastChecked": "2026-08-09T06:49:19.086Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:miem-consumo-final-energetico-por-fuente",
-      "title": "BEN - Consumo final energético por fuente",
-      "organization": "Ministerio de Industria, Energía y Minería",
-      "overall": 0.976,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 539,
-            "tagCount": 6,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-08-09T06:50:15.525Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.967,
-          "evidence": {
-            "modifiedAt": "2026-07-31T13:42:14.985932",
-            "daysSinceModified": 9,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-09T06:50:15.525Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "XLSX",
-              "CSV",
-              "XML",
-              "JSON"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "XLSX": 1,
-              "CSV": 1,
-              "XML": 1,
-              "JSON": 1
-            }
-          },
-          "calculatedAt": "2026-08-09T06:50:15.525Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-08-09T06:50:16.131Z"
-        }
-      ],
-      "lastChecked": "2026-08-09T06:49:19.086Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:fiscalia-general-de-la-nacion-imputaciones-y-condenas-a-personas",
-      "title": "Imputaciones y condenas a personas",
-      "organization": "Fiscalía General de la Nación",
-      "overall": 0.975,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 174,
-            "tagCount": 6,
-            "resourceCount": 5
-          },
-          "calculatedAt": "2026-08-09T06:50:16.731Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.963,
-          "evidence": {
-            "modifiedAt": "2026-07-30T14:43:59.864614",
-            "daysSinceModified": 10,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-09T06:50:16.731Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "XLSX",
-              "PDF",
-              "JSON",
-              "XML"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 5,
-            "formatDistribution": {
-              "CSV": 1,
-              "XLSX": 1,
-              "PDF": 1,
-              "JSON": 1,
-              "XML": 1
-            }
-          },
-          "calculatedAt": "2026-08-09T06:50:16.731Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 5,
-            "checked": 5,
-            "accessible": 5
-          },
-          "calculatedAt": "2026-08-09T06:50:17.338Z"
-        }
-      ],
-      "lastChecked": "2026-08-09T06:49:19.086Z"
-    },
-    {
       "datasetId": "catalogodatos-gub-uy:jutep-ejecucion_presupuestal_anual",
       "title": "Ejecución Presupuestal anual",
       "organization": "JUTEP",
@@ -5904,220 +5766,6 @@
         }
       ],
       "lastChecked": "2026-08-12T07:33:14.783Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:uaip-solicitud-informacion",
-      "title": "Solicitudes de información a Organismos",
-      "organization": "UAIP",
-      "overall": 0.97,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 1257,
-            "tagCount": 4,
-            "resourceCount": 5
-          },
-          "calculatedAt": "2026-08-09T06:50:17.338Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.942,
-          "evidence": {
-            "modifiedAt": "2026-07-24T18:06:52.031833",
-            "daysSinceModified": 16,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-09T06:50:17.339Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "PDF",
-              "XLSX",
-              "CSV",
-              "XML",
-              "JSON"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 5,
-            "formatDistribution": {
-              "PDF": 1,
-              "XLSX": 1,
-              "CSV": 1,
-              "XML": 1,
-              "JSON": 1
-            }
-          },
-          "calculatedAt": "2026-08-09T06:50:17.339Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 5,
-            "checked": 5,
-            "accessible": 5
-          },
-          "calculatedAt": "2026-08-09T06:50:18.032Z"
-        }
-      ],
-      "lastChecked": "2026-08-09T06:49:19.086Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:jutep-misiones_oficiales",
-      "title": "Misiones Oficiales",
-      "organization": "JUTEP",
-      "overall": 0.97,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 95,
-            "tagCount": 5,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-08-09T06:50:18.032Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.942,
-          "evidence": {
-            "modifiedAt": "2026-07-24T16:01:58.700581",
-            "daysSinceModified": 16,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-09T06:50:18.032Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "XLSX",
-              "CSV",
-              "XML",
-              "JSON"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "XLSX": 1,
-              "CSV": 1,
-              "XML": 1,
-              "JSON": 1
-            }
-          },
-          "calculatedAt": "2026-08-09T06:50:18.032Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-08-09T06:50:18.631Z"
-        }
-      ],
-      "lastChecked": "2026-08-09T06:49:19.086Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:salas-publicas-de-montevideo",
-      "title": "Salas públicas de Montevideo",
-      "organization": "Intendencia de Montevideo",
-      "overall": 0.969,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 710,
-            "tagCount": 6,
-            "resourceCount": 5
-          },
-          "calculatedAt": "2026-08-09T06:50:18.631Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.938,
-          "evidence": {
-            "modifiedAt": "2026-07-23T14:18:03.626703",
-            "daysSinceModified": 17,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-09T06:50:18.631Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "TXT",
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 5,
-            "formatDistribution": {
-              "TXT": 1,
-              "CSV": 4
-            }
-          },
-          "calculatedAt": "2026-08-09T06:50:18.631Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 5,
-            "checked": 5,
-            "accessible": 5
-          },
-          "calculatedAt": "2026-08-09T06:50:19.446Z"
-        }
-      ],
-      "lastChecked": "2026-08-09T06:49:19.086Z"
     },
     {
       "datasetId": "catalogodatos-gub-uy:caja-notarial-autoridades_de_la_cajanotarial",
@@ -135377,2414 +135025,6 @@
       "lastChecked": "2026-08-15T06:22:01.270Z"
     },
     {
-      "datasetId": "catalogodatos-gub-uy:inumet-observaciones-meteorologicas-temperatura-del-aire-en-el-uruguay",
-      "title": "Observaciones meteorológicas - Temperatura del aire en el Uruguay",
-      "organization": "INUMET",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 662,
-            "tagCount": 5,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-08-16T06:46:26.994Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 1,
-          "evidence": {
-            "modifiedAt": "2026-08-16T04:17:39.167094",
-            "daysSinceModified": 0,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:46:26.994Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "JSON",
-              "XML",
-              "CSV",
-              "XLSX"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "JSON": 1,
-              "XML": 1,
-              "CSV": 1,
-              "XLSX": 1
-            }
-          },
-          "calculatedAt": "2026-08-16T06:46:26.994Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-08-16T06:46:27.659Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:inumet-observaciones-meteorologicas-insolacion-total-en-el-uruguay",
-      "title": "Observaciones meteorológicas - Insolación total en el Uruguay",
-      "organization": "INUMET",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 687,
-            "tagCount": 5,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-08-16T06:46:27.659Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 1,
-          "evidence": {
-            "modifiedAt": "2026-08-16T04:15:36.432194",
-            "daysSinceModified": 0,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:46:27.659Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "JSON",
-              "XML",
-              "CSV",
-              "XLSX"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "JSON": 1,
-              "XML": 1,
-              "CSV": 1,
-              "XLSX": 1
-            }
-          },
-          "calculatedAt": "2026-08-16T06:46:27.659Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-08-16T06:46:28.165Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:inumet-observaciones-meteorologicas-precipitacion-puntual-en-el-uruguay",
-      "title": "Observaciones meteorológicas - Precipitación puntual en el Uruguay",
-      "organization": "INUMET",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 671,
-            "tagCount": 6,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-08-16T06:46:28.165Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 1,
-          "evidence": {
-            "modifiedAt": "2026-08-16T04:15:27.376230",
-            "daysSinceModified": 0,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:46:28.165Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "JSON",
-              "XML",
-              "CSV",
-              "XLSX"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "JSON": 1,
-              "XML": 1,
-              "CSV": 1,
-              "XLSX": 1
-            }
-          },
-          "calculatedAt": "2026-08-16T06:46:28.165Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-08-16T06:46:28.681Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:inumet-observaciones-meteorologicas-presion-atmosferica-en-el-uruguay",
-      "title": "Observaciones meteorológicas - Presión atmosférica en el Uruguay",
-      "organization": "INUMET",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 686,
-            "tagCount": 6,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-08-16T06:46:28.681Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 1,
-          "evidence": {
-            "modifiedAt": "2026-08-16T04:13:18.525304",
-            "daysSinceModified": 0,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:46:28.681Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "JSON",
-              "XML",
-              "CSV",
-              "XLSX"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "JSON": 1,
-              "XML": 1,
-              "CSV": 1,
-              "XLSX": 1
-            }
-          },
-          "calculatedAt": "2026-08-16T06:46:28.681Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-08-16T06:46:29.225Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:inumet-observaciones-meteorologicas-direccion-e-intensidad-del-viento-en-el-uruguay",
-      "title": "Observaciones meteorológicas - Dirección e Intensidad del viento en el Uruguay",
-      "organization": "INUMET",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 704,
-            "tagCount": 5,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-08-16T06:46:29.225Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 1,
-          "evidence": {
-            "modifiedAt": "2026-08-16T04:11:10.706223",
-            "daysSinceModified": 0,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:46:29.225Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "JSON",
-              "XML",
-              "CSV",
-              "XLSX"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "JSON": 1,
-              "XML": 1,
-              "CSV": 1,
-              "XLSX": 1
-            }
-          },
-          "calculatedAt": "2026-08-16T06:46:29.225Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-08-16T06:46:29.756Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:inumet-observaciones-meteorologicas-humedad-relativa-en-el-uruguay",
-      "title": "Observaciones meteorológicas - Humedad relativa en el Uruguay",
-      "organization": "INUMET",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 768,
-            "tagCount": 4,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-08-16T06:46:29.756Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 1,
-          "evidence": {
-            "modifiedAt": "2026-08-16T04:09:52.198203",
-            "daysSinceModified": 0,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:46:29.756Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "XML",
-              "CSV",
-              "XLSX",
-              "JSON"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "XML": 1,
-              "CSV": 1,
-              "XLSX": 1,
-              "JSON": 1
-            }
-          },
-          "calculatedAt": "2026-08-16T06:46:29.756Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-08-16T06:46:30.293Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:ministerio-de-turismo-turismo-emisivo",
-      "title": "Turismo Emisivo",
-      "organization": "Ministerio de Turismo",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 1021,
-            "tagCount": 4,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-08-16T06:46:30.293Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-08-15T19:20:20.105676",
-            "daysSinceModified": 0,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:46:30.293Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "XLSX",
-              "CSV",
-              "XML",
-              "JSON"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "XLSX": 1,
-              "CSV": 1,
-              "XML": 1,
-              "JSON": 1
-            }
-          },
-          "calculatedAt": "2026-08-16T06:46:30.293Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-08-16T06:46:30.812Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:estacion-de-transferencia-de-residuos-solidos-urbanos",
-      "title": "Estación de Transferencia de Residuos Sólidos Urbanos",
-      "organization": "Intendencia de Montevideo",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 434,
-            "tagCount": 4,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-08-16T06:46:30.812Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-08-15T16:18:46.438455",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:46:30.812Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "CSV": 4
-            }
-          },
-          "calculatedAt": "2026-08-16T06:46:30.812Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-08-16T06:46:32.633Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:rotulado-de-alimentos",
-      "title": "Rotulado de alimentos",
-      "organization": "Intendencia de Montevideo",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 783,
-            "tagCount": 1,
-            "resourceCount": 3
-          },
-          "calculatedAt": "2026-08-16T06:46:32.633Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-08-15T16:18:45.662847",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:46:32.633Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 3,
-            "formatDistribution": {
-              "CSV": 3
-            }
-          },
-          "calculatedAt": "2026-08-16T06:46:32.633Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 3,
-            "checked": 3,
-            "accessible": 3
-          },
-          "calculatedAt": "2026-08-16T06:46:33.905Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:velocidad-promedio-vehicular-en-las-principales-avenidas-de-montevideo",
-      "title": "Velocidad promedio vehicular en las principales avenidas de Montevideo",
-      "organization": "Intendencia de Montevideo",
-      "overall": 0.93,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 1427,
-            "tagCount": 4,
-            "resourceCount": 69
-          },
-          "calculatedAt": "2026-08-16T06:46:33.905Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-08-15T16:18:25.252226",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:46:33.905Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "TXT",
-              "CSV",
-              "CSV ZIP"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 69,
-            "formatDistribution": {
-              "TXT": 1,
-              "CSV": 59,
-              "CSV ZIP": 9
-            }
-          },
-          "calculatedAt": "2026-08-16T06:46:33.905Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.826,
-          "evidence": {
-            "resourceCount": 69,
-            "checked": 69,
-            "accessible": 57
-          },
-          "calculatedAt": "2026-08-16T06:46:44.011Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:vias-de-montevideo-con-cabezales-de-numeracion-significado-tipo-y-titulo",
-      "title": "Listado de calles de Montevideo con información de numeración, significado, tipo, título, categoría y subcategoría",
-      "organization": "Intendencia de Montevideo",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 572,
-            "tagCount": 2,
-            "resourceCount": 10
-          },
-          "calculatedAt": "2026-08-16T06:46:44.011Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-08-15T16:18:21.861558",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:46:44.011Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "TXT"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 10,
-            "formatDistribution": {
-              "CSV": 5,
-              "TXT": 5
-            }
-          },
-          "calculatedAt": "2026-08-16T06:46:44.011Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 10,
-            "checked": 10,
-            "accessible": 10
-          },
-          "calculatedAt": "2026-08-16T06:46:44.913Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:dioxido-de-nitrogeno",
-      "title": "Dióxido de Nitrógeno",
-      "organization": "Intendencia de Montevideo",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 74,
-            "tagCount": 2,
-            "resourceCount": 9
-          },
-          "calculatedAt": "2026-08-16T06:46:44.913Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-08-15T16:18:19.521211",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:46:44.913Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 9,
-            "formatDistribution": {
-              "CSV": 9
-            }
-          },
-          "calculatedAt": "2026-08-16T06:46:44.913Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 9,
-            "checked": 9,
-            "accessible": 9
-          },
-          "calculatedAt": "2026-08-16T06:46:46.223Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:datos-por-estacion-pm-2-5",
-      "title": "Monitoreo de material particulado (PM 2.5)",
-      "organization": "Intendencia de Montevideo",
-      "overall": 0.949,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 73,
-            "tagCount": 3,
-            "resourceCount": 9
-          },
-          "calculatedAt": "2026-08-16T06:46:46.223Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-08-15T16:18:17.749930",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:46:46.223Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "TXT",
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 9,
-            "formatDistribution": {
-              "TXT": 1,
-              "CSV": 8
-            }
-          },
-          "calculatedAt": "2026-08-16T06:46:46.223Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.889,
-          "evidence": {
-            "resourceCount": 9,
-            "checked": 9,
-            "accessible": 8
-          },
-          "calculatedAt": "2026-08-16T06:46:46.994Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:monitoreo-de-agua-de-playas",
-      "title": "Monitoreo de agua de playas",
-      "organization": "Intendencia de Montevideo",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 647,
-            "tagCount": 5,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-08-16T06:46:46.994Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-08-15T16:18:16.296351",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:46:46.994Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "TXT",
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "TXT": 1,
-              "CSV": 3
-            }
-          },
-          "calculatedAt": "2026-08-16T06:46:46.994Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-08-16T06:46:47.741Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:aliviaderos",
-      "title": "Aliviaderos",
-      "organization": "Intendencia de Montevideo",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 57,
-            "tagCount": 2,
-            "resourceCount": 6
-          },
-          "calculatedAt": "2026-08-16T06:46:47.741Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-08-15T16:18:15.240871",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:46:47.741Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 6,
-            "formatDistribution": {
-              "CSV": 6
-            }
-          },
-          "calculatedAt": "2026-08-16T06:46:47.741Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 6,
-            "checked": 6,
-            "accessible": 6
-          },
-          "calculatedAt": "2026-08-16T06:46:48.487Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:conteo-vehicular-en-las-principales-avenidas-de-montevideo",
-      "title": "Conteo vehicular en las principales avenidas de Montevideo",
-      "organization": "Intendencia de Montevideo",
-      "overall": 0.959,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 1434,
-            "tagCount": 4,
-            "resourceCount": 86
-          },
-          "calculatedAt": "2026-08-16T06:46:48.487Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-08-15T16:17:51.327031",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:46:48.487Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "TXT",
-              "CSV ZIP",
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 86,
-            "formatDistribution": {
-              "TXT": 1,
-              "CSV ZIP": 14,
-              "CSV": 71
-            }
-          },
-          "calculatedAt": "2026-08-16T06:46:48.487Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.919,
-          "evidence": {
-            "resourceCount": 86,
-            "checked": 86,
-            "accessible": 79
-          },
-          "calculatedAt": "2026-08-16T06:46:52.415Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:antecedentes-de-nomenclatura-de-vias-de-transito-de-montevideo",
-      "title": "Antecedentes de nomenclatura de vías de tránsito de Montevideo",
-      "organization": "Intendencia de Montevideo",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 178,
-            "tagCount": 2,
-            "resourceCount": 2
-          },
-          "calculatedAt": "2026-08-16T06:46:52.415Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-08-15T16:17:49.863809",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:46:52.415Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "TXT",
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 2,
-            "formatDistribution": {
-              "TXT": 1,
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-08-16T06:46:52.415Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-08-16T06:46:53.161Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:aceras-y-cabezales-de-numeracion",
-      "title": "Aceras y cabezales de numeración",
-      "organization": "Intendencia de Montevideo",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 606,
-            "tagCount": 3,
-            "resourceCount": 2
-          },
-          "calculatedAt": "2026-08-16T06:46:53.161Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-08-15T16:17:49.014115",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:46:53.161Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "TXT"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 2,
-            "formatDistribution": {
-              "CSV": 1,
-              "TXT": 1
-            }
-          },
-          "calculatedAt": "2026-08-16T06:46:53.161Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-08-16T06:46:53.767Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:monitoreo-de-calidad-en-los-cuerpos-de-agua",
-      "title": "Monitoreo de calidad en los cuerpos de agua",
-      "organization": "Intendencia de Montevideo",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 987,
-            "tagCount": 6,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-08-16T06:46:53.767Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-08-15T16:17:48.507005",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:46:53.767Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-08-16T06:46:53.767Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-08-16T06:46:54.252Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:calidad-del-aire-ozono-o3",
-      "title": "Ozono (O3)",
-      "organization": "Intendencia de Montevideo",
-      "overall": 0.945,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 109,
-            "tagCount": 2,
-            "resourceCount": 8
-          },
-          "calculatedAt": "2026-08-16T06:46:54.252Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-08-15T16:17:44.856388",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:46:54.252Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 8,
-            "formatDistribution": {
-              "CSV": 8
-            }
-          },
-          "calculatedAt": "2026-08-16T06:46:54.252Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.875,
-          "evidence": {
-            "resourceCount": 8,
-            "checked": 8,
-            "accessible": 7
-          },
-          "calculatedAt": "2026-08-16T06:46:59.252Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:informacion-de-levantes-de-contenedores-domiciliarios",
-      "title": "Información de levantes de contenedores domiciliarios",
-      "organization": "Intendencia de Montevideo",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 772,
-            "tagCount": 5,
-            "resourceCount": 9
-          },
-          "calculatedAt": "2026-08-16T06:46:59.252Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-08-15T16:17:38.738204",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:46:59.252Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "UNKNOWN",
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 9,
-            "formatDistribution": {
-              "UNKNOWN": 1,
-              "CSV": 8
-            }
-          },
-          "calculatedAt": "2026-08-16T06:46:59.252Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 9,
-            "checked": 9,
-            "accessible": 9
-          },
-          "calculatedAt": "2026-08-16T06:47:00.008Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:monitoreo-de-polen-y-esporas-fungicas-en-el-aire-de-montevideo",
-      "title": "Monitoreo de polen y esporas fúngicas en el aire de Montevideo",
-      "organization": "Intendencia de Montevideo",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 1946,
-            "tagCount": 3,
-            "resourceCount": 6
-          },
-          "calculatedAt": "2026-08-16T06:47:00.008Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-08-15T16:17:37.651442",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:47:00.008Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 6,
-            "formatDistribution": {
-              "CSV": 6
-            }
-          },
-          "calculatedAt": "2026-08-16T06:47:00.008Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 6,
-            "checked": 6,
-            "accessible": 6
-          },
-          "calculatedAt": "2026-08-16T06:47:00.748Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:informacion-pluviometrica",
-      "title": "Información pluviométrica",
-      "organization": "Intendencia de Montevideo",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 1316,
-            "tagCount": 2,
-            "resourceCount": 15
-          },
-          "calculatedAt": "2026-08-16T06:47:00.748Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-08-15T16:17:35.569087",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:47:00.748Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "TXT",
-              "CSV",
-              "ZIP"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 15,
-            "formatDistribution": {
-              "TXT": 1,
-              "CSV": 9,
-              "ZIP": 5
-            }
-          },
-          "calculatedAt": "2026-08-16T06:47:00.748Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 15,
-            "checked": 15,
-            "accessible": 15
-          },
-          "calculatedAt": "2026-08-16T06:47:01.508Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:datos-historicos-de-limpieza-reportados-en-el-centro-operativo-de-montevideo",
-      "title": "Montevideo más verde en línea: solicitudes realizadas",
-      "organization": "Intendencia de Montevideo",
-      "overall": 0.932,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 237,
-            "tagCount": 4,
-            "resourceCount": 6
-          },
-          "calculatedAt": "2026-08-16T06:47:01.508Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-08-15T16:17:34.902684",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:47:01.508Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "TXT",
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 6,
-            "formatDistribution": {
-              "TXT": 1,
-              "CSV": 5
-            }
-          },
-          "calculatedAt": "2026-08-16T06:47:01.508Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.833,
-          "evidence": {
-            "resourceCount": 6,
-            "checked": 6,
-            "accessible": 5
-          },
-          "calculatedAt": "2026-08-16T06:47:06.510Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:nivel-de-tanques",
-      "title": "Nivel de Tanques",
-      "organization": "Intendencia de Montevideo",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 73,
-            "tagCount": 3,
-            "resourceCount": 11
-          },
-          "calculatedAt": "2026-08-16T06:47:06.510Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-08-15T16:17:33.445344",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:47:06.510Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 11,
-            "formatDistribution": {
-              "CSV": 11
-            }
-          },
-          "calculatedAt": "2026-08-16T06:47:06.510Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 11,
-            "checked": 11,
-            "accessible": 11
-          },
-          "calculatedAt": "2026-08-16T06:47:08.884Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:limnigrafo-2022",
-      "title": "Limnígrafos",
-      "organization": "Intendencia de Montevideo",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 70,
-            "tagCount": 1,
-            "resourceCount": 6
-          },
-          "calculatedAt": "2026-08-16T06:47:08.884Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-08-15T16:17:30.900993",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:47:08.884Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 6,
-            "formatDistribution": {
-              "CSV": 6
-            }
-          },
-          "calculatedAt": "2026-08-16T06:47:08.884Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 6,
-            "checked": 6,
-            "accessible": 6
-          },
-          "calculatedAt": "2026-08-16T06:47:09.409Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:residuos-retirados-por-playa",
-      "title": "Residuos retirados por playa",
-      "organization": "Intendencia de Montevideo",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 68,
-            "tagCount": 4,
-            "resourceCount": 2
-          },
-          "calculatedAt": "2026-08-16T06:47:09.409Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-08-15T16:17:28.767389",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:47:09.409Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "TXT"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 2,
-            "formatDistribution": {
-              "CSV": 1,
-              "TXT": 1
-            }
-          },
-          "calculatedAt": "2026-08-16T06:47:09.409Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-08-16T06:47:09.913Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:conteo-ciclovia",
-      "title": "Conteo Ciclovia",
-      "organization": "Intendencia de Montevideo",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 634,
-            "tagCount": 1,
-            "resourceCount": 3
-          },
-          "calculatedAt": "2026-08-16T06:47:09.913Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-08-15T16:17:26.251305",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:47:09.913Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 3,
-            "formatDistribution": {
-              "CSV": 3
-            }
-          },
-          "calculatedAt": "2026-08-16T06:47:09.913Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 3,
-            "checked": 3,
-            "accessible": 3
-          },
-          "calculatedAt": "2026-08-16T06:47:10.685Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:ubicacion-de-sensores-de-medicion-de-conteo-vehiculos",
-      "title": "Ubicación de sensores de medición de conteo vehículos",
-      "organization": "Intendencia de Montevideo",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 405,
-            "tagCount": 6,
-            "resourceCount": 70
-          },
-          "calculatedAt": "2026-08-16T06:47:10.685Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-08-15T16:17:09.794505",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:47:10.685Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "TXT",
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 70,
-            "formatDistribution": {
-              "TXT": 1,
-              "CSV": 69
-            }
-          },
-          "calculatedAt": "2026-08-16T06:47:10.685Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 70,
-            "checked": 70,
-            "accessible": 70
-          },
-          "calculatedAt": "2026-08-16T06:47:13.557Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:viajes-realizados-en-los-omnibus-del-sistema-de-transporte-metropolitano-stm",
-      "title": "Viajes realizados en los ómnibus del Sistema de Transporte Metropolitano - STM",
-      "organization": "Intendencia de Montevideo",
-      "overall": 0.755,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 559,
-            "tagCount": 3,
-            "resourceCount": 82
-          },
-          "calculatedAt": "2026-08-16T06:47:13.557Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-08-15T16:16:49.339447",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:47:13.557Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "CSV ZIP"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 82,
-            "formatDistribution": {
-              "CSV": 21,
-              "CSV ZIP": 61
-            }
-          },
-          "calculatedAt": "2026-08-16T06:47:13.557Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.268,
-          "evidence": {
-            "resourceCount": 82,
-            "checked": 82,
-            "accessible": 22
-          },
-          "calculatedAt": "2026-08-16T06:47:16.689Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:historico-indice-uv",
-      "title": "Medidas de la Radiación Solar en Montevideo",
-      "organization": "Intendencia de Montevideo",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 201,
-            "tagCount": 5,
-            "resourceCount": 9
-          },
-          "calculatedAt": "2026-08-16T06:47:16.689Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-08-15T16:16:47.641258",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:47:16.689Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 9,
-            "formatDistribution": {
-              "CSV": 9
-            }
-          },
-          "calculatedAt": "2026-08-16T06:47:16.689Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 9,
-            "checked": 9,
-            "accessible": 9
-          },
-          "calculatedAt": "2026-08-16T06:47:17.485Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:facturacion-y-consumo",
-      "title": "Facturación y consumo",
-      "organization": "OSE",
-      "overall": 0.901,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 633,
-            "tagCount": 3,
-            "resourceCount": 78
-          },
-          "calculatedAt": "2026-08-16T06:47:17.485Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.97,
-          "evidence": {
-            "modifiedAt": "2026-08-08T06:17:59.956996",
-            "daysSinceModified": 8,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:47:17.485Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 78,
-            "formatDistribution": {
-              "CSV": 78
-            }
-          },
-          "calculatedAt": "2026-08-16T06:47:17.485Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.756,
-          "evidence": {
-            "resourceCount": 78,
-            "checked": 78,
-            "accessible": 59
-          },
-          "calculatedAt": "2026-08-16T06:47:29.828Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:direccion-nacional-de-catastro-padrones-urbanos-y-rurales",
-      "title": "Padrones urbanos y rurales",
-      "organization": "Dirección Nacional de Catastro",
-      "overall": 0.973,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 77,
-            "tagCount": 3,
-            "resourceCount": 187
-          },
-          "calculatedAt": "2026-08-16T06:47:29.828Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.968,
-          "evidence": {
-            "modifiedAt": "2026-08-07T18:01:19.068690",
-            "daysSinceModified": 9,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:47:29.828Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "RAR",
-              "PDF",
-              "CSV",
-              "ZIP",
-              "ODT",
-              "CSV ZIP",
-              "ZIP CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 187,
-            "formatDistribution": {
-              "RAR": 3,
-              "PDF": 72,
-              "CSV": 1,
-              "ZIP": 69,
-              "ODT": 1,
-              "CSV ZIP": 24,
-              "ZIP CSV": 17
-            }
-          },
-          "calculatedAt": "2026-08-16T06:47:29.828Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.989,
-          "evidence": {
-            "resourceCount": 187,
-            "checked": 187,
-            "accessible": 185
-          },
-          "calculatedAt": "2026-08-16T06:47:54.730Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:senaclaft-personas_expuestas_politicamente",
-      "title": "Personas Expuestas Políticamente",
-      "organization": "SENACLAFT",
-      "overall": 0.976,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 668,
-            "tagCount": 5,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-08-16T06:47:54.730Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.968,
-          "evidence": {
-            "modifiedAt": "2026-08-07T17:45:49.891550",
-            "daysSinceModified": 9,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:47:54.730Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "XLSX",
-              "CSV",
-              "XML",
-              "JSON"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "XLSX": 1,
-              "CSV": 1,
-              "XML": 1,
-              "JSON": 1
-            }
-          },
-          "calculatedAt": "2026-08-16T06:47:54.730Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-08-16T06:47:55.269Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
-      "datasetId": "catalogodatos-gub-uy:banco-central-del-uruguay-comisiones_exterior",
-      "title": "Comisiones de servicios en el exterior",
-      "organization": "Banco Central del Uruguay",
-      "overall": 0.976,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 451,
-            "tagCount": 4,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-08-16T06:47:55.269Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.967,
-          "evidence": {
-            "modifiedAt": "2026-08-07T14:13:58.502546",
-            "daysSinceModified": 9,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:47:55.269Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "XLSX",
-              "CSV",
-              "XML",
-              "JSON"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "XLSX": 1,
-              "CSV": 1,
-              "XML": 1,
-              "JSON": 1
-            }
-          },
-          "calculatedAt": "2026-08-16T06:47:55.269Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-08-16T06:47:55.822Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
       "datasetId": "catalogodatos-gub-uy:mides-indicador-9081",
       "title": "Porcentaje de jóvenes que compiten en algún torneo o campeonato según sexo. País urbano",
       "organization": "MIDES",
@@ -191078,75 +188318,6 @@
       "lastChecked": "2026-08-16T06:46:26.994Z"
     },
     {
-      "datasetId": "catalogodatos-gub-uy:mides-datos-de-panel-uruguay-integra",
-      "title": "Encuesta panel a participantes de Uruguay Integra (2009)",
-      "organization": "MIDES",
-      "overall": 0.466,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 0.85,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [
-              "tags"
-            ],
-            "descriptionLength": 104,
-            "tagCount": 0,
-            "resourceCount": 2
-          },
-          "calculatedAt": "2026-08-16T06:54:44.104Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0,
-          "evidence": {
-            "modifiedAt": "2016-06-22T00:00:00",
-            "daysSinceModified": 3707,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-16T06:54:44.104Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.15,
-          "evidence": {
-            "formats": [
-              "TXT",
-              "PDF"
-            ],
-            "bestFormat": "PDF",
-            "bestFormatScore": 0.15,
-            "resourceCount": 2,
-            "formatDistribution": {
-              "TXT": 1,
-              "PDF": 1
-            }
-          },
-          "calculatedAt": "2026-08-16T06:54:44.104Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-08-16T06:54:44.655Z"
-        }
-      ],
-      "lastChecked": "2026-08-16T06:46:26.994Z"
-    },
-    {
       "datasetId": "catalogodatos-gub-uy:mides-paneluruguaytrabaja2009",
       "title": "Encuesta panel a participantes de Uruguay Trabaja (2009)",
       "organization": "MIDES",
@@ -191211,6 +188382,75 @@
             "accessible": 2
           },
           "calculatedAt": "2026-08-16T06:54:45.209Z"
+        }
+      ],
+      "lastChecked": "2026-08-16T06:46:26.994Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:mides-datos-de-panel-uruguay-integra",
+      "title": "Encuesta panel a participantes de Uruguay Integra (2009)",
+      "organization": "MIDES",
+      "overall": 0.466,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 0.85,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [
+              "tags"
+            ],
+            "descriptionLength": 104,
+            "tagCount": 0,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-08-16T06:54:44.104Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0,
+          "evidence": {
+            "modifiedAt": "2016-06-22T00:00:00",
+            "daysSinceModified": 3707,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-16T06:54:44.104Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.15,
+          "evidence": {
+            "formats": [
+              "TXT",
+              "PDF"
+            ],
+            "bestFormat": "PDF",
+            "bestFormatScore": 0.15,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "TXT": 1,
+              "PDF": 1
+            }
+          },
+          "calculatedAt": "2026-08-16T06:54:44.104Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-08-16T06:54:44.655Z"
         }
       ],
       "lastChecked": "2026-08-16T06:46:26.994Z"
@@ -191902,6 +189142,2766 @@
         }
       ],
       "lastChecked": "2026-08-16T06:46:26.994Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:inumet-observaciones-meteorologicas-temperatura-del-aire-en-el-uruguay",
+      "title": "Observaciones meteorológicas - Temperatura del aire en el Uruguay",
+      "organization": "INUMET",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 662,
+            "tagCount": 5,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-08-17T06:42:16.159Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 1,
+          "evidence": {
+            "modifiedAt": "2026-08-17T04:16:57.651853",
+            "daysSinceModified": 0,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:42:16.159Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "JSON",
+              "XML",
+              "CSV",
+              "XLSX"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "JSON": 1,
+              "XML": 1,
+              "CSV": 1,
+              "XLSX": 1
+            }
+          },
+          "calculatedAt": "2026-08-17T06:42:16.160Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-08-17T06:42:17.036Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:inumet-observaciones-meteorologicas-insolacion-total-en-el-uruguay",
+      "title": "Observaciones meteorológicas - Insolación total en el Uruguay",
+      "organization": "INUMET",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 687,
+            "tagCount": 5,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-08-17T06:42:17.036Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 1,
+          "evidence": {
+            "modifiedAt": "2026-08-17T04:14:54.449089",
+            "daysSinceModified": 0,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:42:17.036Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "JSON",
+              "XML",
+              "CSV",
+              "XLSX"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "JSON": 1,
+              "XML": 1,
+              "CSV": 1,
+              "XLSX": 1
+            }
+          },
+          "calculatedAt": "2026-08-17T06:42:17.036Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-08-17T06:42:17.716Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:inumet-observaciones-meteorologicas-precipitacion-puntual-en-el-uruguay",
+      "title": "Observaciones meteorológicas - Precipitación puntual en el Uruguay",
+      "organization": "INUMET",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 671,
+            "tagCount": 6,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-08-17T06:42:17.716Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 1,
+          "evidence": {
+            "modifiedAt": "2026-08-17T04:14:45.794206",
+            "daysSinceModified": 0,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:42:17.716Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "JSON",
+              "XML",
+              "CSV",
+              "XLSX"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "JSON": 1,
+              "XML": 1,
+              "CSV": 1,
+              "XLSX": 1
+            }
+          },
+          "calculatedAt": "2026-08-17T06:42:17.716Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-08-17T06:42:18.384Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:inumet-observaciones-meteorologicas-presion-atmosferica-en-el-uruguay",
+      "title": "Observaciones meteorológicas - Presión atmosférica en el Uruguay",
+      "organization": "INUMET",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 686,
+            "tagCount": 6,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-08-17T06:42:18.384Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 1,
+          "evidence": {
+            "modifiedAt": "2026-08-17T04:12:46.906699",
+            "daysSinceModified": 0,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:42:18.384Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "JSON",
+              "XML",
+              "CSV",
+              "XLSX"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "JSON": 1,
+              "XML": 1,
+              "CSV": 1,
+              "XLSX": 1
+            }
+          },
+          "calculatedAt": "2026-08-17T06:42:18.384Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-08-17T06:42:19.072Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:inumet-observaciones-meteorologicas-direccion-e-intensidad-del-viento-en-el-uruguay",
+      "title": "Observaciones meteorológicas - Dirección e Intensidad del viento en el Uruguay",
+      "organization": "INUMET",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 704,
+            "tagCount": 5,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-08-17T06:42:19.072Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 1,
+          "evidence": {
+            "modifiedAt": "2026-08-17T04:10:52.429912",
+            "daysSinceModified": 0,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:42:19.072Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "JSON",
+              "XML",
+              "CSV",
+              "XLSX"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "JSON": 1,
+              "XML": 1,
+              "CSV": 1,
+              "XLSX": 1
+            }
+          },
+          "calculatedAt": "2026-08-17T06:42:19.072Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-08-17T06:42:19.747Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:inumet-observaciones-meteorologicas-humedad-relativa-en-el-uruguay",
+      "title": "Observaciones meteorológicas - Humedad relativa en el Uruguay",
+      "organization": "INUMET",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 768,
+            "tagCount": 4,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-08-17T06:42:19.747Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 1,
+          "evidence": {
+            "modifiedAt": "2026-08-17T04:09:40.137406",
+            "daysSinceModified": 0,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:42:19.747Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "XML",
+              "CSV",
+              "XLSX",
+              "JSON"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "XML": 1,
+              "CSV": 1,
+              "XLSX": 1,
+              "JSON": 1
+            }
+          },
+          "calculatedAt": "2026-08-17T06:42:19.747Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-08-17T06:42:20.430Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:ministerio-de-turismo-turismo-emisivo",
+      "title": "Turismo Emisivo",
+      "organization": "Ministerio de Turismo",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 1021,
+            "tagCount": 4,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-08-17T06:42:20.430Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.998,
+          "evidence": {
+            "modifiedAt": "2026-08-16T19:20:16.539128",
+            "daysSinceModified": 0,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:42:20.430Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "XLSX",
+              "CSV",
+              "XML",
+              "JSON"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "XLSX": 1,
+              "CSV": 1,
+              "XML": 1,
+              "JSON": 1
+            }
+          },
+          "calculatedAt": "2026-08-17T06:42:20.430Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-08-17T06:42:21.122Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:estacion-de-transferencia-de-residuos-solidos-urbanos",
+      "title": "Estación de Transferencia de Residuos Sólidos Urbanos",
+      "organization": "Intendencia de Montevideo",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 434,
+            "tagCount": 4,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-08-17T06:42:21.122Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.998,
+          "evidence": {
+            "modifiedAt": "2026-08-16T18:18:46.216543",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:42:21.122Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "CSV": 4
+            }
+          },
+          "calculatedAt": "2026-08-17T06:42:21.122Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-08-17T06:42:23.595Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:rotulado-de-alimentos",
+      "title": "Rotulado de alimentos",
+      "organization": "Intendencia de Montevideo",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 783,
+            "tagCount": 1,
+            "resourceCount": 3
+          },
+          "calculatedAt": "2026-08-17T06:42:23.595Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.998,
+          "evidence": {
+            "modifiedAt": "2026-08-16T18:18:45.398614",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:42:23.595Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 3,
+            "formatDistribution": {
+              "CSV": 3
+            }
+          },
+          "calculatedAt": "2026-08-17T06:42:23.595Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 3,
+            "checked": 3,
+            "accessible": 3
+          },
+          "calculatedAt": "2026-08-17T06:42:25.341Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:velocidad-promedio-vehicular-en-las-principales-avenidas-de-montevideo",
+      "title": "Velocidad promedio vehicular en las principales avenidas de Montevideo",
+      "organization": "Intendencia de Montevideo",
+      "overall": 0.943,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 1427,
+            "tagCount": 4,
+            "resourceCount": 69
+          },
+          "calculatedAt": "2026-08-17T06:42:25.341Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.998,
+          "evidence": {
+            "modifiedAt": "2026-08-16T18:18:20.107358",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:42:25.341Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "TXT",
+              "CSV",
+              "CSV ZIP"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 69,
+            "formatDistribution": {
+              "TXT": 1,
+              "CSV": 59,
+              "CSV ZIP": 9
+            }
+          },
+          "calculatedAt": "2026-08-17T06:42:25.341Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.87,
+          "evidence": {
+            "resourceCount": 69,
+            "checked": 69,
+            "accessible": 60
+          },
+          "calculatedAt": "2026-08-17T06:42:35.487Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:vias-de-montevideo-con-cabezales-de-numeracion-significado-tipo-y-titulo",
+      "title": "Listado de calles de Montevideo con información de numeración, significado, tipo, título, categoría y subcategoría",
+      "organization": "Intendencia de Montevideo",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 572,
+            "tagCount": 2,
+            "resourceCount": 10
+          },
+          "calculatedAt": "2026-08-17T06:42:35.487Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.998,
+          "evidence": {
+            "modifiedAt": "2026-08-16T18:18:16.552181",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:42:35.487Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "TXT"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 10,
+            "formatDistribution": {
+              "CSV": 5,
+              "TXT": 5
+            }
+          },
+          "calculatedAt": "2026-08-17T06:42:35.487Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 10,
+            "checked": 10,
+            "accessible": 10
+          },
+          "calculatedAt": "2026-08-17T06:42:36.380Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:reclamos-registrados-en-el-sistema-unico-de-reclamos-de-la-intendencia-de-montevideo",
+      "title": "Reclamos registrados en el Sistema Unico de Reclamos de la Intendencia de Montevideo",
+      "organization": "Intendencia de Montevideo",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 1609,
+            "tagCount": 4,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-08-17T06:42:36.380Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.998,
+          "evidence": {
+            "modifiedAt": "2026-08-16T18:18:15.146829",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:42:36.380Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "TXT",
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "TXT": 1,
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-08-17T06:42:36.380Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-08-17T06:42:37.023Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:dioxido-de-nitrogeno",
+      "title": "Dióxido de Nitrógeno",
+      "organization": "Intendencia de Montevideo",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 74,
+            "tagCount": 2,
+            "resourceCount": 9
+          },
+          "calculatedAt": "2026-08-17T06:42:37.024Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.998,
+          "evidence": {
+            "modifiedAt": "2026-08-16T18:18:13.158435",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:42:37.024Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 9,
+            "formatDistribution": {
+              "CSV": 9
+            }
+          },
+          "calculatedAt": "2026-08-17T06:42:37.024Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 9,
+            "checked": 9,
+            "accessible": 9
+          },
+          "calculatedAt": "2026-08-17T06:42:38.481Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:datos-por-estacion-pm-2-5",
+      "title": "Monitoreo de material particulado (PM 2.5)",
+      "organization": "Intendencia de Montevideo",
+      "overall": 0.915,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 73,
+            "tagCount": 3,
+            "resourceCount": 9
+          },
+          "calculatedAt": "2026-08-17T06:42:38.481Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.998,
+          "evidence": {
+            "modifiedAt": "2026-08-16T18:18:10.919570",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:42:38.481Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "TXT",
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 9,
+            "formatDistribution": {
+              "TXT": 1,
+              "CSV": 8
+            }
+          },
+          "calculatedAt": "2026-08-17T06:42:38.481Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.778,
+          "evidence": {
+            "resourceCount": 9,
+            "checked": 9,
+            "accessible": 7
+          },
+          "calculatedAt": "2026-08-17T06:42:43.483Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:monitoreo-de-agua-de-playas",
+      "title": "Monitoreo de agua de playas",
+      "organization": "Intendencia de Montevideo",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 647,
+            "tagCount": 5,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-08-17T06:42:43.483Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.998,
+          "evidence": {
+            "modifiedAt": "2026-08-16T18:18:09.242989",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:42:43.483Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "TXT",
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "TXT": 1,
+              "CSV": 3
+            }
+          },
+          "calculatedAt": "2026-08-17T06:42:43.484Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-08-17T06:42:44.383Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:aliviaderos",
+      "title": "Aliviaderos",
+      "organization": "Intendencia de Montevideo",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 57,
+            "tagCount": 2,
+            "resourceCount": 6
+          },
+          "calculatedAt": "2026-08-17T06:42:44.383Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.998,
+          "evidence": {
+            "modifiedAt": "2026-08-16T18:18:08.054299",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:42:44.383Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 6,
+            "formatDistribution": {
+              "CSV": 6
+            }
+          },
+          "calculatedAt": "2026-08-17T06:42:44.383Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 6,
+            "checked": 6,
+            "accessible": 6
+          },
+          "calculatedAt": "2026-08-17T06:42:45.087Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:conteo-vehicular-en-las-principales-avenidas-de-montevideo",
+      "title": "Conteo vehicular en las principales avenidas de Montevideo",
+      "organization": "Intendencia de Montevideo",
+      "overall": 0.919,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 1434,
+            "tagCount": 4,
+            "resourceCount": 86
+          },
+          "calculatedAt": "2026-08-17T06:42:45.087Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.998,
+          "evidence": {
+            "modifiedAt": "2026-08-16T18:17:38.513628",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:42:45.087Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "TXT",
+              "CSV ZIP",
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 86,
+            "formatDistribution": {
+              "TXT": 1,
+              "CSV ZIP": 14,
+              "CSV": 71
+            }
+          },
+          "calculatedAt": "2026-08-17T06:42:45.087Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.791,
+          "evidence": {
+            "resourceCount": 86,
+            "checked": 86,
+            "accessible": 68
+          },
+          "calculatedAt": "2026-08-17T06:42:53.833Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:antecedentes-de-nomenclatura-de-vias-de-transito-de-montevideo",
+      "title": "Antecedentes de nomenclatura de vías de tránsito de Montevideo",
+      "organization": "Intendencia de Montevideo",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 178,
+            "tagCount": 2,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-08-17T06:42:53.833Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.998,
+          "evidence": {
+            "modifiedAt": "2026-08-16T18:17:36.752858",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:42:53.833Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "TXT",
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "TXT": 1,
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-08-17T06:42:53.833Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-08-17T06:42:54.479Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:aceras-y-cabezales-de-numeracion",
+      "title": "Aceras y cabezales de numeración",
+      "organization": "Intendencia de Montevideo",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 606,
+            "tagCount": 3,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-08-17T06:42:54.479Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.998,
+          "evidence": {
+            "modifiedAt": "2026-08-16T18:17:35.796140",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:42:54.479Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "TXT"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "CSV": 1,
+              "TXT": 1
+            }
+          },
+          "calculatedAt": "2026-08-17T06:42:54.479Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-08-17T06:42:55.119Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:monitoreo-de-calidad-en-los-cuerpos-de-agua",
+      "title": "Monitoreo de calidad en los cuerpos de agua",
+      "organization": "Intendencia de Montevideo",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 987,
+            "tagCount": 6,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-08-17T06:42:55.119Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.998,
+          "evidence": {
+            "modifiedAt": "2026-08-16T18:17:35.233257",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:42:55.119Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-08-17T06:42:55.119Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-08-17T06:42:55.759Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:calidad-del-aire-ozono-o3",
+      "title": "Ozono (O3)",
+      "organization": "Intendencia de Montevideo",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 109,
+            "tagCount": 2,
+            "resourceCount": 8
+          },
+          "calculatedAt": "2026-08-17T06:42:55.759Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.998,
+          "evidence": {
+            "modifiedAt": "2026-08-16T18:17:30.552083",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:42:55.759Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 8,
+            "formatDistribution": {
+              "CSV": 8
+            }
+          },
+          "calculatedAt": "2026-08-17T06:42:55.759Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 8,
+            "checked": 8,
+            "accessible": 8
+          },
+          "calculatedAt": "2026-08-17T06:42:56.477Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:informacion-de-levantes-de-contenedores-domiciliarios",
+      "title": "Información de levantes de contenedores domiciliarios",
+      "organization": "Intendencia de Montevideo",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 772,
+            "tagCount": 5,
+            "resourceCount": 9
+          },
+          "calculatedAt": "2026-08-17T06:42:56.477Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.998,
+          "evidence": {
+            "modifiedAt": "2026-08-16T18:17:23.554000",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:42:56.477Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "UNKNOWN",
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 9,
+            "formatDistribution": {
+              "UNKNOWN": 1,
+              "CSV": 8
+            }
+          },
+          "calculatedAt": "2026-08-17T06:42:56.477Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 9,
+            "checked": 9,
+            "accessible": 9
+          },
+          "calculatedAt": "2026-08-17T06:42:57.376Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:monitoreo-de-polen-y-esporas-fungicas-en-el-aire-de-montevideo",
+      "title": "Monitoreo de polen y esporas fúngicas en el aire de Montevideo",
+      "organization": "Intendencia de Montevideo",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 1946,
+            "tagCount": 3,
+            "resourceCount": 6
+          },
+          "calculatedAt": "2026-08-17T06:42:57.376Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.998,
+          "evidence": {
+            "modifiedAt": "2026-08-16T18:17:22.135450",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:42:57.376Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 6,
+            "formatDistribution": {
+              "CSV": 6
+            }
+          },
+          "calculatedAt": "2026-08-17T06:42:57.376Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 6,
+            "checked": 6,
+            "accessible": 6
+          },
+          "calculatedAt": "2026-08-17T06:42:58.273Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:informacion-pluviometrica",
+      "title": "Información pluviométrica",
+      "organization": "Intendencia de Montevideo",
+      "overall": 0.942,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 1316,
+            "tagCount": 2,
+            "resourceCount": 15
+          },
+          "calculatedAt": "2026-08-17T06:42:58.273Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.998,
+          "evidence": {
+            "modifiedAt": "2026-08-16T18:17:19.312952",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:42:58.273Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "TXT",
+              "CSV",
+              "ZIP"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 15,
+            "formatDistribution": {
+              "TXT": 1,
+              "CSV": 9,
+              "ZIP": 5
+            }
+          },
+          "calculatedAt": "2026-08-17T06:42:58.273Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.867,
+          "evidence": {
+            "resourceCount": 15,
+            "checked": 15,
+            "accessible": 13
+          },
+          "calculatedAt": "2026-08-17T06:43:03.277Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:datos-historicos-de-limpieza-reportados-en-el-centro-operativo-de-montevideo",
+      "title": "Montevideo más verde en línea: solicitudes realizadas",
+      "organization": "Intendencia de Montevideo",
+      "overall": 0.932,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 237,
+            "tagCount": 4,
+            "resourceCount": 6
+          },
+          "calculatedAt": "2026-08-17T06:43:03.277Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.998,
+          "evidence": {
+            "modifiedAt": "2026-08-16T18:17:18.239978",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:43:03.277Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "TXT",
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 6,
+            "formatDistribution": {
+              "TXT": 1,
+              "CSV": 5
+            }
+          },
+          "calculatedAt": "2026-08-17T06:43:03.277Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.833,
+          "evidence": {
+            "resourceCount": 6,
+            "checked": 6,
+            "accessible": 5
+          },
+          "calculatedAt": "2026-08-17T06:43:08.280Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:nivel-de-tanques",
+      "title": "Nivel de Tanques",
+      "organization": "Intendencia de Montevideo",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 73,
+            "tagCount": 3,
+            "resourceCount": 11
+          },
+          "calculatedAt": "2026-08-17T06:43:08.280Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.998,
+          "evidence": {
+            "modifiedAt": "2026-08-16T18:17:16.789717",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:43:08.280Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 11,
+            "formatDistribution": {
+              "CSV": 11
+            }
+          },
+          "calculatedAt": "2026-08-17T06:43:08.280Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 11,
+            "checked": 11,
+            "accessible": 11
+          },
+          "calculatedAt": "2026-08-17T06:43:09.685Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:limnigrafo-2022",
+      "title": "Limnígrafos",
+      "organization": "Intendencia de Montevideo",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 70,
+            "tagCount": 1,
+            "resourceCount": 6
+          },
+          "calculatedAt": "2026-08-17T06:43:09.685Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.998,
+          "evidence": {
+            "modifiedAt": "2026-08-16T18:17:14.115192",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:43:09.685Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 6,
+            "formatDistribution": {
+              "CSV": 6
+            }
+          },
+          "calculatedAt": "2026-08-17T06:43:09.685Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 6,
+            "checked": 6,
+            "accessible": 6
+          },
+          "calculatedAt": "2026-08-17T06:43:10.581Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:residuos-retirados-por-playa",
+      "title": "Residuos retirados por playa",
+      "organization": "Intendencia de Montevideo",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 68,
+            "tagCount": 4,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-08-17T06:43:10.581Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.998,
+          "evidence": {
+            "modifiedAt": "2026-08-16T18:17:11.414949",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:43:10.581Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "TXT"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "CSV": 1,
+              "TXT": 1
+            }
+          },
+          "calculatedAt": "2026-08-17T06:43:10.581Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-08-17T06:43:11.477Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:conteo-ciclovia",
+      "title": "Conteo Ciclovia",
+      "organization": "Intendencia de Montevideo",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 634,
+            "tagCount": 1,
+            "resourceCount": 3
+          },
+          "calculatedAt": "2026-08-17T06:43:11.477Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.998,
+          "evidence": {
+            "modifiedAt": "2026-08-16T18:17:08.180746",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:43:11.477Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 3,
+            "formatDistribution": {
+              "CSV": 3
+            }
+          },
+          "calculatedAt": "2026-08-17T06:43:11.477Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 3,
+            "checked": 3,
+            "accessible": 3
+          },
+          "calculatedAt": "2026-08-17T06:43:12.382Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:ubicacion-de-sensores-de-medicion-de-conteo-vehiculos",
+      "title": "Ubicación de sensores de medición de conteo vehículos",
+      "organization": "Intendencia de Montevideo",
+      "overall": 0.957,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 405,
+            "tagCount": 6,
+            "resourceCount": 70
+          },
+          "calculatedAt": "2026-08-17T06:43:12.382Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.998,
+          "evidence": {
+            "modifiedAt": "2026-08-16T18:16:49.007712",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:43:12.382Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "TXT",
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 70,
+            "formatDistribution": {
+              "TXT": 1,
+              "CSV": 69
+            }
+          },
+          "calculatedAt": "2026-08-17T06:43:12.382Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.914,
+          "evidence": {
+            "resourceCount": 70,
+            "checked": 70,
+            "accessible": 64
+          },
+          "calculatedAt": "2026-08-17T06:43:20.113Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:historico-indice-uv",
+      "title": "Medidas de la Radiación Solar en Montevideo",
+      "organization": "Intendencia de Montevideo",
+      "overall": 0.949,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 201,
+            "tagCount": 5,
+            "resourceCount": 9
+          },
+          "calculatedAt": "2026-08-17T06:43:20.113Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.998,
+          "evidence": {
+            "modifiedAt": "2026-08-16T18:16:46.366132",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:43:20.113Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 9,
+            "formatDistribution": {
+              "CSV": 9
+            }
+          },
+          "calculatedAt": "2026-08-17T06:43:20.114Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.889,
+          "evidence": {
+            "resourceCount": 9,
+            "checked": 9,
+            "accessible": 8
+          },
+          "calculatedAt": "2026-08-17T06:43:25.115Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:ide-ejes-vias-circulacion",
+      "title": "Ejes de vías de circulación",
+      "organization": "IDE",
+      "overall": 0.969,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 240,
+            "tagCount": 3,
+            "resourceCount": 20
+          },
+          "calculatedAt": "2026-08-17T06:43:25.115Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.94,
+          "evidence": {
+            "modifiedAt": "2026-08-01T06:33:18.570264",
+            "daysSinceModified": 16,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:43:25.115Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "JSON",
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 20,
+            "formatDistribution": {
+              "JSON": 1,
+              "CSV": 19
+            }
+          },
+          "calculatedAt": "2026-08-17T06:43:25.115Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 20,
+            "checked": 20,
+            "accessible": 20
+          },
+          "calculatedAt": "2026-08-17T06:43:26.788Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:ide-direcciones-geograficas-del-uruguay",
+      "title": "Direcciones Geográficas del Uruguay",
+      "organization": "IDE",
+      "overall": 0.969,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 1977,
+            "tagCount": 3,
+            "resourceCount": 20
+          },
+          "calculatedAt": "2026-08-17T06:43:26.788Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.94,
+          "evidence": {
+            "modifiedAt": "2026-08-01T06:03:43.885485",
+            "daysSinceModified": 16,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:43:26.788Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "JSON",
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 20,
+            "formatDistribution": {
+              "JSON": 1,
+              "CSV": 19
+            }
+          },
+          "calculatedAt": "2026-08-17T06:43:26.788Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 20,
+            "checked": 20,
+            "accessible": 20
+          },
+          "calculatedAt": "2026-08-17T06:43:27.699Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:suprema-corte-de-justicia-informacion-del-nuevo-codigo-de-proceso-penal",
+      "title": "Información del Nuevo Código de Proceso Penal",
+      "organization": "Poder Judicial",
+      "overall": 0.969,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 180,
+            "tagCount": 6,
+            "resourceCount": 16
+          },
+          "calculatedAt": "2026-08-17T06:43:27.699Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.94,
+          "evidence": {
+            "modifiedAt": "2026-08-01T03:33:56.928496",
+            "daysSinceModified": 16,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:43:27.699Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "XLSX",
+              "CSV",
+              "XML",
+              "JSON"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 16,
+            "formatDistribution": {
+              "XLSX": 4,
+              "CSV": 4,
+              "XML": 4,
+              "JSON": 4
+            }
+          },
+          "calculatedAt": "2026-08-17T06:43:27.699Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 16,
+            "checked": 16,
+            "accessible": 16
+          },
+          "calculatedAt": "2026-08-17T06:43:28.780Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:miem-dei",
+      "title": "Directorio de Empresas Industriales (DEI)",
+      "organization": "Ministerio de Industria, Energía y Minería",
+      "overall": 0.969,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 1338,
+            "tagCount": 4,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-08-17T06:43:28.780Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.938,
+          "evidence": {
+            "modifiedAt": "2026-07-31T17:18:40.045103",
+            "daysSinceModified": 17,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:43:28.780Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "XLSX",
+              "XML",
+              "JSON"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "CSV": 1,
+              "XLSX": 1,
+              "XML": 1,
+              "JSON": 1
+            }
+          },
+          "calculatedAt": "2026-08-17T06:43:28.780Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-08-17T06:43:29.480Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:miem-consumo-final-energetico-por-fuente",
+      "title": "BEN - Consumo final energético por fuente",
+      "organization": "Ministerio de Industria, Energía y Minería",
+      "overall": 0.969,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 539,
+            "tagCount": 6,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-08-17T06:43:29.480Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.938,
+          "evidence": {
+            "modifiedAt": "2026-07-31T13:42:14.985932",
+            "daysSinceModified": 17,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:43:29.480Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "XLSX",
+              "CSV",
+              "XML",
+              "JSON"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "XLSX": 1,
+              "CSV": 1,
+              "XML": 1,
+              "JSON": 1
+            }
+          },
+          "calculatedAt": "2026-08-17T06:43:29.480Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-08-17T06:43:30.167Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:fiscalia-general-de-la-nacion-imputaciones-y-condenas-a-personas",
+      "title": "Imputaciones y condenas a personas",
+      "organization": "Fiscalía General de la Nación",
+      "overall": 0.968,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 174,
+            "tagCount": 6,
+            "resourceCount": 5
+          },
+          "calculatedAt": "2026-08-17T06:43:30.167Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.934,
+          "evidence": {
+            "modifiedAt": "2026-07-30T14:43:59.864614",
+            "daysSinceModified": 18,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:43:30.167Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "XLSX",
+              "PDF",
+              "JSON",
+              "XML"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 5,
+            "formatDistribution": {
+              "CSV": 1,
+              "XLSX": 1,
+              "PDF": 1,
+              "JSON": 1,
+              "XML": 1
+            }
+          },
+          "calculatedAt": "2026-08-17T06:43:30.167Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 5,
+            "checked": 5,
+            "accessible": 5
+          },
+          "calculatedAt": "2026-08-17T06:43:30.851Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:uaip-solicitud-informacion",
+      "title": "Solicitudes de información a Organismos",
+      "organization": "UAIP",
+      "overall": 0.963,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 1257,
+            "tagCount": 4,
+            "resourceCount": 5
+          },
+          "calculatedAt": "2026-08-17T06:43:30.851Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.913,
+          "evidence": {
+            "modifiedAt": "2026-07-24T18:06:52.031833",
+            "daysSinceModified": 24,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:43:30.851Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "PDF",
+              "XLSX",
+              "CSV",
+              "XML",
+              "JSON"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 5,
+            "formatDistribution": {
+              "PDF": 1,
+              "XLSX": 1,
+              "CSV": 1,
+              "XML": 1,
+              "JSON": 1
+            }
+          },
+          "calculatedAt": "2026-08-17T06:43:30.851Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 5,
+            "checked": 5,
+            "accessible": 5
+          },
+          "calculatedAt": "2026-08-17T06:43:31.573Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:jutep-misiones_oficiales",
+      "title": "Misiones Oficiales",
+      "organization": "JUTEP",
+      "overall": 0.963,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 95,
+            "tagCount": 5,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-08-17T06:43:31.573Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.913,
+          "evidence": {
+            "modifiedAt": "2026-07-24T16:01:58.700581",
+            "daysSinceModified": 24,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:43:31.573Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "XLSX",
+              "CSV",
+              "XML",
+              "JSON"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "XLSX": 1,
+              "CSV": 1,
+              "XML": 1,
+              "JSON": 1
+            }
+          },
+          "calculatedAt": "2026-08-17T06:43:31.573Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-08-17T06:43:32.259Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
+    },
+    {
+      "datasetId": "catalogodatos-gub-uy:salas-publicas-de-montevideo",
+      "title": "Salas públicas de Montevideo",
+      "organization": "Intendencia de Montevideo",
+      "overall": 0.962,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 710,
+            "tagCount": 6,
+            "resourceCount": 5
+          },
+          "calculatedAt": "2026-08-17T06:43:32.259Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.909,
+          "evidence": {
+            "modifiedAt": "2026-07-23T14:18:03.626703",
+            "daysSinceModified": 25,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:43:32.259Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "TXT",
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 5,
+            "formatDistribution": {
+              "TXT": 1,
+              "CSV": 4
+            }
+          },
+          "calculatedAt": "2026-08-17T06:43:32.259Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 5,
+            "checked": 5,
+            "accessible": 5
+          },
+          "calculatedAt": "2026-08-17T06:43:33.160Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:42:16.159Z"
     }
   ],
   "coverage": 1
