@@ -1,6 +1,6 @@
 {
   "catalogId": "datos-arsat-ar",
-  "updatedAt": "2026-08-17T06:36:22.355Z",
+  "updatedAt": "2026-08-18T06:26:27.047Z",
   "datasets": [
     {
       "datasetId": "datos-arsat-ar:finanzas",
@@ -74,6 +74,78 @@
           }
         ],
         "lastChecked": "2026-08-14T07:15:31.830Z"
+      }
+    },
+    {
+      "datasetId": "datos-arsat-ar:organigrama",
+      "externalId": "organigrama",
+      "modifiedAt": "2026-07-02T18:56:10.086432",
+      "lastScoredAt": "2026-08-17T06:36:22.355Z",
+      "score": {
+        "datasetId": "datos-arsat-ar:organigrama",
+        "title": "Organigrama",
+        "organization": "ARSAT",
+        "overall": 0.694,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 82,
+              "tagCount": 3,
+              "resourceCount": 1
+            },
+            "calculatedAt": "2026-08-17T06:36:22.355Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.839,
+            "evidence": {
+              "modifiedAt": "2026-07-02T18:56:10.086432",
+              "daysSinceModified": 45,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-08-17T06:36:22.355Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.15,
+            "evidence": {
+              "formats": [
+                "PDF"
+              ],
+              "bestFormat": "PDF",
+              "bestFormatScore": 0.15,
+              "resourceCount": 1,
+              "formatDistribution": {
+                "PDF": 1
+              }
+            },
+            "calculatedAt": "2026-08-17T06:36:22.355Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 1,
+              "checked": 1,
+              "accessible": 1
+            },
+            "calculatedAt": "2026-08-17T06:36:22.562Z"
+          }
+        ],
+        "lastChecked": "2026-08-17T06:36:22.355Z"
       }
     },
     {
@@ -872,78 +944,6 @@
           }
         ],
         "lastChecked": "2026-08-16T06:33:30.096Z"
-      }
-    },
-    {
-      "datasetId": "datos-arsat-ar:organigrama",
-      "externalId": "organigrama",
-      "modifiedAt": "2026-07-02T18:56:10.086432",
-      "lastScoredAt": "2026-08-17T06:36:22.355Z",
-      "score": {
-        "datasetId": "datos-arsat-ar:organigrama",
-        "title": "Organigrama",
-        "organization": "ARSAT",
-        "overall": 0.694,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 82,
-              "tagCount": 3,
-              "resourceCount": 1
-            },
-            "calculatedAt": "2026-08-17T06:36:22.355Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.839,
-            "evidence": {
-              "modifiedAt": "2026-07-02T18:56:10.086432",
-              "daysSinceModified": 45,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-08-17T06:36:22.355Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.15,
-            "evidence": {
-              "formats": [
-                "PDF"
-              ],
-              "bestFormat": "PDF",
-              "bestFormatScore": 0.15,
-              "resourceCount": 1,
-              "formatDistribution": {
-                "PDF": 1
-              }
-            },
-            "calculatedAt": "2026-08-17T06:36:22.355Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 1,
-              "checked": 1,
-              "accessible": 1
-            },
-            "calculatedAt": "2026-08-17T06:36:22.562Z"
-          }
-        ],
-        "lastChecked": "2026-08-17T06:36:22.355Z"
       }
     }
   ]

@@ -1,8 +1,140 @@
 {
   "catalogId": "datos-gob-ar",
-  "scoredAt": "2026-08-17T06:32:54.880Z",
+  "scoredAt": "2026-08-18T06:24:46.100Z",
   "datasetCount": 1271,
   "datasets": [
+    {
+      "datasetId": "datos-gob-ar:oferta-y-demanda-globales-datos-desestacionalizados-base-2004",
+      "title": "Oferta y Demanda Globales. Datos desestacionalizados. Base 2004",
+      "organization": "Subsecretaría de Programación Macroeconómica",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 82,
+            "tagCount": 6,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-08-17T06:33:05.183Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.999,
+          "evidence": {
+            "modifiedAt": "2026-08-16T23:00:34.781549",
+            "daysSinceModified": 0,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:33:05.183Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "CSV": 2
+            }
+          },
+          "calculatedAt": "2026-08-17T06:33:05.183Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-08-17T06:33:06.411Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:32:54.880Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:pago-de-impuestos-nacionales-de-grandes-empresas-mineras-siacam",
+      "title": "Pago de Impuestos Nacionales de Grandes Empresas Mineras (SIACAM)",
+      "organization": "Secretaría de Minería",
+      "overall": 0.953,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 325,
+            "tagCount": 2,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-08-17T06:33:22.506Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.998,
+          "evidence": {
+            "modifiedAt": "2026-08-16T15:00:22.740217",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:33:22.506Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "CSV": 2
+            }
+          },
+          "calculatedAt": "2026-08-17T06:33:22.506Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.9,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-08-17T06:33:23.400Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:32:54.880Z"
+    },
     {
       "datasetId": "datos-gob-ar:indice-de-precios-implicitos-de-la-oferta-y-demanda-globales-base-2004",
       "title": "Índice de precios implícitos de la Oferta y Demanda Globales. Base 2004",
@@ -2746,76 +2878,6 @@
       "lastChecked": "2026-08-12T07:07:08.310Z"
     },
     {
-      "datasetId": "datos-gob-ar:transporte-de-hidrocarburos",
-      "title": "Transporte de Hidrocarburos",
-      "organization": "Secretaría de Energía",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 93,
-            "tagCount": 4,
-            "resourceCount": 15
-          },
-          "calculatedAt": "2026-08-12T07:07:21.003Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.999,
-          "evidence": {
-            "modifiedAt": "2026-08-12T03:00:27.669443",
-            "daysSinceModified": 0,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-12T07:07:21.003Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "SHP",
-              "PHP"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 15,
-            "formatDistribution": {
-              "CSV": 11,
-              "SHP": 2,
-              "PHP": 2
-            }
-          },
-          "calculatedAt": "2026-08-12T07:07:21.003Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 15,
-            "checked": 15,
-            "accessible": 15
-          },
-          "calculatedAt": "2026-08-12T07:07:21.768Z"
-        }
-      ],
-      "lastChecked": "2026-08-12T07:07:08.310Z"
-    },
-    {
       "datasetId": "datos-gob-ar:girasol-siembra-cosecha-produccion-rendimiento",
       "title": "Girasol - siembra, cosecha, producción, rendimiento",
       "organization": "Secretaría de Agricultura, Ganadería y Pesca",
@@ -3542,72 +3604,6 @@
       "lastChecked": "2026-08-11T06:46:14.107Z"
     },
     {
-      "datasetId": "datos-gob-ar:medicion-de-petroleo-y-gas",
-      "title": "Padrón de medidores de petróleo y gas",
-      "organization": "Secretaría de Energía",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 70,
-            "tagCount": 5,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-08-11T06:46:17.896Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.999,
-          "evidence": {
-            "modifiedAt": "2026-08-10T23:00:42.338823",
-            "daysSinceModified": 0,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-11T06:46:17.896Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "CSV": 4
-            }
-          },
-          "calculatedAt": "2026-08-11T06:46:17.897Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-08-11T06:46:19.072Z"
-        }
-      ],
-      "lastChecked": "2026-08-11T06:46:14.107Z"
-    },
-    {
       "datasetId": "datos-gob-ar:transporte-hidrocarburos-ductos-troncales-gasoductos",
       "title": "Gasoductos (ENARGAS)",
       "organization": "Secretaría de Energía",
@@ -4076,6 +4072,74 @@
         }
       ],
       "lastChecked": "2026-08-11T06:46:14.107Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:estaciones-de-bombeo",
+      "title": "Estaciones de Bombeo",
+      "organization": "Secretaría de Energía",
+      "overall": 0.976,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 55,
+            "tagCount": 2,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-08-17T06:33:23.941Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.967,
+          "evidence": {
+            "modifiedAt": "2026-08-08T15:00:34.951672",
+            "daysSinceModified": 9,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-17T06:33:23.941Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "SHP",
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "SHP": 1,
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-08-17T06:33:23.941Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-08-17T06:33:24.344Z"
+        }
+      ],
+      "lastChecked": "2026-08-17T06:32:54.880Z"
     },
     {
       "datasetId": "datos-gob-ar:indice-de-precios-al-consumidor-nacional-ipc-base-diciembre-2016",
@@ -84142,10 +84206,76 @@
       "lastChecked": "2026-08-12T07:07:08.310Z"
     },
     {
+      "datasetId": "datos-gob-ar:anuncios-de-inversion-en-el-sector-minero-de-argentina-del-siacam",
+      "title": "Anuncios de Inversión en el Sector Minero de Argentina del SIACAM",
+      "organization": "Secretaría de Minería",
+      "overall": 0.953,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 322,
+            "tagCount": 2,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-08-18T06:24:46.100Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.999,
+          "evidence": {
+            "modifiedAt": "2026-08-17T23:00:56.169042",
+            "daysSinceModified": 0,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-18T06:24:46.100Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-08-18T06:24:46.100Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.9,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-08-18T06:24:47.420Z"
+        }
+      ],
+      "lastChecked": "2026-08-18T06:24:46.100Z"
+    },
+    {
       "datasetId": "datos-gob-ar:comercio-de-minerales-de-argentina-siacam",
       "title": "Comercio de Minerales de Argentina (SIACAM)",
       "organization": "Secretaría de Minería",
-      "overall": 0.859,
+      "overall": 0.953,
       "dimensions": [
         {
           "dimension": "completeness",
@@ -84166,17 +84296,17 @@
             "tagCount": 2,
             "resourceCount": 9
           },
-          "calculatedAt": "2026-08-17T06:32:54.880Z"
+          "calculatedAt": "2026-08-18T06:24:47.420Z"
         },
         {
           "dimension": "freshness",
           "score": 0.999,
           "evidence": {
-            "modifiedAt": "2026-08-16T23:00:47.109879",
+            "modifiedAt": "2026-08-17T23:00:54.616331",
             "daysSinceModified": 0,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-08-17T06:32:54.880Z"
+          "calculatedAt": "2026-08-18T06:24:47.420Z"
         },
         {
           "dimension": "structure",
@@ -84194,20 +84324,20 @@
               "CSV": 8
             }
           },
-          "calculatedAt": "2026-08-17T06:32:54.880Z"
+          "calculatedAt": "2026-08-18T06:24:47.420Z"
         },
         {
           "dimension": "accessibility",
-          "score": 0.6,
+          "score": 0.9,
           "evidence": {
             "resourceCount": 9,
             "checked": 9,
-            "accessible": 6
+            "accessible": 9
           },
-          "calculatedAt": "2026-08-17T06:32:59.891Z"
+          "calculatedAt": "2026-08-18T06:24:51.140Z"
         }
       ],
-      "lastChecked": "2026-08-17T06:32:54.880Z"
+      "lastChecked": "2026-08-18T06:24:46.100Z"
     },
     {
       "datasetId": "datos-gob-ar:exportaciones-argentinas-de-litio-siacam",
@@ -84234,17 +84364,17 @@
             "tagCount": 3,
             "resourceCount": 2
           },
-          "calculatedAt": "2026-08-17T06:32:59.891Z"
+          "calculatedAt": "2026-08-18T06:24:51.140Z"
         },
         {
           "dimension": "freshness",
           "score": 0.999,
           "evidence": {
-            "modifiedAt": "2026-08-16T23:00:46.227087",
+            "modifiedAt": "2026-08-17T23:00:53.671262",
             "daysSinceModified": 0,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-08-17T06:32:59.891Z"
+          "calculatedAt": "2026-08-18T06:24:51.140Z"
         },
         {
           "dimension": "structure",
@@ -84260,7 +84390,7 @@
               "CSV": 2
             }
           },
-          "calculatedAt": "2026-08-17T06:32:59.891Z"
+          "calculatedAt": "2026-08-18T06:24:51.140Z"
         },
         {
           "dimension": "accessibility",
@@ -84270,10 +84400,10 @@
             "checked": 2,
             "accessible": 2
           },
-          "calculatedAt": "2026-08-17T06:33:01.403Z"
+          "calculatedAt": "2026-08-18T06:24:51.650Z"
         }
       ],
-      "lastChecked": "2026-08-17T06:32:54.880Z"
+      "lastChecked": "2026-08-18T06:24:46.100Z"
     },
     {
       "datasetId": "datos-gob-ar:cantidad-de-empresas-mineras-siacam",
@@ -84300,17 +84430,17 @@
             "tagCount": 2,
             "resourceCount": 2
           },
-          "calculatedAt": "2026-08-17T06:33:01.403Z"
+          "calculatedAt": "2026-08-18T06:24:51.650Z"
         },
         {
           "dimension": "freshness",
           "score": 0.999,
           "evidence": {
-            "modifiedAt": "2026-08-16T23:00:45.717277",
+            "modifiedAt": "2026-08-17T23:00:52.766751",
             "daysSinceModified": 0,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-08-17T06:33:01.403Z"
+          "calculatedAt": "2026-08-18T06:24:51.650Z"
         },
         {
           "dimension": "structure",
@@ -84328,7 +84458,7 @@
               "PDF": 1
             }
           },
-          "calculatedAt": "2026-08-17T06:33:01.403Z"
+          "calculatedAt": "2026-08-18T06:24:51.650Z"
         },
         {
           "dimension": "accessibility",
@@ -84338,10 +84468,10 @@
             "checked": 2,
             "accessible": 2
           },
-          "calculatedAt": "2026-08-17T06:33:01.947Z"
+          "calculatedAt": "2026-08-18T06:24:54.502Z"
         }
       ],
-      "lastChecked": "2026-08-17T06:32:54.880Z"
+      "lastChecked": "2026-08-18T06:24:46.100Z"
     },
     {
       "datasetId": "datos-gob-ar:balance-cambiario-del-siacam",
@@ -84368,17 +84498,17 @@
             "tagCount": 5,
             "resourceCount": 2
           },
-          "calculatedAt": "2026-08-17T06:33:01.947Z"
+          "calculatedAt": "2026-08-18T06:24:54.502Z"
         },
         {
           "dimension": "freshness",
           "score": 0.999,
           "evidence": {
-            "modifiedAt": "2026-08-16T23:00:45.436493",
+            "modifiedAt": "2026-08-17T23:00:52.481391",
             "daysSinceModified": 0,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-08-17T06:33:01.947Z"
+          "calculatedAt": "2026-08-18T06:24:54.502Z"
         },
         {
           "dimension": "structure",
@@ -84396,7 +84526,7 @@
               "PDF": 1
             }
           },
-          "calculatedAt": "2026-08-17T06:33:01.947Z"
+          "calculatedAt": "2026-08-18T06:24:54.502Z"
         },
         {
           "dimension": "accessibility",
@@ -84406,10 +84536,10 @@
             "checked": 2,
             "accessible": 2
           },
-          "calculatedAt": "2026-08-17T06:33:03.204Z"
+          "calculatedAt": "2026-08-18T06:24:55.004Z"
         }
       ],
-      "lastChecked": "2026-08-17T06:32:54.880Z"
+      "lastChecked": "2026-08-18T06:24:46.100Z"
     },
     {
       "datasetId": "datos-gob-ar:empleo-del-sector-minero-siacam",
@@ -84436,17 +84566,17 @@
             "tagCount": 2,
             "resourceCount": 3
           },
-          "calculatedAt": "2026-08-17T06:33:03.204Z"
+          "calculatedAt": "2026-08-18T06:24:55.004Z"
         },
         {
           "dimension": "freshness",
           "score": 0.999,
           "evidence": {
-            "modifiedAt": "2026-08-16T23:00:45.108044",
+            "modifiedAt": "2026-08-17T23:00:51.935405",
             "daysSinceModified": 0,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-08-17T06:33:03.204Z"
+          "calculatedAt": "2026-08-18T06:24:55.004Z"
         },
         {
           "dimension": "structure",
@@ -84464,7 +84594,7 @@
               "PDF": 1
             }
           },
-          "calculatedAt": "2026-08-17T06:33:03.204Z"
+          "calculatedAt": "2026-08-18T06:24:55.004Z"
         },
         {
           "dimension": "accessibility",
@@ -84474,10 +84604,10 @@
             "checked": 3,
             "accessible": 3
           },
-          "calculatedAt": "2026-08-17T06:33:04.641Z"
+          "calculatedAt": "2026-08-18T06:24:56.781Z"
         }
       ],
-      "lastChecked": "2026-08-17T06:32:54.880Z"
+      "lastChecked": "2026-08-18T06:24:46.100Z"
     },
     {
       "datasetId": "datos-gob-ar:precios-internacionales-de-minerales-del-siacam",
@@ -84504,17 +84634,17 @@
             "tagCount": 17,
             "resourceCount": 1
           },
-          "calculatedAt": "2026-08-17T06:33:04.641Z"
+          "calculatedAt": "2026-08-18T06:24:56.781Z"
         },
         {
           "dimension": "freshness",
           "score": 0.999,
           "evidence": {
-            "modifiedAt": "2026-08-16T23:00:44.773923",
+            "modifiedAt": "2026-08-17T23:00:51.666482",
             "daysSinceModified": 0,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-08-17T06:33:04.641Z"
+          "calculatedAt": "2026-08-18T06:24:56.781Z"
         },
         {
           "dimension": "structure",
@@ -84530,7 +84660,7 @@
               "XLSX": 1
             }
           },
-          "calculatedAt": "2026-08-17T06:33:04.641Z"
+          "calculatedAt": "2026-08-18T06:24:56.781Z"
         },
         {
           "dimension": "accessibility",
@@ -84540,15 +84670,15 @@
             "checked": 1,
             "accessible": 1
           },
-          "calculatedAt": "2026-08-17T06:33:05.183Z"
+          "calculatedAt": "2026-08-18T06:24:57.899Z"
         }
       ],
-      "lastChecked": "2026-08-17T06:32:54.880Z"
+      "lastChecked": "2026-08-18T06:24:46.100Z"
     },
     {
-      "datasetId": "datos-gob-ar:oferta-y-demanda-globales-datos-desestacionalizados-base-2004",
-      "title": "Oferta y Demanda Globales. Datos desestacionalizados. Base 2004",
-      "organization": "Subsecretaría de Programación Macroeconómica",
+      "datasetId": "datos-gob-ar:medicion-de-petroleo-y-gas",
+      "title": "Padrón de medidores de petróleo y gas",
+      "organization": "Secretaría de Energía",
       "overall": 0.984,
       "dimensions": [
         {
@@ -84566,21 +84696,21 @@
               "createdAt"
             ],
             "fieldsMissing": [],
-            "descriptionLength": 82,
-            "tagCount": 6,
-            "resourceCount": 2
+            "descriptionLength": 70,
+            "tagCount": 5,
+            "resourceCount": 4
           },
-          "calculatedAt": "2026-08-17T06:33:05.183Z"
+          "calculatedAt": "2026-08-18T06:24:57.899Z"
         },
         {
           "dimension": "freshness",
-          "score": 0.999,
+          "score": 0.998,
           "evidence": {
-            "modifiedAt": "2026-08-16T23:00:34.781549",
-            "daysSinceModified": 0,
+            "modifiedAt": "2026-08-17T15:00:51.259742",
+            "daysSinceModified": 1,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-08-17T06:33:05.183Z"
+          "calculatedAt": "2026-08-18T06:24:57.899Z"
         },
         {
           "dimension": "structure",
@@ -84591,31 +84721,31 @@
             ],
             "bestFormat": "CSV",
             "bestFormatScore": 0.95,
-            "resourceCount": 2,
+            "resourceCount": 4,
             "formatDistribution": {
-              "CSV": 2
+              "CSV": 4
             }
           },
-          "calculatedAt": "2026-08-17T06:33:05.183Z"
+          "calculatedAt": "2026-08-18T06:24:57.899Z"
         },
         {
           "dimension": "accessibility",
           "score": 1,
           "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
           },
-          "calculatedAt": "2026-08-17T06:33:06.411Z"
+          "calculatedAt": "2026-08-18T06:24:59.090Z"
         }
       ],
-      "lastChecked": "2026-08-17T06:32:54.880Z"
+      "lastChecked": "2026-08-18T06:24:46.100Z"
     },
     {
       "datasetId": "datos-gob-ar:produccion-de-petroleo-y-gas-por-pozo",
       "title": "Producción de petróleo y gas por pozo (Capítulo IV)",
       "organization": "Secretaría de Energía",
-      "overall": 0.949,
+      "overall": 0.966,
       "dimensions": [
         {
           "dimension": "completeness",
@@ -84636,17 +84766,17 @@
             "tagCount": 8,
             "resourceCount": 53
           },
-          "calculatedAt": "2026-08-17T06:33:06.411Z"
+          "calculatedAt": "2026-08-18T06:24:59.090Z"
         },
         {
           "dimension": "freshness",
           "score": 0.998,
           "evidence": {
-            "modifiedAt": "2026-08-16T15:00:38.479053",
+            "modifiedAt": "2026-08-17T15:00:49.991402",
             "daysSinceModified": 1,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-08-17T06:33:06.411Z"
+          "calculatedAt": "2026-08-18T06:24:59.090Z"
         },
         {
           "dimension": "structure",
@@ -84664,20 +84794,20 @@
               "SHP": 1
             }
           },
-          "calculatedAt": "2026-08-17T06:33:06.411Z"
+          "calculatedAt": "2026-08-18T06:24:59.090Z"
         },
         {
           "dimension": "accessibility",
-          "score": 0.887,
+          "score": 0.943,
           "evidence": {
             "resourceCount": 53,
             "checked": 53,
-            "accessible": 47
+            "accessible": 50
           },
-          "calculatedAt": "2026-08-17T06:33:14.703Z"
+          "calculatedAt": "2026-08-18T06:25:09.978Z"
         }
       ],
-      "lastChecked": "2026-08-17T06:32:54.880Z"
+      "lastChecked": "2026-08-18T06:24:46.100Z"
     },
     {
       "datasetId": "datos-gob-ar:comercializacion-hidrocarburos-combustibles-liquidos-terminales-de-despacho",
@@ -84704,17 +84834,17 @@
             "tagCount": 6,
             "resourceCount": 2
           },
-          "calculatedAt": "2026-08-17T06:33:14.703Z"
+          "calculatedAt": "2026-08-18T06:25:09.978Z"
         },
         {
           "dimension": "freshness",
           "score": 0.998,
           "evidence": {
-            "modifiedAt": "2026-08-16T15:00:37.098935",
+            "modifiedAt": "2026-08-17T15:00:48.775648",
             "daysSinceModified": 1,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-08-17T06:33:14.703Z"
+          "calculatedAt": "2026-08-18T06:25:09.978Z"
         },
         {
           "dimension": "structure",
@@ -84732,7 +84862,7 @@
               "CSV": 1
             }
           },
-          "calculatedAt": "2026-08-17T06:33:14.703Z"
+          "calculatedAt": "2026-08-18T06:25:09.978Z"
         },
         {
           "dimension": "accessibility",
@@ -84742,10 +84872,10 @@
             "checked": 2,
             "accessible": 2
           },
-          "calculatedAt": "2026-08-17T06:33:15.259Z"
+          "calculatedAt": "2026-08-18T06:25:11.818Z"
         }
       ],
-      "lastChecked": "2026-08-17T06:32:54.880Z"
+      "lastChecked": "2026-08-18T06:24:46.100Z"
     },
     {
       "datasetId": "datos-gob-ar:datos-de-fractura-de-pozos-adjunto-iv",
@@ -84772,17 +84902,17 @@
             "tagCount": 7,
             "resourceCount": 2
           },
-          "calculatedAt": "2026-08-17T06:33:15.259Z"
+          "calculatedAt": "2026-08-18T06:25:11.818Z"
         },
         {
           "dimension": "freshness",
           "score": 0.998,
           "evidence": {
-            "modifiedAt": "2026-08-16T15:00:36.246564",
+            "modifiedAt": "2026-08-17T15:00:47.817029",
             "daysSinceModified": 1,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-08-17T06:33:15.259Z"
+          "calculatedAt": "2026-08-18T06:25:11.818Z"
         },
         {
           "dimension": "structure",
@@ -84800,7 +84930,7 @@
               "PDF": 1
             }
           },
-          "calculatedAt": "2026-08-17T06:33:15.259Z"
+          "calculatedAt": "2026-08-18T06:25:11.818Z"
         },
         {
           "dimension": "accessibility",
@@ -84810,10 +84940,10 @@
             "checked": 2,
             "accessible": 2
           },
-          "calculatedAt": "2026-08-17T06:33:15.804Z"
+          "calculatedAt": "2026-08-18T06:25:12.473Z"
         }
       ],
-      "lastChecked": "2026-08-17T06:32:54.880Z"
+      "lastChecked": "2026-08-18T06:24:46.100Z"
     },
     {
       "datasetId": "datos-gob-ar:precios-de-gas-natural",
@@ -84840,17 +84970,17 @@
             "tagCount": 3,
             "resourceCount": 4
           },
-          "calculatedAt": "2026-08-17T06:33:15.804Z"
+          "calculatedAt": "2026-08-18T06:25:12.473Z"
         },
         {
           "dimension": "freshness",
           "score": 0.998,
           "evidence": {
-            "modifiedAt": "2026-08-16T15:00:34.753100",
+            "modifiedAt": "2026-08-17T15:00:47.416355",
             "daysSinceModified": 1,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-08-17T06:33:15.805Z"
+          "calculatedAt": "2026-08-18T06:25:12.473Z"
         },
         {
           "dimension": "structure",
@@ -84870,7 +85000,7 @@
               "XLS": 1
             }
           },
-          "calculatedAt": "2026-08-17T06:33:15.805Z"
+          "calculatedAt": "2026-08-18T06:25:12.473Z"
         },
         {
           "dimension": "accessibility",
@@ -84880,10 +85010,10 @@
             "checked": 4,
             "accessible": 3
           },
-          "calculatedAt": "2026-08-17T06:33:16.774Z"
+          "calculatedAt": "2026-08-18T06:25:13.465Z"
         }
       ],
-      "lastChecked": "2026-08-17T06:32:54.880Z"
+      "lastChecked": "2026-08-18T06:24:46.100Z"
     },
     {
       "datasetId": "datos-gob-ar:produccion-de-petroleo-y-gas-tablas-dinamicas",
@@ -84910,17 +85040,17 @@
             "tagCount": 6,
             "resourceCount": 41
           },
-          "calculatedAt": "2026-08-17T06:33:16.774Z"
+          "calculatedAt": "2026-08-18T06:25:13.466Z"
         },
         {
           "dimension": "freshness",
           "score": 0.998,
           "evidence": {
-            "modifiedAt": "2026-08-16T15:00:31.083437",
+            "modifiedAt": "2026-08-17T15:00:45.054678",
             "daysSinceModified": 1,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-08-17T06:33:16.774Z"
+          "calculatedAt": "2026-08-18T06:25:13.466Z"
         },
         {
           "dimension": "structure",
@@ -84938,7 +85068,7 @@
               "CSV": 37
             }
           },
-          "calculatedAt": "2026-08-17T06:33:16.774Z"
+          "calculatedAt": "2026-08-18T06:25:13.466Z"
         },
         {
           "dimension": "accessibility",
@@ -84948,10 +85078,80 @@
             "checked": 41,
             "accessible": 41
           },
-          "calculatedAt": "2026-08-17T06:33:20.397Z"
+          "calculatedAt": "2026-08-18T06:25:15.609Z"
         }
       ],
-      "lastChecked": "2026-08-17T06:32:54.880Z"
+      "lastChecked": "2026-08-18T06:24:46.100Z"
+    },
+    {
+      "datasetId": "datos-gob-ar:transporte-de-hidrocarburos",
+      "title": "Transporte de Hidrocarburos",
+      "organization": "Secretaría de Energía",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 93,
+            "tagCount": 4,
+            "resourceCount": 15
+          },
+          "calculatedAt": "2026-08-18T06:25:15.609Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.998,
+          "evidence": {
+            "modifiedAt": "2026-08-17T15:00:43.912798",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-08-18T06:25:15.609Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "SHP",
+              "PHP"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 15,
+            "formatDistribution": {
+              "CSV": 11,
+              "SHP": 2,
+              "PHP": 2
+            }
+          },
+          "calculatedAt": "2026-08-18T06:25:15.609Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 15,
+            "checked": 15,
+            "accessible": 15
+          },
+          "calculatedAt": "2026-08-18T06:25:17.028Z"
+        }
+      ],
+      "lastChecked": "2026-08-18T06:24:46.100Z"
     },
     {
       "datasetId": "datos-gob-ar:precios-en-surtidor",
@@ -84978,17 +85178,17 @@
             "tagCount": 4,
             "resourceCount": 3
           },
-          "calculatedAt": "2026-08-17T06:33:20.398Z"
+          "calculatedAt": "2026-08-18T06:25:17.028Z"
         },
         {
           "dimension": "freshness",
           "score": 0.998,
           "evidence": {
-            "modifiedAt": "2026-08-16T15:00:28.052879",
+            "modifiedAt": "2026-08-17T15:00:42.520902",
             "daysSinceModified": 1,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-08-17T06:33:20.398Z"
+          "calculatedAt": "2026-08-18T06:25:17.028Z"
         },
         {
           "dimension": "structure",
@@ -85006,7 +85206,7 @@
               "HTML": 1
             }
           },
-          "calculatedAt": "2026-08-17T06:33:20.398Z"
+          "calculatedAt": "2026-08-18T06:25:17.029Z"
         },
         {
           "dimension": "accessibility",
@@ -85016,10 +85216,10 @@
             "checked": 3,
             "accessible": 2
           },
-          "calculatedAt": "2026-08-17T06:33:20.937Z"
+          "calculatedAt": "2026-08-18T06:25:17.419Z"
         }
       ],
-      "lastChecked": "2026-08-17T06:32:54.880Z"
+      "lastChecked": "2026-08-18T06:24:46.100Z"
     },
     {
       "datasetId": "datos-gob-ar:operadores_glp",
@@ -85046,17 +85246,17 @@
             "tagCount": 5,
             "resourceCount": 26
           },
-          "calculatedAt": "2026-08-17T06:33:20.937Z"
+          "calculatedAt": "2026-08-18T06:25:17.419Z"
         },
         {
           "dimension": "freshness",
           "score": 0.998,
           "evidence": {
-            "modifiedAt": "2026-08-16T15:00:24.023843",
+            "modifiedAt": "2026-08-17T15:00:39.695614",
             "daysSinceModified": 1,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-08-17T06:33:20.937Z"
+          "calculatedAt": "2026-08-18T06:25:17.419Z"
         },
         {
           "dimension": "structure",
@@ -85076,7 +85276,7 @@
               "PDF": 2
             }
           },
-          "calculatedAt": "2026-08-17T06:33:20.937Z"
+          "calculatedAt": "2026-08-18T06:25:17.420Z"
         },
         {
           "dimension": "accessibility",
@@ -85086,210 +85286,10 @@
             "checked": 26,
             "accessible": 26
           },
-          "calculatedAt": "2026-08-17T06:33:22.506Z"
+          "calculatedAt": "2026-08-18T06:25:18.921Z"
         }
       ],
-      "lastChecked": "2026-08-17T06:32:54.880Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:pago-de-impuestos-nacionales-de-grandes-empresas-mineras-siacam",
-      "title": "Pago de Impuestos Nacionales de Grandes Empresas Mineras (SIACAM)",
-      "organization": "Secretaría de Minería",
-      "overall": 0.953,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 325,
-            "tagCount": 2,
-            "resourceCount": 2
-          },
-          "calculatedAt": "2026-08-17T06:33:22.506Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-08-16T15:00:22.740217",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-17T06:33:22.506Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 2,
-            "formatDistribution": {
-              "CSV": 2
-            }
-          },
-          "calculatedAt": "2026-08-17T06:33:22.506Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.9,
-          "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-08-17T06:33:23.400Z"
-        }
-      ],
-      "lastChecked": "2026-08-17T06:32:54.880Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:anuncios-de-inversion-en-el-sector-minero-de-argentina-del-siacam",
-      "title": "Anuncios de Inversión en el Sector Minero de Argentina del SIACAM",
-      "organization": "Secretaría de Minería",
-      "overall": 0.953,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 322,
-            "tagCount": 2,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-08-17T06:33:23.400Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-08-16T15:00:22.167172",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-17T06:33:23.400Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-08-17T06:33:23.400Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.9,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-08-17T06:33:23.941Z"
-        }
-      ],
-      "lastChecked": "2026-08-17T06:32:54.880Z"
-    },
-    {
-      "datasetId": "datos-gob-ar:estaciones-de-bombeo",
-      "title": "Estaciones de Bombeo",
-      "organization": "Secretaría de Energía",
-      "overall": 0.976,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 55,
-            "tagCount": 2,
-            "resourceCount": 2
-          },
-          "calculatedAt": "2026-08-17T06:33:23.941Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.967,
-          "evidence": {
-            "modifiedAt": "2026-08-08T15:00:34.951672",
-            "daysSinceModified": 9,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-17T06:33:23.941Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "SHP",
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 2,
-            "formatDistribution": {
-              "SHP": 1,
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-08-17T06:33:23.941Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-08-17T06:33:24.344Z"
-        }
-      ],
-      "lastChecked": "2026-08-17T06:32:54.880Z"
+      "lastChecked": "2026-08-18T06:24:46.100Z"
     }
   ],
   "coverage": 1
