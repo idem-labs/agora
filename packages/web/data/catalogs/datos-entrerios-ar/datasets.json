@@ -1,6 +1,6 @@
 {
   "catalogId": "datos-entrerios-ar",
-  "updatedAt": "2026-08-20T06:26:29.234Z",
+  "updatedAt": "2026-08-21T06:39:35.181Z",
   "datasets": [
     {
       "datasetId": "datos-entrerios-ar:escala-salarial-de-autoridades-superiores-y-personal-fuera-de-escalafon",
@@ -152,6 +152,80 @@
           }
         ],
         "lastChecked": "2026-08-17T06:33:49.051Z"
+      }
+    },
+    {
+      "datasetId": "datos-entrerios-ar:registroaudiovisual",
+      "externalId": "registroaudiovisual",
+      "modifiedAt": "2026-07-20T16:25:45.659697",
+      "lastScoredAt": "2026-08-20T06:26:29.234Z",
+      "score": {
+        "datasetId": "datos-entrerios-ar:registroaudiovisual",
+        "title": "Registro Público de la Industria Audiovisual de Entre Ríos",
+        "organization": "Secretaría de Cultura",
+        "overall": 0.957,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 349,
+              "tagCount": 4,
+              "resourceCount": 2
+            },
+            "calculatedAt": "2026-08-20T06:26:29.234Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.889,
+            "evidence": {
+              "modifiedAt": "2026-07-20T16:25:45.659697",
+              "daysSinceModified": 31,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-08-20T06:26:29.234Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "XLS",
+                "CSV"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 2,
+              "formatDistribution": {
+                "XLS": 1,
+                "CSV": 1
+              }
+            },
+            "calculatedAt": "2026-08-20T06:26:29.234Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 2,
+              "checked": 2,
+              "accessible": 2
+            },
+            "calculatedAt": "2026-08-20T06:26:30.005Z"
+          }
+        ],
+        "lastChecked": "2026-08-20T06:26:29.234Z"
       }
     },
     {
@@ -8944,80 +9018,6 @@
           }
         ],
         "lastChecked": "2026-08-16T06:24:54.912Z"
-      }
-    },
-    {
-      "datasetId": "datos-entrerios-ar:registroaudiovisual",
-      "externalId": "registroaudiovisual",
-      "modifiedAt": "2026-07-20T16:25:45.659697",
-      "lastScoredAt": "2026-08-20T06:26:29.234Z",
-      "score": {
-        "datasetId": "datos-entrerios-ar:registroaudiovisual",
-        "title": "Registro Público de la Industria Audiovisual de Entre Ríos",
-        "organization": "Secretaría de Cultura",
-        "overall": 0.957,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 349,
-              "tagCount": 4,
-              "resourceCount": 2
-            },
-            "calculatedAt": "2026-08-20T06:26:29.234Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.889,
-            "evidence": {
-              "modifiedAt": "2026-07-20T16:25:45.659697",
-              "daysSinceModified": 31,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-08-20T06:26:29.234Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "XLS",
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 2,
-              "formatDistribution": {
-                "XLS": 1,
-                "CSV": 1
-              }
-            },
-            "calculatedAt": "2026-08-20T06:26:29.234Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 2,
-              "checked": 2,
-              "accessible": 2
-            },
-            "calculatedAt": "2026-08-20T06:26:30.005Z"
-          }
-        ],
-        "lastChecked": "2026-08-20T06:26:29.234Z"
       }
     }
   ]
