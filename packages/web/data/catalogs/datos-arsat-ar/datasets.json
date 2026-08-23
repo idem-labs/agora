@@ -1,6 +1,6 @@
 {
   "catalogId": "datos-arsat-ar",
-  "updatedAt": "2026-08-22T06:28:34.171Z",
+  "updatedAt": "2026-08-23T06:35:06.459Z",
   "datasets": [
     {
       "datasetId": "datos-arsat-ar:organigrama",
@@ -72,6 +72,80 @@
           }
         ],
         "lastChecked": "2026-08-20T06:39:53.450Z"
+      }
+    },
+    {
+      "datasetId": "datos-arsat-ar:finanzas",
+      "externalId": "finanzas",
+      "modifiedAt": "2026-07-06T14:42:31.896967",
+      "lastScoredAt": "2026-08-22T06:28:34.171Z",
+      "score": {
+        "datasetId": "datos-arsat-ar:finanzas",
+        "title": "Finanzas",
+        "organization": "Gerencia de Administración y finanzas",
+        "overall": 0.943,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 90,
+              "tagCount": 4,
+              "resourceCount": 3
+            },
+            "calculatedAt": "2026-08-22T06:28:34.171Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.836,
+            "evidence": {
+              "modifiedAt": "2026-07-06T14:42:31.896967",
+              "daysSinceModified": 47,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-08-22T06:28:34.171Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV",
+                "PDF"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 3,
+              "formatDistribution": {
+                "CSV": 2,
+                "PDF": 1
+              }
+            },
+            "calculatedAt": "2026-08-22T06:28:34.172Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 3,
+              "checked": 3,
+              "accessible": 3
+            },
+            "calculatedAt": "2026-08-22T06:28:34.954Z"
+          }
+        ],
+        "lastChecked": "2026-08-22T06:28:34.171Z"
       }
     },
     {
@@ -219,152 +293,6 @@
       }
     },
     {
-      "datasetId": "datos-arsat-ar:declaraciones-juradas-patrimoniales",
-      "externalId": "declaraciones-juradas-patrimoniales",
-      "modifiedAt": "2026-06-08T14:04:29.781093",
-      "lastScoredAt": "2026-08-16T06:33:30.096Z",
-      "score": {
-        "datasetId": "datos-arsat-ar:declaraciones-juradas-patrimoniales",
-        "title": "Declaraciones Juradas Patrimoniales",
-        "organization": "ARSAT",
-        "overall": 0.926,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 359,
-              "tagCount": 1,
-              "resourceCount": 5
-            },
-            "calculatedAt": "2026-08-16T06:33:30.096Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.768,
-            "evidence": {
-              "modifiedAt": "2026-06-08T14:04:29.781093",
-              "daysSinceModified": 69,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-08-16T06:33:30.096Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "PDF",
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 5,
-              "formatDistribution": {
-                "PDF": 1,
-                "CSV": 4
-              }
-            },
-            "calculatedAt": "2026-08-16T06:33:30.096Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 5,
-              "checked": 5,
-              "accessible": 5
-            },
-            "calculatedAt": "2026-08-16T06:33:31.581Z"
-          }
-        ],
-        "lastChecked": "2026-08-16T06:33:30.096Z"
-      }
-    },
-    {
-      "datasetId": "datos-arsat-ar:balances",
-      "externalId": "balances",
-      "modifiedAt": "2026-06-08T13:51:39.457901",
-      "lastScoredAt": "2026-08-16T06:33:30.096Z",
-      "score": {
-        "datasetId": "datos-arsat-ar:balances",
-        "title": "Balances",
-        "organization": "ARSAT",
-        "overall": 0.676,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 23,
-              "tagCount": 2,
-              "resourceCount": 7
-            },
-            "calculatedAt": "2026-08-16T06:33:31.581Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.768,
-            "evidence": {
-              "modifiedAt": "2026-06-08T13:51:39.457901",
-              "daysSinceModified": 69,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-08-16T06:33:31.581Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.15,
-            "evidence": {
-              "formats": [
-                "PDF"
-              ],
-              "bestFormat": "PDF",
-              "bestFormatScore": 0.15,
-              "resourceCount": 7,
-              "formatDistribution": {
-                "PDF": 7
-              }
-            },
-            "calculatedAt": "2026-08-16T06:33:31.581Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 7,
-              "checked": 7,
-              "accessible": 7
-            },
-            "calculatedAt": "2026-08-16T06:33:36.550Z"
-          }
-        ],
-        "lastChecked": "2026-08-16T06:33:30.096Z"
-      }
-    },
-    {
       "datasetId": "datos-arsat-ar:ejecuciones-presupuestarias",
       "externalId": "ejecuciones-presupuestarias",
       "modifiedAt": "2026-06-04T15:45:57.642232",
@@ -509,15 +437,161 @@
       }
     },
     {
+      "datasetId": "datos-arsat-ar:declaraciones-juradas-patrimoniales",
+      "externalId": "declaraciones-juradas-patrimoniales",
+      "modifiedAt": "2026-06-08T14:04:29.781093",
+      "lastScoredAt": "2026-08-23T06:35:06.459Z",
+      "score": {
+        "datasetId": "datos-arsat-ar:declaraciones-juradas-patrimoniales",
+        "title": "Declaraciones Juradas Patrimoniales",
+        "organization": "ARSAT",
+        "overall": 0.921,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 359,
+              "tagCount": 1,
+              "resourceCount": 5
+            },
+            "calculatedAt": "2026-08-23T06:35:06.459Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.747,
+            "evidence": {
+              "modifiedAt": "2026-06-08T14:04:29.781093",
+              "daysSinceModified": 76,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-08-23T06:35:06.459Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "PDF",
+                "CSV"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 5,
+              "formatDistribution": {
+                "PDF": 1,
+                "CSV": 4
+              }
+            },
+            "calculatedAt": "2026-08-23T06:35:06.459Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 5,
+              "checked": 5,
+              "accessible": 5
+            },
+            "calculatedAt": "2026-08-23T06:35:07.379Z"
+          }
+        ],
+        "lastChecked": "2026-08-23T06:35:06.459Z"
+      }
+    },
+    {
+      "datasetId": "datos-arsat-ar:balances",
+      "externalId": "balances",
+      "modifiedAt": "2026-06-08T13:51:39.457901",
+      "lastScoredAt": "2026-08-23T06:35:06.459Z",
+      "score": {
+        "datasetId": "datos-arsat-ar:balances",
+        "title": "Balances",
+        "organization": "ARSAT",
+        "overall": 0.671,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 23,
+              "tagCount": 2,
+              "resourceCount": 7
+            },
+            "calculatedAt": "2026-08-23T06:35:07.379Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.747,
+            "evidence": {
+              "modifiedAt": "2026-06-08T13:51:39.457901",
+              "daysSinceModified": 76,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-08-23T06:35:07.379Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.15,
+            "evidence": {
+              "formats": [
+                "PDF"
+              ],
+              "bestFormat": "PDF",
+              "bestFormatScore": 0.15,
+              "resourceCount": 7,
+              "formatDistribution": {
+                "PDF": 7
+              }
+            },
+            "calculatedAt": "2026-08-23T06:35:07.379Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 7,
+              "checked": 7,
+              "accessible": 7
+            },
+            "calculatedAt": "2026-08-23T06:35:10.257Z"
+          }
+        ],
+        "lastChecked": "2026-08-23T06:35:06.459Z"
+      }
+    },
+    {
       "datasetId": "datos-arsat-ar:servicios-refefo",
       "externalId": "servicios-refefo",
       "modifiedAt": "2026-03-12T17:43:39.274748",
-      "lastScoredAt": "2026-08-16T06:33:30.096Z",
+      "lastScoredAt": "2026-08-23T06:35:06.459Z",
       "score": {
         "datasetId": "datos-arsat-ar:servicios-refefo",
         "title": "Servicios REFEFO",
         "organization": "ARSAT",
-        "overall": 0.871,
+        "overall": 0.868,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -538,17 +612,17 @@
               "tagCount": 3,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-08-16T06:33:36.550Z"
+            "calculatedAt": "2026-08-23T06:35:10.257Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.547,
+            "score": 0.533,
             "evidence": {
               "modifiedAt": "2026-03-12T17:43:39.274748",
-              "daysSinceModified": 157,
+              "daysSinceModified": 164,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-08-16T06:33:36.550Z"
+            "calculatedAt": "2026-08-23T06:35:10.257Z"
           },
           {
             "dimension": "structure",
@@ -564,7 +638,7 @@
                 "CSV": 1
               }
             },
-            "calculatedAt": "2026-08-16T06:33:36.550Z"
+            "calculatedAt": "2026-08-23T06:35:10.257Z"
           },
           {
             "dimension": "accessibility",
@@ -574,22 +648,22 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-08-16T06:33:37.393Z"
+            "calculatedAt": "2026-08-23T06:35:11.461Z"
           }
         ],
-        "lastChecked": "2026-08-16T06:33:30.096Z"
+        "lastChecked": "2026-08-23T06:35:06.459Z"
       }
     },
     {
       "datasetId": "datos-arsat-ar:puntos-de-conexion-refefo",
       "externalId": "puntos-de-conexion-refefo",
       "modifiedAt": "2026-02-24T17:10:19.002710",
-      "lastScoredAt": "2026-08-16T06:33:30.096Z",
+      "lastScoredAt": "2026-08-23T06:35:06.459Z",
       "score": {
         "datasetId": "datos-arsat-ar:puntos-de-conexion-refefo",
         "title": "Puntos de conexión REFEFO",
         "organization": "Gerencia de Operaciones Terrestres",
-        "overall": 0.863,
+        "overall": 0.86,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -610,17 +684,17 @@
               "tagCount": 3,
               "resourceCount": 1
             },
-            "calculatedAt": "2026-08-16T06:33:37.393Z"
+            "calculatedAt": "2026-08-23T06:35:11.461Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.515,
+            "score": 0.501,
             "evidence": {
               "modifiedAt": "2026-02-24T17:10:19.002710",
-              "daysSinceModified": 173,
+              "daysSinceModified": 180,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-08-16T06:33:37.393Z"
+            "calculatedAt": "2026-08-23T06:35:11.461Z"
           },
           {
             "dimension": "structure",
@@ -636,7 +710,7 @@
                 "CSV": 1
               }
             },
-            "calculatedAt": "2026-08-16T06:33:37.393Z"
+            "calculatedAt": "2026-08-23T06:35:11.461Z"
           },
           {
             "dimension": "accessibility",
@@ -646,17 +720,17 @@
               "checked": 1,
               "accessible": 1
             },
-            "calculatedAt": "2026-08-16T06:33:38.064Z"
+            "calculatedAt": "2026-08-23T06:35:11.912Z"
           }
         ],
-        "lastChecked": "2026-08-16T06:33:30.096Z"
+        "lastChecked": "2026-08-23T06:35:06.459Z"
       }
     },
     {
       "datasetId": "datos-arsat-ar:codigo-de-etica-y-conducta",
       "externalId": "codigo-de-etica-y-conducta",
       "modifiedAt": "2024-06-07T13:42:19.013309",
-      "lastScoredAt": "2026-08-16T06:33:30.096Z",
+      "lastScoredAt": "2026-08-23T06:35:06.459Z",
       "score": {
         "datasetId": "datos-arsat-ar:codigo-de-etica-y-conducta",
         "title": "Código de Etica y Conducta",
@@ -682,17 +756,17 @@
               "tagCount": 3,
               "resourceCount": 2
             },
-            "calculatedAt": "2026-08-16T06:33:38.064Z"
+            "calculatedAt": "2026-08-23T06:35:11.912Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.046,
+            "score": 0.045,
             "evidence": {
               "modifiedAt": "2024-06-07T13:42:19.013309",
-              "daysSinceModified": 800,
+              "daysSinceModified": 807,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-08-16T06:33:38.064Z"
+            "calculatedAt": "2026-08-23T06:35:11.912Z"
           },
           {
             "dimension": "structure",
@@ -708,7 +782,7 @@
                 "PDF": 2
               }
             },
-            "calculatedAt": "2026-08-16T06:33:38.064Z"
+            "calculatedAt": "2026-08-23T06:35:11.912Z"
           },
           {
             "dimension": "accessibility",
@@ -718,17 +792,17 @@
               "checked": 2,
               "accessible": 2
             },
-            "calculatedAt": "2026-08-16T06:33:38.548Z"
+            "calculatedAt": "2026-08-23T06:35:12.610Z"
           }
         ],
-        "lastChecked": "2026-08-16T06:33:30.096Z"
+        "lastChecked": "2026-08-23T06:35:06.459Z"
       }
     },
     {
       "datasetId": "datos-arsat-ar:cobertura-satelite-arsat-1",
       "externalId": "cobertura-satelite-arsat-1",
       "modifiedAt": "2024-05-03T13:21:33.799259",
-      "lastScoredAt": "2026-08-16T06:33:30.096Z",
+      "lastScoredAt": "2026-08-23T06:35:06.459Z",
       "score": {
         "datasetId": "datos-arsat-ar:cobertura-satelite-arsat-1",
         "title": "Cobertura Satélite ARSAT-1",
@@ -754,17 +828,17 @@
               "tagCount": 4,
               "resourceCount": 2
             },
-            "calculatedAt": "2026-08-16T06:33:38.548Z"
+            "calculatedAt": "2026-08-23T06:35:12.611Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.04,
+            "score": 0.039,
             "evidence": {
               "modifiedAt": "2024-05-03T13:21:33.799259",
-              "daysSinceModified": 835,
+              "daysSinceModified": 842,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-08-16T06:33:38.548Z"
+            "calculatedAt": "2026-08-23T06:35:12.611Z"
           },
           {
             "dimension": "structure",
@@ -782,7 +856,7 @@
                 "KML": 1
               }
             },
-            "calculatedAt": "2026-08-16T06:33:38.548Z"
+            "calculatedAt": "2026-08-23T06:35:12.611Z"
           },
           {
             "dimension": "accessibility",
@@ -792,17 +866,17 @@
               "checked": 2,
               "accessible": 2
             },
-            "calculatedAt": "2026-08-16T06:33:39.001Z"
+            "calculatedAt": "2026-08-23T06:35:13.269Z"
           }
         ],
-        "lastChecked": "2026-08-16T06:33:30.096Z"
+        "lastChecked": "2026-08-23T06:35:06.459Z"
       }
     },
     {
       "datasetId": "datos-arsat-ar:cobertura-satelite-arsat-2",
       "externalId": "cobertura-satelite-arsat-2",
       "modifiedAt": "2024-05-03T13:20:55.467100",
-      "lastScoredAt": "2026-08-16T06:33:30.096Z",
+      "lastScoredAt": "2026-08-23T06:35:06.459Z",
       "score": {
         "datasetId": "datos-arsat-ar:cobertura-satelite-arsat-2",
         "title": "Cobertura Satélite ARSAT-2",
@@ -828,17 +902,17 @@
               "tagCount": 4,
               "resourceCount": 6
             },
-            "calculatedAt": "2026-08-16T06:33:39.001Z"
+            "calculatedAt": "2026-08-23T06:35:13.269Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.04,
+            "score": 0.039,
             "evidence": {
               "modifiedAt": "2024-05-03T13:20:55.467100",
-              "daysSinceModified": 835,
+              "daysSinceModified": 842,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-08-16T06:33:39.001Z"
+            "calculatedAt": "2026-08-23T06:35:13.269Z"
           },
           {
             "dimension": "structure",
@@ -856,7 +930,7 @@
                 "KMZ": 3
               }
             },
-            "calculatedAt": "2026-08-16T06:33:39.001Z"
+            "calculatedAt": "2026-08-23T06:35:13.269Z"
           },
           {
             "dimension": "accessibility",
@@ -866,84 +940,10 @@
               "checked": 6,
               "accessible": 6
             },
-            "calculatedAt": "2026-08-16T06:33:40.457Z"
+            "calculatedAt": "2026-08-23T06:35:14.056Z"
           }
         ],
-        "lastChecked": "2026-08-16T06:33:30.096Z"
-      }
-    },
-    {
-      "datasetId": "datos-arsat-ar:finanzas",
-      "externalId": "finanzas",
-      "modifiedAt": "2026-07-06T14:42:31.896967",
-      "lastScoredAt": "2026-08-22T06:28:34.171Z",
-      "score": {
-        "datasetId": "datos-arsat-ar:finanzas",
-        "title": "Finanzas",
-        "organization": "Gerencia de Administración y finanzas",
-        "overall": 0.943,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 90,
-              "tagCount": 4,
-              "resourceCount": 3
-            },
-            "calculatedAt": "2026-08-22T06:28:34.171Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.836,
-            "evidence": {
-              "modifiedAt": "2026-07-06T14:42:31.896967",
-              "daysSinceModified": 47,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-08-22T06:28:34.171Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV",
-                "PDF"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 3,
-              "formatDistribution": {
-                "CSV": 2,
-                "PDF": 1
-              }
-            },
-            "calculatedAt": "2026-08-22T06:28:34.172Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 3,
-              "checked": 3,
-              "accessible": 3
-            },
-            "calculatedAt": "2026-08-22T06:28:34.954Z"
-          }
-        ],
-        "lastChecked": "2026-08-22T06:28:34.171Z"
+        "lastChecked": "2026-08-23T06:35:06.459Z"
       }
     }
   ]
