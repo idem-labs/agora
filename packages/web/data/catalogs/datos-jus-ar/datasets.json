@@ -1,16 +1,16 @@
 {
   "catalogId": "datos-jus-ar",
-  "updatedAt": "2026-08-25T06:27:38.278Z",
+  "updatedAt": "2026-08-26T06:29:59.482Z",
   "datasets": [
     {
-      "datasetId": "datos-jus-ar:denuncias-a-empresas-y-trabajadores-de-control-de-admision-y-permanencia-en-rencap",
-      "externalId": "denuncias-a-empresas-y-trabajadores-de-control-de-admision-y-permanencia-en-rencap",
-      "modifiedAt": "2026-08-18T15:40:05.527183",
-      "lastScoredAt": "2026-08-19T06:25:04.872Z",
+      "datasetId": "datos-jus-ar:registro-nacional-de-sociedades",
+      "externalId": "registro-nacional-de-sociedades",
+      "modifiedAt": "2026-08-24T13:00:17.804031",
+      "lastScoredAt": "2026-08-25T06:27:38.278Z",
       "score": {
-        "datasetId": "datos-jus-ar:denuncias-a-empresas-y-trabajadores-de-control-de-admision-y-permanencia-en-rencap",
-        "title": "Denuncias a empresas y trabajadores de control de admisión y permanencia en RENCAP",
-        "organization": "Registro Nacional de empresas y trabajadores de control de admisión y permanencia - RENCAP",
+        "datasetId": "datos-jus-ar:registro-nacional-de-sociedades",
+        "title": "Registro Nacional de Sociedades",
+        "organization": "Registro Nacional de Sociedades y del Registro Nacional de Concursos y Quiebras",
         "overall": 0.984,
         "dimensions": [
           {
@@ -28,21 +28,21 @@
                 "createdAt"
               ],
               "fieldsMissing": [],
-              "descriptionLength": 146,
+              "descriptionLength": 42,
               "tagCount": 10,
-              "resourceCount": 10
+              "resourceCount": 14
             },
-            "calculatedAt": "2026-08-19T06:25:04.872Z"
+            "calculatedAt": "2026-08-25T06:27:38.278Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.998,
+            "score": 0.997,
             "evidence": {
-              "modifiedAt": "2026-08-18T15:40:05.527183",
+              "modifiedAt": "2026-08-24T13:00:17.804031",
               "daysSinceModified": 1,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-08-19T06:25:04.872Z"
+            "calculatedAt": "2026-08-25T06:27:38.278Z"
           },
           {
             "dimension": "structure",
@@ -50,30 +50,32 @@
             "evidence": {
               "formats": [
                 "CSV",
-                "ZIP"
+                "ZIP",
+                "GRÁFICO"
               ],
               "bestFormat": "CSV",
               "bestFormatScore": 0.95,
-              "resourceCount": 10,
+              "resourceCount": 14,
               "formatDistribution": {
-                "CSV": 1,
-                "ZIP": 9
+                "CSV": 2,
+                "ZIP": 11,
+                "GRÁFICO": 1
               }
             },
-            "calculatedAt": "2026-08-19T06:25:04.872Z"
+            "calculatedAt": "2026-08-25T06:27:38.278Z"
           },
           {
             "dimension": "accessibility",
             "score": 1,
             "evidence": {
-              "resourceCount": 10,
-              "checked": 10,
-              "accessible": 10
+              "resourceCount": 14,
+              "checked": 14,
+              "accessible": 14
             },
-            "calculatedAt": "2026-08-19T06:25:06.547Z"
+            "calculatedAt": "2026-08-25T06:27:41.551Z"
           }
         ],
-        "lastChecked": "2026-08-19T06:25:04.872Z"
+        "lastChecked": "2026-08-25T06:27:38.278Z"
       }
     },
     {
@@ -518,78 +520,6 @@
           }
         ],
         "lastChecked": "2026-08-21T06:39:37.136Z"
-      }
-    },
-    {
-      "datasetId": "datos-jus-ar:sistema-nacional-de-estadisticas-sobre-ejecucion-de-la-pena-sneep-series-de-tiempo",
-      "externalId": "sistema-nacional-de-estadisticas-sobre-ejecucion-de-la-pena-sneep-series-de-tiempo",
-      "modifiedAt": "2026-08-10T15:24:37.823721",
-      "lastScoredAt": "2026-08-19T06:25:04.872Z",
-      "score": {
-        "datasetId": "datos-jus-ar:sistema-nacional-de-estadisticas-sobre-ejecucion-de-la-pena-sneep-series-de-tiempo",
-        "title": "Sistema Nacional de Estadísticas sobre Ejecución de la Pena - SNEEP - Series de tiempo",
-        "organization": "Dirección Nacional de Política Criminal en Materia de Justicia y Legislación Penal",
-        "overall": 0.976,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 201,
-              "tagCount": 9,
-              "resourceCount": 28
-            },
-            "calculatedAt": "2026-08-19T06:25:06.547Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.967,
-            "evidence": {
-              "modifiedAt": "2026-08-10T15:24:37.823721",
-              "daysSinceModified": 9,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-08-19T06:25:06.547Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 28,
-              "formatDistribution": {
-                "CSV": 28
-              }
-            },
-            "calculatedAt": "2026-08-19T06:25:06.547Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 28,
-              "checked": 28,
-              "accessible": 28
-            },
-            "calculatedAt": "2026-08-19T06:25:09.647Z"
-          }
-        ],
-        "lastChecked": "2026-08-19T06:25:04.872Z"
       }
     },
     {
@@ -4637,15 +4567,15 @@
       }
     },
     {
-      "datasetId": "datos-jus-ar:registro-nacional-de-sociedades",
-      "externalId": "registro-nacional-de-sociedades",
-      "modifiedAt": "2026-08-24T13:00:17.804031",
-      "lastScoredAt": "2026-08-25T06:27:38.278Z",
+      "datasetId": "datos-jus-ar:denuncias-a-empresas-y-trabajadores-de-control-de-admision-y-permanencia-en-rencap",
+      "externalId": "denuncias-a-empresas-y-trabajadores-de-control-de-admision-y-permanencia-en-rencap",
+      "modifiedAt": "2026-08-18T15:40:05.527183",
+      "lastScoredAt": "2026-08-26T06:29:59.482Z",
       "score": {
-        "datasetId": "datos-jus-ar:registro-nacional-de-sociedades",
-        "title": "Registro Nacional de Sociedades",
-        "organization": "Registro Nacional de Sociedades y del Registro Nacional de Concursos y Quiebras",
-        "overall": 0.984,
+        "datasetId": "datos-jus-ar:denuncias-a-empresas-y-trabajadores-de-control-de-admision-y-permanencia-en-rencap",
+        "title": "Denuncias a empresas y trabajadores de control de admisión y permanencia en RENCAP",
+        "organization": "Registro Nacional de empresas y trabajadores de control de admisión y permanencia - RENCAP",
+        "overall": 0.977,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -4662,21 +4592,21 @@
                 "createdAt"
               ],
               "fieldsMissing": [],
-              "descriptionLength": 42,
+              "descriptionLength": 146,
               "tagCount": 10,
-              "resourceCount": 14
+              "resourceCount": 10
             },
-            "calculatedAt": "2026-08-25T06:27:38.278Z"
+            "calculatedAt": "2026-08-26T06:29:59.482Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.997,
+            "score": 0.971,
             "evidence": {
-              "modifiedAt": "2026-08-24T13:00:17.804031",
-              "daysSinceModified": 1,
+              "modifiedAt": "2026-08-18T15:40:05.527183",
+              "daysSinceModified": 8,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-08-25T06:27:38.278Z"
+            "calculatedAt": "2026-08-26T06:29:59.482Z"
           },
           {
             "dimension": "structure",
@@ -4684,32 +4614,102 @@
             "evidence": {
               "formats": [
                 "CSV",
-                "ZIP",
-                "GRÁFICO"
+                "ZIP"
               ],
               "bestFormat": "CSV",
               "bestFormatScore": 0.95,
-              "resourceCount": 14,
+              "resourceCount": 10,
               "formatDistribution": {
-                "CSV": 2,
-                "ZIP": 11,
-                "GRÁFICO": 1
+                "CSV": 1,
+                "ZIP": 9
               }
             },
-            "calculatedAt": "2026-08-25T06:27:38.278Z"
+            "calculatedAt": "2026-08-26T06:29:59.482Z"
           },
           {
             "dimension": "accessibility",
             "score": 1,
             "evidence": {
-              "resourceCount": 14,
-              "checked": 14,
-              "accessible": 14
+              "resourceCount": 10,
+              "checked": 10,
+              "accessible": 10
             },
-            "calculatedAt": "2026-08-25T06:27:41.551Z"
+            "calculatedAt": "2026-08-26T06:30:00.996Z"
           }
         ],
-        "lastChecked": "2026-08-25T06:27:38.278Z"
+        "lastChecked": "2026-08-26T06:29:59.482Z"
+      }
+    },
+    {
+      "datasetId": "datos-jus-ar:sistema-nacional-de-estadisticas-sobre-ejecucion-de-la-pena-sneep-series-de-tiempo",
+      "externalId": "sistema-nacional-de-estadisticas-sobre-ejecucion-de-la-pena-sneep-series-de-tiempo",
+      "modifiedAt": "2026-08-10T15:24:37.823721",
+      "lastScoredAt": "2026-08-26T06:29:59.482Z",
+      "score": {
+        "datasetId": "datos-jus-ar:sistema-nacional-de-estadisticas-sobre-ejecucion-de-la-pena-sneep-series-de-tiempo",
+        "title": "Sistema Nacional de Estadísticas sobre Ejecución de la Pena - SNEEP - Series de tiempo",
+        "organization": "Dirección Nacional de Política Criminal en Materia de Justicia y Legislación Penal",
+        "overall": 0.87,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 201,
+              "tagCount": 9,
+              "resourceCount": 28
+            },
+            "calculatedAt": "2026-08-26T06:30:00.996Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.942,
+            "evidence": {
+              "modifiedAt": "2026-08-10T15:24:37.823721",
+              "daysSinceModified": 16,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-08-26T06:30:00.996Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 28,
+              "formatDistribution": {
+                "CSV": 28
+              }
+            },
+            "calculatedAt": "2026-08-26T06:30:00.997Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0.679,
+            "evidence": {
+              "resourceCount": 28,
+              "checked": 28,
+              "accessible": 19
+            },
+            "calculatedAt": "2026-08-26T06:30:07.097Z"
+          }
+        ],
+        "lastChecked": "2026-08-26T06:29:59.482Z"
       }
     }
   ]
