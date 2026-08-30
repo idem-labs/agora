@@ -1,6 +1,6 @@
 {
   "catalogId": "datos-hcdn-ar",
-  "updatedAt": "2026-08-29T12:04:01.085Z",
+  "updatedAt": "2026-08-30T11:01:25.774Z",
   "datasets": [
     {
       "datasetId": "datos-hcdn-ar:ejecucion-presupuestaria-de-la-camara-de-diputados-de-la-nacion",
@@ -894,6 +894,80 @@
       }
     },
     {
+      "datasetId": "datos-hcdn-ar:dietas-y-gastos-de-representacion-legisladores-as",
+      "externalId": "dietas-y-gastos-de-representacion-legisladores-as",
+      "modifiedAt": "2026-08-14T12:32:38.831680",
+      "lastScoredAt": "2026-08-29T12:04:01.085Z",
+      "score": {
+        "datasetId": "datos-hcdn-ar:dietas-y-gastos-de-representacion-legisladores-as",
+        "title": "Dietas y Gastos de Representación - Legisladores/as",
+        "organization": "Secretaría Administativa",
+        "overall": 0.97,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 133,
+              "tagCount": 10,
+              "resourceCount": 8
+            },
+            "calculatedAt": "2026-08-29T12:04:01.085Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.944,
+            "evidence": {
+              "modifiedAt": "2026-08-14T12:32:38.831680",
+              "daysSinceModified": 15,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-08-29T12:04:01.085Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV",
+                "JSON"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 8,
+              "formatDistribution": {
+                "CSV": 4,
+                "JSON": 4
+              }
+            },
+            "calculatedAt": "2026-08-29T12:04:01.085Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 8,
+              "checked": 8,
+              "accessible": 8
+            },
+            "calculatedAt": "2026-08-29T12:04:02.610Z"
+          }
+        ],
+        "lastChecked": "2026-08-29T12:04:01.085Z"
+      }
+    },
+    {
       "datasetId": "datos-hcdn-ar:escala-salarial",
       "externalId": "escala-salarial",
       "modifiedAt": "2026-08-11T11:14:35.219399",
@@ -965,154 +1039,6 @@
           }
         ],
         "lastChecked": "2026-08-27T17:16:54.724Z"
-      }
-    },
-    {
-      "datasetId": "datos-hcdn-ar:nomina-de-personal",
-      "externalId": "nomina-de-personal",
-      "modifiedAt": "2026-08-07T19:07:51.083328",
-      "lastScoredAt": "2026-08-23T06:33:49.569Z",
-      "score": {
-        "datasetId": "datos-hcdn-ar:nomina-de-personal",
-        "title": "Nómina de personal",
-        "organization": "Secretaría Administativa",
-        "overall": 0.97,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 326,
-              "tagCount": 4,
-              "resourceCount": 2
-            },
-            "calculatedAt": "2026-08-23T06:33:49.569Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.942,
-            "evidence": {
-              "modifiedAt": "2026-08-07T19:07:51.083328",
-              "daysSinceModified": 15,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-08-23T06:33:49.569Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV",
-                "JSON"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 2,
-              "formatDistribution": {
-                "CSV": 1,
-                "JSON": 1
-              }
-            },
-            "calculatedAt": "2026-08-23T06:33:49.569Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 2,
-              "checked": 2,
-              "accessible": 2
-            },
-            "calculatedAt": "2026-08-23T06:33:50.052Z"
-          }
-        ],
-        "lastChecked": "2026-08-23T06:33:49.569Z"
-      }
-    },
-    {
-      "datasetId": "datos-hcdn-ar:viajes-nacionales",
-      "externalId": "viajes-nacionales",
-      "modifiedAt": "2026-08-07T17:31:33.300896",
-      "lastScoredAt": "2026-08-23T06:33:49.569Z",
-      "score": {
-        "datasetId": "datos-hcdn-ar:viajes-nacionales",
-        "title": "Viajes Nacionales",
-        "organization": "Secretaría Administativa",
-        "overall": 0.97,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 467,
-              "tagCount": 7,
-              "resourceCount": 34
-            },
-            "calculatedAt": "2026-08-23T06:33:50.052Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.942,
-            "evidence": {
-              "modifiedAt": "2026-08-07T17:31:33.300896",
-              "daysSinceModified": 16,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-08-23T06:33:50.052Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV",
-                "JSON"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 34,
-              "formatDistribution": {
-                "CSV": 17,
-                "JSON": 17
-              }
-            },
-            "calculatedAt": "2026-08-23T06:33:50.052Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 34,
-              "checked": 34,
-              "accessible": 34
-            },
-            "calculatedAt": "2026-08-23T06:33:54.378Z"
-          }
-        ],
-        "lastChecked": "2026-08-23T06:33:49.569Z"
       }
     },
     {
@@ -2080,15 +2006,15 @@
       }
     },
     {
-      "datasetId": "datos-hcdn-ar:dietas-y-gastos-de-representacion-legisladores-as",
-      "externalId": "dietas-y-gastos-de-representacion-legisladores-as",
-      "modifiedAt": "2026-08-14T12:32:38.831680",
-      "lastScoredAt": "2026-08-29T12:04:01.085Z",
+      "datasetId": "datos-hcdn-ar:nomina-de-personal",
+      "externalId": "nomina-de-personal",
+      "modifiedAt": "2026-08-07T19:07:51.083328",
+      "lastScoredAt": "2026-08-30T11:01:25.774Z",
       "score": {
-        "datasetId": "datos-hcdn-ar:dietas-y-gastos-de-representacion-legisladores-as",
-        "title": "Dietas y Gastos de Representación - Legisladores/as",
+        "datasetId": "datos-hcdn-ar:nomina-de-personal",
+        "title": "Nómina de personal",
         "organization": "Secretaría Administativa",
-        "overall": 0.97,
+        "overall": 0.963,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -2105,21 +2031,21 @@
                 "createdAt"
               ],
               "fieldsMissing": [],
-              "descriptionLength": 133,
-              "tagCount": 10,
-              "resourceCount": 8
+              "descriptionLength": 326,
+              "tagCount": 4,
+              "resourceCount": 2
             },
-            "calculatedAt": "2026-08-29T12:04:01.085Z"
+            "calculatedAt": "2026-08-30T11:01:25.774Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.944,
+            "score": 0.916,
             "evidence": {
-              "modifiedAt": "2026-08-14T12:32:38.831680",
-              "daysSinceModified": 15,
+              "modifiedAt": "2026-08-07T19:07:51.083328",
+              "daysSinceModified": 23,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-08-29T12:04:01.085Z"
+            "calculatedAt": "2026-08-30T11:01:25.774Z"
           },
           {
             "dimension": "structure",
@@ -2131,26 +2057,100 @@
               ],
               "bestFormat": "CSV",
               "bestFormatScore": 0.95,
-              "resourceCount": 8,
+              "resourceCount": 2,
               "formatDistribution": {
-                "CSV": 4,
-                "JSON": 4
+                "CSV": 1,
+                "JSON": 1
               }
             },
-            "calculatedAt": "2026-08-29T12:04:01.085Z"
+            "calculatedAt": "2026-08-30T11:01:25.774Z"
           },
           {
             "dimension": "accessibility",
             "score": 1,
             "evidence": {
-              "resourceCount": 8,
-              "checked": 8,
-              "accessible": 8
+              "resourceCount": 2,
+              "checked": 2,
+              "accessible": 2
             },
-            "calculatedAt": "2026-08-29T12:04:02.610Z"
+            "calculatedAt": "2026-08-30T11:01:28.760Z"
           }
         ],
-        "lastChecked": "2026-08-29T12:04:01.085Z"
+        "lastChecked": "2026-08-30T11:01:25.774Z"
+      }
+    },
+    {
+      "datasetId": "datos-hcdn-ar:viajes-nacionales",
+      "externalId": "viajes-nacionales",
+      "modifiedAt": "2026-08-07T17:31:33.300896",
+      "lastScoredAt": "2026-08-30T11:01:25.774Z",
+      "score": {
+        "datasetId": "datos-hcdn-ar:viajes-nacionales",
+        "title": "Viajes Nacionales",
+        "organization": "Secretaría Administativa",
+        "overall": 0.651,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 467,
+              "tagCount": 7,
+              "resourceCount": 34
+            },
+            "calculatedAt": "2026-08-30T11:01:28.760Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.916,
+            "evidence": {
+              "modifiedAt": "2026-08-07T17:31:33.300896",
+              "daysSinceModified": 23,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-08-30T11:01:28.760Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV",
+                "JSON"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 34,
+              "formatDistribution": {
+                "CSV": 17,
+                "JSON": 17
+              }
+            },
+            "calculatedAt": "2026-08-30T11:01:28.760Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 0,
+            "evidence": {
+              "resourceCount": 34,
+              "checked": 34,
+              "accessible": 0
+            },
+            "calculatedAt": "2026-08-30T11:01:38.779Z"
+          }
+        ],
+        "lastChecked": "2026-08-30T11:01:25.774Z"
       }
     }
   ]
