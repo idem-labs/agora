@@ -1,16 +1,318 @@
 {
   "catalogId": "datos-jus-ar",
-  "updatedAt": "2026-09-01T10:45:32.527Z",
+  "updatedAt": "2026-09-02T10:10:10.115Z",
   "datasets": [
     {
-      "datasetId": "datos-jus-ar:denuncias-a-empresas-y-trabajadores-de-control-de-admision-y-permanencia-en-rencap",
-      "externalId": "denuncias-a-empresas-y-trabajadores-de-control-de-admision-y-permanencia-en-rencap",
-      "modifiedAt": "2026-08-18T15:40:05.527183",
-      "lastScoredAt": "2026-08-26T06:29:59.482Z",
+      "datasetId": "datos-jus-ar:solicitudes-de-acceso-a-la-informacion-publica-en-el-ministerio-de-justicia-y-derechos-humanos",
+      "externalId": "solicitudes-de-acceso-a-la-informacion-publica-en-el-ministerio-de-justicia-y-derechos-humanos",
+      "modifiedAt": "2026-08-31T18:45:54.102846",
+      "lastScoredAt": "2026-09-01T10:45:32.527Z",
       "score": {
-        "datasetId": "datos-jus-ar:denuncias-a-empresas-y-trabajadores-de-control-de-admision-y-permanencia-en-rencap",
-        "title": "Denuncias a empresas y trabajadores de control de admisión y permanencia en RENCAP",
-        "organization": "Registro Nacional de empresas y trabajadores de control de admisión y permanencia - RENCAP",
+        "datasetId": "datos-jus-ar:solicitudes-de-acceso-a-la-informacion-publica-en-el-ministerio-de-justicia-y-derechos-humanos",
+        "title": "Solicitudes de acceso a la información pública en el Ministerio de Justicia y Derechos Humanos",
+        "organization": "Subsecretaría de Gestión Administrativa",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 76,
+              "tagCount": 5,
+              "resourceCount": 11
+            },
+            "calculatedAt": "2026-09-01T10:45:32.527Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.997,
+            "evidence": {
+              "modifiedAt": "2026-08-31T18:45:54.102846",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-09-01T10:45:32.527Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV",
+                "ZIP"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 11,
+              "formatDistribution": {
+                "CSV": 1,
+                "ZIP": 10
+              }
+            },
+            "calculatedAt": "2026-09-01T10:45:32.527Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 11,
+              "checked": 11,
+              "accessible": 11
+            },
+            "calculatedAt": "2026-09-01T10:45:35.974Z"
+          }
+        ],
+        "lastChecked": "2026-09-01T10:45:32.527Z"
+      }
+    },
+    {
+      "datasetId": "datos-jus-ar:poderes-judiciales-causas-no-penales",
+      "externalId": "poderes-judiciales-causas-no-penales",
+      "modifiedAt": "2026-08-31T16:34:26.321420",
+      "lastScoredAt": "2026-09-01T10:45:32.527Z",
+      "score": {
+        "datasetId": "datos-jus-ar:poderes-judiciales-causas-no-penales",
+        "title": "Poderes judiciales - Causas no penales",
+        "organization": "Dirección Nacional de Política Criminal en Materia de Justicia y Legislación Penal",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 264,
+              "tagCount": 4,
+              "resourceCount": 8
+            },
+            "calculatedAt": "2026-09-01T10:45:35.974Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.997,
+            "evidence": {
+              "modifiedAt": "2026-08-31T16:34:26.321420",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-09-01T10:45:35.974Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV",
+                "ZIP",
+                "GRÁFICO"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 8,
+              "formatDistribution": {
+                "CSV": 3,
+                "ZIP": 4,
+                "GRÁFICO": 1
+              }
+            },
+            "calculatedAt": "2026-09-01T10:45:35.974Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 8,
+              "checked": 8,
+              "accessible": 8
+            },
+            "calculatedAt": "2026-09-01T10:45:37.984Z"
+          }
+        ],
+        "lastChecked": "2026-09-01T10:45:32.527Z"
+      }
+    },
+    {
+      "datasetId": "datos-jus-ar:poderes-judiciales-causas-penales",
+      "externalId": "poderes-judiciales-causas-penales",
+      "modifiedAt": "2026-08-31T14:44:29.560659",
+      "lastScoredAt": "2026-09-01T10:45:32.527Z",
+      "score": {
+        "datasetId": "datos-jus-ar:poderes-judiciales-causas-penales",
+        "title": "Poderes judiciales - Causas penales",
+        "organization": "Dirección Nacional de Política Criminal en Materia de Justicia y Legislación Penal",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 261,
+              "tagCount": 7,
+              "resourceCount": 8
+            },
+            "calculatedAt": "2026-09-01T10:45:37.984Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.997,
+            "evidence": {
+              "modifiedAt": "2026-08-31T14:44:29.560659",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-09-01T10:45:37.984Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV",
+                "ZIP",
+                "GRÁFICO"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 8,
+              "formatDistribution": {
+                "CSV": 3,
+                "ZIP": 4,
+                "GRÁFICO": 1
+              }
+            },
+            "calculatedAt": "2026-09-01T10:45:37.984Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 8,
+              "checked": 8,
+              "accessible": 8
+            },
+            "calculatedAt": "2026-09-01T10:45:39.622Z"
+          }
+        ],
+        "lastChecked": "2026-09-01T10:45:32.527Z"
+      }
+    },
+    {
+      "datasetId": "datos-jus-ar:ministerios-publicos-casos",
+      "externalId": "ministerios-publicos-casos",
+      "modifiedAt": "2026-08-31T14:42:15.380899",
+      "lastScoredAt": "2026-09-01T10:45:32.527Z",
+      "score": {
+        "datasetId": "datos-jus-ar:ministerios-publicos-casos",
+        "title": "Ministerios públicos - Casos",
+        "organization": "Dirección Nacional de Política Criminal en Materia de Justicia y Legislación Penal",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 214,
+              "tagCount": 9,
+              "resourceCount": 8
+            },
+            "calculatedAt": "2026-09-01T10:45:39.622Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.997,
+            "evidence": {
+              "modifiedAt": "2026-08-31T14:42:15.380899",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-09-01T10:45:39.622Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV",
+                "ZIP",
+                "GRÁFICO"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 8,
+              "formatDistribution": {
+                "CSV": 3,
+                "ZIP": 4,
+                "GRÁFICO": 1
+              }
+            },
+            "calculatedAt": "2026-09-01T10:45:39.622Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 8,
+              "checked": 8,
+              "accessible": 8
+            },
+            "calculatedAt": "2026-09-01T10:45:40.994Z"
+          }
+        ],
+        "lastChecked": "2026-09-01T10:45:32.527Z"
+      }
+    },
+    {
+      "datasetId": "datos-jus-ar:registro-nacional-de-sociedades",
+      "externalId": "registro-nacional-de-sociedades",
+      "modifiedAt": "2026-08-24T13:00:17.804031",
+      "lastScoredAt": "2026-09-01T10:45:32.527Z",
+      "score": {
+        "datasetId": "datos-jus-ar:registro-nacional-de-sociedades",
+        "title": "Registro Nacional de Sociedades",
+        "organization": "Registro Nacional de Sociedades y del Registro Nacional de Concursos y Quiebras",
         "overall": 0.977,
         "dimensions": [
           {
@@ -28,21 +330,21 @@
                 "createdAt"
               ],
               "fieldsMissing": [],
-              "descriptionLength": 146,
+              "descriptionLength": 42,
               "tagCount": 10,
-              "resourceCount": 10
+              "resourceCount": 14
             },
-            "calculatedAt": "2026-08-26T06:29:59.482Z"
+            "calculatedAt": "2026-09-01T10:45:40.994Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.971,
+            "score": 0.97,
             "evidence": {
-              "modifiedAt": "2026-08-18T15:40:05.527183",
+              "modifiedAt": "2026-08-24T13:00:17.804031",
               "daysSinceModified": 8,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-08-26T06:29:59.482Z"
+            "calculatedAt": "2026-09-01T10:45:40.994Z"
           },
           {
             "dimension": "structure",
@@ -50,30 +352,32 @@
             "evidence": {
               "formats": [
                 "CSV",
-                "ZIP"
+                "ZIP",
+                "GRÁFICO"
               ],
               "bestFormat": "CSV",
               "bestFormatScore": 0.95,
-              "resourceCount": 10,
+              "resourceCount": 14,
               "formatDistribution": {
-                "CSV": 1,
-                "ZIP": 9
+                "CSV": 2,
+                "ZIP": 11,
+                "GRÁFICO": 1
               }
             },
-            "calculatedAt": "2026-08-26T06:29:59.482Z"
+            "calculatedAt": "2026-09-01T10:45:40.994Z"
           },
           {
             "dimension": "accessibility",
             "score": 1,
             "evidence": {
-              "resourceCount": 10,
-              "checked": 10,
-              "accessible": 10
+              "resourceCount": 14,
+              "checked": 14,
+              "accessible": 14
             },
-            "calculatedAt": "2026-08-26T06:30:00.996Z"
+            "calculatedAt": "2026-09-01T10:45:42.714Z"
           }
         ],
-        "lastChecked": "2026-08-26T06:29:59.482Z"
+        "lastChecked": "2026-09-01T10:45:32.527Z"
       }
     },
     {
@@ -521,78 +825,6 @@
       }
     },
     {
-      "datasetId": "datos-jus-ar:sistema-nacional-de-estadisticas-sobre-ejecucion-de-la-pena-sneep-series-de-tiempo",
-      "externalId": "sistema-nacional-de-estadisticas-sobre-ejecucion-de-la-pena-sneep-series-de-tiempo",
-      "modifiedAt": "2026-08-10T15:24:37.823721",
-      "lastScoredAt": "2026-08-26T06:29:59.482Z",
-      "score": {
-        "datasetId": "datos-jus-ar:sistema-nacional-de-estadisticas-sobre-ejecucion-de-la-pena-sneep-series-de-tiempo",
-        "title": "Sistema Nacional de Estadísticas sobre Ejecución de la Pena - SNEEP - Series de tiempo",
-        "organization": "Dirección Nacional de Política Criminal en Materia de Justicia y Legislación Penal",
-        "overall": 0.87,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 201,
-              "tagCount": 9,
-              "resourceCount": 28
-            },
-            "calculatedAt": "2026-08-26T06:30:00.996Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.942,
-            "evidence": {
-              "modifiedAt": "2026-08-10T15:24:37.823721",
-              "daysSinceModified": 16,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-08-26T06:30:00.996Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 28,
-              "formatDistribution": {
-                "CSV": 28
-              }
-            },
-            "calculatedAt": "2026-08-26T06:30:00.997Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0.679,
-            "evidence": {
-              "resourceCount": 28,
-              "checked": 28,
-              "accessible": 19
-            },
-            "calculatedAt": "2026-08-26T06:30:07.097Z"
-          }
-        ],
-        "lastChecked": "2026-08-26T06:29:59.482Z"
-      }
-    },
-    {
       "datasetId": "datos-jus-ar:entidades-constituidas-en-la-inspeccion-general-de-justicia-igj",
       "externalId": "entidades-constituidas-en-la-inspeccion-general-de-justicia-igj",
       "modifiedAt": "2026-08-07T14:00:16.403284",
@@ -812,686 +1044,6 @@
           }
         ],
         "lastChecked": "2026-08-29T12:02:33.635Z"
-      }
-    },
-    {
-      "datasetId": "datos-jus-ar:listado-de-registros-seccionales-de-la-dnrnpa",
-      "externalId": "listado-de-registros-seccionales-de-la-dnrnpa",
-      "modifiedAt": "2026-08-03T13:56:45.509931",
-      "lastScoredAt": "2026-08-27T17:05:32.022Z",
-      "score": {
-        "datasetId": "datos-jus-ar:listado-de-registros-seccionales-de-la-dnrnpa",
-        "title": "Registros Seccionales de la Propiedad Automotor",
-        "organization": "DNRPA – Dirección Nacional del Registro de la Propiedad Automotor y Créditos Prendarios",
-        "overall": 0.962,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 220,
-              "tagCount": 11,
-              "resourceCount": 12
-            },
-            "calculatedAt": "2026-08-27T17:05:32.022Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.911,
-            "evidence": {
-              "modifiedAt": "2026-08-03T13:56:45.509931",
-              "daysSinceModified": 24,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-08-27T17:05:32.022Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV",
-                "ZIP",
-                "GRÁFICO"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 12,
-              "formatDistribution": {
-                "CSV": 1,
-                "ZIP": 10,
-                "GRÁFICO": 1
-              }
-            },
-            "calculatedAt": "2026-08-27T17:05:32.022Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 12,
-              "checked": 12,
-              "accessible": 12
-            },
-            "calculatedAt": "2026-08-27T17:05:36.849Z"
-          }
-        ],
-        "lastChecked": "2026-08-27T17:05:32.022Z"
-      }
-    },
-    {
-      "datasetId": "datos-jus-ar:mediaciones-prejudiciales-y-judiciales",
-      "externalId": "mediaciones-prejudiciales-y-judiciales",
-      "modifiedAt": "2026-08-03T13:31:40.500385",
-      "lastScoredAt": "2026-08-27T17:05:32.022Z",
-      "score": {
-        "datasetId": "datos-jus-ar:mediaciones-prejudiciales-y-judiciales",
-        "title": "Listado de mediaciones prejudiciales y judiciales. Ley 26.589",
-        "organization": "Dirección Nacional de Mediación y Métodos Participativos de Resolución de Conflictos",
-        "overall": 0.962,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 118,
-              "tagCount": 3,
-              "resourceCount": 11
-            },
-            "calculatedAt": "2026-08-27T17:05:36.849Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.911,
-            "evidence": {
-              "modifiedAt": "2026-08-03T13:31:40.500385",
-              "daysSinceModified": 24,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-08-27T17:05:36.849Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV",
-                "ZIP"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 11,
-              "formatDistribution": {
-                "CSV": 1,
-                "ZIP": 10
-              }
-            },
-            "calculatedAt": "2026-08-27T17:05:36.849Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 11,
-              "checked": 11,
-              "accessible": 11
-            },
-            "calculatedAt": "2026-08-27T17:05:38.262Z"
-          }
-        ],
-        "lastChecked": "2026-08-27T17:05:32.022Z"
-      }
-    },
-    {
-      "datasetId": "datos-jus-ar:estadistica-de-tramites-de-maquinarias",
-      "externalId": "estadistica-de-tramites-de-maquinarias",
-      "modifiedAt": "2026-08-03T13:24:14.874995",
-      "lastScoredAt": "2026-08-27T17:05:32.022Z",
-      "score": {
-        "datasetId": "datos-jus-ar:estadistica-de-tramites-de-maquinarias",
-        "title": "Estadística de trámites de maquinarias",
-        "organization": "DNRPA – Dirección Nacional del Registro de la Propiedad Automotor y Créditos Prendarios",
-        "overall": 0.962,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 182,
-              "tagCount": 12,
-              "resourceCount": 4
-            },
-            "calculatedAt": "2026-08-27T17:05:38.262Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.911,
-            "evidence": {
-              "modifiedAt": "2026-08-03T13:24:14.874995",
-              "daysSinceModified": 24,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-08-27T17:05:38.262Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV",
-                "ZIP",
-                "GRÁFICO"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 4,
-              "formatDistribution": {
-                "CSV": 2,
-                "ZIP": 1,
-                "GRÁFICO": 1
-              }
-            },
-            "calculatedAt": "2026-08-27T17:05:38.262Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 4,
-              "checked": 4,
-              "accessible": 4
-            },
-            "calculatedAt": "2026-08-27T17:05:39.276Z"
-          }
-        ],
-        "lastChecked": "2026-08-27T17:05:32.022Z"
-      }
-    },
-    {
-      "datasetId": "datos-jus-ar:estadistica-de-tramites-de-motovehiculos",
-      "externalId": "estadistica-de-tramites-de-motovehiculos",
-      "modifiedAt": "2026-08-03T13:20:15.835506",
-      "lastScoredAt": "2026-08-27T17:05:32.022Z",
-      "score": {
-        "datasetId": "datos-jus-ar:estadistica-de-tramites-de-motovehiculos",
-        "title": "Estadística de trámites de motovehículos",
-        "organization": "DNRPA – Dirección Nacional del Registro de la Propiedad Automotor y Créditos Prendarios",
-        "overall": 0.962,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 187,
-              "tagCount": 10,
-              "resourceCount": 4
-            },
-            "calculatedAt": "2026-08-27T17:05:39.276Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.911,
-            "evidence": {
-              "modifiedAt": "2026-08-03T13:20:15.835506",
-              "daysSinceModified": 24,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-08-27T17:05:39.276Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV",
-                "ZIP",
-                "GRÁFICO"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 4,
-              "formatDistribution": {
-                "CSV": 2,
-                "ZIP": 1,
-                "GRÁFICO": 1
-              }
-            },
-            "calculatedAt": "2026-08-27T17:05:39.276Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 4,
-              "checked": 4,
-              "accessible": 4
-            },
-            "calculatedAt": "2026-08-27T17:05:40.690Z"
-          }
-        ],
-        "lastChecked": "2026-08-27T17:05:32.022Z"
-      }
-    },
-    {
-      "datasetId": "datos-jus-ar:estadistica-de-tramites-de-automotores",
-      "externalId": "estadistica-de-tramites-de-automotores",
-      "modifiedAt": "2026-08-03T13:17:00.239463",
-      "lastScoredAt": "2026-08-27T17:05:32.022Z",
-      "score": {
-        "datasetId": "datos-jus-ar:estadistica-de-tramites-de-automotores",
-        "title": "Estadística de trámites de automotores",
-        "organization": "DNRPA – Dirección Nacional del Registro de la Propiedad Automotor y Créditos Prendarios",
-        "overall": 0.962,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 182,
-              "tagCount": 10,
-              "resourceCount": 4
-            },
-            "calculatedAt": "2026-08-27T17:05:40.690Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.911,
-            "evidence": {
-              "modifiedAt": "2026-08-03T13:17:00.239463",
-              "daysSinceModified": 24,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-08-27T17:05:40.690Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV",
-                "ZIP",
-                "GRÁFICO"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 4,
-              "formatDistribution": {
-                "CSV": 2,
-                "ZIP": 1,
-                "GRÁFICO": 1
-              }
-            },
-            "calculatedAt": "2026-08-27T17:05:40.690Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 4,
-              "checked": 4,
-              "accessible": 4
-            },
-            "calculatedAt": "2026-08-27T17:05:41.765Z"
-          }
-        ],
-        "lastChecked": "2026-08-27T17:05:32.022Z"
-      }
-    },
-    {
-      "datasetId": "datos-jus-ar:estadistica-mediaciones-prejudiciales-y-judiciales",
-      "externalId": "estadistica-mediaciones-prejudiciales-y-judiciales",
-      "modifiedAt": "2026-08-03T13:13:08.041994",
-      "lastScoredAt": "2026-08-27T17:05:32.022Z",
-      "score": {
-        "datasetId": "datos-jus-ar:estadistica-mediaciones-prejudiciales-y-judiciales",
-        "title": "Estadística de mediaciones prejudiciales y judiciales",
-        "organization": "Dirección Nacional de Mediación y Métodos Participativos de Resolución de Conflictos",
-        "overall": 0.806,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 83,
-              "tagCount": 3,
-              "resourceCount": 12
-            },
-            "calculatedAt": "2026-08-27T17:05:41.765Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.911,
-            "evidence": {
-              "modifiedAt": "2026-08-03T13:13:08.041994",
-              "daysSinceModified": 24,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-08-27T17:05:41.765Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV",
-                "GRÁFICO",
-                "ZIP"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 12,
-              "formatDistribution": {
-                "CSV": 1,
-                "GRÁFICO": 1,
-                "ZIP": 10
-              }
-            },
-            "calculatedAt": "2026-08-27T17:05:41.765Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 0.5,
-            "evidence": {
-              "resourceCount": 12,
-              "checked": 12,
-              "accessible": 6
-            },
-            "calculatedAt": "2026-08-27T17:05:46.773Z"
-          }
-        ],
-        "lastChecked": "2026-08-27T17:05:32.022Z"
-      }
-    },
-    {
-      "datasetId": "datos-jus-ar:listado-de-mediadores",
-      "externalId": "listado-de-mediadores",
-      "modifiedAt": "2026-08-03T13:11:37.183674",
-      "lastScoredAt": "2026-08-27T17:05:32.022Z",
-      "score": {
-        "datasetId": "datos-jus-ar:listado-de-mediadores",
-        "title": "Listado de mediadores",
-        "organization": "Dirección Nacional de Mediación y Métodos Participativos de Resolución de Conflictos",
-        "overall": 0.962,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 107,
-              "tagCount": 2,
-              "resourceCount": 12
-            },
-            "calculatedAt": "2026-08-27T17:05:46.773Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.911,
-            "evidence": {
-              "modifiedAt": "2026-08-03T13:11:37.183674",
-              "daysSinceModified": 24,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-08-27T17:05:46.773Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV",
-                "GRÁFICO",
-                "ZIP"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 12,
-              "formatDistribution": {
-                "CSV": 1,
-                "GRÁFICO": 1,
-                "ZIP": 10
-              }
-            },
-            "calculatedAt": "2026-08-27T17:05:46.773Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 12,
-              "checked": 12,
-              "accessible": 12
-            },
-            "calculatedAt": "2026-08-27T17:05:51.041Z"
-          }
-        ],
-        "lastChecked": "2026-08-27T17:05:32.022Z"
-      }
-    },
-    {
-      "datasetId": "datos-jus-ar:base-saij-de-normativa-provincial",
-      "externalId": "base-saij-de-normativa-provincial",
-      "modifiedAt": "2026-08-03T12:06:05.504007",
-      "lastScoredAt": "2026-08-27T17:05:32.022Z",
-      "score": {
-        "datasetId": "datos-jus-ar:base-saij-de-normativa-provincial",
-        "title": "Base SAIJ de Normativa Provincial",
-        "organization": "Dirección Nacional del Sistema Argentino de Información Jurídica",
-        "overall": 0.962,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 185,
-              "tagCount": 6,
-              "resourceCount": 2
-            },
-            "calculatedAt": "2026-08-27T17:05:51.041Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.911,
-            "evidence": {
-              "modifiedAt": "2026-08-03T12:06:05.504007",
-              "daysSinceModified": 24,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-08-27T17:05:51.041Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV",
-                "GRÁFICO"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 2,
-              "formatDistribution": {
-                "CSV": 1,
-                "GRÁFICO": 1
-              }
-            },
-            "calculatedAt": "2026-08-27T17:05:51.041Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 2,
-              "checked": 2,
-              "accessible": 2
-            },
-            "calculatedAt": "2026-08-27T17:05:51.754Z"
-          }
-        ],
-        "lastChecked": "2026-08-27T17:05:32.022Z"
-      }
-    },
-    {
-      "datasetId": "datos-jus-ar:base-de-datos-legislativos-infoleg",
-      "externalId": "base-de-datos-legislativos-infoleg",
-      "modifiedAt": "2026-08-03T12:05:23.600873",
-      "lastScoredAt": "2026-08-27T17:05:32.022Z",
-      "score": {
-        "datasetId": "datos-jus-ar:base-de-datos-legislativos-infoleg",
-        "title": "Base Infoleg de Normativa Nacional",
-        "organization": "Dirección Nacional del Sistema Argentino de Información Jurídica",
-        "overall": 0.962,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 287,
-              "tagCount": 8,
-              "resourceCount": 7
-            },
-            "calculatedAt": "2026-08-27T17:05:51.754Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.911,
-            "evidence": {
-              "modifiedAt": "2026-08-03T12:05:23.600873",
-              "daysSinceModified": 24,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-08-27T17:05:51.754Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV",
-                "GRÁFICO",
-                "ZIP"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 7,
-              "formatDistribution": {
-                "CSV": 3,
-                "GRÁFICO": 1,
-                "ZIP": 3
-              }
-            },
-            "calculatedAt": "2026-08-27T17:05:51.754Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 7,
-              "checked": 7,
-              "accessible": 7
-            },
-            "calculatedAt": "2026-08-27T17:05:52.792Z"
-          }
-        ],
-        "lastChecked": "2026-08-27T17:05:32.022Z"
       }
     },
     {
@@ -4335,14 +3887,14 @@
       }
     },
     {
-      "datasetId": "datos-jus-ar:solicitudes-de-acceso-a-la-informacion-publica-en-el-ministerio-de-justicia-y-derechos-humanos",
-      "externalId": "solicitudes-de-acceso-a-la-informacion-publica-en-el-ministerio-de-justicia-y-derechos-humanos",
-      "modifiedAt": "2026-08-31T18:45:54.102846",
-      "lastScoredAt": "2026-09-01T10:45:32.527Z",
+      "datasetId": "datos-jus-ar:mediaciones-prejudiciales-y-judiciales",
+      "externalId": "mediaciones-prejudiciales-y-judiciales",
+      "modifiedAt": "2026-09-01T14:44:46.345043",
+      "lastScoredAt": "2026-09-02T10:10:10.115Z",
       "score": {
-        "datasetId": "datos-jus-ar:solicitudes-de-acceso-a-la-informacion-publica-en-el-ministerio-de-justicia-y-derechos-humanos",
-        "title": "Solicitudes de acceso a la información pública en el Ministerio de Justicia y Derechos Humanos",
-        "organization": "Subsecretaría de Gestión Administrativa",
+        "datasetId": "datos-jus-ar:mediaciones-prejudiciales-y-judiciales",
+        "title": "Listado de mediaciones prejudiciales y judiciales. Ley 26.589",
+        "organization": "Dirección Nacional de Mediación y Métodos Participativos de Resolución de Conflictos",
         "overall": 0.984,
         "dimensions": [
           {
@@ -4360,21 +3912,21 @@
                 "createdAt"
               ],
               "fieldsMissing": [],
-              "descriptionLength": 76,
-              "tagCount": 5,
+              "descriptionLength": 118,
+              "tagCount": 3,
               "resourceCount": 11
             },
-            "calculatedAt": "2026-09-01T10:45:32.527Z"
+            "calculatedAt": "2026-09-02T10:10:10.115Z"
           },
           {
             "dimension": "freshness",
             "score": 0.997,
             "evidence": {
-              "modifiedAt": "2026-08-31T18:45:54.102846",
+              "modifiedAt": "2026-09-01T14:44:46.345043",
               "daysSinceModified": 1,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-09-01T10:45:32.527Z"
+            "calculatedAt": "2026-09-02T10:10:10.115Z"
           },
           {
             "dimension": "structure",
@@ -4392,7 +3944,7 @@
                 "ZIP": 10
               }
             },
-            "calculatedAt": "2026-09-01T10:45:32.527Z"
+            "calculatedAt": "2026-09-02T10:10:10.115Z"
           },
           {
             "dimension": "accessibility",
@@ -4402,21 +3954,21 @@
               "checked": 11,
               "accessible": 11
             },
-            "calculatedAt": "2026-09-01T10:45:35.974Z"
+            "calculatedAt": "2026-09-02T10:10:11.962Z"
           }
         ],
-        "lastChecked": "2026-09-01T10:45:32.527Z"
+        "lastChecked": "2026-09-02T10:10:10.115Z"
       }
     },
     {
-      "datasetId": "datos-jus-ar:poderes-judiciales-causas-no-penales",
-      "externalId": "poderes-judiciales-causas-no-penales",
-      "modifiedAt": "2026-08-31T16:34:26.321420",
-      "lastScoredAt": "2026-09-01T10:45:32.527Z",
+      "datasetId": "datos-jus-ar:estadistica-mediaciones-prejudiciales-y-judiciales",
+      "externalId": "estadistica-mediaciones-prejudiciales-y-judiciales",
+      "modifiedAt": "2026-09-01T14:36:26.957838",
+      "lastScoredAt": "2026-09-02T10:10:10.115Z",
       "score": {
-        "datasetId": "datos-jus-ar:poderes-judiciales-causas-no-penales",
-        "title": "Poderes judiciales - Causas no penales",
-        "organization": "Dirección Nacional de Política Criminal en Materia de Justicia y Legislación Penal",
+        "datasetId": "datos-jus-ar:estadistica-mediaciones-prejudiciales-y-judiciales",
+        "title": "Estadística de mediaciones prejudiciales y judiciales",
+        "organization": "Dirección Nacional de Mediación y Métodos Participativos de Resolución de Conflictos",
         "overall": 0.984,
         "dimensions": [
           {
@@ -4434,21 +3986,21 @@
                 "createdAt"
               ],
               "fieldsMissing": [],
-              "descriptionLength": 264,
-              "tagCount": 4,
-              "resourceCount": 8
+              "descriptionLength": 83,
+              "tagCount": 3,
+              "resourceCount": 12
             },
-            "calculatedAt": "2026-09-01T10:45:35.974Z"
+            "calculatedAt": "2026-09-02T10:10:11.962Z"
           },
           {
             "dimension": "freshness",
             "score": 0.997,
             "evidence": {
-              "modifiedAt": "2026-08-31T16:34:26.321420",
+              "modifiedAt": "2026-09-01T14:36:26.957838",
               "daysSinceModified": 1,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-09-01T10:45:35.974Z"
+            "calculatedAt": "2026-09-02T10:10:11.962Z"
           },
           {
             "dimension": "structure",
@@ -4456,43 +4008,43 @@
             "evidence": {
               "formats": [
                 "CSV",
-                "ZIP",
-                "GRÁFICO"
+                "GRÁFICO",
+                "ZIP"
               ],
               "bestFormat": "CSV",
               "bestFormatScore": 0.95,
-              "resourceCount": 8,
+              "resourceCount": 12,
               "formatDistribution": {
-                "CSV": 3,
-                "ZIP": 4,
-                "GRÁFICO": 1
+                "CSV": 1,
+                "GRÁFICO": 1,
+                "ZIP": 10
               }
             },
-            "calculatedAt": "2026-09-01T10:45:35.974Z"
+            "calculatedAt": "2026-09-02T10:10:11.962Z"
           },
           {
             "dimension": "accessibility",
             "score": 1,
             "evidence": {
-              "resourceCount": 8,
-              "checked": 8,
-              "accessible": 8
+              "resourceCount": 12,
+              "checked": 12,
+              "accessible": 12
             },
-            "calculatedAt": "2026-09-01T10:45:37.984Z"
+            "calculatedAt": "2026-09-02T10:10:14.341Z"
           }
         ],
-        "lastChecked": "2026-09-01T10:45:32.527Z"
+        "lastChecked": "2026-09-02T10:10:10.115Z"
       }
     },
     {
-      "datasetId": "datos-jus-ar:poderes-judiciales-causas-penales",
-      "externalId": "poderes-judiciales-causas-penales",
-      "modifiedAt": "2026-08-31T14:44:29.560659",
-      "lastScoredAt": "2026-09-01T10:45:32.527Z",
+      "datasetId": "datos-jus-ar:listado-de-mediadores",
+      "externalId": "listado-de-mediadores",
+      "modifiedAt": "2026-09-01T14:33:42.915165",
+      "lastScoredAt": "2026-09-02T10:10:10.115Z",
       "score": {
-        "datasetId": "datos-jus-ar:poderes-judiciales-causas-penales",
-        "title": "Poderes judiciales - Causas penales",
-        "organization": "Dirección Nacional de Política Criminal en Materia de Justicia y Legislación Penal",
+        "datasetId": "datos-jus-ar:listado-de-mediadores",
+        "title": "Listado de mediadores",
+        "organization": "Dirección Nacional de Mediación y Métodos Participativos de Resolución de Conflictos",
         "overall": 0.984,
         "dimensions": [
           {
@@ -4510,21 +4062,21 @@
                 "createdAt"
               ],
               "fieldsMissing": [],
-              "descriptionLength": 261,
-              "tagCount": 7,
-              "resourceCount": 8
+              "descriptionLength": 107,
+              "tagCount": 2,
+              "resourceCount": 12
             },
-            "calculatedAt": "2026-09-01T10:45:37.984Z"
+            "calculatedAt": "2026-09-02T10:10:14.341Z"
           },
           {
             "dimension": "freshness",
             "score": 0.997,
             "evidence": {
-              "modifiedAt": "2026-08-31T14:44:29.560659",
+              "modifiedAt": "2026-09-01T14:33:42.915165",
               "daysSinceModified": 1,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-09-01T10:45:37.984Z"
+            "calculatedAt": "2026-09-02T10:10:14.341Z"
           },
           {
             "dimension": "structure",
@@ -4532,43 +4084,43 @@
             "evidence": {
               "formats": [
                 "CSV",
-                "ZIP",
-                "GRÁFICO"
+                "GRÁFICO",
+                "ZIP"
               ],
               "bestFormat": "CSV",
               "bestFormatScore": 0.95,
-              "resourceCount": 8,
+              "resourceCount": 12,
               "formatDistribution": {
-                "CSV": 3,
-                "ZIP": 4,
-                "GRÁFICO": 1
+                "CSV": 1,
+                "GRÁFICO": 1,
+                "ZIP": 10
               }
             },
-            "calculatedAt": "2026-09-01T10:45:37.984Z"
+            "calculatedAt": "2026-09-02T10:10:14.341Z"
           },
           {
             "dimension": "accessibility",
             "score": 1,
             "evidence": {
-              "resourceCount": 8,
-              "checked": 8,
-              "accessible": 8
+              "resourceCount": 12,
+              "checked": 12,
+              "accessible": 12
             },
-            "calculatedAt": "2026-09-01T10:45:39.622Z"
+            "calculatedAt": "2026-09-02T10:10:16.466Z"
           }
         ],
-        "lastChecked": "2026-09-01T10:45:32.527Z"
+        "lastChecked": "2026-09-02T10:10:10.115Z"
       }
     },
     {
-      "datasetId": "datos-jus-ar:ministerios-publicos-casos",
-      "externalId": "ministerios-publicos-casos",
-      "modifiedAt": "2026-08-31T14:42:15.380899",
-      "lastScoredAt": "2026-09-01T10:45:32.527Z",
+      "datasetId": "datos-jus-ar:listado-de-registros-seccionales-de-la-dnrnpa",
+      "externalId": "listado-de-registros-seccionales-de-la-dnrnpa",
+      "modifiedAt": "2026-09-01T14:20:13.268352",
+      "lastScoredAt": "2026-09-02T10:10:10.115Z",
       "score": {
-        "datasetId": "datos-jus-ar:ministerios-publicos-casos",
-        "title": "Ministerios públicos - Casos",
-        "organization": "Dirección Nacional de Política Criminal en Materia de Justicia y Legislación Penal",
+        "datasetId": "datos-jus-ar:listado-de-registros-seccionales-de-la-dnrnpa",
+        "title": "Registros Seccionales de la Propiedad Automotor",
+        "organization": "DNRPA – Dirección Nacional del Registro de la Propiedad Automotor y Créditos Prendarios",
         "overall": 0.984,
         "dimensions": [
           {
@@ -4586,21 +4138,21 @@
                 "createdAt"
               ],
               "fieldsMissing": [],
-              "descriptionLength": 214,
-              "tagCount": 9,
-              "resourceCount": 8
+              "descriptionLength": 220,
+              "tagCount": 11,
+              "resourceCount": 12
             },
-            "calculatedAt": "2026-09-01T10:45:39.622Z"
+            "calculatedAt": "2026-09-02T10:10:16.466Z"
           },
           {
             "dimension": "freshness",
             "score": 0.997,
             "evidence": {
-              "modifiedAt": "2026-08-31T14:42:15.380899",
+              "modifiedAt": "2026-09-01T14:20:13.268352",
               "daysSinceModified": 1,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-09-01T10:45:39.622Z"
+            "calculatedAt": "2026-09-02T10:10:16.467Z"
           },
           {
             "dimension": "structure",
@@ -4613,39 +4165,39 @@
               ],
               "bestFormat": "CSV",
               "bestFormatScore": 0.95,
-              "resourceCount": 8,
+              "resourceCount": 12,
               "formatDistribution": {
-                "CSV": 3,
-                "ZIP": 4,
+                "CSV": 1,
+                "ZIP": 10,
                 "GRÁFICO": 1
               }
             },
-            "calculatedAt": "2026-09-01T10:45:39.622Z"
+            "calculatedAt": "2026-09-02T10:10:16.467Z"
           },
           {
             "dimension": "accessibility",
             "score": 1,
             "evidence": {
-              "resourceCount": 8,
-              "checked": 8,
-              "accessible": 8
+              "resourceCount": 12,
+              "checked": 12,
+              "accessible": 12
             },
-            "calculatedAt": "2026-09-01T10:45:40.994Z"
+            "calculatedAt": "2026-09-02T10:10:17.706Z"
           }
         ],
-        "lastChecked": "2026-09-01T10:45:32.527Z"
+        "lastChecked": "2026-09-02T10:10:10.115Z"
       }
     },
     {
-      "datasetId": "datos-jus-ar:registro-nacional-de-sociedades",
-      "externalId": "registro-nacional-de-sociedades",
-      "modifiedAt": "2026-08-24T13:00:17.804031",
-      "lastScoredAt": "2026-09-01T10:45:32.527Z",
+      "datasetId": "datos-jus-ar:estadistica-de-tramites-de-automotores",
+      "externalId": "estadistica-de-tramites-de-automotores",
+      "modifiedAt": "2026-09-01T14:17:08.588339",
+      "lastScoredAt": "2026-09-02T10:10:10.115Z",
       "score": {
-        "datasetId": "datos-jus-ar:registro-nacional-de-sociedades",
-        "title": "Registro Nacional de Sociedades",
-        "organization": "Registro Nacional de Sociedades y del Registro Nacional de Concursos y Quiebras",
-        "overall": 0.977,
+        "datasetId": "datos-jus-ar:estadistica-de-tramites-de-automotores",
+        "title": "Estadística de trámites de automotores",
+        "organization": "DNRPA – Dirección Nacional del Registro de la Propiedad Automotor y Créditos Prendarios",
+        "overall": 0.984,
         "dimensions": [
           {
             "dimension": "completeness",
@@ -4662,21 +4214,21 @@
                 "createdAt"
               ],
               "fieldsMissing": [],
-              "descriptionLength": 42,
+              "descriptionLength": 182,
               "tagCount": 10,
-              "resourceCount": 14
+              "resourceCount": 4
             },
-            "calculatedAt": "2026-09-01T10:45:40.994Z"
+            "calculatedAt": "2026-09-02T10:10:17.706Z"
           },
           {
             "dimension": "freshness",
-            "score": 0.97,
+            "score": 0.997,
             "evidence": {
-              "modifiedAt": "2026-08-24T13:00:17.804031",
-              "daysSinceModified": 8,
+              "modifiedAt": "2026-09-01T14:17:08.588339",
+              "daysSinceModified": 1,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-09-01T10:45:40.994Z"
+            "calculatedAt": "2026-09-02T10:10:17.706Z"
           },
           {
             "dimension": "structure",
@@ -4689,27 +4241,475 @@
               ],
               "bestFormat": "CSV",
               "bestFormatScore": 0.95,
-              "resourceCount": 14,
+              "resourceCount": 4,
               "formatDistribution": {
                 "CSV": 2,
-                "ZIP": 11,
+                "ZIP": 1,
                 "GRÁFICO": 1
               }
             },
-            "calculatedAt": "2026-09-01T10:45:40.994Z"
+            "calculatedAt": "2026-09-02T10:10:17.706Z"
           },
           {
             "dimension": "accessibility",
             "score": 1,
             "evidence": {
-              "resourceCount": 14,
-              "checked": 14,
-              "accessible": 14
+              "resourceCount": 4,
+              "checked": 4,
+              "accessible": 4
             },
-            "calculatedAt": "2026-09-01T10:45:42.714Z"
+            "calculatedAt": "2026-09-02T10:10:18.372Z"
           }
         ],
-        "lastChecked": "2026-09-01T10:45:32.527Z"
+        "lastChecked": "2026-09-02T10:10:10.115Z"
+      }
+    },
+    {
+      "datasetId": "datos-jus-ar:estadistica-de-tramites-de-motovehiculos",
+      "externalId": "estadistica-de-tramites-de-motovehiculos",
+      "modifiedAt": "2026-09-01T14:14:47.612257",
+      "lastScoredAt": "2026-09-02T10:10:10.115Z",
+      "score": {
+        "datasetId": "datos-jus-ar:estadistica-de-tramites-de-motovehiculos",
+        "title": "Estadística de trámites de motovehículos",
+        "organization": "DNRPA – Dirección Nacional del Registro de la Propiedad Automotor y Créditos Prendarios",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 187,
+              "tagCount": 10,
+              "resourceCount": 4
+            },
+            "calculatedAt": "2026-09-02T10:10:18.372Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.997,
+            "evidence": {
+              "modifiedAt": "2026-09-01T14:14:47.612257",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-09-02T10:10:18.372Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV",
+                "ZIP",
+                "GRÁFICO"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 4,
+              "formatDistribution": {
+                "CSV": 2,
+                "ZIP": 1,
+                "GRÁFICO": 1
+              }
+            },
+            "calculatedAt": "2026-09-02T10:10:18.372Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 4,
+              "checked": 4,
+              "accessible": 4
+            },
+            "calculatedAt": "2026-09-02T10:10:19.023Z"
+          }
+        ],
+        "lastChecked": "2026-09-02T10:10:10.115Z"
+      }
+    },
+    {
+      "datasetId": "datos-jus-ar:estadistica-de-tramites-de-maquinarias",
+      "externalId": "estadistica-de-tramites-de-maquinarias",
+      "modifiedAt": "2026-09-01T14:11:21.634454",
+      "lastScoredAt": "2026-09-02T10:10:10.115Z",
+      "score": {
+        "datasetId": "datos-jus-ar:estadistica-de-tramites-de-maquinarias",
+        "title": "Estadística de trámites de maquinarias",
+        "organization": "DNRPA – Dirección Nacional del Registro de la Propiedad Automotor y Créditos Prendarios",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 182,
+              "tagCount": 12,
+              "resourceCount": 4
+            },
+            "calculatedAt": "2026-09-02T10:10:19.023Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.997,
+            "evidence": {
+              "modifiedAt": "2026-09-01T14:11:21.634454",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-09-02T10:10:19.023Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV",
+                "ZIP",
+                "GRÁFICO"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 4,
+              "formatDistribution": {
+                "CSV": 2,
+                "ZIP": 1,
+                "GRÁFICO": 1
+              }
+            },
+            "calculatedAt": "2026-09-02T10:10:19.023Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 4,
+              "checked": 4,
+              "accessible": 4
+            },
+            "calculatedAt": "2026-09-02T10:10:19.662Z"
+          }
+        ],
+        "lastChecked": "2026-09-02T10:10:10.115Z"
+      }
+    },
+    {
+      "datasetId": "datos-jus-ar:base-de-datos-legislativos-infoleg",
+      "externalId": "base-de-datos-legislativos-infoleg",
+      "modifiedAt": "2026-09-01T14:00:03.159085",
+      "lastScoredAt": "2026-09-02T10:10:10.115Z",
+      "score": {
+        "datasetId": "datos-jus-ar:base-de-datos-legislativos-infoleg",
+        "title": "Base Infoleg de Normativa Nacional",
+        "organization": "Dirección Nacional del Sistema Argentino de Información Jurídica",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 287,
+              "tagCount": 8,
+              "resourceCount": 7
+            },
+            "calculatedAt": "2026-09-02T10:10:19.662Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.997,
+            "evidence": {
+              "modifiedAt": "2026-09-01T14:00:03.159085",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-09-02T10:10:19.662Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV",
+                "GRÁFICO",
+                "ZIP"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 7,
+              "formatDistribution": {
+                "CSV": 3,
+                "GRÁFICO": 1,
+                "ZIP": 3
+              }
+            },
+            "calculatedAt": "2026-09-02T10:10:19.662Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 7,
+              "checked": 7,
+              "accessible": 7
+            },
+            "calculatedAt": "2026-09-02T10:10:20.368Z"
+          }
+        ],
+        "lastChecked": "2026-09-02T10:10:10.115Z"
+      }
+    },
+    {
+      "datasetId": "datos-jus-ar:base-saij-de-normativa-provincial",
+      "externalId": "base-saij-de-normativa-provincial",
+      "modifiedAt": "2026-09-01T13:57:50.433130",
+      "lastScoredAt": "2026-09-02T10:10:10.115Z",
+      "score": {
+        "datasetId": "datos-jus-ar:base-saij-de-normativa-provincial",
+        "title": "Base SAIJ de Normativa Provincial",
+        "organization": "Dirección Nacional del Sistema Argentino de Información Jurídica",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 185,
+              "tagCount": 6,
+              "resourceCount": 2
+            },
+            "calculatedAt": "2026-09-02T10:10:20.368Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.997,
+            "evidence": {
+              "modifiedAt": "2026-09-01T13:57:50.433130",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-09-02T10:10:20.368Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV",
+                "GRÁFICO"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 2,
+              "formatDistribution": {
+                "CSV": 1,
+                "GRÁFICO": 1
+              }
+            },
+            "calculatedAt": "2026-09-02T10:10:20.368Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 2,
+              "checked": 2,
+              "accessible": 2
+            },
+            "calculatedAt": "2026-09-02T10:10:21.007Z"
+          }
+        ],
+        "lastChecked": "2026-09-02T10:10:10.115Z"
+      }
+    },
+    {
+      "datasetId": "datos-jus-ar:denuncias-a-empresas-y-trabajadores-de-control-de-admision-y-permanencia-en-rencap",
+      "externalId": "denuncias-a-empresas-y-trabajadores-de-control-de-admision-y-permanencia-en-rencap",
+      "modifiedAt": "2026-08-18T15:40:05.527183",
+      "lastScoredAt": "2026-09-02T10:10:10.115Z",
+      "score": {
+        "datasetId": "datos-jus-ar:denuncias-a-empresas-y-trabajadores-de-control-de-admision-y-permanencia-en-rencap",
+        "title": "Denuncias a empresas y trabajadores de control de admisión y permanencia en RENCAP",
+        "organization": "Registro Nacional de empresas y trabajadores de control de admisión y permanencia - RENCAP",
+        "overall": 0.971,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 146,
+              "tagCount": 10,
+              "resourceCount": 10
+            },
+            "calculatedAt": "2026-09-02T10:10:21.007Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.945,
+            "evidence": {
+              "modifiedAt": "2026-08-18T15:40:05.527183",
+              "daysSinceModified": 15,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-09-02T10:10:21.007Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV",
+                "ZIP"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 10,
+              "formatDistribution": {
+                "CSV": 1,
+                "ZIP": 9
+              }
+            },
+            "calculatedAt": "2026-09-02T10:10:21.007Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 10,
+              "checked": 10,
+              "accessible": 10
+            },
+            "calculatedAt": "2026-09-02T10:10:22.473Z"
+          }
+        ],
+        "lastChecked": "2026-09-02T10:10:10.115Z"
+      }
+    },
+    {
+      "datasetId": "datos-jus-ar:sistema-nacional-de-estadisticas-sobre-ejecucion-de-la-pena-sneep-series-de-tiempo",
+      "externalId": "sistema-nacional-de-estadisticas-sobre-ejecucion-de-la-pena-sneep-series-de-tiempo",
+      "modifiedAt": "2026-08-10T15:24:37.823721",
+      "lastScoredAt": "2026-09-02T10:10:10.115Z",
+      "score": {
+        "datasetId": "datos-jus-ar:sistema-nacional-de-estadisticas-sobre-ejecucion-de-la-pena-sneep-series-de-tiempo",
+        "title": "Sistema Nacional de Estadísticas sobre Ejecución de la Pena - SNEEP - Series de tiempo",
+        "organization": "Dirección Nacional de Política Criminal en Materia de Justicia y Legislación Penal",
+        "overall": 0.963,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 201,
+              "tagCount": 9,
+              "resourceCount": 28
+            },
+            "calculatedAt": "2026-09-02T10:10:22.473Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.916,
+            "evidence": {
+              "modifiedAt": "2026-08-10T15:24:37.823721",
+              "daysSinceModified": 23,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-09-02T10:10:22.473Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 28,
+              "formatDistribution": {
+                "CSV": 28
+              }
+            },
+            "calculatedAt": "2026-09-02T10:10:22.473Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 28,
+              "checked": 28,
+              "accessible": 28
+            },
+            "calculatedAt": "2026-09-02T10:10:24.118Z"
+          }
+        ],
+        "lastChecked": "2026-09-02T10:10:10.115Z"
       }
     }
   ]
