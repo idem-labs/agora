@@ -1,8 +1,80 @@
 {
   "catalogId": "datos-bahiablanca-ar",
-  "scoredAt": "2026-09-02T10:10:26.849Z",
+  "scoredAt": "2026-09-03T10:22:49.204Z",
   "datasetCount": 222,
   "datasets": [
+    {
+      "datasetId": "datos-bahiablanca-ar:sueldos-personal",
+      "title": "Sueldos del personal Municipal",
+      "organization": "Secretaría de Economía",
+      "overall": 0.963,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 29,
+            "tagCount": 3,
+            "resourceCount": 5
+          },
+          "calculatedAt": "2026-09-02T10:10:26.849Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.916,
+          "evidence": {
+            "modifiedAt": "2026-08-10T13:38:26.081711",
+            "daysSinceModified": 23,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:10:26.849Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "JSON",
+              "CSV",
+              "XLS",
+              "PDF"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 5,
+            "formatDistribution": {
+              "JSON": 1,
+              "CSV": 2,
+              "XLS": 1,
+              "PDF": 1
+            }
+          },
+          "calculatedAt": "2026-09-02T10:10:26.849Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 5,
+            "checked": 5,
+            "accessible": 5
+          },
+          "calculatedAt": "2026-09-02T10:10:29.195Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:10:26.849Z"
+    },
     {
       "datasetId": "datos-bahiablanca-ar:programa-de-gestion-de-residuos-peligrosos-domiciliarios",
       "title": "Programa de Gestión de Residuos Peligrosos Domiciliarios",
@@ -14784,78 +14856,6 @@
         }
       ],
       "lastChecked": "2026-08-30T10:56:43.153Z"
-    },
-    {
-      "datasetId": "datos-bahiablanca-ar:sueldos-personal",
-      "title": "Sueldos del personal Municipal",
-      "organization": "Secretaría de Economía",
-      "overall": 0.963,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 29,
-            "tagCount": 3,
-            "resourceCount": 5
-          },
-          "calculatedAt": "2026-09-02T10:10:26.849Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.916,
-          "evidence": {
-            "modifiedAt": "2026-08-10T13:38:26.081711",
-            "daysSinceModified": 23,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-09-02T10:10:26.849Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "JSON",
-              "CSV",
-              "XLS",
-              "PDF"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 5,
-            "formatDistribution": {
-              "JSON": 1,
-              "CSV": 2,
-              "XLS": 1,
-              "PDF": 1
-            }
-          },
-          "calculatedAt": "2026-09-02T10:10:26.849Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 5,
-            "checked": 5,
-            "accessible": 5
-          },
-          "calculatedAt": "2026-09-02T10:10:29.195Z"
-        }
-      ],
-      "lastChecked": "2026-09-02T10:10:26.849Z"
     }
   ],
   "coverage": 1

@@ -1,13 +1,13 @@
 {
   "catalogId": "catalogo-datos-gba-ar",
-  "scoredAt": "2026-09-02T10:09:59.059Z",
+  "scoredAt": "2026-09-03T10:22:32.699Z",
   "datasetCount": 102,
   "datasets": [
     {
-      "datasetId": "catalogo-datos-gba-ar:establecimientos-educativos",
-      "title": "Establecimientos educativos",
-      "organization": "Dirección General de Cultura y Educación",
-      "overall": 0.964,
+      "datasetId": "catalogo-datos-gba-ar:uniones-convivenciales",
+      "title": "Uniones convivenciales",
+      "organization": "Registro Provincial de las Personas",
+      "overall": 0.965,
       "dimensions": [
         {
           "dimension": "completeness",
@@ -25,21 +25,21 @@
             "fieldsMissing": [
               "tags"
             ],
-            "descriptionLength": 73,
+            "descriptionLength": 89,
             "tagCount": 0,
-            "resourceCount": 4
+            "resourceCount": 8
           },
-          "calculatedAt": "2026-08-29T12:01:11.424Z"
+          "calculatedAt": "2026-09-02T10:09:59.059Z"
         },
         {
           "dimension": "freshness",
-          "score": 0.993,
+          "score": 0.998,
           "evidence": {
-            "modifiedAt": "2026-08-27T14:05:09.247251",
-            "daysSinceModified": 2,
+            "modifiedAt": "2026-09-01T18:40:42.898066",
+            "daysSinceModified": 1,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-08-29T12:01:11.424Z"
+          "calculatedAt": "2026-09-02T10:09:59.059Z"
         },
         {
           "dimension": "structure",
@@ -47,40 +47,36 @@
           "evidence": {
             "formats": [
               "CSV",
-              "ZIP",
-              "XLS",
-              "PDF"
+              "XLS"
             ],
             "bestFormat": "CSV",
             "bestFormatScore": 0.95,
-            "resourceCount": 4,
+            "resourceCount": 8,
             "formatDistribution": {
-              "CSV": 1,
-              "ZIP": 1,
-              "XLS": 1,
-              "PDF": 1
+              "CSV": 4,
+              "XLS": 4
             }
           },
-          "calculatedAt": "2026-08-29T12:01:11.424Z"
+          "calculatedAt": "2026-09-02T10:09:59.059Z"
         },
         {
           "dimension": "accessibility",
           "score": 1,
           "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
+            "resourceCount": 8,
+            "checked": 8,
+            "accessible": 8
           },
-          "calculatedAt": "2026-08-29T12:01:12.585Z"
+          "calculatedAt": "2026-09-02T10:10:01.107Z"
         }
       ],
-      "lastChecked": "2026-08-29T12:01:11.423Z"
+      "lastChecked": "2026-09-02T10:09:59.059Z"
     },
     {
-      "datasetId": "catalogo-datos-gba-ar:nuevos-edificios-escolares",
-      "title": "Nuevos edificios escolares",
-      "organization": "Dirección General de Cultura y Educación",
-      "overall": 0.964,
+      "datasetId": "catalogo-datos-gba-ar:defunciones",
+      "title": "Inscripción de defunciones",
+      "organization": "Registro Provincial de las Personas",
+      "overall": 0.965,
       "dimensions": [
         {
           "dimension": "completeness",
@@ -98,21 +94,21 @@
             "fieldsMissing": [
               "tags"
             ],
-            "descriptionLength": 72,
+            "descriptionLength": 65,
             "tagCount": 0,
-            "resourceCount": 4
+            "resourceCount": 6
           },
-          "calculatedAt": "2026-08-29T12:01:12.585Z"
+          "calculatedAt": "2026-09-02T10:10:01.107Z"
         },
         {
           "dimension": "freshness",
-          "score": 0.993,
+          "score": 0.997,
           "evidence": {
-            "modifiedAt": "2026-08-27T14:04:10.571710",
-            "daysSinceModified": 2,
+            "modifiedAt": "2026-09-01T15:56:04.719110",
+            "daysSinceModified": 1,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-08-29T12:01:12.585Z"
+          "calculatedAt": "2026-09-02T10:10:01.107Z"
         },
         {
           "dimension": "structure",
@@ -120,7 +116,214 @@
           "evidence": {
             "formats": [
               "CSV",
+              "XLS"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 6,
+            "formatDistribution": {
+              "CSV": 3,
+              "XLS": 3
+            }
+          },
+          "calculatedAt": "2026-09-02T10:10:01.107Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 6,
+            "checked": 6,
+            "accessible": 6
+          },
+          "calculatedAt": "2026-09-02T10:10:02.215Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:09:59.059Z"
+    },
+    {
+      "datasetId": "catalogo-datos-gba-ar:tranferencias-consejos-escolares",
+      "title": "Transferencias a Consejos Escolares",
+      "organization": "Ministerio de Economía",
+      "overall": 0.965,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 0.85,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [
+              "tags"
+            ],
+            "descriptionLength": 185,
+            "tagCount": 0,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-09-02T10:10:02.215Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.997,
+          "evidence": {
+            "modifiedAt": "2026-09-01T14:33:29.527813",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:10:02.215Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "XLS"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "CSV": 1,
+              "XLS": 1
+            }
+          },
+          "calculatedAt": "2026-09-02T10:10:02.215Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-09-02T10:10:03.005Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:09:59.059Z"
+    },
+    {
+      "datasetId": "catalogo-datos-gba-ar:nacimientos",
+      "title": "Nacimientos",
+      "organization": "Registro Provincial de las Personas",
+      "overall": 0.965,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 0.85,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [
+              "tags"
+            ],
+            "descriptionLength": 65,
+            "tagCount": 0,
+            "resourceCount": 6
+          },
+          "calculatedAt": "2026-09-02T10:10:03.005Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.997,
+          "evidence": {
+            "modifiedAt": "2026-09-01T14:19:21.101963",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:10:03.005Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "XLS"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 6,
+            "formatDistribution": {
+              "CSV": 3,
+              "XLS": 3
+            }
+          },
+          "calculatedAt": "2026-09-02T10:10:03.005Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 6,
+            "checked": 6,
+            "accessible": 6
+          },
+          "calculatedAt": "2026-09-02T10:10:04.447Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:09:59.059Z"
+    },
+    {
+      "datasetId": "catalogo-datos-gba-ar:ampliaciones-sistema-educativo",
+      "title": "Expansión y consolidación del sistema educativo",
+      "organization": "Dirección General de Cultura y Educación",
+      "overall": 0.965,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 0.85,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [
+              "tags"
+            ],
+            "descriptionLength": 122,
+            "tagCount": 0,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-09-02T10:10:04.447Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.997,
+          "evidence": {
+            "modifiedAt": "2026-09-01T13:51:00.552914",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:10:04.447Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
               "XLS",
+              "CSV",
               "ZIP",
               "PDF"
             ],
@@ -128,13 +331,13 @@
             "bestFormatScore": 0.95,
             "resourceCount": 4,
             "formatDistribution": {
-              "CSV": 1,
               "XLS": 1,
+              "CSV": 1,
               "ZIP": 1,
               "PDF": 1
             }
           },
-          "calculatedAt": "2026-08-29T12:01:12.585Z"
+          "calculatedAt": "2026-09-02T10:10:04.447Z"
         },
         {
           "dimension": "accessibility",
@@ -144,10 +347,10 @@
             "checked": 4,
             "accessible": 4
           },
-          "calculatedAt": "2026-08-29T12:01:14.694Z"
+          "calculatedAt": "2026-09-02T10:10:05.761Z"
         }
       ],
-      "lastChecked": "2026-08-29T12:01:11.423Z"
+      "lastChecked": "2026-09-02T10:09:59.059Z"
     },
     {
       "datasetId": "catalogo-datos-gba-ar:cuerpos-agua",
@@ -1547,351 +1750,6 @@
             "accessible": 4
           },
           "calculatedAt": "2026-08-29T12:01:33.314Z"
-        }
-      ],
-      "lastChecked": "2026-08-29T12:01:11.423Z"
-    },
-    {
-      "datasetId": "catalogo-datos-gba-ar:matrimonios",
-      "title": "Matrimonios y divorcios",
-      "organization": "Registro Provincial de las Personas",
-      "overall": 0.939,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 0.85,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [
-              "tags"
-            ],
-            "descriptionLength": 77,
-            "tagCount": 0,
-            "resourceCount": 12
-          },
-          "calculatedAt": "2026-08-29T12:01:34.134Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.895,
-          "evidence": {
-            "modifiedAt": "2026-07-31T14:49:02.610132",
-            "daysSinceModified": 29,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-29T12:01:34.134Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "XLS"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 12,
-            "formatDistribution": {
-              "CSV": 6,
-              "XLS": 6
-            }
-          },
-          "calculatedAt": "2026-08-29T12:01:34.134Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 12,
-            "checked": 12,
-            "accessible": 12
-          },
-          "calculatedAt": "2026-08-29T12:01:35.123Z"
-        }
-      ],
-      "lastChecked": "2026-08-29T12:01:11.423Z"
-    },
-    {
-      "datasetId": "catalogo-datos-gba-ar:identidad-de-genero",
-      "title": "Identidad de género",
-      "organization": "Ministerio de Gobierno",
-      "overall": 0.939,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 0.85,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [
-              "tags"
-            ],
-            "descriptionLength": 74,
-            "tagCount": 0,
-            "resourceCount": 2
-          },
-          "calculatedAt": "2026-08-29T12:01:36.554Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.895,
-          "evidence": {
-            "modifiedAt": "2026-07-31T13:49:10.574939",
-            "daysSinceModified": 29,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-29T12:01:36.554Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "XLS",
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 2,
-            "formatDistribution": {
-              "XLS": 1,
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-08-29T12:01:36.554Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-08-29T12:01:37.130Z"
-        }
-      ],
-      "lastChecked": "2026-08-29T12:01:11.423Z"
-    },
-    {
-      "datasetId": "catalogo-datos-gba-ar:reconocimientos",
-      "title": "Reconocimientos",
-      "organization": "Registro Provincial de las Personas",
-      "overall": 0.939,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 0.85,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [
-              "tags"
-            ],
-            "descriptionLength": 99,
-            "tagCount": 0,
-            "resourceCount": 2
-          },
-          "calculatedAt": "2026-08-29T12:01:37.130Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.895,
-          "evidence": {
-            "modifiedAt": "2026-07-31T13:45:52.059390",
-            "daysSinceModified": 29,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-29T12:01:37.130Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "XLS",
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 2,
-            "formatDistribution": {
-              "XLS": 1,
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-08-29T12:01:37.130Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-08-29T12:01:37.738Z"
-        }
-      ],
-      "lastChecked": "2026-08-29T12:01:11.423Z"
-    },
-    {
-      "datasetId": "catalogo-datos-gba-ar:inscripciones",
-      "title": "Inscripciones",
-      "organization": "Ministerio de Gobierno",
-      "overall": 0.939,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 0.85,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [
-              "tags"
-            ],
-            "descriptionLength": 124,
-            "tagCount": 0,
-            "resourceCount": 2
-          },
-          "calculatedAt": "2026-08-29T12:01:37.738Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.895,
-          "evidence": {
-            "modifiedAt": "2026-07-31T13:35:38.193162",
-            "daysSinceModified": 29,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-29T12:01:37.738Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "XLS",
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 2,
-            "formatDistribution": {
-              "XLS": 1,
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-08-29T12:01:37.738Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-08-29T12:01:38.404Z"
-        }
-      ],
-      "lastChecked": "2026-08-29T12:01:11.423Z"
-    },
-    {
-      "datasetId": "catalogo-datos-gba-ar:adopciones",
-      "title": "Adopciones",
-      "organization": "Ministerio de Gobierno",
-      "overall": 0.939,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 0.85,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [
-              "tags"
-            ],
-            "descriptionLength": 68,
-            "tagCount": 0,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-08-29T12:01:38.404Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.895,
-          "evidence": {
-            "modifiedAt": "2026-07-31T13:20:39.548152",
-            "daysSinceModified": 29,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-29T12:01:38.404Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "XLS",
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "XLS": 2,
-              "CSV": 2
-            }
-          },
-          "calculatedAt": "2026-08-29T12:01:38.405Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-08-29T12:01:39.565Z"
         }
       ],
       "lastChecked": "2026-08-29T12:01:11.423Z"
@@ -4908,75 +4766,6 @@
       "lastChecked": "2026-08-29T12:01:11.423Z"
     },
     {
-      "datasetId": "catalogo-datos-gba-ar:nacidos-vivos",
-      "title": "Nacidos vivos",
-      "organization": "Ministerio de Salud",
-      "overall": 0.842,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 0.85,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [
-              "tags"
-            ],
-            "descriptionLength": 52,
-            "tagCount": 0,
-            "resourceCount": 2
-          },
-          "calculatedAt": "2026-08-29T12:02:10.524Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.506,
-          "evidence": {
-            "modifiedAt": "2026-03-05T14:30:04.398899",
-            "daysSinceModified": 177,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-29T12:02:10.524Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "XLS"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 2,
-            "formatDistribution": {
-              "CSV": 1,
-              "XLS": 1
-            }
-          },
-          "calculatedAt": "2026-08-29T12:02:10.524Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-08-29T12:02:11.107Z"
-        }
-      ],
-      "lastChecked": "2026-08-29T12:01:11.423Z"
-    },
-    {
       "datasetId": "catalogo-datos-gba-ar:defunciones-maternas",
       "title": "Defunciones maternas",
       "organization": "Ministerio de Salud",
@@ -6785,8 +6574,8 @@
       "lastChecked": "2026-08-29T12:01:11.423Z"
     },
     {
-      "datasetId": "catalogo-datos-gba-ar:uniones-convivenciales",
-      "title": "Uniones convivenciales",
+      "datasetId": "catalogo-datos-gba-ar:matrimonios",
+      "title": "Matrimonios y divorcios",
       "organization": "Registro Provincial de las Personas",
       "overall": 0.965,
       "dimensions": [
@@ -6806,90 +6595,21 @@
             "fieldsMissing": [
               "tags"
             ],
-            "descriptionLength": 89,
+            "descriptionLength": 77,
             "tagCount": 0,
-            "resourceCount": 8
+            "resourceCount": 12
           },
-          "calculatedAt": "2026-09-02T10:09:59.059Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-09-01T18:40:42.898066",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-09-02T10:09:59.059Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "XLS"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 8,
-            "formatDistribution": {
-              "CSV": 4,
-              "XLS": 4
-            }
-          },
-          "calculatedAt": "2026-09-02T10:09:59.059Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 8,
-            "checked": 8,
-            "accessible": 8
-          },
-          "calculatedAt": "2026-09-02T10:10:01.107Z"
-        }
-      ],
-      "lastChecked": "2026-09-02T10:09:59.059Z"
-    },
-    {
-      "datasetId": "catalogo-datos-gba-ar:defunciones",
-      "title": "Inscripción de defunciones",
-      "organization": "Registro Provincial de las Personas",
-      "overall": 0.965,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 0.85,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [
-              "tags"
-            ],
-            "descriptionLength": 65,
-            "tagCount": 0,
-            "resourceCount": 6
-          },
-          "calculatedAt": "2026-09-02T10:10:01.107Z"
+          "calculatedAt": "2026-09-03T10:22:32.699Z"
         },
         {
           "dimension": "freshness",
           "score": 0.997,
           "evidence": {
-            "modifiedAt": "2026-09-01T15:56:04.719110",
+            "modifiedAt": "2026-09-02T18:08:04.759321",
             "daysSinceModified": 1,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-09-02T10:10:01.107Z"
+          "calculatedAt": "2026-09-03T10:22:32.699Z"
         },
         {
           "dimension": "structure",
@@ -6901,31 +6621,31 @@
             ],
             "bestFormat": "CSV",
             "bestFormatScore": 0.95,
-            "resourceCount": 6,
+            "resourceCount": 12,
             "formatDistribution": {
-              "CSV": 3,
-              "XLS": 3
+              "CSV": 6,
+              "XLS": 6
             }
           },
-          "calculatedAt": "2026-09-02T10:10:01.107Z"
+          "calculatedAt": "2026-09-03T10:22:32.699Z"
         },
         {
           "dimension": "accessibility",
           "score": 1,
           "evidence": {
-            "resourceCount": 6,
-            "checked": 6,
-            "accessible": 6
+            "resourceCount": 12,
+            "checked": 12,
+            "accessible": 12
           },
-          "calculatedAt": "2026-09-02T10:10:02.215Z"
+          "calculatedAt": "2026-09-03T10:22:35.396Z"
         }
       ],
-      "lastChecked": "2026-09-02T10:09:59.059Z"
+      "lastChecked": "2026-09-03T10:22:32.699Z"
     },
     {
-      "datasetId": "catalogo-datos-gba-ar:tranferencias-consejos-escolares",
-      "title": "Transferencias a Consejos Escolares",
-      "organization": "Ministerio de Economía",
+      "datasetId": "catalogo-datos-gba-ar:nacidos-vivos",
+      "title": "Nacidos vivos",
+      "organization": "Ministerio de Salud",
       "overall": 0.965,
       "dimensions": [
         {
@@ -6944,21 +6664,21 @@
             "fieldsMissing": [
               "tags"
             ],
-            "descriptionLength": 185,
+            "descriptionLength": 52,
             "tagCount": 0,
             "resourceCount": 2
           },
-          "calculatedAt": "2026-09-02T10:10:02.215Z"
+          "calculatedAt": "2026-09-03T10:22:35.396Z"
         },
         {
           "dimension": "freshness",
           "score": 0.997,
           "evidence": {
-            "modifiedAt": "2026-09-01T14:33:29.527813",
+            "modifiedAt": "2026-09-02T14:57:34.998722",
             "daysSinceModified": 1,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-09-02T10:10:02.215Z"
+          "calculatedAt": "2026-09-03T10:22:35.396Z"
         },
         {
           "dimension": "structure",
@@ -6976,7 +6696,7 @@
               "XLS": 1
             }
           },
-          "calculatedAt": "2026-09-02T10:10:02.215Z"
+          "calculatedAt": "2026-09-03T10:22:35.396Z"
         },
         {
           "dimension": "accessibility",
@@ -6986,14 +6706,83 @@
             "checked": 2,
             "accessible": 2
           },
-          "calculatedAt": "2026-09-02T10:10:03.005Z"
+          "calculatedAt": "2026-09-03T10:22:36.146Z"
         }
       ],
-      "lastChecked": "2026-09-02T10:09:59.059Z"
+      "lastChecked": "2026-09-03T10:22:32.699Z"
     },
     {
-      "datasetId": "catalogo-datos-gba-ar:nacimientos",
-      "title": "Nacimientos",
+      "datasetId": "catalogo-datos-gba-ar:identidad-de-genero",
+      "title": "Identidad de género",
+      "organization": "Ministerio de Gobierno",
+      "overall": 0.965,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 0.85,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [
+              "tags"
+            ],
+            "descriptionLength": 74,
+            "tagCount": 0,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-09-03T10:22:36.146Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.997,
+          "evidence": {
+            "modifiedAt": "2026-09-02T13:58:39.668060",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-03T10:22:36.146Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "XLS",
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "XLS": 1,
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-09-03T10:22:36.146Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-09-03T10:22:36.743Z"
+        }
+      ],
+      "lastChecked": "2026-09-03T10:22:32.699Z"
+    },
+    {
+      "datasetId": "catalogo-datos-gba-ar:reconocimientos",
+      "title": "Reconocimientos",
       "organization": "Registro Provincial de las Personas",
       "overall": 0.965,
       "dimensions": [
@@ -7013,56 +6802,194 @@
             "fieldsMissing": [
               "tags"
             ],
-            "descriptionLength": 65,
+            "descriptionLength": 99,
             "tagCount": 0,
-            "resourceCount": 6
+            "resourceCount": 2
           },
-          "calculatedAt": "2026-09-02T10:10:03.005Z"
+          "calculatedAt": "2026-09-03T10:22:36.743Z"
         },
         {
           "dimension": "freshness",
           "score": 0.997,
           "evidence": {
-            "modifiedAt": "2026-09-01T14:19:21.101963",
+            "modifiedAt": "2026-09-02T13:48:48.684041",
             "daysSinceModified": 1,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-09-02T10:10:03.005Z"
+          "calculatedAt": "2026-09-03T10:22:36.743Z"
         },
         {
           "dimension": "structure",
           "score": 0.95,
           "evidence": {
             "formats": [
-              "CSV",
-              "XLS"
+              "XLS",
+              "CSV"
             ],
             "bestFormat": "CSV",
             "bestFormatScore": 0.95,
-            "resourceCount": 6,
+            "resourceCount": 2,
             "formatDistribution": {
-              "CSV": 3,
-              "XLS": 3
+              "XLS": 1,
+              "CSV": 1
             }
           },
-          "calculatedAt": "2026-09-02T10:10:03.005Z"
+          "calculatedAt": "2026-09-03T10:22:36.743Z"
         },
         {
           "dimension": "accessibility",
           "score": 1,
           "evidence": {
-            "resourceCount": 6,
-            "checked": 6,
-            "accessible": 6
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
           },
-          "calculatedAt": "2026-09-02T10:10:04.447Z"
+          "calculatedAt": "2026-09-03T10:22:37.501Z"
         }
       ],
-      "lastChecked": "2026-09-02T10:09:59.059Z"
+      "lastChecked": "2026-09-03T10:22:32.699Z"
     },
     {
-      "datasetId": "catalogo-datos-gba-ar:ampliaciones-sistema-educativo",
-      "title": "Expansión y consolidación del sistema educativo",
+      "datasetId": "catalogo-datos-gba-ar:inscripciones",
+      "title": "Inscripciones",
+      "organization": "Ministerio de Gobierno",
+      "overall": 0.965,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 0.85,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [
+              "tags"
+            ],
+            "descriptionLength": 124,
+            "tagCount": 0,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-09-03T10:22:37.501Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.997,
+          "evidence": {
+            "modifiedAt": "2026-09-02T13:42:12.209263",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-03T10:22:37.501Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "XLS",
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "XLS": 1,
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-09-03T10:22:37.501Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-09-03T10:22:38.097Z"
+        }
+      ],
+      "lastChecked": "2026-09-03T10:22:32.699Z"
+    },
+    {
+      "datasetId": "catalogo-datos-gba-ar:adopciones",
+      "title": "Adopciones",
+      "organization": "Ministerio de Gobierno",
+      "overall": 0.965,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 0.85,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [
+              "tags"
+            ],
+            "descriptionLength": 68,
+            "tagCount": 0,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-09-03T10:22:38.097Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.997,
+          "evidence": {
+            "modifiedAt": "2026-09-02T13:36:10.484145",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-03T10:22:38.097Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "XLS",
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "XLS": 2,
+              "CSV": 2
+            }
+          },
+          "calculatedAt": "2026-09-03T10:22:38.097Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-09-03T10:22:38.860Z"
+        }
+      ],
+      "lastChecked": "2026-09-03T10:22:32.699Z"
+    },
+    {
+      "datasetId": "catalogo-datos-gba-ar:establecimientos-educativos",
+      "title": "Establecimientos educativos",
       "organization": "Dirección General de Cultura y Educación",
       "overall": 0.965,
       "dimensions": [
@@ -7082,43 +7009,43 @@
             "fieldsMissing": [
               "tags"
             ],
-            "descriptionLength": 122,
+            "descriptionLength": 73,
             "tagCount": 0,
             "resourceCount": 4
           },
-          "calculatedAt": "2026-09-02T10:10:04.447Z"
+          "calculatedAt": "2026-09-03T10:22:38.860Z"
         },
         {
           "dimension": "freshness",
           "score": 0.997,
           "evidence": {
-            "modifiedAt": "2026-09-01T13:51:00.552914",
+            "modifiedAt": "2026-09-02T13:26:09.604636",
             "daysSinceModified": 1,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-09-02T10:10:04.447Z"
+          "calculatedAt": "2026-09-03T10:22:38.860Z"
         },
         {
           "dimension": "structure",
           "score": 0.95,
           "evidence": {
             "formats": [
-              "XLS",
               "CSV",
               "ZIP",
+              "XLS",
               "PDF"
             ],
             "bestFormat": "CSV",
             "bestFormatScore": 0.95,
             "resourceCount": 4,
             "formatDistribution": {
-              "XLS": 1,
               "CSV": 1,
               "ZIP": 1,
+              "XLS": 1,
               "PDF": 1
             }
           },
-          "calculatedAt": "2026-09-02T10:10:04.447Z"
+          "calculatedAt": "2026-09-03T10:22:38.860Z"
         },
         {
           "dimension": "accessibility",
@@ -7128,10 +7055,83 @@
             "checked": 4,
             "accessible": 4
           },
-          "calculatedAt": "2026-09-02T10:10:05.761Z"
+          "calculatedAt": "2026-09-03T10:22:39.569Z"
         }
       ],
-      "lastChecked": "2026-09-02T10:09:59.059Z"
+      "lastChecked": "2026-09-03T10:22:32.699Z"
+    },
+    {
+      "datasetId": "catalogo-datos-gba-ar:nuevos-edificios-escolares",
+      "title": "Nuevos edificios escolares",
+      "organization": "Dirección General de Cultura y Educación",
+      "overall": 0.965,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 0.85,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [
+              "tags"
+            ],
+            "descriptionLength": 72,
+            "tagCount": 0,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-09-03T10:22:39.569Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.997,
+          "evidence": {
+            "modifiedAt": "2026-09-02T13:20:20.646207",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-03T10:22:39.569Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "XLS",
+              "ZIP",
+              "PDF"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "CSV": 1,
+              "XLS": 1,
+              "ZIP": 1,
+              "PDF": 1
+            }
+          },
+          "calculatedAt": "2026-09-03T10:22:39.569Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-09-03T10:22:40.737Z"
+        }
+      ],
+      "lastChecked": "2026-09-03T10:22:32.699Z"
     }
   ],
   "coverage": 1

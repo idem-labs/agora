@@ -1,8 +1,1272 @@
 {
   "catalogId": "datos-gob-cl",
-  "scoredAt": "2026-09-02T10:13:43.472Z",
-  "datasetCount": 3206,
+  "scoredAt": "2026-09-03T10:24:22.843Z",
+  "datasetCount": 3210,
   "datasets": [
+    {
+      "datasetId": "datos-gob-cl:atenciones-de-urgencia-causas-respiratorias",
+      "title": "Atenciones de urgencias de causas respiratorias por semana epidemiológica",
+      "organization": "Ministerio de Salud",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 1233,
+            "tagCount": 4,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-09-02T10:13:43.472Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.999,
+          "evidence": {
+            "modifiedAt": "2026-09-02T04:01:59.199549",
+            "daysSinceModified": 0,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:13:43.472Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "PARQUET",
+              "XLSX"
+            ],
+            "bestFormat": "PARQUET",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "PARQUET": 1,
+              "XLSX": 1
+            }
+          },
+          "calculatedAt": "2026-09-02T10:13:43.472Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-09-02T10:13:43.883Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:13:43.472Z"
+    },
+    {
+      "datasetId": "datos-gob-cl:establecimientos-de-salud-vigentes",
+      "title": "Establecimientos de Salud",
+      "organization": "Ministerio de Salud",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 856,
+            "tagCount": 3,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-09-02T10:13:43.883Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.999,
+          "evidence": {
+            "modifiedAt": "2026-09-02T03:00:10.636422",
+            "daysSinceModified": 0,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:13:43.883Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "PDF"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "CSV": 1,
+              "PDF": 1
+            }
+          },
+          "calculatedAt": "2026-09-02T10:13:43.883Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-09-02T10:13:44.276Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:13:43.472Z"
+    },
+    {
+      "datasetId": "datos-gob-cl:defunciones-por-semana-epidemiologica",
+      "title": "Defunciones por Semana Epidemiológica, Sexo, Grupo de Edad y Región",
+      "organization": "Ministerio de Salud",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 557,
+            "tagCount": 3,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-09-02T10:13:44.277Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.999,
+          "evidence": {
+            "modifiedAt": "2026-09-02T02:01:30.587673",
+            "daysSinceModified": 0,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:13:44.277Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "XLSX",
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "XLSX": 1,
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-09-02T10:13:44.277Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-09-02T10:13:44.658Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:13:43.472Z"
+    },
+    {
+      "datasetId": "datos-gob-cl:establecimientos-de-optica-de-chile",
+      "title": "Establecimientos de Óptica de Chile",
+      "organization": "Ministerio de Salud",
+      "overall": 0.89,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 622,
+            "tagCount": 3,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-09-02T10:13:44.658Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.998,
+          "evidence": {
+            "modifiedAt": "2026-09-01T20:34:32.923268",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:13:44.658Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.65,
+          "evidence": {
+            "formats": [
+              "XLSX"
+            ],
+            "bestFormat": "XLSX",
+            "bestFormatScore": 0.65,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "XLSX": 2
+            }
+          },
+          "calculatedAt": "2026-09-02T10:13:44.658Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-09-02T10:13:45.059Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:13:43.472Z"
+    },
+    {
+      "datasetId": "datos-gob-cl:registro-de-importacion-2026",
+      "title": "Registro de Importaciones 2026",
+      "organization": "Servicio Nacional de Aduanas",
+      "overall": 0.89,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 243,
+            "tagCount": 4,
+            "resourceCount": 8
+          },
+          "calculatedAt": "2026-09-02T10:13:49.244Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.998,
+          "evidence": {
+            "modifiedAt": "2026-09-01T18:42:03.478019",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:13:49.244Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.65,
+          "evidence": {
+            "formats": [
+              "XLSX",
+              "RAR",
+              "ZIP"
+            ],
+            "bestFormat": "XLSX",
+            "bestFormatScore": 0.65,
+            "resourceCount": 8,
+            "formatDistribution": {
+              "XLSX": 1,
+              "RAR": 6,
+              "ZIP": 1
+            }
+          },
+          "calculatedAt": "2026-09-02T10:13:49.244Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 8,
+            "checked": 8,
+            "accessible": 8
+          },
+          "calculatedAt": "2026-09-02T10:13:49.843Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:13:43.472Z"
+    },
+    {
+      "datasetId": "datos-gob-cl:permisos-de-circulacion-san-rosendo-agosto-2026",
+      "title": "Permisos de circulación San Rosendo agosto 2026",
+      "organization": "Municipalidad de San Rosendo",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 47,
+            "tagCount": 1,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-09-02T10:13:50.480Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.997,
+          "evidence": {
+            "modifiedAt": "2026-09-01T15:38:35.858832",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:13:50.480Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-09-02T10:13:50.480Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-09-02T10:13:50.857Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:13:43.472Z"
+    },
+    {
+      "datasetId": "datos-gob-cl:permisos-de-circulacion-san-rosendo-marzo-2026",
+      "title": "Permisos de circulación San Rosendo marzo 2026",
+      "organization": "Municipalidad de San Rosendo",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 46,
+            "tagCount": 1,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-09-02T10:13:50.857Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.997,
+          "evidence": {
+            "modifiedAt": "2026-09-01T15:33:07.157863",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:13:50.857Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-09-02T10:13:50.857Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-09-02T10:13:51.186Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:13:43.472Z"
+    },
+    {
+      "datasetId": "datos-gob-cl:permisos-de-circulacion-san-rosendo-2025",
+      "title": "Permisos de circulación San Rosendo 2025",
+      "organization": "Municipalidad de San Rosendo",
+      "overall": 0.89,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 40,
+            "tagCount": 1,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-09-02T10:13:51.186Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.997,
+          "evidence": {
+            "modifiedAt": "2026-09-01T14:58:56.575644",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:13:51.186Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.65,
+          "evidence": {
+            "formats": [
+              "XLSX"
+            ],
+            "bestFormat": "XLSX",
+            "bestFormatScore": 0.65,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "XLSX": 1
+            }
+          },
+          "calculatedAt": "2026-09-02T10:13:51.186Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-09-02T10:13:51.467Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:13:43.472Z"
+    },
+    {
+      "datasetId": "datos-gob-cl:permisos-de-circulacion-san-rosendo-2024",
+      "title": "Permisos de circulación San Rosendo 2024",
+      "organization": "Municipalidad de San Rosendo",
+      "overall": 0.89,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 40,
+            "tagCount": 1,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-09-02T10:13:51.467Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.997,
+          "evidence": {
+            "modifiedAt": "2026-09-01T14:56:14.581862",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:13:51.467Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.65,
+          "evidence": {
+            "formats": [
+              "XLSX"
+            ],
+            "bestFormat": "XLSX",
+            "bestFormatScore": 0.65,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "XLSX": 1
+            }
+          },
+          "calculatedAt": "2026-09-02T10:13:51.467Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-09-02T10:13:51.765Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:13:43.472Z"
+    },
+    {
+      "datasetId": "datos-gob-cl:permisos-de-circulacion-san-rosendo-2023",
+      "title": "Permisos de circulación San Rosendo 2023",
+      "organization": "Municipalidad de San Rosendo",
+      "overall": 0.89,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 40,
+            "tagCount": 1,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-09-02T10:13:51.765Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.997,
+          "evidence": {
+            "modifiedAt": "2026-09-01T14:54:04.636086",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:13:51.765Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.65,
+          "evidence": {
+            "formats": [
+              "XLSX"
+            ],
+            "bestFormat": "XLSX",
+            "bestFormatScore": 0.65,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "XLSX": 1
+            }
+          },
+          "calculatedAt": "2026-09-02T10:13:51.765Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-09-02T10:13:52.044Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:13:43.472Z"
+    },
+    {
+      "datasetId": "datos-gob-cl:permisos-de-circulacion-2022",
+      "title": "Permisos de circulación 2022",
+      "organization": "Municipalidad de San Rosendo",
+      "overall": 0.89,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 36,
+            "tagCount": 1,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-09-02T10:13:52.044Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.997,
+          "evidence": {
+            "modifiedAt": "2026-09-01T14:46:50.271550",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:13:52.044Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.65,
+          "evidence": {
+            "formats": [
+              "XLSX"
+            ],
+            "bestFormat": "XLSX",
+            "bestFormatScore": 0.65,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "XLSX": 1
+            }
+          },
+          "calculatedAt": "2026-09-02T10:13:52.044Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-09-02T10:13:52.322Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:13:43.472Z"
+    },
+    {
+      "datasetId": "datos-gob-cl:permisos-de-circulacion-2021",
+      "title": "Permisos de circulación 2021",
+      "organization": "Municipalidad de San Rosendo",
+      "overall": 0.89,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 36,
+            "tagCount": 1,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-09-02T10:13:52.322Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.997,
+          "evidence": {
+            "modifiedAt": "2026-09-01T14:45:14.564425",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:13:52.322Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.65,
+          "evidence": {
+            "formats": [
+              "XLSX"
+            ],
+            "bestFormat": "XLSX",
+            "bestFormatScore": 0.65,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "XLSX": 1
+            }
+          },
+          "calculatedAt": "2026-09-02T10:13:52.322Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-09-02T10:13:52.618Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:13:43.472Z"
+    },
+    {
+      "datasetId": "datos-gob-cl:permisos-de-circulacion-san-rosendo-julio-2026",
+      "title": "Permisos de circulación San Rosendo julio 2026",
+      "organization": "Municipalidad de San Rosendo",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 92,
+            "tagCount": 1,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-09-02T10:13:52.618Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.997,
+          "evidence": {
+            "modifiedAt": "2026-09-01T14:18:42.540213",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:13:52.618Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-09-02T10:13:52.618Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-09-02T10:13:52.909Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:13:43.472Z"
+    },
+    {
+      "datasetId": "datos-gob-cl:permisos-de-circulacion-san-rosendo-junio-2026",
+      "title": "Permisos de circulación San Rosendo junio 2026",
+      "organization": "Municipalidad de San Rosendo",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 92,
+            "tagCount": 1,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-09-02T10:13:52.909Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.997,
+          "evidence": {
+            "modifiedAt": "2026-09-01T14:15:59.488057",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:13:52.909Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-09-02T10:13:52.909Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-09-02T10:13:53.209Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:13:43.472Z"
+    },
+    {
+      "datasetId": "datos-gob-cl:permisos-de-circulacion-san-rosendo-mayo-2026",
+      "title": "Permisos de circulación San Rosendo mayo 2026",
+      "organization": "Municipalidad de San Rosendo",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 91,
+            "tagCount": 1,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-09-02T10:13:53.209Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.997,
+          "evidence": {
+            "modifiedAt": "2026-09-01T14:13:47.188565",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:13:53.209Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-09-02T10:13:53.209Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-09-02T10:13:53.685Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:13:43.472Z"
+    },
+    {
+      "datasetId": "datos-gob-cl:permisos-de-circulacion-san-rosendo-abril-2026",
+      "title": "Permisos de circulación San Rosendo abril 2026",
+      "organization": "Municipalidad de San Rosendo",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 92,
+            "tagCount": 1,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-09-02T10:13:53.685Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.997,
+          "evidence": {
+            "modifiedAt": "2026-09-01T13:58:55.634314",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:13:53.685Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-09-02T10:13:53.685Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-09-02T10:13:54.002Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:13:43.472Z"
+    },
+    {
+      "datasetId": "datos-gob-cl:permiso-de-circulacion-mes-de-agosto-de-2026",
+      "title": "Permiso de Circulación mes de Agosto de 2026",
+      "organization": "Municipalidad de Frutillar",
+      "overall": 0.89,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 112,
+            "tagCount": 3,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-09-02T10:13:54.002Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.997,
+          "evidence": {
+            "modifiedAt": "2026-09-01T13:56:06.330388",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:13:54.002Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.65,
+          "evidence": {
+            "formats": [
+              "XLSX"
+            ],
+            "bestFormat": "XLSX",
+            "bestFormatScore": 0.65,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "XLSX": 1
+            }
+          },
+          "calculatedAt": "2026-09-02T10:13:54.002Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-09-02T10:13:54.282Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:13:43.472Z"
+    },
+    {
+      "datasetId": "datos-gob-cl:permisos-de-circulacion-san-rosendo-febrero-2026",
+      "title": "Permisos de circulación San Rosendo febrero 2026",
+      "organization": "Municipalidad de San Rosendo",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 94,
+            "tagCount": 1,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-09-02T10:13:54.282Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.997,
+          "evidence": {
+            "modifiedAt": "2026-09-01T13:46:35.708491",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:13:54.282Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-09-02T10:13:54.282Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-09-02T10:13:54.595Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:13:43.472Z"
+    },
+    {
+      "datasetId": "datos-gob-cl:permisos-de-circulacion-san-rosendo-enero-2026",
+      "title": "Permisos de circulación San Rosendo enero 2026",
+      "organization": "Municipalidad de San Rosendo",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 92,
+            "tagCount": 1,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-09-02T10:13:54.595Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.997,
+          "evidence": {
+            "modifiedAt": "2026-09-01T13:42:34.034166",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:13:54.595Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-09-02T10:13:54.595Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-09-02T10:13:54.893Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:13:43.472Z"
+    },
     {
       "datasetId": "datos-gob-cl:estadisticas-productos-dgd",
       "title": "Estadísticas Productos DGD al 2026-08-31",
@@ -1130,400 +2394,73 @@
       "lastChecked": "2026-08-27T17:23:27.120Z"
     },
     {
-      "datasetId": "datos-gob-cl:lugares-de-carga-de-tarjeta-bip-_retail",
-      "title": "Lugares de carga de tarjeta bip!_Retail",
-      "organization": "Empresa de Transporte de Pasajeros Metro S.A.",
-      "overall": 0.983,
+      "datasetId": "datos-gob-cl:emisiones-al-aire-de-fuente-puntuales",
+      "title": "Emisiones al aire de fuentes puntuales",
+      "organization": "Subsecretaría del Medio Ambiente",
+      "overall": 0.958,
       "dimensions": [
         {
           "dimension": "completeness",
-          "score": 1,
+          "score": 0.85,
           "evidence": {
             "fieldsPresent": [
               "title",
               "description",
               "organization",
-              "tags",
               "license",
               "resources",
               "modifiedAt",
               "createdAt"
             ],
-            "fieldsMissing": [],
-            "descriptionLength": 138,
-            "tagCount": 1,
-            "resourceCount": 1
+            "fieldsMissing": [
+              "tags"
+            ],
+            "descriptionLength": 365,
+            "tagCount": 0,
+            "resourceCount": 20
           },
-          "calculatedAt": "2026-08-27T17:23:31.555Z"
+          "calculatedAt": "2026-09-02T10:13:54.893Z"
         },
         {
           "dimension": "freshness",
-          "score": 0.996,
+          "score": 0.971,
           "evidence": {
-            "modifiedAt": "2026-08-26T13:44:50.367590",
-            "daysSinceModified": 1,
+            "modifiedAt": "2026-08-25T22:00:13.702618",
+            "daysSinceModified": 8,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-08-27T17:23:31.555Z"
+          "calculatedAt": "2026-09-02T10:13:54.893Z"
         },
         {
           "dimension": "structure",
           "score": 0.95,
           "evidence": {
             "formats": [
+              "XLSX",
               "CSV"
             ],
             "bestFormat": "CSV",
             "bestFormatScore": 0.95,
-            "resourceCount": 1,
+            "resourceCount": 20,
             "formatDistribution": {
-              "CSV": 1
+              "XLSX": 4,
+              "CSV": 16
             }
           },
-          "calculatedAt": "2026-08-27T17:23:31.556Z"
+          "calculatedAt": "2026-09-02T10:13:54.893Z"
         },
         {
           "dimension": "accessibility",
           "score": 1,
           "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
+            "resourceCount": 20,
+            "checked": 20,
+            "accessible": 20
           },
-          "calculatedAt": "2026-08-27T17:23:31.759Z"
+          "calculatedAt": "2026-09-02T10:13:58.409Z"
         }
       ],
-      "lastChecked": "2026-08-27T17:23:27.120Z"
-    },
-    {
-      "datasetId": "datos-gob-cl:lugares-de-carga-de-tarjeta-bip-_centros-bip-estandar-normal",
-      "title": "Lugares de carga de tarjeta bip!_Centros bip! Estándar Normal",
-      "organization": "Empresa de Transporte de Pasajeros Metro S.A.",
-      "overall": 0.983,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 679,
-            "tagCount": 1,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-08-27T17:23:31.759Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.996,
-          "evidence": {
-            "modifiedAt": "2026-08-26T13:44:13.507326",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-27T17:23:31.759Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-08-27T17:23:31.759Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-08-27T17:23:31.955Z"
-        }
-      ],
-      "lastChecked": "2026-08-27T17:23:27.120Z"
-    },
-    {
-      "datasetId": "datos-gob-cl:lugares-de-carga-de-tarjeta-bip-_centros-bip-alto-estandar",
-      "title": "Lugares de carga de tarjeta bip!_Centros bip! Alto Estándar",
-      "organization": "Empresa de Transporte de Pasajeros Metro S.A.",
-      "overall": 0.983,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 555,
-            "tagCount": 1,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-08-27T17:23:31.955Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.996,
-          "evidence": {
-            "modifiedAt": "2026-08-26T13:43:02.317088",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-27T17:23:31.955Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-08-27T17:23:31.955Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-08-27T17:23:32.318Z"
-        }
-      ],
-      "lastChecked": "2026-08-27T17:23:27.120Z"
-    },
-    {
-      "datasetId": "datos-gob-cl:lugares-de-carga-de-tarjeta-bip-_puntos-bip",
-      "title": "Lugares de carga de tarjeta bip!_Puntos bip!",
-      "organization": "Empresa de Transporte de Pasajeros Metro S.A.",
-      "overall": 0.983,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 345,
-            "tagCount": 1,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-08-27T17:23:32.318Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.996,
-          "evidence": {
-            "modifiedAt": "2026-08-26T13:42:26.254586",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-27T17:23:32.318Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-08-27T17:23:32.318Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-08-27T17:23:32.527Z"
-        }
-      ],
-      "lastChecked": "2026-08-27T17:23:27.120Z"
-    },
-    {
-      "datasetId": "datos-gob-cl:lugares-de-carga-de-tarjeta-bip-_-estaciones-de-metro",
-      "title": "Lugares de carga de tarjeta bip!_ Estaciones de Metro",
-      "organization": "Empresa de Transporte de Pasajeros Metro S.A.",
-      "overall": 0.983,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 74,
-            "tagCount": 1,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-08-27T17:23:32.527Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.996,
-          "evidence": {
-            "modifiedAt": "2026-08-26T13:28:44.173558",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-27T17:23:32.527Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-08-27T17:23:32.527Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-08-27T17:23:32.729Z"
-        }
-      ],
-      "lastChecked": "2026-08-27T17:23:27.120Z"
-    },
-    {
-      "datasetId": "datos-gob-cl:lugares-de-carga-de-tarjeta-bip-_aeropuerto",
-      "title": "Lugares de carga de tarjeta bip!_Aeropuerto",
-      "organization": "Empresa de Transporte de Pasajeros Metro S.A.",
-      "overall": 0.983,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 500,
-            "tagCount": 1,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-08-27T17:23:32.729Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.996,
-          "evidence": {
-            "modifiedAt": "2026-08-26T13:27:23.432131",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-08-27T17:23:32.729Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-08-27T17:23:32.729Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-08-27T17:23:32.944Z"
-        }
-      ],
-      "lastChecked": "2026-08-27T17:23:27.120Z"
+      "lastChecked": "2026-09-02T10:13:43.472Z"
     },
     {
       "datasetId": "datos-gob-cl:indicadores-hospitalarios-rem20",
@@ -1794,6 +2731,541 @@
         }
       ],
       "lastChecked": "2026-08-27T17:23:27.120Z"
+    },
+    {
+      "datasetId": "datos-gob-cl:registro-de-atenciones-en-la-red-de-servicio-ips-chileatiende",
+      "title": "Registro de atenciones en la red de servicio IPS-Chileatiende",
+      "organization": "Instituto de Previsión Social",
+      "overall": 0.877,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 212,
+            "tagCount": 1,
+            "resourceCount": 66
+          },
+          "calculatedAt": "2026-09-02T10:13:58.409Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.945,
+          "evidence": {
+            "modifiedAt": "2026-08-18T18:26:37.913939",
+            "daysSinceModified": 15,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:13:58.409Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.65,
+          "evidence": {
+            "formats": [
+              "XLSX"
+            ],
+            "bestFormat": "XLSX",
+            "bestFormatScore": 0.65,
+            "resourceCount": 66,
+            "formatDistribution": {
+              "XLSX": 66
+            }
+          },
+          "calculatedAt": "2026-09-02T10:13:58.409Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 66,
+            "checked": 66,
+            "accessible": 66
+          },
+          "calculatedAt": "2026-09-02T10:14:00.343Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:13:43.472Z"
+    },
+    {
+      "datasetId": "datos-gob-cl:informe-2do-trimestre-del-avance-del-ejercicio-programatico-presupuestario-2026",
+      "title": "Informe 2do Trimestre del avance del ejercicio programático presupuestario 2026",
+      "organization": "Municipalidad de Maule",
+      "overall": 0.877,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 104,
+            "tagCount": 1,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-09-02T10:14:00.343Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.945,
+          "evidence": {
+            "modifiedAt": "2026-08-18T17:49:47.971726",
+            "daysSinceModified": 15,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:14:00.343Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.65,
+          "evidence": {
+            "formats": [
+              "XLS"
+            ],
+            "bestFormat": "XLS",
+            "bestFormatScore": 0.65,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "XLS": 1
+            }
+          },
+          "calculatedAt": "2026-09-02T10:14:00.343Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-09-02T10:14:00.621Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:13:43.472Z"
+    },
+    {
+      "datasetId": "datos-gob-cl:informe-1er-trimestre-del-avance-del-ejercicio-programatico-presupuestario-2026",
+      "title": "Informe 1er Trimestre del avance del ejercicio programático presupuestario 2026",
+      "organization": "Municipalidad de Maule",
+      "overall": 0.877,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 104,
+            "tagCount": 1,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-09-02T10:14:00.621Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.945,
+          "evidence": {
+            "modifiedAt": "2026-08-18T17:46:11.463611",
+            "daysSinceModified": 15,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:14:00.621Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.65,
+          "evidence": {
+            "formats": [
+              "XLS"
+            ],
+            "bestFormat": "XLS",
+            "bestFormatScore": 0.65,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "XLS": 1
+            }
+          },
+          "calculatedAt": "2026-09-02T10:14:00.621Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-09-02T10:14:00.923Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:13:43.472Z"
+    },
+    {
+      "datasetId": "datos-gob-cl:registro-de-tramites-y-o-consultas-atendidas-en-la-red-de-servicio-ips-chileatiende",
+      "title": "Registro de trámites y/o consultas atendidas en la red de servicio IPS-Chileatiende",
+      "organization": "Instituto de Previsión Social",
+      "overall": 0.96,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 783,
+            "tagCount": 1,
+            "resourceCount": 141
+          },
+          "calculatedAt": "2026-09-02T10:14:00.923Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.945,
+          "evidence": {
+            "modifiedAt": "2026-08-18T17:43:52.901872",
+            "daysSinceModified": 15,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:14:00.923Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "XLSX",
+              "CSV",
+              "UNKNOWN"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 141,
+            "formatDistribution": {
+              "XLSX": 107,
+              "CSV": 29,
+              "UNKNOWN": 5
+            }
+          },
+          "calculatedAt": "2026-09-02T10:14:00.923Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.965,
+          "evidence": {
+            "resourceCount": 141,
+            "checked": 141,
+            "accessible": 136
+          },
+          "calculatedAt": "2026-09-02T10:14:04.401Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:13:43.472Z"
+    },
+    {
+      "datasetId": "datos-gob-cl:subvenciones-entregadas-por-la-municipalidad-a-terceros-mes-de-julio-2026",
+      "title": "Subvenciones entregadas por la municipalidad a terceros mes de Julio 2026",
+      "organization": "Municipalidad de Maule",
+      "overall": 0.971,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 74,
+            "tagCount": 1,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-09-02T10:14:04.401Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.945,
+          "evidence": {
+            "modifiedAt": "2026-08-18T16:42:28.242804",
+            "daysSinceModified": 15,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:14:04.401Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-09-02T10:14:04.401Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-09-02T10:14:04.683Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:13:43.472Z"
+    },
+    {
+      "datasetId": "datos-gob-cl:trafico-aereo",
+      "title": "Tráfico Aéreo",
+      "organization": "Junta de Aeronáutica Civil",
+      "overall": 0.971,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 757,
+            "tagCount": 3,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-09-02T10:14:04.683Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.945,
+          "evidence": {
+            "modifiedAt": "2026-08-18T16:29:50.238824",
+            "daysSinceModified": 15,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:14:04.683Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "XLSX"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "CSV": 3,
+              "XLSX": 1
+            }
+          },
+          "calculatedAt": "2026-09-02T10:14:04.683Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 4
+          },
+          "calculatedAt": "2026-09-02T10:14:05.009Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:13:43.472Z"
+    },
+    {
+      "datasetId": "datos-gob-cl:tb-cuentas-prescritas",
+      "title": "CUENTAS PRESCRITAS LEY 21713",
+      "organization": "Servicio de Tesorerías",
+      "overall": 0.97,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 146,
+            "tagCount": 6,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-09-02T10:14:05.009Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.944,
+          "evidence": {
+            "modifiedAt": "2026-08-18T12:38:18.339218",
+            "daysSinceModified": 15,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:14:05.009Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-09-02T10:14:05.009Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-09-02T10:14:05.345Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:13:43.472Z"
+    },
+    {
+      "datasetId": "datos-gob-cl:metadatos-datos-abiertos",
+      "title": "METADATOS DATOS ABIERTOS",
+      "organization": "Servicio de Tesorerías",
+      "overall": 0.936,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 0.725,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [
+              "tags"
+            ],
+            "descriptionLength": 19,
+            "tagCount": 0,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-09-02T10:14:05.345Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.944,
+          "evidence": {
+            "modifiedAt": "2026-08-18T12:34:13.887741",
+            "daysSinceModified": 15,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:14:05.345Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-09-02T10:14:05.345Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-09-02T10:14:05.624Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:13:43.472Z"
     },
     {
       "datasetId": "datos-gob-cl:comercio-exterior2",
@@ -2324,6 +3796,74 @@
         }
       ],
       "lastChecked": "2026-08-29T12:07:49.904Z"
+    },
+    {
+      "datasetId": "datos-gob-cl:cpat",
+      "title": "Catálogo de Procedimientos Administrativos y otras Tramitaciones (CPAT)",
+      "organization": "Secretaría de Gobierno Digital",
+      "overall": 0.963,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 343,
+            "tagCount": 3,
+            "resourceCount": 18
+          },
+          "calculatedAt": "2026-09-02T10:14:05.624Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.916,
+          "evidence": {
+            "modifiedAt": "2026-08-10T15:54:49.286588",
+            "daysSinceModified": 23,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:14:05.624Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "XLSX",
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 18,
+            "formatDistribution": {
+              "XLSX": 3,
+              "CSV": 15
+            }
+          },
+          "calculatedAt": "2026-09-02T10:14:05.624Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 18,
+            "checked": 18,
+            "accessible": 18
+          },
+          "calculatedAt": "2026-09-02T10:14:06.192Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:13:43.472Z"
     },
     {
       "datasetId": "datos-gob-cl:permisos-de-circulacion-2026-perquenco",
@@ -68613,6 +70153,72 @@
       "lastChecked": "2026-08-30T11:10:09.573Z"
     },
     {
+      "datasetId": "datos-gob-cl:ejecucion-presupuestaria-a-julio-de-2023-del-gobierno-central",
+      "title": "Ejecución Presupuestaria a Julio de 2023 del Gobierno Central",
+      "organization": "Dirección de Presupuestos",
+      "overall": 0.741,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 257,
+            "tagCount": 5,
+            "resourceCount": 5
+          },
+          "calculatedAt": "2026-09-02T10:14:06.192Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.027,
+          "evidence": {
+            "modifiedAt": "2024-02-08T13:34:55.371238",
+            "daysSinceModified": 937,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:14:06.192Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 5,
+            "formatDistribution": {
+              "CSV": 5
+            }
+          },
+          "calculatedAt": "2026-09-02T10:14:06.192Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 5,
+            "checked": 5,
+            "accessible": 5
+          },
+          "calculatedAt": "2026-09-02T10:14:06.564Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:13:43.472Z"
+    },
+    {
       "datasetId": "datos-gob-cl:ejecucion-presupuestaria-a-junio-de-2023-del-gobierno-central",
       "title": "Ejecución Presupuestaria a Junio de 2023 del Gobierno Central",
       "organization": "Dirección de Presupuestos",
@@ -78096,6 +79702,74 @@
         }
       ],
       "lastChecked": "2026-08-30T11:10:09.573Z"
+    },
+    {
+      "datasetId": "datos-gob-cl:aporte-social-hogar-de-residencia-ano-2022",
+      "title": "APORTE SOCIAL HOGAR DE RESIDENCIA AÑO 2022",
+      "organization": "Municipalidad de Coquimbo",
+      "overall": 0.736,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 63,
+            "tagCount": 1,
+            "resourceCount": 2
+          },
+          "calculatedAt": "2026-09-02T10:14:06.564Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.006,
+          "evidence": {
+            "modifiedAt": "2023-01-27T19:26:06.649290",
+            "daysSinceModified": 1314,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:14:06.564Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV",
+              "XLSX"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 2,
+            "formatDistribution": {
+              "CSV": 1,
+              "XLSX": 1
+            }
+          },
+          "calculatedAt": "2026-09-02T10:14:06.564Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 2,
+            "checked": 2,
+            "accessible": 2
+          },
+          "calculatedAt": "2026-09-02T10:14:06.866Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:13:43.472Z"
     },
     {
       "datasetId": "datos-gob-cl:aporte-social-estudios-superiores-ano-2022",
@@ -136942,6 +138616,72 @@
         }
       ],
       "lastChecked": "2026-08-31T12:11:39.005Z"
+    },
+    {
+      "datasetId": "datos-gob-cl:1290",
+      "title": "Infraestructura y construcción por comuna",
+      "organization": "Subsecretaría de Desarrollo Regional y Administrativo",
+      "overall": 0.328,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 66,
+            "tagCount": 3,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-09-02T10:14:06.866Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0,
+          "evidence": {
+            "modifiedAt": "2015-10-30T13:20:05.978830",
+            "daysSinceModified": 3960,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:14:06.866Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.65,
+          "evidence": {
+            "formats": [
+              "XLS"
+            ],
+            "bestFormat": "XLS",
+            "bestFormatScore": 0.65,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "XLS": 1
+            }
+          },
+          "calculatedAt": "2026-09-02T10:14:06.866Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 0
+          },
+          "calculatedAt": "2026-09-02T10:14:07.574Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:13:43.472Z"
     },
     {
       "datasetId": "datos-gob-cl:1150",
@@ -198432,6 +200172,72 @@
       "lastChecked": "2026-08-27T17:23:27.120Z"
     },
     {
+      "datasetId": "datos-gob-cl:28323",
+      "title": "PRC Región de Los Lagos",
+      "organization": "Subsecretaría de Vivienda y Urbanismo",
+      "overall": 0.438,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 395,
+            "tagCount": 29,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-09-02T10:14:07.574Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0,
+          "evidence": {
+            "modifiedAt": "2015-10-30T13:04:52.886141",
+            "daysSinceModified": 3960,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-02T10:14:07.574Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.1,
+          "evidence": {
+            "formats": [
+              "UNKNOWN"
+            ],
+            "bestFormat": "UNKNOWN",
+            "bestFormatScore": 0.1,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "UNKNOWN": 1
+            }
+          },
+          "calculatedAt": "2026-09-02T10:14:07.574Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.9,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-09-02T10:14:08.021Z"
+        }
+      ],
+      "lastChecked": "2026-09-02T10:13:43.472Z"
+    },
+    {
       "datasetId": "datos-gob-cl:28321",
       "title": "PRC Región de Aysén",
       "organization": "Subsecretaría de Vivienda y Urbanismo",
@@ -210296,10 +212102,10 @@
       "lastChecked": "2026-08-27T17:23:27.120Z"
     },
     {
-      "datasetId": "datos-gob-cl:atenciones-de-urgencia-causas-respiratorias",
-      "title": "Atenciones de urgencias de causas respiratorias por semana epidemiológica",
-      "organization": "Ministerio de Salud",
-      "overall": 0.984,
+      "datasetId": "datos-gob-cl:solicitudes-de-marcas",
+      "title": "Solicitudes de Marcas",
+      "organization": "Instituto Nacional de Propiedad Industrial",
+      "overall": 0.891,
       "dimensions": [
         {
           "dimension": "completeness",
@@ -210316,225 +212122,21 @@
               "createdAt"
             ],
             "fieldsMissing": [],
-            "descriptionLength": 1233,
-            "tagCount": 4,
-            "resourceCount": 2
+            "descriptionLength": 21,
+            "tagCount": 6,
+            "resourceCount": 19
           },
-          "calculatedAt": "2026-09-02T10:13:43.472Z"
+          "calculatedAt": "2026-09-03T10:24:22.843Z"
         },
         {
           "dimension": "freshness",
-          "score": 0.999,
+          "score": 1,
           "evidence": {
-            "modifiedAt": "2026-09-02T04:01:59.199549",
+            "modifiedAt": "2026-09-03T10:24:03.994828",
             "daysSinceModified": 0,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-09-02T10:13:43.472Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "PARQUET",
-              "XLSX"
-            ],
-            "bestFormat": "PARQUET",
-            "bestFormatScore": 0.95,
-            "resourceCount": 2,
-            "formatDistribution": {
-              "PARQUET": 1,
-              "XLSX": 1
-            }
-          },
-          "calculatedAt": "2026-09-02T10:13:43.472Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-09-02T10:13:43.883Z"
-        }
-      ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
-    },
-    {
-      "datasetId": "datos-gob-cl:establecimientos-de-salud-vigentes",
-      "title": "Establecimientos de Salud",
-      "organization": "Ministerio de Salud",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 856,
-            "tagCount": 3,
-            "resourceCount": 2
-          },
-          "calculatedAt": "2026-09-02T10:13:43.883Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.999,
-          "evidence": {
-            "modifiedAt": "2026-09-02T03:00:10.636422",
-            "daysSinceModified": 0,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-09-02T10:13:43.883Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "PDF"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 2,
-            "formatDistribution": {
-              "CSV": 1,
-              "PDF": 1
-            }
-          },
-          "calculatedAt": "2026-09-02T10:13:43.883Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-09-02T10:13:44.276Z"
-        }
-      ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
-    },
-    {
-      "datasetId": "datos-gob-cl:defunciones-por-semana-epidemiologica",
-      "title": "Defunciones por Semana Epidemiológica, Sexo, Grupo de Edad y Región",
-      "organization": "Ministerio de Salud",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 557,
-            "tagCount": 3,
-            "resourceCount": 2
-          },
-          "calculatedAt": "2026-09-02T10:13:44.277Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.999,
-          "evidence": {
-            "modifiedAt": "2026-09-02T02:01:30.587673",
-            "daysSinceModified": 0,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-09-02T10:13:44.277Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "XLSX",
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 2,
-            "formatDistribution": {
-              "XLSX": 1,
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-09-02T10:13:44.277Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
-          },
-          "calculatedAt": "2026-09-02T10:13:44.658Z"
-        }
-      ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
-    },
-    {
-      "datasetId": "datos-gob-cl:establecimientos-de-optica-de-chile",
-      "title": "Establecimientos de Óptica de Chile",
-      "organization": "Ministerio de Salud",
-      "overall": 0.89,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 622,
-            "tagCount": 3,
-            "resourceCount": 2
-          },
-          "calculatedAt": "2026-09-02T10:13:44.658Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-09-01T20:34:32.923268",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-09-02T10:13:44.658Z"
+          "calculatedAt": "2026-09-03T10:24:22.843Z"
         },
         {
           "dimension": "structure",
@@ -210545,25 +212147,25 @@
             ],
             "bestFormat": "XLSX",
             "bestFormatScore": 0.65,
-            "resourceCount": 2,
+            "resourceCount": 19,
             "formatDistribution": {
-              "XLSX": 2
+              "XLSX": 19
             }
           },
-          "calculatedAt": "2026-09-02T10:13:44.658Z"
+          "calculatedAt": "2026-09-03T10:24:22.843Z"
         },
         {
           "dimension": "accessibility",
           "score": 1,
           "evidence": {
-            "resourceCount": 2,
-            "checked": 2,
-            "accessible": 2
+            "resourceCount": 19,
+            "checked": 19,
+            "accessible": 19
           },
-          "calculatedAt": "2026-09-02T10:13:45.059Z"
+          "calculatedAt": "2026-09-03T10:24:24.531Z"
         }
       ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
+      "lastChecked": "2026-09-03T10:24:22.843Z"
     },
     {
       "datasetId": "datos-gob-cl:registros-de-patentes",
@@ -210590,17 +212192,17 @@
             "tagCount": 6,
             "resourceCount": 18
           },
-          "calculatedAt": "2026-09-02T10:13:45.059Z"
+          "calculatedAt": "2026-09-03T10:24:24.531Z"
         },
         {
           "dimension": "freshness",
           "score": 0.998,
           "evidence": {
-            "modifiedAt": "2026-09-01T19:25:05.948862",
+            "modifiedAt": "2026-09-02T21:45:26.657278",
             "daysSinceModified": 1,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-09-02T10:13:45.059Z"
+          "calculatedAt": "2026-09-03T10:24:24.531Z"
         },
         {
           "dimension": "structure",
@@ -210616,7 +212218,7 @@
               "XLSX": 18
             }
           },
-          "calculatedAt": "2026-09-02T10:13:45.059Z"
+          "calculatedAt": "2026-09-03T10:24:24.531Z"
         },
         {
           "dimension": "accessibility",
@@ -210626,10 +212228,10 @@
             "checked": 18,
             "accessible": 18
           },
-          "calculatedAt": "2026-09-02T10:13:46.472Z"
+          "calculatedAt": "2026-09-03T10:24:25.945Z"
         }
       ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
+      "lastChecked": "2026-09-03T10:24:22.843Z"
     },
     {
       "datasetId": "datos-gob-cl:solicitudes-de-patentes",
@@ -210656,17 +212258,17 @@
             "tagCount": 8,
             "resourceCount": 18
           },
-          "calculatedAt": "2026-09-02T10:13:46.472Z"
+          "calculatedAt": "2026-09-03T10:24:25.945Z"
         },
         {
           "dimension": "freshness",
           "score": 0.998,
           "evidence": {
-            "modifiedAt": "2026-09-01T19:24:13.528032",
+            "modifiedAt": "2026-09-02T21:44:57.039217",
             "daysSinceModified": 1,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-09-02T10:13:46.472Z"
+          "calculatedAt": "2026-09-03T10:24:25.945Z"
         },
         {
           "dimension": "structure",
@@ -210682,7 +212284,7 @@
               "XLSX": 18
             }
           },
-          "calculatedAt": "2026-09-02T10:13:46.472Z"
+          "calculatedAt": "2026-09-03T10:24:25.945Z"
         },
         {
           "dimension": "accessibility",
@@ -210692,10 +212294,10 @@
             "checked": 18,
             "accessible": 18
           },
-          "calculatedAt": "2026-09-02T10:13:47.461Z"
+          "calculatedAt": "2026-09-03T10:24:26.625Z"
         }
       ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
+      "lastChecked": "2026-09-03T10:24:22.843Z"
     },
     {
       "datasetId": "datos-gob-cl:registros-de-marcas",
@@ -210722,17 +212324,17 @@
             "tagCount": 8,
             "resourceCount": 30
           },
-          "calculatedAt": "2026-09-02T10:13:47.461Z"
+          "calculatedAt": "2026-09-03T10:24:26.625Z"
         },
         {
           "dimension": "freshness",
           "score": 0.998,
           "evidence": {
-            "modifiedAt": "2026-09-01T19:23:41.544689",
+            "modifiedAt": "2026-09-02T21:44:18.170049",
             "daysSinceModified": 1,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-09-02T10:13:47.461Z"
+          "calculatedAt": "2026-09-03T10:24:26.625Z"
         },
         {
           "dimension": "structure",
@@ -210748,7 +212350,7 @@
               "XLSX": 30
             }
           },
-          "calculatedAt": "2026-09-02T10:13:47.461Z"
+          "calculatedAt": "2026-09-03T10:24:26.625Z"
         },
         {
           "dimension": "accessibility",
@@ -210758,348 +212360,14 @@
             "checked": 30,
             "accessible": 30
           },
-          "calculatedAt": "2026-09-02T10:13:48.343Z"
+          "calculatedAt": "2026-09-03T10:24:27.447Z"
         }
       ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
+      "lastChecked": "2026-09-03T10:24:22.843Z"
     },
     {
-      "datasetId": "datos-gob-cl:solicitudes-de-marcas",
-      "title": "Solicitudes de Marcas",
-      "organization": "Instituto Nacional de Propiedad Industrial",
-      "overall": 0.89,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 21,
-            "tagCount": 6,
-            "resourceCount": 19
-          },
-          "calculatedAt": "2026-09-02T10:13:48.343Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-09-01T19:14:45.246089",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-09-02T10:13:48.343Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.65,
-          "evidence": {
-            "formats": [
-              "XLSX"
-            ],
-            "bestFormat": "XLSX",
-            "bestFormatScore": 0.65,
-            "resourceCount": 19,
-            "formatDistribution": {
-              "XLSX": 19
-            }
-          },
-          "calculatedAt": "2026-09-02T10:13:48.343Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 19,
-            "checked": 19,
-            "accessible": 19
-          },
-          "calculatedAt": "2026-09-02T10:13:49.244Z"
-        }
-      ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
-    },
-    {
-      "datasetId": "datos-gob-cl:registro-de-importacion-2026",
-      "title": "Registro de Importaciones 2026",
-      "organization": "Servicio Nacional de Aduanas",
-      "overall": 0.89,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 243,
-            "tagCount": 4,
-            "resourceCount": 8
-          },
-          "calculatedAt": "2026-09-02T10:13:49.244Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-09-01T18:42:03.478019",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-09-02T10:13:49.244Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.65,
-          "evidence": {
-            "formats": [
-              "XLSX",
-              "RAR",
-              "ZIP"
-            ],
-            "bestFormat": "XLSX",
-            "bestFormatScore": 0.65,
-            "resourceCount": 8,
-            "formatDistribution": {
-              "XLSX": 1,
-              "RAR": 6,
-              "ZIP": 1
-            }
-          },
-          "calculatedAt": "2026-09-02T10:13:49.244Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 8,
-            "checked": 8,
-            "accessible": 8
-          },
-          "calculatedAt": "2026-09-02T10:13:49.843Z"
-        }
-      ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
-    },
-    {
-      "datasetId": "datos-gob-cl:solicitudes-de-marcas_",
-      "title": "Solicitudes de Marcas_",
-      "organization": "Instituto Nacional de Propiedad Industrial",
-      "overall": 0.89,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 21,
-            "tagCount": 7,
-            "resourceCount": 18
-          },
-          "calculatedAt": "2026-09-02T10:13:49.843Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.998,
-          "evidence": {
-            "modifiedAt": "2026-09-01T18:40:46.704514",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-09-02T10:13:49.843Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.65,
-          "evidence": {
-            "formats": [
-              "XLSX"
-            ],
-            "bestFormat": "XLSX",
-            "bestFormatScore": 0.65,
-            "resourceCount": 18,
-            "formatDistribution": {
-              "XLSX": 18
-            }
-          },
-          "calculatedAt": "2026-09-02T10:13:49.843Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 18,
-            "checked": 18,
-            "accessible": 18
-          },
-          "calculatedAt": "2026-09-02T10:13:50.480Z"
-        }
-      ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
-    },
-    {
-      "datasetId": "datos-gob-cl:permisos-de-circulacion-san-rosendo-agosto-2026",
-      "title": "Permisos de circulación San Rosendo agosto 2026",
-      "organization": "Municipalidad de San Rosendo",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 47,
-            "tagCount": 1,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-09-02T10:13:50.480Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.997,
-          "evidence": {
-            "modifiedAt": "2026-09-01T15:38:35.858832",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-09-02T10:13:50.480Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-09-02T10:13:50.480Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-09-02T10:13:50.857Z"
-        }
-      ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
-    },
-    {
-      "datasetId": "datos-gob-cl:permisos-de-circulacion-san-rosendo-marzo-2026",
-      "title": "Permisos de circulación San Rosendo marzo 2026",
-      "organization": "Municipalidad de San Rosendo",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 46,
-            "tagCount": 1,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-09-02T10:13:50.857Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.997,
-          "evidence": {
-            "modifiedAt": "2026-09-01T15:33:07.157863",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-09-02T10:13:50.857Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-09-02T10:13:50.857Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-09-02T10:13:51.186Z"
-        }
-      ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
-    },
-    {
-      "datasetId": "datos-gob-cl:permisos-de-circulacion-san-rosendo-2025",
-      "title": "Permisos de circulación San Rosendo 2025",
+      "datasetId": "datos-gob-cl:patentes-municipales-segundo-semestre-2026",
+      "title": "patentes municipales segundo semestre 2026",
       "organization": "Municipalidad de San Rosendo",
       "overall": 0.89,
       "dimensions": [
@@ -211118,21 +212386,21 @@
               "createdAt"
             ],
             "fieldsMissing": [],
-            "descriptionLength": 40,
+            "descriptionLength": 42,
             "tagCount": 1,
             "resourceCount": 1
           },
-          "calculatedAt": "2026-09-02T10:13:51.186Z"
+          "calculatedAt": "2026-09-03T10:24:27.447Z"
         },
         {
           "dimension": "freshness",
           "score": 0.997,
           "evidence": {
-            "modifiedAt": "2026-09-01T14:58:56.575644",
+            "modifiedAt": "2026-09-02T18:19:08.482453",
             "daysSinceModified": 1,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-09-02T10:13:51.186Z"
+          "calculatedAt": "2026-09-03T10:24:27.447Z"
         },
         {
           "dimension": "structure",
@@ -211148,7 +212416,7 @@
               "XLSX": 1
             }
           },
-          "calculatedAt": "2026-09-02T10:13:51.186Z"
+          "calculatedAt": "2026-09-03T10:24:27.447Z"
         },
         {
           "dimension": "accessibility",
@@ -211158,877 +212426,16 @@
             "checked": 1,
             "accessible": 1
           },
-          "calculatedAt": "2026-09-02T10:13:51.467Z"
+          "calculatedAt": "2026-09-03T10:24:27.596Z"
         }
       ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
+      "lastChecked": "2026-09-03T10:24:22.843Z"
     },
     {
-      "datasetId": "datos-gob-cl:permisos-de-circulacion-san-rosendo-2024",
-      "title": "Permisos de circulación San Rosendo 2024",
-      "organization": "Municipalidad de San Rosendo",
+      "datasetId": "datos-gob-cl:permisos-de-circulacion-vehicular-agosto-2026",
+      "title": "PERMISOS DE CIRCULACION VEHICULAR AGOSTO 2026",
+      "organization": "Municipalidad de Arica",
       "overall": 0.89,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 40,
-            "tagCount": 1,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-09-02T10:13:51.467Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.997,
-          "evidence": {
-            "modifiedAt": "2026-09-01T14:56:14.581862",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-09-02T10:13:51.467Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.65,
-          "evidence": {
-            "formats": [
-              "XLSX"
-            ],
-            "bestFormat": "XLSX",
-            "bestFormatScore": 0.65,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "XLSX": 1
-            }
-          },
-          "calculatedAt": "2026-09-02T10:13:51.467Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-09-02T10:13:51.765Z"
-        }
-      ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
-    },
-    {
-      "datasetId": "datos-gob-cl:permisos-de-circulacion-san-rosendo-2023",
-      "title": "Permisos de circulación San Rosendo 2023",
-      "organization": "Municipalidad de San Rosendo",
-      "overall": 0.89,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 40,
-            "tagCount": 1,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-09-02T10:13:51.765Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.997,
-          "evidence": {
-            "modifiedAt": "2026-09-01T14:54:04.636086",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-09-02T10:13:51.765Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.65,
-          "evidence": {
-            "formats": [
-              "XLSX"
-            ],
-            "bestFormat": "XLSX",
-            "bestFormatScore": 0.65,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "XLSX": 1
-            }
-          },
-          "calculatedAt": "2026-09-02T10:13:51.765Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-09-02T10:13:52.044Z"
-        }
-      ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
-    },
-    {
-      "datasetId": "datos-gob-cl:permisos-de-circulacion-2022",
-      "title": "Permisos de circulación 2022",
-      "organization": "Municipalidad de San Rosendo",
-      "overall": 0.89,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 36,
-            "tagCount": 1,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-09-02T10:13:52.044Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.997,
-          "evidence": {
-            "modifiedAt": "2026-09-01T14:46:50.271550",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-09-02T10:13:52.044Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.65,
-          "evidence": {
-            "formats": [
-              "XLSX"
-            ],
-            "bestFormat": "XLSX",
-            "bestFormatScore": 0.65,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "XLSX": 1
-            }
-          },
-          "calculatedAt": "2026-09-02T10:13:52.044Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-09-02T10:13:52.322Z"
-        }
-      ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
-    },
-    {
-      "datasetId": "datos-gob-cl:permisos-de-circulacion-2021",
-      "title": "Permisos de circulación 2021",
-      "organization": "Municipalidad de San Rosendo",
-      "overall": 0.89,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 36,
-            "tagCount": 1,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-09-02T10:13:52.322Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.997,
-          "evidence": {
-            "modifiedAt": "2026-09-01T14:45:14.564425",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-09-02T10:13:52.322Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.65,
-          "evidence": {
-            "formats": [
-              "XLSX"
-            ],
-            "bestFormat": "XLSX",
-            "bestFormatScore": 0.65,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "XLSX": 1
-            }
-          },
-          "calculatedAt": "2026-09-02T10:13:52.322Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-09-02T10:13:52.618Z"
-        }
-      ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
-    },
-    {
-      "datasetId": "datos-gob-cl:permisos-de-circulacion-san-rosendo-julio-2026",
-      "title": "Permisos de circulación San Rosendo julio 2026",
-      "organization": "Municipalidad de San Rosendo",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 92,
-            "tagCount": 1,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-09-02T10:13:52.618Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.997,
-          "evidence": {
-            "modifiedAt": "2026-09-01T14:18:42.540213",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-09-02T10:13:52.618Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-09-02T10:13:52.618Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-09-02T10:13:52.909Z"
-        }
-      ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
-    },
-    {
-      "datasetId": "datos-gob-cl:permisos-de-circulacion-san-rosendo-junio-2026",
-      "title": "Permisos de circulación San Rosendo junio 2026",
-      "organization": "Municipalidad de San Rosendo",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 92,
-            "tagCount": 1,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-09-02T10:13:52.909Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.997,
-          "evidence": {
-            "modifiedAt": "2026-09-01T14:15:59.488057",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-09-02T10:13:52.909Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-09-02T10:13:52.909Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-09-02T10:13:53.209Z"
-        }
-      ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
-    },
-    {
-      "datasetId": "datos-gob-cl:permisos-de-circulacion-san-rosendo-mayo-2026",
-      "title": "Permisos de circulación San Rosendo mayo 2026",
-      "organization": "Municipalidad de San Rosendo",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 91,
-            "tagCount": 1,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-09-02T10:13:53.209Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.997,
-          "evidence": {
-            "modifiedAt": "2026-09-01T14:13:47.188565",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-09-02T10:13:53.209Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-09-02T10:13:53.209Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-09-02T10:13:53.685Z"
-        }
-      ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
-    },
-    {
-      "datasetId": "datos-gob-cl:permisos-de-circulacion-san-rosendo-abril-2026",
-      "title": "Permisos de circulación San Rosendo abril 2026",
-      "organization": "Municipalidad de San Rosendo",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 92,
-            "tagCount": 1,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-09-02T10:13:53.685Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.997,
-          "evidence": {
-            "modifiedAt": "2026-09-01T13:58:55.634314",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-09-02T10:13:53.685Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-09-02T10:13:53.685Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-09-02T10:13:54.002Z"
-        }
-      ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
-    },
-    {
-      "datasetId": "datos-gob-cl:permiso-de-circulacion-mes-de-agosto-de-2026",
-      "title": "Permiso de Circulación mes de Agosto de 2026",
-      "organization": "Municipalidad de Frutillar",
-      "overall": 0.89,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 112,
-            "tagCount": 3,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-09-02T10:13:54.002Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.997,
-          "evidence": {
-            "modifiedAt": "2026-09-01T13:56:06.330388",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-09-02T10:13:54.002Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.65,
-          "evidence": {
-            "formats": [
-              "XLSX"
-            ],
-            "bestFormat": "XLSX",
-            "bestFormatScore": 0.65,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "XLSX": 1
-            }
-          },
-          "calculatedAt": "2026-09-02T10:13:54.002Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-09-02T10:13:54.282Z"
-        }
-      ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
-    },
-    {
-      "datasetId": "datos-gob-cl:permisos-de-circulacion-san-rosendo-febrero-2026",
-      "title": "Permisos de circulación San Rosendo febrero 2026",
-      "organization": "Municipalidad de San Rosendo",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 94,
-            "tagCount": 1,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-09-02T10:13:54.282Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.997,
-          "evidence": {
-            "modifiedAt": "2026-09-01T13:46:35.708491",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-09-02T10:13:54.282Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-09-02T10:13:54.282Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-09-02T10:13:54.595Z"
-        }
-      ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
-    },
-    {
-      "datasetId": "datos-gob-cl:permisos-de-circulacion-san-rosendo-enero-2026",
-      "title": "Permisos de circulación San Rosendo enero 2026",
-      "organization": "Municipalidad de San Rosendo",
-      "overall": 0.984,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 92,
-            "tagCount": 1,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-09-02T10:13:54.595Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.997,
-          "evidence": {
-            "modifiedAt": "2026-09-01T13:42:34.034166",
-            "daysSinceModified": 1,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-09-02T10:13:54.595Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-09-02T10:13:54.595Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-09-02T10:13:54.893Z"
-        }
-      ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
-    },
-    {
-      "datasetId": "datos-gob-cl:emisiones-al-aire-de-fuente-puntuales",
-      "title": "Emisiones al aire de fuentes puntuales",
-      "organization": "Subsecretaría del Medio Ambiente",
-      "overall": 0.958,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 0.85,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [
-              "tags"
-            ],
-            "descriptionLength": 365,
-            "tagCount": 0,
-            "resourceCount": 20
-          },
-          "calculatedAt": "2026-09-02T10:13:54.893Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.971,
-          "evidence": {
-            "modifiedAt": "2026-08-25T22:00:13.702618",
-            "daysSinceModified": 8,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-09-02T10:13:54.893Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "XLSX",
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 20,
-            "formatDistribution": {
-              "XLSX": 4,
-              "CSV": 16
-            }
-          },
-          "calculatedAt": "2026-09-02T10:13:54.893Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 20,
-            "checked": 20,
-            "accessible": 20
-          },
-          "calculatedAt": "2026-09-02T10:13:58.409Z"
-        }
-      ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
-    },
-    {
-      "datasetId": "datos-gob-cl:registro-de-atenciones-en-la-red-de-servicio-ips-chileatiende",
-      "title": "Registro de atenciones en la red de servicio IPS-Chileatiende",
-      "organization": "Instituto de Previsión Social",
-      "overall": 0.877,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 212,
-            "tagCount": 1,
-            "resourceCount": 66
-          },
-          "calculatedAt": "2026-09-02T10:13:58.409Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.945,
-          "evidence": {
-            "modifiedAt": "2026-08-18T18:26:37.913939",
-            "daysSinceModified": 15,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-09-02T10:13:58.409Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.65,
-          "evidence": {
-            "formats": [
-              "XLSX"
-            ],
-            "bestFormat": "XLSX",
-            "bestFormatScore": 0.65,
-            "resourceCount": 66,
-            "formatDistribution": {
-              "XLSX": 66
-            }
-          },
-          "calculatedAt": "2026-09-02T10:13:58.409Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 66,
-            "checked": 66,
-            "accessible": 66
-          },
-          "calculatedAt": "2026-09-02T10:14:00.343Z"
-        }
-      ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
-    },
-    {
-      "datasetId": "datos-gob-cl:informe-2do-trimestre-del-avance-del-ejercicio-programatico-presupuestario-2026",
-      "title": "Informe 2do Trimestre del avance del ejercicio programático presupuestario 2026",
-      "organization": "Municipalidad de Maule",
-      "overall": 0.877,
       "dimensions": [
         {
           "dimension": "completeness",
@@ -212046,36 +212453,36 @@
             ],
             "fieldsMissing": [],
             "descriptionLength": 104,
-            "tagCount": 1,
+            "tagCount": 2,
             "resourceCount": 1
           },
-          "calculatedAt": "2026-09-02T10:14:00.343Z"
+          "calculatedAt": "2026-09-03T10:24:27.596Z"
         },
         {
           "dimension": "freshness",
-          "score": 0.945,
+          "score": 0.997,
           "evidence": {
-            "modifiedAt": "2026-08-18T17:49:47.971726",
-            "daysSinceModified": 15,
+            "modifiedAt": "2026-09-02T14:33:16.544201",
+            "daysSinceModified": 1,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-09-02T10:14:00.343Z"
+          "calculatedAt": "2026-09-03T10:24:27.596Z"
         },
         {
           "dimension": "structure",
           "score": 0.65,
           "evidence": {
             "formats": [
-              "XLS"
+              "XLSX"
             ],
-            "bestFormat": "XLS",
+            "bestFormat": "XLSX",
             "bestFormatScore": 0.65,
             "resourceCount": 1,
             "formatDistribution": {
-              "XLS": 1
+              "XLSX": 1
             }
           },
-          "calculatedAt": "2026-09-02T10:14:00.343Z"
+          "calculatedAt": "2026-09-03T10:24:27.596Z"
         },
         {
           "dimension": "accessibility",
@@ -212085,16 +212492,16 @@
             "checked": 1,
             "accessible": 1
           },
-          "calculatedAt": "2026-09-02T10:14:00.621Z"
+          "calculatedAt": "2026-09-03T10:24:27.811Z"
         }
       ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
+      "lastChecked": "2026-09-03T10:24:22.843Z"
     },
     {
-      "datasetId": "datos-gob-cl:informe-1er-trimestre-del-avance-del-ejercicio-programatico-presupuestario-2026",
-      "title": "Informe 1er Trimestre del avance del ejercicio programático presupuestario 2026",
-      "organization": "Municipalidad de Maule",
-      "overall": 0.877,
+      "datasetId": "datos-gob-cl:lugares-de-carga-de-tarjeta-bip-_retail",
+      "title": "Lugares de carga de tarjeta bip!_Retail",
+      "organization": "Empresa de Transporte de Pasajeros Metro S.A.",
+      "overall": 0.984,
       "dimensions": [
         {
           "dimension": "completeness",
@@ -212111,126 +212518,254 @@
               "createdAt"
             ],
             "fieldsMissing": [],
-            "descriptionLength": 104,
+            "descriptionLength": 138,
             "tagCount": 1,
             "resourceCount": 1
           },
-          "calculatedAt": "2026-09-02T10:14:00.621Z"
+          "calculatedAt": "2026-09-03T10:24:27.811Z"
         },
         {
           "dimension": "freshness",
-          "score": 0.945,
+          "score": 0.997,
           "evidence": {
-            "modifiedAt": "2026-08-18T17:46:11.463611",
-            "daysSinceModified": 15,
+            "modifiedAt": "2026-09-02T13:40:50.261544",
+            "daysSinceModified": 1,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-09-02T10:14:00.621Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.65,
-          "evidence": {
-            "formats": [
-              "XLS"
-            ],
-            "bestFormat": "XLS",
-            "bestFormatScore": 0.65,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "XLS": 1
-            }
-          },
-          "calculatedAt": "2026-09-02T10:14:00.621Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-09-02T10:14:00.923Z"
-        }
-      ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
-    },
-    {
-      "datasetId": "datos-gob-cl:registro-de-tramites-y-o-consultas-atendidas-en-la-red-de-servicio-ips-chileatiende",
-      "title": "Registro de trámites y/o consultas atendidas en la red de servicio IPS-Chileatiende",
-      "organization": "Instituto de Previsión Social",
-      "overall": 0.96,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 783,
-            "tagCount": 1,
-            "resourceCount": 141
-          },
-          "calculatedAt": "2026-09-02T10:14:00.923Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.945,
-          "evidence": {
-            "modifiedAt": "2026-08-18T17:43:52.901872",
-            "daysSinceModified": 15,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-09-02T10:14:00.923Z"
+          "calculatedAt": "2026-09-03T10:24:27.811Z"
         },
         {
           "dimension": "structure",
           "score": 0.95,
           "evidence": {
             "formats": [
-              "XLSX",
-              "CSV",
-              "UNKNOWN"
+              "CSV"
             ],
             "bestFormat": "CSV",
             "bestFormatScore": 0.95,
-            "resourceCount": 141,
+            "resourceCount": 1,
             "formatDistribution": {
-              "XLSX": 107,
-              "CSV": 29,
-              "UNKNOWN": 5
+              "CSV": 1
             }
           },
-          "calculatedAt": "2026-09-02T10:14:00.923Z"
+          "calculatedAt": "2026-09-03T10:24:27.811Z"
         },
         {
           "dimension": "accessibility",
-          "score": 0.965,
+          "score": 1,
           "evidence": {
-            "resourceCount": 141,
-            "checked": 141,
-            "accessible": 136
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
           },
-          "calculatedAt": "2026-09-02T10:14:04.401Z"
+          "calculatedAt": "2026-09-03T10:24:27.954Z"
         }
       ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
+      "lastChecked": "2026-09-03T10:24:22.843Z"
     },
     {
-      "datasetId": "datos-gob-cl:subvenciones-entregadas-por-la-municipalidad-a-terceros-mes-de-julio-2026",
-      "title": "Subvenciones entregadas por la municipalidad a terceros mes de Julio 2026",
-      "organization": "Municipalidad de Maule",
-      "overall": 0.971,
+      "datasetId": "datos-gob-cl:lugares-de-carga-de-tarjeta-bip-_centros-bip-estandar-normal",
+      "title": "Lugares de carga de tarjeta bip!_Centros bip! Estándar Normal",
+      "organization": "Empresa de Transporte de Pasajeros Metro S.A.",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 679,
+            "tagCount": 1,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-09-03T10:24:27.954Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.997,
+          "evidence": {
+            "modifiedAt": "2026-09-02T13:39:51.925333",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-03T10:24:27.954Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-09-03T10:24:27.954Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-09-03T10:24:28.100Z"
+        }
+      ],
+      "lastChecked": "2026-09-03T10:24:22.843Z"
+    },
+    {
+      "datasetId": "datos-gob-cl:lugares-de-carga-de-tarjeta-bip-_centros-bip-alto-estandar",
+      "title": "Lugares de carga de tarjeta bip!_Centros bip! Alto Estándar",
+      "organization": "Empresa de Transporte de Pasajeros Metro S.A.",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 555,
+            "tagCount": 1,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-09-03T10:24:28.100Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.997,
+          "evidence": {
+            "modifiedAt": "2026-09-02T13:38:54.976632",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-03T10:24:28.100Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-09-03T10:24:28.100Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-09-03T10:24:28.228Z"
+        }
+      ],
+      "lastChecked": "2026-09-03T10:24:22.843Z"
+    },
+    {
+      "datasetId": "datos-gob-cl:lugares-de-carga-de-tarjeta-bip-_puntos-bip",
+      "title": "Lugares de carga de tarjeta bip!_Puntos bip!",
+      "organization": "Empresa de Transporte de Pasajeros Metro S.A.",
+      "overall": 0.984,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 345,
+            "tagCount": 1,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-09-03T10:24:28.228Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.997,
+          "evidence": {
+            "modifiedAt": "2026-09-02T13:37:12.603735",
+            "daysSinceModified": 1,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-03T10:24:28.228Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "CSV": 1
+            }
+          },
+          "calculatedAt": "2026-09-03T10:24:28.228Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-09-03T10:24:28.398Z"
+        }
+      ],
+      "lastChecked": "2026-09-03T10:24:22.843Z"
+    },
+    {
+      "datasetId": "datos-gob-cl:lugares-de-carga-de-tarjeta-bip-_-estaciones-de-metro",
+      "title": "Lugares de carga de tarjeta bip!_ Estaciones de Metro",
+      "organization": "Empresa de Transporte de Pasajeros Metro S.A.",
+      "overall": 0.984,
       "dimensions": [
         {
           "dimension": "completeness",
@@ -212251,17 +212786,17 @@
             "tagCount": 1,
             "resourceCount": 1
           },
-          "calculatedAt": "2026-09-02T10:14:04.401Z"
+          "calculatedAt": "2026-09-03T10:24:28.398Z"
         },
         {
           "dimension": "freshness",
-          "score": 0.945,
+          "score": 0.997,
           "evidence": {
-            "modifiedAt": "2026-08-18T16:42:28.242804",
-            "daysSinceModified": 15,
+            "modifiedAt": "2026-09-02T13:35:35.290789",
+            "daysSinceModified": 1,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-09-02T10:14:04.401Z"
+          "calculatedAt": "2026-09-03T10:24:28.398Z"
         },
         {
           "dimension": "structure",
@@ -212277,7 +212812,7 @@
               "CSV": 1
             }
           },
-          "calculatedAt": "2026-09-02T10:14:04.401Z"
+          "calculatedAt": "2026-09-03T10:24:28.398Z"
         },
         {
           "dimension": "accessibility",
@@ -212287,16 +212822,16 @@
             "checked": 1,
             "accessible": 1
           },
-          "calculatedAt": "2026-09-02T10:14:04.683Z"
+          "calculatedAt": "2026-09-03T10:24:28.608Z"
         }
       ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
+      "lastChecked": "2026-09-03T10:24:22.843Z"
     },
     {
-      "datasetId": "datos-gob-cl:trafico-aereo",
-      "title": "Tráfico Aéreo",
-      "organization": "Junta de Aeronáutica Civil",
-      "overall": 0.971,
+      "datasetId": "datos-gob-cl:lugares-de-carga-de-tarjeta-bip-_aeropuerto",
+      "title": "Lugares de carga de tarjeta bip!_Aeropuerto",
+      "organization": "Empresa de Transporte de Pasajeros Metro S.A.",
+      "overall": 0.984,
       "dimensions": [
         {
           "dimension": "completeness",
@@ -212313,89 +212848,21 @@
               "createdAt"
             ],
             "fieldsMissing": [],
-            "descriptionLength": 757,
-            "tagCount": 3,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-09-02T10:14:04.683Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.945,
-          "evidence": {
-            "modifiedAt": "2026-08-18T16:29:50.238824",
-            "daysSinceModified": 15,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-09-02T10:14:04.683Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV",
-              "XLSX"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "CSV": 3,
-              "XLSX": 1
-            }
-          },
-          "calculatedAt": "2026-09-02T10:14:04.683Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 4
-          },
-          "calculatedAt": "2026-09-02T10:14:05.009Z"
-        }
-      ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
-    },
-    {
-      "datasetId": "datos-gob-cl:tb-cuentas-prescritas",
-      "title": "CUENTAS PRESCRITAS LEY 21713",
-      "organization": "Servicio de Tesorerías",
-      "overall": 0.97,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 146,
-            "tagCount": 6,
+            "descriptionLength": 500,
+            "tagCount": 1,
             "resourceCount": 1
           },
-          "calculatedAt": "2026-09-02T10:14:05.009Z"
+          "calculatedAt": "2026-09-03T10:24:28.608Z"
         },
         {
           "dimension": "freshness",
-          "score": 0.944,
+          "score": 0.997,
           "evidence": {
-            "modifiedAt": "2026-08-18T12:38:18.339218",
-            "daysSinceModified": 15,
+            "modifiedAt": "2026-09-02T13:34:14.518575",
+            "daysSinceModified": 1,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-09-02T10:14:05.009Z"
+          "calculatedAt": "2026-09-03T10:24:28.608Z"
         },
         {
           "dimension": "structure",
@@ -212411,7 +212878,7 @@
               "CSV": 1
             }
           },
-          "calculatedAt": "2026-09-02T10:14:05.009Z"
+          "calculatedAt": "2026-09-03T10:24:28.608Z"
         },
         {
           "dimension": "accessibility",
@@ -212421,248 +212888,114 @@
             "checked": 1,
             "accessible": 1
           },
-          "calculatedAt": "2026-09-02T10:14:05.345Z"
+          "calculatedAt": "2026-09-03T10:24:28.764Z"
         }
       ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
+      "lastChecked": "2026-09-03T10:24:22.843Z"
     },
     {
-      "datasetId": "datos-gob-cl:metadatos-datos-abiertos",
-      "title": "METADATOS DATOS ABIERTOS",
-      "organization": "Servicio de Tesorerías",
-      "overall": 0.936,
+      "datasetId": "datos-gob-cl:finanzas-salud-mostazal-estado-de-situacion-financiera-20",
+      "title": "Finanzas Salud Mostazal Estado de Situación Financiera 2016",
+      "organization": "Municipalidad de Mostazal",
+      "overall": 0.465,
       "dimensions": [
         {
           "dimension": "completeness",
-          "score": 0.725,
+          "score": 0.75,
           "evidence": {
             "fieldsPresent": [
               "title",
-              "description",
               "organization",
+              "tags",
               "license",
               "resources",
               "modifiedAt",
               "createdAt"
             ],
             "fieldsMissing": [
-              "tags"
+              "description"
             ],
-            "descriptionLength": 19,
-            "tagCount": 0,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-09-02T10:14:05.345Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.944,
-          "evidence": {
-            "modifiedAt": "2026-08-18T12:34:13.887741",
-            "daysSinceModified": 15,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-09-02T10:14:05.345Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "CSV": 1
-            }
-          },
-          "calculatedAt": "2026-09-02T10:14:05.345Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-09-02T10:14:05.624Z"
-        }
-      ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
-    },
-    {
-      "datasetId": "datos-gob-cl:cpat",
-      "title": "Catálogo de Procedimientos Administrativos y otras Tramitaciones (CPAT)",
-      "organization": "Secretaría de Gobierno Digital",
-      "overall": 0.963,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 343,
-            "tagCount": 3,
-            "resourceCount": 18
-          },
-          "calculatedAt": "2026-09-02T10:14:05.624Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.916,
-          "evidence": {
-            "modifiedAt": "2026-08-10T15:54:49.286588",
-            "daysSinceModified": 23,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-09-02T10:14:05.624Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "XLSX",
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 18,
-            "formatDistribution": {
-              "XLSX": 3,
-              "CSV": 15
-            }
-          },
-          "calculatedAt": "2026-09-02T10:14:05.624Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 18,
-            "checked": 18,
-            "accessible": 18
-          },
-          "calculatedAt": "2026-09-02T10:14:06.192Z"
-        }
-      ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
-    },
-    {
-      "datasetId": "datos-gob-cl:ejecucion-presupuestaria-a-julio-de-2023-del-gobierno-central",
-      "title": "Ejecución Presupuestaria a Julio de 2023 del Gobierno Central",
-      "organization": "Dirección de Presupuestos",
-      "overall": 0.741,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 257,
-            "tagCount": 5,
-            "resourceCount": 5
-          },
-          "calculatedAt": "2026-09-02T10:14:06.192Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.027,
-          "evidence": {
-            "modifiedAt": "2024-02-08T13:34:55.371238",
-            "daysSinceModified": 937,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-09-02T10:14:06.192Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 5,
-            "formatDistribution": {
-              "CSV": 5
-            }
-          },
-          "calculatedAt": "2026-09-02T10:14:06.192Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 5,
-            "checked": 5,
-            "accessible": 5
-          },
-          "calculatedAt": "2026-09-02T10:14:06.564Z"
-        }
-      ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
-    },
-    {
-      "datasetId": "datos-gob-cl:aporte-social-hogar-de-residencia-ano-2022",
-      "title": "APORTE SOCIAL HOGAR DE RESIDENCIA AÑO 2022",
-      "organization": "Municipalidad de Coquimbo",
-      "overall": 0.736,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 63,
+            "descriptionLength": null,
             "tagCount": 1,
+            "resourceCount": 12
+          },
+          "calculatedAt": "2026-09-03T10:24:28.764Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.046,
+          "evidence": {
+            "modifiedAt": "2024-06-27T22:49:02.644158",
+            "daysSinceModified": 797,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-03T10:24:28.764Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.15,
+          "evidence": {
+            "formats": [
+              "PDF"
+            ],
+            "bestFormat": "PDF",
+            "bestFormatScore": 0.15,
+            "resourceCount": 12,
+            "formatDistribution": {
+              "PDF": 12
+            }
+          },
+          "calculatedAt": "2026-09-03T10:24:28.764Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 12,
+            "checked": 12,
+            "accessible": 12
+          },
+          "calculatedAt": "2026-09-03T10:24:29.005Z"
+        }
+      ],
+      "lastChecked": "2026-09-03T10:24:22.843Z"
+    },
+    {
+      "datasetId": "datos-gob-cl:patentes-vigentes19",
+      "title": "Patentes vigentes 2019",
+      "organization": "Municipalidad de Cochamó",
+      "overall": 0.735,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 103,
+            "tagCount": 4,
             "resourceCount": 2
           },
-          "calculatedAt": "2026-09-02T10:14:06.564Z"
+          "calculatedAt": "2026-09-03T10:24:29.005Z"
         },
         {
           "dimension": "freshness",
-          "score": 0.006,
+          "score": 0.002,
           "evidence": {
-            "modifiedAt": "2023-01-27T19:26:06.649290",
-            "daysSinceModified": 1314,
+            "modifiedAt": "2022-05-30T20:23:32.146965",
+            "daysSinceModified": 1557,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-09-02T10:14:06.564Z"
+          "calculatedAt": "2026-09-03T10:24:29.005Z"
         },
         {
           "dimension": "structure",
@@ -212680,7 +213013,7 @@
               "XLSX": 1
             }
           },
-          "calculatedAt": "2026-09-02T10:14:06.564Z"
+          "calculatedAt": "2026-09-03T10:24:29.005Z"
         },
         {
           "dimension": "accessibility",
@@ -212690,16 +213023,16 @@
             "checked": 2,
             "accessible": 2
           },
-          "calculatedAt": "2026-09-02T10:14:06.866Z"
+          "calculatedAt": "2026-09-03T10:24:29.160Z"
         }
       ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
+      "lastChecked": "2026-09-03T10:24:22.843Z"
     },
     {
-      "datasetId": "datos-gob-cl:1290",
-      "title": "Infraestructura y construcción por comuna",
-      "organization": "Subsecretaría de Desarrollo Regional y Administrativo",
-      "overall": 0.328,
+      "datasetId": "datos-gob-cl:2725",
+      "title": "Temperaturas diarias máximas y minimas por Estaciones",
+      "organization": "Dirección General de Aeronáutica Civil",
+      "overall": 0.734,
       "dimensions": [
         {
           "dimension": "completeness",
@@ -212716,116 +213049,52 @@
               "createdAt"
             ],
             "fieldsMissing": [],
-            "descriptionLength": 66,
+            "descriptionLength": 134,
             "tagCount": 3,
-            "resourceCount": 1
+            "resourceCount": 8
           },
-          "calculatedAt": "2026-09-02T10:14:06.866Z"
+          "calculatedAt": "2026-09-03T10:24:29.160Z"
         },
         {
           "dimension": "freshness",
           "score": 0,
           "evidence": {
-            "modifiedAt": "2015-10-30T13:20:05.978830",
-            "daysSinceModified": 3960,
+            "modifiedAt": "2015-10-30T13:18:18.849958",
+            "daysSinceModified": 3961,
             "halfLifeDays": 180
           },
-          "calculatedAt": "2026-09-02T10:14:06.866Z"
+          "calculatedAt": "2026-09-03T10:24:29.160Z"
         },
         {
           "dimension": "structure",
-          "score": 0.65,
+          "score": 0.95,
           "evidence": {
             "formats": [
-              "XLS"
+              "XML",
+              "CSV"
             ],
-            "bestFormat": "XLS",
-            "bestFormatScore": 0.65,
-            "resourceCount": 1,
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 8,
             "formatDistribution": {
-              "XLS": 1
+              "XML": 4,
+              "CSV": 4
             }
           },
-          "calculatedAt": "2026-09-02T10:14:06.866Z"
+          "calculatedAt": "2026-09-03T10:24:29.160Z"
         },
         {
           "dimension": "accessibility",
-          "score": 0,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 0
-          },
-          "calculatedAt": "2026-09-02T10:14:07.574Z"
-        }
-      ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
-    },
-    {
-      "datasetId": "datos-gob-cl:28323",
-      "title": "PRC Región de Los Lagos",
-      "organization": "Subsecretaría de Vivienda y Urbanismo",
-      "overall": 0.438,
-      "dimensions": [
-        {
-          "dimension": "completeness",
           "score": 1,
           "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 395,
-            "tagCount": 29,
-            "resourceCount": 1
+            "resourceCount": 8,
+            "checked": 8,
+            "accessible": 8
           },
-          "calculatedAt": "2026-09-02T10:14:07.574Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0,
-          "evidence": {
-            "modifiedAt": "2015-10-30T13:04:52.886141",
-            "daysSinceModified": 3960,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-09-02T10:14:07.574Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.1,
-          "evidence": {
-            "formats": [
-              "UNKNOWN"
-            ],
-            "bestFormat": "UNKNOWN",
-            "bestFormatScore": 0.1,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "UNKNOWN": 1
-            }
-          },
-          "calculatedAt": "2026-09-02T10:14:07.574Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.9,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-09-02T10:14:08.021Z"
+          "calculatedAt": "2026-09-03T10:24:29.274Z"
         }
       ],
-      "lastChecked": "2026-09-02T10:13:43.472Z"
+      "lastChecked": "2026-09-03T10:24:22.843Z"
     }
   ],
   "coverage": 1
