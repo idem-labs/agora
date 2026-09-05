@@ -1,7 +1,84 @@
 {
   "catalogId": "catalogo-datos-gba-ar",
-  "updatedAt": "2026-09-04T10:09:50.909Z",
+  "updatedAt": "2026-09-05T09:53:11.929Z",
   "datasets": [
+    {
+      "datasetId": "catalogo-datos-gba-ar:linea-148",
+      "externalId": "linea-148",
+      "modifiedAt": "2026-09-03T14:19:05.413212",
+      "lastScoredAt": "2026-09-04T10:09:50.909Z",
+      "score": {
+        "datasetId": "catalogo-datos-gba-ar:linea-148",
+        "title": "Línea 148",
+        "organization": "Ministerio de Gobierno",
+        "overall": 0.965,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 0.85,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [
+                "tags"
+              ],
+              "descriptionLength": 250,
+              "tagCount": 0,
+              "resourceCount": 7
+            },
+            "calculatedAt": "2026-09-04T10:09:50.909Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.997,
+            "evidence": {
+              "modifiedAt": "2026-09-03T14:19:05.413212",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-09-04T10:09:50.909Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "XLS",
+                "CSV",
+                "PDF"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 7,
+              "formatDistribution": {
+                "XLS": 3,
+                "CSV": 3,
+                "PDF": 1
+              }
+            },
+            "calculatedAt": "2026-09-04T10:09:50.909Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 7,
+              "checked": 7,
+              "accessible": 7
+            },
+            "calculatedAt": "2026-09-04T10:09:52.602Z"
+          }
+        ],
+        "lastChecked": "2026-09-04T10:09:50.909Z"
+      }
+    },
     {
       "datasetId": "catalogo-datos-gba-ar:matrimonios",
       "externalId": "matrimonios",
@@ -1973,83 +2050,6 @@
       }
     },
     {
-      "datasetId": "catalogo-datos-gba-ar:metricas-web-gba",
-      "externalId": "metricas-web-gba",
-      "modifiedAt": "2026-08-06T13:34:50.617351",
-      "lastScoredAt": "2026-08-29T12:01:11.423Z",
-      "score": {
-        "datasetId": "catalogo-datos-gba-ar:metricas-web-gba",
-        "title": "Métricas web GBA",
-        "organization": "Ministerio de Gobierno",
-        "overall": 0.944,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 0.85,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [
-                "tags"
-              ],
-              "descriptionLength": 121,
-              "tagCount": 0,
-              "resourceCount": 5
-            },
-            "calculatedAt": "2026-08-29T12:01:28.217Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.915,
-            "evidence": {
-              "modifiedAt": "2026-08-06T13:34:50.617351",
-              "daysSinceModified": 23,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-08-29T12:01:28.217Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV",
-                "XLS",
-                "PDF"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 5,
-              "formatDistribution": {
-                "CSV": 2,
-                "XLS": 2,
-                "PDF": 1
-              }
-            },
-            "calculatedAt": "2026-08-29T12:01:28.217Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 5,
-              "checked": 5,
-              "accessible": 5
-            },
-            "calculatedAt": "2026-08-29T12:01:29.210Z"
-          }
-        ],
-        "lastChecked": "2026-08-29T12:01:11.423Z"
-      }
-    },
-    {
       "datasetId": "catalogo-datos-gba-ar:comunidades-indigenas",
       "externalId": "comunidades-indigenas",
       "modifiedAt": "2026-08-05T13:47:05.690606",
@@ -2429,81 +2429,6 @@
               "accessible": 4
             },
             "calculatedAt": "2026-08-29T12:01:33.314Z"
-          }
-        ],
-        "lastChecked": "2026-08-29T12:01:11.423Z"
-      }
-    },
-    {
-      "datasetId": "catalogo-datos-gba-ar:recaudacion",
-      "externalId": "recaudacion",
-      "modifiedAt": "2026-07-29T15:17:30.958512",
-      "lastScoredAt": "2026-08-29T12:01:11.423Z",
-      "score": {
-        "datasetId": "catalogo-datos-gba-ar:recaudacion",
-        "title": "Recaudación provincial",
-        "organization": "Ministerio de Economía",
-        "overall": 0.938,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 0.85,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [
-                "tags"
-              ],
-              "descriptionLength": 67,
-              "tagCount": 0,
-              "resourceCount": 2
-            },
-            "calculatedAt": "2026-08-29T12:01:39.565Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.888,
-            "evidence": {
-              "modifiedAt": "2026-07-29T15:17:30.958512",
-              "daysSinceModified": 31,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-08-29T12:01:39.565Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV",
-                "XLS"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 2,
-              "formatDistribution": {
-                "CSV": 1,
-                "XLS": 1
-              }
-            },
-            "calculatedAt": "2026-08-29T12:01:39.565Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 2,
-              "checked": 2,
-              "accessible": 2
-            },
-            "calculatedAt": "2026-08-29T12:01:40.156Z"
           }
         ],
         "lastChecked": "2026-08-29T12:01:11.423Z"
@@ -7668,13 +7593,88 @@
       }
     },
     {
-      "datasetId": "catalogo-datos-gba-ar:linea-148",
-      "externalId": "linea-148",
-      "modifiedAt": "2026-09-03T14:19:05.413212",
-      "lastScoredAt": "2026-09-04T10:09:50.909Z",
+      "datasetId": "catalogo-datos-gba-ar:recaudacion",
+      "externalId": "recaudacion",
+      "modifiedAt": "2026-09-04T14:04:13.629833",
+      "lastScoredAt": "2026-09-05T09:53:11.929Z",
       "score": {
-        "datasetId": "catalogo-datos-gba-ar:linea-148",
-        "title": "Línea 148",
+        "datasetId": "catalogo-datos-gba-ar:recaudacion",
+        "title": "Recaudación provincial",
+        "organization": "Ministerio de Economía",
+        "overall": 0.965,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 0.85,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [
+                "tags"
+              ],
+              "descriptionLength": 67,
+              "tagCount": 0,
+              "resourceCount": 2
+            },
+            "calculatedAt": "2026-09-05T09:53:11.929Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.997,
+            "evidence": {
+              "modifiedAt": "2026-09-04T14:04:13.629833",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-09-05T09:53:11.929Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV",
+                "XLS"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 2,
+              "formatDistribution": {
+                "CSV": 1,
+                "XLS": 1
+              }
+            },
+            "calculatedAt": "2026-09-05T09:53:11.929Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 2,
+              "checked": 2,
+              "accessible": 2
+            },
+            "calculatedAt": "2026-09-05T09:53:12.761Z"
+          }
+        ],
+        "lastChecked": "2026-09-05T09:53:11.929Z"
+      }
+    },
+    {
+      "datasetId": "catalogo-datos-gba-ar:metricas-web-gba",
+      "externalId": "metricas-web-gba",
+      "modifiedAt": "2026-09-04T13:49:46.611467",
+      "lastScoredAt": "2026-09-05T09:53:11.929Z",
+      "score": {
+        "datasetId": "catalogo-datos-gba-ar:metricas-web-gba",
+        "title": "Métricas web GBA",
         "organization": "Ministerio de Gobierno",
         "overall": 0.965,
         "dimensions": [
@@ -7694,54 +7694,54 @@
               "fieldsMissing": [
                 "tags"
               ],
-              "descriptionLength": 250,
+              "descriptionLength": 121,
               "tagCount": 0,
-              "resourceCount": 7
+              "resourceCount": 5
             },
-            "calculatedAt": "2026-09-04T10:09:50.909Z"
+            "calculatedAt": "2026-09-05T09:53:12.761Z"
           },
           {
             "dimension": "freshness",
             "score": 0.997,
             "evidence": {
-              "modifiedAt": "2026-09-03T14:19:05.413212",
+              "modifiedAt": "2026-09-04T13:49:46.611467",
               "daysSinceModified": 1,
               "halfLifeDays": 180
             },
-            "calculatedAt": "2026-09-04T10:09:50.909Z"
+            "calculatedAt": "2026-09-05T09:53:12.761Z"
           },
           {
             "dimension": "structure",
             "score": 0.95,
             "evidence": {
               "formats": [
-                "XLS",
                 "CSV",
+                "XLS",
                 "PDF"
               ],
               "bestFormat": "CSV",
               "bestFormatScore": 0.95,
-              "resourceCount": 7,
+              "resourceCount": 5,
               "formatDistribution": {
-                "XLS": 3,
-                "CSV": 3,
+                "CSV": 2,
+                "XLS": 2,
                 "PDF": 1
               }
             },
-            "calculatedAt": "2026-09-04T10:09:50.909Z"
+            "calculatedAt": "2026-09-05T09:53:12.761Z"
           },
           {
             "dimension": "accessibility",
             "score": 1,
             "evidence": {
-              "resourceCount": 7,
-              "checked": 7,
-              "accessible": 7
+              "resourceCount": 5,
+              "checked": 5,
+              "accessible": 5
             },
-            "calculatedAt": "2026-09-04T10:09:52.602Z"
+            "calculatedAt": "2026-09-05T09:53:13.912Z"
           }
         ],
-        "lastChecked": "2026-09-04T10:09:50.909Z"
+        "lastChecked": "2026-09-05T09:53:11.929Z"
       }
     }
   ]

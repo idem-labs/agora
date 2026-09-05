@@ -1,7 +1,79 @@
 {
   "catalogId": "datos-acumar-ar",
-  "updatedAt": "2026-09-04T10:26:01.131Z",
+  "updatedAt": "2026-09-05T09:56:29.726Z",
   "datasets": [
+    {
+      "datasetId": "datos-acumar-ar:solicitudes-de-informacion-publica-recibidas-por-acumar",
+      "externalId": "solicitudes-de-informacion-publica-recibidas-por-acumar",
+      "modifiedAt": "2026-09-03T18:15:08.562439",
+      "lastScoredAt": "2026-09-04T10:26:01.131Z",
+      "score": {
+        "datasetId": "datos-acumar-ar:solicitudes-de-informacion-publica-recibidas-por-acumar",
+        "title": "Solicitudes de Información Pública Recibidas por ACUMAR",
+        "organization": "Coordinación de Documentación, Acceso a la Información Pública y Transparencia",
+        "overall": 0.984,
+        "dimensions": [
+          {
+            "dimension": "completeness",
+            "score": 1,
+            "evidence": {
+              "fieldsPresent": [
+                "title",
+                "description",
+                "organization",
+                "tags",
+                "license",
+                "resources",
+                "modifiedAt",
+                "createdAt"
+              ],
+              "fieldsMissing": [],
+              "descriptionLength": 112,
+              "tagCount": 1,
+              "resourceCount": 17
+            },
+            "calculatedAt": "2026-09-04T10:26:01.131Z"
+          },
+          {
+            "dimension": "freshness",
+            "score": 0.997,
+            "evidence": {
+              "modifiedAt": "2026-09-03T18:15:08.562439",
+              "daysSinceModified": 1,
+              "halfLifeDays": 180
+            },
+            "calculatedAt": "2026-09-04T10:26:01.131Z"
+          },
+          {
+            "dimension": "structure",
+            "score": 0.95,
+            "evidence": {
+              "formats": [
+                "CSV"
+              ],
+              "bestFormat": "CSV",
+              "bestFormatScore": 0.95,
+              "resourceCount": 17,
+              "formatDistribution": {
+                "CSV": 17
+              }
+            },
+            "calculatedAt": "2026-09-04T10:26:01.131Z"
+          },
+          {
+            "dimension": "accessibility",
+            "score": 1,
+            "evidence": {
+              "resourceCount": 17,
+              "checked": 17,
+              "accessible": 17
+            },
+            "calculatedAt": "2026-09-04T10:26:05.689Z"
+          }
+        ],
+        "lastChecked": "2026-09-04T10:26:01.131Z"
+      }
+    },
     {
       "datasetId": "datos-acumar-ar:indice-de-calidad-de-vida-icv-de-la-cuenca-matanza-riachuelo-actualizacion-2025",
       "externalId": "indice-de-calidad-de-vida-icv-de-la-cuenca-matanza-riachuelo-actualizacion-2025",
@@ -1879,78 +1951,6 @@
           }
         ],
         "lastChecked": "2026-08-30T11:02:32.518Z"
-      }
-    },
-    {
-      "datasetId": "datos-acumar-ar:solicitudes-de-informacion-publica-recibidas-por-acumar",
-      "externalId": "solicitudes-de-informacion-publica-recibidas-por-acumar",
-      "modifiedAt": "2026-09-03T18:15:08.562439",
-      "lastScoredAt": "2026-09-04T10:26:01.131Z",
-      "score": {
-        "datasetId": "datos-acumar-ar:solicitudes-de-informacion-publica-recibidas-por-acumar",
-        "title": "Solicitudes de Información Pública Recibidas por ACUMAR",
-        "organization": "Coordinación de Documentación, Acceso a la Información Pública y Transparencia",
-        "overall": 0.984,
-        "dimensions": [
-          {
-            "dimension": "completeness",
-            "score": 1,
-            "evidence": {
-              "fieldsPresent": [
-                "title",
-                "description",
-                "organization",
-                "tags",
-                "license",
-                "resources",
-                "modifiedAt",
-                "createdAt"
-              ],
-              "fieldsMissing": [],
-              "descriptionLength": 112,
-              "tagCount": 1,
-              "resourceCount": 17
-            },
-            "calculatedAt": "2026-09-04T10:26:01.131Z"
-          },
-          {
-            "dimension": "freshness",
-            "score": 0.997,
-            "evidence": {
-              "modifiedAt": "2026-09-03T18:15:08.562439",
-              "daysSinceModified": 1,
-              "halfLifeDays": 180
-            },
-            "calculatedAt": "2026-09-04T10:26:01.131Z"
-          },
-          {
-            "dimension": "structure",
-            "score": 0.95,
-            "evidence": {
-              "formats": [
-                "CSV"
-              ],
-              "bestFormat": "CSV",
-              "bestFormatScore": 0.95,
-              "resourceCount": 17,
-              "formatDistribution": {
-                "CSV": 17
-              }
-            },
-            "calculatedAt": "2026-09-04T10:26:01.131Z"
-          },
-          {
-            "dimension": "accessibility",
-            "score": 1,
-            "evidence": {
-              "resourceCount": 17,
-              "checked": 17,
-              "accessible": 17
-            },
-            "calculatedAt": "2026-09-04T10:26:05.689Z"
-          }
-        ],
-        "lastChecked": "2026-09-04T10:26:01.131Z"
       }
     }
   ]

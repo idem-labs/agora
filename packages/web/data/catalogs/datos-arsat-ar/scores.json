@@ -1,6 +1,6 @@
 {
   "catalogId": "datos-arsat-ar",
-  "scoredAt": "2026-09-04T10:25:53.912Z",
+  "scoredAt": "2026-09-05T09:56:27.650Z",
   "datasetCount": 13,
   "datasets": [
     {
@@ -138,6 +138,72 @@
       "lastChecked": "2026-09-03T10:23:53.385Z"
     },
     {
+      "datasetId": "datos-arsat-ar:organigrama",
+      "title": "Organigrama",
+      "organization": "ARSAT",
+      "overall": 0.72,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 82,
+            "tagCount": 3,
+            "resourceCount": 1
+          },
+          "calculatedAt": "2026-09-04T10:25:53.912Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.942,
+          "evidence": {
+            "modifiedAt": "2026-08-19T22:26:09.134099",
+            "daysSinceModified": 15,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-04T10:25:53.912Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.15,
+          "evidence": {
+            "formats": [
+              "PDF"
+            ],
+            "bestFormat": "PDF",
+            "bestFormatScore": 0.15,
+            "resourceCount": 1,
+            "formatDistribution": {
+              "PDF": 1
+            }
+          },
+          "calculatedAt": "2026-09-04T10:25:53.912Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 1,
+            "checked": 1,
+            "accessible": 1
+          },
+          "calculatedAt": "2026-09-04T10:25:54.172Z"
+        }
+      ],
+      "lastChecked": "2026-09-04T10:25:53.912Z"
+    },
+    {
       "datasetId": "datos-arsat-ar:finanzas",
       "title": "Finanzas",
       "organization": "Gerencia de Administración y finanzas",
@@ -206,6 +272,72 @@
       "lastChecked": "2026-08-29T12:04:27.769Z"
     },
     {
+      "datasetId": "datos-arsat-ar:autoridades-y-designaciones",
+      "title": "Autoridades y Designaciones",
+      "organization": "ARSAT",
+      "overall": 0.665,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 117,
+            "tagCount": 3,
+            "resourceCount": 18
+          },
+          "calculatedAt": "2026-09-04T10:25:54.172Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.722,
+          "evidence": {
+            "modifiedAt": "2026-06-11T18:46:45.964758",
+            "daysSinceModified": 85,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-04T10:25:54.172Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.15,
+          "evidence": {
+            "formats": [
+              "PDF"
+            ],
+            "bestFormat": "PDF",
+            "bestFormatScore": 0.15,
+            "resourceCount": 18,
+            "formatDistribution": {
+              "PDF": 18
+            }
+          },
+          "calculatedAt": "2026-09-04T10:25:54.172Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 1,
+          "evidence": {
+            "resourceCount": 18,
+            "checked": 18,
+            "accessible": 18
+          },
+          "calculatedAt": "2026-09-04T10:25:56.712Z"
+        }
+      ],
+      "lastChecked": "2026-09-04T10:25:53.912Z"
+    },
+    {
       "datasetId": "datos-arsat-ar:balances",
       "title": "Balances",
       "organization": "ARSAT",
@@ -270,6 +402,138 @@
         }
       ],
       "lastChecked": "2026-08-30T11:02:22.455Z"
+    },
+    {
+      "datasetId": "datos-arsat-ar:ejecuciones-presupuestarias",
+      "title": "Ejecuciones presupuestarias",
+      "organization": "Gerencia de Administración y finanzas",
+      "overall": 0.881,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 38,
+            "tagCount": 3,
+            "resourceCount": 11
+          },
+          "calculatedAt": "2026-09-04T10:25:56.712Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.702,
+          "evidence": {
+            "modifiedAt": "2026-06-04T15:45:57.642232",
+            "daysSinceModified": 92,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-04T10:25:56.712Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 11,
+            "formatDistribution": {
+              "CSV": 11
+            }
+          },
+          "calculatedAt": "2026-09-04T10:25:56.712Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.909,
+          "evidence": {
+            "resourceCount": 11,
+            "checked": 11,
+            "accessible": 10
+          },
+          "calculatedAt": "2026-09-04T10:25:58.488Z"
+        }
+      ],
+      "lastChecked": "2026-09-04T10:25:53.912Z"
+    },
+    {
+      "datasetId": "datos-arsat-ar:cinear-play",
+      "title": "Cine.Ar Play",
+      "organization": "ARSAT",
+      "overall": 0.847,
+      "dimensions": [
+        {
+          "dimension": "completeness",
+          "score": 1,
+          "evidence": {
+            "fieldsPresent": [
+              "title",
+              "description",
+              "organization",
+              "tags",
+              "license",
+              "resources",
+              "modifiedAt",
+              "createdAt"
+            ],
+            "fieldsMissing": [],
+            "descriptionLength": 262,
+            "tagCount": 20,
+            "resourceCount": 4
+          },
+          "calculatedAt": "2026-09-04T10:25:58.488Z"
+        },
+        {
+          "dimension": "freshness",
+          "score": 0.7,
+          "evidence": {
+            "modifiedAt": "2026-06-03T17:01:54.499009",
+            "daysSinceModified": 93,
+            "halfLifeDays": 180
+          },
+          "calculatedAt": "2026-09-04T10:25:58.488Z"
+        },
+        {
+          "dimension": "structure",
+          "score": 0.95,
+          "evidence": {
+            "formats": [
+              "CSV"
+            ],
+            "bestFormat": "CSV",
+            "bestFormatScore": 0.95,
+            "resourceCount": 4,
+            "formatDistribution": {
+              "CSV": 4
+            }
+          },
+          "calculatedAt": "2026-09-04T10:25:58.488Z"
+        },
+        {
+          "dimension": "accessibility",
+          "score": 0.8,
+          "evidence": {
+            "resourceCount": 4,
+            "checked": 4,
+            "accessible": 3
+          },
+          "calculatedAt": "2026-09-04T10:25:59.203Z"
+        }
+      ],
+      "lastChecked": "2026-09-04T10:25:53.912Z"
     },
     {
       "datasetId": "datos-arsat-ar:servicios-refefo",
@@ -604,270 +868,6 @@
         }
       ],
       "lastChecked": "2026-08-30T11:02:22.455Z"
-    },
-    {
-      "datasetId": "datos-arsat-ar:organigrama",
-      "title": "Organigrama",
-      "organization": "ARSAT",
-      "overall": 0.72,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 82,
-            "tagCount": 3,
-            "resourceCount": 1
-          },
-          "calculatedAt": "2026-09-04T10:25:53.912Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.942,
-          "evidence": {
-            "modifiedAt": "2026-08-19T22:26:09.134099",
-            "daysSinceModified": 15,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-09-04T10:25:53.912Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.15,
-          "evidence": {
-            "formats": [
-              "PDF"
-            ],
-            "bestFormat": "PDF",
-            "bestFormatScore": 0.15,
-            "resourceCount": 1,
-            "formatDistribution": {
-              "PDF": 1
-            }
-          },
-          "calculatedAt": "2026-09-04T10:25:53.912Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 1,
-            "checked": 1,
-            "accessible": 1
-          },
-          "calculatedAt": "2026-09-04T10:25:54.172Z"
-        }
-      ],
-      "lastChecked": "2026-09-04T10:25:53.912Z"
-    },
-    {
-      "datasetId": "datos-arsat-ar:autoridades-y-designaciones",
-      "title": "Autoridades y Designaciones",
-      "organization": "ARSAT",
-      "overall": 0.665,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 117,
-            "tagCount": 3,
-            "resourceCount": 18
-          },
-          "calculatedAt": "2026-09-04T10:25:54.172Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.722,
-          "evidence": {
-            "modifiedAt": "2026-06-11T18:46:45.964758",
-            "daysSinceModified": 85,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-09-04T10:25:54.172Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.15,
-          "evidence": {
-            "formats": [
-              "PDF"
-            ],
-            "bestFormat": "PDF",
-            "bestFormatScore": 0.15,
-            "resourceCount": 18,
-            "formatDistribution": {
-              "PDF": 18
-            }
-          },
-          "calculatedAt": "2026-09-04T10:25:54.172Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 1,
-          "evidence": {
-            "resourceCount": 18,
-            "checked": 18,
-            "accessible": 18
-          },
-          "calculatedAt": "2026-09-04T10:25:56.712Z"
-        }
-      ],
-      "lastChecked": "2026-09-04T10:25:53.912Z"
-    },
-    {
-      "datasetId": "datos-arsat-ar:ejecuciones-presupuestarias",
-      "title": "Ejecuciones presupuestarias",
-      "organization": "Gerencia de Administración y finanzas",
-      "overall": 0.881,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 38,
-            "tagCount": 3,
-            "resourceCount": 11
-          },
-          "calculatedAt": "2026-09-04T10:25:56.712Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.702,
-          "evidence": {
-            "modifiedAt": "2026-06-04T15:45:57.642232",
-            "daysSinceModified": 92,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-09-04T10:25:56.712Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 11,
-            "formatDistribution": {
-              "CSV": 11
-            }
-          },
-          "calculatedAt": "2026-09-04T10:25:56.712Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.909,
-          "evidence": {
-            "resourceCount": 11,
-            "checked": 11,
-            "accessible": 10
-          },
-          "calculatedAt": "2026-09-04T10:25:58.488Z"
-        }
-      ],
-      "lastChecked": "2026-09-04T10:25:53.912Z"
-    },
-    {
-      "datasetId": "datos-arsat-ar:cinear-play",
-      "title": "Cine.Ar Play",
-      "organization": "ARSAT",
-      "overall": 0.847,
-      "dimensions": [
-        {
-          "dimension": "completeness",
-          "score": 1,
-          "evidence": {
-            "fieldsPresent": [
-              "title",
-              "description",
-              "organization",
-              "tags",
-              "license",
-              "resources",
-              "modifiedAt",
-              "createdAt"
-            ],
-            "fieldsMissing": [],
-            "descriptionLength": 262,
-            "tagCount": 20,
-            "resourceCount": 4
-          },
-          "calculatedAt": "2026-09-04T10:25:58.488Z"
-        },
-        {
-          "dimension": "freshness",
-          "score": 0.7,
-          "evidence": {
-            "modifiedAt": "2026-06-03T17:01:54.499009",
-            "daysSinceModified": 93,
-            "halfLifeDays": 180
-          },
-          "calculatedAt": "2026-09-04T10:25:58.488Z"
-        },
-        {
-          "dimension": "structure",
-          "score": 0.95,
-          "evidence": {
-            "formats": [
-              "CSV"
-            ],
-            "bestFormat": "CSV",
-            "bestFormatScore": 0.95,
-            "resourceCount": 4,
-            "formatDistribution": {
-              "CSV": 4
-            }
-          },
-          "calculatedAt": "2026-09-04T10:25:58.488Z"
-        },
-        {
-          "dimension": "accessibility",
-          "score": 0.8,
-          "evidence": {
-            "resourceCount": 4,
-            "checked": 4,
-            "accessible": 3
-          },
-          "calculatedAt": "2026-09-04T10:25:59.203Z"
-        }
-      ],
-      "lastChecked": "2026-09-04T10:25:53.912Z"
     }
   ],
   "coverage": 1
